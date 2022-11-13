@@ -1,0 +1,697 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UnigramPlus\n"
+"POT-Creation-Date: 2022-06-30 15:13+0300\n"
+"PO-Revision-Date: 2022-06-30 15:13+0300\n"
+"Last-Translator: Petr Řehák\n"
+"Language-Team: Adaptech s.r.o.\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Generator: Poedit 3.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: appModules\n"
+"X-Poedit-SearchPath-1: GlobalPlugins\n"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:21
+msgid "Arabic"
+msgstr "Arabština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:22
+msgid "Czech"
+msgstr "Čeština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:23
+msgid "English"
+msgstr "Angličtina"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:24
+msgid "French"
+msgstr "Francouzština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:25
+msgid "Finnish"
+msgstr "Finština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:26
+msgid "Slovak"
+msgstr "Slovenština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:27
+msgid "Norwegian"
+msgstr "Norština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:28
+msgid "German"
+msgstr "Němčina"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:29
+msgid "Italian"
+msgstr "Italština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:30
+msgid "Persian"
+msgstr "Perština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:31
+msgid "Polish"
+msgstr "Polština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:32
+msgid "Portuguese"
+msgstr "Portugalština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:33
+msgid "Russian"
+msgstr "Ruština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:34
+msgid "Spanish"
+msgstr "Španělština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:35
+msgid "Turkish"
+msgstr "Turečtina"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:36
+msgid "Ukrainian"
+msgstr "Ukrajinština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:37
+msgid "Croatian"
+msgstr "Chorvatština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:38
+msgid "Serbian"
+msgstr "Srbština"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:39
+msgid "Chinese (Traditional)"
+msgstr "Čínština (tradiční)"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:76
+msgid "No updates available"
+msgstr "Žádné aktualizace nejsou k dispozici"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:77
+#: GlobalPlugins/UnigramPlus/__init__.py:103
+msgid "UnigramPlus update"
+msgstr "Aktualizace doplňku UnigramPlus"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:104
+msgid ""
+"A new version of the add-on is available. Do you want to update UnigramPlus "
+"to version %version?"
+msgstr ""
+"K dispozici je nová verze doplňku. Přejete si provést aktualizaci doplňku "
+"UnigramPlus na verzi %version?"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:114
+msgid "Yes, update"
+msgstr "Ano, aktualizovat"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:115
+msgid "No, not now"
+msgstr "Ne, teď ne"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:122
+msgid "Download in progress"
+msgstr "Probíhá stahování"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:147
+msgid "Changes in this version:"
+msgstr "Změny v této verzi:"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:148
+msgid "No update information"
+msgstr "Žádné informace o aktualizaci"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:179
+msgid "Open UnigramPlus settings window"
+msgstr "Otevřít okno nastavení UnigramPlus"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:187
+msgid "Before chat name"
+msgstr "Před názvem konverzace"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:188
+msgid "After chat name"
+msgstr "Za názvem konverzace"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:189
+msgid "Do not speak chat type"
+msgstr "Nevyslovovat typ konverzace"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:192
+msgid "Revert to standard voice message recording behavior"
+msgstr "Obnovit standardní způsob nahrávání hlasových zpráv"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:193
+msgid "Text notification"
+msgstr "Textové oznámení"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:194
+msgid "sound notification"
+msgstr "Zvukové oznámení"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:197 appModules/unigram.py:616
+msgid "Announce all progress bars"
+msgstr "Oznamovat veškeré indikátory průběhu"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:198 appModules/unigram.py:619
+msgid "Do not announce any progress bars"
+msgstr "Neoznamovat žádné indikátory průběhu"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:199
+msgid "Announce some progress bars"
+msgstr "Oznamovat některé indikátory průběhu"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:202
+msgid "Do not say at all"
+msgstr "Nikdy nevyslovovat"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:203
+msgid "Only in sent messages"
+msgstr "Pouze v odeslaných zprávách"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:204
+msgid "Only in received messages"
+msgstr "Pouze v přijatých zprávách"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:205
+msgid "In all messages"
+msgstr "Ve všech zprávách"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:210
+msgid "Interface language in Unigram:"
+msgstr "Jazyk rozhraní Unigramu"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:213
+msgid "Speak the type of chat in the chat list:"
+msgstr "Vyslovovat typ konverzace v seznamu konverzací"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:216
+msgid "Say the sender's name in:"
+msgstr "Vyslovovat jméno odesílatele:"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:219
+msgid "Speak \"Not Seen\" before reading contents of a message"
+msgstr "Vyslovovat \"Neviděno\" před přečtením obsahu zprávy"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:223
+msgid "Speak folder names when switching between them"
+msgstr "Vyslovovat názvy složek při přepínání mezi nimi"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:227
+msgid "Notify about deleting a message and chat with a sound"
+msgstr "Zvukem oznamovat odstranění zprávy a konverzace"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:231
+msgid "Display confirmation dialog when deleting messages and chats"
+msgstr "Při mazání zpráv a konverzací zobrazovat potvrzovací dialogové okno"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:235
+msgid "Set voice message recording notification method as:"
+msgstr "Způsob oznamování nahrávání hlasové zprávy:"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:238
+msgid "Select the progress bar notification level:"
+msgstr "Úroveň oznamování indikátorů průběhu:"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:241
+msgid "Read description of URLs attached to messages"
+msgstr "Číst popis adres URL připojených ke zprávám"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:245
+msgid "Read full video description in YouTube URLs"
+msgstr "Číst úplný popis videa v adresách URL YouTube"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:249
+msgid "Announce if there is a reply in the group"
+msgstr "Oznámit, že je ve skupině odpověď"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:253
+msgid "Announce if the message contains a reaction"
+msgstr "Oznámit, že zpráva obsahuje reakci"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:257
+msgid ""
+"Check this box if the voice message recording function or the voice message "
+"playback speed change function does not work properly"
+msgstr ""
+"Toto políčko zaškrtněte, pokud správně nefunguje funkce nahrávání hlasových "
+"zpráv nebo funkce změny rychlosti přehrávání hlasových zpráv"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:261
+msgid "Check for UnigramPlus updates on NVDA startup"
+msgstr "Kontrolovat aktualizace doplňku UnigramPlus při spouštění NVDA"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:266
+msgid "Check for &updates"
+msgstr "Zkontrolovat &aktualizace"
+
+#: appModules/data.py:41
+msgid "Back"
+msgstr "Zpět"
+
+#: appModules/data.py:42
+msgid "Menu"
+msgstr "Nabídka"
+
+#: appModules/data.py:43
+msgid "Attach"
+msgstr "Připojit"
+
+#: appModules/data.py:44
+msgid "Edit"
+msgstr "Upravit"
+
+#: appModules/data.py:45
+msgid "Photo"
+msgstr "Fotografie"
+
+#: appModules/data.py:46 appModules/unigram.py:721
+msgid "Image"
+msgstr "Obrázek"
+
+#: appModules/data.py:47
+msgid "Invite link"
+msgstr "Odkaz pozvánky"
+
+#: appModules/data.py:48
+msgid "Choose time"
+msgstr "Zvolit čas"
+
+#: appModules/data.py:49
+msgid "Title field"
+msgstr "Pole Titulek"
+
+#: appModules/data.py:53
+msgid "Insert emojis"
+msgstr "Vložit emoji"
+
+#: appModules/data.py:54
+msgid "Done"
+msgstr "Hotovo"
+
+#: appModules/data.py:55
+msgid "Next"
+msgstr "Další"
+
+#: appModules/data.py:56
+msgid "Merge files"
+msgstr "Sloučit soubory"
+
+#: appModules/data.py:57
+msgid "Search"
+msgstr "Hledat"
+
+#: appModules/data.py:58
+msgid "Delete"
+msgstr "Odstranit"
+
+#: appModules/data.py:59
+msgid "Close"
+msgstr "Zavřít"
+
+#: appModules/unigram.py:36 appModules/unigram.py:359
+msgid "Camera on"
+msgstr "Kamera zapnuta"
+
+#: appModules/unigram.py:36 appModules/unigram.py:360
+msgid "Camera off"
+msgstr "Kamera vypnuta"
+
+#: appModules/unigram.py:50
+msgid "Edit message"
+msgstr "Upravit zprávu"
+
+#: appModules/unigram.py:54
+msgid "Reply to message"
+msgstr "Odpovědět na zprávu"
+
+#: appModules/unigram.py:123
+msgid "Chat list not found"
+msgstr "Seznam konverzací nenalezen"
+
+#: appModules/unigram.py:137
+msgid "Increase/decrease the playback speed of voice messages"
+msgstr "Zvýšit/snížit rychlost přehrávání hlasových zpráv"
+
+#: appModules/unigram.py:145 appModules/unigram.py:157
+#: appModules/unigram.py:167 appModules/unigram.py:956
+msgid "Nothing is playing right now"
+msgstr "Momentálně se nic nepřehrává"
+
+#: appModules/unigram.py:148
+msgid "Close audio player"
+msgstr "Zavřít audiopřehrávač"
+
+#: appModules/unigram.py:156
+msgid "The audio player has been closed"
+msgstr "Audiopřehrávač byl zavřen"
+
+#: appModules/unigram.py:160
+msgid "Play/pause the voice message currently playing"
+msgstr "Přehrát/pozastavit právě přehrávanou hlasovou zprávu"
+
+#: appModules/unigram.py:195
+msgid "Move focus to chat list"
+msgstr "Přemístit fokus do seznamu konverzací"
+
+#: appModules/unigram.py:206
+msgid "Chat list is empty"
+msgstr "Seznam konverzací je prázdný"
+
+#: appModules/unigram.py:209
+msgid "Move focus to the last message in an open chat"
+msgstr "Přemístit fokus na poslední zprávu v otevřené konverzaci"
+
+#: appModules/unigram.py:221 appModules/unigram.py:249
+#: appModules/unigram.py:631 appModules/unigram.py:644
+msgid "This chat is empty"
+msgstr "Tato konverzace je prázdná"
+
+#: appModules/unigram.py:222 appModules/unigram.py:240
+#: appModules/unigram.py:248 appModules/unigram.py:452
+#: appModules/unigram.py:627
+msgid "No open chat"
+msgstr "Žádná otevřená konverzace"
+
+#: appModules/unigram.py:225
+msgid "Announce the name and status of an open chat"
+msgstr "Oznámit název a stav otevřené konverzace"
+
+#: appModules/unigram.py:243
+msgid "Move focus to 'unread messages' label"
+msgstr "Přemístit fokus na popisek \"nepřečtené zprávy\""
+
+#: appModules/unigram.py:258
+msgid "There are no unread messages in this chat"
+msgstr "V této konverzaci nejsou nepřečtené zprávy"
+
+#: appModules/unigram.py:261
+msgid "Call if it's a contact, or enter a voice chat if it's a group"
+msgstr "Zavolat kontaktu nebo zahájit hlasový hovor ve skupině"
+
+#: appModules/unigram.py:266
+msgid "Call unavailable"
+msgstr "Hovor nedostupný"
+
+#: appModules/unigram.py:269
+msgid "Press the video call button"
+msgstr "Stisknout tlačítko Zahájit videohovor"
+
+#: appModules/unigram.py:273
+msgid "Video call not available"
+msgstr "Videohovor nedostupný"
+
+#: appModules/unigram.py:276
+msgid "Press \"Instant view\" button, if it is included in the current message"
+msgstr "Stisknout tlačítko \"Rychlý náhled\", je-li součástí aktuální zprávy"
+
+#: appModules/unigram.py:292
+msgid "Accept call"
+msgstr "Přijmout hovor"
+
+#: appModules/unigram.py:301
+msgid ""
+"Press \"Decline call\" button  if there is an incoming call, \"End call\" "
+"button if a call is in progress or leave voice chat if it is active."
+msgstr ""
+"Stisknout tlačítko \"Odmítnout hovor\" při příchozím hovoru, tlačítko "
+"\"Ukončit hovor\" při probíhajícím hlasovém hovoru nebo pro opuštění "
+"aktivního videohovoru."
+
+#: appModules/unigram.py:315
+msgid "Press \"Mute/unmute microphone\" button"
+msgstr "Stisknout tlačítko \"Zesílit/Ztlumit mikrofon\""
+
+#: appModules/unigram.py:341
+msgid "Press \"Enable/disable camera\" button"
+msgstr "Stisknout tlačítko \"Povolit/Zakázat kameru\""
+
+#: appModules/unigram.py:369
+msgid ""
+"Copy the message if it contains text. If the focus is on a link, the link "
+"will be copied"
+msgstr ""
+"Zkopírovat zprávu, obsahuje-li text. Je-li fokus na odkazu, bude zkopírován "
+"tento odkaz"
+
+#: appModules/unigram.py:375
+msgid "Message copied"
+msgstr "Zpráva zkopírována"
+
+#: appModules/unigram.py:378
+msgid "Link copied"
+msgstr "Odkaz zkopírován"
+
+#: appModules/unigram.py:383 appModules/unigram.py:397
+msgid "This message does not contain text"
+msgstr "Tato zpráva neobsahuje text"
+
+#: appModules/unigram.py:386
+msgid "Copy messages with formatting preserved"
+msgstr "Zkopírovat zprávy se zachováním formátování"
+
+#: appModules/unigram.py:391
+msgid "Show message text in popup window"
+msgstr "Zobrazit text zprávy ve vyskakovacím okně"
+
+#: appModules/unigram.py:396
+msgid "message text"
+msgstr "text zprávy"
+
+#: appModules/unigram.py:400
+msgid ""
+"Move the focus to the edit field. If the focus is already in the edit field, "
+"then after pressing the hotkey, it will move to where it was before"
+msgstr ""
+"Přemístit fokus do editačního pole. Jestliže se fokus již v editačním poli "
+"nachází, po stisku této klávesové zkratky se vrátí na předchozí místo."
+
+#: appModules/unigram.py:416
+msgid "Message input field not found"
+msgstr "Vstupní pole zprávy nenalezeno"
+
+#: appModules/unigram.py:424
+msgid "Button not found"
+msgstr "Tlačítko nenalezeno"
+
+#: appModules/unigram.py:427
+msgid "Open navigation menu"
+msgstr "Otevřít navigační nabídku"
+
+#: appModules/unigram.py:432
+msgid "Navigation menu not available"
+msgstr "Navigační nabídka není k dispozici"
+
+#: appModules/unigram.py:435
+msgid "Open comments"
+msgstr "Otevřít komentáře"
+
+#: appModules/unigram.py:443
+msgid "Button to open comments not found"
+msgstr "Tlačítko pro otevření komentářů nenalezeno"
+
+#: appModules/unigram.py:446
+msgid "Open current chat profile"
+msgstr "Otevřít profil aktuální konverzace"
+
+#: appModules/unigram.py:468
+msgid ""
+"It will not be possible to record a voice message until the edit field is "
+"empty"
+msgstr "Dokud nesmažete editační pole, nebude možné nahrát hlasovou zprávu"
+
+#: appModules/unigram.py:475
+msgid "Record sent"
+msgstr "Nahrávka odeslána"
+
+#: appModules/unigram.py:480
+msgid "Video"
+msgstr "Video"
+
+#: appModules/unigram.py:481
+msgid "Audio"
+msgstr "Zvuk"
+
+#: appModules/unigram.py:498
+msgid "Voice recording notifications set to text"
+msgstr "Nastaveno textové oznamování nahrávání hlasových zpráv"
+
+#: appModules/unigram.py:501
+msgid "Voice recording notifications set to sounds"
+msgstr "Nastaveno zvukové oznamování nahrávání hlasových zpráv"
+
+#: appModules/unigram.py:504
+msgid "Recording voice messages has standard behavior"
+msgstr "Nastaveno standardní chování nahrávání hlasových zpráv"
+
+#: appModules/unigram.py:512
+msgid "Recording canceled"
+msgstr "Nahrávání zrušeno"
+
+#: appModules/unigram.py:538
+msgid "Answer options"
+msgstr "Možné odpovědi"
+
+#: appModules/unigram.py:562
+msgid "You"
+msgstr "Vy"
+
+#: appModules/unigram.py:565
+msgid "Not sent"
+msgstr "Neodesláno"
+
+#: appModules/unigram.py:579
+msgid "Reactions"
+msgstr "Reakce"
+
+#: appModules/unigram.py:608
+msgid "there are replies for you"
+msgstr "máte odpovědi"
+
+#: appModules/unigram.py:612
+msgid "Toggle progress bar announcements"
+msgstr "Přepínat oznamování indikátorů průběhů"
+
+#: appModules/unigram.py:729
+msgid "Editing"
+msgstr "Úpravy"
+
+#: appModules/unigram.py:730
+msgid "Reply"
+msgstr "Odpověď"
+
+#: appModules/unigram.py:739
+msgid "Duration"
+msgstr "Doba trvání"
+
+#: appModules/unigram.py:740
+msgid "Size"
+msgstr "Velikost"
+
+#: appModules/unigram.py:752
+msgid "Enable video"
+msgstr "Povolit video"
+
+#: appModules/unigram.py:753
+msgid "Disable video"
+msgstr "Zakázat video"
+
+#: appModules/unigram.py:825
+msgid "Delete a message or chat"
+msgstr "Odstranit zprávu nebo konverzaci"
+
+#: appModules/unigram.py:828
+msgid "Delete message or chat from both sides"
+msgstr "Odstranit zprávu nebo konverzaci z obou stran"
+
+#: appModules/unigram.py:846
+msgid "Inline results not found"
+msgstr "Vložené výsledky nenalezeny"
+
+#: appModules/unigram.py:857
+msgid "Inline results not detected"
+msgstr "Vložené výsledky nerozpoznány"
+
+#: appModules/unigram.py:860
+msgid "Switch to selection mode"
+msgstr "Přepnout do režimu výběru"
+
+#: appModules/unigram.py:863
+msgid "Forward message"
+msgstr "Přeposlat zprávu"
+
+#: appModules/unigram.py:866
+msgid "Mark a chat as read"
+msgstr "Označit konverzaci jako přečtenou"
+
+#: appModules/unigram.py:869
+msgid "Save file as..."
+msgstr "Uložit soubor jako..."
+
+#: appModules/unigram.py:894
+msgid "Message deleted on both sides"
+msgstr "Zpráva odstraněna z obou stran"
+
+#: appModules/unigram.py:895
+msgid "Message deleted"
+msgstr "Zpráva odstraněna"
+
+#: appModules/unigram.py:898
+msgid "You left the group"
+msgstr "Opustili jste skupinu"
+
+#: appModules/unigram.py:899
+msgid "You left the channel"
+msgstr "Opustili jste kanál"
+
+#: appModules/unigram.py:900
+msgid "Bot removed and blocked"
+msgstr "Robot odstraněn a zablokován"
+
+#: appModules/unigram.py:901
+msgid "Bot removed"
+msgstr "Robot odstraněn"
+
+#: appModules/unigram.py:902
+msgid "Chat deleted on both sides"
+msgstr "Konverzace odstraněna z obou stran"
+
+#: appModules/unigram.py:903
+msgid "Chat deleted"
+msgstr "Konverzace odstraněna"
+
+#: appModules/unigram.py:933
+msgid "Copy data for broadcasting to the clipboard"
+msgstr "Zkopírovat data pro vysílání do schránky"
+
+#: appModules/unigram.py:937 appModules/unigram.py:941
+msgid "Broadcast window not found"
+msgstr "Okno vysílání nenalezeno"
+
+#: appModules/unigram.py:947
+msgid "%url and %key copied to clipboard"
+msgstr "%url a %key zkopírováno do schránky"
+
+#: appModules/unigram.py:963
+msgid "Fast forward a voice message"
+msgstr "Převinout vpřed hlasovou zprávu"
+
+#: appModules/unigram.py:967
+msgid "Rewind voice message"
+msgstr "Převinout zpět hlasovou zprávu"
+
+#: appModules/unigram.py:990
+msgid "Right answer"
+msgstr "Správná odpověď"
+
+#~ msgid "Selected"
+#~ msgstr "Vybráno"
+
+#~ msgid ""
+#~ "Press \"More Options\" button in an open chat, voice chat, or call window"
+#~ msgstr ""
+#~ "Stisknout tlačítko \"Více možností\" v otevřeném chatu, videohovoru nebo "
+#~ "okně volání"
+
+#~ msgid ""
+#~ "Announce all progress bars except voice message playback progress bar"
+#~ msgstr ""
+#~ "Oznamovat všechny indikátory průběhu kromě indikátoru průběhu přehrávané "
+#~ "hlasové zprávy"
+
+#~ msgid "Copy the message if it contains text"
+#~ msgstr "Zkopírovat zprávu, obsahuje-li text"
+
+#~ msgid "Contains reaction"
+#~ msgstr "Obsahuje reakci"
+
+#~ msgid "The broadcast window is not found"
+#~ msgstr "Okno vysílání nelze najít"

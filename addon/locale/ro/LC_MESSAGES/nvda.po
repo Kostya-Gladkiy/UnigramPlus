@@ -1,0 +1,899 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UnigramPlus\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2022-10-07 22:22+0300\n"
+"PO-Revision-Date: 2022-10-07 22:31+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
+"%100<=19) ? 1 : 2);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: appModules\n"
+"X-Poedit-SearchPath-1: GlobalPlugins\n"
+
+#: addon\appModules\cnf.py:12
+msgid "Arabic"
+msgstr "Arabă"
+
+#: addon\appModules\cnf.py:13
+msgid "Czech"
+msgstr "Cehă"
+
+#: addon\appModules\cnf.py:14
+msgid "English"
+msgstr "Engleză"
+
+#: addon\appModules\cnf.py:15
+msgid "French"
+msgstr "Franceză"
+
+#: addon\appModules\cnf.py:16
+msgid "Finnish"
+msgstr "Finlandeză"
+
+#: addon\appModules\cnf.py:17
+msgid "Slovak"
+msgstr "Slovacă"
+
+#: addon\appModules\cnf.py:18
+msgid "Norwegian"
+msgstr "Norvegiană"
+
+#: addon\appModules\cnf.py:19
+msgid "German"
+msgstr "Germană"
+
+#: addon\appModules\cnf.py:20
+msgid "Italian"
+msgstr "Italiană"
+
+#: addon\appModules\cnf.py:21
+msgid "Persian"
+msgstr "Persană"
+
+#: addon\appModules\cnf.py:22
+msgid "Polish"
+msgstr "Poloneză"
+
+#: addon\appModules\cnf.py:23
+msgid "Portuguese"
+msgstr "Portugheză"
+
+#: addon\appModules\cnf.py:24
+msgid "Russian"
+msgstr "Rusă"
+
+#: addon\appModules\cnf.py:25
+msgid "Spanish"
+msgstr "Spaniolă"
+
+#: addon\appModules\cnf.py:26
+msgid "Turkish"
+msgstr "Turcă"
+
+#: addon\appModules\cnf.py:27
+msgid "Ukrainian"
+msgstr "Ucrainiană"
+
+#: addon\appModules\cnf.py:28
+msgid "Croatian"
+msgstr "Croată"
+
+#: addon\appModules\cnf.py:29
+msgid "Serbian"
+msgstr "Sârbă"
+
+#: addon\appModules\cnf.py:30
+msgid "Chinese (Traditional)"
+msgstr "Chineză tradițională"
+
+#: addon\appModules\data.py:44
+msgid "Back"
+msgstr "Înapoi"
+
+#: addon\appModules\data.py:45
+msgid "Menu"
+msgstr "Meniu"
+
+#: addon\appModules\data.py:46
+msgid "Attach"
+msgstr "Atașează"
+
+#: addon\appModules\data.py:47
+msgid "Edit"
+msgstr "Editează"
+
+#: addon\appModules\data.py:48
+msgid "Photo"
+msgstr "Foto"
+
+#: addon\appModules\data.py:49 addon\appModules\unigram.py:909
+msgid "Image"
+msgstr "Imagine"
+
+#: addon\appModules\data.py:50
+msgid "Invite link"
+msgstr "Link de invitație"
+
+#: addon\appModules\data.py:51
+msgid "Choose time"
+msgstr "Selectează ora:"
+
+#: addon\appModules\data.py:52
+msgid "Title field"
+msgstr "Câmpul de titlu"
+
+#: addon\appModules\data.py:56
+msgid "Go to next reaction"
+msgstr "Mergi la următoarea reacție"
+
+#: addon\appModules\data.py:57
+msgid "Insert emojis"
+msgstr "Inserează emoji-uri"
+
+#: addon\appModules\data.py:58
+msgid "Done"
+msgstr "Gaa"
+
+#: addon\appModules\data.py:59
+msgid "Next"
+msgstr "Următorul"
+
+#: addon\appModules\data.py:60
+msgid "Merge files"
+msgstr "Combină fișierele"
+
+#: addon\appModules\data.py:61
+msgid "Search"
+msgstr "Caută"
+
+#: addon\appModules\data.py:62
+msgid "Delete"
+msgstr "Șterge"
+
+#: addon\appModules\data.py:63
+msgid "Close"
+msgstr "Închide"
+
+#: addon\appModules\unigram.py:37 addon\appModules\unigram.py:514
+msgid "Camera on"
+msgstr "Cameră pornită"
+
+#: addon\appModules\unigram.py:37 addon\appModules\unigram.py:515
+msgid "Camera off"
+msgstr "Cameră oprită"
+
+#: addon\appModules\unigram.py:52
+msgid "Announce the original message, the message that was replied to"
+msgstr "Anunță mesajul original, cel la care s-a răspuns"
+
+#: addon\appModules\unigram.py:57
+msgid "Edit message"
+msgstr "Editare mesaj"
+
+#: addon\appModules\unigram.py:61
+msgid "Reply to message"
+msgstr "Răspunde la mesaj"
+
+#. Функція прискорення голосового повідомлення
+#: addon\appModules\unigram.py:234
+msgid "Increase/decrease the playback speed of voice messages"
+msgstr "Mărește sau micșorează viteza de redare a mesajelor vocale"
+
+#: addon\appModules\unigram.py:242 addon\appModules\unigram.py:254
+#: addon\appModules\unigram.py:264 addon\appModules\unigram.py:1162
+msgid "Nothing is playing right now"
+msgstr "Nimic nu se redă acum"
+
+#. Функція закриття аудіопрогравача
+#: addon\appModules\unigram.py:245
+msgid "Close audio player"
+msgstr "Închide playerul audio"
+
+#: addon\appModules\unigram.py:253
+msgid "The audio player has been closed"
+msgstr "Playerul audio a fost închis"
+
+#. Функція призупинення голосового повідомлення
+#: addon\appModules\unigram.py:257
+msgid "Play/pause the voice message currently playing"
+msgstr "Pune pe pauză sau reia mesajul vocal care se redă acum"
+
+#. Перейти до списку чатів
+#: addon\appModules\unigram.py:292
+msgid "Move focus to chat list"
+msgstr "Mută focalizarea pe lista chat-urilor"
+
+#: addon\appModules\unigram.py:308
+msgid "Chat list not found"
+msgstr "Lista chat-urilor negăsită"
+
+#: addon\appModules\unigram.py:316
+msgid "Chat list is empty"
+msgstr "Lista chat-urilor este goală"
+
+#. Перейти до останнього повідомлення в чаті
+#: addon\appModules\unigram.py:319
+msgid "Move focus to the last message in an open chat"
+msgstr "Mută focalizarea la ultimul mesaj dintr-un chat deschis"
+
+#: addon\appModules\unigram.py:331 addon\appModules\unigram.py:406
+#: addon\appModules\unigram.py:828 addon\appModules\unigram.py:841
+msgid "This chat is empty"
+msgstr "Acest chat este gol"
+
+#: addon\appModules\unigram.py:332 addon\appModules\unigram.py:397
+#: addon\appModules\unigram.py:405 addon\appModules\unigram.py:622
+#: addon\appModules\unigram.py:824
+msgid "No open chat"
+msgstr "Niciun chat deschis"
+
+#. Перенести фокус до списку папок чатів
+#: addon\appModules\unigram.py:335
+msgid "Move focus to list of chat folders"
+msgstr "Mută focalizarea la lista de foldere de chat"
+
+#: addon\appModules\unigram.py:341 addon\appModules\unigram.py:349
+#: addon\appModules\unigram.py:350
+msgid "Chat folder list not found"
+msgstr "Folderul cu chat-urile negăsit"
+
+#. Перенести фокус до відкритого профілю
+#: addon\appModules\unigram.py:353
+msgid "Move focus to open profile"
+msgstr "Mută focalizarea pe profilul deschis."
+
+#: addon\appModules\unigram.py:360
+msgid "There is no open profile"
+msgstr "Niciun profil deschis"
+
+#. Озвучує назву і статус профілю, в відкритому чаті
+#: addon\appModules\unigram.py:377
+msgid "Announce the name and status of an open chat"
+msgstr "Anunță numele și starea unui chat deschis"
+
+#: addon\appModules\unigram.py:380
+msgid "Chat activity tracking is enabled"
+msgstr "Activitatea chat-ului a fost activată"
+
+#: addon\appModules\unigram.py:381
+msgid "Chat activity tracking is disabled"
+msgstr "Activitatea chat-ului a fost dezactivată"
+
+#. Перейти до мітки "непрочитані повідомлення"
+#: addon\appModules\unigram.py:400
+msgid "Move focus to 'unread messages' label"
+msgstr "Mută focalizarea pe eticheta \"Mesaje necitite\""
+
+#: addon\appModules\unigram.py:415
+msgid "There are no unread messages in this chat"
+msgstr "Nu există mesaje necitite în acest chat"
+
+#. Зателефонувати якщо це контакт, або увійти до голосового чату, якщо це група
+#: addon\appModules\unigram.py:418
+msgid "Call if it's a contact, or enter a voice chat if it's a group"
+msgstr ""
+"Apelează dacă este vorba de un contact sau intră într-un chat vocal dacă "
+"este vorba de un grup"
+
+#: addon\appModules\unigram.py:423
+msgid "Call unavailable"
+msgstr "Apel indisponibil"
+
+#. Зателефонувати по відеозв'язку якщо це контакт
+#: addon\appModules\unigram.py:426
+msgid "Press the video call button"
+msgstr "Apasă butonul de apelare video"
+
+#: addon\appModules\unigram.py:430
+msgid "Video call not available"
+msgstr "Apel video indisponibil."
+
+#. Функція відкриття миттєвого перегляду статті
+#: addon\appModules\unigram.py:433
+msgid "Press \"Instant view\" button, if it is included in the current message"
+msgstr "Apasă butonul \"Instant View\", dacă este inclus în mesajul curent."
+
+#: addon\appModules\unigram.py:444 addon\appModules\unigram.py:579
+#: addon\appModules\unigram.py:586 addon\appModules\unigram.py:594
+#: addon\appModules\unigram.py:1234
+msgid "Button not found"
+msgstr "Buton negăsit"
+
+#. Відповідь на дзвінок
+#: addon\appModules\unigram.py:447
+msgid "Accept call"
+msgstr "Răspunde la apel"
+
+#. Завершити дзвінок, відхилити дзвінок, або покинути голосовий чат
+#: addon\appModules\unigram.py:456
+msgid ""
+"Press \"Decline call\" button  if there is an incoming call, \"End call\" "
+"button if a call is in progress or leave voice chat if it is active."
+msgstr ""
+"Apasă butonul \"Decline call\" (Refuz apel) dacă există un apel primit, "
+"butonul \"End call\" (Terminare apel) dacă un apel qeste în desfășurare sau "
+"părăsește chat-ul vocal dacă acesta este activ."
+
+#. Вимкнення/увімкнення мікрофону
+#: addon\appModules\unigram.py:470
+msgid "Press \"Mute/unmute microphone\" button"
+msgstr "Apasă butonul \"Mute/unmute microfon\"."
+
+#. Вимкнення/увімкнення камери
+#: addon\appModules\unigram.py:496
+msgid "Press \"Enable/disable camera\" button"
+msgstr "Apasă butonul de comutare a camerei"
+
+#. Скопіювати поточне повідомлення в буфер обміну
+#: addon\appModules\unigram.py:524
+msgid ""
+"Copy the message if it contains text. If the focus is on a link, the link "
+"will be copied"
+msgstr ""
+"Copiază mesajul dacă acesta conține text. Dacă focalizarea este pusă pe un "
+"link, acesta va fi copiat."
+
+#: addon\appModules\unigram.py:530
+msgid "Message copied"
+msgstr "Mesaj copiat"
+
+#: addon\appModules\unigram.py:533
+msgid "Link copied"
+msgstr "Link copiat"
+
+#: addon\appModules\unigram.py:538 addon\appModules\unigram.py:552
+msgid "This message does not contain text"
+msgstr "Acest mesaj nu conține text"
+
+#. Скопіювати повідомлення через контекстне меню
+#: addon\appModules\unigram.py:541
+msgid "Copy messages with formatting preserved"
+msgstr "Copiază mesaj cu formatarea păstrată"
+
+#. Показати текст повідомлення в спливаючому вікні
+#: addon\appModules\unigram.py:546
+msgid "Show message text in popup window"
+msgstr "Afișează textul mesajului într-o fereastră popup"
+
+#: addon\appModules\unigram.py:551
+msgid "message text"
+msgstr "Text mesaj"
+
+#. Перенести фокус в поле вводу повідомлення. Якщо фокус вже знаходиться в цьому полі, тоді перенести його на останній елемент який був в фокусі перед цим полем
+#: addon\appModules\unigram.py:555
+msgid ""
+"Move the focus to the edit field. If the focus is already in the edit field, "
+"then after pressing the hotkey, it will move to where it was before"
+msgstr ""
+"Mută focalizarea pe câmpul de editare. Dacă focalizarea se află deja în "
+"câmpul de editare, atunci, după apăsarea acestei scurtături, se va muta în "
+"locul în care se afla înainte."
+
+#: addon\appModules\unigram.py:572
+msgid "Message input field not found"
+msgstr "Câmpul de introducere a mesajului nu a fost găsit"
+
+#. Натиснути кнопку "Вкласти медіа"
+#: addon\appModules\unigram.py:575
+msgid "Press \"Attach file\" button"
+msgstr "Apasă butonul de atașare"
+
+#. Натиснути кнопку "Нова розмова"
+#: addon\appModules\unigram.py:582
+msgid "Press \"New conversation\" button"
+msgstr "Apasă butonul de chat nou"
+
+#. Відкриває меню навігації
+#: addon\appModules\unigram.py:597
+msgid "Open navigation menu"
+msgstr "Deschide meniul de navigare"
+
+#: addon\appModules\unigram.py:602
+msgid "Navigation menu not available"
+msgstr "Meniu de navigare indisponibil"
+
+#. Функція відкриття коментарів
+#: addon\appModules\unigram.py:605
+msgid "Open comments"
+msgstr "Deschide comentariile"
+
+#: addon\appModules\unigram.py:613
+msgid "Button to open comments not found"
+msgstr "Butonul pentru deschiderea comentariilor nu a fost găsit"
+
+#. Функція відкриття профілю поточного чату
+#: addon\appModules\unigram.py:616
+msgid "Open current chat profile"
+msgstr "Deschide profilul de chat curent"
+
+#: addon\appModules\unigram.py:638
+#, fuzzy
+#| msgid ""
+#| "It will not be possible to record a voice message until the edit field is "
+#| "empty"
+msgid ""
+"Recording a voice message will not be available until the edit field is empty"
+msgstr ""
+"Nu va fi posibilă înregistrarea unui mesaj vocal până când câmpul de editare "
+"nu este gol."
+
+#: addon\appModules\unigram.py:645
+msgid "Record sent"
+msgstr "Înregistrare trimisă"
+
+#: addon\appModules\unigram.py:650
+msgid "Video"
+msgstr "Video"
+
+#: addon\appModules\unigram.py:651
+msgid "Audio"
+msgstr "Audio"
+
+#: addon\appModules\unigram.py:668
+msgid "Voice recording notifications set to text"
+msgstr "Notificări de înregistrare vocală setate pe text"
+
+#: addon\appModules\unigram.py:671
+msgid "Voice recording notifications set to sounds"
+msgstr "Notificări de înregistrare vocală setate pe sunete"
+
+#: addon\appModules\unigram.py:674
+msgid "Recording voice messages has standard behavior"
+msgstr "Înregistrarea mesajelor vocale are un comportament standard"
+
+#: addon\appModules\unigram.py:684
+msgid "Reply canceled"
+msgstr "Răspuns anulat"
+
+#: addon\appModules\unigram.py:685
+msgid "Edit canceled"
+msgstr "Editare anulată"
+
+#: addon\appModules\unigram.py:688
+msgid "Recording canceled"
+msgstr "Înregistrare anulată"
+
+#: addon\appModules\unigram.py:715
+msgid "Answer options"
+msgstr "Opțiuni răspuns"
+
+#: addon\appModules\unigram.py:751
+msgid "You"
+msgstr "Tu"
+
+#: addon\appModules\unigram.py:758
+msgid "Not sent"
+msgstr "Netrimis"
+
+#: addon\appModules\unigram.py:774
+msgid "Reactions"
+msgstr "Reacții"
+
+#. Перевіряємо чи повідомлення є виділеним
+#: addon\appModules\unigram.py:781
+msgid "Selected"
+msgstr "Selectat"
+
+#: addon\appModules\unigram.py:790
+msgid "Premium"
+msgstr "Premium"
+
+#: addon\appModules\unigram.py:790
+msgid "Verified"
+msgstr "Verificat"
+
+#: addon\appModules\unigram.py:804
+msgid "there are replies for you"
+msgstr "Există răspunsuri sau mențiuni pentru tine"
+
+#. Змінити рівень озвучення індикаторів виконання
+#: addon\appModules\unigram.py:809
+msgid "Toggle progress bar announcements"
+msgstr "Comută enunțarea barelor de progres"
+
+#: addon\appModules\unigram.py:813
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:144
+msgid "Announce all progress bars"
+msgstr "Citește toate barele de progres"
+
+#: addon\appModules\unigram.py:816
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:145
+msgid "Do not announce any progress bars"
+msgstr "Nu citi nicio bară de progres"
+
+#: addon\appModules\unigram.py:917
+msgid "Editing"
+msgstr "Editare"
+
+#: addon\appModules\unigram.py:918
+msgid "Reply"
+msgstr "Răspuns"
+
+#: addon\appModules\unigram.py:927
+msgid "Duration"
+msgstr "Durată"
+
+#: addon\appModules\unigram.py:928
+msgid "Size"
+msgstr "Mărime"
+
+#: addon\appModules\unigram.py:940
+msgid "Enable video"
+msgstr "Activează video"
+
+#: addon\appModules\unigram.py:941
+msgid "Disable video"
+msgstr "Dezactivează video"
+
+#: addon\appModules\unigram.py:1022
+msgid "Delete a message or chat"
+msgstr "Șterge un mesaj sau un chat"
+
+#: addon\appModules\unigram.py:1025
+msgid "Delete message or chat from both sides"
+msgstr "Șterge mesajul sau chat-ul din ambele părți"
+
+#: addon\appModules\unigram.py:1043
+msgid "Inline results not found"
+msgstr "Rezultatele în linie nu au fost găsite"
+
+#: addon\appModules\unigram.py:1054
+msgid "Inline results not detected"
+msgstr "Rezultatele în linie nu au fost detectate"
+
+#: addon\appModules\unigram.py:1057
+msgid "Switch to selection mode"
+msgstr "Comută la modul de selectare"
+
+#: addon\appModules\unigram.py:1060
+msgid "Forward message"
+msgstr "Redirecționează mesaj"
+
+#: addon\appModules\unigram.py:1063
+msgid "Mark a chat as read"
+msgstr "Marchează un chat ca citit"
+
+#: addon\appModules\unigram.py:1066
+msgid "Save file as..."
+msgstr "Salvează fișierul ca..."
+
+#: addon\appModules\unigram.py:1069
+msgid "Pin a message or chat"
+msgstr "Fixează un mesaj sau un chat"
+
+#: addon\appModules\unigram.py:1095
+msgid "Message deleted on both sides"
+msgstr "Mesaj șters în ambele părți"
+
+#: addon\appModules\unigram.py:1096
+msgid "Message deleted"
+msgstr "Mesaj șters"
+
+#: addon\appModules\unigram.py:1099
+msgid "You left the group"
+msgstr "Ai părăsit grupul"
+
+#: addon\appModules\unigram.py:1100
+msgid "You left the channel"
+msgstr "Ai părăsit canalul"
+
+#: addon\appModules\unigram.py:1101
+msgid "Bot removed and blocked"
+msgstr "Bot șters și blocat"
+
+#: addon\appModules\unigram.py:1102
+msgid "Bot removed"
+msgstr "Bot șters"
+
+#: addon\appModules\unigram.py:1103
+msgid "Chat deleted on both sides"
+msgstr "Chat șters în ambele părți"
+
+#: addon\appModules\unigram.py:1104
+msgid "Chat deleted"
+msgstr "Chat șters"
+
+#. Функція копіювання даних для проведення трансляції
+#: addon\appModules\unigram.py:1139
+msgid "Copy data for broadcasting to the clipboard"
+msgstr "Copiază datele pentru difuzare în clipboard"
+
+#: addon\appModules\unigram.py:1143 addon\appModules\unigram.py:1147
+msgid "Broadcast window not found"
+msgstr "Fereastra de difuzare nu a fost găsită"
+
+#: addon\appModules\unigram.py:1153
+msgid "%url and %key copied to clipboard"
+msgstr "%url și %key copiate în clipboard"
+
+#: addon\appModules\unigram.py:1169
+msgid "Fast forward a voice message"
+msgstr "Avansarea rapidă a unui mesaj vocal"
+
+#: addon\appModules\unigram.py:1173
+msgid "Rewind voice message"
+msgstr "Derulare înapoi a mesajului vocal"
+
+#: addon\appModules\unigram.py:1196
+msgid "Right answer"
+msgstr "Răspuns corect"
+
+#. Перетворення голосових повідомлень в текст
+#: addon\appModules\unigram.py:1219
+msgid "Convert voice message to text"
+msgstr "Convertește acest mesaj în text"
+
+#: addon\appModules\unigram.py:1226
+msgid "This voice message is already converted to text"
+msgstr "Acest mesaj vocal este deja convertit în text"
+
+#: addon\appModules\unigram.py:1227
+msgid "Converting this voice message is already in process"
+msgstr "Convertirea acestui mesaj vocal este deja în progres"
+
+#: addon\appModules\unigram.py:1237
+msgid "Enable automatic reading of new messages in the current chat"
+msgstr "Activează citirea automată a mesajelor într-un chat"
+
+#: addon\appModules\unigram.py:1239
+msgid "Automatic reading of messages is enabled"
+msgstr "Citirea automată a mesajelor a fost activată"
+
+#: addon\appModules\unigram.py:1240
+msgid "Automatic reading of new messages is disabled"
+msgstr "Citirea automată a mesajelor a fost dezactivată"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:22
+msgid "No updates available"
+msgstr "Nu sunt disponibile actualizări"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:23
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:48
+msgid "UnigramPlus update"
+msgstr "Actualizare UnigramPlus"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:49
+msgid ""
+"A new version of the add-on is available. Do you want to update UnigramPlus "
+"to version %version?"
+msgstr ""
+"Este disponibilă o nouă versiune a acestui add-on. Dorești să actualizezi "
+"UnigramPlus la versiunea %version?"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:59
+msgid "Yes, update"
+msgstr "Da, actualizează"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:60
+msgid "No, not now"
+msgstr "Nu, nu acum"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:75
+msgid "Download in progress"
+msgstr "Descărcare în progres"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:101
+msgid "Changes in this version:"
+msgstr "Modificări în această versiune"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:102
+msgid "No update information"
+msgstr "Nicio informație referitoare la actualizare"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:127
+msgid "Open UnigramPlus settings window"
+msgstr "Deschide setările UnigramPlus"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:134
+msgid "Before chat name"
+msgstr "Numele înainte"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:135
+msgid "After chat name"
+msgstr "Numele după"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:136
+msgid "Do not speak chat type"
+msgstr "Nu enunța tipul chat-ului"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:139
+msgid "Revert to standard voice message recording behavior"
+msgstr "Revino la comportamentul standard de înregistrare a mesajelor vocale"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:140
+msgid "Text notification"
+msgstr "Notificare text"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:141
+msgid "sound notification"
+msgstr "Notificare sunet"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:149
+msgid "Do not say at all"
+msgstr "Nu citi deloc"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:150
+msgid "Only in sent messages"
+msgstr "Doar în mesajele trimise"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:151
+msgid "Only in received messages"
+msgstr "Doar în mesajele primite"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:152
+msgid "In all messages"
+msgstr "În toate mesajele"
+
+#. Вибір мови інтерфейсу
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:157
+msgid "Interface language in Unigram:"
+msgstr "Limba interfeței în Unigram"
+
+#. Режим озвучення типу чату
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:160
+msgid "Speak the type of chat in the chat list:"
+msgstr "Citește tipul chat-ului în lista chat-urilor"
+
+#. Озвучення відправника повідомлень
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:163
+msgid "Say the sender's name in:"
+msgstr "Citește numele expeditorului în:"
+
+#. Повідомляти про те що повідомлення непрочитане перед вмістом повідомлення
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:166
+msgid "Speak \"Not Seen\" before reading contents of a message"
+msgstr "Citește ”Nevăzut” înainte de conținutul mesajului"
+
+#. Озвучувати назву активної папки при перемиканні між ними
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:169
+msgid "Speak folder names when switching between them"
+msgstr "Citește numele folderelor la comutarea între ele"
+
+#. Тип оповіщення при видаленні
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:172
+msgid "Notify about deleting a message and chat with a sound"
+msgstr "Notifică cu privire la ștergerea unui mesaj și chat cu un sunet"
+
+#. Відображати вікно підтвердження при видаленні
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:175
+msgid "Display confirmation dialog when deleting messages and chats"
+msgstr ""
+"Afișează dialogul de confirmare la ștergerea mesajelor și a chat-urilor"
+
+#. Тип оповіщення при записі голосових повідомлень
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:178
+msgid "Set voice message recording notification method as:"
+msgstr "Setează metoda de notificare a înregistrării mesajelor vocale ca:"
+
+#. ОЗвучення індикаторів виконання
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:181
+msgid "Select the progress bar notification level:"
+msgstr "Selectează nivelul de notificare a barei de progres:"
+
+#. Обробляти повідомлення які містять посилання
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:184
+msgid "Read description of URLs attached to messages"
+msgstr "Citește descrierea link-urilor atașate la mesaje"
+
+#. Озвучувати повний опис посилань, які ведуть на ютуб
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:187
+msgid "Read full video description in YouTube URLs"
+msgstr "Citește descrierea completă a videoclipului în link-urile YouTube"
+
+#. Повідомляти якщо в групі є відповіді для вас
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:190
+msgid "Announce if there is a reply in the group"
+msgstr "Anunță dacă există un răspuns în grup"
+
+#. Повідомляти інформацію про преміум акаунти і підтверджені акаунти
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:193
+msgid "Announce premium and confirmed accounts"
+msgstr "Enunță conturile premium și cele verificate"
+
+#. Повідомляти про наявність реакцій в повідомленні
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:196
+msgid "Announce if the message contains a reaction"
+msgstr "Anunță dacă mesajul conține o reacție"
+
+#. Виправити роботу перемикачів в деяких користувачів
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:199
+msgid ""
+"Check this box if the voice message recording function or the voice message "
+"playback speed change function does not work properly"
+msgstr ""
+"Bifează această casetă dacă funcția de înregistrare a mesajelor vocale sau "
+"funcția de modificare a vitezei de redare a mesajelor vocale nu funcționează "
+"corect"
+
+#. Перевірка оновлення при старті програми
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:202
+msgid "Check for UnigramPlus updates on NVDA startup"
+msgstr "Verifică dacă există actualizări UnigramPlus la pornirea NVDA"
+
+#. Кнопка для провірки оновлень
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:205
+msgid "Check for &updates"
+msgstr "Verifică dacă există actualizări"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
+msgid "UnigramPlus"
+msgstr "UnigramPlus"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid ""
+"This add-on adds a lot of hotkeys for quick navigation through the main "
+"elements of the window, easy interaction with Chat messages, and also adds "
+"many minor improvements that make working in Unigram much easier"
+msgstr ""
+"Acest add-on adaugă o mulțime de scurtături pentru navigarea rapidă prin "
+"elementele principale ale ferestrei, o interacțiune ușoară cu mesajele de "
+"chat și, de asemenea, adaugă multe îmbunătățiri minore care fac utilizarea "
+"Unigram mult mai ușoară."
+
+#~ msgid "Announce some progress bars"
+#~ msgstr "Citește doar câteva bare de progres"
+
+#, fuzzy
+#~| msgid "Croatian"
+#~ msgid "Croata"
+#~ msgstr "Хорватська"
+
+#, fuzzy
+#~| msgid "Italian"
+#~ msgid "Italiano"
+#~ msgstr "Італійська"
+
+#, fuzzy
+#~| msgid "Portuguese"
+#~ msgid "Portugués"
+#~ msgstr "Португальська"
+
+#, fuzzy
+#~| msgid "Ukrainian"
+#~ msgid "Ucraniano"
+#~ msgstr "Українська"
+
+#, fuzzy
+#~| msgid "Accept call"
+#~ msgid "&Aceptar"
+#~ msgstr "Відповісти на дзвінок"
+
+#~ msgid ""
+#~ "Press \"More Options\" button in an open chat, voice chat, or call window"
+#~ msgstr ""
+#~ "Натиснути кнопку \"Більше опцій\" у відкритому чаті, голосовому чаті, або "
+#~ "у вікні дзвінка"
+
+#~ msgid ""
+#~ "Announce all progress bars except voice message playback progress bar"
+#~ msgstr ""
+#~ "Озвучувати усі індикатори виконання, крім прогресу відтворення голосових "
+#~ "повідомлень"
+
+#~ msgid "The broadcast window is not found"
+#~ msgstr "Вікна з даними для трансляції не знайдено"
+
+#~ msgid "Rewind voice message forward"
+#~ msgstr "Перемотати голосове повідомлення вперед"
+
+#~ msgid "Select level of notification of progress bars: "
+#~ msgstr "Виберіть рівень сповіщення про індикатори виконання:"
+
+#~ msgid "Announce the presence of reaction in the messages"
+#~ msgstr "Повідомляти про наявність реакції в повідомленнях"
+
+#~ msgid "Answer"
+#~ msgstr "Відповідь"
