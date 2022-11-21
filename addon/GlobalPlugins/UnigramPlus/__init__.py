@@ -117,10 +117,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 		gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(UnigramPlusSettings)
-		# Перевіряємо чи користувацька папка містить тимчасовий файл додатка, якщо так, тоді видаляємо його
+		# Check if the user folder contains a temporary add-on file, if so, then delete it
 		fp = os.path.join(globalVars.appArgs.configPath, "unigramplus.nvda-addon")
 		if os.path.exists(fp): os.remove(fp)
-		# Перевіряємо наявність оновлень
+		# Checking for updates
 		if conf.get("is_automatically_check_for_updates"):
 			threading.Thread(target=onCheckForUpdates, args=(False, True,)).start()
 
@@ -153,55 +153,55 @@ class UnigramPlusSettings(gui.SettingsPanel):
 	}
 	def makeSettings(self, settingsSizer):
 		settingsSizerHelper = gui.guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
-		# Вибір мови інтерфейсу
+		# Selecting an interface language
 		self.lang = settingsSizerHelper.addLabeledControl(_("Interface language in Unigram:"), wx.Choice, choices=[listLanguages[item] for item in listLanguages])
 		self.lang.SetStringSelection(listLanguages[conf.get("lang")])
-		# Режим озвучення типу чату
+		# Chat type announce mode
 		self.voiceTypeAfterChatName = settingsSizerHelper.addLabeledControl(_("Speak the type of chat in the chat list:"), wx.Choice, choices=[self.listVoiceTypeAfterChatName[item] for item in self.listVoiceTypeAfterChatName])
 		self.voiceTypeAfterChatName.SetStringSelection(self.listVoiceTypeAfterChatName[conf.get("voiceTypeAfterChatName")])
-		# Озвучення відправника повідомлень
+		# Message sender announcement
 		self.saySenderName = settingsSizerHelper.addLabeledControl(_("Say the sender's name in:"), wx.Choice, choices=[self.listSaySenderName[item] for item in self.listSaySenderName])
 		self.saySenderName.SetStringSelection(self.listSaySenderName[conf.get("saySenderName")])
-		# Повідомляти про те що повідомлення непрочитане перед вмістом повідомлення
+		# Report not seen before message content
 		self.unreadBeforeMessageContent = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Speak \"Not Seen\" before reading contents of a message")))
 		self.unreadBeforeMessageContent.SetValue(conf.get("unreadBeforeMessageContent"))
-		# Озвучувати назву активної папки при перемиканні між ними
+		# Speak active folder name when switching between them
 		self.voiceFolderNames = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Speak folder names when switching between them")))
 		self.voiceFolderNames.SetValue(conf.get("voiceFolderNames"))
-		# Тип оповіщення при видаленні
+		# Delete alert type
 		self.audioPlaybackWhenDeleted = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Notify about deleting a message and chat with a sound")))
 		self.audioPlaybackWhenDeleted.SetValue(conf.get("audioPlaybackWhenDeleted"))
-		# Відображати вікно підтвердження при видаленні
+		# Show confirmation window when deleting
 		self.confirmation_at_deletion = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Display confirmation dialog when deleting messages and chats")))
 		self.confirmation_at_deletion.SetValue(conf.get("confirmation_at_deletion"))
-		# Тип оповіщення при записі голосових повідомлень
+		# Type of notification when recording voice messages
 		self.voiceMessageRecordingIndicator = settingsSizerHelper.addLabeledControl(_("Set voice message recording notification method as:"), wx.Choice, choices=[self.listVoiceMessageRecordingIndicator[item] for item in self.listVoiceMessageRecordingIndicator])
 		self.voiceMessageRecordingIndicator.SetStringSelection(self.listVoiceMessageRecordingIndicator[conf.get("voiceMessageRecordingIndicator")])
-		# ОЗвучення індикаторів виконання
+		# Progress bar announce
 		self.voicingPerformanceIndicators = settingsSizerHelper.addLabeledControl(_("Select the progress bar notification level:"), wx.Choice, choices=[self.listVoicingPerformanceIndicators[item] for item in self.listVoicingPerformanceIndicators])
 		self.voicingPerformanceIndicators.SetStringSelection(self.listVoicingPerformanceIndicators[conf.get("voicingPerformanceIndicators")])
-		# Обробляти повідомлення які містять посилання
+		# Processing messages containing links
 		self.actionDescriptionForLinks = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Read description of URLs attached to messages")))
 		self.actionDescriptionForLinks.SetValue(conf.get("actionDescriptionForLinks"))
-		# Озвучувати повний опис посилань, які ведуть на ютуб
+		# Announcement of the full description of YouTube links
 		self.voiceFullDescriptionOfLinkToYoutube = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Read full video description in YouTube URLs")))
 		self.voiceFullDescriptionOfLinkToYoutube.SetValue(conf.get("voiceFullDescriptionOfLinkToYoutube"))
-		# Повідомляти якщо в групі є відповіді для вас
+		# Report if the group has replies for you
 		self.isAnnouncesAnswers = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce if there is a reply in the group")))
 		self.isAnnouncesAnswers.SetValue(conf.get("isAnnouncesAnswers"))
-		# Повідомляти інформацію про преміум акаунти і підтверджені акаунти
+		# Report information about premium and verified accounts
 		self.report_premium_accounts = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce premium and confirmed accounts")))
 		self.report_premium_accounts.SetValue(conf.get("report premium accounts"))
-		# Повідомляти про наявність реакцій в повідомленні
+		# Report if the message contains a reaction
 		self.voice_the_presence_of_a_reaction = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce if the message contains a reaction")))
 		self.voice_the_presence_of_a_reaction.SetValue(conf.get("voice_the_presence_of_a_reaction"))
-		# Виправити роботу перемикачів в деяких користувачів
+		# Fix toggle buttons for some users
 		self.isFixedToggleButton = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Check this box if the voice message recording function or the voice message playback speed change function does not work properly")))
 		self.isFixedToggleButton.SetValue(conf.get("isFixedToggleButton"))
-		# Перевірка оновлення при старті програми
+		# Checking for Updates on NVDA Startup
 		self.is_automatically_check_for_updates = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Check for UnigramPlus updates on NVDA startup")))
 		self.is_automatically_check_for_updates.SetValue(conf.get("is_automatically_check_for_updates"))
-		# Кнопка для провірки оновлень
+		# Button to check for updates
 		self.checkForUpdates = settingsSizerHelper.addItem(wx.Button(self, label=_("Check for &updates")))
 		self.checkForUpdates.Bind(wx.EVT_BUTTON, onCheckForUpdates)
 
