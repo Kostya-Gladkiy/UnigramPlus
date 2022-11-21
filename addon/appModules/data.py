@@ -1,9 +1,9 @@
-# Фраза, яка повідомляє чи повідомлення прочитане
-# Фраза, яка повідомляє чи повідомлення не прочитане
-# Фраза яка повідомляє, що повідомлення надіслане
-# Фраза яка повідомляє, що повідомлення отримане
-# Фраза, перед якою стоїть текст повідомлення, в надісланих повідомленнях
-# Фраза, перед якою стоїть текст повідомлення, в отриманих повідомленнях
+# Phrase indicating whether the message has been read
+# Phrase indicating message not read
+# Phrase indicating that the message has been sent
+# Phrase indicating that the message has been received
+# The phrase that precedes the text of the message in sent messages
+# The phrase that precedes the message text in received messages
 keywordsInMessages = {
 	"ar": (". تم قرائتها.", ". غير مقروءة.", ", تم الإرسال ⁨الساعة ⁨‎", ", تم التسليم ⁨الساعة ⁨‎", ", تم الإرسال ⁨الساعة ⁨‎", ", تم التسليم ⁨الساعة ⁨‎"),
 	"en": (". Seen.", ". Not seen.", ", Sent at ‎", ", Received at ‎", ", Sent at ‎", ", Received at ‎"),
