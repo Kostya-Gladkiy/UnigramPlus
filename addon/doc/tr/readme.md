@@ -44,7 +44,7 @@ Bu eklentiyi çok seviyorsanız ve geliştiriciyi maddi olarak desteklemek ve b�
 * Alt + Q - mevcut  mesajda \"Anlık görünüm\" düğmesi varsa,  tıklayın
 * kontrol + R-sesli mesaj kaydetmeye başla / sesli mesaj gönder.
 * kontrol + D-sesli mesaj kaydını iptal edin. Çift  basıldığında bildirim türünü değiştirir, standart, sesli ve yazılı.
-* sil -Mesajı veya sohbeti kaldır
+*Alt sil -Mesajı veya sohbeti kaldır
 * Şift+sil -Her iki taraf için  mesajı veya sohbeti kaldır
 * kontrol+p -Mevcut sohbetin profilini aç
 * control + alt + C-yorumları aç.
@@ -64,13 +64,25 @@ Bu eklentiyi çok seviyorsanız ve geliştiriciyi maddi olarak desteklemek ve b�
 * Control+N: "Yeni Sohbet" düğmesine basın.
 * Atanmamış: Mesajı veya sohbeti sabitleyin.
 * ALT+5: Odağı açık profile taşı.
+* ALT + L: Geçerli sohbette yeni mesajların otomatik olarak okunmasını etkinleştirin.
+* NVDA + ALT + R: Sesli mesajı metne dönüştürün.
 * Sol ok: yanıtlanan  mesajı  oku
+* ALT+6: Odağı grup konuları listesine taşıyın.
 
 ### Not
 Tüm kısayol tuşları nvda>seçenekler>giriş hareketleri menüsünden yeniden atanabilir.
 Bilinen dezavantajlardan biri, bir işlev odağı "okunmamış mesajlar" etiketine çevirir, bazen bir gecikme ile tetiklenir. Bu, sohbetten kaç tane mesajın şu anda önbelleğe alındığına bağlıdır
 
 ##Değişiklik listesi:
+
+### Sürüm 4.6.0
+
+* Odağı grup  konu listesine taşımak için klavye kısayolu eklendi Varsayılan olarak bu işlev ALT+6 kombinasyonuna atanır. Açmak istediğimiz grupta enter tuşuna sık sık bastığınızda konu listesinin görünmeyebileceğini ve bu gruba odaklanmanın tekrar ayarlanması ve enter tuşuna basılması gerektiğini lütfen unutmayın. Kural olarak, ikinci basıştan sonra konuların bir listesi görüntülenir ve bundan sonra odağı o listeye taşıyacak bir tuş kombinasyonuna basabiliriz.
+* Şimdi ALT+2 kombinasyonu odağı yalnızca mesaj içeren listeye değil, aynı zamanda açık profile, grup konularının açık listesine veya ayarlarla birlikte açık bir bölüme de taşır.
+* Artık UnigramPlus ayarlarında, gruplardaki mesajlarda "Yönetici" ve "Sahip" ifadelerinin telaffuzunu devre dışı bırakabilirsiniz.
+* Çağrıları kabul etme ve reddetme kombinasyonları artık düzgün çalışıyor.
+* Artık NVDA'YI yeniden başlattığınızda yeni mesajlar ve sohbet etkinlikleri için otomatik  seslendəirme özelliği kapatılmayacak, ancak siz kendiniz kapatana kadar çalışacaktır.
+* Bazı arayüz öğelerinin görüntülenmesi iyileştirildi.
 
 ###Sürüm 4.5.0
 

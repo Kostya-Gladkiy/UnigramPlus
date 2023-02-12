@@ -1,276 +1,289 @@
-# UnigramPlus
+# Unigram Plus
 
-* Autor: Kostya Gladkiy (Ucraina)
-* [Canal de Telegram](https://t.me/unigramPlus)
-* Telegram: @unigramPlus
-* link de donații: [https://unigramplus.diaka.ua/donate](https://unigramplus.diaka.ua/donate)
+* Автор: Константин Гладкий (Украина)
+* [Телеграм-канал](https://t.me/unigramPlus)
+* Телеграм: @unigramPlus
+* ссылка для пожертвований: [https://unigramplus.diaka.ua/donate](https://unigramplus.diaka.ua/donate)
 * PayPal: gladkiy.kostya@gmail.com
 
 
-Utilizează Unigram într-un mod mai confortabil și mai productiv. Acest addon oferă multe taste rapide pentru o utilizare rapidă și confortabilă a Unigram și aduce o mulțime de mici îmbunătățiri.
-##Unele dintre îmbunătățirile majore sunt:
+Используйте Unigram более удобным и продуктивным способом. Это дополнение предоставляет множество горячих клавиш для быстрого и удобного использования Unigram и вносит множество мелких улучшений.
+##Некоторые из основных улучшений:
 
-* Adaugă o îmbunătățire semnificativă la afișarea mesajelor, cum ar fi un sondaj, un link sau un mesaj cu conținut media atașat.
-* Atunci când focalizarea intră în lista de chat-uri, se elimină frazele inutile. atunci când focalizarea ajunge în lista de mesaje, se elimină fraza "listă".
-* Numele și dimensiunea fișierului vor fi rostite atunci când cursorul este focalizat pe butonul "Open File" (Deschidere fișier) sau pe butonul "Download File" (Descărcare fișier), iar atunci când cursorul este focalizat pe butonul de redare a fișierului audio, vei auzi numele și durata acestuia.
-* Atunci când focalizarea este pusă pe un mesaj vocal care este în curs de redare, se anunță mai întâi informațiile despre ora de redare a acestuia, apoi toate celelalte informații.
-* Atunci când focalizarea este pusă pe un mesaj care conține informații despre un apel, se anunță durata acestui apel.
-* Atunci când te focalizezi pe un mesaj selectat într-un chat, vei auzi mai întâi informația că este selectat și apoi conținutul mesajului.
-* Acum, atunci când te deplasezi în chat, fraza "Seen" nu va fi pronunțată deloc, iar fraza "Not seen" va fi pronunțată înainte de conținutul mesajului. Această caracteristică funcționează în prezent doar în limbile engleză, rusă, ucraineană, spaniolă, portugheză, poloneză, croată, turcă și persană.
-* Îmbunătățirea semnificativă a funcției de înregistrare a mesajelor vocale. Înregistrarea, trimiterea și anularea înregistrării unui mesaj vocal sunt însoțite de sunete caracteristice. De asemenea, atunci când se execută aceste funcții, focalizarea rămâne în poziția sa și nu sare nici la butonul de înregistrare, nici la câmpul de introducere a mesajului.
-* Dacă mediile atașate mesajului sunt deschise cu ajutorul barei de spațiu, atunci, după închiderea lor, focalizarea se va întoarce la ultimul element care a fost în centrul atenției.
-* Acest add-on îți permite să dezactivezi complet anunțarea barelor de progres, precum și să dezactivați doar anunțarea barei de progres pentru redarea mesajelor vocale.
+* Значительно улучшено отображение таких сообщений, как опрос, ссылка или сообщение с прикрепленным медиафайлом.
+* Когда фокус попадает в список чатов, он убирает такие фразы, как: "чаты, вкладка, выбранный список". И когда фокус попадает на список сообщений, фраза "список".
+* Имя и размер файла будут произнесены при наведении курсора на кнопку "Открыть файл" или кнопку "Скачать файл", а при наведении курсора на кнопку воспроизведения аудиофайла вы услышите его название и продолжительность.
+* При установке фокуса на голосовое сообщение, воспроизводимое в данный момент, сначала озвучивается информация о времени его воспроизведения, а затем вся остальная информация.
+* Когда фокус находится на сообщении, содержащем информацию о звонке, объявляется продолжительность этого звонка.
+* При фокусировке на выбранном сообщении в чате вы сначала услышите информацию о том, что оно выбрано, а затем содержание сообщения.
+* Теперь при перемещении в чате фраза "просмотрено" не будет произноситься, а перед содержанием сообщения будет произноситься фраза "не просмотрено".
+* Значительно улучшена функция записи голосовых сообщений. Запись, отправка и отмена записи голосового сообщения сопровождаются характерными звуками. Так же при выполнении этих функций фокус остается на своем месте и не перескакивает ни на кнопку записи, ни на поле ввода сообщения.
+* Если медиа, прикрепленные к сообщению, открыть с помощью пробела, то после их закрытия фокус вернется к последнему элементу, который был в фокусе.
+* Дополнение позволяет полностью отключить озвучивание индикаторов выполнения, а также отключить озвучивание индикатора выполнения только для воспроизведения голосовых сообщений.
 
-##Informații despre posibilitatea de a face donații către dezvoltator:
-Dacă îți place cu adevărat acest add-on și ai dorința și, cel mai important, posibilitatea de a sprijini financiar dezvoltatorul și, astfel, de a-l motiva să dezvolte în continuare acest add-on, poți face acest lucru transferând o sumă mică la următoarele detalii bancare: [link de donații](https://unigramplus.diaka.ua/donate), sau numărul de card este 5169360009004502(Ucraina).
+##Информация о возможности пожертвовать разработчику:
+Если вам нравится это дополнение и у вас есть желание, а главное возможность, финансово поддержать разработчика и тем самым мотивировать его на дальнейшее развитие этого дополнения, вы можете сделать это, переведя небольшую сумму на следующие банковские реквизиты: [ссылка для пожертвований](https://unigramplus.diaka.ua/donate), или по следующему номеру карты 5169360009004502(Украина).
+И помните, что все, кто читал эту строчку, думали, что разработчика кто-то обязательно поддержит, но это буду не я.
 
-##Lista de taste rapide:
-* ALT+1: Mută focalizarea pe lista de chat-uri;
-* ALT+2: Mută focalizarea pe ultimul mesaj dintr-un chat deschis;
-* ALT+3: Mută focalizarea pe mesajele necitite;
-* ALT+D: Mută focalizarea pe câmpul de editare. Dacă focalizarea se află deja în câmpul de editare, după apăsarea tastei rapide, se va muta în locul în care se afla înainte;
-* ALT+T: Anunță numele și starea unui chat deschis;
-* spațiu: Redă/oprește mesajul vocal sau video pe care ești focalizat sau deschide un fișier media atașat la mesajul curent;
-* ALT+P: Redă/oprește mesajul vocal în curs de redare;
-* ALT+S: Crește/micșorează viteza de redare a mesajelor vocale;
-* ALT+E: Închide playerul audio;
-* control+C: Copiază mesajul, dacă acesta conține text. Dacă focalizarea este pusă pe un link, acesta va fi copiat;
-* ALT+shift+C: sună dacă este vorba de un contact sau intră într-un chat vocal dacă este vorba de un grup;
-* ALT+shift+V: sună contactul cu video;
-* ALT+Y: Acceptă apelul;
-* ALT+N: Apasă butonul \"Decline call\" (Refuză apelul) dacă există un apel primit, butonul \"End call\" (Termină apelul) dacă apelul este în curs de desfășurare sau părăsește chat-ul vocal dacă acesta este activ;
-* ALT+A: Scoate sau pune microfonul pe mut;
-* ALT+C: Pornește sau oprește camera;
-* ALT+Q: Apasă butonul \"Vizualizare instantanee\", dacă este inclus în mesajul curent;
-* ALT+O: Apasă butonul "Mai multe opțiuni" într-o fereastră deschisă de chat, chat vocal sau apel;
-* ALT+M: Deschide meniul de navigare;
-* control+R: Începe/oprește înregistrarea mesajelor vocale;
-* control+D: Dacă este apăsat o dată, anulează înregistrarea unui mesaj vocal. Dacă este apăsat de două ori, schimbă tipul de notificare la începerea, trimiterea sau anularea înregistrării unui mesaj vocal;
-* ALT+U: Comută anunțurile din bara de progres;
-* control+P: Deschide profilul de chat curent;
-* delete: Șterge un mesaj sau un chat;
-* shift+delete: Șterge mesajul sau chat-ul din ambele părți;
-* control+ALT+C: Deschide comentariile;
-* Nealocat: Răspunde la mesaj;
-* ALT+F: Redirecționează mesajul;
-* Nealocat: Editează mesajul;
-* ALT+shift+R: Marchează un chat ca fiind citit;
-* control+spațiu: Treci la modul de selecție;
-* control+shift+C: Copiază mesajele cu formatarea păstrată;
-* ALT+shift+L: Copiază datele pentru difuzare în clipboard;
-* control+ALT+săgeată dreapta: Derulează înainte un mesaj vocal.
-* control+ALT+săgeată stânga: Derulează înapoi mesajul vocal.
-* ALT+C: Afișează textul mesajului într-o fereastră popup.
-* NVDA+control+U: Deschide fereastra de setări UnigramPlus
-* ALT+4: Mută focalizarea pe lista de dosare de chat.
-* control+shift+A: Atașează un fișier.
-* control+N: Începe un chat nou.
-* Nealocat: Fixează un mesaj sau un chat.
-* ALT+T: Anunță numele și starea unui chat deschis.
-* ALT+L: Convertește un mesaj vocal în text.
-* Săgeată stânga: Anunță mesajul original, cel la care s-a răspuns.
-
-### Notă
-
-* Toate tastele rapide pot fi realocate în meniul NVDA>preferințe>gesturi de introducere a datelor.
-* Faptul că funcția care focalizează cursorul pe eticheta "mesaj necitit" poate reacționa uneori cu întârziere este o problemă cunoscută. Acest lucru poate depinde de numărul de mesaje necitite în acel moment.
-
-##Lista de modificări:
-
-###Versiunea 4.5.0
-
-* Am adaptat addonul la cea mai recentă versiune de Unigram
-* Acum, dacă un mesaj a fost trimis ca răspuns la un alt mesaj, prin apăsarea tastei săgeată stânga, vei auzi textul mesajului la care a fost trimis răspunsul
-* A fost adăugată localizarea în limba franceză
-* A fost eliminată posibilitatea de a adăuga reacții la mesaje cu ajutorul unor comenzi rapide de la tastatură, deoarece nu am reușit să adaptez această funcție la modificările din interfața Unigram
-* Am corectat câteva bug-uri minore
-
-###Versiunea 4.4.0
-
-* A fost adăugată funcția de anunțare a activității în chat-uri. În mod implicit, această funcție este activată prin apăsarea dublă a combinației ALT+T. Funcția rămâne activă numai până când NVDA este repornit.
-* A fost adăugată funcția de anunțare automată a mesajelor noi în chat. În mod implicit, această funcție este activată prin apăsarea combinației ALT+L. Funcția rămâne activă numai până când NVDA este repornit. Pot exista probleme de stabilitate dacă apar prea multe mesaje noi rapid în chat.
-* A fost adăugată o comandă rapidă de la tastatură pentru funcția de conversie a mesajelor vocale în text. În mod implicit, această funcție este atribuită combinației NVDA+ALT+R. Reține că, în cazurile în care mesajul vocal este foarte lung, conversia în text are loc în părți. Altfel spus, se poate întâmpla ca atunci când Unigramplus te notifică că s-a finalizat conversia, doar o parte din mesajul vocal să fie de fapt convertit. Iar după câteva secunde, restul textului va fi adăugat.
-* Acum, atunci când navighezi prin lista de chat, UnigramPlus raportează informații despre conturile premium și conturile verificate.
-
-###Versiunea 4.3.0
-
-* Acum UnigramPlus funcționează corect atunci când mai multe chat-uri sunt deschise în ferestre diferite.
-* A fost adăugată o comandă rapidă de la tastatură pentru a muta focalizarea în zona profilului utilizatorului, dacă acesta este deschis. Scurtătura implicită este alt+5.
-* Au fost corectate bug-uri minore.
-
-###Versiunea 4.2.0
-
-* Mecanismul de salvare a setărilor UnigramPlus a fost reproiectat în mod semnificativ. Acum, setările nu vor fi stocate în fișierul de configurare NVDA, ci vor fi stocate în propriul fișier de configurare. Acest lucru ar trebui să rezolve problema atunci când utilizatorii, după o actualizare sau pur și simplu brusc, UnigramPlus a încetat să mai funcționeze, din cauza unor probleme de accesare a fișierului de configurare NVDA. Din păcate, utilizatorii vor trebui să reconfigureze singuri UnigramPlus, deoarece după instalarea acestei actualizări, toate setările vor fi resetate.
-* S-a rezolvat problema de compatibilitate a UnigramPlus cu add-on-ul BluetoothAudio.
-* Acum, informația că mesajul nu este selectat nu va fi raportată. În cazul în care un mesaj este selectat, informația despre acesta va fi anunțată înainte de conținutul mesajului.
-* Acum, numărul de ordine al elementelor din chat va fi anunțat dacă ai activat poziția elementelor în setările NVDA.
-* Au fost adăugate etichete la unele butoane.
-
-###Versiunea 4.1.0
-
-* A fost adăugat un gest pentru a fixa un mesaj sau un chat. În mod implicit, nicio comandă rapidă de la tastatură nu este atribuită acestei funcții.
-* A fost adăugată o comandă rapidă de la tastatură pentru a apăsa butonul "Conversație nouă". Gestul implicit pentru această funcție este ctrl+n.
-* A fost adăugată o comandă rapidă de la tastatură pentru atașarea unui fișier media. Gestul implicit este ctrl+shift+a.
-* A fost adăugată o comandă rapidă de la tastatură pentru a merge la lista de dosare de chat. Gestul implicit este alt+4. Această funcție va fi utilă pentru cei care utilizează mai mult de nouă dosare de chat.
-* Acum, atunci când treci de la un dosar la altul cu ajutorul săgeților, focalizarea nu va sări nicăieri.
-* Acum, la comutarea între dosare cu ajutorul tastelor rapide, pe lângă numele dosarului activ, va fi anunțat și numărul de chat-uri necitite din acest dosar.
-* Acum, funcții precum "Marchează un chat ca fiind citit" și "Fixează un mesaj sau un chat" vor funcționa și în sens invers.
-
-###Versiunea 4.0.0
-
-* Am asigurat compatibilitatea cu Unigram 8.8. Deoarece interfața Unigram s-a schimbat, a trebuit să rescriu o parte semnificativă din codul addon-ului.
-* A fost adăugată posibilitatea de a derula înapoi și de a avansa rapid mesajele vocale. Pentru a avansa rapid, utilizează combinația control+săgeată dreapta, iar pentru a derula înapoi, utilizează control+săgeată stânga.
-* Acum UnigramPlus va raporta nu numai prezența reacțiilor în mesaje, ci va anunța și informații detaliate despre reacții.
-* A fost adăugată posibilitatea de a vizualiza textul mesajului în fereastra pop-up. Gestul implicit pentru această funcție este ALT+C.
-* A fost adăugată o comandă rapidă de la tastatură pentru a deschide fereastra de setări UnigramPlus. Gestul implicit pentru această funcție este NVDA+control+U
-* A fost adăugată localizarea în limbile cehă și română.
-* S-a rezolvat o problemă cu actualizarea UnigramPlus pentru rezidenții ucraineni.
-
-###Versiunea 3.2.3
-
-* A fost adăugată localizarea în limba chineză.
-* Actualizarea localizărilor existente, inclusiv în limba engleză.
-* Am fixat bug-uri minore.
-
-###Versiunea 3.2.0
-
-* Am eliminat caracteristici precum "Urmărirea activității de chat" și "Citirea mesajelor noi în chat-ul deschis", deoarece nu am reușit să le fac să funcționeze corect în NVDA 2022.1.
-* Accesibilitate îmbunătățită a funcțiilor de activare/dezactivare a microfonului și de activare/dezactivare a camerei în timpul apelurilor. Acum, după apăsarea comenzii rapide pentru ambele funcții, va fi anunțată starea acestora.
-* A fost rezolvată o problemă în care tasta Enter nu funcționa corect pe unele elemente. Acum poți înregistra în continuare mesaje vocale ținând apăsată tasta Enter pe butonul de înregistrare.
-* Acum poți realoca comenzi rapide de la tastatură pentru funcții precum "Răspunde la mesaj" și "Editează mesaj". De asemenea, poți atribui aceste funcții unor taste precum Enter, Backspace sau chiar săgețile stânga sau dreapta, iar acestea nu vor interfera cu tastele respective de pe alte elemente. Reține că, la început, nicio tastă nu va fi atribuită acestor funcții, dar le vei putea atribui numai atunci când focalizarea se află pe unul dintre mesajele de chat.
-* Acum, funcția "Spune numele expeditorului" ar trebui să funcționeze mai corect.
-* Când te focalizezi pe un link conținut într-un mesaj, textul mesajului nu va fi rostit primul, ci textul legăturii va fi rostit imediat.
-* am făcut multe îmbunătățiri mici și am corectat multe erori și deficiențe.
-* Acum UnigramPlus ar trebui să ruleze puțin mai repede.
-
-###Versiunea 3.1.0
-
-* Citirea sondajelor a fost îmbunătățită. Numele utilizatorilor care au participat la sondaje sunt acum anunțate în fereastra de rezultate. Sondajele vor oferi, de asemenea, informații cu privire la opțiunea care a fost corectă.
-* A fost adăugată posibilitatea de a reacționa la mesaje, dar numai în chat-urile private. Această caracteristică nu va funcționa corect în grupuri și canale. În chat-urile private, prin apăsarea tastelor NVD + ALT + numere de la 1 la 5, poți trimite următoarele reacții: 1 - 👍, 2 - 👎, 3 - ❤, 4 - 🔥, 5 - 🥰.
-* A fost adăugată posibilitatea de a anunța informații despre răspunsurile existente la mesaje. Din păcate, nu este încă posibilă anunțarea numelui reacțiilor disponibile.
-* A fost adăugată o tastă rapidă pentru a copia rapid datele necesare pentru difuzări.
-* A fost rezolvată o problemă cu afișarea rezultatelor în linie care a apărut în cele mai recente versiuni ale Unigram.
-
-###Versiunea 3.0.0
-
-Atenție! UnigramPlus va suporta acum versiuni NVDA nu mai vechi de 2021.2.0.
-* Au fost adăugate etichete pentru multe elemente de interfață.
-* Corectarea unor erori.
-
-###Versiunea 2.9.0
-
-* Acum, câmpul de editare își va schimba eticheta în funcție de faptul că răspundem la mesaj sau îl modificăm.
-* A fost adăugată posibilitatea de a activa un dialog de confirmare pentru ștergerea mesajelor sau a chat-urilor prin intermediul tastelor rapide din setări.
-* A fost adăugată localizarea în limba sârbă.
-* Am rezolvat mici probleme.
-
-###Versiunea 2.8.0
-
-* A fost adăugată posibilitatea de a actualiza add-on-ul din interiorul add-on-ului. Acum, pentru a verifica dacă există actualizări și a le instala, trebuie doar să deschizi setările UnigramPlus și să faci clic pe butonul corespunzător. De asemenea, poți activa verificarea automată a actualizărilor la pornirea NVDA.
-* A fost adăugată localizarea în limba arabă.
-
-###Versiunea 2.7.0
-
-* Acum vei fi notificat că mesajul a fost transmis.
-* Îmbunătățirea funcției de copiere a mesajelor. Acum, dacă textul conține un link pe care se poate face clic și focalizarea se află pe acel link, apăsarea CTRL+C va copia link-ul în loc de întregul text.
-* A fost adăugată o tastă rapidă pentru copierea mesajelor, păstrând formatarea textului. Această funcție emulează activarea elementului corespunzător din meniul aplicației. Tasta rapidă implicită pentru această funcție este CTRL+shift+C. Datorită acestei funcții, tasta rapidă pentru deschiderea comentariilor a fost modificată în CTRL+ALT+C.
-* A fost adăugată posibilitatea de a anunța automat mesajele noi în chat-ul deschis. În mod implicit, aceasta poate fi activată prin apăsarea ALT + L.
-* Am adăugat taste rapide pentru vizualizarea rapidă a mesajelor de chat. Apasă NVDA + CTRL + numărul care corespunde numărului unui anumit mesaj în ordine inversă, adică, dacă dorești să vizualizezi ultimul mesaj, apasă 1, dacă dorești să vizualizezi mesajul anterior, apasă 2 etc.
-* Acum, dacă apeși ALT+T, vei primi informații despre chat-ul vocal activ din grupul curent.
-
-###Versiunea 2.6.0
-
-* Am asigurat compatibilitatea cu NVDA 2021.3.
-* Am adăugat o tastă rapidă pentru a permite selectarea mesajelor sau a chat-urilor.
-* A fost adăugată o tastă rapidă pentru redirecționarea mesajelor.
-* A fost adăugată o tastă rapidă pentru a marca un chat ca fiind citit.
-* Îmbunătățirea performanțelor funcțiilor existente.
+## Список горячих клавиш:
+* ALT+1: Переместить фокус на список чатов;
+* ALT+2: Переместить фокус на последнее сообщение в открытом чате;
+* ALT+3: Переместить фокус на метку "непрочитанные сообщения";
+* ALT+D: Переместить фокус в поле редактирования. Если фокус уже находится в поле редактирования, то после нажатия горячей клавиши он переместится туда, где был до этого;
+* ALT+T: Объявить имя и статус открытого чата;
+* Пробел: воспроизведение/остановка выделенного голосового или видеосообщения или открытие медиафайла, прикрепленного к текущему сообщению;
+* ALT+P: Воспроизвести/приостановить воспроизводимое голосовое сообщение;
+* ALT+S: Увеличить/уменьшить скорость воспроизведения голосовых сообщений;
+* ALT+E: Закрыть аудиоплеер;
+* control+C: Скопировать сообщение, если оно содержит текст. Если фокус находится на ссылке, ссылка будет скопирована;
+* ALT+shift+C: Позвонить, если это контакт, или войти в голосовой чат, если это группа;
+* ALT+shift+V: Нажимает кнопку видеозвонка;
+* ALT+Y: Принять вызов;
+* ALT+N: Нажимает кнопку "Отклонить вызов", если есть входящий вызов, кнопку "Завершить вызов", если вызов находится в процессе, или выходит из голосового чата, если он активен;
+* ALT+A: Нажимает кнопку \"Отключить/включить микрофон\";
+* ALT+C: Нажимает кнопку "Включить/отключить камеру";
+* ALT+Q: Нажимает кнопку "Мгновенный просмотр", если она содержится в текущем сообщении;
+* ALT+O: Нажимает кнопку "Дополнительные параметры" в открытом чате, голосовом чате или окне звонка;
+* ALT+M: Открыть меню навигации;
+* control+R: Начать/остановить запись голосового сообщения;
+* control+D: При однократном нажатии отменяет запись голосового сообщения. При двойном нажатии изменяет тип уведомления при запуске, отправке или отмене записи голосового сообщения;
+* ALT+U: Переключить объявление индикатора выполнения;
+* control+P: Открыть профиль текущего чата;
+* Кнопка удаления: Удалить сообщение или чат;
+* shift+кнопка удаления: Удалить сообщение или чат с обеих сторон;
+* control+ALT+C: Открыть комментарии;
+* Не назначено: Ответить на сообщение;
+* ALT+F: Переслать сообщение;
+* Не назначено: изменить сообщение;
+* ALT+shift+R: Пометить чат как прочитанный;
+* control+пробел: перейти в режим выбора;
+* control+shift+C: Копировать сообщения с сохранением форматирования;
+* ALT+shift+L: Копировать данные для трансляции в буфер обмена;
+* Control+Alt+Стрелка Вправо: Перемотать голосовое сообщение вперёд.
+* Control+Alt+Стрелка Влево: Перемотать голосовое сообщение назад.
+* Alt+C: Показать текст сообщения во всплывающем окне.
+* NVDA+Control+U: Открыть окно настроек UnigramPlus.
+* Alt+4: Переместить фокус в список папок.
+* Control+Shift+A: Нажать кнопку "Прикрепить файл".
+* Control+N: Нажать кнопку "Новая беседа".
+* Не назначено: Закрепить сообщение или чат.
+* ALT+5: Переместить фокус к открытому профилю.
+* NVDA+ALT+R: Преобразовать голосовое сообщение в текст.
+* Стрелка Влево: Прочитать исходное сообщение, сообщение, на которое был дан ответ.
+* ALT+6: Переместить фокус к списку тем в группе.
 
 
-###Versiunea 2.5.0
+### Примечание
 
-* Există acum o casetă de selectare care, dacă este bifată, rezolvă problema înregistrării mesajelor vocale cu care se confruntă unii utilizatori.
-* A fost adăugată o tastă rapidă pentru a răspunde la un mesaj.  Poți face acest lucru apăsând Enter pe mesaj sau poți realoca tastele de acces rapid alternative pentru această funcție la altceva.
-* A fost adăugată o tastă rapidă pentru editarea mesajelor. Prescurtarea implicită de la tastatură este ALT+Backspace.
+* Все горячие клавиши можно переназначить в меню NVDA>Параметры>Жесты ввода.
+* Известной проблемой является то, что функция, фокусирующая курсор на метке "непрочитанное сообщение", иногда может реагировать с задержкой. Это может зависеть от количества кешированных сообщений на данный момент.
 
-###Versiunea 2.4.0
+##Список изменений:
 
-* Acum vei auzi numele expeditorului atunci când te focalizezi pe un mesaj.
-* Când te focalizezi pe un chat de grup care conține mesaje necitite, vei fi notificat dacă există răspunsuri pentru tău în acel grup.
-* Performanța funcțiilor adăugate în actualizarea anterioară a fost, de asemenea, îmbunătățită.
+###Версия 4.6.0
 
-###Versiunea 2.3.0
+* Добавлено сочетание клавиш для перемещения фокуса к списку тем в группе. По умолчанию эта функция назначена на сочетание ALT+6. Пожалуйста обратите внимание на то, что часто, когда мы нажимаем клавишу Enter на группе, которую хотим открыть, список тем может не отобразиться и в этом случае необходимо снова установить фокус на данной группе и нажать клавишу Enter. Как правило, после второго нажатия список тем становится видимым и мы можем нажать сочетание клавиш, которое перемещает к нему фокус.
+* Теперь нажатие сочетания ALT+2 перемещает фокус не только к списку сообщений, но также к открытому профилю, к открытому списку тем группы, или к открытому разделу с настройками.
+* Теперь в настройках UnigramPlus вы можете отключить произнесение фраз "администратор" и "владелец" в групповых сообщениях.
+* Сочетания для принятия и отклонения звонка теперь работают правильно.
+* Теперь автоматические оповещения о новых сообщениях в чате и о действиях в чате не будут отключаться при перезапуске NVDA, но будут работать, пока вы сами их не выключите.
+* Улучшено отображение некоторых элементов интрефейса.
 
-* Accesibilitate îmbunătățită a mesajelor care conțin atașamente media multiple. Anterior, descrierea unui mesaj care conținea mai multe atașamente media putea fi accesată numai prin intermediul navigării pe obiecte. Acum, această descriere va fi citită imediat după focalizarea pe un astfel de mesaj.
-* Accesibilitate îmbunătățită a mesajelor care conțin sondaje. Acum, când te focalizezi pe un astfel de mesaj, vei auzi numărul de persoane care au votat deja, precum și toate opțiunile de răspuns cu rezultatul pentru fiecare opțiune.
-* Accesibilitate îmbunătățită a mesajelor care conțin URL-uri. Acum, dacă URL-ul are o descriere, aceasta va fi citită și ea, adică, de exemplu, dacă mesajul are un URL pentru YouTube, titlul și descrierea videoclipului respectiv vor fi citite imediat după URL-ul propriu-zis. De asemenea, dacă URL-ul are mai mult de 30 de caractere, acesta va fi scurtat pentru ca următoarea descriere să fie mai ușor de citit.
-* Accesibilitate îmbunătățită a panoului de rezultate al interogării în linie... Pentru a naviga prin rezultatele interogărilor în linie, utilizează următoarele combinații: control+sus și control+jos.
-* A fost adăugată o tastă rapidă pentru a deschide comentariile.
+###Версия 4.5.0
 
-###Versiunea 2.2.0
+* Адаптация к последней версии Unigram
+* Теперь, если сообщение отправляется в ответ на другое сообщение, по нажатию Стрелки Влево вы сможете услышать текст исходного сообщения, на которое был дан ответ
+* Добавлена французская локализация
+* Удалена возможность добавлять реакции на сообщения с помощью комбинаций клавиш, поскольку я не смог адаптировать эту функцию к изменениям в интерфейсе Unigram
+* Исправлены некоторые незначительные ошибки
 
-* Am adăugat o tastă rapidă pentru a șterge mesaje sau chat-uri doar pentru tine și, de asemenea, pe ambele părți. Această funcție este legată de limbajul interfeței Unigram, deci este posibil să nu funcționeze în unele localizări. În setări poți alege tipul de notificări, text sau sunet.
-* A fost adăugată posibilitatea de a specifica în setări ce limbă de interfață folosești în Unigram. Acest lucru este necesar pentru funcționarea corectă a caracteristicilor asociate cu anumite localizări.
-* A fost adăugată o tastă rapidă pentru a deschide profilul de chat curent.
-* Acum, după închiderea unei discuții, focalizarea se va muta pe lista de discuții, și nu pe butonul "Deschide meniul de navigare".
+###Версия 4.4.0
 
-###Versiunea 2.1.0
+* Была добавлена функция объявления об активности в чатах. По-умолчанию функция включается двойным нажатием комбинации ALT+T. Функция остаётся активной до перезапуска NVDA.
+* Была добавлена функция автоматического оповещения о новых сообщениях в чате. По-умолчанию функция включается нажатием комбинации ALT+L. Функция остаётся включенной до перезапуска NVDA. Функция может работать нестабильно, если в чате быстро появляются новые сообщения.
+* Добавлено сочетание клавиш для преобразования голосовых сообщений в текст. По-умолчанию эта функция назначена на комбинацию NVDA+ALT+R. Пожалуйста обратите внимание на то, что если голосовое сообщение слишком длинное, его преобразование в текст происходит в несколько этапов. То есть, могут быть ситуации, когда Unigramplus объявляет о том, что преобразование сообщения завершено, в то время как была преобразована только часть сообщения. Оставшийся текст будет добавлен спустя несколько секунд. **Примечание**: Функция преобразования голосовых сообщений доступна только премиум пользователям.
+* При перемещении по списку чатов Unigramplus теперь сообщает о подтверждённых учётных записях и об учётных записях с подпиской премиум.
 
-* La trecerea de la un dosar la altul în lista de chat, se va anunța numele dosarului curent.
-* În lista de chat-uri, vei auzi numele chat-ului, urmat de tipul acestuia.
-* A fost îmbunătățită funcția de mutare a atenției în lista de chat-uri. Acum ar trebui să funcționeze mai precis și fără întârzieri.
-* Acum, setările add-on-ului au devenit și mai flexibile, deoarece în preferințele NVDA a apărut o secțiune cu unele opțiuni UnigramPlus.
-* A fost adăugată localizarea în limba poloneză.
-* Multe mici corecturi și îmbunătățiri.
+###Версия 4.3.0
 
-###Versiunea 2.0.0
+* Теперь UnigramPlus работает корректно в тех случаях, когда открыто несколько окон с чатами.
+* Добавлено сочетание клавиш для перемещения фокуса в профиль пользователя, если он открыт. Жест по умолчанию - alt+5.
+* Исправлены мелкие ошибки.
 
-* Funcția în care cuvântul "Văzut" nu este anunțat și cuvântul "Nevăzut" este rostit înainte de citirea conținutului mesajului funcționează acum în localizările în spaniolă, portugheză, croată, turcă și persană.
-* A fost îmbunătățită funcția de anunțuri a barei de progres. Acum, atunci când acest mod este activat, nu sunt anunțați toți indicatorii de progres, ci doar cei care sunt în centrul focalizării.
-* Dacă apeși bara de spațiu într-un mesaj care conține un fișier a cărui descărcare nu a fost finalizată, vei fi anunțat că descărcarea a fost oprită.
-* A fost adăugată localizarea în limba portugheză.
-* Fixarea unor mici probleme și îmbunătățirea performanței.
+###Версия 4.2.0
 
-###Versiunea 1.9.0
-* A fost adăugată o tastă rapidă care comută nivelul de anunțare a barei de progres între valori precum: "Anunță toate barele de progres", "Anunță unele bare de progres", "Anunță toate barele de progres, cu excepția barei de progres de redare a mesajelor vocale" și "Nu anunță nicio bară de progres". Pentru acei utilizatori care au descărcările automate de conținut media dezactivate în Unigram, nivelul de anunțare a barelor de progres poate fi setat la "Anunță toate barele de progres, cu excepția barei de progres a redării mesajelor vocale", iar pentru cei care au activată această funcție, este mai bine să o seteze la "Nu anunța barele de progres".
-* A fost adăugată localizarea în spaniolă, croată și persană.
-* Fixat bug-uri minore din versiunile anterioare.
+* Механизм сохранения настроек UnigramPlus был существенно переработан. Теперь настройки не будут сохраняться в файле настроек NVDA, а будут сохраняться в собственном файле настроек. Это поможет решить проблему из-за которой после обновления или вообще внезапно UnigramPlus переставал работать из-за потери доступа к файлу настроек. К сожалению, пользователям придётся заново настроить UnigramPlus, поскольку после установки данного обновления все настройки будут сброшены.
+* Исправлена проблема совместимости UnigramPlus с дополнением BluetoothAudio.
+* Теперь информация о том, что сообщение не выделено, не будет сообщаться. Если сообщение выделено, информация об этом будет сообщаться до того, как будет прочитано содержимое сообщения.
+* Теперь порядковый номер элемента в окне чата будет сообщаться, если вы включили объявление позиции элемента в настройках NVDA.
+* Добавлены метки к некоторым кнопкам.
 
-###Versiunea 1.8.0
+###Версия 4.1.0
 
-* Numele și dimensiunea fișierului vor fi rostite atunci când cursorul este focalizat pe butonul "Open File" (Deschidere fișier) sau pe butonul "Download File" (Descărcare fișier), iar atunci când cursorul este focalizat pe butonul de redare a fișierului audio, vei auzi numele și durata acestuia.
-* A fost adăugată o tastă rapidă pentru a muta focalizarea pe câmpul de editare. Dacă focalizarea se află deja în câmpul de editare, atunci după ce se apasă tasta rapidă, se va muta în locul în care se afla înainte.
-* Funcția de urmărire a activității de chat este acum activată prin apăsarea dublă a tastelor ALT + T. Poți să o activați pur și simplu sau să o activați temporar până la următoarea închidere a aplicației.
-* A fost adăugată posibilitatea de a selecta tipul de notificare pentru înregistrarea mesajelor vocale. Acest lucru se face prin apăsarea dublă a tastei de acces rapid control+d. Acolo poți alege între sunet, notificare text sau revenirea la comportamentul standard de înregistrare a mesajelor vocale.
+* Добавлен жест для закрепления сообщения или чата. По умолчанию для этой функции не назначено сочетание клавиш.
+* Добавлено сочетание клавиш для нажатия кнопки "Новая беседа". Жест по умолчанию для данной функции - CTRL+N.
+* Добавлено сочетание клавиш для активации кнопки "Прикрепить медиа". Жест по умолчанию для этой функции - CTRL+Shift+A.
+* Добавлено сочетание клавиш для перехода в список папок. Жест по умолчанию - Alt+4. Эта функция будет полезна тем, кто использует больше девяти папок.
+* Теперь при переключении папок с помощью клавиш со стрелками фокус не будет перемещаться куда-либо.
+* Теперь при переключении папок с использованием горячих клавиш, в дополнение к названию текущей папки будет сообщаться количество непрочитанных чатов в этой папке.
+* Теперь такие функции как "Отметить чат как прочитанный" или "Закрепить сообщение или чат" будут работать и в другую сторону.
+* Добавлена ​​румынская локализация.
 
-###Versiunea 1.7.0
+###Версия 4.0.0
 
-Îmbunătățirea semnificativă a funcției de înregistrare a mesajelor vocale. Înregistrarea, trimiterea și anularea înregistrării unui mesaj vocal sunt însoțite de sunete caracteristice. De asemenea, atunci când se execută aceste funcții, focalizarea rămâne în poziția sa și nu sare nici la butonul de înregistrare, nici la câmpul de introducere a mesajului.
+* Обеспечена совместимость с Unigram 8.8. Поскольку интерфейс Unigram изменился, Мне пришлось заново переписать значительную часть кода дополнения.
+* Добавлена возможность перематывать вперёд и назад голосовые сообщения. Для перемотки вперёд используйте комбинацию Control+Стрелка Вправо, а для перемотки назад - Control+Стрелка Влево.
+* Теперь UnigramPlus не только будет сообщать о наличии реакции в сообщениях, но также будет проговаривать  и подробную информацию о реакциях.
+* Добавлена возможность просмотра текста сообщения во всплывающем окне. Жест по умолчанию для этой функции - Alt+C.
+* Добавлено сочетание клавиш для открытия окна настроек UnigramPlus. Жест по умолчанию для этой функции - NVDA+Control+U.
+* Добавлены чесшкая и румынская локализации.
+* Исправлена проблема с обновлением UnigramPlus для жителей Украины.
 
-###Versiunea 1.7.0
+###Версия = 3.2.3
 
-* A fost adăugată posibilitatea de a urmări activitatea de chat. Această opțiune poate fi activată prin apăsarea ALT+shift+T și rămâne activă până când Unigram este închis sau până la următoarea repornire a NVDA.
-* Tasta rapidă care activează butonul "Mai multe opțiuni" funcționează acum în fereastra de chat vocal și în fereastra de apelare.
+* Добавлена ​​китайская локализация.
+* Обновлены уже имеющиеся локализации, в том числе английский.
+* Исправлены мелкие недостатки.
 
-###Versiunea 1.6.0
+###Версия 3.2.0
 
-* Dacă media atașată mesajului este deschisă cu ajutorul barei de spațiu, după închiderea acesteia, focalizarea se va întoarce la ultimul element care a fost în centrul atenției.
-* Acum te poți întoarce la chat-ul vocal activ nu numai din grupul curent, ci și din orice alt chat.
-* Dacă apeși ALT+shift+C într-o conversație deschisă, vei reveni la conversația vocală în loc să apelezi persoana de contact.
-* În cazul în care un mesaj nu a fost trimis, vei fi notificat de îndată ce vei fi focalizat pe mesajul respectiv.
-* Dacă mesajul focalizat conține un link, vei auzi doar textul linkului în sine, nu întregul mesaj.
-* A fost rezolvată o problemă în care modificările de stare pentru butoane precum Mute/Unmute Mic și Enable/Disable Camera nu erau raportate în apelurile private și chat-urile vocale.
-* Acum, funcția de copiere a mesajelor îți permite să copiezi conținutul elementelor din fereastra de vizualizare rapidă a mesajelor.
+* Удалены такие функции, как "Отслеживание активности в чате" и "Чтение новых сообщений в открытом чате", поскольку мне не удалось заставить их работать должным образом в NVDA 2022.1.
+* Улучшена доступность отключения/включения звука и включения/выключения камеры при звонках. Теперь после нажатия горячей клавиши для обеих функций будет объявлен их статус.
+* Исправлена ошибка, из-за которой клавиша Enter не работала должным образом на некоторых элементах. Теперь вы по-прежнему можете записывать голосовые сообщения, удерживая клавишу Enter на кнопке записи.
+* Теперь вы можете переназначить сочетания клавиш для таких функций, как "Ответить на сообщение" и "Редактировать сообщение". Вы также можете назначить эти функции таким клавишам, как Enter, Backspace или даже стрелкам влево или вправо, и это не будет мешать этим клавишам на других элементах. Обратите внимание, что сначала этим функциям не будут назначены никакие клавиши, но вы сможете назначать их только тогда, когда фокус находится на одном из сообщений чата.
+* Функция "Произнести имя отправителя" теперь должна работать более корректно.
+* Когда вы фокусируетесь на ссылке, содержащейся в сообщении, текст сообщения не будет произнесен первым, но текст ссылки будет произнесен сразу.
+* Сделано много мелких улучшений и исправлено множество ошибок и недочетов.
+* Теперь UnigramPlus должен работать заметно быстрее.
 
-###Versiunea 1.5.1
+###Версия 3.1.0
 
-Această actualizare corectează un număr mare de erori și îmbunătățește performanța add-on-ului.
+* Объявление опроса было улучшено. Имена пользователей, принявших участие в опросах, теперь объявляются в окне результатов. Опросы также предоставят информацию о том, какой вариант был правильным.
+* Добавлена возможность реагировать на сообщения, но только в приватных чатах. Эта функция не будет работать должным образом в группах и каналах. В приватных чатах, нажав NVD+ALT+цифры от 1 до 5, можно установить следующие реакции: 1 - 👍, 2 - 👎, 3 - ❤, 4 - 🔥, 5 - 🥰.
+* Добавлена возможность объявлять информацию о существующих ответах на сообщения. К сожалению, пока нет возможности объявить название доступных реакций.
+* Добавлена горячая клавиша для быстрого копирования данных, необходимых для трансляций.
+* Исправлена проблема с отображением встроенных результатов, появившаяся в последних версиях Unigram.
 
-###Versiunea 1.5.0
+###Версия 3.0.0
 
-Această actualizare adaugă o tastă rapidă care face clic pe butonul "Vizualizare instantanee" într-un mesaj, dacă este inclus în mesaj. În mod implicit, această funcție este activată cu tasta rapidă ALT+Q. După deschiderea unui astfel de articol, accentul se va îndrepta automat către primul element al acestui articol, iar după închidere, accentul se va întoarce la ultimul mesaj vizualizat. De asemenea, am remediat o problemă în care nu toate elementele articolului din fereastra Instant View erau lizibile, chiar dacă acestea conțineau conținut text.
+Предупреждение! UnigramPlus теперь будет поддерживать версии NVDA не старше 21.2.0.
+* Добавлены метки для многих элементов пользовательского интерфейса.
+* Исправлены некоторые ошибки.
 
-###Versiunea 1.1.7
+###Версия 2.9.0
 
-A fost adăugată localizarea în limba turcă.
+* Теперь поле редактирования будет менять свою метку в зависимости от того, отвечаем ли мы на сообщение или редактируем его.
+* Добавлена возможность включить диалог подтверждения удаления сообщений или чатов с помощью горячих клавиш в настройках.
+* Добавлена сербская локализация.
+* Исправлены небольшие проблемы.
+
+###Версия 2.8.0
+
+* Добавлена возможность обновлять дополнение изнутри дополнения. Теперь для того, чтобы проверить наличие обновлений и установить их, достаточно открыть настройки UnigramPlus и нажать соответствующую кнопку. Вы также можете включить автоматическую проверку обновлений при запуске NVDA.
+* Добавлена арабская локализация.
+
+###Версия 2.7.0
+
+* Теперь вы будете уведомлены о том, что сообщение было переадресовано.
+* Улучшена функция копирования сообщений. Теперь, если текст содержит нажимаемую ссылку и фокус находится на этой ссылке, нажатие CTRL+C скопирует ссылку вместо всего текста.
+* Добавлена горячая клавиша для копирования сообщений с сохранением форматирования текста. Эта функция эмулирует активацию соответствующего пункта в меню приложения. Горячая клавиша по умолчанию для этой функции — CTRL+shift+C. Из-за этой функции горячая клавиша для открытия комментариев была изменена на CTRL+ALT+C.
+* Добавлена возможность автоматически объявлять новые сообщения в открытом чате. По умолчанию его можно включить, нажав ALT + L.
+* Добавлены горячие клавиши для быстрого просмотра сообщений чата. Нажмите NVDA+CTRL+цифру соответствующую номеру конкретного сообщения в обратном порядке, то есть если хотите просмотреть последнее сообщение нажмите 1, если хотите просмотреть предыдущее сообщение нажмите 2 и т.д.
+* Теперь нажатие ALT+T даст информацию об активном голосовом чате в текущей группе.
+
+###Версия 2.6.0
+
+* Обеспечена совместимость с NVDA 21.3.
+* Добавлена горячая клавиша для включения выбора сообщений или чатов.
+* Добавлена горячая клавиша для пересылки сообщений.
+* Добавлена ​​горячая клавиша для пометки чата как прочитанного.
+* Улучшена производительность существующих функций.
+
+
+###Версия 2.5.0
+
+* Теперь есть флажок, который, если он установлен, устраняет проблему с записью голосовых сообщений, с которой сталкиваются некоторые пользователи.
+* Добавлена горячая клавиша для ответа на сообщение. Вы можете сделать это, нажав Enter в сообщении, или вы можете переназначить альтернативные горячие клавиши для этой функции на что-то другое.
+* Добавлена горячая клавиша для редактирования сообщений. Комбинация клавиш по умолчанию — ALT+Backspace.
+
+###Версия 2.4.0
+
+* Теперь вы будете слышать имя отправителя при фокусировке на сообщении.
+* При фокусировке на групповом чате, содержащем непрочитанные сообщения, вы будете уведомлены, если в этой группе есть ответы для вас.
+* Производительность функций, добавленных в предыдущем обновлении, также была улучшена.
+
+###Версия 2.3.0
+
+* Улучшена доступность сообщений, содержащих несколько мультимедийных вложений. Раньше к заголовку сообщения, содержащего более одного мультимедийного вложения, можно было получить доступ только с помощью навигации по объектам. Теперь эта подпись будет прочитана сразу после фокусировки на таком сообщении.
+* Улучшена доступность сообщений, содержащих опросы. Теперь при фокусировке на таком сообщении вы услышите количество людей, которые уже проголосовали, а также все варианты ответа с результатом по каждому варианту.
+* Улучшена доступность сообщений, содержащих URL-адреса. Теперь, если у URL есть описание, оно тоже будет прочитано, т.е., например, если в сообщении есть URL для YouTube, имя и описание для этого видео будут прочитаны сразу после самого URL. Кроме того, если URL-адрес длиннее 30 символов, он будет сокращен, чтобы облегчить чтение следующего описания.
+* Улучшена доступность встроенной панели результатов запроса. Для навигации по результатам встроенных запросов используйте следующие комбинации: control+вверх и control+вниз.
+* Добавлена горячая клавиша для открытия комментариев.
+
+###Версия 2.2.0
+
+* Добавлена горячая клавиша для удаления сообщений или чатов только для вас, а также с обеих сторон. Эта функция связана с языком интерфейса Unigram, поэтому может не работать в некоторых локализациях. В настройках можно выбрать тип уведомлений, текст или звук.
+* В настройках добавлена возможность указать, какой язык интерфейса вы используете в Unigram. Это необходимо для корректной работы функций, связанных с определенными локализациями.
+* Добавлена горячая клавиша для открытия профиля текущего чата.
+* Теперь после закрытия чата фокус будет перемещаться на список чатов, а не на кнопку "Открыть меню навигации".
+
+###Версия 2.1.0
+
+* При переключении между папками в списке чатов будет объявлено имя текущей папки.
+* В списке чатов вы услышите название чата и его тип.
+* Улучшена функция перемещения фокуса на список чатов. Теперь должно работать точнее и без задержек.
+* Теперь настройки аддона стали еще более гибкими, ведь в меню настроек NVDA появился раздел с некоторыми опциями UnigramPlus.
+* Добавлена Польская локализация.
+* Множество мелких исправлений и улучшений.
+
+###Версия 2.0.0
+
+* Функция, при которой слово "Просмотрено" не объявляется, а слово "Не просмотрено" объявляется перед чтением содержимого сообщения, теперь работает в испанской, португальской, хорватской, турецкой и персидской локализациях.
+* Улучшена функция объявления индикатора выполнения. Теперь при включении этого режима объявляются не все индикаторы выполнения, а только те, которые находятся в фокусе.
+* Если вы нажмете пробел в сообщении, содержащем незавершенную загрузку файла, вы получите уведомление о том, что загрузка приостановлена.
+* Добавлена Португальская локализация.
+* Исправлены некоторые небольшие проблемы и улучшена производительность.
+
+###Версия 1.9.0
+* Добавлена горячая клавиша, которая переключает уровень объявления индикатора выполнения между такими значениями, как: "Объявить все индикаторы выполнения", "Объявить некоторые индикаторы выполнения", "Объявить все индикаторы выполнения, кроме индикатора выполнения голосового сообщения" и "Не объявлять никаких индикаторов выполнения". Для тех пользователей, у которых в Unigram отключена автоматическая загрузка медиа, уровень объявления индикатора выполнения может быть установлен на "Объявить все индикаторы выполнения, кроме индикатора выполнения голосового сообщения", а для тех, у кого он включен, лучше установить его на "Не объявлять никаких индикаторов выполнения".
+* Добавлены испанская, хорватская и персидская локализации.
+* Исправлены мелкие ошибки предыдущих версий.
+
+###Версия 1.8.0
+
+* Имя и размер файла будут произнесены при наведении курсора на кнопку "Открыть файл" или кнопку "Скачать файл", а при наведении курсора на кнопку воспроизведения аудиофайла вы услышите его название и продолжительность.
+* Добавлена горячая клавиша для перемещения фокуса в поле редактирования. Если фокус уже находится в поле редактирования, то после нажатия горячей клавиши он переместится туда, где был до этого.
+* Функция отслеживания активности в чате теперь включается двойным нажатием ALT + T. Вы можете включить ее или включить временно до следующего закрытия приложения.
+* Добавлена возможность выбора типа уведомления для записи голосовых сообщений. Это делается двойным нажатием горячей клавиши control+d. Там вы можете выбрать между звуком, текстовым уведомлением или вернуться к стандартному поведению записи голосового сообщения.
+
+###Версия 1.7.0
+
+Значительно улучшена функция записи голосовых сообщений. Запись, отправка и отмена записи голосового сообщения сопровождаются характерными звуками. Так же при выполнении этих функций фокус остается на своем месте и не перескакивает ни на кнопку записи, ни на поле ввода сообщения.
+
+###Версия 1.7.0
+
+* Добавлена возможность отслеживать активность в чате. Эту опцию можно включить, нажав ALT+shift+T, и она остается активной до закрытия Unigram или следующего перезапуска NVDA.
+* Горячая клавиша, активирующая кнопку "Другие опции", теперь работает в окне голосового чата и окне звонка.
+
+###Версия 1.6.0
+
+* Если медиа, прикрепленное к сообщению, открыть с помощью пробела, то после его закрытия фокус вернется к последнему элементу, который был в фокусе.
+* Теперь вернуться в активный голосовой чат можно не только из текущей группы, но и из любого другого чата.
+* Нажатие ALT+shift+C в открытом чате вернет вас в голосовой чат вместо звонка контакту.
+* Если сообщение не было отправлено, вы будете уведомлены, как только это сообщение будет сфокусировано.
+* Если сфокусированное сообщение содержит ссылку, вы услышите только текст самой ссылки, а не все сообщение.
+* Исправлена ошибка, из-за которой изменения статуса для таких кнопок, как "Отключить/включить звук микрофона" и "Включить/отключить камеру", не объявлялись в приватных звонках и голосовых чатах.
+* Теперь функция копирования сообщения позволяет копировать содержимое пунктов в окне быстрого просмотра сообщения.
+
+###Версия 1.5.1
+
+Это обновление исправляет огромное количество ошибок и повышает производительность дополнения.
+
+###Версия 1.5.0
+
+Это обновление добавляет горячую клавишу, которая нажимает кнопку "Мгновенный просмотр" в сообщении, если оно содержится в сообщении. По умолчанию эта функция активируется сочетанием клавиш ALT+Q. После открытия такой статьи фокус автоматически перейдет на первый элемент этой статьи, а после закрытия фокус вернется на последнее просмотренное сообщение. Мы также исправили проблему, из-за которой не все элементы статьи в окне мгновенного просмотра были доступны для чтения, даже если они содержали текстовое содержимое.
+
+###Версия 1.1.7
+
+Добавлена Турецкая локализация.
 

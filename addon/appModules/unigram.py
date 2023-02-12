@@ -108,6 +108,7 @@ class Saved_items:
 		if id not in self._items: self._items[id] = {}
 		self._items[id][key] = obj
 
+
 class Title_change_tracking:
 	active = False
 	interval = .5
@@ -127,12 +128,15 @@ class Title_change_tracking:
 	def toggle(saved_items=False):
 		if not Title_change_tracking.active or not saved_items:
 			Title_change_tracking.saved_items = saved_items
-			Timer(Title_change_tracking.interval, Title_change_tracking.tick).start()
 			Title_change_tracking.active = True
+			conf.set("automatically announce activity in chats", True)
+			Timer(Title_change_tracking.interval, Title_change_tracking.tick).start()
 			return True
 		else:
 			Title_change_tracking.active = False
+			conf.set("automatically announce activity in chats", False)
 			return False
+
 
 class Chat_update:
 	active = False
@@ -170,16 +174,21 @@ class Chat_update:
 	def toggle(app=False):
 		if not Chat_update.active or not app:
 			Chat_update.active = True
+			conf.set("automatically announce new messages", True)
 			Chat_update.app = app
 			Timer(Chat_update.interval, Chat_update.tick).start()
 			return True
 		else:
 			Chat_update.active = False
+			conf.set("automatically announce new messages", False)
 			return False
+
 
 class AppModule(appModuleHandler.AppModule):
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
+		if conf.get("automatically announce new messages"): Chat_update.toggle(self)
+		if conf.get("automatically announce activity in chats"): Title_change_tracking.toggle(self)
 		self.app_version = self.productVersion
 		self.saved_items = Saved_items()
 		# assign hotkeys for the function of reading messages by numbering
@@ -226,6 +235,11 @@ class AppModule(appModuleHandler.AppModule):
 	def getElements(self):
 		try: return api.getForegroundObject().lastChild.previous.children
 		except: return []
+
+	def get_settings_panel(self):
+		settings_panel = next((item for item in self.getElements() if item.role in (controlTypes.Role.PANE, controlTypes.Role.LIST) and item.UIAAutomationId in ("ScrollingHost", "List", "") and (item.previous.UIAAutomationId == "DetailHeaderPresenter"  or item.location.width > 320)), None)
+		if not settings_panel: return False
+		return next(( item for item in settings_panel.children if controlTypes.State.FOCUSABLE in item.states), settings_panel.firstChild)
 
 	def is_message_object(self, obj):
 		try:
@@ -331,8 +345,22 @@ class AppModule(appModuleHandler.AppModule):
 			obj.lastChild.setFocus()
 			KeyboardInputGesture.fromName("end").send()
 		except:
-			if obj and not obj.lastChild: message(_("This chat is empty"))
-			else: message(_("No open chat"))
+			if obj and not obj.lastChild:
+				message(_("This chat is empty"))
+				return True
+			branch_list = self.get_branch_list()
+			if branch_list:
+				branch_list.firstChild.setFocus()
+				return
+			profile_panel = self.get_profile_panel()
+			if profile_panel:
+				profile_panel.setFocus()
+				return
+			settings_panel = self.get_settings_panel()
+			if settings_panel:
+				settings_panel.setFocus()
+				return
+			message(_("No open chat"))
 
 	# Move focus to the list of chat folders 
 	@script(description=_("Move focus to list of chat folders"), gesture="kb:ALT+4")
@@ -352,29 +380,44 @@ class AppModule(appModuleHandler.AppModule):
 				else: message(_("Chat folder list not found"))
 			else: message(_("Chat folder list not found"))
 
-	# Move focus to open profile
-	@script(description=_("Move focus to open profile"), gesture="kb:ALT+5")
-	def script_to_open_prifile(self, gesture):
+
+	def get_branch_list(self):
+		tabs = next((item.firstChild for item in self.getElements() if item.role == controlTypes.Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), None)
+		if not tabs: return False
+		branch_list = next((item for item in tabs.children if item.UIAAutomationId == "TopicList"), None)
+		if branch_list: return branch_list
+		else: return False
+
+	@script(description=_("Move focus to the list of group threads"), gesture="kb:ALT+6")
+	def script_move_focus_to_list_threads(self, gesture):
+		branch_list = self.get_branch_list()
+		if branch_list: branch_list.firstChild.setFocus()
+		else: message(_("No list with threads was found"))
+
+	def get_profile_panel(self):
 		list = self.profile_panel_element
 		if not list or not list.location.width:
-			# list = next((item for item in self.getElements() if item.role == controlTypes.Role.LIST and item.UIAAutomationId == "ScrollingHost" and item.firstChild.UIAAutomationId == "Photo"), None)
 			list = next((item for item in self.getElements() if (item.role == controlTypes.Role.LIST and item.UIAAutomationId == "ScrollingHost" and item.firstChild.UIAAutomationId == "Photo") or (item.role == controlTypes.Role.LINK and item.UIAAutomationId == "Photo" and item.next.UIAAutomationId == "Title")), None)
 		if not list:
-			message(_("There is no open profile"))
-			return
+			return False
 		if list.UIAAutomationId == "Photo":
 			# If the profile does not contain any tabs, then the focus is set to the profile photo
-			list.setFocus()
-			return
+			return list
 		self.profile_panel_element = list
 		list2 = list.firstChild
 		for i in range(15):
 			if list2.role == controlTypes.Role.LIST:
 				# Now we find the selected element to set focus on it
-				next((item for item in list2.children if controlTypes.State.SELECTED in item.states), list2.firstChild).setFocus()
-				return True
+				return next((item for item in list2.children if controlTypes.State.SELECTED in item.states), list2.firstChild)
 			else: list2 = list2.next
-		list.firstChild.setFocus()	
+		return list.firstChild
+
+	# Move focus to open profile
+	@script(description=_("Move focus to open profile"), gesture="kb:ALT+5")
+	def script_to_open_prifile(self, gesture):
+		profile_panel = self.get_profile_panel()
+		if profile_panel: profile_panel.setFocus()
+		else: message(_("There is no open profile"))
 
 	# Announces the profile name and status in an open chat
 	@script(description=_("Announce the name and status of an open chat"), gesture="kb:ALT+T")
@@ -447,8 +490,17 @@ class AppModule(appModuleHandler.AppModule):
 		else: message(_("Button not found"))
 
 	# Call answer
-	@script(description=_("Accept call"), gesture="kb:ALT+Y")
+	# @script(description=_("Accept call"), gesture="kb:ALT+Y")
 	def script_answeringCall(self, gesture):
+		desctop = api.getDesktopObject()
+		notification_panel = next((item.firstChild for item in desctop.children if item.role == controlTypes.Role.WINDOW and item.firstChild.PriorityToastView), None)
+		if not notification_panel:
+			message("Панель не знайдено")
+			return
+		button = next((item for item in notification.children if item.UIAAutomationId == "VerbButton"), None)
+		if button: button.doAction()
+		else: message("Кнопку не знайдено")
+		return
 		targetButton = next((item for item in self.getElements() if item.role == controlTypes.Role.BUTTON and item.UIAAutomationId == "Accept" and item.previous.UIAAutomationId == "Discard"), False)
 		if targetButton:
 			lastFocus = api.getFocusObject()
@@ -456,17 +508,16 @@ class AppModule(appModuleHandler.AppModule):
 			lastFocus.setFocus()
 
 	# End a call, decline call, or leave a voice chat
-	@script(description=_("Press \"Decline call\" button  if there is an incoming call, \"End call\" button if a call is in progress or leave voice chat if it is active."), gesture="kb:ALT+N")
+	# @script(description=_("Press \"Decline call\" button  if there is an incoming call, \"End call\" button if a call is in progress or leave voice chat if it is active."), gesture="kb:ALT+N")
 	def script_callCancellation(self, gesture):
 		# The first check concerns the situation when the call is already ongoing
 		# The second check concerns the situation when the user wants to leave the voice chat while in the voice chat window
-		# The third check concerns the situation when an incoming call is received
-		# The fourth check concerns the situation when the user wants to leave the voice chat while in the program window, and not in the voice chat window
-		targetButton = next((item for item in self.getElements()[1:] if (item.UIAAutomationId == "Accept" and item.previous.UIAAutomationId == "Audio") or (item.UIAAutomationId == "Leave" and item.firstChild.name == "\ue711") or (item.UIAAutomationId == "Discard" and item.next.UIAAutomationId == "Accept") or (item.previous.UIAAutomationId == "Audio" and item.firstChild.name == "\ue711")), False)
+		# The fourth check concerns the situation when an incoming call is received
+		targetButton = next((item for item in self.getElements(self)[1:] if (item.UIAAutomationId == "Accept" and item.previous.UIAAutomationId == "Audio") or (item.UIAAutomationId == "Leave" and item.firstChild.name == "\ue711") or (item.previous.UIAAutomationId == "Audio" and item.firstChild.name == "\ue711")), False)
 		if targetButton:
 			lastFocus = api.getFocusObject()
 			message(targetButton.name)
-			self.fixedDoAction(targetButton)
+			self.fixedDoAction(self, targetButton)
 			lastFocus.setFocus()
 
 	# Mute/unmute the microphone
@@ -619,10 +670,18 @@ class AppModule(appModuleHandler.AppModule):
 	@script(description=_("Open current chat profile"), gesture="kb:control+P")
 	def script_openProfile(self, gesture):
 		profile = self.saved_items.get("profile name")
+		if not profile:
+			# If the element was not cached, then we will try to find it in the window
+			profile = next((item for item in self.getElements() if item.role ==
+			               controlTypes.Role.LINK and item.UIAAutomationId == "Profile"), None)
+			if profile:
+				# If we managed to find the element, then we cache it
+				self.saved_items.save("profile name", profile)
 		if profile and profile.location.width != 0:
 			self.isOpenProfile = api.getFocusObject()
 			profile.doAction()
-		else: message(_("No open chat"))
+		else:
+			message(_("No open chat"))
 
 	# Function of recording and sending a voice message
 	@script(gesture="kb:control+R")
@@ -698,10 +757,11 @@ class AppModule(appModuleHandler.AppModule):
 		keywords = keywordsInMessages.get(conf.get("lang"), keywordsInMessages["en"])
 		obj.sender = ""
 		forward = ""
+		header = False
+		admin_label = ""
 		reactions = []
 		# Determine the message was sent or received
 		sender_message = "received" if keywords[3] in obj.name[-80:] else "send" if keywords[2] in obj.name[-80:] else ""
-		# obj.children
 		for item in obj.children:
 			if (item.UIAAutomationId in ("TextBlock", "Message") and item.name.strip() not in obj.name) or item.UIAAutomationId == "RecognizedText":
 				# Processing the message description containing multiple embedded media
@@ -734,6 +794,8 @@ class AppModule(appModuleHandler.AppModule):
 				obj.name = item.name+", "+obj.name.replace(item.name[-5:], "")
 			elif item.role == controlTypes.Role.TOGGLEBUTTON and item.UIAAutomationId != "Recognize" and item.firstChild.UIAAutomationId == "Presenter": reactions.append(item.name)
 			elif item.UIAAutomationId == "ForwardLabel": forward = item
+			elif item.UIAAutomationId == "HeaderLabel" and item.previous.name.startswith("\ue607\xa0\xa0"): header = item
+			elif item.UIAAutomationId == "AdminLabel": admin_label = item.name
 
 		# Checking if a message is a call
 		try:
@@ -751,14 +813,20 @@ class AppModule(appModuleHandler.AppModule):
 
 		# Checking Whether to Add a Message Sender Name
 		profile_name = self.saved_items.get("profile name")
-		if conf.get("saySenderName") in ("sent", "all") and sender_message == "send": obj.sender = _("You")+".\n"
-		elif conf.get("saySenderName") in ("received", "all") and profile_name and obj.firstChild.UIAAutomationId not in ("Photo", "1HeaderLabel") and obj.firstChild.location.left != 0 and obj.firstChild.location.left - obj.location.left < 30: obj.sender = profile_name.firstChild.name+".\n"
+		if conf.get("saySenderName") in ("sent", "all") and sender_message == "send" and not header: obj.sender = _("You")+".\n"
+		elif conf.get("saySenderName") in ("received", "all") and profile_name and obj.firstChild.UIAAutomationId not in ("Photo", "1HeaderLabel") and obj.firstChild.location.left != 0 and obj.firstChild.location.left - obj.location.left < 30 and not header: obj.sender = profile_name.firstChild.name+".\n"
 		
+		obj.name = obj.name.replace("\n. \r\n", "\n")
 		# Check the status of the message, whether it is read and sent
 		# Checking only sent messages
 		if obj.name.endswith(". ."):
 			obj.name = obj.name[:-3]
 			if sender_message == "send": obj.name = _("Not sent")+". " + obj.name
+			else:
+				list_text = obj.name.split("\n")
+				if not conf.get("notify administrators in messages") and admin_label and len(list_text) >1 and list_text[1] == admin_label+". \r":
+					del list_text[1]
+					obj.name = "\n".join(list_text)
 		else:
 			if keywords[0] in obj.name[-40:]:
 				# If the message is read, delete information about it
@@ -912,6 +980,9 @@ class AppModule(appModuleHandler.AppModule):
 			elif obj.name == "Unigram.Entities.StoragePhoto": obj.name = _("Image")
 			elif obj.name == "Unigram.ViewModels.Folders.FilterFlag": obj.name = obj.children[1].name
 			elif obj.name.startswith("chatTheme {"): obj.name = obj.firstChild.name
+			elif obj.name.startswith("forumTopic {\n  info = forumTopicInfo {"):
+				labels = [label.name for label in obj.children if label.UIAAutomationId in ("TitleLabel", "BriefInfo", "TimeLabel") ]
+				obj.name = ". ".join((labels[0], labels[2], labels[1]))
 		elif obj.role == controlTypes.Role.EDITABLETEXT:
 			try:
 				# Determining if this input field is a message input field. If yes, then check if its title needs to be changed
@@ -1106,10 +1177,11 @@ class AppModule(appModuleHandler.AppModule):
 				elif self.isDelete["isCompleteDeletion"]: self.isDelete["message"] = _("Chat deleted on both sides")
 				else: self.isDelete["message"] = _("Chat deleted")
 			if conf.get("audioPlaybackWhenDeleted"): self.isDelete["message"] = "audio"
-			if obj.next and obj.next.role == controlTypes.Role.LISTITEM and obj.next.childCount > 1: self.isDelete["elements"].append(obj.next)
-			if obj.previous and obj.previous.role == controlTypes.Role.LISTITEM and obj.previous.childCount > 1: self.isDelete["elements"].append(obj.previous)
-			if obj.previous and obj.previous.previous and obj.previous.previous.role == controlTypes.Role.LISTITEM and obj.previous.previous.childCount > 1: self.isDelete["elements"].append(obj.previous.previous)
-			if obj.next and obj.next.next and obj.next.next.role == controlTypes.Role.LISTITEM and obj.next.next.childCount > 1: self.isDelete["elements"].append(obj.next.next)
+			if obj.parent.role == controlTypes.Role.LISTITEM: obj = obj.parent
+			if obj.next and obj.next.role == controlTypes.Role.LISTITEM and obj.next.childCount > 1: self.isDelete["elements"].append(obj.next.firstChild)
+			if obj.previous and obj.previous.role == controlTypes.Role.LISTITEM and obj.previous.childCount > 1: self.isDelete["elements"].append(obj.previous.firstChild)
+			if obj.previous and obj.previous.previous and obj.previous.previous.role == controlTypes.Role.LISTITEM and obj.previous.previous.childCount > 1: self.isDelete["elements"].append(obj.previous.previous.firstChild)
+			if obj.next and obj.next.next and obj.next.next.role == controlTypes.Role.LISTITEM and obj.next.next.childCount > 1: self.isDelete["elements"].append(obj.next.next.firstChild)
 			self.keys["Applications"].send()
 			return True
 		else: return False
@@ -1241,4 +1313,5 @@ class AppModule(appModuleHandler.AppModule):
 	def script_toggle_live_chat(self, gesture):
 		if Chat_update.toggle(self): message(_("Automatic reading of messages is enabled"))
 		else: message(_("Automatic reading of new messages is disabled"))
-
+	
+	

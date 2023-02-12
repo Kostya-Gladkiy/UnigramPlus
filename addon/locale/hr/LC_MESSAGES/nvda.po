@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'UnigramPlus' '4.2.0'\n"
+"Project-Id-Version: 'UnigramPlus' '4.6.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2022-10-07 22:22+0300\n"
-"PO-Revision-Date: 2022-10-08 19:19+0200\n"
+"POT-Creation-Date: 2023-02-12 12:42+0200\n"
+"PO-Revision-Date: 2023-02-12 14:56+0100\n"
 "Last-Translator: \n"
 "Language-Team: Tarik Hadžirović <tarik.hadzirovic.official@gmail.com>\n"
 "Language: hr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Bookmarks: -1,116,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #: addon\appModules\cnf.py:12
@@ -116,7 +116,7 @@ msgstr "Uredi"
 msgid "Photo"
 msgstr "Fotografija"
 
-#: addon\appModules\data.py:49 addon\appModules\unigram.py:909
+#: addon\appModules\data.py:49 addon\appModules\unigram.py:981
 msgid "Image"
 msgstr "Slika"
 
@@ -164,177 +164,171 @@ msgstr "Izbriši"
 msgid "Close"
 msgstr "Zatvori"
 
-#: addon\appModules\unigram.py:37 addon\appModules\unigram.py:514
+#: addon\appModules\unigram.py:37 addon\appModules\unigram.py:569
 msgid "Camera on"
 msgstr "Kamera uključena"
 
-#: addon\appModules\unigram.py:37 addon\appModules\unigram.py:515
+#: addon\appModules\unigram.py:37 addon\appModules\unigram.py:570
 msgid "Camera off"
 msgstr "Kamera isključena"
 
-#: addon\appModules\unigram.py:52
+#: addon\appModules\unigram.py:54
 msgid "Announce the original message, the message that was replied to"
 msgstr "Najavljuje izvornu poruku, onu na koju je odgovoreno"
 
-#: addon\appModules\unigram.py:57
+#: addon\appModules\unigram.py:59
 msgid "Edit message"
 msgstr "Uređuje poruku"
 
-#: addon\appModules\unigram.py:61
+#: addon\appModules\unigram.py:63
 msgid "Reply to message"
 msgstr "Odgovara na poruku"
 
-#. Функція прискорення голосового повідомлення
-#: addon\appModules\unigram.py:234
+#. The function of changing the playback speed of a voice message
+#: addon\appModules\unigram.py:251
 msgid "Increase/decrease the playback speed of voice messages"
 msgstr "Povećava/smanjuje reprodukciju glasovnih poruka"
 
-#: addon\appModules\unigram.py:242 addon\appModules\unigram.py:254
-#: addon\appModules\unigram.py:264 addon\appModules\unigram.py:1162
+#: addon\appModules\unigram.py:259 addon\appModules\unigram.py:271
+#: addon\appModules\unigram.py:281 addon\appModules\unigram.py:1238
 msgid "Nothing is playing right now"
 msgstr "Trenutno se ništa ne reproducira"
 
-#. Функція закриття аудіопрогравача
-#: addon\appModules\unigram.py:245
+#. Audio player close function
+#: addon\appModules\unigram.py:262
 msgid "Close audio player"
 msgstr "Zatvara audioreproduktor"
 
-#: addon\appModules\unigram.py:253
+#: addon\appModules\unigram.py:270
 msgid "The audio player has been closed"
 msgstr "Audioreproduktor je zatvoren"
 
-#. Функція призупинення голосового повідомлення
-#: addon\appModules\unigram.py:257
+#. Voice message pause function
+#: addon\appModules\unigram.py:274
 msgid "Play/pause the voice message currently playing"
 msgstr "Reproducira/pauzira glasovnu poruku koja se trenutno reproducira"
 
-#. Перейти до списку чатів
-#: addon\appModules\unigram.py:292
+#. Go to chat list
+#: addon\appModules\unigram.py:309
 msgid "Move focus to chat list"
 msgstr "Premješta fokus na popis razgovora"
 
-#: addon\appModules\unigram.py:308
+#: addon\appModules\unigram.py:325
 msgid "Chat list not found"
 msgstr "Popis razgovora nije pronađen"
 
-#: addon\appModules\unigram.py:316
+#: addon\appModules\unigram.py:333
 msgid "Chat list is empty"
 msgstr "Popis razgovora je prazan"
 
-#. Перейти до останнього повідомлення в чаті
-#: addon\appModules\unigram.py:319
+#. Go to the last message in the chat
+#: addon\appModules\unigram.py:336
 msgid "Move focus to the last message in an open chat"
 msgstr "Premješta fokus na posljednju poruku u otvorenom razgovoru"
 
-#: addon\appModules\unigram.py:331 addon\appModules\unigram.py:406
-#: addon\appModules\unigram.py:828 addon\appModules\unigram.py:841
+#: addon\appModules\unigram.py:349 addon\appModules\unigram.py:452
+#: addon\appModules\unigram.py:900 addon\appModules\unigram.py:913
 msgid "This chat is empty"
 msgstr "Ovaj razgovor je prazan"
 
-#: addon\appModules\unigram.py:332 addon\appModules\unigram.py:397
-#: addon\appModules\unigram.py:405 addon\appModules\unigram.py:622
-#: addon\appModules\unigram.py:824
+#: addon\appModules\unigram.py:363 addon\appModules\unigram.py:443
+#: addon\appModules\unigram.py:451 addon\appModules\unigram.py:685
+#: addon\appModules\unigram.py:896
 msgid "No open chat"
 msgstr "Nema otvorenog razgovora"
 
-#. Перенести фокус до списку папок чатів
-#: addon\appModules\unigram.py:335
+#. Move focus to the list of chat folders
+#: addon\appModules\unigram.py:366
 msgid "Move focus to list of chat folders"
 msgstr "Premješta fokus na popis mapa razgovora"
 
-#: addon\appModules\unigram.py:341 addon\appModules\unigram.py:349
-#: addon\appModules\unigram.py:350
+#: addon\appModules\unigram.py:372 addon\appModules\unigram.py:380
+#: addon\appModules\unigram.py:381
 msgid "Chat folder list not found"
 msgstr "Popis mapa razgovora nije pronađen"
 
-#. Перенести фокус до відкритого профілю
-#: addon\appModules\unigram.py:353
+#: addon\appModules\unigram.py:391
+msgid "Move focus to the list of group threads"
+msgstr "Premješta fokus na popis niti grupe"
+
+#: addon\appModules\unigram.py:395
+msgid "No list with threads was found"
+msgstr "Nije pronađen popis s nitima"
+
+#. Move focus to open profile
+#: addon\appModules\unigram.py:416
 msgid "Move focus to open profile"
 msgstr "Premješta fokus na otvoreni profil"
 
-#: addon\appModules\unigram.py:360
+#: addon\appModules\unigram.py:420
 msgid "There is no open profile"
 msgstr "Nema otvorenog profila"
 
-#. Озвучує назву і статус профілю, в відкритому чаті
-#: addon\appModules\unigram.py:377
+#. Announces the profile name and status in an open chat
+#: addon\appModules\unigram.py:423
 msgid "Announce the name and status of an open chat"
 msgstr "Najavljuje naziv i status otvorenog razgovora"
 
-#: addon\appModules\unigram.py:380
+#: addon\appModules\unigram.py:426
 msgid "Chat activity tracking is enabled"
 msgstr "Praćenje aktivnosti razgovora je omogućeno"
 
-#: addon\appModules\unigram.py:381
+#: addon\appModules\unigram.py:427
 msgid "Chat activity tracking is disabled"
 msgstr "Praćenje aktivnosti razgovora je onemogućeno"
 
-#. Перейти до мітки "непрочитані повідомлення"
-#: addon\appModules\unigram.py:400
+#. Go to "unread messages" label
+#: addon\appModules\unigram.py:446
 msgid "Move focus to 'unread messages' label"
 msgstr "Premješta fokus na oznaku \"nepročitane poruke\""
 
-#: addon\appModules\unigram.py:415
+#: addon\appModules\unigram.py:461
 msgid "There are no unread messages in this chat"
 msgstr "Nema nepročitanih poruka u ovom razgovoru"
 
-#. Зателефонувати якщо це контакт, або увійти до голосового чату, якщо це група
-#: addon\appModules\unigram.py:418
+#. Call if it's a contact, or enter a voice chat if it's a group
+#: addon\appModules\unigram.py:464
 msgid "Call if it's a contact, or enter a voice chat if it's a group"
 msgstr ""
 "Poziva ako je u pitanju kontakt ili se pridružuje glasovnom razgovoru ako je "
 "u pitanju grupa"
 
-#: addon\appModules\unigram.py:423
+#: addon\appModules\unigram.py:469
 msgid "Call unavailable"
 msgstr "Poziv nedostupan"
 
-#. Зателефонувати по відеозв'язку якщо це контакт
-#: addon\appModules\unigram.py:426
+#. Make a video call if it's a contact
+#: addon\appModules\unigram.py:472
 msgid "Press the video call button"
 msgstr "Pritišće gumb za videopoziv"
 
-#: addon\appModules\unigram.py:430
+#: addon\appModules\unigram.py:476
 msgid "Video call not available"
 msgstr "Videopoziv nedostupan"
 
-#. Функція відкриття миттєвого перегляду статті
-#: addon\appModules\unigram.py:433
+#. Function to open instant view
+#: addon\appModules\unigram.py:479
 msgid "Press \"Instant view\" button, if it is included in the current message"
 msgstr "Pritišće gumb \"Trenutni prikaz\", ako je uključen u trenutnu poruku"
 
-#: addon\appModules\unigram.py:444 addon\appModules\unigram.py:579
-#: addon\appModules\unigram.py:586 addon\appModules\unigram.py:594
-#: addon\appModules\unigram.py:1234
+#: addon\appModules\unigram.py:490 addon\appModules\unigram.py:634
+#: addon\appModules\unigram.py:641 addon\appModules\unigram.py:649
+#: addon\appModules\unigram.py:1310
 msgid "Button not found"
 msgstr "Gumb nije pronađen"
 
-#. Відповідь на дзвінок
-#: addon\appModules\unigram.py:447
-msgid "Accept call"
-msgstr "Prihvaća poziv"
-
-#. Завершити дзвінок, відхилити дзвінок, або покинути голосовий чат
-#: addon\appModules\unigram.py:456
-msgid ""
-"Press \"Decline call\" button  if there is an incoming call, \"End call\" "
-"button if a call is in progress or leave voice chat if it is active."
-msgstr ""
-"Pritišće \"Odbij poziv\" ako postoji dolazni poziv, gumb \"Završi poziv\" "
-"ako je poziv u tijeku ili napušta glasovni razgovor ako je aktivan."
-
-#. Вимкнення/увімкнення мікрофону
-#: addon\appModules\unigram.py:470
+#. Mute/unmute the microphone
+#: addon\appModules\unigram.py:525
 msgid "Press \"Mute/unmute microphone\" button"
 msgstr "Pritišće gumb \"Uključi/isključi mikrofon\""
 
-#. Вимкнення/увімкнення камери
-#: addon\appModules\unigram.py:496
+#. Turn off/on the camera
+#: addon\appModules\unigram.py:551
 msgid "Press \"Enable/disable camera\" button"
 msgstr "Pritišće gumb \"Omogući/onemogući kameru\""
 
-#. Скопіювати поточне повідомлення в буфер обміну
-#: addon\appModules\unigram.py:524
+#. Copy current message to clipboard
+#: addon\appModules\unigram.py:579
 msgid ""
 "Copy the message if it contains text. If the focus is on a link, the link "
 "will be copied"
@@ -342,34 +336,34 @@ msgstr ""
 "Kopira poruku ako sadrži tekst. Ako je fokus na poveznici, poveznica će se "
 "kopirati"
 
-#: addon\appModules\unigram.py:530
+#: addon\appModules\unigram.py:585
 msgid "Message copied"
 msgstr "Poruka kopirana"
 
-#: addon\appModules\unigram.py:533
+#: addon\appModules\unigram.py:588
 msgid "Link copied"
 msgstr "Poveznica kopirana"
 
-#: addon\appModules\unigram.py:538 addon\appModules\unigram.py:552
+#: addon\appModules\unigram.py:593 addon\appModules\unigram.py:607
 msgid "This message does not contain text"
 msgstr "Ova poruka ne sadrži tekst"
 
-#. Скопіювати повідомлення через контекстне меню
-#: addon\appModules\unigram.py:541
+#. Copy message via context menu
+#: addon\appModules\unigram.py:596
 msgid "Copy messages with formatting preserved"
 msgstr "Kopira poruku sa očuvanim oblikovanjem"
 
-#. Показати текст повідомлення в спливаючому вікні
-#: addon\appModules\unigram.py:546
+#. Show message text in popup window
+#: addon\appModules\unigram.py:601
 msgid "Show message text in popup window"
 msgstr "Prikazuje poruku u skočnom prozoru"
 
-#: addon\appModules\unigram.py:551
+#: addon\appModules\unigram.py:606
 msgid "message text"
 msgstr "tekst poruke"
 
-#. Перенести фокус в поле вводу повідомлення. Якщо фокус вже знаходиться в цьому полі, тоді перенести його на останній елемент який був в фокусі перед цим полем
-#: addon\appModules\unigram.py:555
+#. Move the focus to the message input field. If the focus is already in this field, then move it to the last element that had focus before this field
+#: addon\appModules\unigram.py:610
 msgid ""
 "Move the focus to the edit field. If the focus is already in the edit field, "
 "then after pressing the hotkey, it will move to where it was before"
@@ -378,46 +372,46 @@ msgstr ""
 "uređivanje, tada će se nakon pritiskanja tipke prečaca pomaknuti na mjesto "
 "gdje je bio prije"
 
-#: addon\appModules\unigram.py:572
+#: addon\appModules\unigram.py:627
 msgid "Message input field not found"
 msgstr "Polje za unos poruke nije pronađeno"
 
-#. Натиснути кнопку "Вкласти медіа"
-#: addon\appModules\unigram.py:575
+#. Press the "Attach media" button
+#: addon\appModules\unigram.py:630
 msgid "Press \"Attach file\" button"
 msgstr "Pritišće gumb \"Priloži datoteku\""
 
-#. Натиснути кнопку "Нова розмова"
-#: addon\appModules\unigram.py:582
+#. Press the "New Conversation" button
+#: addon\appModules\unigram.py:637
 #, fuzzy
 #| msgid "Press \"New chat\" button"
 msgid "Press \"New conversation\" button"
 msgstr "Pritišće gumb \"Novi razgovor\""
 
-#. Відкриває меню навігації
-#: addon\appModules\unigram.py:597
+#. Open navigation menu
+#: addon\appModules\unigram.py:652
 msgid "Open navigation menu"
 msgstr "Otvara navigacijski izbornik"
 
-#: addon\appModules\unigram.py:602
+#: addon\appModules\unigram.py:657
 msgid "Navigation menu not available"
 msgstr "Navigacijski izbornik je nedostupan"
 
-#. Функція відкриття коментарів
-#: addon\appModules\unigram.py:605
+#. Function to open comments
+#: addon\appModules\unigram.py:660
 msgid "Open comments"
 msgstr "Otvara komentare"
 
-#: addon\appModules\unigram.py:613
+#: addon\appModules\unigram.py:668
 msgid "Button to open comments not found"
 msgstr "Gumb za otvaranje komentara nije pronađen"
 
-#. Функція відкриття профілю поточного чату
-#: addon\appModules\unigram.py:616
+#. Function to open the profile of the current chat
+#: addon\appModules\unigram.py:671
 msgid "Open current chat profile"
 msgstr "Otvara profil trenutnog razgovora"
 
-#: addon\appModules\unigram.py:638
+#: addon\appModules\unigram.py:701
 #, fuzzy
 #| msgid ""
 #| "It will not be possible to record a voice message until the edit field is "
@@ -427,242 +421,242 @@ msgid ""
 msgstr ""
 "Neće biti moguće snimiti glasovnu poruku dok polje za uređivanje nije prazno"
 
-#: addon\appModules\unigram.py:645
+#: addon\appModules\unigram.py:708
 msgid "Record sent"
 msgstr "Snimka poslana"
 
-#: addon\appModules\unigram.py:650
+#: addon\appModules\unigram.py:713
 msgid "Video"
 msgstr "Videozapis"
 
-#: addon\appModules\unigram.py:651
+#: addon\appModules\unigram.py:714
 msgid "Audio"
 msgstr "Zvuk"
 
-#: addon\appModules\unigram.py:668
+#: addon\appModules\unigram.py:731
 msgid "Voice recording notifications set to text"
 msgstr "Obavijest o snimanju glasa postavljena na tekst"
 
-#: addon\appModules\unigram.py:671
+#: addon\appModules\unigram.py:734
 msgid "Voice recording notifications set to sounds"
 msgstr "Obavijest o snimanju glasa postavljena na zvuk"
 
-#: addon\appModules\unigram.py:674
+#: addon\appModules\unigram.py:737
 msgid "Recording voice messages has standard behavior"
 msgstr "Snimanje glasovnih poruka ima standardno ponašanje"
 
-#: addon\appModules\unigram.py:684
+#: addon\appModules\unigram.py:747
 msgid "Reply canceled"
 msgstr "Odgovaranje otkazano"
 
-#: addon\appModules\unigram.py:685
+#: addon\appModules\unigram.py:748
 msgid "Edit canceled"
 msgstr "Uređivanje otkazano"
 
-#: addon\appModules\unigram.py:688
+#: addon\appModules\unigram.py:751
 msgid "Recording canceled"
 msgstr "Snimanje otkazano"
 
-#: addon\appModules\unigram.py:715
+#: addon\appModules\unigram.py:779
 msgid "Answer options"
 msgstr "Mogućnosti odgovora"
 
-#: addon\appModules\unigram.py:751
+#: addon\appModules\unigram.py:817
 msgid "You"
 msgstr "Vi"
 
-#: addon\appModules\unigram.py:758
+#: addon\appModules\unigram.py:825
 msgid "Not sent"
 msgstr "Nije poslano"
 
-#: addon\appModules\unigram.py:774
+#: addon\appModules\unigram.py:846
 msgid "Reactions"
 msgstr "Reakcije"
 
-#. Перевіряємо чи повідомлення є виділеним
-#: addon\appModules\unigram.py:781
+#. Check if a message is selected
+#: addon\appModules\unigram.py:853
 msgid "Selected"
 msgstr "Odabrano"
 
-#: addon\appModules\unigram.py:790
+#: addon\appModules\unigram.py:862
 msgid "Premium"
 msgstr "Premium"
 
-#: addon\appModules\unigram.py:790
+#: addon\appModules\unigram.py:862
 msgid "Verified"
 msgstr "Potvrđeno"
 
-#: addon\appModules\unigram.py:804
+#: addon\appModules\unigram.py:876
 msgid "there are replies for you"
 msgstr "ima odgovora za vas"
 
-#. Змінити рівень озвучення індикаторів виконання
-#: addon\appModules\unigram.py:809
+#. Change the announce level of progress bars
+#: addon\appModules\unigram.py:881
 msgid "Toggle progress bar announcements"
 msgstr "Uključuje/isključuje obavijesti trake napretka"
 
-#: addon\appModules\unigram.py:813
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:144
+#: addon\appModules\unigram.py:885
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:178
 msgid "Announce all progress bars"
 msgstr "Najavi sve trake napretka"
 
-#: addon\appModules\unigram.py:816
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:145
+#: addon\appModules\unigram.py:888
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:179
 msgid "Do not announce any progress bars"
 msgstr "Ne najavljuj trake napretka"
 
-#: addon\appModules\unigram.py:917
+#: addon\appModules\unigram.py:992
 msgid "Editing"
 msgstr "Uredi"
 
-#: addon\appModules\unigram.py:918
+#: addon\appModules\unigram.py:993
 msgid "Reply"
 msgstr "Odgovor"
 
-#: addon\appModules\unigram.py:927
+#: addon\appModules\unigram.py:1002
 msgid "Duration"
 msgstr "Trajanje"
 
-#: addon\appModules\unigram.py:928
+#: addon\appModules\unigram.py:1003
 msgid "Size"
 msgstr "Veličina"
 
-#: addon\appModules\unigram.py:940
+#: addon\appModules\unigram.py:1015
 msgid "Enable video"
 msgstr "Omogući video"
 
-#: addon\appModules\unigram.py:941
+#: addon\appModules\unigram.py:1016
 msgid "Disable video"
 msgstr "Onemogući video"
 
-#: addon\appModules\unigram.py:1022
+#: addon\appModules\unigram.py:1097
 msgid "Delete a message or chat"
 msgstr "Briše poruku ili razgovor"
 
-#: addon\appModules\unigram.py:1025
+#: addon\appModules\unigram.py:1100
 msgid "Delete message or chat from both sides"
 msgstr "Briše poruku ili razgovor za obje strane"
 
-#: addon\appModules\unigram.py:1043
+#: addon\appModules\unigram.py:1118
 msgid "Inline results not found"
 msgstr "Inline rezultati nisu pronađeni"
 
-#: addon\appModules\unigram.py:1054
+#: addon\appModules\unigram.py:1129
 msgid "Inline results not detected"
 msgstr "Inline rezultati nisu otkriveni"
 
-#: addon\appModules\unigram.py:1057
+#: addon\appModules\unigram.py:1132
 msgid "Switch to selection mode"
 msgstr "Prebacuje na način odabira"
 
-#: addon\appModules\unigram.py:1060
+#: addon\appModules\unigram.py:1135
 msgid "Forward message"
 msgstr "Prosljeđuje poruku"
 
-#: addon\appModules\unigram.py:1063
+#: addon\appModules\unigram.py:1138
 msgid "Mark a chat as read"
 msgstr "Označava razgovor kao pročitan"
 
-#: addon\appModules\unigram.py:1066
+#: addon\appModules\unigram.py:1141
 msgid "Save file as..."
 msgstr "Spremi datoteku kao..."
 
-#: addon\appModules\unigram.py:1069
+#: addon\appModules\unigram.py:1144
 msgid "Pin a message or chat"
 msgstr "Prikvačuje poruku ili razgovor"
 
-#: addon\appModules\unigram.py:1095
+#: addon\appModules\unigram.py:1170
 msgid "Message deleted on both sides"
 msgstr "Poruka izbrisana za obje strane"
 
-#: addon\appModules\unigram.py:1096
+#: addon\appModules\unigram.py:1171
 msgid "Message deleted"
 msgstr "Poruka izbrisana"
 
-#: addon\appModules\unigram.py:1099
+#: addon\appModules\unigram.py:1174
 msgid "You left the group"
 msgstr "Napustili ste grupu"
 
-#: addon\appModules\unigram.py:1100
+#: addon\appModules\unigram.py:1175
 msgid "You left the channel"
 msgstr "Napustili ste kanal"
 
-#: addon\appModules\unigram.py:1101
+#: addon\appModules\unigram.py:1176
 msgid "Bot removed and blocked"
 msgstr "Bot uklonjen i blokiran"
 
-#: addon\appModules\unigram.py:1102
+#: addon\appModules\unigram.py:1177
 msgid "Bot removed"
 msgstr "Bot uklonjen"
 
-#: addon\appModules\unigram.py:1103
+#: addon\appModules\unigram.py:1178
 msgid "Chat deleted on both sides"
 msgstr "Razgovor izbrisan za obje strane"
 
-#: addon\appModules\unigram.py:1104
+#: addon\appModules\unigram.py:1179
 msgid "Chat deleted"
 msgstr "Razgovor izbrisan"
 
-#. Функція копіювання даних для проведення трансляції
-#: addon\appModules\unigram.py:1139
+#. Data copy function for broadcasting
+#: addon\appModules\unigram.py:1215
 msgid "Copy data for broadcasting to the clipboard"
 msgstr "Kopira podatke za emitiranje u međuspremnik"
 
-#: addon\appModules\unigram.py:1143 addon\appModules\unigram.py:1147
+#: addon\appModules\unigram.py:1219 addon\appModules\unigram.py:1223
 msgid "Broadcast window not found"
 msgstr "Prozor emitiranja nije pronađen"
 
-#: addon\appModules\unigram.py:1153
+#: addon\appModules\unigram.py:1229
 msgid "%url and %key copied to clipboard"
 msgstr "%url i %key kopirano u međuspremnik"
 
-#: addon\appModules\unigram.py:1169
+#: addon\appModules\unigram.py:1245
 msgid "Fast forward a voice message"
 msgstr "Premotava glasovnu poruku unaprijed"
 
-#: addon\appModules\unigram.py:1173
+#: addon\appModules\unigram.py:1249
 msgid "Rewind voice message"
 msgstr "Premotava glasovnu poruku unatrag"
 
-#: addon\appModules\unigram.py:1196
+#: addon\appModules\unigram.py:1272
 msgid "Right answer"
 msgstr "Točan odgovor"
 
-#. Перетворення голосових повідомлень в текст
-#: addon\appModules\unigram.py:1219
+#. Converting voice messages to text
+#: addon\appModules\unigram.py:1295
 msgid "Convert voice message to text"
 msgstr "Pretvara glasovnu poruku u tekst"
 
-#: addon\appModules\unigram.py:1226
+#: addon\appModules\unigram.py:1302
 msgid "This voice message is already converted to text"
 msgstr "Ova glasovna poruka već je pretvorena u tekst"
 
-#: addon\appModules\unigram.py:1227
+#: addon\appModules\unigram.py:1303
 msgid "Converting this voice message is already in process"
 msgstr "Pretvaranje ove glasovne poruke već je u tijeku"
 
-#: addon\appModules\unigram.py:1237
+#: addon\appModules\unigram.py:1313
 msgid "Enable automatic reading of new messages in the current chat"
 msgstr "Omogućava automatsko čitanje novih poruka u trenutnom razgovoru"
 
-#: addon\appModules\unigram.py:1239
+#: addon\appModules\unigram.py:1315
 msgid "Automatic reading of messages is enabled"
 msgstr "Automatsko čitanje poruka je omogućeno"
 
-#: addon\appModules\unigram.py:1240
+#: addon\appModules\unigram.py:1316
 msgid "Automatic reading of new messages is disabled"
 msgstr "Automatsko čitanje novih poruka je onemogućeno"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:22
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:25
 msgid "No updates available"
 msgstr "Nema dostupnih ažuriranja"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:23
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:48
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:26
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:51
 msgid "UnigramPlus update"
 msgstr "UnigramPlus ažuriranje"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:49
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:52
 msgid ""
 "A new version of the add-on is available. Do you want to update UnigramPlus "
 "to version %version?"
@@ -670,143 +664,163 @@ msgstr ""
 "Nova verzija dodatka je dostupna. Želite li ažurirati UnigramPlus na verziju "
 "%version?"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:59
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:62
 msgid "Yes, update"
 msgstr "Da, ažuriraj"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:60
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:63
 msgid "No, not now"
 msgstr "Ne, ne sada"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:75
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:78
 msgid "Download in progress"
 msgstr "Preuzimanje u tijeku"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:101
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:104
 msgid "Changes in this version:"
 msgstr "Promjene u ovoj verziji:"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:102
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:105
 msgid "No update information"
 msgstr "Nema informacija o ažuriranju"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:127
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:130
 msgid "Open UnigramPlus settings window"
 msgstr "Otvara prozor postavki UnigramPlusa"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:134
+#. Call answer
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:135
+msgid "Accept call"
+msgstr "Prihvaća poziv"
+
+#. End a call, decline call, or leave a voice chat
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:144
+msgid ""
+"Press \"Decline call\" button  if there is an incoming call, \"End call\" "
+"button if a call is in progress or leave voice chat if it is active."
+msgstr ""
+"Pritišće \"Odbij poziv\" ako postoji dolazni poziv, gumb \"Završi poziv\" "
+"ako je poziv u tijeku ili napušta glasovni razgovor ako je aktivan."
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:168
 msgid "Before chat name"
 msgstr "Prije naziva razgovora"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:135
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:169
 msgid "After chat name"
 msgstr "Poslije naziva razgovora"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:136
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:170
 msgid "Do not speak chat type"
 msgstr "Ne izgovaraj vrstu razgovora"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:139
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:173
 msgid "Revert to standard voice message recording behavior"
 msgstr "Vraća se na standardno ponašanje snimanja glasovnih poruka"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:140
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:174
 msgid "Text notification"
 msgstr "Tekstualna obavijest"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:141
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:175
 msgid "sound notification"
 msgstr "zvučna obavijest"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:149
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:183
 msgid "Do not say at all"
 msgstr "Uopće ne izgovaraj"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:150
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:184
 msgid "Only in sent messages"
 msgstr "Samo u poslanim porukama"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:151
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:185
 msgid "Only in received messages"
 msgstr "Samo u primljenim porukama"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:152
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:186
 msgid "In all messages"
 msgstr "U svim porukama"
 
-#. Вибір мови інтерфейсу
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:157
+#. Selecting an interface language
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:191
 msgid "Interface language in Unigram:"
 msgstr "Jezik sučelja u Unigramu:"
 
-#. Режим озвучення типу чату
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:160
+#. Chat type announce mode
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:194
 msgid "Speak the type of chat in the chat list:"
 msgstr "Izgovaraj vrstu razgovora na popisu razgovora:"
 
-#. Озвучення відправника повідомлень
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:163
+#. Message sender announcement
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:197
 msgid "Say the sender's name in:"
 msgstr "Izgovori ime pošiljatelja u:"
 
-#. Повідомляти про те що повідомлення непрочитане перед вмістом повідомлення
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:166
+#. Report not seen before message content
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:200
 msgid "Speak \"Not Seen\" before reading contents of a message"
 msgstr "Izgovaraj \"Nije viđeno\" prije čitanja sadržaja poruke"
 
-#. Озвучувати назву активної папки при перемиканні між ними
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:169
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:204
+msgid ""
+"Announce the phrases \"Administrator\" and \"Owner\" on messages in "
+"communities"
+msgstr "Najavi fraze \"Administrator\" i \"Vlasnik\" na porukama u zajednicama"
+
+#. Speak active folder name when switching between them
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:208
 msgid "Speak folder names when switching between them"
 msgstr "Izgovaraj nazive mapa prilikom prebacivanja između njih"
 
-#. Тип оповіщення при видаленні
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:172
+#. Delete alert type
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:211
 msgid "Notify about deleting a message and chat with a sound"
 msgstr "Obavijesti o brisanju poruke ili razgovora zvukom"
 
-#. Відображати вікно підтвердження при видаленні
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:175
+#. Show confirmation window when deleting
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:214
 msgid "Display confirmation dialog when deleting messages and chats"
 msgstr ""
 "Prikaži dijaloški okvir za potvrdu prilikom brisanja poruka i razgovora"
 
-#. Тип оповіщення при записі голосових повідомлень
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:178
+#. Type of notification when recording voice messages
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:217
 msgid "Set voice message recording notification method as:"
 msgstr "Postavite metodu obavijesti o snimanju glasovne poruke kao:"
 
-#. ОЗвучення індикаторів виконання
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:181
+#. Progress bar announce
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:220
 msgid "Select the progress bar notification level:"
 msgstr "Odaberite razinu obavijesti trake napretka:"
 
-#. Обробляти повідомлення які містять посилання
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:184
+#. Processing messages containing links
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:223
 msgid "Read description of URLs attached to messages"
 msgstr "Čitaj opis URL-ova priloženih porukama"
 
-#. Озвучувати повний опис посилань, які ведуть на ютуб
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:187
+#. Announcement of the full description of YouTube links
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:226
 msgid "Read full video description in YouTube URLs"
 msgstr "Čitaj puni opis videozapisa u YouTube URL-ovima"
 
-#. Повідомляти якщо в групі є відповіді для вас
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:190
+#. Report if the group has replies for you
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:229
 msgid "Announce if there is a reply in the group"
 msgstr "Najavi ako ima odgovora u grupi"
 
-#. Повідомляти інформацію про преміум акаунти і підтверджені акаунти
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:193
+#. Report information about premium and verified accounts
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:232
 msgid "Announce premium and confirmed accounts"
 msgstr "Najavi premium i potvrđene račune"
 
-#. Повідомляти про наявність реакцій в повідомленні
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:196
+#. Report if the message contains a reaction
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:235
 msgid "Announce if the message contains a reaction"
 msgstr "Najavi ako poruka ima reakciju"
 
-#. Виправити роботу перемикачів в деяких користувачів
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:199
+#. Fix toggle buttons for some users
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:238
 msgid ""
 "Check this box if the voice message recording function or the voice message "
 "playback speed change function does not work properly"
@@ -814,13 +828,13 @@ msgstr ""
 "Označite ovaj okvir ako funkcija snimanja glasovne poruke ili funkcija "
 "promjene brzine reprodukcije glasovne poruke ne radi ispravno"
 
-#. Перевірка оновлення при старті програми
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:202
+#. Checking for Updates on NVDA Startup
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:241
 msgid "Check for UnigramPlus updates on NVDA startup"
 msgstr "Provjeri ima li ažuriranja UnigramPlusa pri pokretanju NVDA"
 
-#. Кнопка для провірки оновлень
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:205
+#. Button to check for updates
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:244
 msgid "Check for &updates"
 msgstr "Provjeri ima li &ažuriranja"
 

@@ -2,6 +2,7 @@
 import globalPluginHandler
 import addonHandler
 from scriptHandler import script
+import api
 import gui
 from gui import SettingsPanel, guiHelper, nvdaControls
 import wx
@@ -14,6 +15,8 @@ import languageHandler
 import queueHandler
 import threading, time, queue, random
 from appModules.cnf import conf, listLanguages, lang
+from appModules.unigram import AppModule
+from ui import message
 
 path_to_server = "http://46.254.107.124/addons/unigramplus/"
 
@@ -128,6 +131,30 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_open_settings_dialog(self, gesture, arg = False):
 		wx.CallAfter(gui.mainFrame._popupSettingsDialog, gui.settingsDialogs.NVDASettingsDialog, UnigramPlusSettings)
 
+	# Call answer
+	@script(description=_("Accept call"), gesture="kb:ALT+Y")
+	def script_answeringCall(self, gesture):
+		desctop = api.getDesktopObject()
+		notification = next((item.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
+		if not notification: return
+		button = next((item for item in notification.children if item.UIAAutomationId == "VerbButton"), None)
+		if button: button.doAction()
+
+	# End a call, decline call, or leave a voice chat
+	@script(description=_("Press \"Decline call\" button  if there is an incoming call, \"End call\" button if a call is in progress or leave voice chat if it is active."), gesture="kb:ALT+N")
+	def script_callCancellation(self, gesture):
+		desctop = api.getDesktopObject()
+		notification = next((item.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
+		button = None
+		if notification:
+			button = next((item.next for item in notification.children if item.UIAAutomationId == "VerbButton"), None)
+		if button:
+			button.doAction()
+			return
+		AppModule.script_callCancellation(AppModule, gesture)
+
+
+
 class UnigramPlusSettings(gui.SettingsPanel):
 	title = "UnigramPlus"
 	listVoiceTypeAfterChatName = {
@@ -165,6 +192,11 @@ class UnigramPlusSettings(gui.SettingsPanel):
 		# Report not seen before message content
 		self.unreadBeforeMessageContent = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Speak \"Not Seen\" before reading contents of a message")))
 		self.unreadBeforeMessageContent.SetValue(conf.get("unreadBeforeMessageContent"))
+		# Announce the phrases "Administrator" and "Owner" on messages in communities
+		self.notify_administrators_in_messages = settingsSizerHelper.addItem(wx.CheckBox(
+			self, label=_('Announce the phrases "Administrator" and "Owner" on messages in communities')))
+		self.notify_administrators_in_messages.SetValue(
+			conf.get("notify administrators in messages"))
 		# Speak active folder name when switching between them
 		self.voiceFolderNames = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Speak folder names when switching between them")))
 		self.voiceFolderNames.SetValue(conf.get("voiceFolderNames"))
@@ -213,6 +245,8 @@ class UnigramPlusSettings(gui.SettingsPanel):
 		conf.set("voiceTypeAfterChatName", self.get_key(self.listVoiceTypeAfterChatName, self.voiceTypeAfterChatName.GetStringSelection()))
 		conf.set("saySenderName", self.get_key(self.listSaySenderName, self.saySenderName.GetStringSelection()))
 		conf.set("unreadBeforeMessageContent", self.unreadBeforeMessageContent.IsChecked())
+		conf.set("notify administrators in messages",
+		         self.notify_administrators_in_messages.IsChecked())
 		conf.set("voiceFolderNames", self.voiceFolderNames.IsChecked())
 		conf.set("confirmation_at_deletion", self.confirmation_at_deletion.IsChecked())
 		conf.set("audioPlaybackWhenDeleted", self.audioPlaybackWhenDeleted.IsChecked())

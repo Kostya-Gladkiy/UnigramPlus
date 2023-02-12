@@ -47,6 +47,9 @@ spec = (
 	"saySenderName = string(default=none)",
 	"voice_the_presence_of_a_reaction = boolean(default=True)",
 	"report premium accounts = boolean(default=True)",
+	"automatically announce new messages = boolean(default=False)",
+	"automatically announce activity in chats = boolean(default=False)",
+	"notify administrators in messages = boolean(default=True)",
 )
 
 class cnf:

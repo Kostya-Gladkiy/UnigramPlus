@@ -1,0 +1,11 @@
+* Odağı grup  konu listesine taşımak için klavye kısayolu eklendi Varsayılan olarak bu işlev ALT+6 kombinasyonuna atanır. Açmak istediğimiz grupta enter tuşuna sık sık bastığınızda konu listesinin görünmeyebileceğini ve bu gruba odaklanmanın tekrar ayarlanması ve enter tuşuna basılması gerektiğini lütfen unutmayın. Kural olarak, ikinci basıştan sonra konuların bir listesi görüntülenir ve bundan sonra odağı o listeye taşıyacak bir tuş kombinasyonuna basabiliriz.
+* Şimdi ALT+2 kombinasyonu odağı yalnızca mesaj içeren listeye değil, aynı zamanda açık profile, grup konularının açık listesine veya ayarlarla birlikte açık bir bölüme de taşır.
+* Artık UnigramPlus ayarlarında, gruplardaki mesajlarda "Yönetici" ve "Sahip" ifadelerinin telaffuzunu devre dışı bırakabilirsiniz.
+* Çağrıları kabul etme ve reddetme kombinasyonları artık düzgün çalışıyor.
+* Artık NVDA'YI yeniden başlattığınızda yeni mesajlar ve sohbet etkinlikleri için otomatik  seslendəirme özelliği kapatılmayacak, ancak siz kendiniz kapatana kadar çalışacaktır.
+* Bazı arayüz öğelerinin görüntülenmesi iyileştirildi.
+
+Bu eklentinin geliştiricisini destekleme isteğiniz ve en önemlisi fırsatınız varsa, aşağıdaki ayrıntıları kullanarak bunu yapabilirsiniz:
+* PeyPal: gladkiy.kostya@gmail.com.
+* Ukrayna bağış sistemi: https://unigramplus.diaka.ua/donate.
+* Kart numarası: 5169360009004502 (Gladkiy Constantine).

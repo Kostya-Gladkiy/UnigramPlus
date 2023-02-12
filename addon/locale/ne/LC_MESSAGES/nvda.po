@@ -1,0 +1,805 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UnigramPlus\n"
+"POT-Creation-Date: 2022-10-07 22:33+0300\n"
+"PO-Revision-Date: 2022-10-20 12:30+0300\n"
+"Last-Translator: samrat kc <samrat.kc7@gmail.com>\n"
+"Language-Team: \n"
+"Language: ne_NP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: appModules\n"
+"X-Poedit-SearchPath-1: GlobalPlugins\n"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:22
+msgid "No updates available"
+msgstr "कुनै अद्यावधिक उपलब्ध छैन"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:23 GlobalPlugins/UnigramPlus/__init__.py:48
+msgid "UnigramPlus update"
+msgstr "युनिग्राम प्लस  अद्यावधिक"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:49
+msgid ""
+"A new version of the add-on is available. Do you want to update UnigramPlus to version "
+"%version?"
+msgstr ""
+"यस औजारको नयाँ संस्करण उपलब्ध छ। के तपाइँ युनिग्राम प्लस लाई संस्करण %version मा अद्यावधिक गर्न चाहनुहुन्छ?"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:59
+msgid "Yes, update"
+msgstr "हुन्छ, अद्यावधिक गर्छु ।"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:60
+msgid "No, not now"
+msgstr "अहिले होइन"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:75
+msgid "Download in progress"
+msgstr "डाउन्लोड भैरहेकोछ"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:101
+msgid "Changes in this version:"
+msgstr "यस संस्करणका परिवर्तनहरू:"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:102
+msgid "No update information"
+msgstr "अद्यावधिक संवन्दमा कुनैजानकारि छैन"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:127
+msgid "Open UnigramPlus settings window"
+msgstr "युनिग्राम प्लसको सेटिङ् खोल्नुहोस ।"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:134
+msgid "Before chat name"
+msgstr "च्याटको नाम भन्दा अगाडि"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:135
+msgid "After chat name"
+msgstr "च्याटको नाम भन्दा पछाडि"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:136
+msgid "Do not speak chat type"
+msgstr "च्याट प्रकार नबोल्ने "
+
+#: GlobalPlugins/UnigramPlus/__init__.py:139
+msgid "Revert to standard voice message recording behavior"
+msgstr "मानक आवाज सन्देश रेकर्डिङ व्यवहारमा नैफर्कनुहोस्"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:140
+msgid "Text notification"
+msgstr "पाठ सूचना"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:141
+msgid "sound notification"
+msgstr "ध्वनि सूचना"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:144 appModules/unigram.py:813
+msgid "Announce all progress bars"
+msgstr "सबै प्रगति पट्टीहरू पढ्नुहोस "
+
+#: GlobalPlugins/UnigramPlus/__init__.py:145 appModules/unigram.py:816
+msgid "Do not announce any progress bars"
+msgstr "कुनै पनि प्रगति पट्टी नपढ्नुहोस ।"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:149
+msgid "Do not say at all"
+msgstr "कुनैपनि नबोल्ने"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:150
+msgid "Only in sent messages"
+msgstr "पठाइएको सन्देशहरूमा मात्र"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:151
+msgid "Only in received messages"
+msgstr "प्राप्त सन्देशहरूमा मात्र"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:152
+msgid "In all messages"
+msgstr "सबै सन्देशहरूमा"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:157
+msgid "Interface language in Unigram:"
+msgstr "युनिग्राम देखिने भाषा:"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:160
+msgid "Speak the type of chat in the chat list:"
+msgstr "च्याट सूचीमा कुराकानीको प्रकार बोल्नुहोस्:"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:163
+msgid "Say the sender's name in:"
+msgstr "यसमा प्रेषकको नाम भन्नुहोस्:"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:166
+msgid "Speak \"Not Seen\" before reading contents of a message"
+msgstr "सन्देश पढ्नु अघि \"हेरिएको छैन\" उच्चारण गर्नुहोस"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:169
+msgid "Speak folder names when switching between them"
+msgstr "फोल्डरहरू परिवर्तन गर्दा तिनिहरूको नाम बोल्ने"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:172
+msgid "Notify about deleting a message and chat with a sound"
+msgstr "शन्देश तथा कुराकानि मेटाइएको जानकारि बोलेर तथा ध्वनि मार्फत गराउँनुहोस ।"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:175
+msgid "Display confirmation dialog when deleting messages and chats"
+msgstr "सन्देशहरू र कुराकानिहरू मेटाउँदा पुष्टिकरण संवाद प्रदर्शन गर्नुहोस्"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:178
+msgid "Set voice message recording notification method as:"
+msgstr "आवाज सन्देश रेकर्डिङ सूचना विधि यस रूपमा सेट गर्नुहोस्:"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:181
+msgid "Select the progress bar notification level:"
+msgstr "प्रगति पट्टी सूचना स्तर चयन गर्नुहोस्:"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:184
+msgid "Read description of URLs attached to messages"
+msgstr "सन्देशहरूमा संलग्न URL को विवरण पढ्नुहोस्"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:187
+msgid "Read full video description in YouTube URLs"
+msgstr "YouTube URL मा रहेको पूरा भिडियो विवरण पढ्नुहोस्"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:190
+msgid "Announce if there is a reply in the group"
+msgstr "यदि समुह मा पठाइएको शन्देशमा कुनै जवाफ आएकोछ भने पढ्नुहोस"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:193
+msgid "Announce premium and confirmed accounts"
+msgstr "प्रिमियम र पुष्टि भएका खाताहरू घोषणा गर्नुहोस्"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:196
+msgid "Announce if the message contains a reaction"
+msgstr "यदि कुनै सन्देशमा प्रतिक्रिया छ भने घोषणा गर्नुहोस्"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:199
+msgid ""
+"Check this box if the voice message recording function or the voice message playback speed "
+"change function does not work properly"
+msgstr ""
+"यदि भ्वाइस सन्देश रेकर्डिङ प्रकार्य वा आवाज सन्देश प्लेब्याक गति परिवर्तन प्रकार्यले ठीकसँग काम गर्दैन भने यो "
+"बाकसलाई जाँच गर्नुहोस्"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:202
+msgid "Check for UnigramPlus updates on NVDA startup"
+msgstr "NVDA सुरु हुँदा UnigramPlus अद्यावधिक उपलब्ध भए नभएको जाँच गर्नुहोस्"
+
+#: GlobalPlugins/UnigramPlus/__init__.py:205
+msgid "Check for &updates"
+msgstr "अद्यावधिक उपलब्ध भए नभएको जाँच गर्नुहोस्"
+
+#: appModules/cnf.py:12
+msgid "Arabic"
+msgstr "अरबी"
+
+#: appModules/cnf.py:13
+msgid "Czech"
+msgstr "चेक"
+
+#: appModules/cnf.py:14
+msgid "English"
+msgstr "अंग्रेजी"
+
+#: appModules/cnf.py:15
+msgid "French"
+msgstr "फ्रान्सेली"
+
+#: appModules/cnf.py:16
+msgid "Finnish"
+msgstr "फिनिस"
+
+#: appModules/cnf.py:17
+msgid "Slovak"
+msgstr "स्लोभाक"
+
+#: appModules/cnf.py:18
+msgid "Norwegian"
+msgstr "नर्वेजियन"
+
+#: appModules/cnf.py:19
+msgid "German"
+msgstr "जर्मन"
+
+#: appModules/cnf.py:20
+msgid "Italian"
+msgstr "इटालियन"
+
+#: appModules/cnf.py:21
+msgid "Persian"
+msgstr "फारसी"
+
+#: appModules/cnf.py:22
+msgid "Polish"
+msgstr "पोलिश"
+
+#: appModules/cnf.py:23
+msgid "Portuguese"
+msgstr "पोर्चुगिज"
+
+#: appModules/cnf.py:24
+msgid "Russian"
+msgstr "रुसी"
+
+#: appModules/cnf.py:25
+msgid "Spanish"
+msgstr "स्पेनिस"
+
+#: appModules/cnf.py:26
+msgid "Turkish"
+msgstr "टर्की"
+
+#: appModules/cnf.py:27
+msgid "Ukrainian"
+msgstr "युक्रेनी"
+
+#: appModules/cnf.py:28
+msgid "Croatian"
+msgstr "क्रोएसियाली"
+
+#: appModules/cnf.py:29
+msgid "Serbian"
+msgstr "सर्बियाई"
+
+#: appModules/cnf.py:30
+msgid "Chinese (Traditional)"
+msgstr "चिनियाँ (परम्परागत)"
+
+#: appModules/data.py:44
+msgid "Back"
+msgstr "पछाडि फर्कनुहोस"
+
+#: appModules/data.py:45
+msgid "Menu"
+msgstr "मेनु"
+
+#: appModules/data.py:46
+msgid "Attach"
+msgstr "संलग्न गर्नुहोस्"
+
+#: appModules/data.py:47
+msgid "Edit"
+msgstr "सम्पादन गर्नुहोस्"
+
+#: appModules/data.py:48
+msgid "Photo"
+msgstr "फोटो"
+
+#: appModules/data.py:49 appModules/unigram.py:909
+msgid "Image"
+msgstr "तस्विर"
+
+#: appModules/data.py:50
+msgid "Invite link"
+msgstr "लिङ्क द्वारा आमन्त्रित गर्नुहोस्"
+
+#: appModules/data.py:51
+msgid "Choose time"
+msgstr "समय छान्नुहोस्"
+
+#: appModules/data.py:52
+msgid "Title field"
+msgstr "शीर्षक क्षेत्र"
+
+#: appModules/data.py:56
+msgid "Go to next reaction"
+msgstr "अर्को प्रतिक्रियामा जानुहोस्"
+
+#: appModules/data.py:57
+msgid "Insert emojis"
+msgstr "इमोजि राख्नुहोस"
+
+#: appModules/data.py:58
+msgid "Done"
+msgstr "सकियो"
+
+#: appModules/data.py:59
+msgid "Next"
+msgstr "अर्को"
+
+#: appModules/data.py:60
+msgid "Merge files"
+msgstr "फाइलहरू गाब्नुहोस"
+
+#: appModules/data.py:61
+msgid "Search"
+msgstr "खोज्नुहोस"
+
+#: appModules/data.py:62
+msgid "Delete"
+msgstr "मेटाउनुहोस"
+
+#: appModules/data.py:63
+msgid "Close"
+msgstr "बन्द गर्नुहोस्"
+
+#: appModules/unigram.py:37 appModules/unigram.py:514
+msgid "Camera on"
+msgstr "क्यामेरा खोलियो ।"
+
+#: appModules/unigram.py:37 appModules/unigram.py:515
+msgid "Camera off"
+msgstr "क्यामेरा बन्द बयो ।"
+
+#: appModules/unigram.py:52
+msgid "Announce the original message, the message that was replied to"
+msgstr "कुन् शन्देशमा जबाफ प्राप्त भएकोहो, त्यो पनि पढ्नुहोस ।"
+
+#: appModules/unigram.py:57
+msgid "Edit message"
+msgstr "सन्देश सम्पादन गर्नुहोस्"
+
+#: appModules/unigram.py:61
+msgid "Reply to message"
+msgstr "सन्देशको जवाफ दिनुहोस्"
+
+#: appModules/unigram.py:234
+msgid "Increase/decrease the playback speed of voice messages"
+msgstr "आवाज शन्देशहरूको बज्ने गति बढाउनुहोस्/घटाउनुहोस्"
+
+#: appModules/unigram.py:242 appModules/unigram.py:254 appModules/unigram.py:264
+#: appModules/unigram.py:1162
+msgid "Nothing is playing right now"
+msgstr "हाल केहि पनि बजिरहेको छैन"
+
+#: appModules/unigram.py:245
+msgid "Close audio player"
+msgstr "अडियो प्लेयर बन्द गर्नुहोस्"
+
+#: appModules/unigram.py:253
+msgid "The audio player has been closed"
+msgstr "अडियो प्लेयर बन्द गरिएको छ"
+
+#: appModules/unigram.py:257
+msgid "Play/pause the voice message currently playing"
+msgstr "हाल चलिरहेको आवाज सन्देश बजाउँनुहोस/रोक्नुहोस"
+
+#: appModules/unigram.py:292
+msgid "Move focus to chat list"
+msgstr "फोकस लाई च्याट सूचीमा लैजानुहोस"
+
+#: appModules/unigram.py:308
+msgid "Chat list not found"
+msgstr "च्याट सूची फेला परेन"
+
+#: appModules/unigram.py:316
+msgid "Chat list is empty"
+msgstr "च्याट सूची खाली छ"
+
+#: appModules/unigram.py:319
+msgid "Move focus to the last message in an open chat"
+msgstr "हाल चलिरहेको च्याटमा फोकसलाई लैजानुहोस"
+
+#: appModules/unigram.py:331 appModules/unigram.py:406 appModules/unigram.py:828
+#: appModules/unigram.py:841
+msgid "This chat is empty"
+msgstr "यो च्याट खाली छ"
+
+#: appModules/unigram.py:332 appModules/unigram.py:397 appModules/unigram.py:405
+#: appModules/unigram.py:622 appModules/unigram.py:824
+msgid "No open chat"
+msgstr "कुनै च्याट खोलिएको छैन"
+
+#: appModules/unigram.py:335
+msgid "Move focus to list of chat folders"
+msgstr "फोकस लाई च्याट फोल्डरहरूको सूचीमा सार्नुहोस्"
+
+#: appModules/unigram.py:341 appModules/unigram.py:349 appModules/unigram.py:350
+msgid "Chat folder list not found"
+msgstr "च्याट फोल्डर सूची फेला परेन"
+
+#: appModules/unigram.py:353
+msgid "Move focus to open profile"
+msgstr "हाल खोलिएको च्याट प्रोफाइलमा फोकस सार्नुहोस ।"
+
+#: appModules/unigram.py:360
+msgid "There is no open profile"
+msgstr "हाल कुनै प्रोफाइल खोलिएको छैन"
+
+#: appModules/unigram.py:377
+msgid "Announce the name and status of an open chat"
+msgstr "हाल खुला रहेको च्याटको नाम र स्थिति घोषणा गर्नुहोस्"
+
+#: appModules/unigram.py:380
+msgid "Chat activity tracking is enabled"
+msgstr "च्याट गतिविधिको निरिक्षण सक्षम गरिएको छ"
+
+#: appModules/unigram.py:381
+msgid "Chat activity tracking is disabled"
+msgstr "च्याट गतिविधिको निरिक्षण असक्षम गरिएको छ"
+
+#: appModules/unigram.py:400
+msgid "Move focus to 'unread messages' label"
+msgstr "'नपढिएका सन्देशहरू' लेबलमा फोकस सार्नुहोस्"
+
+#: appModules/unigram.py:415
+msgid "There are no unread messages in this chat"
+msgstr "यस च्याटमा कुनै नपढिएका सन्देशहरू छैनन्"
+
+#: appModules/unigram.py:418
+msgid "Call if it's a contact, or enter a voice chat if it's a group"
+msgstr "यदि ब्यक्तिलाई  हो भने कल गर्नुहोस्, यदि समूह हो भने भ्वाइस च्याट मा जाँनुहोस"
+
+#: appModules/unigram.py:423
+msgid "Call unavailable"
+msgstr "कल अनुपलब्ध"
+
+#: appModules/unigram.py:426
+msgid "Press the video call button"
+msgstr "भिडियो कल बटनमा थिच्नुहोस"
+
+#: appModules/unigram.py:430
+msgid "Video call not available"
+msgstr "भिडियो कल उपलब्ध छैन"
+
+#: appModules/unigram.py:433
+msgid "Press \"Instant view\" button, if it is included in the current message"
+msgstr "यदि हालको सन्देशमा तत्काल हेर्ने विकल्प समावेश छभने, \"तत्काल हेर्ने\" बटन थिच्नुहोस्"
+
+#: appModules/unigram.py:444 appModules/unigram.py:579 appModules/unigram.py:586
+#: appModules/unigram.py:594 appModules/unigram.py:1234
+msgid "Button not found"
+msgstr "बटन फेला परेन"
+
+#: appModules/unigram.py:447
+msgid "Accept call"
+msgstr "कल स्वीकार गर्नुहोस्"
+
+#: appModules/unigram.py:456
+msgid ""
+"Press \"Decline call\" button  if there is an incoming call, \"End call\" button if a call "
+"is in progress or leave voice chat if it is active."
+msgstr ""
+"यदि आगमन कल हो भने \"कल अस्वीकार गर्नुहोस्\" बटन थिच्नुहोस्, यदि कल चलिरहेको छ भने \"कल अन्त्य गर्नुहोस्\" "
+"बटन थिच्नुहोस् वा यदि भ्वाइस च्याट चलिरहेको छ भने, छोड्नुहोस् बटनमा थिच्नुहोस।"
+
+#: appModules/unigram.py:470
+msgid "Press \"Mute/unmute microphone\" button"
+msgstr "\"म्युट/अनम्युट माइक्रोफोन\" बटन थिच्नुहोस्"
+
+#: appModules/unigram.py:496
+msgid "Press \"Enable/disable camera\" button"
+msgstr "\"क्यामेरा सक्षम/असक्षम गर्नुहोस्\" बटन थिच्नुहोस्"
+
+#: appModules/unigram.py:524
+msgid ""
+"Copy the message if it contains text. If the focus is on a link, the link will be copied"
+msgstr ""
+"यदि यदि सन्देश लिखितहो भने सन्देश प्रतिलिपि गर्नुहोस्। यदि फोकस लिङ्कमा छ भने, लिङ्क प्रतिलिपि गरिनेछ"
+
+#: appModules/unigram.py:530
+msgid "Message copied"
+msgstr "सन्देश प्रतिलिपि गरियो"
+
+#: appModules/unigram.py:533
+msgid "Link copied"
+msgstr "लिङ्क प्रतिलिपि गरियो"
+
+#: appModules/unigram.py:538 appModules/unigram.py:552
+msgid "This message does not contain text"
+msgstr "यो लिखित सन्देश होईन"
+
+#: appModules/unigram.py:541
+msgid "Copy messages with formatting preserved"
+msgstr "ढाँचा सुरक्षित गरी सन्देशहरू प्रतिलिपि गर्नुहोस्"
+
+#: appModules/unigram.py:546
+msgid "Show message text in popup window"
+msgstr "पपअप विन्डोमा लिखित शन्देश देखाउनुहोस्"
+
+#: appModules/unigram.py:551
+msgid "message text"
+msgstr "सन्देश को अक्षर"
+
+#: appModules/unigram.py:555
+msgid ""
+"Move the focus to the edit field. If the focus is already in the edit field, then after "
+"pressing the hotkey, it will move to where it was before"
+msgstr ""
+"सम्पादन बाकसमा फोकस सार्नुहोस्। यदि फोकस पहिले नै सम्पादन बाकसमा छ भने, हटकी थिचेपछि, यो पहिलेकै "
+"स्थानमा सर्नेछ।"
+
+#: appModules/unigram.py:572
+msgid "Message input field not found"
+msgstr "सन्देश लेखन बाकस फेला परेन"
+
+#: appModules/unigram.py:575
+msgid "Press \"Attach file\" button"
+msgstr "\"फाइल संलग्न गर्नुहोस्\" बटन थिच्नुहोस्"
+
+#: appModules/unigram.py:582
+msgid "Press \"New conversation\" button"
+msgstr "\"नयाँ कुराकानी\" बटन थिच्नुहोस्"
+
+#: appModules/unigram.py:597
+msgid "Open navigation menu"
+msgstr "नेभिगेसन मेनु खोल्नुहोस्"
+
+#: appModules/unigram.py:602
+msgid "Navigation menu not available"
+msgstr "नेभिगेसन मेनु उपलब्ध छैन"
+
+#: appModules/unigram.py:605
+msgid "Open comments"
+msgstr "टिप्पणीहरू खोल्नुहोस्"
+
+#: appModules/unigram.py:613
+msgid "Button to open comments not found"
+msgstr "टिप्पणीहरू खोल्ने बटन फेला परेन"
+
+#: appModules/unigram.py:616
+msgid "Open current chat profile"
+msgstr "हाल च्याट गरिरहेको प्रोफाइल खोल्नुहोस्"
+
+#: appModules/unigram.py:638
+msgid "Recording a voice message will not be available until the edit field is empty"
+msgstr "सम्पादन बाकस खाली नभएसम्म आवाज सन्देश रेकर्डिङ सुविधा उपलब्ध हुनेछैन"
+
+#: appModules/unigram.py:645
+msgid "Record sent"
+msgstr "रेकर्ड पठाइयो"
+
+#: appModules/unigram.py:650
+msgid "Video"
+msgstr "भिडियो"
+
+#: appModules/unigram.py:651
+msgid "Audio"
+msgstr "अडियो"
+
+#: appModules/unigram.py:668
+msgid "Voice recording notifications set to text"
+msgstr "आवाज रेकर्डिङ को सूचनाहरू लिखित रुपमा दिने गरि सेट गरियो"
+
+#: appModules/unigram.py:671
+msgid "Voice recording notifications set to sounds"
+msgstr "आवाज रेकर्डिङ सूचनाहरू ध्वनिद्वारा प्राप्त हुँने गरि सेट गरियो"
+
+#: appModules/unigram.py:674
+msgid "Recording voice messages has standard behavior"
+msgstr "आवाज सन्देशहरू मानक व्यवहार मा नै रेकर्ड हुँनेछ"
+
+#: appModules/unigram.py:684
+msgid "Reply canceled"
+msgstr "जवाफ रद्द गरियो"
+
+#: appModules/unigram.py:685
+msgid "Edit canceled"
+msgstr "सम्पादन रद्द गरियो"
+
+#: appModules/unigram.py:688
+msgid "Recording canceled"
+msgstr "रेकर्डिङ रद्द गरियो"
+
+#: appModules/unigram.py:715
+msgid "Answer options"
+msgstr "उत्तर का विकल्पहरू"
+
+#: appModules/unigram.py:751
+msgid "You"
+msgstr "तपाईं"
+
+#: appModules/unigram.py:758
+msgid "Not sent"
+msgstr "पठाइएको छैन"
+
+#: appModules/unigram.py:774
+msgid "Reactions"
+msgstr "प्रतिक्रियाहरू"
+
+#: appModules/unigram.py:781
+msgid "Selected"
+msgstr "चयन गरियो"
+
+#: appModules/unigram.py:790
+msgid "Premium"
+msgstr "प्रिमियम"
+
+#: appModules/unigram.py:790
+msgid "Verified"
+msgstr "पारमाणिक"
+
+#: appModules/unigram.py:804
+msgid "there are replies for you"
+msgstr "तपाईंको लागि जवाफहरू प्राप्त भएका छन्"
+
+#: appModules/unigram.py:809
+msgid "Toggle progress bar announcements"
+msgstr "प्रगति पट्टी घोषणा परिवर्तन गर्नुहोस्"
+
+#: appModules/unigram.py:917
+msgid "Editing"
+msgstr "सम्पादन गर्दै"
+
+#: appModules/unigram.py:918
+msgid "Reply"
+msgstr "जवाफ दिनुहोस्"
+
+#: appModules/unigram.py:927
+msgid "Duration"
+msgstr "अवधि"
+
+#: appModules/unigram.py:928
+msgid "Size"
+msgstr "साइज"
+
+#: appModules/unigram.py:940
+msgid "Enable video"
+msgstr "भिडियो सक्षम गर्नुहोस्"
+
+#: appModules/unigram.py:941
+msgid "Disable video"
+msgstr "भिडियो असक्षम गर्नुहोस्"
+
+#: appModules/unigram.py:1022
+msgid "Delete a message or chat"
+msgstr "सन्देश वा कुराकानि मेटाउनुहोस्"
+
+#: appModules/unigram.py:1025
+msgid "Delete message or chat from both sides"
+msgstr "दुबै तर्फबाट सन्देश वा कुराकानि मेटाउनुहोस्"
+
+#: appModules/unigram.py:1043
+msgid "Inline results not found"
+msgstr "इनलाइन परिणाम फेला परेन"
+
+#: appModules/unigram.py:1054
+msgid "Inline results not detected"
+msgstr "इनलाइन परिणामहरू पत्ता लागेन"
+
+#: appModules/unigram.py:1057
+msgid "Switch to selection mode"
+msgstr "चयन मोडमा जाँनुहोस्"
+
+#: appModules/unigram.py:1060
+msgid "Forward message"
+msgstr "सन्देश फर्वार्ड गर्नुहोस्"
+
+#: appModules/unigram.py:1063
+msgid "Mark a chat as read"
+msgstr "च्याटलाई पढिएको भनी चिन्ह लगाउनुहोस्"
+
+#: appModules/unigram.py:1066
+msgid "Save file as..."
+msgstr "यस रूपमा फाइल बचत गर्नुहोस्..."
+
+#: appModules/unigram.py:1069
+msgid "Pin a message or chat"
+msgstr "सन्देश वा च्याट पिन गर्नुहोस्"
+
+#: appModules/unigram.py:1095
+msgid "Message deleted on both sides"
+msgstr "दुबै तर्फबाट सन्देश मेटाइयो"
+
+#: appModules/unigram.py:1096
+msgid "Message deleted"
+msgstr "सन्देश मेटाइयो"
+
+#: appModules/unigram.py:1099
+msgid "You left the group"
+msgstr "तपाईंले समूह छोड्नुभयो"
+
+#: appModules/unigram.py:1100
+msgid "You left the channel"
+msgstr "तपाईंले च्यानल छोड्नुभयो"
+
+#: appModules/unigram.py:1101
+msgid "Bot removed and blocked"
+msgstr "बट हटाइयो र रोक लगाइयो"
+
+#: appModules/unigram.py:1102
+msgid "Bot removed"
+msgstr "बट हटाइयो"
+
+#: appModules/unigram.py:1103
+msgid "Chat deleted on both sides"
+msgstr "दुवै पक्षबाट कुराकानि मेटाइयो"
+
+#: appModules/unigram.py:1104
+msgid "Chat deleted"
+msgstr "कुराकानि मेटाइयो"
+
+#: appModules/unigram.py:1139
+msgid "Copy data for broadcasting to the clipboard"
+msgstr "क्लिपबोर्डमा प्रसारणको लागि डेटा प्रतिलिपि गर्नुहोस्"
+
+#: appModules/unigram.py:1143 appModules/unigram.py:1147
+msgid "Broadcast window not found"
+msgstr "प्रसारण विन्डो फेला परेन"
+
+#: appModules/unigram.py:1153
+msgid "%url and %key copied to clipboard"
+msgstr "%url र % कुञ्जी क्लिपबोर्डमा प्रतिलिपि गरियो"
+
+#: appModules/unigram.py:1169
+msgid "Fast forward a voice message"
+msgstr "आवाज सन्देशलाइ फर्वार्ड गर्नुहोस"
+
+#: appModules/unigram.py:1173
+msgid "Rewind voice message"
+msgstr "आवाज सन्देश रिवाइन्ड गर्नुहोस्"
+
+#: appModules/unigram.py:1196
+msgid "Right answer"
+msgstr "उत्तर लेख्नुहोस"
+
+#: appModules/unigram.py:1219
+msgid "Convert voice message to text"
+msgstr "आवाज सन्देशलाई लेख्य रुपमा रूपान्तरण गर्नुहोस्"
+
+#: appModules/unigram.py:1226
+msgid "This voice message is already converted to text"
+msgstr "यो आवाज सन्देश पहिले नै लेख्य रुपमा रूपान्तरण गरिएको छ"
+
+#: appModules/unigram.py:1227
+msgid "Converting this voice message is already in process"
+msgstr "यो आवाज सन्देश रुपान्त्रण प्रकृया पहिलेदेखिनै चलिरहेकोछ"
+
+#: appModules/unigram.py:1237
+msgid "Enable automatic reading of new messages in the current chat"
+msgstr "हाल चलिरहेको च्याटमा नयाँ सन्देशहरूको स्वचालित पठन सक्षम गर्नुहोस्"
+
+#: appModules/unigram.py:1239
+msgid "Automatic reading of messages is enabled"
+msgstr "सन्देशहरूको स्वचालित पठन सक्षम भयो"
+
+#: appModules/unigram.py:1240
+msgid "Automatic reading of new messages is disabled"
+msgstr "नयाँ सन्देशहरूको स्वचालित पठन अशक्षम भयो"
+
+#~ msgid "Announce some progress bars"
+#~ msgstr "Озвучувати деякі індикатори виконання"
+
+#, fuzzy
+#~| msgid "Croatian"
+#~ msgid "Croata"
+#~ msgstr "Хорватська"
+
+#, fuzzy
+#~| msgid "Italian"
+#~ msgid "Italiano"
+#~ msgstr "Італійська"
+
+#, fuzzy
+#~| msgid "Portuguese"
+#~ msgid "Portugués"
+#~ msgstr "Португальська"
+
+#, fuzzy
+#~| msgid "Ukrainian"
+#~ msgid "Ucraniano"
+#~ msgstr "Українська"
+
+#, fuzzy
+#~| msgid "Accept call"
+#~ msgid "&Aceptar"
+#~ msgstr "Відповісти на дзвінок"
+
+#~ msgid "Press \"More Options\" button in an open chat, voice chat, or call window"
+#~ msgstr ""
+#~ "Натиснути кнопку \"Більше опцій\" у відкритому чаті, голосовому чаті, або у вікні дзвінка"
+
+#~ msgid "Announce all progress bars except voice message playback progress bar"
+#~ msgstr ""
+#~ "Озвучувати усі індикатори виконання, крім прогресу відтворення голосових повідомлень"
+
+#~ msgid "The broadcast window is not found"
+#~ msgstr "Вікна з даними для трансляції не знайдено"
+
+#~ msgid "Rewind voice message forward"
+#~ msgstr "Перемотати голосове повідомлення вперед"
+
+#~ msgid "Select level of notification of progress bars: "
+#~ msgstr "Виберіть рівень сповіщення про індикатори виконання:"
+
+#~ msgid "Announce the presence of reaction in the messages"
+#~ msgstr "Повідомляти про наявність реакції в повідомленнях"
+
+#~ msgid "Answer"
+#~ msgstr "Відповідь"
