@@ -1,9 +1,9 @@
-* Добавлено сочетание клавиш для перемещения фокуса к списку тем в группе. По умолчанию эта функция назначена на сочетание ALT+6. Пожалуйста обратите внимание на то, что часто, когда мы нажимаем клавишу Enter на группе, которую хотим открыть, список тем может не отобразиться и в этом случае необходимо снова установить фокус на данной группе и нажать клавишу Enter. Как правило, после второго нажатия список тем становится видимым и мы можем нажать сочетание клавиш, которое перемещает к нему фокус.
-* Теперь нажатие сочетания ALT+2 перемещает фокус не только к списку сообщений, но также к открытому профилю, к открытому списку тем группы, или к открытому разделу с настройками.
-* Теперь в настройках UnigramPlus вы можете отключить произнесение фраз "администратор" и "владелец" в групповых сообщениях.
-* Сочетания для принятия и отклонения звонка теперь работают правильно.
-* Теперь автоматические оповещения о новых сообщениях в чате и о действиях в чате не будут отключаться при перезапуске NVDA, но будут работать, пока вы сами их не выключите.
-* Улучшено отображение некоторых элементов интрефейса.
+* UnigramPlus este acum adaptat la cea mai recentă versiune de Unigram.
+* Compatibilitatea cu NVDA-2023 este acum asigurată.
+* Scurtătura ALT+1 te focalizează acum nu numai în lista de chat, ci și în lista de contacte și în lista secțiunii de setări.
+* Citirea automată a mesajelor noi în chat și sonorizarea automată a activității de chat au fost revizuite semnificativ, ceea ce a dus la o stabilitate îmbunătățită.
+* A fost adăugată o comandă rapidă de la tastatură pentru a afișa toate comenzile UnigramPlus. În mod implicit, această funcție este atribuită la ALT+H.
+* De asemenea, au fost rezolvate mai multe probleme minore.
 
 Dacă ai dorința și, mai ales, posibilitatea de a sprijini dezvoltatorul acestui add-on, o poți face folosind următoarele detalii:
 * PayPal: gladkiy.kostya@gmail.com.

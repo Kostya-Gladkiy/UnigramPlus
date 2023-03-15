@@ -154,7 +154,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		AppModule.script_callCancellation(AppModule, gesture)
 
 
-
 class UnigramPlusSettings(gui.SettingsPanel):
 	title = "UnigramPlus"
 	listVoiceTypeAfterChatName = {
@@ -181,7 +180,8 @@ class UnigramPlusSettings(gui.SettingsPanel):
 	def makeSettings(self, settingsSizer):
 		settingsSizerHelper = gui.guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		# Selecting an interface language
-		self.lang = settingsSizerHelper.addLabeledControl(_("Interface language in Unigram:"), wx.Choice, choices=[listLanguages[item] for item in listLanguages])
+		# self.lang = settingsSizerHelper.addLabeledControl(_("Interface language in Unigram:"), wx.Choice, choices=[listLanguages[item] for item in listLanguages])
+		self.lang = settingsSizerHelper.addLabeledControl(_("Interface language in Unigram:"), wx.Choice, choices=list(listLanguages.values()))
 		self.lang.SetStringSelection(listLanguages[conf.get("lang")])
 		# Chat type announce mode
 		self.voiceTypeAfterChatName = settingsSizerHelper.addLabeledControl(_("Speak the type of chat in the chat list:"), wx.Choice, choices=[self.listVoiceTypeAfterChatName[item] for item in self.listVoiceTypeAfterChatName])

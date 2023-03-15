@@ -67,7 +67,10 @@ Si vous appréciez vraiment cette extension et que vous avez l'envie,  mais surt
 * Ctrl+N : Appuyez sur le bouton "Nouvel échange".
 * Non attribué : Épingler un message ou un échange.
 * ALT+5 : Déplacer le focus sur le profil ouvert.
-* ALT+L : Convertir un message vocal en texte.
+* ALT+L : Activer la lecture automatique des nouveaux messages dans l'échange courant.
+* NVDA+ALT+R : Convertir le message vocal en texte.
+* Flèche gauche : Annoncer le message d'origine, qui a reçu une réponse.
+* Alt+6 : Déplacer le focus vers la liste des conversations de groupe.
 
 ### Note
 
@@ -75,6 +78,22 @@ Si vous appréciez vraiment cette extension et que vous avez l'envie,  mais surt
 * Le fait que la fonction qui focalise le curseur sur l'étiquette "message non lu" puisse parfois réagir avec un certain retard est un problème connu. Cela peut dépendre du nombre de messages en attente à ce moment-là.
 
 ##Liste des changements :
+### Version 4.6.0
+
+* Ajout d'un raccourci clavier pour déplacer le focus sur la liste des conversations de groupe. Par défaut, cette fonction est attribuée à la combinaison ALT+6. Veuillez noter que souvent, lorsque l'on appuie sur la touche Entrée sur le groupe que l'on veut ouvrir, la liste des conversations peut ne pas s'afficher et il est alors nécessaire de mettre à nouveau le focus sur ce groupe et d'appuyer sur la touche Entrée. En règle générale, après la deuxième pression, une liste de conversations est affichée, et après cela nous pouvons appuyer sur une combinaison de touches qui déplacera le focus sur cette liste.
+* Maintenant, la combinaison ALT+2 déplace le focus non seulement sur la liste des messages, mais aussi sur le profil ouvert, sur la liste ouverte des discussions de groupe, ou sur la section ouverte des paramètres.
+* Maintenant dans les paramètres d'UnigramPlus, vous pouvez désactiver la prononciation des expressions "Administrateur" et "propriétaire" sur les messages dans les groupes.
+* Les combinaisons pour accepter et rejeter les appels fonctionnent maintenant correctement.
+* Désormais, la fonction d'annonce automatique des nouveaux messages et de l'activité de chat ne se désactive pas lors du redémarrage de NVDA, mais fonctionne jusqu'à ce que vous la désactiviez vous-même.
+* Amélioration de l'affichage de certains éléments de l'interface.
+
+### Version 4.5.0
+
+* Adapté à la dernière version d'Unigram
+* Maintenant si un message a été envoyé en réponse à un autre message, en appuyant sur la touche flèche gauche, vous pouvez entendre le texte du message en réponse auquel il a été envoyé
+* Ajout de la localisation française
+* Suppression de la possibilité d'ajouter des réactions aux messages avec des raccourcis clavier, car je n'ai pas pu adapter cette fonction aux changements de l'interface d'Unigram
+* Correction de quelques bugs mineurs.
 
 ###Version 4.4.0
 

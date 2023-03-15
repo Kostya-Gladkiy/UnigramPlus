@@ -1,10 +1,9 @@
-* 新增移動焦點到群組聊天列表的快速鍵。 預設情況下，這個功能的快速鍵是 ALT+6。
-請注意，常常在開啟想開啟的群組按 enter 鍵時，聊天列表可能不會顯示，然後需要重新在群組設定一次焦點然後按 enter 鍵。在這個情況下，在按第二次之後，聊天列表將顯示，之後我們可以按一個快速鍵，讓焦點移動到這個列表。
-* ALT+2 快速鍵不只可以移動焦點到訊息列表，也可以到開啟個人檔案，到開啟的群組列表，或到開啟設定。
-* 在 UnigramPlus 的設定中，您可以停用在群組的訊息中提示管理員或擁有者。
-* 接聽電話或拒絕通話的快速鍵可以正常運作。
-* 自動讀出新訊息和聊天活動不會在NVDA重新啟動之後停用，該功能會運作直到您手動停用。
-* 改進部分介面元素的顯示。
+* UnigramPlus 已支援最新版本的 Unigram。
+* 相容 NVDA 2023 版本。
+* 快速鍵 ALT+1 除了可以移動焦點到聊天列表，還可以移動到聯絡人列表和設定。
+* 自動讀出新訊息和聊天活動追蹤的功能改進，提高穩定性。
+* 新增顯示所有 UnigramPlus 快速鍵的列表。 預設情況下， 快速鍵為 ALT+H。
+* 修正錯誤。
 
 If you have the desire, and most importantly the opportunity, to support the developer of this add-on, you can do so using the following details:
 * PeyPal: gladkiy.kostya@gmail.com.

@@ -1,0 +1,11 @@
+* UnigramPlus je sada prilagođen najnovijoj verziji unigrama.
+* Kompatibilnost sa NVDA 2023 je sada osigurana.
+* tasterska prečica ALT+1 sada pomera fokus ne samo na listu za ćaskanje, već i na listu kontakata i listu odeljaka podešavanja.
+* Automatsko najavljivanje novih poruka u ćaskanju i automatsko ozvučenje aktivnosti ćaskanja su značajno revidirani, što je rezultiralo poboljšanom stabilnošću.
+* Dodata je prečica na tastaturi za prikaz svih UnigramPlus komandi. Podrazumevano, ova funkcija je dodeljena ALT+H.
+* Rešeno je i nekoliko manjih problema.
+
+Ako imate želju, a što je najvažnije, priliku, da biste podržali programera ovog dodatka, možete to učiniti koristeći sledeće detalje:
+* Peipal: gladkii.kostia@gmail.com.
+* Ukrajinski sistem donacija: http://unigramlus.diaka.ua/donate.
+* Broj kartice: 5169360009004502 ( Gladkij Konstantin).

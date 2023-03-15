@@ -111,86 +111,111 @@ class Saved_items:
 
 class Title_change_tracking:
 	active = False
+	pouse = False
 	interval = .5
 	saved_items = False
-	def tick():
-		if not Title_change_tracking.active: return
-		title = Title_change_tracking.saved_items.get("profile name")
-		last_profile_name = Title_change_tracking.saved_items.get("last profile name") or ("q",)
-		if title and title.childCount > 1 and title.lastChild.name != last_profile_name[-1]:
+	@classmethod
+	def tick(cls):
+		if not cls.active or cls.pouse: return
+		title = cls.saved_items.get("profile name")
+		if not title or not title.isInForeground:
+			cls.pouse = True
+			return False
+		last_profile_name = cls.saved_items.get("last profile name") or ("",)
+		if title.childCount > 1 and title.lastChild.name != last_profile_name[-1]:
 			if title.firstChild.name == last_profile_name[0]:
 				# Announce changes only if these changes are not related to switching to another chat
-				text = title.name
+				text = title.lastChild.name
 				queueHandler.queueFunction(queueHandler.eventQueue, message, text)
 			new_title = [item.name for item in title.children]
-			Title_change_tracking.saved_items.save("last profile name", new_title)
-		Timer(Title_change_tracking.interval, Title_change_tracking.tick).start()
-	def toggle(saved_items=False):
-		if not Title_change_tracking.active or not saved_items:
-			Title_change_tracking.saved_items = saved_items
-			Title_change_tracking.active = True
+			cls.saved_items.save("last profile name", new_title)
+		Timer(cls.interval, cls.tick).start()
+	@classmethod
+	def toggle(cls, saved_items=False):
+		if not conf.get("automatically announce activity in chats") or not saved_items:
+			cls.saved_items = saved_items
+			cls.active = True
+			cls.pouse = False
 			conf.set("automatically announce activity in chats", True)
-			Timer(Title_change_tracking.interval, Title_change_tracking.tick).start()
+			Timer(cls.interval, cls.tick).start()
 			return True
 		else:
-			Title_change_tracking.active = False
+			cls.active = False
 			conf.set("automatically announce activity in chats", False)
 			return False
+	@classmethod
+	def restore(cls, saved_items=False):
+		cls.pouse = False
+		cls.active = True
+		cls.saved_items = saved_items
+		cls.saved_items.save("last profile name", None)
+		Timer(cls.interval, cls.tick).start()
 
 
 class Chat_update:
 	active = False
+	pouse = False
 	interval = .3
 	app = False
-	def tick():
-		if not Chat_update.active: return
-		try : last_message = Chat_update.app.getMessagesElement().lastChild
+	@classmethod
+	def tick(cls):
+		if not cls.active or cls.pouse: return
+		try : last_message = cls.app.getMessagesElement().lastChild
 		except: last_message = False
+		if not last_message or not last_message.isInForeground:
+			cls.pouse = True
+			return False
 		# The first item is the name of the chat in which the last message was recorded
 		# The second item is the message index
-		last_saved_message = Chat_update.app.saved_items.get("last message") or ("", "")
-		# {'indexInGroup': 2, 'similarItemsInGroup': 20}
+		last_saved_message = cls.app.saved_items.get("last message") or ("", "")
 		# If there is a problem getting the message index, terminate the function and call the next iteration
 		try:
 			last_message.positionInfo["indexInGroup"]
 			last_message.positionInfo["similarItemsInGroup"]
 		except:
-			Timer(Chat_update.interval, Chat_update.tick).start()
+			Timer(cls.interval, cls.tick).start()
 			return
-		if last_message and last_message.positionInfo["indexInGroup"] != last_saved_message[1] and last_message.positionInfo["indexInGroup"] == last_message.positionInfo["similarItemsInGroup"]:
+		if last_message.positionInfo["indexInGroup"] != last_saved_message[1] and last_message.positionInfo["indexInGroup"] == last_message.positionInfo["similarItemsInGroup"]:
 			try:
-				title = Chat_update.app.saved_items.get("profile name").firstChild.name
+				title = cls.app.saved_items.get("profile name").firstChild.name
 			except:
 				title = False
 			keywords = keywordsInMessages.get(conf.get("lang"), keywordsInMessages["en"])
 			if ((title == last_saved_message[0]) or not title) and keywords[3] in last_message.name[-60:]:
-				text = Chat_update.app.action_message_focus(last_message)
+				text = cls.app.action_message_focus(last_message.firstChild)
 				queueHandler.queueFunction(queueHandler.eventQueue, message, text)
 			try:
 				new_message = (title, last_message.positionInfo["indexInGroup"])
-				Chat_update.app.saved_items.save("last message", new_message)
+				cls.app.saved_items.save("last message", new_message)
 			except: pass
-		Timer(Chat_update.interval, Chat_update.tick).start()
-	def toggle(app=False):
-		if not Chat_update.active or not app:
-			Chat_update.active = True
+		Timer(cls.interval, cls.tick).start()
+	@classmethod
+	def toggle(cls, app=False):
+		if not conf.get("automatically announce new messages") or not app:
+			cls.active = True
 			conf.set("automatically announce new messages", True)
-			Chat_update.app = app
-			Timer(Chat_update.interval, Chat_update.tick).start()
+			cls.app = app
+			Timer(cls.interval, cls.tick).start()
 			return True
 		else:
-			Chat_update.active = False
+			cls.active = False
 			conf.set("automatically announce new messages", False)
 			return False
-
+	@classmethod
+	def restore(cls, app=False):
+		cls.pouse = False
+		cls.active = True
+		cls.app = app
+		cls.app.saved_items.save("last message", None)
+		Timer(cls.interval, cls.tick).start()
 
 class AppModule(appModuleHandler.AppModule):
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
-		if conf.get("automatically announce new messages"): Chat_update.toggle(self)
-		if conf.get("automatically announce activity in chats"): Title_change_tracking.toggle(self)
-		self.app_version = self.productVersion
 		self.saved_items = Saved_items()
+		if conf.get("automatically announce new messages") and not Chat_update.active: Chat_update.restore(self)
+		if conf.get("automatically announce activity in chats") and not Title_change_tracking.active: Title_change_tracking.restore(self.saved_items)
+		self.app_version = self.productVersion
 		# assign hotkeys for the function of reading messages by numbering
 		for i in range(10): self.bindGesture("kb:NVDA+control+%d" % i, "reviewRecentMessage")
 		# Binding reactions to the corresponding hotkeys
@@ -240,6 +265,23 @@ class AppModule(appModuleHandler.AppModule):
 		settings_panel = next((item for item in self.getElements() if item.role in (controlTypes.Role.PANE, controlTypes.Role.LIST) and item.UIAAutomationId in ("ScrollingHost", "List", "") and (item.previous.UIAAutomationId == "DetailHeaderPresenter"  or item.location.width > 320)), None)
 		if not settings_panel: return False
 		return next(( item for item in settings_panel.children if controlTypes.State.FOCUSABLE in item.states), settings_panel.firstChild)
+
+	def get_contacts_list(self):
+		a = next((item for item in self.getElements() if item.role == controlTypes.Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), None)
+		if not a: return False
+		try:b = a.firstChild.next.lastChild.firstChild.next.next.next
+		except: b = False
+		if b: return b
+		else: return False
+
+	def get_settings_list(self):
+		a = next((item for item in self.getElements() if item.role == controlTypes.Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), None)
+		if not a: return False
+		try: b = a.lastChild.firstChild.next.firstChild.next.next.next.firstChild
+		except: b = False
+		if b: return b
+		else: return False
+
 
 	def is_message_object(self, obj):
 		try:
@@ -322,6 +364,14 @@ class AppModule(appModuleHandler.AppModule):
 		try: targetList = self.getChatsListElement()
 		except: targetList = None
 		if not targetList:
+			contacts_list = self.get_contacts_list()
+			if contacts_list:
+				contacts_list.setFocus()
+				return True
+			settings_list = self.get_settings_list()
+			if settings_list:
+				settings_list.setFocus()
+				return True
 			if not arg: message(_("Chat list not found"))
 			return
 		if targetList.firstChild:
@@ -824,7 +874,8 @@ class AppModule(appModuleHandler.AppModule):
 			if sender_message == "send": obj.name = _("Not sent")+". " + obj.name
 			else:
 				list_text = obj.name.split("\n")
-				if not conf.get("notify administrators in messages") and admin_label and len(list_text) >1 and list_text[1] == admin_label+". \r":
+				key_phrases = phrase_administrator_in_message.get(conf.get("lang"), phrase_administrator_in_message["en"])
+				if not conf.get("notify administrators in messages") and len(list_text) > 1 and ((admin_label and list_text[1] == admin_label+". \r") or list_text[1] in (key_phrases[0]+". \r", key_phrases[1]+". \r")):
 					del list_text[1]
 					obj.name = "\n".join(list_text)
 		else:
@@ -915,6 +966,10 @@ class AppModule(appModuleHandler.AppModule):
 
 	# Focus change tracking
 	def event_gainFocus(self, obj, nextHandler):
+		if conf.get("automatically announce new messages") and Chat_update.pouse:
+			Chat_update.restore(self)
+		if conf.get("automatically announce activity in chats") and Title_change_tracking.pouse:
+			Title_change_tracking.restore(self.saved_items)
 		if self.lastSavedMessage:
 			if "obj" in self.lastSavedMessage:
 				if api.getForegroundObject().lastChild.previous.firstChild.role == controlTypes.Role.WINDOW:
@@ -985,6 +1040,9 @@ class AppModule(appModuleHandler.AppModule):
 				obj.name = ". ".join((labels[0], labels[2], labels[1]))
 		elif obj.role == controlTypes.Role.EDITABLETEXT:
 			try:
+				if obj.UIAAutomationId == "TextField" and not self.saved_items.get("profile name"):
+					next((item for item in self.getMessagesElement() if item.role == controlTypes.Role.LINK and item.UIAAutomationId == "Profile"), None)
+					if title: self.saved_items.save("profile name", title)
 				# Determining if this input field is a message input field. If yes, then check if its title needs to be changed
 				if obj.UIAAutomationId == "TextField" and (obj.previous.UIAAutomationId == "ComposerHeaderCancel" or obj.previous.previous.UIAAutomationId == "ComposerHeaderCancel"):
 					label = obj.previous.previous.previous if obj.previous.UIAAutomationId != "ButtonMore" else obj.previous.previous.previous.previous
@@ -1314,4 +1372,18 @@ class AppModule(appModuleHandler.AppModule):
 		if Chat_update.toggle(self): message(_("Automatic reading of messages is enabled"))
 		else: message(_("Automatic reading of new messages is disabled"))
 	
-	
+	@script(description=_("Show a list of all UnigramPlus shortcuts"), gesture="kb:ALT+H")
+	def script_help(self, gesture):
+		a = next((item for item in list(addonHandler.getAvailableAddons()) if item.name == "UnigramPlus"), None)
+		a = a.getDocFilePath()
+		# We replace the file extension, because we need an md file
+		a = a[:-4]+"md"
+		with open(a, "r", encoding="utf-8") as file:
+			text = file.read()
+		blocks = text.split("\n\n")
+		count_rows = [len(item.split("\n")) for item in blocks]
+		index = count_rows.index(max(count_rows))
+		text = blocks[index]
+		text = text.replace("* ", "")
+		text = text.replace("## ", "")
+		TextWindow(text.strip(), _("List of shortcuts"), readOnly=True)

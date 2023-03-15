@@ -1,9 +1,9 @@
-* Dodan je tipkovnički prečac za premještanje fokusa na popis niti grupe. Prema zadanim postavkama, ova je funkcija dodijeljena kombinaciji Alt+6. Napominjem da često kada pritisnemo tipku Enter na grupi koju želimo otvoriti, popis niti se možda neće prikazati i tada je potrebno ponovno postaviti fokus na tu grupu i pritisnuti tipku Enter. U pravilu, nakon drugog pritiska prikazuje se popis niti, a nakon toga možemo pritisnuti kombinaciju tipki koja će pomaknuti fokus na taj popis.
-* Sada kombinacija Alt+2 pomiče fokus ne samo na popis poruka, već i na otvoreni profil, na otvoreni popis niti grupe ili na otvoreni odjeljak s postavkama.
-* Sada u postavkama UnigramPlusa možete onemogućiti izgovor izraza "Administrator" i "Vlasnik" na porukama u grupama.
-* Kombinacije za prihvaćanje i odbijanje poziva sada rade ispravno.
-* Sada se značajka automatskog čitanja novih poruka i praćenja aktivnosti razgovora neće isključiti kada se NVDA ponovno pokrene, ali će raditi dok je sami ne isključite.
-* Poboljšan prikaz nekih elemenata sučelja.
+* UnigramPlus je sada prilagođen najnovijoj verziji Unigrama.
+* Sada je osigurana kompatibilnost s NVDA-2023.
+* Tipkovnički prečac Alt+1 sada premješta fokus ne samo na popis za razgovor, već i na popis kontakata i popis odjeljaka postavki.
+* Automatska najava novih poruka u razgovoru i automatsko najavljivanje aktivnosti razgovora značajno su revidirani, što je rezultiralo poboljšanom stabilnošću.
+* Dodan je tipkovnički prečac za prikaz svih UnigramPlus naredbi. Prema zadanim postavkama, ova je funkcija dodijeljena kombinaciji Alt+H.
+* Također je popravljeno nekoliko manjih problema.
 
 Ako imate želju, i što je najvažnije priliku, podržati programera ovog dodatka, možete to učiniti pomoću sljedećih podataka:
 * PayPal: gladkiy.kostya@gmail.com

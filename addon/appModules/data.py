@@ -62,3 +62,17 @@ labels_in_buttons = {
 	"\ue74d": _("Delete"),
 	"\ue711": _("Close"),
 }
+
+phrase_administrator_in_message = {
+	"uk": ("Адміністратор", "Власник"),
+	"fr": ("Administrateur", "Propriétaire"),
+	"en": ("Administrator", "Owner"),
+	"zh": ("管理員", "擁有者"),
+	"hr": ("Administrator", "Vlasnik"),
+	"ar": ("مشرف", "المالك"),
+	"sr": ("Administrator", "Vlasnik"),
+	"it": ("Proprietario", "Amministratore"),
+	"ne": ("मालिक", "प्रसाशक"),
+	"es": ("Administrador", "Propietario"),
+	"cs": ("Správce", "Vlastník"),
+}

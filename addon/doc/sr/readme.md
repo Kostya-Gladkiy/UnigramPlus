@@ -5,9 +5,10 @@
 * Telegram: @unigramPlus
 * link za donaciju: [https://unigramplus.diaka.ua/donate](https://unigramplus.diaka.ua/donate)
 
-
 Koristite Unigram na ugodniji i produktivniji način. Ovaj dodatak nudi mnoge tasterske prečice za brzo i ugodno korišćenje Unigrama i čini mnogo malih poboljšanja.
+
 ## Neka od velikih poboljšanja su:
+
 * Dodaje značajno poboljšanje u prikazivanju takvih poruka kao što su anketa, link ili poruka s priloženim medijima.
 * Kada se kursor fokusira na listu ćaskanja, informacije poput "ćaskanja, kartica, izabrana lista" se ne objavljuju, a kada se kursor nalazi na listi poruka, nećete čuti reč "Lista".
 * Kad se fokusirate na dugme Otvori datoteku ili dugme Preuzmi datoteku, izgovara će se naziv i veličina datoteke, a kada se fokusirate na dugme Reprodukuj na audio datoteci, čućete njen naziv i trajanje.
@@ -21,12 +22,14 @@ Koristite Unigram na ugodniji i produktivniji način. Ovaj dodatak nudi mnoge ta
 * Moguće je onemogućiti zvuk svih indikatora performansi ili samo indikatora toka reprodukcije glasovnih poruka.
 
 ## Podaci o donacijama programeru:
+
 Ako Vam se ovaj dodatak zaista sviđa i imate želju, a što je najvažnije priliku, finansijski podržati razvojnog programera i time ga motivisati da nastavi razvijati ovaj dodatak, to možete učiniti prenosom male količine pomoću sledećih bankovnih podataka:
 [Link za donaciju](https://unigramplus.diaka.ua/donate) ili broj kartice je 5169360009004502 (Ukrajina).
 
 ## Lista prečica:
+
 * ALT+1 - Premešta fokus na listu ćaskanja.
-* ALT+2 - Premešta fokus na poslednju poruku u ćaskanju.
+* ALT+2 - Premešta fokus na poslednju poruku u nepročitanom ćaskanju.
 * ALT+3 - Premešta fokus na oznaku "nepročitane poruke".
 * ALT+D - Premešta fokus na polje za uređivanje. Ako je fokus već u polju za uređivanje, nakon pritiskanja na tastere prečica fokus će se premestiti na mesto na kojem je prethodno bio.
 * ALT+T - Čita naziv i status profila u javnom ćaskanju.
@@ -68,25 +71,53 @@ Ako Vam se ovaj dodatak zaista sviđa i imate želju, a što je najvažnije pril
 * control+N - Pritisnite dugme "Novo ćaskanje".
 * Nedodeljeno - prikači poruku ili ćaskanje.
 * ALT+5 - Pomeranje  fokusa na otvoreni profil.
-* ALT+L - Pretvaranje glasovne poruke u tekstualnu.
+* ALT+L - Omogućava automatsko čitanje novih poruka u trenutnom ćaskanju.
+* NVDA+ALT+R: Pretvaranje glasovne poruke u tekst.
 * Strelica levo: najavljuje originalnu poruku, poruku na koju je odgovoreno.
+* ALT+6: Premešta fokus na listu niti grupe.
+* ALT+H: Prikaži listu svih UnigramPlus prečica.
+
 ### Napomena
 Sve tasterske prečice mogu se ponovo dodeliti u meniju NVDA > Podešavanja > Ulazne komande.
 Činjenica da funkcija koja fokusira kursor na oznaku nepročitane poruke ponekad može odgovoriti sa zakašnjenjem je poznat problem. To može zavisiti o količini poruka u ćaskanju u ovom trenutku.
 
 ## Lista promena:
+
+###Verzija 4.7.0
+
+* UnigramPlus je sada prilagođen najnovijoj verziji unigrama.
+* Kompatibilnost sa NVDA 2023 je sada osigurana.
+* tasterska prečica ALT+1 sada pomera fokus ne samo na listu za ćaskanje, već i na listu kontakata i listu odeljaka podešavanja.
+* Automatsko najavljivanje novih poruka u ćaskanju i automatsko ozvučenje aktivnosti ćaskanja su značajno revidirani, što je rezultiralo poboljšanom stabilnošću.
+* Dodata je prečica na tastaturi za prikaz svih UnigramPlus komandi. Podrazumevano, ova funkcija je dodeljena ALT+H.
+* Rešeno je i nekoliko manjih problema.
+
+###Verzija 4.6.0
+
+* Dodata je prečica na tastaturi za premeštanje fokusa na listu niti grupe. Prema podrazumevanim podešavanjima, ova je funkcija dodeljena kombinaciji ALT+6. Napominjem da često kada pritisnemo taster enter na grupi koju želimo otvoriti, lista niti se možda neće prikazati i tada je potrebno ponovo postaviti fokus na tu grupu i pritisnuti taster enter. U pravilu, nakon drugog pritiska prikazuje se lista niti, a nakon toga možemo pritisnuti kombinaciju tastera koji će premestiti fokus na tu listu.
+* Sada kombinacija ALT+2 postavlja fokus ne samo na listu poruka, već na otvoreni profil, na otvorenu listu niti grupe ili, na otvoreni odeljak sa podešavanjima.
+* Sada, u podešavanjima UnigramPlusa možete onemogućiti izgovor izraza "Administrator" i "Vlasnik" na porukama u grupama.
+* Kombinacije za prihvatanje i odbijanje poziva sada rade ispravno.
+* Sada se funkcija automatskog čitanja novih poruka i praćenja aktivnosti ćaskanja neće isključiti kada se NVDA ponovo pokrene, ali će raditi dok je sami ne isključite.
+* Poboljšan prikaz nekih elemenata interfejsa.
+
 ### Verzija 4.5.0
+
 * Prilagođeno najnovijoj verziji unigrama.
 * Sada ako je poruka poslata kao odgovor na drugu poruku, pritiskom na tastere sa strelicom levo, možete čuti tekst poruke u odgovor na koji je poslat.
 * Dodata je francuska lokalizacija.
 Uklonjena je mogućnost dodavanja reakcija na poruke sa prečicama na tastaturi, pošto nisam mogao da prilagodim ovu funkciju promenama u unigram interfejsu.
 * Ispravljene neke manje greške.
+
 ### Verzija 4.4.0
+
 * Dodata je funkcija najave aktivnosti u četovima. Podrazumevano, ova funkcija se aktivira dvostrukim pritiskom na kombinaciju ALT+T. Funkcija ostaje aktivna samo dok se NVDA ne pokrene ponovo.
 * Dodata je funkcija automatsko najavljivanje novih poruka u ćaskanju. Podrazumevano, ova funkcija se aktivira pritiskom na ALT+L. Funkcija ostaje aktivna samo dok se NVDA ne pokrene ponovo. Može doći do problema sa stabilnošću ako se previše novih poruka brzo pojavi u ćaskanju.
 * Dodata je prečica na tastaturi za funkciju pretvaranje glasovnih poruka u tekst. Podrazumevano, ova funkcija je dodeljena kombinaciji NVDA+ALT+R. Imajte na umu da se u slučajevima kada je glasovna poruka veoma duga, pretvaranje u tekst odvija u delovima. Može se desiti da kada vas UnigramPlus obavesti da je konverzija završena, samo deo glasovne poruke će zapravo biti konvertovan. I nakon nekoliko sekundi, ovaj tekst će biti dodat.
 * Sada, kada se krećete kroz listu za ćaskanje, UnigramPlus prijavljuje informacije o premium nalozima i verifikovanim nalozima.
+
 ### Verzija 4.3.0
+
 * Sada UnigramPlus radi ispravno kada je nekoliko ćaskanja otvoreno u različitim prozorima.
 * Dodata prečica na tastaturi za pomeranje fokusa na oblast korisničkog profila ako je otvorena. Podrazumevani pokret je ALT+5.
 * Ispravljene manje greške.
@@ -186,7 +217,7 @@ Napomena! Od sada će UnigramPlus podržavati NVDA verzije ne starije od 21.2.0.
 ### Verzija 2.3.0
 * Poboljšana pristupačnost poruka koje sadrže nekoliko priloženih medija. Ranije je potpisu poruke koja sadrži više od jednog priloženog medija bilo moguće pristupiti samo uz pomoć navigacije objekta. Sada će se ovaj potpis pročitati izravno nakon fokusiranja na takvu poruku.
 * Poboljšana dostupnost poruka koje sadrže ankete. Kad se usredotočite na takve poruke, čućete brojne ljude koji su već glasali, kao i sve opcije odgovora s rezultatom za svaku opciju. Ako se usredotočite na određenu opciju, čućete rezultat za nju.
-* Poboljšana pristupačnost poruka koje sadrže URL-ove. Sada, ako URL ima opis, takođe će se pročitati, na primer, ako poruka sadrži URL za YouTube, naziv i opis za ovaj videozapis biće pročitani odmah nakon samog URL-a. Nadalje, ako URL sadrži više od 30 znakova, biće skraćen za lakše čitanje opisa koji sledi.
+* Poboljšana pristupačnost poruka koje sadrže URL-ove. Sada, ako URL ima opis, takođe će se pročitati, na primer, ako poruka sadrži URL za YouTube, naziv i opis za ovaj video zapis biće pročitani odmah nakon samog URL-a. Nadalje, ako URL sadrži više od 30 znakova, biće skraćen za lakše čitanje opisa koji sledi.
 * Poboljšana pristupačnost table s rezultatima inline upita. Za navigaciju kroz rezultate umetnutih upita koristite sledeće kombinacije: Control + Strelica gore i Control + Strelica dole.
 * Dodate prečice za otvaranje komentara.
 

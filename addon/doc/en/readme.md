@@ -71,6 +71,8 @@ And remember that everyone who read this line thought that someone will definite
 * ALT+L: Enable automatic reading of new messages in the current chat.
 * NVDA+ALT+R: Convert voice message to text.
 * Left arrow: Announce the original message, the message that was replied to.
+* ALT+6: Move focus to the list of group threads.
+* ALT+H: Show a list of all UnigramPlus shortcuts.
 
 ### Note
 
@@ -78,6 +80,24 @@ And remember that everyone who read this line thought that someone will definite
 * The fact that the function that focuses the cursor on the "unread message" label can sometimes react with a delay is a known issue. This may depend on the number of cash messages at the moment.
 
 ## List of changes:
+
+### Version 4.7.0
+
+* UnigramPlus is now adapted to the latest version of Unigram.
+* Compatibility with NVDA-2023 is now ensured.
+* The keyboard shortcut ALT+1 now moves focus not only to the chat list, but also to the contact list and settings section list.
+* The automatic announcement of new messages in the chat and the automatic sounding of chat activity have been significantly revised, resulting in improved stability.
+* A keyboard shortcut has been added to display all UnigramPlus commands. By default, this function is assigned to ALT+H.
+* Several minor issues have also been fixed.
+
+### Version 4.6.0
+
+* Added a keyboard shortcut to move focus to list of group threads. By default, this function is assigned to the ALT+6 combination. Please note that often when pressing the enter key on the group that we want to open, the list of threads may not be displayed and then it is necessary to set the focus on this group again and press the enter key. As a rule, after the second press, a list of threads is displayed, and after that we can press a key combination that will move the focus to this list.
+* Now the ALT+2 combination moves the focus not only to the list with messages, but also to the open profile, to the open list of group threads, or to the open section with settings.
+* Now in the UnigramPlus settings, you can disable the pronunciation of the phrases "Admin" and "Owner" on messages in groups.
+* Combinations for accepting and rejecting calls now work correctly.
+* Now the automatic announcement feature for new messages and the chat activity will not turn off when NVDA is restarted, but will work until you turn it off yourself.
+* Improved display of some interface elements.
 
 ### Version 4.5.0
 

@@ -1,9 +1,9 @@
 # Unigram Plus
 
-* Autor: Kostya Gladkiy (Ukrain)
+* Autor: Kostya Gladkiy (Ukrajina)
 * [Telegram kanal](https://t.me/unigramPlus)
 * Telegram: @unigramPlus
-* Poveznica za donaciju:[https://unigramplus.diaka.ua/donate](https://unigramplus.diaka.ua/donate)
+* Veza za donaciju:[https://unigramplus.diaka.ua/donate](https://unigramplus.diaka.ua/donate)
 * PayPal: gladkiy.kostya@gmail.com
 
 Koristite Unigram na udobniji i produktivniji način. Ovaj dodatak nudi mnogo prečaca za brzu i udobnu upotrebu Unigrama i čini puno malih poboljšanja.
@@ -73,6 +73,7 @@ I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno p
 * NVDA+Alt+R: Pretvara glasovnu poruku u tekst.
 * Strelica lijevo: Najavljuje izvornu poruku, poruku na koju je odgovoreno.
 * Alt+6: Premješta fokus na popis niti grupe.
+* Alt+H: Prikazuje popis svih prečaca UnigramPlus dodatka.
 
 ### Napomena
 
@@ -80,6 +81,15 @@ I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno p
 * Činjenica da funkcija koja fokusira pokazivač na oznaku "nepročitana poruka" ponekad može reagirati sa zakašnjenjem je poznati problem. To može ovisiti o broju poruka o gotovini u ovom trenutku.
 
 	##Popis promjena:
+
+### Verzija 4.7.0
+
+* UnigramPlus je sada prilagođen najnovijoj verziji Unigrama.
+* Sada je osigurana kompatibilnost s NVDA-2023.
+* Tipkovnički prečac Alt+1 sada premješta fokus ne samo na popis za razgovor, već i na popis kontakata i popis odjeljaka postavki.
+* Automatska najava novih poruka u razgovoru i automatsko najavljivanje aktivnosti razgovora značajno su revidirani, što je rezultiralo poboljšanom stabilnošću.
+* Dodan je tipkovnički prečac za prikaz svih UnigramPlus naredbi. Prema zadanim postavkama, ova je funkcija dodijeljena kombinaciji Alt+H.
+* Također je popravljeno nekoliko manjih problema.
 
 ### Verzija 4.6.0
 
