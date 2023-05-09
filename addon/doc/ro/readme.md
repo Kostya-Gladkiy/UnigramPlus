@@ -79,6 +79,16 @@ Dacă îți place cu adevărat acest add-on și ai dorința și, cel mai importa
 
 ##Lista de modificări:
 
+### Versiunea 4.8.0
+
+* Acum, în setările Unigram, categoriile de setări pot fi deschise prin apăsarea tastei Enter. Atunci când deschizi orice categorie de setări, te vei focaliza pe acea categorie.
+* Acum, atunci când faci clic pe butonul "Explanation" în chestionare, textul explicației se va deschide într-o fereastră separată pentru o vizualizare comodă.
+* A fost rezolvată o problemă în care numele dosarelor de chat nu erau rostite atunci când se trecea de la unul la altul.
+* A fost rezolvată o eroare care făcea imposibilă dezactivarea sau schimbarea ordinii de rostire a tipului și a numelui de chat.
+* A fost rezolvată problema în care nu era posibil să se afle răspunsul corect în chestionare.
+* S-a rezolvat problema cu copierea unui mesaj folosind combinația control+shift+C.
+* Am făcut mai multe corecturi minore, îmbunătățiri și optimizări de cod.
+
 ### Versiunea 4.7.0
 
 * UnigramPlus este acum adaptat la cea mai recentă versiune de Unigram.

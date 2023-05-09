@@ -81,6 +81,16 @@ And remember that everyone who read this line thought that someone will definite
 
 ## List of changes:
 
+### Version 4.8.0
+
+* Now in the Unigram settings, the settings categories can be opened by pressing Enter. When you open any category of settings, the focus will be placed on that category.
+* Now, when clicking the "Explanation" button in quizzes, the explanation text will open in a separate window for convenient viewing.
+* Fixed an issue where chat folder names were not spoken when switching between them.
+* Fixed a bug that made it impossible to disable or change the order of speaking the chat type and name.
+* Fixed the issue when it was not possible to find out the correct answer in quizzes.
+* Fixed the problem with copying a message using the control+shift+C combination.
+* Made several minor fixes, improvements, and code optimizations.
+
 ### Version 4.7.0
 
 * UnigramPlus is now adapted to the latest version of Unigram.

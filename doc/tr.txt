@@ -1,0 +1,12 @@
+* Artık Unigram ayarlarında ayarlar kategorisini Enter tuşuna basarak açabilirsiniz. Herhangi bir ayar kategorisini açtığınızda, odak noktası bu kategoriye odaklanacaktır.
+* Artık bilgi  yarışmalarında "Açıklama" butonuna tıklandığında açıklama metni ayrı bir pencerede açılarak rahat bir şekilde görüntülenebilir.
+* klasör  Aralarında geçiş yaparken sohbet klasör adlarının  seslendirilmemesine  neden olan bir hata düzeltildi.
+* Sohbet türünün ve adının  seslendirilme sırasını devre dışı bırakmanın veya değiştirmenin imkansız olmasına neden olan bir hata düzeltildi.
+* Bilgi   Yarışmalarında, doğru cevabı bulamama sorunu düzeltildi.
+* Control+shift+C kombinasyonunu kullanarak bir mesajı kopyalama sorunu düzeltildi.
+* Birkaç küçük düzeltme, iyileştirme ve kod optimizasyonu yapıldı.
+
+Bu eklentinin geliştiricisini destekleme isteğiniz ve en önemlisi fırsatınız varsa, aşağıdaki ayrıntıları kullanarak bunu yapabilirsiniz:
+* PeyPal: gladkiy.kostya@gmail.com.
+* Ukrayna bağış sistemi: https://unigramplus.diaka.ua/donate.
+* Kart numarası: 5169360009004502 (Gladkiy Constantine).

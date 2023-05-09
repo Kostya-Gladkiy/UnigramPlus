@@ -82,6 +82,15 @@ Sve tasterske prečice mogu se ponovo dodeliti u meniju NVDA > Podešavanja > Ul
 Činjenica da funkcija koja fokusira kursor na oznaku nepročitane poruke ponekad može odgovoriti sa zakašnjenjem je poznat problem. To može zavisiti o količini poruka u ćaskanju u ovom trenutku.
 
 ## Lista promena:
+###Verzija 4.8.0
+* Sada u postavkama unigrama, kategorije podešavanja se mogu otvoriti pritiskom na enter. Kada otvorite bilo koju kategoriju podešavanja, fokus će biti stavljen na tu kategoriju.
+* Sada kada kliknete na dugme objašnjenje u kvizovima, tekst objašnjenja će se otvoriti u posebnom prozoru radi lakšeg pregleda.
+* Rešen je problem gde se imena fascikli za ćaskanje nisu izgovorila prilikom prebacivanja između njih.
+* Ispravljena greška koja je onemogućavala onemogućavanje ili promenu redosleda izgovaranja tipa i imena ćaskanja.
+* Rešen problem kada nije bilo moguće pronaći tačan odgovor u kvizovima.
+* Rešen je problem sa kopiranjem poruke pomoću kombinacije control+shift+C.
+* Napravljeno nekoliko manjih popravki, poboljšanja i optimizacija koda.
+
 
 ###Verzija 4.7.0
 

@@ -82,6 +82,16 @@ I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno p
 
 	##Popis promjena:
 
+### Verzija 4.8.0
+
+* Sada se u postavkama Unigrama kategorije postavki mogu otvoriti pritiskom na Enter. Kada otvorite bilo koju kategoriju postavki, fokus će biti premješten na tu kategoriju.
+* Sada, kada kliknete na gumb "Objašnjenje" u kvizovima, tekst objašnjenja će se otvoriti u zasebnom prozoru radi lakšeg pregleda.
+* Riješen je problem u kojem se nazivi mapa razgovora nisu izgovarali prilikom prebacivanja između njih.
+* Ispravljena je greška koja je onemogućavala onemogućavanje ili promjenu redoslijeda izgovora vrste i naziva razgovora.
+* Riješen problem kada nije bilo moguće saznati točan odgovor u kvizovima.
+* Riješen je problem s kopiranjem poruke korištenjem kombinacije Control+Shift+C.
+* Napravljeno je nekoliko manjih popravaka, poboljšanja i optimizacija koda.
+
 ### Verzija 4.7.0
 
 * UnigramPlus je sada prilagođen najnovijoj verziji Unigrama.

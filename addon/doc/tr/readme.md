@@ -34,7 +34,7 @@ Bu eklentiyi çok seviyorsanız ve geliştiriciyi maddi olarak desteklemek ve b�
 * ALT E-ses oynatıcısını kapatır.
 * control + C-metin içeriği varsa mesajı kopyalar.
 * ALT + shift + C- özel bir sohbet ise  arayın veya bir grup ise sesli sohbete giriş yapın 
-* ALT + shift + V-video arama düğmesine basın.
+* ALT + shift + V-  görüntülü arama düğmesine basın.
 * Alt + y-aramayı cevaplayın.
 * ALT + N-gelen bir çağrı varsa "aramayı Reddet" düğmesine basın çağrı yapılıyorsa "aramayı Sonlandır" düğmesine basın veya sesli sohpet  etkinse sesli sohbetten  ayrılın.
 * Alt + a-"mikrofonu Aç / Kapat" düğmesine basar.
@@ -68,12 +68,32 @@ Bu eklentiyi çok seviyorsanız ve geliştiriciyi maddi olarak desteklemek ve b�
 * NVDA + ALT + R: Sesli mesajı metne dönüştürün.
 * Sol ok: yanıtlanan  mesajı  oku
 * ALT+6: Odağı grup konuları listesine taşıyın.
+* ALT + H: Tüm UnigramPlus kısayollarının bir listesini gösterir.
+
 
 ### Not
 Tüm kısayol tuşları nvda>seçenekler>giriş hareketleri menüsünden yeniden atanabilir.
 Bilinen dezavantajlardan biri, bir işlev odağı "okunmamış mesajlar" etiketine çevirir, bazen bir gecikme ile tetiklenir. Bu, sohbetten kaç tane mesajın şu anda önbelleğe alındığına bağlıdır
 
 ##Değişiklik listesi:
+
+### Sürüm 4.8.0
+
+* Artık Unigram ayarlarında ayarlar kategorisini Enter tuşuna basarak açabilirsiniz. Herhangi bir ayar kategorisini açtığınızda, odak noktası bu kategoriye odaklanacaktır.
+* Artık bilgi  yarışmalarında "Açıklama" butonuna tıklandığında açıklama metni ayrı bir pencerede açılarak rahat bir şekilde görüntülenebilir.
+* klasör  Aralarında geçiş yaparken sohbet klasör adlarının  seslendirilmemesine  neden olan bir hata düzeltildi.
+* Sohbet türünün ve adının  seslendirilme sırasını devre dışı bırakmanın veya değiştirmenin imkansız olmasına neden olan bir hata düzeltildi.
+* Bilgi   Yarışmalarında, doğru cevabı bulamama sorunu düzeltildi.
+* Control+shift+C kombinasyonunu kullanarak bir mesajı kopyalama sorunu düzeltildi.
+* Birkaç küçük düzeltme, iyileştirme ve kod optimizasyonu yapıldı.
+
+### Sürüm 4.7.0
+
+* UnigramPlus artık Unigram'ın en son sürümünü destekliyor.
+* NVDA-2023 ile uyumluluk sağlandı.
+* Sohbetteki Yeni  mesajların otomatik olarak  seslendirilmesi ve sohbet etkinliğinin otomatik olarak  seslendirilmesi önemli ölçüde yeniden tasarlandı ve bu da  özelliyin   daha iyi çalışmasına neden oldu.
+* Tüm UnigramPlus komutlarını görüntülemek için bir klavye kısayolu eklendi. Varsayılan olarak, bu işlev ALT + H'ye atanır.
+* Birkaç küçük sorun giderildi.
 
 ### Sürüm 4.6.0
 

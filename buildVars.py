@@ -25,11 +25,11 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""This add-on adds a lot of hotkeys for quick navigation through the main elements of the window, easy interaction with Chat messages, and also adds many minor improvements that make working in Unigram much easier"""),
 	# version
-	"addon_version": "4.7.0",
+	"addon_version": "4.8.0",
 	# Author(s)
 	"addon_author": "Kostya Gladkiy<gladkiy.kostya@gmail.com>",
 	# URL for the add-on documentation support
-	"addon_url": "https://t.me/unigramPlus",
+	"addon_url": "https://github.com/Kostya-Gladkiy/UnigramPlus",
 	# Documentation file name
 	"addon_docFileName": "readme.html",
 	# Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)

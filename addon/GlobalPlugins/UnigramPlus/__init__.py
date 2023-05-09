@@ -219,11 +219,11 @@ class UnigramPlusSettings(gui.SettingsPanel):
 		self.voiceFullDescriptionOfLinkToYoutube = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Read full video description in YouTube URLs")))
 		self.voiceFullDescriptionOfLinkToYoutube.SetValue(conf.get("voiceFullDescriptionOfLinkToYoutube"))
 		# Report if the group has replies for you
-		self.isAnnouncesAnswers = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce if there is a reply in the group")))
-		self.isAnnouncesAnswers.SetValue(conf.get("isAnnouncesAnswers"))
+		# self.isAnnouncesAnswers = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce if there is a reply in the group")))
+		# self.isAnnouncesAnswers.SetValue(conf.get("isAnnouncesAnswers"))
 		# Report information about premium and verified accounts
-		self.report_premium_accounts = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce premium and confirmed accounts")))
-		self.report_premium_accounts.SetValue(conf.get("report premium accounts"))
+		# self.report_premium_accounts = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce premium and confirmed accounts")))
+		# self.report_premium_accounts.SetValue(conf.get("report premium accounts"))
 		# Report if the message contains a reaction
 		self.voice_the_presence_of_a_reaction = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce if the message contains a reaction")))
 		self.voice_the_presence_of_a_reaction.SetValue(conf.get("voice_the_presence_of_a_reaction"))
@@ -255,8 +255,8 @@ class UnigramPlusSettings(gui.SettingsPanel):
 		conf.set("lang", self.get_key(listLanguages, self.lang.GetStringSelection()))
 		conf.set("actionDescriptionForLinks", self.actionDescriptionForLinks.IsChecked())
 		conf.set("voiceFullDescriptionOfLinkToYoutube", self.voiceFullDescriptionOfLinkToYoutube.IsChecked())
-		conf.set("isAnnouncesAnswers", self.isAnnouncesAnswers.IsChecked())
-		conf.set("report premium accounts", self.report_premium_accounts.IsChecked())
+		# conf.set("isAnnouncesAnswers", self.isAnnouncesAnswers.IsChecked())
+		# conf.set("report premium accounts", self.report_premium_accounts.IsChecked())
 		conf.set("voice_the_presence_of_a_reaction", self.voice_the_presence_of_a_reaction.IsChecked())
 		conf.set("isFixedToggleButton", self.isFixedToggleButton.IsChecked())
 		conf.set("is_automatically_check_for_updates", self.is_automatically_check_for_updates.IsChecked())

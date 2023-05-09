@@ -66,7 +66,7 @@ labels_in_buttons = {
 phrase_administrator_in_message = {
 	"uk": ("Адміністратор", "Власник"),
 	"fr": ("Administrateur", "Propriétaire"),
-	"en": ("Administrator", "Owner"),
+	"en": ("Admin", "Owner"),
 	"zh": ("管理員", "擁有者"),
 	"hr": ("Administrator", "Vlasnik"),
 	"ar": ("مشرف", "المالك"),

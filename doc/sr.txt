@@ -1,9 +1,10 @@
-* UnigramPlus je sada prilagođen najnovijoj verziji unigrama.
-* Kompatibilnost sa NVDA 2023 je sada osigurana.
-* tasterska prečica ALT+1 sada pomera fokus ne samo na listu za ćaskanje, već i na listu kontakata i listu odeljaka podešavanja.
-* Automatsko najavljivanje novih poruka u ćaskanju i automatsko ozvučenje aktivnosti ćaskanja su značajno revidirani, što je rezultiralo poboljšanom stabilnošću.
-* Dodata je prečica na tastaturi za prikaz svih UnigramPlus komandi. Podrazumevano, ova funkcija je dodeljena ALT+H.
-* Rešeno je i nekoliko manjih problema.
+* Sada u postavkama unigrama, kategorije podešavanja se mogu otvoriti pritiskom na enter. Kada otvorite bilo koju kategoriju podešavanja, fokus će biti stavljen na tu kategoriju.
+* Sada kada kliknete na dugme objašnjenje u kvizovima, tekst objašnjenja će se otvoriti u posebnom prozoru radi lakšeg pregleda.
+* Rešen je problem gde se imena fascikli za ćaskanje nisu izgovorila prilikom prebacivanja između njih.
+* Ispravljena greška koja je onemogućavala onemogućavanje ili promenu redosleda izgovaranja tipa i imena ćaskanja.
+* Rešen problem kada nije bilo moguće pronaći tačan odgovor u kvizovima.
+* Rešen je problem sa kopiranjem poruke pomoću kombinacije control+shift+C.
+* Napravljeno nekoliko manjih popravki, poboljšanja i optimizacija koda.
 
 Ako imate želju, a što je najvažnije, priliku, da biste podržali programera ovog dodatka, možete to učiniti koristeći sledeće detalje:
 * Peipal: gladkii.kostia@gmail.com.

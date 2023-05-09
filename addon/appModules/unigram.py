@@ -95,6 +95,34 @@ class Tab_folder_item:
 	# pass
 
 
+class SettingsPanelListItem:
+
+	def script_activate_element(self, gesture):
+		self.firstChild.doAction()
+		self.appModule.script_toLastMessage(gesture)
+
+	__gestures = {
+		"kb:enter": "activate_element",
+		"kb:space": "activate_element",
+	}
+
+
+class ExplanationCorrectAnswerInQuiz:
+	def script_activate_element(self, gesture):
+		gesture.send()
+		elements = self.appModule.getElements()
+		try: obj = elements[1].firstChild.firstChild.firstChild
+		except: obj = None
+		if not obj: return False
+		# message(obj.name)
+		TextWindow(obj.name, _("Explanation"), readOnly=False)
+
+	__gestures = {
+		"kb:enter": "activate_element",
+		"kb:space": "activate_element",
+	}
+
+
 class Saved_items:
 	# store frequently used window elements in cache for faster access
 	_items = {}
@@ -208,6 +236,7 @@ class Chat_update:
 		cls.app = app
 		cls.app.saved_items.save("last message", None)
 		Timer(cls.interval, cls.tick).start()
+
 
 class AppModule(appModuleHandler.AppModule):
 	def __init__(self, *args, **kwargs):
@@ -644,7 +673,7 @@ class AppModule(appModuleHandler.AppModule):
 	# Copy message via context menu
 	@script(description=_("Copy messages with formatting preserved"), gesture="kb:control+shift+C")
 	def script_copy(self, gesture):
-		self.activate_option_for_menu("copy", "Messages")
+		self.activate_option_for_menu((icons_from_context_menu["copy"]), "Messages")
 
 	# Show message text in popup window
 	@script(description=_("Show message text in popup window"), gesture="kb:ALT+C")
@@ -823,8 +852,8 @@ class AppModule(appModuleHandler.AppModule):
 				for el in obj.children:
 					if el.UIAAutomationId == "Votes": votes = ". "+el.name+". "
 					elif el.role == controlTypes.Role.TOGGLEBUTTON and el.firstChild.role == controlTypes.Role.PROGRESSBAR:
-						if el.childCount == 4: options += self.processing_of_answer_options_in_surveys(el)
-						elif el.childCount == 3: options+=el.children[1].name+", "
+						if el.childCount == 3: options += self.processing_of_answer_options_in_surveys(el)
+						elif el.childCount == 2: options+=el.children[1].name+", "
 				if options: options = _("Answer options")+": "+options
 				obj.name = obj.name.replace(item.name+", ", item.name+votes+options)
 			elif item .UIAAutomationId in ("TextBlock", "Message") and conf.get("actionDescriptionForLinks") and item.next.UIAAutomationId == "Label" and (len(item.next.name) > 30 or "‎:‎" not in item.next.name):
@@ -844,8 +873,8 @@ class AppModule(appModuleHandler.AppModule):
 				obj.name = item.name+", "+obj.name.replace(item.name[-5:], "")
 			elif item.role == controlTypes.Role.TOGGLEBUTTON and item.UIAAutomationId != "Recognize" and item.firstChild.UIAAutomationId == "Presenter": reactions.append(item.name)
 			elif item.UIAAutomationId == "ForwardLabel": forward = item
-			elif item.UIAAutomationId == "HeaderLabel" and item.previous.name.startswith("\ue607\xa0\xa0"): header = item
-			elif item.UIAAutomationId == "AdminLabel": admin_label = item.name
+			elif item.UIAAutomationId == "HeaderLabel": header = item
+			# elif item.UIAAutomationId == "AdminLabel": admin_label = item.name
 
 		# Checking if a message is a call
 		try:
@@ -866,7 +895,7 @@ class AppModule(appModuleHandler.AppModule):
 		if conf.get("saySenderName") in ("sent", "all") and sender_message == "send" and not header: obj.sender = _("You")+".\n"
 		elif conf.get("saySenderName") in ("received", "all") and profile_name and obj.firstChild.UIAAutomationId not in ("Photo", "1HeaderLabel") and obj.firstChild.location.left != 0 and obj.firstChild.location.left - obj.location.left < 30 and not header: obj.sender = profile_name.firstChild.name+".\n"
 		
-		obj.name = obj.name.replace("\n. \r\n", "\n")
+		obj.name = obj.name.replace("\n. . \r\n", "\n")
 		# Check the status of the message, whether it is read and sent
 		# Checking only sent messages
 		if obj.name.endswith(". ."):
@@ -875,7 +904,10 @@ class AppModule(appModuleHandler.AppModule):
 			else:
 				list_text = obj.name.split("\n")
 				key_phrases = phrase_administrator_in_message.get(conf.get("lang"), phrase_administrator_in_message["en"])
-				if not conf.get("notify administrators in messages") and len(list_text) > 1 and ((admin_label and list_text[1] == admin_label+". \r") or list_text[1] in (key_phrases[0]+". \r", key_phrases[1]+". \r")):
+				en_key_phrases = phrase_administrator_in_message["en"]
+				print(en_key_phrases)
+				# if not conf.get("notify administrators in messages") and len(list_text) > 1 and ((admin_label and list_text[1] == ". "+admin_label+". \r") or list_text[1] in (". "+key_phrases[0]+". \r", ". "+key_phrases[1]+". \r")):
+				if not conf.get("notify administrators in messages") and len(list_text) > 1 and list_text[1] in (". "+key_phrases[0]+". \r", ". "+key_phrases[1]+". \r", ". "+en_key_phrases[0]+". \r", ". "+en_key_phrases[1]+". \r"):
 					del list_text[1]
 					obj.name = "\n".join(list_text)
 		else:
@@ -909,9 +941,9 @@ class AppModule(appModuleHandler.AppModule):
 		name = ""
 		for item in obj.children:
 			if item.UIAAutomationId == "TitleLabel":
-				premium = _("Premium") if item.next and item.next.name == "\ue9b5" else _("Verified") if item.next.name == "" else ""
+				# premium = _("Premium") if item.next and item.next.name == "\ue9b5" else _("Verified") if item.next.name == "" else ""
 				title = item.name
-				type = obj.name.split(", ")[0] if item.previous.UIAAutomationId == "TypeIcon" else ""
+				type = obj.name.split(", ")[0] if not obj.name.startswith(title) else ""
 				name = type+", "+title if type else title
 				if type and conf.get("voiceTypeAfterChatName") == "afterName":
 					obj.name = obj.name.replace(name, title+", "+type, 1)
@@ -919,12 +951,12 @@ class AppModule(appModuleHandler.AppModule):
 				elif type and conf.get("voiceTypeAfterChatName") == "don'tVoice":
 					obj.name = obj.name.replace(type+", ", "", 1)
 					name = title
-				if premium and conf.get("report premium accounts"):
-					obj.name = obj.name.replace(name, name+", "+premium, 1)
-					name = name+premium
-			elif item.UIAAutomationId == "UnreadMentionsLabel" and conf.get("isAnnouncesAnswers"):
-				text = _("there are replies for you")
-				obj.name = re.sub(r"%s, \d{1,3} [\w ]{5,20},"%re.escape(name), r"\g<0> %s,"%text, obj.name)
+				# if premium and conf.get("report premium accounts"):
+					# obj.name = obj.name.replace(name, name+", "+premium, 1)
+					# name = name+premium
+			# elif item.UIAAutomationId == "UnreadMentionsLabel" and conf.get("isAnnouncesAnswers"):
+				# text = _("there are replies for you")
+				# obj.name = re.sub(r"%s, \d{1,3} [\w ]{5,20},"%re.escape(name), r"\g<0> %s,"%text, obj.name)
 		return obj.name
 
 	# Change the announce level of progress bars
@@ -989,6 +1021,7 @@ class AppModule(appModuleHandler.AppModule):
 				self.profile_panel_element = panel
 				panel.firstChild.setFocus()
 		elif self.execute_context_menu_option:
+			print(self.execute_context_menu_option)
 			try: targetButton = next((item for item in obj.parent.children if item.firstChild.name in self.execute_context_menu_option), False)
 			except: targetButton = False
 			self.execute_context_menu_option = False
@@ -1077,7 +1110,7 @@ class AppModule(appModuleHandler.AppModule):
 				# Checking if a toggle button is an answer option in a vote
 				if "reactionTypeEmoji {" in obj.name:
 					obj.name = re.sub(r"^(.+)reactionTypeEmoji.+\"(.)\".+", "\g<1>\g<2>", obj.name, flags=re.S)
-				if obj.firstChild.UIAAutomationId == "Loading"  and obj.lastChild.UIAAutomationId == "Votes" and obj.childCount == 4: obj.name = self.processing_of_answer_options_in_surveys(obj)
+				if obj.firstChild.UIAAutomationId == "Loading"  and obj.lastChild.UIAAutomationId == "Votes" and obj.childCount == 3: obj.name = self.processing_of_answer_options_in_surveys(obj)
 			except: pass
 		if obj.name == "":
 			if obj.firstChild and obj.firstChild.name in labels_in_buttons: # If the button contains an icon, check if the dictionary contains the label for that icon
@@ -1092,33 +1125,33 @@ class AppModule(appModuleHandler.AppModule):
 				obj.name = "/. ".join(name)
 		nextHandler()
 
-	# def event_NVDAObject_init(self,obj):
-		# if obj.role == controlTypes.Role.LISTITEM and controlTypes.State.SELECTED in obj.states: message(obj.name)
-
 	# Processing item initialization
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
 		try:
 			if obj.role == controlTypes.Role.CHECKBOX and  (obj.parent.role == controlTypes.Role.WINDOW or obj.parent.parent.UIAAutomationId == "Messages" or obj.next.name == "Xg"):
 				clsList.insert(0, Message_list_item)
 			elif obj.role == controlTypes.Role.LISTITEM:
-				
 				# Here, tracking the change of folder with chats
 				# Also track the selection of chats in the chat list to remember the last selection
 				parent = obj.parent
-				if parent.UIAAutomationId in ("ChatFilters", "ChatFiltersSide"):
+				if parent.UIAAutomationId == "ChatFolders":
 					self.tabs_folder_element = parent
 					clsList.insert(0, Tab_folder_item)
 					if conf.get("voiceFolderNames") and controlTypes.State.SELECTED in obj.states: self.change_chats_folder(obj, parent.UIAAutomationId)
 				elif parent.UIAAutomationId == "ChatsList" and controlTypes.State.SELECTED in obj.states: self.saved_items.save("last selected chat", obj)
+				elif parent.UIAAutomationId == "Navigation":
+					clsList.insert(0, SettingsPanelListItem)
 			elif obj.UIAAutomationId == "Profile":
 				self.saved_items.save("profile name", obj)
 			elif obj.UIAAutomationId in ("Audio", "Video"):
 				clsList.insert(0, Audio_and_video_button)
+			elif obj.role == controlTypes.Role.BUTTON and obj.UIAAutomationId == "Explanation":
+				clsList.insert(0, ExplanationCorrectAnswerInQuiz)
 			elif obj.role == controlTypes.Role.SLIDER and obj.UIAAutomationId == "Slider":
 				self.saved_items.save("slider", obj)
 			elif conf.get("voicingPerformanceIndicators") == "none" and obj.role == controlTypes.Role.PROGRESSBAR:
 				clsList.pop(0)
-		except: pass
+		except Exception as e: pass
 
 	def deleteMessageAndChat(self, obj):
 		if not conf.get("confirmation_at_deletion"): speech.cancelSpeech()
@@ -1257,11 +1290,8 @@ class AppModule(appModuleHandler.AppModule):
 		tab_items = obj.name.split(", ")
 		count_chats = None
 		last_selected_folder = self.saved_items.get("last selected folder")
-		if parent == "ChatFilters" and last_selected_folder != tab_items[0]:
+		if last_selected_folder != tab_items[0]:
 			self.saved_items.save("last selected folder", tab_items[0])
-			if len(tab_items) >= 2 and tab_items[1] != "0": count_chats = tab_items[1]
-		elif parent== "ChatFiltersSide" and last_selected_folder != tab_items[-1]:
-			self.saved_items.save("last selected folder", tab_items[-1])
 			if len(tab_items) > 2 and tab_items[2] != "0": count_chats = tab_items[2]
 		else: return False
 		text = self.saved_items.get("last selected folder")

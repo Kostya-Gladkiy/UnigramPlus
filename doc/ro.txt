@@ -1,9 +1,10 @@
-* UnigramPlus este acum adaptat la cea mai recentă versiune de Unigram.
-* Compatibilitatea cu NVDA-2023 este acum asigurată.
-* Scurtătura ALT+1 te focalizează acum nu numai în lista de chat, ci și în lista de contacte și în lista secțiunii de setări.
-* Citirea automată a mesajelor noi în chat și sonorizarea automată a activității de chat au fost revizuite semnificativ, ceea ce a dus la o stabilitate îmbunătățită.
-* A fost adăugată o comandă rapidă de la tastatură pentru a afișa toate comenzile UnigramPlus. În mod implicit, această funcție este atribuită la ALT+H.
-* De asemenea, au fost rezolvate mai multe probleme minore.
+* Acum, în setările Unigram, categoriile de setări pot fi deschise prin apăsarea tastei Enter. Atunci când deschizi orice categorie de setări, te vei focaliza pe acea categorie.
+* Acum, atunci când faci clic pe butonul "Explanation" în chestionare, textul explicației se va deschide într-o fereastră separată pentru o vizualizare comodă.
+* A fost rezolvată o problemă în care numele dosarelor de chat nu erau rostite atunci când se trecea de la unul la altul.
+* A fost rezolvată o eroare care făcea imposibilă dezactivarea sau schimbarea ordinii de rostire a tipului și a numelui de chat.
+* A fost rezolvată problema în care nu era posibil să se afle răspunsul corect în chestionare.
+* S-a rezolvat problema cu copierea unui mesaj folosind combinația control+shift+C.
+* Am făcut mai multe corecturi minore, îmbunătățiri și optimizări de cod.
 
 Dacă ai dorința și, mai ales, posibilitatea de a sprijini dezvoltatorul acestui add-on, o poți face folosind următoarele detalii:
 * PayPal: gladkiy.kostya@gmail.com.

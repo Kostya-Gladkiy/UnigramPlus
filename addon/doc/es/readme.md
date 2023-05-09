@@ -4,71 +4,153 @@
 * [Canal en Telegram](https://t.me/unigramPlus)
 * Telegram: @unigramPlus
 * enlace de donación: [https://unigramplus.diaka.ua/donate](https://unigramplus.diaka.ua/donate)
+* PayPal: gladkiy.kostya@gmail.com
+
 
 Utiliza Unigram De forma más cómoda y productiva. Este complemento proporciona muchas teclas rápidas para un uso rápido y cómodo de Unigram y realiza muchas pequeñas mejoras.
 ##Algunas de las mayores mejoras son:
+
 * agrega mejoras significativas al mostrar publicaciones tales como encuestas, enlaces o publicaciones con archivos adjuntos.
 * Cuando el foco se encuentra en la lista de chats, no se anuncia la información tal como "Chats, pestaña, lista seleccionada" y si el cursor está en la lista de mensajes, no oirás la palabra "Lista".
 * Cuando el foco esté en el botón abrir archivo o descargar archivo, se verbalizará el nombre y tamaño del archivo, y si estás en el botón reproducir de un archivo de audio, escucharás su nombre y duración.
 * Cuando estés en un mensaje de voz que se esté reproduciendo actualmente,  oirás primero su tiempo de reproducción, y luego el resto de la información relevante.
-* cuando el foco toque un mensaje que contenga información sobre una llamada, se anuncia la duración de dicha llamada.
+* cuando el foco esté en un mensaje que contenga información sobre una llamada, se anuncia la duración de dicha llamada.
 * Cuando el foco esté en un mensaje seleccionado de un chat, primero oirás la información de si está seleccionado, y luego el contenido del mensaje.
 * Ahora mientras te mueves por la lista de mensajes de un chat, Ya no oirás la palabra visto, sino que se verbalizará "no visto" antes de leer el mensaje propiamente dicho. Actualmente esta característica solo funciona en inglés, ruso, ucraniano, español, portugués, croata, turco y Persa.
 * Se a modernizado significativamente la función de grabación de mensajes de voz. la grabación, envío y cancelación de mensajes de voz se acompañan de sonidos distintivos. además, cuando se realizan estas operaciones, el foco permanece en la misma posición y no salta al botón de grabar ni al campo de edición.
-* se agregó la posibilidad de rastrear la actividad del chat. esta función se activa presionando dos veces la combinación "ALT+T".
 * si los archivos de medios adjuntos a un mensaje se abren presionando espacio, después de cerrarlos, el cursor regreza a donde estaba anteriormente.
-* Se pueden desactivar todos los sonidos de indicación de  funciones, o solo las indicaciónes de reproducción de mensajes de voz.
+* El complemento ahora te permite desactivar completamente el anuncio de barras de progreso, además de desactivar únicamente el anuncio del progreso al reproducir un mensaje.
 
-##Información sobre donaciones al desarrollador:
-
+##Información sobre la oportunidad de donar al desarrollador:
 Si realmente te gusta este complemento y lo deseas, Y lo más importante, tienes la oportunidad de apoyar financieramente al desarrollador Y por ende motivarlo a seguir desarrollándolo, puedes hacerlo transfiriendo un pequeño monto usando los siguientes detalles bancarios:
 
 * PayPal: gladkiy.kostya@gmail.com.
 * Sistema de donación ucraniano: https://unigramplus.diaka.ua/donate.
 * Número de tarjeta: 5169360009004502 (Gladkiy Constantine).
+Y recuerde que todos los que leyeron esta línea pensaron alguien definitivamente apoyará al desarrollador, pero no seré yo.
 
 ## lista de teclas rápidas:
-* ALT+1 - mover el foco a la lista de chats.
-* ALT+2 - mover el foco al último mensaje en el chat.
-* ALT+3 - mover el foco a la etiqueta de mensajes no leídos.
-* ALT+D - Mover el foco al campo de edición. Si el foco ya se encuentra en el campo de edición, luego de presionar las teclas rápidas se moverá a donde estaba anteriormente.
-* ALT+T - Leer nombre de perfil y estado en un chat público.
-* space - Reproducir/pausar el mensaje de voz o video en el foco o abrir los medios adjuntos al mensaje actual.
-* ALT+P - Reproducir/pausar el mensaje de voz que se esté reproduciendo actualmente.
-* ALT+S - Aumenta/disminuye la velocidad de reproducción de mensajes de voz.
-* ALT+E - Cerrar reproductor de audio.
-* control+C - Copiar mensaje si este contiene texto.
-* ALT+shift+C - presionar botón "llamar".
-* ALT+shift+V - Presionar botón videollamar.
-* ALT+Y - aceptar llamada
-* ALT+N - Presionar el botón "rechazar llamada" si hay una llamada entrante, finalizar llamada si una llamada está en curso, o salir del chat de voz si éste está activo.
-* ALT+A - Presionar el botón "activar/desactivar micrófono".
-* ALT+C - Presionar el botón "activar/desactivar cámara".
-* ALT+Q - presionar el botón "vista rápida", si el mensaje actual lo contiene.
-* ALT+O - Presionar el botón "más opciones" en un chat avierto, chat de voz o ventana de llamada.
-* ALT+M - abrir menú de navegación.
-* control+R - Empezar a grabar mensaje de voz / enviar mensaje de voz.
-* control+D - Cancelar grabación de mensaje de voz. presionarlo dos veces cambia el tipo de notificación al empezar a grabar, enviar, o cancelas la grabación de mensajes de voz.
-* ALT+U - Alternar anuncios de barras de progreso.
-* delete - eliminar mensaje o chat.
-* shift+delete - Eliminar mensaje o chat de ambas partes
-* control+P - Abrir perfil del chat actual.
-* control+ALT+C - Abrir comentarios.
-* Enter - Responder al mensaje.
-* ALT+F - Reenviar el mensaje.
-* Backspace - Editar mensaje.
-* ALT+shift+R - Marcar chat como leído.
-* control+пробіл - Cambiar al modo selección.
-* control+shift+C - Copiar mensaje manteniendo el formato.
-* ALT+shift+L - Copiar datos de transmisión al portapapeles.
-* control+ALT+flecha derecha - adelantar mensaje de voz.
-* control+ALT+flecha izquierda - retroceder mensaje de voz.
-* ALT+C - Mostrar mensaje en una ventana emergente.
-* NVDA+control+U - Abrir la ventana de configuraciones de UnigramPlus.
+* ALT+1: Mover el foco a la lista de chats;
+* ALT+2: Mover el foco al último mensaje en el chat;
+* ALT+3: Mover el foco a la etiqueta "mensajes no leídos";
+* ALT+D: Mover el foco al campo de edición. Si el foco ya se encuentra en el campo de edición, luego de presionar las teclas rápidas se moverá a donde estaba anteriormente;
+* ALT+T: Anuncia el nombre y el estado de un chat abierto;
+* Espacio: Reproduce/pausa el mensaje de voz o video en el foco o abre los medios adjuntos al mensaje actual;
+* ALT+P: Reproduce/pausa el mensaje de voz que se esté reproduciendo actualmente;
+* ALT+S: Aumenta/disminuye la velocidad de reproducción de mensajes de voz;
+* ALT+E: Cierra el reproductor de audio;
+* control+C: Copia el mensaje si este contiene texto. Si el foco está en un enlace, el enlace se copiará.
+* ALT+shift+C: Llama a un contacto, o introduce un chat de voz si estás en un grupo;
+* ALT+shift+V: Presiona el botón videollamar;
+* ALT+Y: aceptar llamada;
+* ALT+N: Presionar el botón "rechazar llamada" si hay una llamada entrante, finalizar llamada si una llamada está en curso, o salir del chat de voz si éste está activo;
+* ALT+A: Presionar el botón "activar/desactivar micrófono";
+* ALT+C: Presionar el botón "activar/desactivar cámara";
+* ALT+Q: presionar el botón "vista rápida", si el mensaje actual lo contiene;
+* ALT+O: Presionar el botón "más opciones" en un chat avierto, chat de voz o ventana de llamada;
+* ALT+M: Abrir menú de navegación;
+* control+R: Empezar a grabar / enviar mensaje de voz;
+* control+D: Si se presiona una vez, cancelar grabación de mensaje de voz. Si se presiona dos veces, cambia el tipo de notificación al empezar a grabar, enviar, o cancelar la grabación de mensajes de voz;
+* ALT+U: Alternar anuncios de barras de progreso;
+* control+P: Abrir perfil del chat actual;
+* Suprimir: eliminar mensaje o chat;
+* shift+Suprimir: Eliminar mensaje o chat de ambas partes;
+* control+ALT+C: Abrir comentarios;
+* Sin asignar: Responder al mensaje;
+* ALT+F: Reenviar el mensaje;
+*Sin asignar: Editar mensaje;
+* ALT+shift+R: Marcar chat como leído;
+* control+ barra espaciadora: Cambiar al modo selección;
+* control+shift+C: Copiar mensaje manteniendo el formato;
+* ALT+shift+L: Copiar datos de transmisión al portapapeles;
+* control+ALT+flecha derecha: adelantar mensaje de voz.
+* control+ALT+flecha izquierda: Retroceder mensaje de voz.
+* ALT+C: Mostrar mensaje en una ventana emergente.
+* NVDA+control+U: Abrir la ventana de configuraciones de UnigramPlus.
+* ALT+4: Mueve el foco a la lista de moderadores.
+* control+shift+A: Presiona el botón "adjuntar archivo".
+* control+N: Presiona el botón "Nuevo chat".
+* Sin asignar: Fijar/anclar un mensaje o chat.
+* ALT+5: Mueve el foco a la opción abrir el perfil.
+* ALT+L: Activa la lectura automática de mensajes en el chat actual.
+* NVDA+ALT+R: Convertir mensaje de voz a texto.
+* Flecha izquierda: Anuncia el mensaje original, el mensaje que fue respondido.
+* ALT+6: Mueve el foco a la lista de hilos del grupo.
+* ALT+H: Muestra una lista de los atajos de teclado de Unigram.
 
 ### Nota
-Todas las teclas rápidas se pueden reasignar en el menú NVDA >preferencias>gestos de entrada.
-el hecho de que la característica que enfoca el cursor en la etiqueta mensajes no leídos a veces responda con un retrazo es un problema conocido. Puede que esto dependa de la cantidad de mensajes cargados en el momento.
+* Todas las teclas rápidas se pueden reasignar en el menú NVDA >preferencias>gestos de entrada.
+* el hecho de que la característica que enfoca el cursor en la etiqueta "mensajes no leídos" a veces responda con un retrazo es un problema conocido. Puede que esto dependa de la cantidad de mensajes cargados en el momento.
+
+##Lista de cambios:
+
+### Versión 4.8.0
+
+* Ahora en las opciones de Unigram, las categorías de configuración se pueden abrir presionanndo intro. Cuando abres una categoría de configuración, el foco se desplaza a dicha categoría.
+* Ahora, cuando presionas el botón explicación en un cuestionario, el texto de la explicación se abre en una ventana separada para una revisión más conveniente.
+* Se corrigió un fallo en las carpetas de chats que no se anunciavan al moverse entre ellas.
+* Se corrigió un error que hacía imposible deshabilitar o cambiar el orden del anunciado del tipo y nombre de chat.
+* Se corrigió un error que no hacía posible encontrar la respuesta correcta en cuestionarios.
+* Se solucionó un problema al copiar mensajes con la convinación de teclas control+shift+C.
+* Se realizaron muchas correcciones de errores menores, mejoras y obtimización de código.
+
+###Versión 4.7.0
+
+* Unigram Plus se adapta a la última versión de Unigram.
+* La compatibilidad con NVDA-2023 está asegurada.
+* El comando ALT+1 mueve el foco a la lista de chats, pero también a la lista de contactos y la lista de secciones de configuración.
+* La lectura automática de mensajes y el seguimiento automático de la actividad del chat fueron significativamente obtimizados, resolviendo problemas de implementación.
+* Se añadió una combinación de teclas para mostrar todos los comandos de Unigram. De forma predeterminada, esta función se asigna a ALT+H.
+* Se resolvieron errores menores.
+
+###Versión 4.6.0
+
+* Se añadió un comando para mover el foco a la lista de hilos del grupo. De forma predeterminada, se asigna a la combinación de teclas ALT+6. Por favor, ten en cuenta que si presionas con frecuencia intro en el grupo para abrirlo, la lista de hilos no se mostrará. Es necesario colocar el foco en el grupo de nuevo y presionar la tecla intro. La segunda vez, una lista de hilos se muestra, y después se puede presionar una combinación de teclas que mueva el foco a esta lista.
+* Ahora la convinación de teclas ALT+2 mueve el foco a la lista de mensajes, pero también al perfil abierto, la lista de hilos del grupo abierta o la sección de configuración abierta.
+* Ahora en las opciones de Unigram plus, puedes desactivar el anuncio de las palabras "administrador" y "propietario" en mensajes de grupos.
+* Las combinaciones para aceptar y rechazar llamadas funcionan correctamente.
+* Ahora, el anuncio automático de nuevos mensajes y la actividad del chat se puede desactivar cuando se reinicia NVDA, pero también se puede desactivar cuando lo decidas.
+* Se implementó el mostrado de algunos elementos de la interfaz.
+
+### Versión 4.5.0
+
+* Adaptado a la última versión de Unigram.
+* Ahora, si el mensaje contiene una respuesta a otro, presionando la flecha izquierda, puedes escuchar el mensaje que fue respondido.
+* Se añadió localización al francés.
+* Se eliminó la capacidad de añadir reacciones a los mensajes con atajos de teclado, ya que se volvió difícil adaptar esta función a la interfaz de Unigram.
+* Se corrigieron errores menores.
+
+### Versión 4.4.0
+
+* Se añadió la función para anunciar la actividad del chat. Por defecto, esta función se activa presionando dos veces la combinación de teclas ALT+T. La función se mantiene abilitada hasta que NVDA se reinicie.
+* Se añadió la función de lectura automática de mensajes en el chat actual. Por defecto, esta función se activa presionando ALT+L. La función se mantiene abilitada hasta que NVDA se reinicie. Puede tener problemas de estabilidad si muchos mensajes aparecen en el chat.
+* Se añadió un atajo de teclado para la función convertir el mensaje en texto. Por defecto, esta función se asigna a la combinación NVDA +ALT+R. Por favor, ten en cuenta que en los casos en los cuáles el mensaje sea muy largo, la conversión se divide en varias partes. Esto significa que cuando Unigram Plus notifica que la conversión se ha completado, solo se anunciará una parte. Después de unos segundos, el resto del texto se añade.
+* Ahora, al navegar por la lista de chat, Unigram Plus anuncia la información sobre cuentas premium y cuentas verificadas.
+
+### Versión 4.3.0
+
+* Ahora Unigram funciona correctamente si muchos chat se abren en varias ventanas.
+* Se añadió un atajo de teclado para mover el foco al área del perfil del usuario si está abierta. El gesto predeterminado es ALT+5.
+* Se corrigieron errores menores.
+
+### Versión 4.4.0
+
+* El mecanismo para guardar las opciones de Unigram se rediseñó significativamente. Ahora, las opciones no se guardan en el archivo de configuración de NVDA, se guardan en su propio archivo. Esto resuelbe el problema de los usuarios que actualizaban Unigram Plus y este dejava de funcionar, debido a problemas para acceder al archivo de configuración de NVDA. Desafortunadamente, los usuarios deberán reconfigurar Unigram Plus, ya que después de instalar esta actualización, todas las opciones se reestablecen.
+* Se corrigió un problema de compatibilidad con el complemento Bluetooth Audio.
+* Ahora la información sobre el mensaje no seleccionado no se anuncia. Si el mensaje está seleccionado, se anuncia antes de su contenido.
+* Ahora el número de elementos en la lista de chats se anuncia si está activada la opción Anunciar información de posición del objeto en las opciones de NVDA.
+* Se añadieron etiquetas para algunos botones.
+
+### Versión 4.1.0
+
+* Se añadió un gesto para fijar un mensaje o chat. De forma predeterminada, no se asigna un atajo de teclado a esta característica.
+* Se añadió una combinación de teclas para presionar el botón "Nuevo chat". El gesto predeterminado para esta característica es Control + N.
+* Se añadió un atajo de teclado para presionar el botón "Adjuntar archivo". De forma predeterminada, el gesto predeterminado es Control+Shift+A.
+* Se añadió un atajo de teclado para ir a la lista de carpetas de chats. El gesto predeterminado es ALT+4. Esta característica es útil para quienes usen más de nueve carpetas de chat.
+* Ahora, mientras cambias entre carpetas de chat usando las flechas, el foco no saltará.
+* Ahora, mientras te mueves a la lista de carpetas utilizando atajos, además del nombre de la carpeta activa, el número de chats no leídos en la carpeta también se anunciará.
+* Ahora, características como "Marcar un chat como leído" y "fijar un mensaje o chat" también funcionarán a la inversa.
+* Se añadió localización al Rumano.
 
 ###Versión 4.0.0
 
