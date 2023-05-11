@@ -75,4 +75,5 @@ phrase_administrator_in_message = {
 	"ne": ("मालिक", "प्रसाशक"),
 	"es": ("Administrador", "Propietario"),
 	"cs": ("Správce", "Vlastník"),
+	"ru": ("Администратор", "Владелец"),
 }

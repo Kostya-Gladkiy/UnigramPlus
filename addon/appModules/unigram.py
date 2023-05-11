@@ -729,7 +729,8 @@ class AppModule(appModuleHandler.AppModule):
 	# Open navigation menu
 	@script(description=_("Open navigation menu"), gesture="kb:ALT+M")
 	def script_showMenu(self, gesture):
-		try: targetButton = next((item for item in self.getElements() if (item.UIAAutomationId == "PhotoSide") or (item.UIAAutomationId == "Photo" and item.previous and item.previous.UIAAutomationId == "FocusTarget")), False)
+		try:
+			targetButton = next((item for item in self.getElements() if item.UIAAutomationId == "Photo" and item.previous and item.previous.UIAAutomationId == "StateLabel"), False)
 		except: targetButton = False
 		if targetButton: targetButton.doAction()
 		else: message(_("Navigation menu not available"))
