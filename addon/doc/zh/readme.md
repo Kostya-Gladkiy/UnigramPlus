@@ -1,310 +1,316 @@
 # Unigram Plus
 
-* 作者： Kostya Gladkiy (Ukrain)
-* [Telegram 頻道](https://t.me/unigramPlus)
+* Author: Kostya Gladkiy (Ukrain)
+* [Telegram channel](https://t.me/unigramPlus)
 * Telegram: @unigramPlus
-* 贊助連結： [https://unigramplus.diaka.ua/donate](https://unigramplus.diaka.ua/donate)
+* donation link: [https://unigramplus.diaka.ua/donate](https://unigramplus.diaka.ua/donate)
 * PayPal: gladkiy.kostya@gmail.com
 
 
-以更方便和更有效率的方式使用Unigram。 這個附加元件提供許多快速鍵用來快速和方便的使用Unigram，並且增加了許多小改進。
-##幾個重要改進為
+Use Unigram in a more comfortable and productive way. This addon provides many hotkeys for a quick and comfortable use of Unigram and makes a lot of small improvements.
+## Some of the major improvements are:
 
-* 對訊息(如投票、連結或帶有附加媒體的訊息)的顯示進行了重大改進。
-* 當焦點到達消息清單時，報讀"清單"。
-* 當游標到達「開啟檔案」按鈕或「下載」按鈕上時，檔案的名稱和大小將被朗讀，當游標到達音訊檔案的播放按鈕上時，您將聽到其名稱和持續時間。
-* 當焦點到達目前正在播放的語音訊息上時，首先讀出有關其播放時間的資訊，然後讀出所有其他資訊。
-* 當焦點到達包含通話資訊的訊息上時，將讀出此通話的持續時間。
-* 當焦點到達聊天中已選取的訊息時，您將聽到該訊息被選取的資訊，然後聽到內容。
-* 當在聊天中移動時，"已讀" 不會被讀出，"未讀" 會在讀出訊息內容之前讀出。 這個功能目前只能使用於英文、俄文、烏克蘭文、西班牙文、葡萄牙文、波瀾文、克羅埃西亞文、土耳其文和波斯文.
-* 改進了錄製語音訊息的功能。錄製、傳送和取消錄製語音訊息時會播放特殊音效。此外，在執行這些功能時，焦點將保持在其位置，並且不會跳轉到錄製按鈕或訊息輸入編輯區。
-* 如果使用空格鍵打開附加到訊息的媒體，則在關閉後，焦點將返回到焦點中的最後一個元素。
-* 允許完全關閉讀出進度列的功能，或只有當播放語音訊息時關閉。
+* Adds a significant improvement to the display of messages such as a poll, a link, or a message with attached media.
+* When focus enters the list of chats, it removes such phrases as: "chats, tab, selected list". And when the focus hits the list of messages, the phrase "list".
+* The name and size of the file will be spoken when the cursor is focused on the "Open File" button or the "Download File" button, and when the cursor is focused on the play button of the audio file, you will hear its name and duration.
+* When focus is placed on a voice message that is currently being played, first information about the time of its playback is announced, and then all other information.
+* When the focus is on a message that contains information about a call, the duration of this call is announced.
+* When focusing on a selected message in a chat, you will first hear the information that it is selected, and then the content of the message.
+* Now, when moving in the chat, the phrase "Seen" will not be pronounced at all, and the phrase "Not seen" will be pronounced before the content of the message. This feature currently only works in English, Russian, Ukrainian, Spanish, Portuguese, Polish, Croatian, Turkish, and Persian.
+* Significantly improved the function of recording voice messages. Recording, sending and canceling the recording of a voice message are accompanied by characteristic sounds. Also, when performing these functions, the focus remains in its position and does not jump to either the record button or the message input field.
+* If the media attached to the message is opened using the spacebar, then after closing it, the focus will return to the last element that was in focus.
+* The add-on allows you to completely disable the announcement of progress bars, as well as disable only the announcement of the progress bar for playing voice messages.
 
-##關於贊助開發者的資訊：
-如果您喜歡這個附加元件且有能力，最重要的是透過金錢贊助開發者讓未來繼續開發此元件，您可以小額轉帳到以下銀行帳戶：[贊助連結](https://unigramplus.diaka.ua/donate), or card number is 5169360009004502(Ukraine).
-也記住大家讀完這行之後表示有人會實際支持開發者，但是可能不是我。
+## Information about the opportunity to donate to the developer:
+If you really like this add-on and you have the desire, and most importantly the opportunity, to financially support the developer and thereby motivate him to further develop this add-on, you can do this by transferring a small amount to the following bank details: [donation link](https://unigramplus.diaka.ua/donate), or card number is 5169360009004502(Ukraine).
+And remember that everyone who read this line thought that someone will definitely support the developer, but it will not be me.
 
-## 快速鍵列表：
-* ALT+1：移動焦點到聊天清單;
-* ALT+2：移動焦點到目前開啟聊天的最後一則訊息;
-* ALT+3：移動焦點到未讀訊息;
-* ALT+D：移動焦點到輸入訊息的編輯區。 如果焦點已經到達該編輯區， 再次按下該快速鍵，會移動到先前的位置;
-* ALT+T：讀出目前開啟聊天的名稱和狀態;
-* 空格鍵：播放或暫停焦點上的語音或視訊訊息，或開啟附加到目前訊息的媒體檔案;
-* ALT+P：播放或暫停正在播放的語音訊息;
-* ALT+S：增加或減少語音訊息的播放速度;
-* ALT+E：關閉音訊播放器;
-* control+C：複製含有文字的訊息。 如果焦點在連結上，則複製連結;
-* ALT+shift+C：如果是聯絡人則通話，如果是群組則加入群組通話。;
-* ALT+shift+V：視訊通話;
-* ALT+Y：接聽通話;
-* ALT+N：如果有未接來電則拒絕，通話中則結束通話，在群組通話中則退出;
-* ALT+A：靜音或解除靜音麥克風;
-* ALT+C：開啟或關閉視訊鏡頭;
-* ALT+Q：及時瀏覽，如果該訊息含有該按鈕;
-* ALT+O:：在開啟的聊天、群組聊天或通話視窗按下更多選項按鈕;
-* ALT+M：開啟主選單;
-* control+R：開始或停止錄製語音訊息;
-* control+D：按一次，取消語音訊息錄製。按兩次，變更錄製語音訊息的通知方式;
-* ALT+U：切換讀出進度列的方式;
-* control+P：開啟目前聊天的資料頁;
-* delete：刪除訊息或聊天;
-* shift+delete：從兩端刪除訊息或聊天;
-* control+ALT+C：開啟留言;
-* 沒有預設快速鍵：回覆訊息;
-* ALT+F：轉傳訊息;
-* 沒有預設快速鍵：編輯訊息;
-* ALT+shift+R：標示一個聊天已讀;
-* control+空格鍵：切換到選取模式;
-* control+shift+C：複製訊息並保留格式設定;
-* ALT+shift+L：複製用來直播的資訊到剪貼簿;
-* control+ALT+方向鍵右：快轉語音訊息
-* control+ALT+方向鍵左：慢轉語音訊息
-* ALT+C：在快顯視窗中顯示訊息的文字
-* NVDA+control+U：開啟 UnigramPlus 的設定視窗。
-* ALT+4：移動焦點到聊天資料夾。
-* control+shift+A：按下附加媒體按鈕
-* control+N：按下新的聊天按鈕。
-* 沒有預設快速鍵：置頂訊息或聊天。
-* ALT+5：移動焦點到已開啟的資料頁。
-* NVDA+ALT+R：轉換語音訊息成文字，這個功能只有Telegram Premium用戶可用。
-* 左邊 Alt:：讀出被回覆訊息的原始訊息。
-* ALT+6：移動焦點到群組話題清單
-* ALT+H：顯示所有 UnigramPlus 的快速鍵。
+## Hotkey list:
+* ALT+1: Move focus to chat list;
+* ALT+2: Move focus to the last message in an open chat;
+* ALT+3: Move focus to "unread messages" label;
+* ALT+D: Move the focus to the edit field. If the focus is already in the edit field, then after pressing the hotkey, it will move to where it was before;
+* ALT+T: Announce the name and status of an open chat;
+* space: Play/stop the focused voice or video message, or open a media file attached to the current message;
+* ALT+P: Play/pause the voice message currently playing;
+* ALT+S: Increase/decrease the playback speed of voice messages;
+* ALT+E: Close audio player;
+* control+C: Copy the message if it contains text. If the focus is on a link, the link will be copied;
+* ALT+shift+C: Call if it's a contact, or enter a voice chat if it's a group;
+* ALT+shift+V: Press the video call button;
+* ALT+Y: Accept call;
+* ALT+N: Press the \"Decline call\" button if there is an incoming call, the \"End call\" button if the call is in progress, or leave the voice chat if it is active;
+* ALT+A: Press \"Mute/unmute microphone\" button;
+* ALT+C: Press "Enable/disable camera" button;
+* ALT+Q: Press \"Instant view\" button, if it is included in the current message;
+* ALT+O: Press "More Options" button in an open chat, voice chat, or call window;
+* ALT+M: Open navigation menu;
+* control+R: Start/stop voice message recording;
+* control+D: If pressed once, cancels the recording of a voice message. If pressed twice, changes the notification type when starting, sending, or canceling a voice message recording;
+* ALT+U: Toggle progress bar announcements;
+* control+P: Open current chat profile;
+* delete: Delete a message or chat;
+* shift+delete: Delete message or chat from both sides;
+* control+ALT+C: Open comments;
+* Unassigned: Reply to message;
+* ALT+F: Forward message;
+* Unassigned: Edit message;
+* ALT+shift+R: Mark a chat as read;
+* control+space: Switch to selection mode;
+* control+shift+C: Copy messages with formatting preserved;
+* ALT+shift+L: Copy data for broadcasting to the clipboard;
+* control+ALT+right arrow: Fast forward a voice message.
+* control+ALT+left arrow: Rewind voice message.
+* ALT+C: Show message text in popup window.
+* NVDA+control+U: Open UnigramPlus settings window
+* ALT+4: Move focus to list of chat folders.
+* control+shift+A: Press "Attach file" button.
+* control+N: Press "New chat" button.
+* Unassigned: Pin a message or chat.
+* ALT+5: Move focus to open profile.
+* ALT+L: Enable automatic reading of new messages in the current chat.
+* NVDA+ALT+R: Convert voice message to text.
+* Left arrow: Announce the original message, the message that was replied to.
+* ALT+6: Move focus to the list of group threads.
+* ALT+H: Show a list of all UnigramPlus shortcuts.
 
-### 備註
+### Note
 
-* 所有快速鍵可以在NVDA功能表>偏好>輸入手勢變更。
-* 讓焦點到達 "未讀訊息" 的功能有時可能延遲，這是一個已知問題。 這個問題取決於快取訊息的數量。
+* All hotkeys can be reassigned in NVDA menu>preferences>input gestures.
+* The fact that the function that focuses the cursor on the "unread message" label can sometimes react with a delay is a known issue. This may depend on the number of cash messages at the moment.
 
-##更新紀錄：
+## List of changes:
+
+### Version 4.9.0
+
+* Added an option to change the behavior when pressing the up arrow in an empty message edit field. You can choose from the following options: activate the function of editing the last sent message, move the focus to the last message in the chat or do nothing.
+* Fixed answering and rejecting calls using hotkeys.
+* Fixed minor issues such as the ALT+H key combination not working And an issue when the message to which the reply was written was not spoken when pressing the left arrow.
+* Fixed display of some elements.
 
 ### Version 4.8.0
 
-* 在 Unigram 設定中， 可以透過按 Enter 鍵開啟設定的類別。 當您開啟任何類別的設定，焦點將停留在該設定類別。
-* 當在測驗按下註解按鈕時，註解將另開新視窗以方便瀏覽。
-* 修正聊天列表切換無法讀出名稱的錯誤。
-* 修正無法關閉或變更讀出聊天類型的方式的錯誤。
-* 修正無法知道正確測驗答案的錯誤。
-* 修正無法透過按 快速鍵複製訊息的錯誤。
-* 修正小錯誤和最佳化代碼。
+* Now in the Unigram settings, the settings categories can be opened by pressing Enter. When you open any category of settings, the focus will be placed on that category.
+* Now, when clicking the "Explanation" button in quizzes, the explanation text will open in a separate window for convenient viewing.
+* Fixed an issue where chat folder names were not spoken when switching between them.
+* Fixed a bug that made it impossible to disable or change the order of speaking the chat type and name.
+* Fixed the issue when it was not possible to find out the correct answer in quizzes.
+* Fixed the problem with copying a message using the control+shift+C combination.
+* Made several minor fixes, improvements, and code optimizations.
 
-### 4.7.0版
+### Version 4.7.0
 
-* UnigramPlus 已支援最新版本的 Unigram。
-* 相容 NVDA 2023 版本。
-* 快速鍵 ALT+1 除了可以移動焦點到聊天列表，還可以移動到聯絡人列表和設定。
-* 自動讀出新訊息和聊天活動追蹤的功能改進，提高穩定性。
-* 新增顯示所有 UnigramPlus 快速鍵的列表。 預設情況下， 快速鍵為 ALT+H。
-* 修正錯誤。
+* UnigramPlus is now adapted to the latest version of Unigram.
+* Compatibility with NVDA-2023 is now ensured.
+* The keyboard shortcut ALT+1 now moves focus not only to the chat list, but also to the contact list and settings section list.
+* The automatic announcement of new messages in the chat and the automatic sounding of chat activity have been significantly revised, resulting in improved stability.
+* A keyboard shortcut has been added to display all UnigramPlus commands. By default, this function is assigned to ALT+H.
+* Several minor issues have also been fixed.
 
-### 4.6.0版
+### Version 4.6.0
 
-* 新增移動焦點到群組話題清單的快速鍵。 預設情況下，這個功能的快速鍵是 ALT+6。
-請注意，常常在開啟想開啟的群組按 enter 鍵時，話題列表可能不會顯示，然後需要重新在群組設定一次焦點然後按 enter 鍵。在這個情況下，在按第二次之後，聊天列表將顯示，之後我們可以按一個快速鍵，讓焦點移動到這個列表。
-* ALT+2 快速鍵不只可以移動焦點到訊息列表，也可以到開啟個人資料頁，到開啟的群組話題清單，或開啟設定。
-* 在 UnigramPlus 的設定中，您可以停用在群組的訊息中提示管理員或擁有者。
-* 接聽電話或拒絕通話的快速鍵可以正常運作。
-* 自動讀出新訊息和聊天活動不會在NVDA重新啟動之後停用，該功能會運作直到您手動停用。
-* 改進部分介面元素的顯示。
+* Added a keyboard shortcut to move focus to list of group threads. By default, this function is assigned to the ALT+6 combination. Please note that often when pressing the enter key on the group that we want to open, the list of threads may not be displayed and then it is necessary to set the focus on this group again and press the enter key. As a rule, after the second press, a list of threads is displayed, and after that we can press a key combination that will move the focus to this list.
+* Now the ALT+2 combination moves the focus not only to the list with messages, but also to the open profile, to the open list of group threads, or to the open section with settings.
+* Now in the UnigramPlus settings, you can disable the pronunciation of the phrases "Admin" and "Owner" on messages in groups.
+* Combinations for accepting and rejecting calls now work correctly.
+* Now the automatic announcement feature for new messages and the chat activity will not turn off when NVDA is restarted, but will work until you turn it off yourself.
+* Improved display of some interface elements.
 
-### 4.5.0版
+### Version 4.5.0
 
-* 相容於最新版 Unigram
-* 如果一則訊息被回覆，按下左方向鍵可以讀出原始訊息。
-* 新增法文翻譯
-* 移除透過快速鍵反映訊息的功能，因為無法相容最新的uNIGRAM介面變更。
-* 修正錯誤
+* Adapted to the latest version of Unigram
+* Now if a message was sent in response to another message, by pressing the left arrow key, you can hear the text of the message in response to which it was sent
+* Added French localization
+* Removed the ability to add reactions to messages with keyboard shortcuts, since I was unable to adapt this function to changes in the Unigram interface
+* Fixed some minor bugs
 
-### 4.4.0版
+### Version 4.4.0
 
-* 新增聊天活動追蹤功能。 預設情況下，透過按兩次 ALT+T 啟用。 這個功能將持續運作直到下次 NVDA 重新啟動。
-* 新增自動讀出目前聊天中的新訊息的功能。 預設情況下，透過按兩次 ALT+L 啟用。 這個功能將持續運作直到下次 NVDA 重新啟動。 如果聊天中出現太多新訊息，則可能存在穩定性問題。
-* 新增轉換語音訊息成文字的快速鍵。 預設情況下，這個功能的快速鍵為 NVDA+ALT+R。 請注意，如果語音訊息很長，將分次轉換成文字。 所以，可能發生 UnigramPlus 通知您語音訊息已轉換完成，實際上只有一部份的轉換完成。 幾秒之後，這些文字將新增。
-請注意，轉換語音訊息成文字的功能只適用於 Telegram Premium 訂閱用戶。
-* 當透過聊天清單瀏覽時，UnigramPlus 將讀出 Premium 帳戶和已認證的帳戶的資訊。
+* The function of announcing activity in chats has been added. By default, this function is activated by double-pressing the ALT+T combination. The function remains active only until NVDA is restarted.
+* The function of automatic announcements of new messages in the chat has been added. By default, this function is activated by pressing ALT+L. The feature remains active only until NVDA is restarted. There may be stability issues if too many new messages quicly appear in the chat.
+* Added a keyboard shortcut for the function of converting voice messages to text. By default, this function is assigned to the NVDA+ALT+R combination. Please note that in cases where the voice message is very long, then the conversion to text takes place in parts. That is, it may happen that when Unigramplus notifies you that the conversion is complete, only part of the voice message will actually be converted. And after a few seconds, this text will be added.
+* Now, when navigating through the chat list, UnigramPlus reports information about premium accounts and verified accounts.
 
-### 4.3.0版
+### Version 4.3.0
 
-* 當使用不同的視窗開啟不同聊天時，Unigram將正確運作。
-* 新增移動焦點到使用者資料頁(若開啟)，預設快速鍵為 alt+5。
-* 修正錯誤。
+* Now UnigramPlus works correctly when several chats are open in different windows.
+* Added keyboard shortcut to move focus to user profile area if it is open. The default gesture is alt+5.
+* Fixed minor bugs.
 
-###4.2.0版
+### Version 4.4.0
 
-* 變更儲存 UnigramPlus 設定檔的方式。 設定將不會儲存到 NVDA 的組態檔中，而會儲存到獨立的組態檔中。 這會解決當更新或 UnigramPlus 停止運作時存取 NVDA 組態檔的問題。 不幸的是，使用者將需要在這次 UnigramPlus 更新之後重新調整 UnigramPlus 的設定，這次更新之後，所有 UnigramPlus 的設定都會重製。
-* 修正 UnigramPlus 和藍芽音訊附加元件不相容的問題。
-* 不會通知當訊息未選取。 如果訊息已選取，該訊息已選取的通知會在讀出訊息內容之前讀出。
-* 若您在 NVDA 設定中啟用讀出元素清單，會讀出聊天中的訂單號碼。
-* 新增部分按鈕的標籤。
+* The mechanism for saving UnigramPlus settings has been significantly redesigned. Now the settings will not be stored in the NVDA config file, but will be stored in its own config file. This should solve the problem when users after an update or just suddenly UnigramPlus stopped working, due to problems accessing the NVDA config file. Unfortunately, users will have to re-configure UnigramPlus for themselves, as after installing this update, all settings will be reset.
+* Fixed UnigramPlus compatibility issue with BluetoothAudio add-on.
+* Now the information that the message is not selected will not be reported. If a message is selected, information about it will be announced before the message content.
+* Now the order number of the elements in the chat will be announced if you have enabled the element position in the NVDA settings.
+* Added labels to some buttons.
 
-### 4.1.0版
+### Version 4.1.0
 
-* 新增可用來置頂訊息或聊天的輸入手勢，預設情況下，沒有預先設定快速鍵。
-* 新增按下 "新的聊天" 按鈕的快速鍵。 預設的快速鍵為 ctrl+n.
-* 新增按下 "附加媒體" 按鈕的快速鍵。 預設的快速鍵為 ctrl+shift+a.
-* 新增跳到聊天資料夾的快速鍵。 預設的快速鍵為 alt+4。 這個功能當設定超過九個聊天資料夾時將很有用。
-* 當使用方向鍵移動資料夾時，焦點將不會隨意移動。
-* 當使用鍵盤切換聊天資料夾時，會讀出移動到的資料夾的未讀訊息數量。
-* "標示一個聊天為已讀" 和 "置頂訊息或聊天" 的功能可以反向動作。
-* 新增羅馬尼亞文翻譯。
+* Added a gesture to pin a message or chat. By default, no keyboard shortcut are assigned to this feature.
+* Added a keyboard shortcut for pressing the "New conversation" button. The default gesture for this feature is ctrl+n.
+* Added a keyboard shortcut for pressing the "Attach media" button. The default gesture is ctrl+shift+a.
+* Added a keyboard shortcut to go to the list of chat folders. The default gesture is alt+4. This feature will be useful for those who use more than nine chat folders.
+* Now, when switching between folders using the arrows, the focus will not jump anywhere.
+* Now, when switching between folders using hotkeys, in addition to the name of the active folder, the number of unread chats in this folder will be announced.
+* Now features such as "Mark a chat as read" and "Pin a message or chat" will also work in reverse.
+* Added Romanian localization.
 
-### 4.0.0版
+### Version 4.0.0
 
-* 相容於Unigram8.8版本。 自從Unigram介面變更，必須重寫許多程式代碼。
-* 可以慢轉或快轉語音訊息。 使用快速鍵 control+方向鍵右 快轉，使用 Control+方向鍵左 慢轉。
-* 現在 UnigramPlus 不只可以報讀訊息中含有表情符號反映，還可以報讀表情符號反映中的詳細資訊。
-* 可以在快顯視窗中查看訊息文字。 預設的快速鍵為 ALT+C。
-* 新增開啟 UnigramPlus 設定視窗的快速鍵。 預設的快速鍵為 NVDA+control+U
-* 新增捷克文翻譯。
-* 修復烏克蘭用戶更新 UnigramPlus 的問題。
+* Provided compatibility with Unigram 8.8. Since the Unigram interface has changed, I had to rewrite a significant part of the addon code.
+* Added the ability to rewind and fast forward voice messages. To fast forward, use the combination control+right arrow, and to rewind, use control+left arrow.
+* Now UnigramPlus will report not only the presence of reactions in messages, but also announce detailed information about reactions.
+* Added the ability to view the text of the message in the popup window. The default gesture for this feature is ALT+C.
+* Added keyboard shortcut to open UnigramPlus settings window. The default gesture for this feature is NVDA+control+U
+* Added Czech and Romanian localizations.
+* Fixed issue with UnigramPlus update for Ukrainian residents.
 
-### 3.2.3版
+### Version 3.2.3
 
-* 新增正體中文翻譯。
-* 更新現有翻譯，包含英文。
-* 錯誤修正。
+* Added Chinese localization.
+* Updated existing localizations, including English.
+* Fixed minor bugs.
 
-### 3.2.0版
+### Version 3.2.0
 
-* 刪除功能，例如： "聊天活動追蹤" 和 "在目前開啟的聊天讀出新訊息" ，因為我目前無法讓這些功能在NVDA2022.1版正常運作。
-* 改進對通話中靜音或解除靜音、開啟或關閉攝影鏡頭的無障礙支援，現在，按下這些快速鍵之後，會讀出狀態。
-* 修正 Enter 鍵無法在部分元素中正常運作，現在可以在錄製語音訊息的按鈕按住 Enter 鍵錄製語音訊息。
-* 您可以新增一些功能的快速鍵，例如 "回覆訊息" 和 "編輯訊息"。 您也可以使用這些鍵，例如Enter, Backspace 或甚至方向鍵左或右來新增快速鍵，不會與其他程式的相同快速鍵衝突。 注意，這些功能沒有預設的快速鍵，您只能在焦點在聊天訊息中時新增這些快速鍵。
-* 讀出傳送者姓名的功能更準確。
-* 當焦點在一個包含連結的訊息，訊息的文字不會先讀出，會先讀出連結的文字。
-* 新增小改進和修正錯誤。
-* 現在 UnigramPlus 會執行的更快速。
+* Removed features such as "Chat activity tracking" and "Read new messages in open chat" because I was unable to get them to work properly in NVDA 2022.1.
+* Improved accessibility of mute / unmute and turn on / off camera in calls. Now, after pressing the shortcut for both functions, their status will be announced.
+* Fixed an issue where the Enter key was not working properly on some elements. Now you can still record voice messages by holding the Enter key on the record button.
+* You can now reassign keyboard shortcuts to features such as "Reply to message" and "Edit message". You can also assign these functions to keys such as Enter, Backspace or even left or right arrows, and it won't interfere with those keys on other items. Note that no keys will be assigned to these features at first, but you will only be able to assign them when the focus is on one of the chat messages.
+* Now the function "Say the sender's name" should work more correctly.
+* When you focus on a link contained in a message, the message text will not be spoken first, but the link text will be spoken immediately.
+* made many small improvements and fixed many bugs and shortcomings.
+* Now UnigramPlus should run noticeably faster.
 
-### 3.1.0版
+### Version 3.1.0
 
-* 改進投票報讀方式。 可以讀出投票結果視窗的投票者姓名，也會讀出投票的正確選項。
-* 可以對訊息做出表情符號反映，但是僅限於私人訊息。 這個功能無法正常在群組和頻道使用。 在私人訊息中，按下 NVD + ALT + 數字從 1 到 5，您可以選擇以下表情符號： 1 - 👍, 2 - 👎, 3 - ❤, 4 - 🔥, 5 - 🥰。
-* 可以讀出現有的表情符號反映資訊。 不幸的是，目前無法正確讀出可用的表情符號反映選項。
-* 新增快速複製直播資訊到剪貼簿的快速鍵。
-* 修正最新版 Unigram 顯示 inline 結果的問題。
+* Poll announcement has been improved. The names of users who have taken surveys are now announced in the results window. Polls will also provide information on which option was correct.
+* The ability to react to messages has been added, but only in private chats. This feature will not work properly in groups and channels. In private chats, by pressing NVD + ALT + numbers from 1 to 5, you can type the following reactions: 1 - 👍, 2 - 👎, 3 - ❤, 4 - 🔥, 5 - 🥰.
+* Added the ability to announce information about existing replies to messages. Unfortunately, it is not yet possible to announce the name of the available reactions.
+* Added hotkey to quickly copy data needed for broadcasts.
+* Fixed an issue with displaying inline results that appeared in the latest versions of Unigram.
 
-### 3.0.0 版
+### Version 3.0.0
 
-警告！ UnigramPlus 不再支援NVDA版本2021.2之前的版本。
-* 新增對許多介面元素的標籤。
-* 修正一些錯誤。
+Warning! UnigramPlus will now support NVDA versions no older than 21.2.0.
+* Added labels for many UI elements.
+* Fixed some bugs.
 
-### 2.9.0版
+### Version 2.9.0
 
-* 編輯區的標籤會隨著回覆或編輯訊息而改變。
-* 可以在設定中啟用當使用快速鍵刪除訊息或聊天時的確認對話框。
-* 新增塞爾維亞文翻譯。
-* 修正錯誤。
+* Now the edit field will change its label depending on whether we are replying to the message or editing it.
+* Added the ability to enable a confirmation dialog for deleting messages or chats using hotkeys in the settings.
+* Added Serbian localization.
+* Fixed small issues.
 
-### 2.8.0版
+### Version 2.8.0
 
-* 新增自自我新附加元件的功能。 透過開啟 UnigramPlus 設定並按檢查更新按紐。 您也可以開啟在NVDA啟動時自動檢查更新的功能。
-* 新增阿拉伯文翻譯。
+* Added the ability to update the add-on from within the add-on. Now, in order to check for updates and install them, just open the UnigramPlus settings and click the appropriate button. You can also enable automatic check for updates on NVDA startup.
+* Added Arabic localization.
 
-### 2.7.0版
+### Version 2.7.0
 
-* 訊息轉傳後會通知您。
-* 改進訊息複製功能。 當訊息中含有可點擊的連結且焦點在該連結上，按 Control+C 會複製連結，而不是複製文字。
-* 新增複製訊息並保留文字格式的功能。 這個功能模擬啟動應用程式選單中的相應項目。 這個功能的預設快速鍵為 CTRL+shift+C。 因為這個功能，開啟留言的快速鍵變更為 CTRL+ALT+C。
-* 新增自動讀出在目前開啟聊天的新訊息。 預設情況下，可以透過按下 ALT + L啟用。
-* 新增快速瀏覽聊天的快速鍵。 按下 NVDA + CTRL + 數字鍵盤對應到的訊息順序，例如您想查看最後一則訊息，按下 1, 如果您想查看先前訊息， 按下 2， 依此類推。
-* 按下 Alt+T 會讀出目前群組通話的資訊。
+* You will now be notified that the message has been forwarded.
+* Improved message copy function. Now, if the text contains a clickable link and the focus is on that link, pressing CTRL+C will copy the link instead of the entire text.
+* Added hotkey for copying messages while maintaining text formatting. This function emulates the activation of the corresponding item in the application menu. The default hotkey for this feature is CTRL+shift+C. Because of this feature, the hotkey for opening comments has been changed to CTRL+ALT+C.
+* Added the ability to automatically announce new messages in open chat. By default, it can be enabled by pressing ALT + L.
+* Added hotkeys for quick viewing of chat messages. Press NVDA + CTRL + the number corresponding to the number of a particular message in reverse order, that is, if you want to view the last message, press 1, if you want to view the previous message, press 2, etc.
+* Now pressing ALT+T will give you information about the active voice chat in the current group.
 
-### 2.6.0版
+### Version 2.6.0
 
-* 相容於 NVDA2021.3版。
-* 新增選取聊天或訊息的快速鍵。
-* 新增轉傳訊息的快速鍵。
-* 新增標記聊天為已讀的快速鍵。
-* 改進現有功能的效能。
+* Provided compatibility with NVDA 21.3.
+* Added hotkey to enable selecting messages or chats.
+* Added hotkey for forwarding messages.
+* Added hotkey for marking a chat as read.
+* Improved performance of the existing features.
 
 
-### 2.5.0版
+### Version 2.5.0
 
-* 新增選項，如果啟用，修正部分使用者遇到的錄製語音訊息的問題。
-* 新增回覆訊息的快速鍵。 您可以透過在一則訊息中按下 Enter ，您也可以變更該快速鍵。
-* 新增編輯訊息的快速鍵。 預設快速鍵為 ALT+Backspace.
+* There is now a checkbox that, if checked, fixes the voice message recording issue that some users are experiencing.
+* Added a hotkey for replying to a message.  You can do it by pressing Enter on the message or you can reassign the alternative hotkeys for this feature to something else.
+* Added hotkey for editing messages. The default keyboard shortcut is ALT+Backspace.
 
-### 2.4.0版
+### Version 2.4.0
 
-* 當焦點在一則訊息中時，您將聽到傳送者姓名。
-* 當焦點在一個群組中包含未讀訊息時，您將被通知若有人回覆您的訊息。
-* 改進先前新增的功能的效能。
+* You will now hear the sender's name when focusing on a message.
+* When focusing on a group chat that contains unread messages, you will be notified if there are replies for you in that group.
+* The performance of features added in the previous update has also been improved.
 
-### 2.3.0版
+### Version 2.3.0
 
-* 改進對訊息中含有多個富家媒體的無障礙支援，之前只能透過物件瀏覽查看超過一個富家媒體，現在當焦點在該訊息上時，將自動讀出。
-* 改進對含有投票的訊息的無障礙支援。 當焦點在該訊息時，您將聽到投票人數，還有每個選項的結果。
-* 改進對含有網址的訊息的無障礙支援。 當網址含有說明，將被讀出，例如，一則訊息含有YouTube的連結，關於該影片的標題和說明將在網址讀出後讀出。 如果網址超過30個字元，將被縮短讓說明更容易閱讀。
-* 改進對 inline query results panel 的無障礙支援。 為了瀏覽 inline queries的結果，使用下方快速鍵： control+方向鍵上 和 control+方向鍵下。
-* 新增開啟留言的快速鍵。
+* Improved accessibility of messages containing multiple media attachments. Previously, the caption of a message containing more than one media attachment could only be accessed using object navigation. Now this caption will be read immediately after focusing on such a message.
+* Improved accessibility of messages containing polls. Now when you focus on such a message, you will hear the number of people who have already voted, as well as all the answer options with the result for each option.
+* Improved accessibility of messages containing URLs. Now, if the URL has a description, it will also be read, i.e., for example, if the message has a URL for YouTube, the title and description for that video will be read right after the URL itself. Also, if the URL is longer than 30 characters, it will be shortened to make the following description easier to read.
+* Improved accessibility of the inline query results panel.. To navigate through the results of inline queries, use the following combinations: control+up and control+down.
+* Added hotkey to open comments.
 
-### 2.2.0版
+### Version 2.2.0
 
-* 新增為自己或從兩端刪除訊息或聊天的快速鍵。 這個功能和 Unigram 的介面語言有關，所以某些語言可能無法使用，在設定中您可以選擇通知類型，文字或音效。
-* 在設定中新增您使用 Unigram 介面語言的確認，某些功能需要此設定才能正確運作。
-* 新增開啟目前聊天資料頁的快速鍵。
-* 關閉一個聊天之後，焦點將移動到聊天清單，不是開啟主選單按紐。
+* Added hotkey to delete messages or chats just for you and also on both sides. This function is related to the Unigram interface language, so it may not work in some localizations. In the settings you can choose the type of notifications, text or sound.
+* Added the ability to specify which interface language you use in Unigram in settings. This is necessary for the correct operation of functions associated with certain localizations.
+* Added hotkey to open current chat profile.
+* Now, after closing a chat, the focus will move to the list of chats, and not to the button "Open navigation menu".
 
-### 2.1.0版
+### Version 2.1.0
 
-* 當在聊天清單中切換資料夾時，目前資料夾名稱將被讀出。
-* 在聊天清單中，您將聽到聊天類型，然後是名稱。
-* 改進移動焦點到聊天清單的功能。 將更準確且不會延遲。
-* 附加元件的設定更方便存取，部分 UnigramPlus 的設定出現在NVDA的偏好設定中。
-* 新增波瀾文翻譯。
-* 許多錯誤修正。
+* When switching between folders in the chat list, the name of the current folder will be announced.
+* In the chat list, you hear the name of the chat, followed by its type.
+* Improved the function of moving focus to the list of chats. Now it should work more accurately and without delays.
+* Now the add-on settings have become even more flexible, because a section with some UnigramPlus options has appeared in the NVDA Preferences menu.
+* Added Polish localization.
+* Many small fixes and improvements.
 
-### 2.0.0版
+### Version 2.0.0
 
-* 不提示"已讀" 並在讀出訊息前提示 "未讀" 的功能可用於 西班牙文、葡萄牙文、克羅埃西亞文、土耳其文和波斯文翻譯。
-* 改進進度列輸出的功能。 當該功能啟用時，只會讀出焦點上的進度列。
-* 當在一個還沒下載完的檔案上按空格鍵，您將被通知下載已暫停。
-* 新增葡萄牙文翻譯。
-* 修正錯誤並改善效能
+* The feature where the word "Seen" is not announced and the word "Not seen" is spoken before the message content is read now works in Spanish, Portuguese, Croatian, Turkish and Persian localizations.
+* Improved the function of progress bar announcements. Now, when this mode is enabled, not all progress indicators are announced, but only those that are in focus.
+* If you press the spacebar in a message that contains a file that has not completed downloading, you will be notified that the download has been paused.
+* Added Portuguese localization.
+* Fixed some small issues and improved performance.
 
-### 1.9.0版
-* 新增用來切換進度列輸出方式的快速鍵，例如： "讀出所有進度列"， "讀出一些進度列"， "讀出所有進度列，語音訊息播放進度的進度列除外" 和 "不讀出任何進度列"。 當使用者停用 Unigram 的自動下載媒體功能，建議將進度列輸出設定為 "讀出所有進度列，語音訊息播放進度的進度列除外"，若啟用，建議設定為 "不讀出任何進度列"。
-* 新增西班牙文、克羅埃西亞文和波斯文翻譯。
-* 修正舊版的錯誤。
+### Version 1.9.0
+* A hotkey has been added that toggles the level of progress bar announcement between values such as: "Announce all progress bars", "Announce some progress bars", "Announce all progress bars except the voice message playback progress bar" and "Do not announce any progress bars". For those users who have automatic media downloads disabled in Unigram, the progress bar announcement level can be set to "Announce all progress bars except the voice message playback progress bar", and for those who have it enabled, it is better to set it to "Do not announce progress bars".
+* Added Spanish, Croatian and Persian localizations.
+* Fixed minor bugs from previous versions.
 
-### 1.8.0版
+### Version 1.8.0
 
-* 當焦點到達 "開啟檔案" 或 "下載檔案" 的按鈕時，將讀出該檔案的名稱和大小，當焦點到達音訊檔案時，您將聽到名稱和時間長度。
-* 新增將焦點跳到編輯區的快速鍵。 若焦點已經在編輯區，再次按下該快速鍵，將會跳到先前位置。
-* 聊天活動追蹤功能可以透過按兩次 ALT + T 啟用。 您可以快速啟用或暫時啟用直到應用程式關閉。
-* 新增選擇錄製語音訊息的通知方式。 透過按兩次 control+d 快速鍵。您可以選擇用音效、文字或預設通知行為。
+* The name and size of the file will be spoken when the cursor is focused on the "Open File" button or the "Download File" button, and when the cursor is focused on the play button of the audio file, you will hear its name and duration.
+* Added hotkey to move focus to edit field. If the focus is already in the edit field, then after pressing the hot key, it will move to where it was before.
+* The chat activity tracking feature is now enabled by double pressing ALT + T. You can simply turn it on or turn it on temporarily until the next time you close the application.
+* Added the ability to select the type of notification for recording voice messages. This is done by double pressing the control+d hotkey. There you can choose between sound, text notification, or return to the standard voice message recording behavior.
 
-### 1.7.0版
+### Version 1.7.0
 
-改進錄製語音訊息的功能。開始錄至、傳送和取消錄製都有不同的音效提示。 當執行這些功能，焦點不會跳到錄製按鈕或輸入訊息的編輯區。
+Significantly improved the function of recording voice messages. Recording, sending and canceling the recording of a voice message are accompanied by characteristic sounds. Also, when performing these functions, the focus remains in its position and does not jump to either the record button or the message input field.
 
-### 1.7.0版
+### Version 1.7.0
 
-* 新增追蹤聊天活動的功能。 可以透過按下 ALT+shift+T 啟用，直到 Unigram 關閉或 NVDA 重新啟動。
-* 開啟更多選項的快速鍵可用於群組聊天或通話視窗。
+* Added the ability to track chat activity. This option can be enabled by pressing ALT+shift+T and remains active until Unigram is closed or NVDA is next restarted.
+* The hotkey that activates the "More Options" button now works in the voice chat window and the call window.
 
-### 1.6.0版
+### Version 1.6.0
 
-* 當使用空格鍵開啟附加到訊息的媒體時，關閉之後，焦點將返回先前的元素。
-* 除了從目前群組之外，您也可以從所有其他群組返回進行中的群組通話。
-* 在開啟的聊天中按下 ALT+shift+C 將返回群組聊天，鴯不是向聯絡人通話。
-* 若訊息未傳送，將在到達焦點時提示。
-* 若置頂訊息含有連結，您將只會聽到該連結，而不是整個訊息。
-* 修正在私人通話或群組通話中，靜音或解除靜音、開啟或關閉攝影鏡頭狀態改變時不報讀的錯誤。
-* 訊息複製功能允許從快速預覽視窗中複製。
+* If the media attached to the message is opened using the spacebar, after closing it, the focus will return to the last element that was in focus.
+* Now you can return to the active voice chat not only from the current group, but also from any other chat.
+* Pressing ALT+shift+C in an open chat will return you to the voice chat instead of calling the contact.
+* If a message has not been sent, you will be notified as soon as that message has been focused.
+* If the focused message contains a link, you'll only hear the text of the link itself, not the entire message.
+* Fixed an issue where status changes for buttons such as Mute/Unmute Mic and Enable/Disable Camera were not reported in private calls and voice chats.
+* Now the message copy function allows you to copy the contents of items in the message quick view window.
 
-### 1.5.1版
+### Version 1.5.1
 
-這個更新修正錯誤並改進效能。
+This update fixes a huge number of bugs and improves the performance of the add-on.
 
-### 1.5.0版
+### Version 1.5.0
 
-這次更新新增吉時瀏覽的快速鍵(若訊息中包含該按紐)。 預設情況下，透過 ALT+Q 快速鍵啟用。 在開啟例如文章之後，焦點將自動跳到該文章的第一個元素，關閉之後，焦點將返回剛才瀏覽的訊息。 修正並非所有可用即時瀏覽的文章(即使包含文字)不可讀的問題。
+This update adds a hotkey that clicks the "Instant View" button in a message if included in the message. By default, this feature is activated with the ALT+Q hotkey. After opening such an article, the focus will automatically go to the first element of this article, and after closing, the focus will return to the last viewed message. We also fixed an issue where not all article elements in the Instant View window were readable, even if they contained text content.
 
-### 1.1.7版
+### Version 1.1.7
 
-新增土耳其文翻譯
+Added Turkish localization.
 

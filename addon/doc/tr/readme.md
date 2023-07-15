@@ -77,6 +77,13 @@ Bilinen dezavantajlardan biri, bir işlev odağı "okunmamış mesajlar" etiketi
 
 ##Değişiklik listesi:
 
+###Sürüm 4.9.0
+
+* Boş bir mesaj düzenleme alanında yukarı oka bastığınızda davranış yeteneği eklendi. Aşağıdaki seçeneklerden birini seçebilirsiniz: Son mesajı düzenleme özelliğini etkinleştirebilir, odağı sohbetteki son mesaja taşıyabilir veya hiçbir şey yapmazsınız. 
+* Kısayol tuşlarını kullanarak aramaları yanıtlama ve reddetme hatası  düzeltildi.
+* Çalışmayan ALT + H kombinasyonu gibi küçük sorunların yanı sıra sol oka basıldığında cevabın yazıldığı mesajın duyulmamasına neden olan sorun giderildi.
+* Bazı öğelerin sabit görüntülenmesi düzeltildi.
+
 ### Sürüm 4.8.0
 
 * Artık Unigram ayarlarında ayarlar kategorisini Enter tuşuna basarak açabilirsiniz. Herhangi bir ayar kategorisini açtığınızda, odak noktası bu kategoriye odaklanacaktır.

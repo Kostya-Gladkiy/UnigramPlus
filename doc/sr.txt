@@ -1,10 +1,7 @@
-* Sada u postavkama unigrama, kategorije podešavanja se mogu otvoriti pritiskom na enter. Kada otvorite bilo koju kategoriju podešavanja, fokus će biti stavljen na tu kategoriju.
-* Sada kada kliknete na dugme objašnjenje u kvizovima, tekst objašnjenja će se otvoriti u posebnom prozoru radi lakšeg pregleda.
-* Rešen je problem gde se imena fascikli za ćaskanje nisu izgovorila prilikom prebacivanja između njih.
-* Ispravljena greška koja je onemogućavala onemogućavanje ili promenu redosleda izgovaranja tipa i imena ćaskanja.
-* Rešen problem kada nije bilo moguće pronaći tačan odgovor u kvizovima.
-* Rešen je problem sa kopiranjem poruke pomoću kombinacije control+shift+C.
-* Napravljeno nekoliko manjih popravki, poboljšanja i optimizacija koda.
+* Dodata opcija za promenu ponašanja kada se pritisne strelica na gore u praznom polju za uređivanje poruke. Možete birati između sledećih opcija: aktivirati funkciju izmene poslednje poslate poruke, pomeriti fokus na poslednju poruku u ćaskanju ili ne raditi ništa.
+* Popravljeno odgovaranje i odbijanje poziva pomoću prečica.
+* Ispravljeni manji problemi kao što je kombinacija tastera ALT+H koja ne radi i problem kada poruka na koju je napisan odgovor nije izgovorena kada se pritisne strelica na levo.
+* Popravljen prikaz nekih elemenata.
 
 Ako imate želju, a što je najvažnije, priliku, da biste podržali programera ovog dodatka, možete to učiniti koristeći sledeće detalje:
 * Peipal: gladkii.kostia@gmail.com.

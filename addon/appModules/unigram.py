@@ -5,12 +5,14 @@ from keyboardHandler import KeyboardInputGesture
 import appModuleHandler
 from ui import message, browseableMessage
 import api
-import controlTypes
+from controlTypes import Role, State
 import scriptHandler
 from scriptHandler import script
 from NVDAObjects.UIA import UIA
 import languageHandler
 import addonHandler
+import textInfos
+import editableText
 addonHandler.initTranslation()
 import speech
 from  threading import Timer
@@ -45,15 +47,17 @@ class Audio_and_video_button:
 
 
 class Message_list_item:
-	role = controlTypes.Role.LISTITEM
+	list_reactions = "👍👎❤🔥🥰👏😁"
+	selected_reaction = 0
+	role = Role.LISTITEM
 	UIAAutomationId = "Message_item"
 	scriptCategory = "UnigramPlus"
-	def script_fixed_down_arrow(self, gesture):
-		self.appModule.keys["fixed_downArrow"].send()
 	
 	@script(description=_("Announce the original message, the message that was replied to"), gesture="kb:rightArrow")
 	def script_voice_answer(self, gesture):
 		answer = next((item for item in self.children if item.UIAAutomationId == "Reply"), None)
+		if answer and answer.name == "":
+			answer = answer.firstChild
 		if answer: message(answer.name)
 
 	@script(description=_("Edit message"), gesture="kb:backspace")
@@ -64,15 +68,37 @@ class Message_list_item:
 	def script_reply_to_message(self, gesture):
 		self.appModule.activate_option_for_menu((icons_from_context_menu["reply"]), "Messages")
 
+	def script_next_message(self, gesture):
+		if self.parent.next: gesture.send()
+		else: self.appModule.script_moveFocusToTextMessage(gesture)
+
+	def script_next_reaction(self, gesture):
+		self.selected_reaction += 1
+		if self.selected_reaction == len(self.list_reactions): self.selected_reaction = 0
+		message(self.list_reactions[self.selected_reaction])
+	
+	def script_previous_reaction(self, gesture):
+		self.selected_reaction -= 1
+		if self.selected_reaction == -1: self.selected_reaction = len(self.list_reactions)-1
+		message(self.list_reactions[self.selected_reaction])
+
+	def script_activate_reaction(self, gesture):
+		self.appModule.keys["Applications"].send()
+		self.appModule.is_set_reaction = self.selected_reaction+1
+
 	def initOverlayClass(self):
-		if self.appModule.app_version == "8.8.7438.0": self.bindGesture("kb:downArrow", "fixed_down_arrow")
 		self.positionInfo = self.parent.positionInfo
-		self.states.discard(controlTypes.State.CHECKABLE)
+		self.states.discard(State.CHECKABLE)
+		if conf.get("action_when_pressing_up_arrow_in_text_field") == "to_messages":
+			self.bindGesture("kb:downArrow", "next_message")
 
 	__gestures = {
 		"kb:leftArrow": "voice_answer",
 		"kb:backspace": "edit_message",
 		"kb:enter": "reply_to_message",
+		"kb:control+leftArrow": "previous_reaction",
+		"kb:control+rightArrow": "next_reaction",
+		"kb:control+enter": "activate_reaction",
 	}
 
 
@@ -238,7 +264,26 @@ class Chat_update:
 		Timer(cls.interval, cls.tick).start()
 
 
+class EditableText(editableText.EditableText):
+
+	def script_caret_moveByLine(self, gesture):
+		if gesture.mainKeyName != "upArrow":
+			return super().script_caret_moveByLine(gesture)
+		info = None
+		try:
+			info = self.makeTextInfo(textInfos.POSITION_ALL)
+		except Exception:
+			pass
+		if info and info.text == "":
+			if conf.get("action_when_pressing_up_arrow_in_text_field") == "to_messages":
+				self.appModule.script_toLastMessage(None)
+			else: message("")
+			return
+		return super().script_caret_moveByLine(gesture)
+
+
 class AppModule(appModuleHandler.AppModule):
+	
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 		self.saved_items = Saved_items()
@@ -248,7 +293,7 @@ class AppModule(appModuleHandler.AppModule):
 		# assign hotkeys for the function of reading messages by numbering
 		for i in range(10): self.bindGesture("kb:NVDA+control+%d" % i, "reviewRecentMessage")
 		# Binding reactions to the corresponding hotkeys
-		# for i in range(1,6): self.bindGesture("kb:NVDA+ALT+%d" % i, "set_reaction")
+		for i in range(1,8): self.bindGesture("kb:NVDA+ALT+%d" % i, "set_reaction")
 
 
 	scriptCategory = "UnigramPlus"
@@ -280,9 +325,9 @@ class AppModule(appModuleHandler.AppModule):
 	def getChatsListElement(self):
 		targetList = self.saved_items.get("chats")
 		if not targetList or not targetList.location or not targetList.location.width:
-			targetList = next((item for item in reversed(self.getElements()) if item.role == controlTypes.Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), False)
+			targetList = next((item for item in reversed(self.getElements()) if item.role == Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), False)
 			if not targetList: return False
-			targetList = next((item for item in targetList.firstChild.children if item.role == controlTypes.Role.LIST and 	item.UIAAutomationId == "ChatsList"), False)
+			targetList = next((item for item in targetList.firstChild.children if item.role == Role.LIST and 	item.UIAAutomationId == "ChatsList"), False)
 			if targetList: self.saved_items.save("chats", targetList)
 		return targetList
 
@@ -291,12 +336,12 @@ class AppModule(appModuleHandler.AppModule):
 		except: return []
 
 	def get_settings_panel(self):
-		settings_panel = next((item for item in self.getElements() if item.role in (controlTypes.Role.PANE, controlTypes.Role.LIST) and item.UIAAutomationId in ("ScrollingHost", "List", "") and (item.previous.UIAAutomationId == "DetailHeaderPresenter"  or item.location.width > 320)), None)
+		settings_panel = next((item for item in self.getElements() if item.role in (Role.PANE, Role.LIST) and item.UIAAutomationId in ("ScrollingHost", "List", "") and (item.previous.UIAAutomationId == "DetailHeaderPresenter"  or item.location.width > 320)), None)
 		if not settings_panel: return False
-		return next(( item for item in settings_panel.children if controlTypes.State.FOCUSABLE in item.states), settings_panel.firstChild)
+		return next(( item for item in settings_panel.children if State.FOCUSABLE in item.states), settings_panel.firstChild)
 
 	def get_contacts_list(self):
-		a = next((item for item in self.getElements() if item.role == controlTypes.Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), None)
+		a = next((item for item in self.getElements() if item.role == Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), None)
 		if not a: return False
 		try:b = a.firstChild.next.lastChild.firstChild.next.next.next
 		except: b = False
@@ -304,7 +349,7 @@ class AppModule(appModuleHandler.AppModule):
 		else: return False
 
 	def get_settings_list(self):
-		a = next((item for item in self.getElements() if item.role == controlTypes.Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), None)
+		a = next((item for item in self.getElements() if item.role == Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), None)
 		if not a: return False
 		try: b = a.lastChild.firstChild.next.firstChild.next.next.next.firstChild
 		except: b = False
@@ -321,18 +366,19 @@ class AppModule(appModuleHandler.AppModule):
 	# The function of changing the playback speed of a voice message
 	@script(description=_("Increase/decrease the playback speed of voice messages"), gesture="kb:ALT+S")
 	def script_voiceMessageAcceleration(self, gesture):
-		targetButton = next((item for item in self.getElements() if item.role == controlTypes.Role.TOGGLEBUTTON and item.UIAAutomationId == "RateButton"), False)
+		targetButton = next((item for item in self.getElements() if item.role == Role.BUTTON and item.UIAAutomationId == "SpeedButton"), False)
 		if targetButton:
-			lastFocus = api.getFocusObject()
-			if not conf.get("isFixedToggleButton"): targetButton.doAction()
-			else: self.fixedDoAction(targetButton)
-			lastFocus.setFocus()
+			# lastFocus = api.getFocusObject()
+			# if not conf.get("isFixedToggleButton"): targetButton.doAction()
+			# else: self.fixedDoAction(targetButton)
+			# lastFocus.setFocus()
+			targetButton.doAction()
 		else: message(_("Nothing is playing right now"))
 
 	# Audio player close function
 	@script(description=_("Close audio player"), gesture="kb:ALT+E")
 	def script_closingVoiceMessage(self, gesture, isMessage = True):
-		try: targetButton = next((item for item in self.getElements()[1:] if item.previous.role == controlTypes.Role.TOGGLEBUTTON and item.previous.UIAAutomationId == "ShuffleButton"), False)
+		try: targetButton = next((item for item in self.getElements()[1:] if item.previous.role == Role.TOGGLEBUTTON and item.previous.UIAAutomationId == "ShuffleButton"), False)
 		except: targetButton = False
 		if targetButton:
 			lastFocus = api.getFocusObject()
@@ -344,7 +390,7 @@ class AppModule(appModuleHandler.AppModule):
 	# Voice message pause function
 	@script(description=_("Play/pause the voice message currently playing"), gesture="kb:ALT+P")
 	def script_pauseVoiceMessage(self, gesture):
-		targetButton = next((item for item in self.getElements() if item.role == controlTypes.Role.BUTTON and item.UIAAutomationId == "PlaybackButton"), False)
+		targetButton = next((item for item in self.getElements() if item.role == Role.BUTTON and item.UIAAutomationId == "PlaybackButton"), False)
 		if targetButton:
 			lastFocus = api.getFocusObject()
 			targetButton.doAction()
@@ -367,9 +413,9 @@ class AppModule(appModuleHandler.AppModule):
 		actionButton = False
 		def spechState():
 			if obj.states != message_states: return
-			targetButton = next((item for item in obj.children if item.role == controlTypes.Role.LINK and item.UIAAutomationId == "Button"), False)
+			targetButton = next((item for item in obj.children if item.role == Role.LINK and item.UIAAutomationId == "Button"), False)
 			if not targetButton: return
-			if (targetButton.previous and targetButton.previous.role == controlTypes.Role.GRAPHIC) or (targetButton.previous and targetButton.previous.previous and targetButton.previous.previous.role == controlTypes.Role.GRAPHIC): actionButton = "save"
+			if (targetButton.previous and targetButton.previous.role == Role.GRAPHIC) or (targetButton.previous and targetButton.previous.previous and targetButton.previous.previous.role == Role.GRAPHIC): actionButton = "save"
 			else: actionButton = "focus"
 			if isSavedFocus: targetButton.doAction()
 			if actionButton == "focus": lastFocus.setFocus()
@@ -405,8 +451,8 @@ class AppModule(appModuleHandler.AppModule):
 			return
 		if targetList.firstChild:
 			targetList = targetList.firstChild
-			if targetList.role == controlTypes.Role.BUTTON and targetList.next: targetList =  targetList.next
-			if targetList.role and targetList.role == controlTypes.Role.LISTITEM:
+			if targetList.role == Role.BUTTON and targetList.next: targetList =  targetList.next
+			if targetList.role and targetList.role == Role.LISTITEM:
 				targetList.setFocus()
 				return
 		if not arg: message(_("Chat list is empty"))
@@ -446,7 +492,7 @@ class AppModule(appModuleHandler.AppModule):
 	def script_to_tabs_folder(self, gesture):
 		obj = self.saved_items.get("tabs folder")
 		if obj and obj.location and obj.location.width:
-			el = next((item for item in self.tabs_folder_element.children if controlTypes.State.SELECTED in item.states), None)
+			el = next((item for item in self.tabs_folder_element.children if State.SELECTED in item.states), None)
 			if el: el.setFocus()
 			else: message(_("Chat folder list not found"))
 		else:
@@ -454,14 +500,14 @@ class AppModule(appModuleHandler.AppModule):
 			if list:
 				obj = list.previous
 				self.saved_items.save("tabs folder", obj)
-				el = next((item for item in obj.children if controlTypes.State.SELECTED in item.states), None)
+				el = next((item for item in obj.children if State.SELECTED in item.states), None)
 				if el: el.setFocus()
 				else: message(_("Chat folder list not found"))
 			else: message(_("Chat folder list not found"))
 
 
 	def get_branch_list(self):
-		tabs = next((item.firstChild for item in self.getElements() if item.role == controlTypes.Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), None)
+		tabs = next((item.firstChild for item in self.getElements() if item.role == Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), None)
 		if not tabs: return False
 		branch_list = next((item for item in tabs.children if item.UIAAutomationId == "TopicList"), None)
 		if branch_list: return branch_list
@@ -476,7 +522,7 @@ class AppModule(appModuleHandler.AppModule):
 	def get_profile_panel(self):
 		list = self.profile_panel_element
 		if not list or not list.location.width:
-			list = next((item for item in self.getElements() if (item.role == controlTypes.Role.LIST and item.UIAAutomationId == "ScrollingHost" and item.firstChild.UIAAutomationId == "Photo") or (item.role == controlTypes.Role.LINK and item.UIAAutomationId == "Photo" and item.next.UIAAutomationId == "Title")), None)
+			list = next((item for item in self.getElements() if (item.role == Role.LIST and item.UIAAutomationId == "ScrollingHost" and item.firstChild.UIAAutomationId == "Photo") or (item.role == Role.LINK and item.UIAAutomationId == "Photo" and item.next.UIAAutomationId == "Title")), None)
 		if not list:
 			return False
 		if list.UIAAutomationId == "Photo":
@@ -485,9 +531,9 @@ class AppModule(appModuleHandler.AppModule):
 		self.profile_panel_element = list
 		list2 = list.firstChild
 		for i in range(15):
-			if list2.role == controlTypes.Role.LIST:
+			if list2.role == Role.LIST:
 				# Now we find the selected element to set focus on it
-				return next((item for item in list2.children if controlTypes.State.SELECTED in item.states), list2.firstChild)
+				return next((item for item in list2.children if State.SELECTED in item.states), list2.firstChild)
 			else: list2 = list2.next
 		return list.firstChild
 
@@ -512,10 +558,10 @@ class AppModule(appModuleHandler.AppModule):
 			title = obj
 			message(obj.name)
 		for item in self.getElements():
-			if not title and item.role == controlTypes.Role.LINK and item.UIAAutomationId == "Profile":
+			if not title and item.role == Role.LINK and item.UIAAutomationId == "Profile":
 				message(item.name)
 				title = item
-			elif item.role == controlTypes.Role.LINK and item.UIAAutomationId == "GroupCall": isGroupCall = item.firstChild.name
+			elif item.role == Role.LINK and item.UIAAutomationId == "GroupCall": isGroupCall = item.firstChild.name
 		if title:
 			self.saved_items.save("profile name", title)
 			if isGroupCall: message(isGroupCall)
@@ -532,7 +578,7 @@ class AppModule(appModuleHandler.AppModule):
 			return False
 		targetButton = False
 		while lastObj:
-			if lastObj.firstChild.role== controlTypes.Role.GROUPING:
+			if lastObj.firstChild.role== Role.GROUPING:
 				targetButton = lastObj
 				break
 			else: lastObj = lastObj.previous
@@ -542,7 +588,7 @@ class AppModule(appModuleHandler.AppModule):
 	# Call if it's a contact, or enter a voice chat if it's a group
 	@script(description=_("Call if it's a contact, or enter a voice chat if it's a group"), gesture="kb:shift+alt+C")
 	def script_call(self, gesture):
-		try: targetButton = next((item for item in self.getElements() if (item.role == controlTypes.Role.BUTTON and item.UIAAutomationId == "Call") or (item.role == controlTypes.Role.LINK and item.UIAAutomationId == "GroupCall") or (item.next and item.next.UIAAutomationId == "Audio" and item.firstChild and item.firstChild.UIAAutomationId == "TitleInfo") ), False)
+		try: targetButton = next((item for item in self.getElements() if (item.role == Role.BUTTON and item.UIAAutomationId == "Call") or (item.role == Role.LINK and item.UIAAutomationId == "GroupCall") or (item.next and item.next.UIAAutomationId == "Audio" and item.firstChild and item.firstChild.UIAAutomationId == "TitleInfo") ), False)
 		except: targetButton =False
 		if targetButton: targetButton.doAction()
 		else: message(_("Call unavailable"))
@@ -550,7 +596,7 @@ class AppModule(appModuleHandler.AppModule):
 	# Make a video call if it's a contact
 	@script(description=_("Press the video call button"), gesture="kb:shift+alt+V")
 	def script_videoCall(self, gesture):
-		targetButton = next((item for item in self.getElements() if item.role == controlTypes.Role.BUTTON and item.UIAAutomationId == "VideoCall"), False)
+		targetButton = next((item for item in self.getElements() if item.role == Role.BUTTON and item.UIAAutomationId == "VideoCall"), False)
 		if targetButton: targetButton.doAction()
 		else: message(_("Video call not available"))
 
@@ -559,10 +605,10 @@ class AppModule(appModuleHandler.AppModule):
 	def script_instantIew(self, gesture):
 		obj = api.getFocusObject()
 		if not self.is_message_object(obj): return
-		targetButton = next((item for item in obj.children if item.role == controlTypes.Role.BUTTON and item.UIAAutomationId == "Button"), False)
+		targetButton = next((item for item in obj.children if item.role == Role.BUTTON and item.UIAAutomationId == "Button"), False)
 		if targetButton:
 			targetButton.doAction()
-			targetList = next((item for item in self.getElements() if item.role == controlTypes.Role.LIST and item.UIAAutomationId == "ScrollingHost"), False)
+			targetList = next((item for item in self.getElements() if item.role == Role.LIST and item.UIAAutomationId == "ScrollingHost"), False)
 			if targetList:
 				item = next((item for item in targetList.children if item.name != ""), None)
 				if item: item.setFocus()
@@ -572,7 +618,7 @@ class AppModule(appModuleHandler.AppModule):
 	# @script(description=_("Accept call"), gesture="kb:ALT+Y")
 	def script_answeringCall(self, gesture):
 		desctop = api.getDesktopObject()
-		notification_panel = next((item.firstChild for item in desctop.children if item.role == controlTypes.Role.WINDOW and item.firstChild.PriorityToastView), None)
+		notification_panel = next((item.firstChild for item in desctop.children if item.role == Role.WINDOW and item.firstChild.PriorityToastView), None)
 		if not notification_panel:
 			message("Панель не знайдено")
 			return
@@ -580,7 +626,7 @@ class AppModule(appModuleHandler.AppModule):
 		if button: button.doAction()
 		else: message("Кнопку не знайдено")
 		return
-		targetButton = next((item for item in self.getElements() if item.role == controlTypes.Role.BUTTON and item.UIAAutomationId == "Accept" and item.previous.UIAAutomationId == "Discard"), False)
+		targetButton = next((item for item in self.getElements() if item.role == Role.BUTTON and item.UIAAutomationId == "Accept" and item.previous.UIAAutomationId == "Discard"), False)
 		if targetButton:
 			lastFocus = api.getFocusObject()
 			self.fixedDoAction(targetButton)
@@ -689,14 +735,14 @@ class AppModule(appModuleHandler.AppModule):
 	def script_moveFocusToTextMessage(self, gesture):
 		obj = api.getFocusObject()
 		lastFocusObject = self.saved_items.get("last focus object")
-		if (obj.role == controlTypes.Role.EDITABLETEXT and obj.UIAAutomationId == "TextField") or (obj.role == controlTypes.Role.BUTTON and obj.UIAAutomationId == "ButtonAction"):
+		if (obj.role == Role.EDITABLETEXT and obj.UIAAutomationId == "TextField") or (obj.role == Role.BUTTON and obj.UIAAutomationId == "ButtonAction"):
 			if lastFocusObject and lastFocusObject.location: lastFocusObject.setFocus()
 			return
 		targetButton = self.saved_items.get("message box")
 		if not targetButton or not targetButton.location or not targetButton.location.width:
 			targetButton = False
 			for item in reversed(self.getElements()):
-				if item.role == controlTypes.Role.EDITABLETEXT and item.UIAAutomationId == "TextField":
+				if item.role == Role.EDITABLETEXT and item.UIAAutomationId == "TextField":
 					targetButton = item
 					self.saved_items.save("message box", item)
 					break
@@ -722,7 +768,7 @@ class AppModule(appModuleHandler.AppModule):
 	# @script(description=_("Press \"More Options\" button in an open chat, voice chat, or call window"), gesture="kb:ALT+O")
 	def script_showMoreOptions(self, gesture):
 		labels_for_button = labels_for_button_more_options.get(conf.get("lang"), labels_for_button_more_options["en"])
-		targetButton = next((item for item in self.getElements() if item.role == controlTypes.Role.BUTTON and (item.UIAAutomationId in ("Options", "Menu", "Settings") or item.name in labels_for_button) ), False)
+		targetButton = next((item for item in self.getElements() if item.role == Role.BUTTON and (item.UIAAutomationId in ("Options", "Menu", "Settings") or item.name in labels_for_button) ), False)
 		if targetButton: targetButton.doAction()
 		else: message(_("Button not found"))
 
@@ -740,7 +786,7 @@ class AppModule(appModuleHandler.AppModule):
 	def script_openComentars(self, gesture):
 		obj = api.getFocusObject()
 		if not self.is_message_object(obj): return
-		targetButton = next((item for item in reversed(obj.children) if item.role == controlTypes.Role.LINK and item.UIAAutomationId == "Thread"), False)
+		targetButton = next((item for item in reversed(obj.children) if item.role == Role.LINK and item.UIAAutomationId == "Thread"), False)
 		if targetButton:
 			self.isSkipName = 1
 			targetButton.doAction()
@@ -753,7 +799,7 @@ class AppModule(appModuleHandler.AppModule):
 		if not profile:
 			# If the element was not cached, then we will try to find it in the window
 			profile = next((item for item in self.getElements() if item.role ==
-			               controlTypes.Role.LINK and item.UIAAutomationId == "Profile"), None)
+			               Role.LINK and item.UIAAutomationId == "Profile"), None)
 			if profile:
 				# If we managed to find the element, then we cache it
 				self.saved_items.save("profile name", profile)
@@ -772,11 +818,11 @@ class AppModule(appModuleHandler.AppModule):
 		obj = False
 		log.debug("We got into the voice message recording function")
 		for item in reversed(self.getElements()):
-			if item.role == controlTypes.Role.TOGGLEBUTTON and item.UIAAutomationId == "btnVoiceMessage":
+			if item.role == Role.TOGGLEBUTTON and item.UIAAutomationId == "btnVoiceMessage":
 				log.debug("Record voice message button found")
 				obj = item
 				break
-			elif item.role == controlTypes.Role.BUTTON and item.UIAAutomationId in ("btnSendMessage", "btnEdit"):
+			elif item.role == Role.BUTTON and item.UIAAutomationId in ("btnSendMessage", "btnEdit"):
 				message(_("Recording a voice message will not be available until the edit field is empty"))
 				return
 		if not obj: return
@@ -787,9 +833,9 @@ class AppModule(appModuleHandler.AppModule):
 			else: message(_("Record sent"))
 		else:
 			log.debug("First press of the record voice message button")
-			if conf.get("voiceMessageRecordingIndicator") == "audio" and controlTypes.State.PRESSED in obj.states: winsound.PlaySound(baseDir+"start_recording_video_message.wav", winsound.SND_ASYNC)
+			if conf.get("voiceMessageRecordingIndicator") == "audio" and State.PRESSED in obj.states: winsound.PlaySound(baseDir+"start_recording_video_message.wav", winsound.SND_ASYNC)
 			elif conf.get("voiceMessageRecordingIndicator") == "audio": winsound.PlaySound(baseDir+"start_recording_voice_message.wav", winsound.SND_ASYNC)
-			elif conf.get("voiceMessageRecordingIndicator") == "text" and controlTypes.State.PRESSED in obj.states: message(_("Video"))
+			elif conf.get("voiceMessageRecordingIndicator") == "text" and State.PRESSED in obj.states: message(_("Video"))
 			else: message(_("Audio"))
 		lastFocus = api.getFocusObject()
 		if conf.get("isFixedToggleButton"):
@@ -818,7 +864,7 @@ class AppModule(appModuleHandler.AppModule):
 		if conf.get("voiceMessageRecordingIndicator") == "none":
 			gesture.send()
 			return
-		obj = next((item for item in reversed(self.getElements()) if (item.UIAAutomationId == "ElapsedLabel") or (item.role == controlTypes.Role.BUTTON and item.UIAAutomationId == "ComposerHeaderCancel")), False)
+		obj = next((item for item in reversed(self.getElements()) if (item.UIAAutomationId == "ElapsedLabel") or (item.role == Role.BUTTON and item.UIAAutomationId == "ComposerHeaderCancel")), False)
 		lastFocus = api.getFocusObject()
 		if obj and obj.UIAAutomationId == "ComposerHeaderCancel":
 			obj.doAction()
@@ -852,7 +898,7 @@ class AppModule(appModuleHandler.AppModule):
 				options, votes = "", ""
 				for el in obj.children:
 					if el.UIAAutomationId == "Votes": votes = ". "+el.name+". "
-					elif el.role == controlTypes.Role.TOGGLEBUTTON and el.firstChild.role == controlTypes.Role.PROGRESSBAR:
+					elif el.role == Role.TOGGLEBUTTON and el.firstChild.role == Role.PROGRESSBAR:
 						if el.childCount == 3: options += self.processing_of_answer_options_in_surveys(el)
 						elif el.childCount == 2: options+=el.children[1].name+", "
 				if options: options = _("Answer options")+": "+options
@@ -865,23 +911,23 @@ class AppModule(appModuleHandler.AppModule):
 					description = "\n".join(description[:2])
 				if description not in item.name: obj.name = obj.name.replace(item.name.strip(), item.name+"\n"+description)
 				for link in item.children:
-					# if link.role == controlTypes.Role.LINK and link.name.startswith("http") and len(link.name) > 30: obj.name = obj.name.replace(link.name, link.name[0:30]+"...")
-					if link.role == controlTypes.Role.LINK and link.name.startswith("http") and len(link.name) > 30:
+					# if link.role == Role.LINK and link.name.startswith("http") and len(link.name) > 30: obj.name = obj.name.replace(link.name, link.name[0:30]+"...")
+					if link.role == Role.LINK and link.name.startswith("http") and len(link.name) > 30:
 						result = re.match(r"(http.{10,40})/", obj.name)
 						if result: obj.name = obj.name.replace(link.name.strip(), result.group(1))
 			elif item.UIAAutomationId == "Subtitle" and len(item.name) < 15 and " / " in item.name:
 				# Checking if a message is a voice message
 				obj.name = item.name+", "+obj.name.replace(item.name[-5:], "")
-			elif item.role == controlTypes.Role.TOGGLEBUTTON and item.UIAAutomationId != "Recognize" and item.firstChild.UIAAutomationId == "Presenter": reactions.append(item.name)
+			elif item.role == Role.TOGGLEBUTTON and item.UIAAutomationId != "Recognize" and item.firstChild.UIAAutomationId == "Presenter": reactions.append(item.name)
 			elif item.UIAAutomationId == "ForwardLabel": forward = item
 			elif item.UIAAutomationId == "HeaderLabel": header = item
 			# elif item.UIAAutomationId == "AdminLabel": admin_label = item.name
 
 		# Checking if a message is a call
 		try:
-			if obj.firstChild.role == controlTypes.Role.LINK and obj.childCount == 4 and obj.children[1].UIAAutomationId == "TitleLabel" and obj.children[2].role == controlTypes.Role.STATICTEXT:
+			if obj.firstChild.role == Role.LINK and obj.childCount == 5 and obj.children[1].UIAAutomationId == "TitleLabel" and obj.children[3].role == Role.STATICTEXT:
 				a = obj.children[1].name
-				b = ",".join(obj.children[2].name.split(",")[1:])
+				b = ",".join(obj.children[3].name.split(",")[1:])
 				obj.name = obj.name.replace(a, a+b)
 		except: pass
 
@@ -906,7 +952,6 @@ class AppModule(appModuleHandler.AppModule):
 				list_text = obj.name.split("\n")
 				key_phrases = phrase_administrator_in_message.get(conf.get("lang"), phrase_administrator_in_message["en"])
 				en_key_phrases = phrase_administrator_in_message["en"]
-				print(en_key_phrases)
 				# if not conf.get("notify administrators in messages") and len(list_text) > 1 and ((admin_label and list_text[1] == ". "+admin_label+". \r") or list_text[1] in (". "+key_phrases[0]+". \r", ". "+key_phrases[1]+". \r")):
 				if not conf.get("notify administrators in messages") and len(list_text) > 1 and list_text[1] in (". "+key_phrases[0]+". \r", ". "+key_phrases[1]+". \r", ". "+en_key_phrases[0]+". \r", ". "+en_key_phrases[1]+". \r"):
 					del list_text[1]
@@ -933,7 +978,7 @@ class AppModule(appModuleHandler.AppModule):
 
 		obj.name = obj.sender+obj.name
 		# Check if a message is selected
-		if controlTypes.State.CHECKED in obj.states: obj.name = _("Selected")+". "+obj.name
+		if State.CHECKED in obj.states: obj.name = _("Selected")+". "+obj.name
 		return obj.name
 
 	# Processing the focused element from the list of chats
@@ -985,7 +1030,7 @@ class AppModule(appModuleHandler.AppModule):
 		i = 0
 		while target:
 			child = target.firstChild
-			if child.role not in (controlTypes.Role.BUTTON, controlTypes.Role.GROUPING):
+			if child.role not in (Role.BUTTON, Role.GROUPING):
 				i += 1
 				if i == index:
 					message(self.action_message_focus(target))
@@ -1005,7 +1050,7 @@ class AppModule(appModuleHandler.AppModule):
 			Title_change_tracking.restore(self.saved_items)
 		if self.lastSavedMessage:
 			if "obj" in self.lastSavedMessage:
-				if api.getForegroundObject().lastChild.previous.firstChild.role == controlTypes.Role.WINDOW:
+				if api.getForegroundObject().lastChild.previous.firstChild.role == Role.WINDOW:
 					nextHandler()
 					return
 				self.lastSavedMessage["obj"].setFocus()
@@ -1022,7 +1067,6 @@ class AppModule(appModuleHandler.AppModule):
 				self.profile_panel_element = panel
 				panel.firstChild.setFocus()
 		elif self.execute_context_menu_option:
-			print(self.execute_context_menu_option)
 			try: targetButton = next((item for item in obj.parent.children if item.firstChild.name in self.execute_context_menu_option), False)
 			except: targetButton = False
 			self.execute_context_menu_option = False
@@ -1040,16 +1084,16 @@ class AppModule(appModuleHandler.AppModule):
 		elif self.is_set_reaction:
 			index = self.is_set_reaction-1
 			self.is_set_reaction = False
-			list_reactions = "👍👎❤🔥🥰"
+			list_reactions = "👍👎❤🔥🥰👏😁"
 			try:
-				reaction_panel = api.getForegroundObject().firstChild.previous.previous.firstChild.firstChild.children
+				reaction_panel = api.getForegroundObject().firstChild.previous.previous.firstChild.children
 				item = reaction_panel[index]
 				message(list_reactions[index])
 				time.sleep(.5)
 				item.doAction()
 				return True
 			except: pass
-		if obj.role == controlTypes.Role.LISTITEM:
+		if obj.role == Role.LISTITEM:
 			speech.cancelSpeech()
 			if self.is_message_object(obj):
 				self.saved_items.save("last focus object", obj)
@@ -1072,10 +1116,10 @@ class AppModule(appModuleHandler.AppModule):
 			elif obj.name.startswith("forumTopic {\n  info = forumTopicInfo {"):
 				labels = [label.name for label in obj.children if label.UIAAutomationId in ("TitleLabel", "BriefInfo", "TimeLabel") ]
 				obj.name = ". ".join((labels[0], labels[2], labels[1]))
-		elif obj.role == controlTypes.Role.EDITABLETEXT:
+		elif obj.role == Role.EDITABLETEXT:
 			try:
 				if obj.UIAAutomationId == "TextField" and not self.saved_items.get("profile name"):
-					next((item for item in self.getMessagesElement() if item.role == controlTypes.Role.LINK and item.UIAAutomationId == "Profile"), None)
+					next((item for item in self.getMessagesElement() if item.role == Role.LINK and item.UIAAutomationId == "Profile"), None)
 					if title: self.saved_items.save("profile name", title)
 				# Determining if this input field is a message input field. If yes, then check if its title needs to be changed
 				if obj.UIAAutomationId == "TextField" and (obj.previous.UIAAutomationId == "ComposerHeaderCancel" or obj.previous.previous.UIAAutomationId == "ComposerHeaderCancel"):
@@ -1083,7 +1127,7 @@ class AppModule(appModuleHandler.AppModule):
 					if label.name == "\ue104": obj.name = _("Editing")
 					elif label.name == "\ue248": obj.name = _("Reply")
 			except: pass
-		elif obj.role == controlTypes.Role.LINK:
+		elif obj.role == Role.LINK:
 			try:
 				if obj.UIAAutomationId in ("Button", "Download") and obj.parent.parent.parent.UIAAutomationId == "Messages":
 					# Announcing the name and size of the file when the focus is on the button to open or download this file
@@ -1098,7 +1142,7 @@ class AppModule(appModuleHandler.AppModule):
 					elif obj.next.next.UIAAutomationId == "Title" and obj.next.next.next.UIAAutomationId == "Subtitle": obj.name += action(obj.next.next.name, obj.next.next.next.name)
 				elif obj.parent.UIAAutomationId in ("TextBlock", "Message"): speech.cancelSpeech()
 			except: pass
-		elif obj.role == controlTypes.Role.BUTTON:
+		elif obj.role == Role.BUTTON:
 			try:
 				# Add a label to unmute the microphone on a voice call
 				# Add a label to turn on the camera on a voice call
@@ -1106,7 +1150,7 @@ class AppModule(appModuleHandler.AppModule):
 				elif obj.UIAAutomationId == "Video" and obj.firstChild.name == "\ue963": obj.name = _("Enable video")
 				elif obj.UIAAutomationId == "Video" and obj.firstChild.name == "\ue964": obj.name = _("Disable video")
 			except: pass
-		elif obj.role == controlTypes.Role.TOGGLEBUTTON:
+		elif obj.role == Role.TOGGLEBUTTON:
 			try:
 				# Checking if a toggle button is an answer option in a vote
 				if "reactionTypeEmoji {" in obj.name:
@@ -1129,34 +1173,36 @@ class AppModule(appModuleHandler.AppModule):
 	# Processing item initialization
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
 		try:
-			if obj.role == controlTypes.Role.CHECKBOX and  (obj.parent.role == controlTypes.Role.WINDOW or obj.parent.parent.UIAAutomationId == "Messages" or obj.next.name == "Xg"):
+			if obj.role == Role.CHECKBOX and  (obj.parent.role == Role.WINDOW or obj.parent.parent.UIAAutomationId == "Messages" or obj.next.name == "Xg"):
 				clsList.insert(0, Message_list_item)
-			elif obj.role == controlTypes.Role.LISTITEM:
+			elif obj.role == Role.LISTITEM:
 				# Here, tracking the change of folder with chats
 				# Also track the selection of chats in the chat list to remember the last selection
 				parent = obj.parent
 				if parent.UIAAutomationId == "ChatFolders":
 					self.tabs_folder_element = parent
 					clsList.insert(0, Tab_folder_item)
-					if conf.get("voiceFolderNames") and controlTypes.State.SELECTED in obj.states: self.change_chats_folder(obj, parent.UIAAutomationId)
-				elif parent.UIAAutomationId == "ChatsList" and controlTypes.State.SELECTED in obj.states: self.saved_items.save("last selected chat", obj)
+					if conf.get("voiceFolderNames") and State.SELECTED in obj.states: self.change_chats_folder(obj, parent.UIAAutomationId)
+				elif parent.UIAAutomationId == "ChatsList" and State.SELECTED in obj.states: self.saved_items.save("last selected chat", obj)
 				elif parent.UIAAutomationId == "Navigation":
 					clsList.insert(0, SettingsPanelListItem)
+			elif conf.get("action_when_pressing_up_arrow_in_text_field") != "normal" and obj.role == Role.EDITABLETEXT and obj.UIAAutomationId == "TextField":
+				clsList.insert(0, EditableText)
 			elif obj.UIAAutomationId == "Profile":
 				self.saved_items.save("profile name", obj)
 			elif obj.UIAAutomationId in ("Audio", "Video"):
 				clsList.insert(0, Audio_and_video_button)
-			elif obj.role == controlTypes.Role.BUTTON and obj.UIAAutomationId == "Explanation":
+			elif obj.role == Role.BUTTON and obj.UIAAutomationId == "Explanation":
 				clsList.insert(0, ExplanationCorrectAnswerInQuiz)
-			elif obj.role == controlTypes.Role.SLIDER and obj.UIAAutomationId == "Slider":
+			elif obj.role == Role.SLIDER and obj.UIAAutomationId == "Slider":
 				self.saved_items.save("slider", obj)
-			elif conf.get("voicingPerformanceIndicators") == "none" and obj.role == controlTypes.Role.PROGRESSBAR:
+			elif conf.get("voicingPerformanceIndicators") == "none" and obj.role == Role.PROGRESSBAR:
 				clsList.pop(0)
 		except Exception as e: pass
 
 	def deleteMessageAndChat(self, obj):
 		if not conf.get("confirmation_at_deletion"): speech.cancelSpeech()
-		if self.isDelete["state"] == 0 and obj.role == controlTypes.Role.MENUITEM:
+		if self.isDelete["state"] == 0 and obj.role == Role.MENUITEM:
 			for item in obj.parent.children:
 				if item.firstChild.name == icons_from_context_menu["delete"]:
 					self.isDelete["state"] = 1
@@ -1165,13 +1211,13 @@ class AppModule(appModuleHandler.AppModule):
 					return
 			self.isDelete = False
 			self.keys["escape"].send()
-		elif self.isDelete["state"] == 1 and obj.role in (controlTypes.Role.CHECKBOX, controlTypes.Role.BUTTON):
+		elif self.isDelete["state"] == 1 and obj.role in (Role.CHECKBOX, Role.BUTTON):
 			targetButton = next((x for x in self.isDelete["elements"] if x.location and x.location.width), False)
-			if obj.role == controlTypes.Role.CHECKBOX:
+			if obj.role == Role.CHECKBOX:
 				# Checking if a checkbox needs to be checked to delete on both sides
-				if obj.UIAAutomationId in ("CheckBox", "RevokeCheck") and ((self.isDelete["isCompleteDeletion"] and controlTypes.State.CHECKED not in obj.states) or (not self.isDelete["isCompleteDeletion"] and controlTypes.State.CHECKED in obj.states)): obj.doAction()
+				if obj.UIAAutomationId in ("CheckBox", "RevokeCheck") and ((self.isDelete["isCompleteDeletion"] and State.CHECKED not in obj.states) or (not self.isDelete["isCompleteDeletion"] and State.CHECKED in obj.states)): obj.doAction()
 				obj.parent.next.doAction()
-			elif obj.role == controlTypes.Role.BUTTON:
+			elif obj.role == Role.BUTTON:
 				obj.doAction()
 			if targetButton: targetButton.setFocus()
 			elif self.isDelete["list"] == "messages": self.script_toLastMessage(False)
@@ -1202,10 +1248,10 @@ class AppModule(appModuleHandler.AppModule):
 	def script_downArrow(self, gesture):
 		obj = api.getFocusObject()
 		try:
-			if obj.role == controlTypes.Role.BUTTON and obj.firstChild.role == controlTypes.Role.GRAPHIC and obj.lastChild.role == controlTypes.Role.STATICTEXT and obj.next.role == controlTypes.Role.BUTTON: obj.next.setFocus()
-			elif obj.role == controlTypes.Role.EDITABLETEXT and obj.UIAAutomationId == "TextField":
+			if obj.role == Role.BUTTON and obj.firstChild.role == Role.GRAPHIC and obj.lastChild.role == Role.STATICTEXT and obj.next.role == Role.BUTTON: obj.next.setFocus()
+			elif obj.role == Role.EDITABLETEXT and obj.UIAAutomationId == "TextField":
 				targetButton = obj.previous
-				if targetButton.role == controlTypes.Role.LIST and targetButton.UIAAutomationId == "ScrollingHost" and targetButton.firstChild.name.startswith("inlineQueryResult"): targetButton.lastChild.setFocus()
+				if targetButton.role == Role.LIST and targetButton.UIAAutomationId == "ScrollingHost" and targetButton.firstChild.name.startswith("inlineQueryResult"): targetButton.lastChild.setFocus()
 				else: message(_("Inline results not found"))
 			else: gesture.send()
 		except: 
@@ -1213,10 +1259,10 @@ class AppModule(appModuleHandler.AppModule):
 	def script_upArrow(self, gesture):
 		obj = api.getFocusObject()
 		try:
-			if obj.role == controlTypes.Role.BUTTON and obj.firstChild.role == controlTypes.Role.GRAPHIC and obj.lastChild.role == controlTypes.Role.STATICTEXT and obj.previous.role == controlTypes.Role.BUTTON: obj.previous.setFocus()
-			elif obj.role == controlTypes.Role.EDITABLETEXT and obj.UIAAutomationId == "TextField":
+			if obj.role == Role.BUTTON and obj.firstChild.role == Role.GRAPHIC and obj.lastChild.role == Role.STATICTEXT and obj.previous.role == Role.BUTTON: obj.previous.setFocus()
+			elif obj.role == Role.EDITABLETEXT and obj.UIAAutomationId == "TextField":
 				targetButton = obj.previous
-				if targetButton.role == controlTypes.Role.LIST and targetButton.UIAAutomationId == "ScrollingHost" and targetButton.firstChild.name.startswith("inlineQueryResult"): targetButton.firstChild.setFocus()
+				if targetButton.role == Role.LIST and targetButton.UIAAutomationId == "ScrollingHost" and targetButton.firstChild.name.startswith("inlineQueryResult"): targetButton.firstChild.setFocus()
 				else: message(_("Inline results not detected"))
 			else: gesture.send()
 		except: gesture.send()
@@ -1269,11 +1315,11 @@ class AppModule(appModuleHandler.AppModule):
 				elif self.isDelete["isCompleteDeletion"]: self.isDelete["message"] = _("Chat deleted on both sides")
 				else: self.isDelete["message"] = _("Chat deleted")
 			if conf.get("audioPlaybackWhenDeleted"): self.isDelete["message"] = "audio"
-			if obj.parent.role == controlTypes.Role.LISTITEM: obj = obj.parent
-			if obj.next and obj.next.role == controlTypes.Role.LISTITEM and obj.next.childCount > 1: self.isDelete["elements"].append(obj.next.firstChild)
-			if obj.previous and obj.previous.role == controlTypes.Role.LISTITEM and obj.previous.childCount > 1: self.isDelete["elements"].append(obj.previous.firstChild)
-			if obj.previous and obj.previous.previous and obj.previous.previous.role == controlTypes.Role.LISTITEM and obj.previous.previous.childCount > 1: self.isDelete["elements"].append(obj.previous.previous.firstChild)
-			if obj.next and obj.next.next and obj.next.next.role == controlTypes.Role.LISTITEM and obj.next.next.childCount > 1: self.isDelete["elements"].append(obj.next.next.firstChild)
+			if obj.parent.role == Role.LISTITEM: obj = obj.parent
+			if obj.next and obj.next.role == Role.LISTITEM and obj.next.childCount > 1: self.isDelete["elements"].append(obj.next.firstChild)
+			if obj.previous and obj.previous.role == Role.LISTITEM and obj.previous.childCount > 1: self.isDelete["elements"].append(obj.previous.firstChild)
+			if obj.previous and obj.previous.previous and obj.previous.previous.role == Role.LISTITEM and obj.previous.previous.childCount > 1: self.isDelete["elements"].append(obj.previous.previous.firstChild)
+			if obj.next and obj.next.next and obj.next.next.role == Role.LISTITEM and obj.next.next.childCount > 1: self.isDelete["elements"].append(obj.next.next.firstChild)
 			self.keys["Applications"].send()
 			return True
 		else: return False
@@ -1293,7 +1339,7 @@ class AppModule(appModuleHandler.AppModule):
 		last_selected_folder = self.saved_items.get("last selected folder")
 		if last_selected_folder != tab_items[0]:
 			self.saved_items.save("last selected folder", tab_items[0])
-			if len(tab_items) > 2 and tab_items[2] != "0": count_chats = tab_items[2]
+			if len(tab_items) > 1 and tab_items[1] != "0": count_chats = tab_items[1]
 		else: return False
 		text = self.saved_items.get("last selected folder")
 		if count_chats: text+= ", "+count_chats
@@ -1302,11 +1348,11 @@ class AppModule(appModuleHandler.AppModule):
 	# Data copy function for broadcasting
 	@script(description=_("Copy data for broadcasting to the clipboard"), gesture="kb:ALT+shift+L")
 	def script_copy_data_for_broadcast(self, gesture):
-		dialog = next((item for item in self.getElements() if item.role == controlTypes.Role.DIALOG), False)
+		dialog = next((item for item in self.getElements() if item.role == Role.DIALOG), False)
 		if not dialog:
 			message(_("Broadcast window not found"))
 			return False
-		data_area = next((item for item in dialog.children if item.role == controlTypes.Role.PANE and item.UIAAutomationId == "ContentScrollViewer"), False)
+		data_area = next((item for item in dialog.children if item.role == Role.PANE and item.UIAAutomationId == "ContentScrollViewer"), False)
 		if not data_area:
 			message(_("Broadcast window not found"))
 			return False
@@ -1341,11 +1387,11 @@ class AppModule(appModuleHandler.AppModule):
 	def script_set_reaction(self, gesture):
 		obj = api.getFocusObject()
 		if not self.is_message_object(obj): return
-		p = obj.location.center
-		winUser.setCursorPos(p.x, p.y)
-		mouseHandler.executeMouseEvent(winUser.MOUSEEVENTF_RIGHTDOWN, 0, 0)
-		mouseHandler.executeMouseEvent(winUser.MOUSEEVENTF_RIGHTUP, 0, 0)
-		# mouseHandler.doSecondaryClick()
+		# p = obj.location.center
+		# winUser.setCursorPos(p.x, p.y)
+		# mouseHandler.executeMouseEvent(winUser.MOUSEEVENTF_RIGHTDOWN, 0, 0)
+		# mouseHandler.executeMouseEvent(winUser.MOUSEEVENTF_RIGHTUP, 0, 0)
+		self.keys["Applications"].send()
 		try: index = int(gesture.mainKeyName[-1])
 		except (AttributeError, ValueError): return
 		self.is_set_reaction = index
@@ -1358,7 +1404,7 @@ class AppModule(appModuleHandler.AppModule):
 			tmp_el = tmp_el.next
 			if tmp_el.name == "\uf13e": processing_of_answer_options_in_surveys = True
 		_("Right answer") # This is necessary for this phrase to appear in the translation dictionary
-		return f'{_("Right answer")+": " if processing_of_answer_options_in_surveys else ""}{obj.children[2].name} - {obj.children[1].name}, '
+		return f'{_("Right answer")+": " if processing_of_answer_options_in_surveys else ""}{obj.name}, '
 
 	# A timer that checks if the voice message has been converted to text
 	def waiting_for_recognition(self, obj):
@@ -1386,7 +1432,7 @@ class AppModule(appModuleHandler.AppModule):
 		button = next((item for item in obj.children if item.UIAAutomationId == "Recognize"), None)
 		if button:
 			# if button.next and button.next.UIAAutomationId == "RecognizedText":
-			if controlTypes.State.PRESSED in button.states or button.next and button.next.UIAAutomationId == "RecognizedText":
+			if State.PRESSED in button.states or button.next and button.next.UIAAutomationId == "RecognizedText":
 				if button.next.UIAAutomationId == "RecognizedText" and button.next.name: message(_("This voice message is already converted to text"))
 				elif button.next.UIAAutomationId == "RecognizedText" and button.next.name == "": message(_("Converting this voice message is already in process"))
 				return
@@ -1405,7 +1451,7 @@ class AppModule(appModuleHandler.AppModule):
 	
 	@script(description=_("Show a list of all UnigramPlus shortcuts"), gesture="kb:ALT+H")
 	def script_help(self, gesture):
-		a = next((item for item in list(addonHandler.getAvailableAddons()) if item.name == "UnigramPlus"), None)
+		a = next((item for item in list(addonHandler.getAvailableAddons()) if item.name == "unigramPlus"), None)
 		a = a.getDocFilePath()
 		# We replace the file extension, because we need an md file
 		a = a[:-4]+"md"
@@ -1418,3 +1464,10 @@ class AppModule(appModuleHandler.AppModule):
 		text = text.replace("* ", "")
 		text = text.replace("## ", "")
 		TextWindow(text.strip(), _("List of shortcuts"), readOnly=True)
+
+
+	@script(description=_("Go to the end"), gesture="kb:ALT+end")
+	def script_to_down(self, gesture):
+		button = next((button for button in self.getElements() if button.role == Role.BUTTON and button.UIAAutomationId == "MessagesButton"), None)
+		if button: button.doAction()
+		else: message(_("Button not found"))

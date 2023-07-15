@@ -82,6 +82,13 @@ I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno p
 
 	##Popis promjena:
 
+### Verzija 4.9.0
+
+* Dodana je opcija za promjenu ponašanja kada se pritisne strelica gore u praznom polju za unos poruke. Možete birati između sljedećih opcija: aktivirati funkciju uređivanja posljednje poslane poruke, premjestiti fokus na posljednju poruku u razgovoru ili ne učiniti ništa.
+* Popravljeno je odgovaranje i odbijanje poziva pomoću prečaca.
+* Popravljeni su manji problemi kao što je kombinacija tipki Alt+H koja nije radila i problem kada poruka na koju je napisan odgovor nije bila izgovorena kada se pritisne strelica lijevo.
+* Popravljen je prikaz nekih elemenata.
+
 ### Verzija 4.8.0
 
 * Sada se u postavkama Unigrama kategorije postavki mogu otvoriti pritiskom na Enter. Kada otvorite bilo koju kategoriju postavki, fokus će biti premješten na tu kategoriju.

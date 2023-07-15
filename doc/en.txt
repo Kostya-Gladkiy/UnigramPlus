@@ -1,10 +1,7 @@
-* Now in the Unigram settings, the settings categories can be opened by pressing Enter. When you open any category of settings, the focus will be placed on that category.
-* Now, when clicking the "Explanation" button in quizzes, the explanation text will open in a separate window for convenient viewing.
-* Fixed an issue where chat folder names were not spoken when switching between them.
-* Fixed a bug that made it impossible to disable or change the order of speaking the chat type and name.
-* Fixed the issue when it was not possible to find out the correct answer in quizzes.
-* Fixed the problem with copying a message using the control+shift+C combination.
-* Made several minor fixes, improvements, and code optimizations.
+* Added an option to change the behavior when pressing the up arrow in an empty message edit field. You can choose from the following options: activate the function of editing the last sent message, move the focus to the last message in the chat or do nothing.
+* Fixed answering and rejecting calls using hotkeys.
+* Fixed minor issues such as the ALT+H key combination not working And an issue when the message to which the reply was written was not spoken when pressing the left arrow.
+* Fixed display of some elements.
 
 If you have the desire, and most importantly the opportunity, to support the developer of this add-on, you can do so using the following details:
 * PeyPal: gladkiy.kostya@gmail.com.

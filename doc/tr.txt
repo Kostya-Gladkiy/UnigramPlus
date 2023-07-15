@@ -1,10 +1,7 @@
-* Artık Unigram ayarlarında ayarlar kategorisini Enter tuşuna basarak açabilirsiniz. Herhangi bir ayar kategorisini açtığınızda, odak noktası bu kategoriye odaklanacaktır.
-* Artık bilgi  yarışmalarında "Açıklama" butonuna tıklandığında açıklama metni ayrı bir pencerede açılarak rahat bir şekilde görüntülenebilir.
-* klasör  Aralarında geçiş yaparken sohbet klasör adlarının  seslendirilmemesine  neden olan bir hata düzeltildi.
-* Sohbet türünün ve adının  seslendirilme sırasını devre dışı bırakmanın veya değiştirmenin imkansız olmasına neden olan bir hata düzeltildi.
-* Bilgi   Yarışmalarında, doğru cevabı bulamama sorunu düzeltildi.
-* Control+shift+C kombinasyonunu kullanarak bir mesajı kopyalama sorunu düzeltildi.
-* Birkaç küçük düzeltme, iyileştirme ve kod optimizasyonu yapıldı.
+* Boş bir mesaj düzenleme alanında yukarı oka bastığınızda davranış yeteneği eklendi. Aşağıdaki seçeneklerden birini seçebilirsiniz: Son mesajı düzenleme özelliğini etkinleştirebilir, odağı sohbetteki son mesaja taşıyabilir veya hiçbir şey yapmazsınız. 
+* Kısayol tuşlarını kullanarak aramaları yanıtlama ve reddetme hatası  düzeltildi.
+* Çalışmayan ALT + H kombinasyonu gibi küçük sorunların yanı sıra sol oka basıldığında cevabın yazıldığı mesajın duyulmamasına neden olan sorun giderildi.
+* Bazı öğelerin sabit görüntülenmesi düzeltildi.
 
 Bu eklentinin geliştiricisini destekleme isteğiniz ve en önemlisi fırsatınız varsa, aşağıdaki ayrıntıları kullanarak bunu yapabilirsiniz:
 * PeyPal: gladkiy.kostya@gmail.com.

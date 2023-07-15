@@ -135,22 +135,29 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(description=_("Accept call"), gesture="kb:ALT+Y")
 	def script_answeringCall(self, gesture):
 		desctop = api.getDesktopObject()
-		notification = next((item.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
-		if not notification: return
+		# notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
+		notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "ToastCenterScrollViewer"), False)
+		if not notification:
+			print("Панелі з дзвінком не знайдено")
+			return
 		button = next((item for item in notification.children if item.UIAAutomationId == "VerbButton"), None)
 		if button: button.doAction()
+		else: print("Кнопку не знайдено")
 
 	# End a call, decline call, or leave a voice chat
 	@script(description=_("Press \"Decline call\" button  if there is an incoming call, \"End call\" button if a call is in progress or leave voice chat if it is active."), gesture="kb:ALT+N")
 	def script_callCancellation(self, gesture):
 		desctop = api.getDesktopObject()
-		notification = next((item.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
+		# notification = next((item.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
+		notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "ToastCenterScrollViewer"), False)
 		button = None
 		if notification:
 			button = next((item.next for item in notification.children if item.UIAAutomationId == "VerbButton"), None)
+		else: print("Панель не знайдено")
 		if button:
 			button.doAction()
 			return
+		print("Кнопку не знайдено")
 		AppModule.script_callCancellation(AppModule, gesture)
 
 
@@ -177,6 +184,12 @@ class UnigramPlusSettings(gui.SettingsPanel):
 		"received": _("Only in received messages"),
 		"all": _("In all messages")
 	}
+	list_actions_when_pressing_up_arrow_in_text_field = {
+		"block": _("Do nothing"),
+		"normal": _("Activate editing of last sent message"),
+		"to_messages": _("Move focus to the last message in a chat"),
+	}
+	
 	def makeSettings(self, settingsSizer):
 		settingsSizerHelper = gui.guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		# Selecting an interface language
@@ -189,6 +202,10 @@ class UnigramPlusSettings(gui.SettingsPanel):
 		# Message sender announcement
 		self.saySenderName = settingsSizerHelper.addLabeledControl(_("Say the sender's name in:"), wx.Choice, choices=[self.listSaySenderName[item] for item in self.listSaySenderName])
 		self.saySenderName.SetStringSelection(self.listSaySenderName[conf.get("saySenderName")])
+		# Selecting the action when pressing the up arrow in the text editor
+		self.action_when_pressing_up_arrow_in_text_field = settingsSizerHelper.addLabeledControl(
+			_("Action when pressing the up arrow in the message edit field"), wx.Choice, choices=list(self.list_actions_when_pressing_up_arrow_in_text_field.values()))
+		self.action_when_pressing_up_arrow_in_text_field.SetStringSelection(self.list_actions_when_pressing_up_arrow_in_text_field[conf.get("action_when_pressing_up_arrow_in_text_field")])
 		# Report not seen before message content
 		self.unreadBeforeMessageContent = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Speak \"Not Seen\" before reading contents of a message")))
 		self.unreadBeforeMessageContent.SetValue(conf.get("unreadBeforeMessageContent"))
@@ -253,6 +270,7 @@ class UnigramPlusSettings(gui.SettingsPanel):
 		conf.set("voiceMessageRecordingIndicator", self.get_key(self.listVoiceMessageRecordingIndicator, self.voiceMessageRecordingIndicator.GetStringSelection()))
 		conf.set("voicingPerformanceIndicators", self.get_key(self.listVoicingPerformanceIndicators, self.voicingPerformanceIndicators.GetStringSelection()))
 		conf.set("lang", self.get_key(listLanguages, self.lang.GetStringSelection()))
+		conf.set("action_when_pressing_up_arrow_in_text_field", self.get_key(self.list_actions_when_pressing_up_arrow_in_text_field, self.action_when_pressing_up_arrow_in_text_field.GetStringSelection()))
 		conf.set("actionDescriptionForLinks", self.actionDescriptionForLinks.IsChecked())
 		conf.set("voiceFullDescriptionOfLinkToYoutube", self.voiceFullDescriptionOfLinkToYoutube.IsChecked())
 		# conf.set("isAnnouncesAnswers", self.isAnnouncesAnswers.IsChecked())
