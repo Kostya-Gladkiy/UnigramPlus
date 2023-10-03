@@ -79,6 +79,16 @@ Dacă îți place cu adevărat acest add-on și ai dorința și, cel mai importa
 
 ##Lista de modificări:
 
+### Versiunea 5.0.0
+
+* S-a rezolvat o problemă în care unele mesaje din chat-uri erau citite de două ori.
+* A fost rezolvată o problemă în care comanda rapidă pentru a naviga către un profil deschis nu funcționa corect.
+* A fost rezolvată o problemă în care nu funcționa comanda rapidă pentru a deschide meniul de navigare.
+* Au fost rezolvate toate problemele legate de butonul pentru activarea/dezactivarea microfonului în apelurile vocale.
+* A fost rezolvată o problemă în limba poloneză în care introducerea unui caracter era blocată de combinația ALT+C.
+* A fost corectată pronunția expresiilor "Owner" și "Administrator" în mesaje.
+* Au fost rezolvate alte câteva probleme minore.
+
 ### Versiunea 4.8.0
 
 * Acum, în setările Unigram, categoriile de setări pot fi deschise prin apăsarea tastei Enter. Atunci când deschizi orice categorie de setări, te vei focaliza pe acea categorie.

@@ -1,0 +1,12 @@
+* S-a rezolvat o problemă în care unele mesaje din chat-uri erau citite de două ori.
+* A fost rezolvată o problemă în care comanda rapidă pentru a naviga către un profil deschis nu funcționa corect.
+* A fost rezolvată o problemă în care nu funcționa comanda rapidă pentru a deschide meniul de navigare.
+* Au fost rezolvate toate problemele legate de butonul pentru activarea/dezactivarea microfonului în apelurile vocale.
+* A fost rezolvată o problemă în limba poloneză în care introducerea unui caracter era blocată de combinația ALT+C.
+* A fost corectată pronunția expresiilor "Owner" și "Administrator" în mesaje.
+* Au fost rezolvate alte câteva probleme minore.
+
+Dacă ai dorința și, mai ales, posibilitatea de a sprijini dezvoltatorul acestui add-on, o poți face folosind următoarele detalii:
+* PayPal: gladkiy.kostya@gmail.com.
+* Sistemul ucrainean de donații: https://unigramplus.diaka.ua/donate.
+* Număr card: 5169360009004502 (Gladkiy Constantine).

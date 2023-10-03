@@ -1,15 +1,13 @@
 # Unigram Plus
 
 * Author: Kostya Gladkiy (Ukrain)
-* Download [stable version][1] (Compatible with NVDA 2021.2 to 2023.1)
-* [Telegram channel][2]
-* [Donation link][3]
+* [Telegram channel](https://t.me/unigramPlus)
+* Telegram: @unigramPlus
+* donation link: [https://unigramplus.diaka.ua/donate](https://unigramplus.diaka.ua/donate)
 * PayPal: gladkiy.kostya@gmail.com
 
-## about
 
 Use Unigram in a more comfortable and productive way. This addon provides many hotkeys for a quick and comfortable use of Unigram and makes a lot of small improvements.
-
 ## Some of the major improvements are:
 
 * Adds a significant improvement to the display of messages such as a poll, a link, or a message with attached media.
@@ -19,19 +17,15 @@ Use Unigram in a more comfortable and productive way. This addon provides many h
 * When the focus is on a message that contains information about a call, the duration of this call is announced.
 * When focusing on a selected message in a chat, you will first hear the information that it is selected, and then the content of the message.
 * Now, when moving in the chat, the phrase "Seen" will not be pronounced at all, and the phrase "Not seen" will be pronounced before the content of the message. This feature currently only works in English, Russian, Ukrainian, Spanish, Portuguese, Polish, Croatian, Turkish, and Persian.
-* Significantly improved the function of recording voice messages. Recording, sending and canceling the recording of a voice message are accompanied by characteristic sounds.
-* Also, when performing these functions, the focus remains in its position and does not jump to either the record button or the message input field.
+* Significantly improved the function of recording voice messages. Recording, sending and canceling the recording of a voice message are accompanied by characteristic sounds. Also, when performing these functions, the focus remains in its position and does not jump to either the record button or the message input field.
 * If the media attached to the message is opened using the spacebar, then after closing it, the focus will return to the last element that was in focus.
 * The add-on allows you to completely disable the announcement of progress bars, as well as disable only the announcement of the progress bar for playing voice messages.
 
 ## Information about the opportunity to donate to the developer:
-
-If you really like this add-on and you have the desire, and most importantly the opportunity, to financially support the developer and thereby motivate him to further develop this add-on, you can do this by transferring a small amount to the following bank details: [donation link][3], or card number is 5169360009004502(Ukraine).
-
+If you really like this add-on and you have the desire, and most importantly the opportunity, to financially support the developer and thereby motivate him to further develop this add-on, you can do this by transferring a small amount to the following bank details: [donation link](https://unigramplus.diaka.ua/donate), or card number is 5169360009004502(Ukraine).
 And remember that everyone who read this line thought that someone will definitely support the developer, but it will not be me.
 
 ## Hotkey list:
-
 * ALT+1: Move focus to chat list;
 * ALT+2: Move focus to the last message in an open chat;
 * ALT+3: Move focus to "unread messages" label;
@@ -78,14 +72,24 @@ And remember that everyone who read this line thought that someone will definite
 * NVDA+ALT+R: Convert voice message to text.
 * Left arrow: Announce the original message, the message that was replied to.
 * ALT+6: Move focus to the list of group threads.
-* ALT+H: Show a list of all UnigramPlus keyboard shortcuts.
+* ALT+H: Show a list of all UnigramPlus shortcuts.
 
 ### Note
 
-* All hotkeys can be reassigned in NVDA menu, preferences, input gestures.
+* All hotkeys can be reassigned in NVDA menu>preferences>input gestures.
 * The fact that the function that focuses the cursor on the "unread message" label can sometimes react with a delay is a known issue. This may depend on the number of cash messages at the moment.
 
 ## List of changes:
+
+### Version 5.0.0
+
+* Fixed an issue where messages in chats were being read twice.
+* Fixed an issue where the shortcut to navigate to an open profile was not correctly functioning.
+* Fixed an issue where the keyboard shortcut to open the navigation menu didn't work.
+* Resolved all issues with the button for enabling/disabling the microphone in voice chats.
+* Fixed an issue in the Polish language where inputting a character was blocked by the ALT+C combination.
+* Corrected the pronunciation of the phrases "Owner" and "Administrator" in messages.
+* Addressed several other minor issues.
 
 ### Version 4.9.0
 
@@ -93,15 +97,6 @@ And remember that everyone who read this line thought that someone will definite
 * Fixed answering and rejecting calls using hotkeys.
 * Fixed minor issues such as the ALT+H key combination not working And an issue when the message to which the reply was written was not spoken when pressing the left arrow.
 * Fixed display of some elements.
-
-### Version 4.8.3
-
-* Fixed an issue that caused the keyboard shortcut to open the navigation menu to not work.
-
-### Version 4.8.1
-
-* UnigramPlus has been adapted to be compatible with the NVDA add-on store format.
-* Minor fixes in the English documentation.
 
 ### Version 4.8.0
 
@@ -118,7 +113,7 @@ And remember that everyone who read this line thought that someone will definite
 * UnigramPlus is now adapted to the latest version of Unigram.
 * Compatibility with NVDA-2023 is now ensured.
 * The keyboard shortcut ALT+1 now moves focus not only to the chat list, but also to the contact list and settings section list.
-* The automatic announcement of new messages in chat, as well as the announcement of chat actions, have been significantly redesigned, resulting in improved stability.
+* The automatic announcement of new messages in the chat and the automatic sounding of chat activity have been significantly revised, resulting in improved stability.
 * A keyboard shortcut has been added to display all UnigramPlus commands. By default, this function is assigned to ALT+H.
 * Several minor issues have also been fixed.
 
@@ -127,7 +122,7 @@ And remember that everyone who read this line thought that someone will definite
 * Added a keyboard shortcut to move focus to list of group threads. By default, this function is assigned to the ALT+6 combination. Please note that often when pressing the enter key on the group that we want to open, the list of threads may not be displayed and then it is necessary to set the focus on this group again and press the enter key. As a rule, after the second press, a list of threads is displayed, and after that we can press a key combination that will move the focus to this list.
 * Now the ALT+2 combination moves the focus not only to the list with messages, but also to the open profile, to the open list of group threads, or to the open section with settings.
 * Now in the UnigramPlus settings, you can disable the pronunciation of the phrases "Admin" and "Owner" on messages in groups.
-* Hotkeys for accepting and declining calls now work correctly.
+* Combinations for accepting and rejecting calls now work correctly.
 * Now the automatic announcement feature for new messages and the chat activity will not turn off when NVDA is restarted, but will work until you turn it off yourself.
 * Improved display of some interface elements.
 
@@ -329,8 +324,3 @@ This update adds a hotkey that clicks the "Instant View" button in a message if 
 
 Added Turkish localization.
 
-[1]: https://github.com/Kostya-Gladkiy/UnigramPlus/releases/download/4.8.1/UnigramPlus-4.8.1.nvda-addon
-
-[2]: https://t.me/unigramPlus
-
-[3]: https://unigramplus.diaka.ua/donate

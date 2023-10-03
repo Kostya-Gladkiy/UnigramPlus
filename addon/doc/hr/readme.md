@@ -77,10 +77,20 @@ I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno p
 
 ### Napomena
 
-* Sve tipke prečaca mogu se ponovno dodijeliti u NVDA izborniku>Postavke>Ulazne geste.
-* Činjenica da funkcija koja fokusira pokazivač na oznaku "nepročitana poruka" ponekad može reagirati sa zakašnjenjem je poznati problem. To može ovisiti o broju poruka o gotovini u ovom trenutku.
+* Svi tipkovnički prečaci mogu se ponovno dodijeliti u NVDA izborniku>Postavke>Ulazne geste.
+* Činjenica da funkcija koja fokusira pokazivač na oznaku "nepročitana poruka" ponekad može reagirati sa zakašnjenjem je poznati problem. To može ovisiti o broju poruka u trenutku.
 
 	##Popis promjena:
+
+### Verzija 5.0.0
+
+* Riješen je problem u kojem su se poruke u razgovorima čitale dvaput.
+* Riješen je problem u kojem tipkovnički prečac za prikazivanje otvorenog profila nije ispravno funkcionirao.
+* Riješen je problem gdje tipkovnički prečac za otvaranje navigacijskog izbornika nije radio.
+* Riješeni su svi problemi s gumbom za uključivanje/isključivanje mikrofona u glasovnim razgovorima.
+* Riješen je problem na poljskom jeziku gdje je unos znaka blokirala kombinacija ALT+C.
+* Ispravljen je izgovor fraza "Vlasnik" i "Administrator" u porukama.
+* Riješeno je nekoliko drugih manjih problema.
 
 ### Verzija 4.9.0
 

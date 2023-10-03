@@ -134,6 +134,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Call answer
 	@script(description=_("Accept call"), gesture="kb:ALT+Y")
 	def script_answeringCall(self, gesture):
+		gesture.send()
 		desctop = api.getDesktopObject()
 		# notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
 		notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "ToastCenterScrollViewer"), False)
@@ -147,6 +148,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# End a call, decline call, or leave a voice chat
 	@script(description=_("Press \"Decline call\" button  if there is an incoming call, \"End call\" button if a call is in progress or leave voice chat if it is active."), gesture="kb:ALT+N")
 	def script_callCancellation(self, gesture):
+		gesture.send()
 		desctop = api.getDesktopObject()
 		# notification = next((item.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
 		notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "ToastCenterScrollViewer"), False)

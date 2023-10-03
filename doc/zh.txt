@@ -1,9 +1,0 @@
-* Added an option to change the behavior when pressing the up arrow in an empty message edit field. You can choose from the following options: activate the function of editing the last sent message, move the focus to the last message in the chat or do nothing.
-* Fixed answering and rejecting calls using hotkeys.
-* Fixed minor issues such as the ALT+H key combination not working And an issue when the message to which the reply was written was not spoken when pressing the left arrow.
-* Fixed display of some elements.
-
-If you have the desire, and most importantly the opportunity, to support the developer of this add-on, you can do so using the following details:
-* PeyPal: gladkiy.kostya@gmail.com.
-* Ukrainian donation system: https://unigramplus.diaka.ua/donate.
-* Card number: 5169360009004502 (Gladkiy Constantine).

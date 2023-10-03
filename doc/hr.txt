@@ -1,7 +1,10 @@
-* Dodana je opcija za promjenu ponašanja kada se pritisne strelica gore u praznom polju za unos poruke. Možete birati između sljedećih opcija: aktivirati funkciju uređivanja posljednje poslane poruke, premjestiti fokus na posljednju poruku u razgovoru ili ne učiniti ništa.
-* Popravljeno je odgovaranje i odbijanje poziva pomoću prečaca.
-* Popravljeni su manji problemi kao što je kombinacija tipki Alt+H koja nije radila i problem kada poruka na koju je napisan odgovor nije bila izgovorena kada se pritisne strelica lijevo.
-* Popravljen je prikaz nekih elemenata.
+* Riješen je problem u kojem su se poruke u razgovorima čitale dvaput.
+* Riješen je problem u kojem tipkovnički prečac za prikazivanje otvorenog profila nije ispravno funkcionirao.
+* Riješen je problem gdje tipkovnički prečac za otvaranje navigacijskog izbornika nije radio.
+* Riješeni su svi problemi s gumbom za uključivanje/isključivanje mikrofona u glasovnim razgovorima.
+* Riješen je problem na poljskom jeziku gdje je unos znaka blokirala kombinacija ALT+C.
+* Ispravljen je izgovor fraza "Vlasnik" i "Administrator" u porukama.
+* Riješeno je nekoliko drugih manjih problema.
 
 Ako imate želju, i što je najvažnije priliku, podržati programera ovog dodatka, možete to učiniti pomoću sljedećih podataka:
 * PayPal: gladkiy.kostya@gmail.com

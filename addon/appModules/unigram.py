@@ -35,12 +35,11 @@ baseDir = os.path.join(os.path.dirname(__file__), "media\\")
 class Audio_and_video_button:
 	def script_enter(self, gesture):
 		gesture.send()
-		if self.UIAAutomationId == "Audio": new_name = self.next.next.name if self.next.next else self.name
+		if self.UIAAutomationId == "Audio": new_name = self.next.name if self.next else self.name
 		elif self.UIAAutomationId == "Video": new_name = _("Camera on") if self.firstChild.name == "\ue964" else _("Camera off") if self.firstChild.name == "\ue963" else self.name
 		def spechState(): message(new_name)
 		thr = Timer(.1, spechState).start()
-		# if self.UIAAutomationId == "Audio": self.action_audio_button()
-		# elif self.UIAAutomationId == "Video": self.action_video_button()
+	
 	def initOverlayClass(self):
 		self.bindGesture("kb:Enter", "enter")
 		# self.bindGesture("kb:space", "enter")
@@ -59,6 +58,20 @@ class Message_list_item:
 		if answer and answer.name == "":
 			answer = answer.firstChild
 		if answer: message(answer.name)
+
+	@script(description=_("Show message text in popup window"), gesture="kb:ALT+C")
+	def script_show_text_message(self, gesture):
+		textMessage = next((item.name for item in self.children if item.UIAAutomationId in ("TextBlock", "Message", "Question")), None)
+		if textMessage: TextWindow(textMessage.strip(), _("message text"), readOnly=False)
+		else: message(_("This message does not contain text"))
+
+	@script(description=_("Open comments"), gesture="kb:control+ALT+C")
+	def script_openComentars(self, gesture):
+		targetButton = next((item for item in reversed(self.children) if item.role == Role.LINK and item.UIAAutomationId == "Thread"), False)
+		if targetButton:
+			# self.isSkipName = 1
+			targetButton.doAction()
+		else: message(_("Button to open comments not found"))
 
 	@script(description=_("Edit message"), gesture="kb:backspace")
 	def script_edit_message(self, gesture):
@@ -89,6 +102,10 @@ class Message_list_item:
 	def initOverlayClass(self):
 		self.positionInfo = self.parent.positionInfo
 		self.states.discard(State.CHECKABLE)
+		self.bindGesture("kb:ALT+C", "show_text_message")
+		self.bindGesture("kb:backspace", "edit_message")
+		self.bindGesture("kb:enter", "reply_to_message")
+		self.bindGesture("kb:control+ALT+C", "openComentars")
 		if conf.get("action_when_pressing_up_arrow_in_text_field") == "to_messages":
 			self.bindGesture("kb:downArrow", "next_message")
 
@@ -343,7 +360,7 @@ class AppModule(appModuleHandler.AppModule):
 	def get_contacts_list(self):
 		a = next((item for item in self.getElements() if item.role == Role.TABCONTROL and item.UIAAutomationId == "rpMasterTitlebar"), None)
 		if not a: return False
-		try:b = a.firstChild.next.lastChild.firstChild.next.next.next
+		try:b = a.firstChild.next.lastChild.firstChild.next.next.next.next
 		except: b = False
 		if b: return b
 		else: return False
@@ -522,7 +539,7 @@ class AppModule(appModuleHandler.AppModule):
 	def get_profile_panel(self):
 		list = self.profile_panel_element
 		if not list or not list.location.width:
-			list = next((item for item in self.getElements() if (item.role == Role.LIST and item.UIAAutomationId == "ScrollingHost" and item.firstChild.UIAAutomationId == "Photo") or (item.role == Role.LINK and item.UIAAutomationId == "Photo" and item.next.UIAAutomationId == "Title")), None)
+			list = next((item for item in self.getElements() if (item.role == Role.LIST and item.UIAAutomationId == "ScrollingHost" and item.firstChild and item.firstChild.UIAAutomationId in ("Photo", "Segments")) or (item.role == Role.LINK and item.UIAAutomationId == "Photo" and item.next.UIAAutomationId == "Title")), None)
 		if not list:
 			return False
 		if list.UIAAutomationId == "Photo":
@@ -638,7 +655,7 @@ class AppModule(appModuleHandler.AppModule):
 		# The first check concerns the situation when the call is already ongoing
 		# The second check concerns the situation when the user wants to leave the voice chat while in the voice chat window
 		# The fourth check concerns the situation when an incoming call is received
-		targetButton = next((item for item in self.getElements(self)[1:] if (item.UIAAutomationId == "Accept" and item.previous.UIAAutomationId == "Audio") or (item.UIAAutomationId == "Leave" and item.firstChild.name == "\ue711") or (item.previous.UIAAutomationId == "Audio" and item.firstChild.name == "\ue711")), False)
+		targetButton = next((item for item in self.getElements(self)[1:] if (item.UIAAutomationId == "Accept" and item.previous.UIAAutomationId == "Audio") or (item.UIAAutomationId == "Leave" and item.firstChild and item.firstChild.name == "\ue711") or (item.previous.UIAAutomationId == "Audio" and item.firstChild and item.firstChild.name == "\ue711")), False)
 		if targetButton:
 			lastFocus = api.getFocusObject()
 			message(targetButton.name)
@@ -655,7 +672,7 @@ class AppModule(appModuleHandler.AppModule):
 			if item.UIAAutomationId == "Audio" and item.previous.UIAAutomationId == "Video" and item.next.UIAAutomationId == "Accept":
 				targetButton = item
 				break
-			elif item.UIAAutomationId == "Audio" and item.next.next.UIAAutomationId == "AudioInfo":
+			elif item.UIAAutomationId == "Audio" and item.next.UIAAutomationId == "AudioInfo":
 				targetButton = item
 				isVoiceChat = True
 				break
@@ -663,7 +680,7 @@ class AppModule(appModuleHandler.AppModule):
 			if isVoiceChat:
 				targetButton.doAction()
 				obj.setFocus()
-				def spechState(): message(targetButton.next.next.name)
+				def spechState(): message(targetButton.next.name)
 				thr = Timer(.1, spechState).start()
 				return True
 			self.fixedDoAction(targetButton)
@@ -722,8 +739,8 @@ class AppModule(appModuleHandler.AppModule):
 		self.activate_option_for_menu((icons_from_context_menu["copy"]), "Messages")
 
 	# Show message text in popup window
-	@script(description=_("Show message text in popup window"), gesture="kb:ALT+C")
-	def script_show_text_message(self, gesture):
+	# @script(description=_("Show message text in popup window"), gesture="kb:ALT+C")
+	def _script_show_text_message(self, gesture):
 		obj = api.getFocusObject()
 		if not self.is_message_object(obj): return False
 		textMessage = next((item.name for item in obj.children if item.UIAAutomationId in ("TextBlock", "Message", "Question")), False)
@@ -776,13 +793,13 @@ class AppModule(appModuleHandler.AppModule):
 	@script(description=_("Open navigation menu"), gesture="kb:ALT+M")
 	def script_showMenu(self, gesture):
 		try:
-			targetButton = next((item for item in self.getElements() if item.UIAAutomationId == "Photo" and item.previous and item.previous.UIAAutomationId == "StateLabel"), False)
+			targetButton = next((item for item in self.getElements() if item.UIAAutomationId == "Photo" and item.role == Role.TOGGLEBUTTON), False)
 		except: targetButton = False
 		if targetButton: targetButton.doAction()
 		else: message(_("Navigation menu not available"))
 
 	# Function to open comments
-	@script(description=_("Open comments"), gesture="kb:control+ALT+C")
+	# @script(description=_("Open comments"), gesture="kb:control+ALT+C")
 	def script_openComentars(self, gesture):
 		obj = api.getFocusObject()
 		if not self.is_message_object(obj): return
@@ -888,8 +905,9 @@ class AppModule(appModuleHandler.AppModule):
 		reactions = []
 		# Determine the message was sent or received
 		sender_message = "received" if keywords[3] in obj.name[-80:] else "send" if keywords[2] in obj.name[-80:] else ""
+		cleaned_message_element = re.sub(r"\W+", "", obj.name)
 		for item in obj.children:
-			if (item.UIAAutomationId in ("TextBlock", "Message") and item.name.strip() not in obj.name) or item.UIAAutomationId == "RecognizedText":
+			if (item.UIAAutomationId in ("TextBlock", "Message") and re.sub(r"\W+", "", item.name) not in cleaned_message_element) or item.UIAAutomationId == "RecognizedText":
 				# Processing the message description containing multiple embedded media
 				try: obj.name =re.sub(r"[\.,]?{}|{}".format(keywords[3], keywords[2]), fr". {item.name}\g<0>", obj.name)
 				except: pass
@@ -952,8 +970,7 @@ class AppModule(appModuleHandler.AppModule):
 				list_text = obj.name.split("\n")
 				key_phrases = phrase_administrator_in_message.get(conf.get("lang"), phrase_administrator_in_message["en"])
 				en_key_phrases = phrase_administrator_in_message["en"]
-				# if not conf.get("notify administrators in messages") and len(list_text) > 1 and ((admin_label and list_text[1] == ". "+admin_label+". \r") or list_text[1] in (". "+key_phrases[0]+". \r", ". "+key_phrases[1]+". \r")):
-				if not conf.get("notify administrators in messages") and len(list_text) > 1 and list_text[1] in (". "+key_phrases[0]+". \r", ". "+key_phrases[1]+". \r", ". "+en_key_phrases[0]+". \r", ". "+en_key_phrases[1]+". \r"):
+				if not conf.get("notify administrators in messages") and len(list_text) > 1 and list_text[1] in (", "+key_phrases[0]+". \r", ", "+key_phrases[1]+". \r", ", "+en_key_phrases[0]+". \r", ", "+en_key_phrases[1]+". \r"):
 					del list_text[1]
 					obj.name = "\n".join(list_text)
 		else:
@@ -1146,7 +1163,7 @@ class AppModule(appModuleHandler.AppModule):
 			try:
 				# Add a label to unmute the microphone on a voice call
 				# Add a label to turn on the camera on a voice call
-				if obj.UIAAutomationId == "Audio" and obj.firstChild.name == "\ue720": obj.name = obj.next.next.name
+				if obj.UIAAutomationId == "Audio" and obj.firstChild.name == "\ue720": obj.name = obj.next.name
 				elif obj.UIAAutomationId == "Video" and obj.firstChild.name == "\ue963": obj.name = _("Enable video")
 				elif obj.UIAAutomationId == "Video" and obj.firstChild.name == "\ue964": obj.name = _("Disable video")
 			except: pass
@@ -1405,6 +1422,7 @@ class AppModule(appModuleHandler.AppModule):
 			if tmp_el.name == "\uf13e": processing_of_answer_options_in_surveys = True
 		_("Right answer") # This is necessary for this phrase to appear in the translation dictionary
 		return f'{_("Right answer")+": " if processing_of_answer_options_in_surveys else ""}{obj.name}, '
+
 
 	# A timer that checks if the voice message has been converted to text
 	def waiting_for_recognition(self, obj):

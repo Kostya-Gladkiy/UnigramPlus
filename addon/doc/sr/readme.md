@@ -82,12 +82,15 @@ Sve tasterske prečice mogu se ponovo dodeliti u meniju NVDA > Podešavanja > Ul
 Činjenica da funkcija koja fokusira kursor na oznaku nepročitane poruke ponekad može odgovoriti sa zakašnjenjem je poznat problem. To može zavisiti o količini poruka u ćaskanju u ovom trenutku.
 
 ## Lista promena:
-###Verzija 4.9.0
-* Dodata opcija za promenu ponašanja kada se pritisne strelica na gore u praznom polju za uređivanje poruke. Možete birati između sledećih opcija: aktivirati funkciju izmene poslednje poslate poruke, pomeriti fokus na poslednju poruku u ćaskanju ili ne raditi ništa.
-* Popravljeno odgovaranje i odbijanje poziva pomoću prečica.
-* Ispravljeni manji problemi kao što je kombinacija tastera ALT+H koja ne radi i problem kada poruka na koju je napisan odgovor nije izgovorena kada se pritisne strelica na levo.
-* Popravljen prikaz nekih elemenata.
 
+###Verzija 5.0.0
+* Rešen je problem gde su poruke u četovima čitane dva puta.
+* Rešen je problem gde prečica za navigaciju do otvorenog profila nije ispravno funkcionisala.
+* Rešen je problem gde prečica na tastaturi za otvaranje menija za navigaciju nije radila.
+* Rešeni su svi problemi sa dugmetom za uključivanje/isključivanje mikrofona u glasovnim razgovorima.
+* Rešen je problem na poljskom jeziku gde je unošenje znaka blokirano kombinacijom ALT+C.
+* Ispravljen je izgovor fraza vlasnik i administrator u porukama.
+* Rešeno je nekoliko drugih manjih problema.
 
 ###Verzija 4.8.0
 * Sada u postavkama unigrama, kategorije podešavanja se mogu otvoriti pritiskom na enter. Kada otvorite bilo koju kategoriju podešavanja, fokus će biti stavljen na tu kategoriju.

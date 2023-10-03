@@ -1,0 +1,29 @@
+{
+	"addonId": "unigramPlus",
+	"displayName": "UnigramPlus",
+	"URL": "",
+	"description": "This add-on adds a lot of hotkeys for quick navigation through the main elements of the Unigram application, convenient interaction with Chat messages, and also adds many small improvements that make working in Unigram much easier",
+	"sha256": "0e0c89443fb8f67be20a7a96d9406ede52a5d84624e94b9d1f692a1ae168c0d5",
+	"homepage": "https://github.com/Kostya-Gladkiy/UnigramPlus",
+	"addonVersionName": "5.0.0",
+	"addonVersionNumber": {
+		"major": 5,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2021,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2023,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "",
+	"sourceURL": "https://github.com/Kostya-Gladkiy/UnigramPlus",
+	"license": "GPL 2",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html"
+}
