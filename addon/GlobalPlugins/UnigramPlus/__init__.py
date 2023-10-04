@@ -4,7 +4,8 @@ import addonHandler
 from scriptHandler import script
 import api
 import gui
-from gui import SettingsPanel, guiHelper, nvdaControls
+from gui import guiHelper, nvdaControls
+from gui.settingsDialogs import SettingsPanel
 import wx
 import urllib.request
 import core
@@ -163,7 +164,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		AppModule.script_callCancellation(AppModule, gesture)
 
 
-class UnigramPlusSettings(gui.SettingsPanel):
+class UnigramPlusSettings(SettingsPanel):
 	title = "UnigramPlus"
 	listVoiceTypeAfterChatName = {
 		"beforeName": _("Before chat name"),
