@@ -4,8 +4,11 @@ import addonHandler
 from scriptHandler import script
 import api
 import gui
+try:
+    from gui import settingsPanel
+except Exception:
+    from gui.settingsDialogs import SettingsPanel
 from gui import guiHelper, nvdaControls
-from gui.settingsDialogs import SettingsPanel
 import wx
 import urllib.request
 import core
