@@ -927,7 +927,9 @@ class AppModule(appModuleHandler.AppModule):
 				if not conf.get("voiceFullDescriptionOfLinkToYoutube") and description.startswith("YouTube "):
 					description = description.split("\n")
 					description = "\n".join(description[:2])
-				if description not in item.name: obj.name = obj.name.replace(item.name.strip(), item.name+"\n"+description)
+				if description not in item.name:
+					obj.name =re.sub(r"[.,]?{}|{}".format(keywords[3], keywords[2]), fr". \n{description}\g<0>", obj.name)
+					# obj.name = obj.name.replace(item.name.strip(), item.name+"\n"+description)
 				for link in item.children:
 					# if link.role == Role.LINK and link.name.startswith("http") and len(link.name) > 30: obj.name = obj.name.replace(link.name, link.name[0:30]+"...")
 					if link.role == Role.LINK and link.name.startswith("http") and len(link.name) > 30:
@@ -1163,7 +1165,7 @@ class AppModule(appModuleHandler.AppModule):
 			try:
 				# Add a label to unmute the microphone on a voice call
 				# Add a label to turn on the camera on a voice call
-				if obj.UIAAutomationId == "Audio" and obj.firstChild.name == "\ue720": obj.name = obj.next.name
+				if obj.UIAAutomationId == "Audio" and obj.firstChild.name == "\ue720" and obj.next.UIAAutomationId == "AudioInfo": obj.name = obj.next.name
 				elif obj.UIAAutomationId == "Video" and obj.firstChild.name == "\ue963": obj.name = _("Enable video")
 				elif obj.UIAAutomationId == "Video" and obj.firstChild.name == "\ue964": obj.name = _("Disable video")
 			except: pass

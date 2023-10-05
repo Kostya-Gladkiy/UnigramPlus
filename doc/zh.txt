@@ -1,0 +1,12 @@
+* 修正在聊天中訊息會讀出兩次的錯誤。
+* 修正瀏覽到開啟資料頁的快速鍵無法正常運作。
+* 修正開啟主選單的快速鍵無法正常運作。
+* 修正所有關於在視訊聊天中開啟或關閉麥克風的按鈕的錯誤。
+* 修正再波瀾文當輸入字元時的 ALT+C 快速鍵衝突。
+* 修正訊息中擁有者和管理員的發音。
+* 修正其他錯誤。
+
+If you have the desire, and most importantly the opportunity, to support the developer of this add-on, you can do so using the following details:
+* PeyPal: gladkiy.kostya@gmail.com.
+* Ukrainian donation system: https://unigramplus.diaka.ua/donate.
+* Card number: 5169360009004502 (Gladkiy Constantine).

@@ -77,6 +77,16 @@ Bilinen dezavantajlardan biri, bir işlev odağı "okunmamış mesajlar" etiketi
 
 ##Değişiklik listesi:
 
+### Sürüm 5.0.0
+
+* Sohbetlerdeki mesajların iki kez okunmasına neden olan sorun düzeltildi.
+* Açık bir  profile gitmek için kısayolun düzgün çalışmamasına neden olan sorun düzeltildi.
+* Gezinme menüsünü açmak için klavye kısayolunun çalışmamasına neden olan  sorun düzeltildi.
+* Sesli sohbetlerde mikrofonu etkinleştirme / devre dışı bırakma düğmesiyle ilgili tüm sorunlar çözüldü.
+* Lehçe dilinde bir karakterin girilmesinin ALT + C kombinasyonu tarafından engellendiği bir sorun düzeltildi.
+* Mesajlardaki "Sahip" ve "Yönetici" ifadelerinin telaffuzu düzeltildi.
+* Diğer bazı küçük sorunlar aradan kaldırıldı.  
+
 ###Sürüm 4.9.0
 
 * Boş bir mesaj düzenleme alanında yukarı oka bastığınızda davranış yeteneği eklendi. Aşağıdaki seçeneklerden birini seçebilirsiniz: Son mesajı düzenleme özelliğini etkinleştirebilir, odağı sohbetteki son mesaja taşıyabilir veya hiçbir şey yapmazsınız. 
