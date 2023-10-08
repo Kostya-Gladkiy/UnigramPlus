@@ -9,6 +9,7 @@ from controlTypes import Role, State
 import scriptHandler
 from scriptHandler import script
 from NVDAObjects.UIA import UIA
+from NVDAObjects.IAccessible import IAccessible, getNVDAObjectFromPoint
 import languageHandler
 import addonHandler
 import textInfos
@@ -379,6 +380,35 @@ class AppModule(appModuleHandler.AppModule):
 			if obj.UIAAutomationId == "Message_item": return True
 			else: return False
 		except: return False
+
+
+	@script(description="Read current search result or mention", gesture="kb:ALT+G")
+	def script_read_mention(self, gesture):
+		result = getNVDAObjectFromPoint(500, 500)
+		while result.parent is not None and isinstance(result.parent, IAccessible):
+			result = result.parent
+		heightscale = 525 / 1032
+		widthscale = 1340 / 1920
+		wleft, wtop = result.location.left, result.location.top
+		x = int(widthscale * result.location.width + wleft)
+		y = int(heightscale * result.location.height + wtop)
+		o = getNVDAObjectFromPoint(x, y)
+		message(o.name)
+
+
+	@script(description="Go to current search result or mention", gesture="kb:ALT+SHIFT+G")
+	def script_goto_mention(self, gesture):
+		result = getNVDAObjectFromPoint(500, 500)
+		while result.parent is not None and isinstance(result.parent, IAccessible):
+			result = result.parent
+		heightscale = 528 / 1032
+		widthscale = 1340 / 1920
+		wleft, wtop = result.location.left, result.location.top
+		x = int(widthscale * result.location.width + wleft)
+		y = int(heightscale * result.location.height + wtop)
+		o = getNVDAObjectFromPoint(x, y)
+		o.setFocus()
+
 
 	# The function of changing the playback speed of a voice message
 	@script(description=_("Increase/decrease the playback speed of voice messages"), gesture="kb:ALT+S")
