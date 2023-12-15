@@ -26,6 +26,8 @@ Koristite Unigram na ugodniji i produktivniji način. Ovaj dodatak nudi mnoge ta
 Ako Vam se ovaj dodatak zaista sviđa i imate želju, a što je najvažnije priliku, finansijski podržati razvojnog programera i time ga motivisati da nastavi razvijati ovaj dodatak, to možete učiniti prenosom male količine pomoću sledećih bankovnih podataka:
 [Link za donaciju](https://unigramplus.diaka.ua/donate) ili broj kartice je 5169360009004502 (Ukrajina).
 
+I zapamtite da su svi koji su pročitali ovaj red mislili da će neko sigurno podržati programera ali to neću biti ja.
+
 ## Lista prečica:
 
 * ALT+1 - Premešta fokus na listu ćaskanja.
@@ -43,9 +45,8 @@ Ako Vam se ovaj dodatak zaista sviđa i imate želju, a što je najvažnije pril
 * ALT+Y - Prihvatanje poziva.
 * ALT+N - dugme za  "Odbijanje poziva" ako postoji dolazni poziv", "Završi poziv" ako je poziv u toku ili napušta glasovno ćaskanje ako je aktivno.
 * ALT+A - dugme za "Uključivanje/isključivanje mikrofona".
-* ALT+C - dugme "Uključi/isključi kameru".
+* ALT+V - dugme "Uključi/isključi kameru".
 * ALT+Q - dugme "Instant view" ako se nalazi u trenutnoj poruci.
-* ALT+O - dugme "Više opcija" u otvorenom ćaskanju, glasovnom ćaskanju ili prozoru za poziv.
 * ALT+M - Otvara meni za navigaciju
 * Control+R - Pokreće snimanje glasovne poruke ili slanje glasovne poruke.
 * Control+D - Otkazuje snimanje glasovne poruke. Ako se pritisne dva puta, menja vrstu obaveštenja kada započne snimanje, slanje ili otkazivanje snimanja glasovne poruke.
@@ -54,18 +55,15 @@ Ako Vam se ovaj dodatak zaista sviđa i imate želju, a što je najvažnije pril
 * shift+delete - Briše poruku ili ćaskanje s obe strane.
 * control+P - Otvara trenutni profil ćaskanja.
 * Control + Alt + C - Otvara komentare.
-* Nedodeljeno - Odgovara na poruku.
+* Enter - Odgovara na poruku.
 * Alt + F - Prosleđuje poruku.
-* Nedodeljeno - Uređuje poruku.
+* Backspace - Uređuje poruku.
 * ALT+shift+L - kopiranje podataka za emitivanje u privremenu memoriju.
 * Alt + Shift + R - Označava ćaskanje kao pročitano.
 * Control + Razmak - Prelazi na način odabira.
-* Control + Shift + C - Kopira poruke uz održavanje formatiranja.
 * ALT+shift+L - kopiranje podataka za emitovanje u privremenu memoriju.
-* NVDA+control+U - Otvara prozor sa podešavanjima UnigramPlus-a
-* control+ALT+strelica desno - Premotava glasovnu poruku unapred.
-* control+ALT+strelica levo - Premotava glasovnu poruku unazad.
-* ALT+c – Prikazuje tekst poruke u iskačućem prozoru.
+* ALT+C: Prikazuje tekst poruke u iskačućem prozoru.
+NVDA+control+U - Otvara prozor sa podešavanjima UnigramPlus-a.
 * ALT+4 - Premešta fokus na listu fascikli za ćaskanje.
 * Control+shift+A - Pritisnite dugme "Priloži datoteku".
 * control+N - Pritisnite dugme "Novo ćaskanje".
@@ -76,14 +74,22 @@ Ako Vam se ovaj dodatak zaista sviđa i imate želju, a što je najvažnije pril
 * Strelica levo: najavljuje originalnu poruku, poruku na koju je odgovoreno.
 * ALT+6: Premešta fokus na listu niti grupe.
 * ALT+H: Prikaži listu svih UnigramPlus prečica.
-
-### Napomena
-Sve tasterske prečice mogu se ponovo dodeliti u meniju NVDA > Podešavanja > Ulazne komande.
-Činjenica da funkcija koja fokusira kursor na oznaku nepročitane poruke ponekad može odgovoriti sa zakašnjenjem je poznat problem. To može zavisiti o količini poruka u ćaskanju u ovom trenutku.
+* ALT+I: Otvaranje liste rezultata pretrage ćaskanja.
+* ALT+J: Ide se na prethodni rezultat pretrage u ćaskanju.
+* ALT+k: Ide se na sledeći rezultat pretrage u ćaskanju.
 
 ## Lista promena:
 
-###Verzija 5.0.0
+###Verzija 5.1.0
+* Dodate prečice na tastaturi za navigaciju do sledećeg i prethodnog rezultata pretrage u ćaskanju. Podrazumevano, ove funkcije su dodeljene kombinacijama tastera ALT+K i ALT+J.
+* Dodata je prečica na tastaturi za otvaranje liste sa svim rezultatima pretrage u ćaskanju. Podrazumevano, ova funkcija je dodeljena kombinaciji tastera ALT+I.
+* Sada, dvostrukim pritiskom na strelicu levo na poruci, fokus će se pomeriti na poruku na koju trenutna poruka odgovara.
+* Rešen je problem gde se opisi linkova ugrađenih u poruku nisu čitali.
+* Unigramplus više neće predlagati ažuriranja na zaštićenim ekranima. Međutim, korisnici će morati još jednom da otvore nvda podešavanja i kliknu na koristi poslednje sačuvane postavke tokom prijavljivanja i čitanja zaštićenih ekrana (potrebna su administratorska prava) dugme.
+* Uklonjena je funkcija za premotavanje glasovnih poruka i funkcija podešavanje reakcija na poruke, jer ove funkcije nisu radile pouzdano.
+	* Uklonjena je funkcija kopiranja poruka jer unigram sada ima ovu funkciju. Imajte na umu da ponekad kopiranje poruka može dovesti do blagog zamrzavanja programa, ali to nije povezano sa unigramplus dodatkom.
+* Ispravljene neke druge manje greške.
+Verzija 5.0.0
 * Rešen je problem gde su poruke u četovima čitane dva puta.
 * Rešen je problem gde prečica za navigaciju do otvorenog profila nije ispravno funkcionisala.
 * Rešen je problem gde prečica na tastaturi za otvaranje menija za navigaciju nije radila.

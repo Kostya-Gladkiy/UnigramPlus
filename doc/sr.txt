@@ -1,3 +1,12 @@
+* Dodate prečice na tastaturi za navigaciju do sledećeg i prethodnog rezultata pretrage u ćaskanju. Podrazumevano, ove funkcije su dodeljene kombinacijama tastera ALT+K i ALT+J.
+* Dodata je prečica na tastaturi za otvaranje liste sa svim rezultatima pretrage u ćaskanju. Podrazumevano, ova funkcija je dodeljena kombinaciji tastera ALT+I.
+* Sada, dvostrukim pritiskom na strelicu levo na poruci, fokus će se pomeriti na poruku na koju trenutna poruka odgovara.
+* Rešen je problem gde se opisi linkova ugrađenih u poruku nisu čitali.
+* Unigramplus više neće predlagati ažuriranja na zaštićenim ekranima. Međutim, korisnici će morati još jednom da otvore nvda podešavanja i kliknu na koristi poslednje sačuvane postavke tokom prijavljivanja i čitanja zaštićenih ekrana (potrebna su administratorska prava) dugme.
+* Uklonjena je funkcija za premotavanje glasovnih poruka i funkcija podešavanje reakcija na poruke, jer ove funkcije nisu radile pouzdano.
+	* Uklonjena je funkcija kopiranja poruka jer unigram sada ima ovu funkciju. Imajte na umu da ponekad kopiranje poruka može dovesti do blagog zamrzavanja programa, ali to nije povezano sa unigramplus dodatkom.
+* Ispravljene neke druge manje greške.
+Verzija 5.0.0
 * Rešen je problem gde su poruke u četovima čitane dva puta.
 * Rešen je problem gde prečica za navigaciju do otvorenog profila nije ispravno funkcionisala.
 * Rešen je problem gde prečica na tastaturi za otvaranje menija za navigaciju nije radila.

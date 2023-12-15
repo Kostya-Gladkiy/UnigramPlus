@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'UnigramPlus' '4.0.1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-07-14 12:32+0300\n"
-"PO-Revision-Date: 2023-07-14 12:48+0300\n"
+"POT-Creation-Date: 2023-12-14 22:48+0200\n"
+"PO-Revision-Date: 2023-12-15 09:45+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #: addon\appModules\cnf.py:12
 msgid "Arabic"
@@ -115,7 +115,7 @@ msgstr "Редактировать"
 msgid "Photo"
 msgstr "Фото"
 
-#: addon\appModules\data.py:49 addon\appModules\unigram.py:1113
+#: addon\appModules\data.py:49 addon\appModules\unigram.py:1100
 msgid "Image"
 msgstr "Изображение"
 
@@ -163,177 +163,201 @@ msgstr "Удалить"
 msgid "Close"
 msgstr "Закрыть"
 
-#: addon\appModules\unigram.py:39 addon\appModules\unigram.py:693
+#: addon\appModules\unigram.py:39 addon\appModules\unigram.py:695
 msgid "Camera on"
 msgstr "Камера включена"
 
-#: addon\appModules\unigram.py:39 addon\appModules\unigram.py:694
+#: addon\appModules\unigram.py:39 addon\appModules\unigram.py:696
 msgid "Camera off"
 msgstr "Камера выключена"
 
-#: addon\appModules\unigram.py:56
+#: addon\appModules\unigram.py:55
 msgid "Announce the original message, the message that was replied to"
 msgstr "Читать исходное сообщение, сообщение, на которое был дан ответ"
 
 #: addon\appModules\unigram.py:63
+msgid "Show message text in popup window"
+msgstr "Показать текст сообщения во всплывающем окне"
+
+#: addon\appModules\unigram.py:67 addon\appModules\unigram.py:732
+msgid "message text"
+msgstr "текст сообщения"
+
+#: addon\appModules\unigram.py:68 addon\appModules\unigram.py:719
+#: addon\appModules\unigram.py:733
+msgid "This message does not contain text"
+msgstr "Это сообщение не содержит текста"
+
+#: addon\appModules\unigram.py:70
+msgid "Open comments"
+msgstr "Открыть комментарии"
+
+#: addon\appModules\unigram.py:76
+msgid "Button to open comments not found"
+msgstr "Кнопка для открытия комментариев не найдена"
+
+#: addon\appModules\unigram.py:78
 msgid "Edit message"
 msgstr "Редактировать сообщение"
 
-#: addon\appModules\unigram.py:67
+#: addon\appModules\unigram.py:82
 msgid "Reply to message"
 msgstr "Ответить на сообщение"
 
 #. message(obj.name)
-#: addon\appModules\unigram.py:144
+#: addon\appModules\unigram.py:163
 msgid "Explanation"
 msgstr "Пояснение"
 
 #. The function of changing the playback speed of a voice message
-#: addon\appModules\unigram.py:367
+#: addon\appModules\unigram.py:388
 msgid "Increase/decrease the playback speed of voice messages"
 msgstr "Увеличить или уменьшить скорость воспроизведения голосовых сообщений"
 
-#: addon\appModules\unigram.py:376 addon\appModules\unigram.py:388
-#: addon\appModules\unigram.py:398 addon\appModules\unigram.py:1372
+#: addon\appModules\unigram.py:397 addon\appModules\unigram.py:409
+#: addon\appModules\unigram.py:419 addon\appModules\unigram.py:1328
+#: addon\appModules\unigram.py:1341
 msgid "Nothing is playing right now"
 msgstr "Сейчас ничего не воспроизводится"
 
 #. Audio player close function
-#: addon\appModules\unigram.py:379
+#: addon\appModules\unigram.py:400
 msgid "Close audio player"
 msgstr "Закрыть аудио плеер"
 
-#: addon\appModules\unigram.py:387
+#: addon\appModules\unigram.py:408
 msgid "The audio player has been closed"
 msgstr "Аудио пллеер был закрыт"
 
 #. Voice message pause function
-#: addon\appModules\unigram.py:391
+#: addon\appModules\unigram.py:412
 msgid "Play/pause the voice message currently playing"
 msgstr ""
 "Приостановить или возобновить голосовое сообщение которое воспроизводится в "
 "данный момент"
 
 #. Go to chat list
-#: addon\appModules\unigram.py:426
+#: addon\appModules\unigram.py:447
 msgid "Move focus to chat list"
 msgstr "Переместить фокус в список чатов"
 
-#: addon\appModules\unigram.py:450
+#: addon\appModules\unigram.py:471
 msgid "Chat list not found"
 msgstr "Список чатов не найден"
 
-#: addon\appModules\unigram.py:458
+#: addon\appModules\unigram.py:479
 msgid "Chat list is empty"
 msgstr "Список чатов пуст"
 
 #. Go to the last message in the chat
-#: addon\appModules\unigram.py:461
+#: addon\appModules\unigram.py:482
 msgid "Move focus to the last message in an open chat"
 msgstr "Переместить фокус к последнему сообщению в открытом чате"
 
-#: addon\appModules\unigram.py:474 addon\appModules\unigram.py:577
-#: addon\appModules\unigram.py:1028 addon\appModules\unigram.py:1041
+#: addon\appModules\unigram.py:495 addon\appModules\unigram.py:598
+#: addon\appModules\unigram.py:1013 addon\appModules\unigram.py:1026
 msgid "This chat is empty"
 msgstr "Этот чат пуст"
 
-#: addon\appModules\unigram.py:488 addon\appModules\unigram.py:568
-#: addon\appModules\unigram.py:576 addon\appModules\unigram.py:810
-#: addon\appModules\unigram.py:1024
+#: addon\appModules\unigram.py:509 addon\appModules\unigram.py:589
+#: addon\appModules\unigram.py:597 addon\appModules\unigram.py:801
+#: addon\appModules\unigram.py:1009
 msgid "No open chat"
 msgstr "Нет открытого чата"
 
 #. Move focus to the list of chat folders
-#: addon\appModules\unigram.py:491
+#: addon\appModules\unigram.py:512
 msgid "Move focus to list of chat folders"
 msgstr "Переместить фокус к списку папок"
 
-#: addon\appModules\unigram.py:497 addon\appModules\unigram.py:505
-#: addon\appModules\unigram.py:506
+#: addon\appModules\unigram.py:518 addon\appModules\unigram.py:526
+#: addon\appModules\unigram.py:527
 msgid "Chat folder list not found"
 msgstr "Список папок не найден"
 
-#: addon\appModules\unigram.py:516
+#: addon\appModules\unigram.py:537
 msgid "Move focus to the list of group threads"
 msgstr "Переместить фокус к списку обсуждений в группах"
 
-#: addon\appModules\unigram.py:520
+#: addon\appModules\unigram.py:541
 msgid "No list with threads was found"
 msgstr "Список с обсуждениями не найден"
 
 #. Move focus to open profile
-#: addon\appModules\unigram.py:541
+#: addon\appModules\unigram.py:562
 msgid "Move focus to open profile"
 msgstr "Переместить фокус к открытому профилю"
 
-#: addon\appModules\unigram.py:545
+#: addon\appModules\unigram.py:566
 msgid "There is no open profile"
 msgstr "Нет открытого профиля"
 
 #. Announces the profile name and status in an open chat
-#: addon\appModules\unigram.py:548
+#: addon\appModules\unigram.py:569
 msgid "Announce the name and status of an open chat"
 msgstr "Произнести название и статус открытого чата"
 
-#: addon\appModules\unigram.py:551
+#: addon\appModules\unigram.py:572
 msgid "Chat activity tracking is enabled"
 msgstr "Отслеживание активности чата включено"
 
-#: addon\appModules\unigram.py:552
+#: addon\appModules\unigram.py:573
 msgid "Chat activity tracking is disabled"
 msgstr "Отслеживание активности чата выключено"
 
 #. Go to "unread messages" label
-#: addon\appModules\unigram.py:571
+#: addon\appModules\unigram.py:592
 msgid "Move focus to 'unread messages' label"
 msgstr "Переместить фокус к метке 'Непрочитанные сообщения'"
 
-#: addon\appModules\unigram.py:586
+#: addon\appModules\unigram.py:607
 msgid "There are no unread messages in this chat"
 msgstr "В этом чате нет непрочитанных сообщений"
 
 #. Call if it's a contact, or enter a voice chat if it's a group
-#: addon\appModules\unigram.py:589
+#: addon\appModules\unigram.py:610
 msgid "Call if it's a contact, or enter a voice chat if it's a group"
 msgstr "Позвонить если это контакт, или войти в голосовой чат если это группа"
 
-#: addon\appModules\unigram.py:594
+#: addon\appModules\unigram.py:615
 msgid "Call unavailable"
 msgstr "Звонок недоступен"
 
 #. Make a video call if it's a contact
-#: addon\appModules\unigram.py:597
+#: addon\appModules\unigram.py:618
 msgid "Press the video call button"
 msgstr "Нажать кнопку видео звонка"
 
-#: addon\appModules\unigram.py:601
+#: addon\appModules\unigram.py:622
 msgid "Video call not available"
 msgstr "Видео звонок недоступен"
 
 #. Function to open instant view
-#: addon\appModules\unigram.py:604
+#: addon\appModules\unigram.py:625
 msgid "Press \"Instant view\" button, if it is included in the current message"
 msgstr ""
 "Нажать кнопку \"Мгновенный просмотр\" если она есть в текущем сообщении"
 
-#: addon\appModules\unigram.py:615 addon\appModules\unigram.py:758
-#: addon\appModules\unigram.py:765 addon\appModules\unigram.py:773
-#: addon\appModules\unigram.py:1444 addon\appModules\unigram.py:1473
+#: addon\appModules\unigram.py:636 addon\appModules\unigram.py:760
+#: addon\appModules\unigram.py:767 addon\appModules\unigram.py:775
+#: addon\appModules\unigram.py:1417 addon\appModules\unigram.py:1446
+#: addon\appModules\unigram.py:1455 addon\appModules\unigram.py:1464
+#: addon\appModules\unigram.py:1473
 msgid "Button not found"
 msgstr "Кнопка не найдена"
 
 #. Mute/unmute the microphone
-#: addon\appModules\unigram.py:649
+#: addon\appModules\unigram.py:651
 msgid "Press \"Mute/unmute microphone\" button"
 msgstr "Нажать кнопку \"Включить или выключить микрофон\""
 
 #. Turn off/on the camera
-#: addon\appModules\unigram.py:675
+#: addon\appModules\unigram.py:677
 msgid "Press \"Enable/disable camera\" button"
 msgstr "Нажать кнопку \"Включить или выключить камеру\""
 
 #. Copy current message to clipboard
-#: addon\appModules\unigram.py:703
+#: addon\appModules\unigram.py:705
 msgid ""
 "Copy the message if it contains text. If the focus is on a link, the link "
 "will be copied"
@@ -341,34 +365,12 @@ msgstr ""
 "Скопировать сообщение если оно содержит текст. Если фокус находится на "
 "ссылке то будет скопирована ссылка"
 
-#: addon\appModules\unigram.py:709
-msgid "Message copied"
-msgstr "Сообщение скопировано"
-
-#: addon\appModules\unigram.py:712
+#: addon\appModules\unigram.py:714
 msgid "Link copied"
 msgstr "Ссылка скопирована"
 
-#: addon\appModules\unigram.py:717 addon\appModules\unigram.py:731
-msgid "This message does not contain text"
-msgstr "Это сообщение не содержит текста"
-
-#. Copy message via context menu
-#: addon\appModules\unigram.py:720
-msgid "Copy messages with formatting preserved"
-msgstr "Копировать сообщения с сохранением форматирования"
-
-#. Show message text in popup window
-#: addon\appModules\unigram.py:725
-msgid "Show message text in popup window"
-msgstr "Показать текст сообщения во всплывающем окне"
-
-#: addon\appModules\unigram.py:730
-msgid "message text"
-msgstr "текст сообщения"
-
 #. Move the focus to the message input field. If the focus is already in this field, then move it to the last element that had focus before this field
-#: addon\appModules\unigram.py:734
+#: addon\appModules\unigram.py:736
 msgid ""
 "Move the focus to the edit field. If the focus is already in the edit field, "
 "then after pressing the hotkey, it will move to where it was before"
@@ -377,288 +379,283 @@ msgstr ""
 "редактирования, тогда, после нажатия горячей клавиши, фокус переместится "
 "туда, где был прежде"
 
-#: addon\appModules\unigram.py:751
+#: addon\appModules\unigram.py:753
 msgid "Message input field not found"
 msgstr "Поле ввода сообщения не найдено"
 
 #. Press the "Attach media" button
-#: addon\appModules\unigram.py:754
+#: addon\appModules\unigram.py:756
 msgid "Press \"Attach file\" button"
 msgstr "Нажать кнопку \"Прикрепить файл\""
 
 #. Press the "New Conversation" button
-#: addon\appModules\unigram.py:761
+#: addon\appModules\unigram.py:763
 #, fuzzy
 #| msgid "Press \"New chat\" button"
 msgid "Press \"New conversation\" button"
 msgstr "Нажать кнопку \"Новая беседа\""
 
 #. Open navigation menu
-#: addon\appModules\unigram.py:776
+#: addon\appModules\unigram.py:778
 msgid "Open navigation menu"
 msgstr "Открыть меню навигации"
 
-#: addon\appModules\unigram.py:782
+#: addon\appModules\unigram.py:784
 msgid "Navigation menu not available"
 msgstr "Меню навигации отсутствует"
 
-#. Function to open comments
-#: addon\appModules\unigram.py:785
-msgid "Open comments"
-msgstr "Открыть комментарии"
-
-#: addon\appModules\unigram.py:793
-msgid "Button to open comments not found"
-msgstr "Кнопка для открытия комментариев не найдена"
-
 #. Function to open the profile of the current chat
-#: addon\appModules\unigram.py:796
+#: addon\appModules\unigram.py:787
 msgid "Open current chat profile"
 msgstr "Открыть профиль текущего чата"
 
-#: addon\appModules\unigram.py:826
+#: addon\appModules\unigram.py:817
 msgid ""
 "Recording a voice message will not be available until the edit field is empty"
 msgstr ""
 "Запись голосового сообщения будет недоступна до тех пор, пока поле ввода не "
 "будет очищено"
 
-#: addon\appModules\unigram.py:833
+#: addon\appModules\unigram.py:824
 msgid "Record sent"
 msgstr "Запись отправлена"
 
-#: addon\appModules\unigram.py:838
+#: addon\appModules\unigram.py:829
 msgid "Video"
 msgstr "Видео"
 
-#: addon\appModules\unigram.py:839
+#: addon\appModules\unigram.py:830
 msgid "Audio"
 msgstr "Аудио"
 
-#: addon\appModules\unigram.py:856
+#: addon\appModules\unigram.py:847
 msgid "Voice recording notifications set to text"
 msgstr "Уведомления о записи голосовых сообщений установлены как текст"
 
-#: addon\appModules\unigram.py:859
+#: addon\appModules\unigram.py:850
 msgid "Voice recording notifications set to sounds"
 msgstr "Уведомления о записи голосовых сообщений установлены как звуки"
 
-#: addon\appModules\unigram.py:862
+#: addon\appModules\unigram.py:853
 msgid "Recording voice messages has standard behavior"
 msgstr "Запись голосовых сообщений имеет стандартное поведение"
 
-#: addon\appModules\unigram.py:872
+#: addon\appModules\unigram.py:863
 msgid "Reply canceled"
 msgstr "Ответ отменён"
 
-#: addon\appModules\unigram.py:873
+#: addon\appModules\unigram.py:864
 msgid "Edit canceled"
 msgstr "Редактирование отменено"
 
-#: addon\appModules\unigram.py:876
+#: addon\appModules\unigram.py:867
 msgid "Recording canceled"
 msgstr "Запись отменена"
 
-#: addon\appModules\unigram.py:904
+#: addon\appModules\unigram.py:896
 msgid "Answer options"
 msgstr "Параметры ответа"
 
-#: addon\appModules\unigram.py:942
+#: addon\appModules\unigram.py:938
 msgid "You"
 msgstr "Вы"
 
-#: addon\appModules\unigram.py:950
+#: addon\appModules\unigram.py:946
 msgid "Not sent"
 msgstr "Не отправлено"
 
-#: addon\appModules\unigram.py:974
+#: addon\appModules\unigram.py:969
 msgid "Reactions"
 msgstr "Реакции"
 
 #. Check if a message is selected
-#: addon\appModules\unigram.py:981
+#: addon\appModules\unigram.py:976
 msgid "Selected"
 msgstr "Выделено"
 
 #. Change the announce level of progress bars
-#: addon\appModules\unigram.py:1009
+#: addon\appModules\unigram.py:994
 msgid "Toggle progress bar announcements"
 msgstr "Переключить оповещения индикатора выполнения"
 
-#: addon\appModules\unigram.py:1013
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:177
+#: addon\appModules\unigram.py:998
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:178
 msgid "Announce all progress bars"
 msgstr "Объявлять обо всех индикаторах выполнения"
 
-#: addon\appModules\unigram.py:1016
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:178
+#: addon\appModules\unigram.py:1001
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:179
 msgid "Do not announce any progress bars"
 msgstr "Не оповещать об индикаторах выполнения"
 
-#: addon\appModules\unigram.py:1127
+#: addon\appModules\unigram.py:1114
 msgid "Editing"
 msgstr "Редактирование"
 
-#: addon\appModules\unigram.py:1128
+#: addon\appModules\unigram.py:1115
 msgid "Reply"
 msgstr "Ответ"
 
-#: addon\appModules\unigram.py:1137
+#: addon\appModules\unigram.py:1124
 msgid "Duration"
 msgstr "Продолжительность"
 
-#: addon\appModules\unigram.py:1138
+#: addon\appModules\unigram.py:1125
 msgid "Size"
 msgstr "Размер"
 
-#: addon\appModules\unigram.py:1150
+#: addon\appModules\unigram.py:1137
 msgid "Enable video"
 msgstr "Включить видео"
 
-#: addon\appModules\unigram.py:1151
+#: addon\appModules\unigram.py:1138
 msgid "Disable video"
 msgstr "Выключить видео"
 
-#: addon\appModules\unigram.py:1234
+#: addon\appModules\unigram.py:1222
 msgid "Delete a message or chat"
 msgstr "Удалить сообщение или чат"
 
-#: addon\appModules\unigram.py:1237
+#: addon\appModules\unigram.py:1225
 msgid "Delete message or chat from both sides"
 msgstr "Удалить сообщение или чат с обеих сторон"
 
-#: addon\appModules\unigram.py:1255
-msgid "Inline results not found"
-msgstr "Встроенные результаты не найдены"
-
-#: addon\appModules\unigram.py:1266
-msgid "Inline results not detected"
-msgstr "Встроенные результаты не обнаружены"
-
-#: addon\appModules\unigram.py:1269
+#: addon\appModules\unigram.py:1228
 msgid "Switch to selection mode"
 msgstr "Переключение в режим выбора"
 
-#: addon\appModules\unigram.py:1272
+#: addon\appModules\unigram.py:1231
 msgid "Forward message"
 msgstr "Переслать сообщение"
 
-#: addon\appModules\unigram.py:1275
+#: addon\appModules\unigram.py:1234
 msgid "Mark a chat as read"
 msgstr "Отметить чат как прочитанный"
 
-#: addon\appModules\unigram.py:1278
+#: addon\appModules\unigram.py:1237
 msgid "Save file as..."
 msgstr "Сохранить файл как..."
 
-#: addon\appModules\unigram.py:1281
+#: addon\appModules\unigram.py:1240
 msgid "Pin a message or chat"
 msgstr "Закрепить сообщение или чат"
 
-#: addon\appModules\unigram.py:1307
+#: addon\appModules\unigram.py:1263
 msgid "Message deleted on both sides"
 msgstr "Сообщение удалено с обеих сторон"
 
-#: addon\appModules\unigram.py:1308
+#: addon\appModules\unigram.py:1264
 msgid "Message deleted"
 msgstr "Сообщение удалено"
 
-#: addon\appModules\unigram.py:1311
+#: addon\appModules\unigram.py:1267
 msgid "You left the group"
 msgstr "Вы покинули группу"
 
-#: addon\appModules\unigram.py:1312
+#: addon\appModules\unigram.py:1268
 msgid "You left the channel"
 msgstr "Вы покинули канал"
 
-#: addon\appModules\unigram.py:1313
+#: addon\appModules\unigram.py:1269
 msgid "Bot removed and blocked"
 msgstr "Бот удалён и заблокирован"
 
-#: addon\appModules\unigram.py:1314
+#: addon\appModules\unigram.py:1270
 msgid "Bot removed"
 msgstr "Бот удалён"
 
-#: addon\appModules\unigram.py:1315
+#: addon\appModules\unigram.py:1271
 msgid "Chat deleted on both sides"
 msgstr "Чат удалён с обеих сторон"
 
-#: addon\appModules\unigram.py:1316
+#: addon\appModules\unigram.py:1272
 msgid "Chat deleted"
 msgstr "Чат удалён"
 
 #. Data copy function for broadcasting
-#: addon\appModules\unigram.py:1349
+#: addon\appModules\unigram.py:1305
 msgid "Copy data for broadcasting to the clipboard"
 msgstr "Скопировать данные для трансляции в буфер обмена"
 
-#: addon\appModules\unigram.py:1353 addon\appModules\unigram.py:1357
+#: addon\appModules\unigram.py:1309 addon\appModules\unigram.py:1313
 msgid "Broadcast window not found"
 msgstr "Окно трансляции не найдено"
 
-#: addon\appModules\unigram.py:1363
+#: addon\appModules\unigram.py:1319
 msgid "%url and %key copied to clipboard"
 msgstr "%url и %key скопированы в буфер обмена"
 
 #: addon\appModules\unigram.py:1379
-msgid "Fast forward a voice message"
-msgstr "Перемотать голосовое сообщение вперёд"
-
-#: addon\appModules\unigram.py:1383
-msgid "Rewind voice message"
-msgstr "Перемотать голосовое сообщение назад"
-
-#: addon\appModules\unigram.py:1406
 msgid "Right answer"
 msgstr "Правильный ответ"
 
 #. Converting voice messages to text
-#: addon\appModules\unigram.py:1429
+#: addon\appModules\unigram.py:1402
 msgid "Convert voice message to text"
 msgstr "Преобразовать голосовое сообщение в текст"
 
-#: addon\appModules\unigram.py:1436
+#: addon\appModules\unigram.py:1409
 msgid "This voice message is already converted to text"
 msgstr "Это сообщение уже преобразовано в текст"
 
-#: addon\appModules\unigram.py:1437
+#: addon\appModules\unigram.py:1410
 msgid "Converting this voice message is already in process"
 msgstr "Уже идёт преобразование этого голосового сообщения"
 
-#: addon\appModules\unigram.py:1447
+#: addon\appModules\unigram.py:1420
 msgid "Enable automatic reading of new messages in the current chat"
 msgstr "Включить автоматическое чтение новых сообщений в текущем чате"
 
-#: addon\appModules\unigram.py:1449
+#: addon\appModules\unigram.py:1422
 msgid "Automatic reading of messages is enabled"
 msgstr "Автоматическое чтение сообщений включено"
 
-#: addon\appModules\unigram.py:1450
+#: addon\appModules\unigram.py:1423
 msgid "Automatic reading of new messages is disabled"
 msgstr "Автоматическое чтение новых сообщений выключено"
 
-#: addon\appModules\unigram.py:1452
+#: addon\appModules\unigram.py:1425
 msgid "Show a list of all UnigramPlus shortcuts"
 msgstr "Показать список всех сочетаний клавиш UnigramPlus"
 
-#: addon\appModules\unigram.py:1466
+#: addon\appModules\unigram.py:1439
 msgid "List of shortcuts"
 msgstr "Список сочетаний клавиш"
 
-#: addon\appModules\unigram.py:1469
+#: addon\appModules\unigram.py:1442
 msgid "Go to the end"
 msgstr "Перейти в конец"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:25
+#: addon\appModules\unigram.py:1448
+msgid "Go to the list with search results"
+msgstr "перейти к списку с результатами поиска"
+
+#: addon\appModules\unigram.py:1457
+msgid "Go to the next search result"
+msgstr "Перейти к следующему результату поиска"
+
+#: addon\appModules\unigram.py:1463
+msgid "No next search result"
+msgstr "Следующий результат поиска отсутствует"
+
+#: addon\appModules\unigram.py:1466
+msgid "Go to the previous search result"
+msgstr "Перейти к предыдущему результату поиска"
+
+#: addon\appModules\unigram.py:1472
+msgid "No previous search result"
+msgstr "Предыдущий результат поиска отсутствует"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:28
 msgid "No updates available"
 msgstr "Нет доступных обновлений"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:26
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:51
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:29
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:54
 msgid "UnigramPlus update"
 msgstr "Обновление UnigramPlus"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:52
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:55
 msgid ""
 "A new version of the add-on is available. Do you want to update UnigramPlus "
 "to version %version?"
@@ -666,37 +663,37 @@ msgstr ""
 "Доступна новая версия дополнения. Хотите обновить UnigramPlus до версии "
 "%version?"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:62
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:65
 msgid "Yes, update"
 msgstr "Да, обновить"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:63
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:66
 msgid "No, not now"
 msgstr "Нет, не сейчас"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:78
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:81
 msgid "Download in progress"
 msgstr "Идёт загрузка"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:104
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:107
 msgid "Changes in this version:"
 msgstr "Изменения в этой версии:"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:105
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:108
 msgid "No update information"
 msgstr "Нет информации об обновлении"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:130
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:133
 msgid "Open UnigramPlus settings window"
 msgstr "Открыть окно настроек UnigramPlus"
 
 #. Call answer
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:135
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:138
 msgid "Accept call"
 msgstr "Принять звонок"
 
 #. End a call, decline call, or leave a voice chat
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:148
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:150
 msgid ""
 "Press \"Decline call\" button  if there is an incoming call, \"End call\" "
 "button if a call is in progress or leave voice chat if it is active."
@@ -705,86 +702,84 @@ msgstr ""
 "\"Завершить звонок\" в процессе разговора, или покинуть голосовой чат если "
 "он активен."
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:167
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:168
 msgid "Before chat name"
 msgstr "Перед названием чата"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:168
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:169
 msgid "After chat name"
 msgstr "После названия чата"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:169
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:170
 msgid "Do not speak chat type"
 msgstr "Не произносить тип чата"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:172
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:173
 msgid "Revert to standard voice message recording behavior"
 msgstr "Вернуться к стандартному поведению записи голосовых сообщений"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:173
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:174
 msgid "Text notification"
 msgstr "Текстовое уведомление"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:174
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:175
 msgid "sound notification"
 msgstr "звуковое уведомление"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:182
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:183
 msgid "Do not say at all"
 msgstr "Не проговаривать"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:183
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:184
 msgid "Only in sent messages"
 msgstr "Только в отправленных сообщениях"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:184
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:185
 msgid "Only in received messages"
 msgstr "Только в полученных сообщениях"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:185
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:186
 msgid "In all messages"
 msgstr "Во всех сообщениях"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:188
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:189
 msgid "Do nothing"
 msgstr "Ничего не делать"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:189
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:190
 msgid "Activate editing of last sent message"
 msgstr "Активировать редактирование последнего отправленного сообщения"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:190
-#, fuzzy
-#| msgid "Move focus to the last message in an open chat"
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:191
 msgid "Move focus to the last message in a chat"
-msgstr "Переместить фокус к последнему сообщению в открытом чате"
+msgstr "Переместить фокус к последнему сообщению в чате"
 
 #. Selecting an interface language
 #. self.lang = settingsSizerHelper.addLabeledControl(_("Interface language in Unigram:"), wx.Choice, choices=[listLanguages[item] for item in listLanguages])
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:197
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:198
 msgid "Interface language in Unigram:"
 msgstr "Язык интерфейса Unigram:"
 
 #. Chat type announce mode
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:200
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:201
 msgid "Speak the type of chat in the chat list:"
 msgstr "Произносить тип чата в списке чатов:"
 
 #. Message sender announcement
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:203
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:204
 msgid "Say the sender's name in:"
 msgstr "Произносить имя отправителя в:"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:207
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:208
 msgid "Action when pressing the up arrow in the message edit field"
 msgstr "Действие при нажатии стрелки вверх в поле ввода сообщения"
 
 #. Report not seen before message content
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:210
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:211
 msgid "Speak \"Not Seen\" before reading contents of a message"
 msgstr "Говорить \"Не Прочитано\" перед чтением содержимого сообщения"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:214
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:215
 msgid ""
 "Announce the phrases \"Administrator\" and \"Owner\" on messages in "
 "communities"
@@ -792,37 +787,37 @@ msgstr ""
 "Произносить фразы \"Администратор\" и \"Владелец\" в сообщениях сообществ"
 
 #. Speak active folder name when switching between them
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:218
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:219
 msgid "Speak folder names when switching between them"
 msgstr "Произносить название папок при переключении между ними"
 
 #. Delete alert type
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:221
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:222
 msgid "Notify about deleting a message and chat with a sound"
 msgstr "Оповещать звуком об удалении сообщения и чата"
 
 #. Show confirmation window when deleting
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:224
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:225
 msgid "Display confirmation dialog when deleting messages and chats"
 msgstr "Показывать диалог подтверждения при удалении сообщений и чатов"
 
 #. Type of notification when recording voice messages
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:227
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:228
 msgid "Set voice message recording notification method as:"
 msgstr "Установить метод оповещения о записи голосовых сообщений как:"
 
 #. Progress bar announce
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:230
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:231
 msgid "Select the progress bar notification level:"
 msgstr "Выберите уровень оповещений об индикаторах выполнения:"
 
 #. Processing messages containing links
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:233
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:234
 msgid "Read description of URLs attached to messages"
 msgstr "Читать описания ссылок прикреплённых к сообщениям"
 
 #. Announcement of the full description of YouTube links
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:236
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:237
 msgid "Read full video description in YouTube URLs"
 msgstr "Читать полное описание видео в ссылках на YouTube"
 
@@ -833,12 +828,12 @@ msgstr "Читать полное описание видео в ссылках 
 #. self.report_premium_accounts = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce premium and confirmed accounts")))
 #. self.report_premium_accounts.SetValue(conf.get("report premium accounts"))
 #. Report if the message contains a reaction
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:245
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:246
 msgid "Announce if the message contains a reaction"
 msgstr "Сообщать если сообщение содержит реакцию"
 
 #. Fix toggle buttons for some users
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:248
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:249
 msgid ""
 "Check this box if the voice message recording function or the voice message "
 "playback speed change function does not work properly"
@@ -848,12 +843,12 @@ msgstr ""
 "образом"
 
 #. Checking for Updates on NVDA Startup
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:251
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:252
 msgid "Check for UnigramPlus updates on NVDA startup"
 msgstr "Проверять наличие обновлений UnigramPlus при запуске NVDA"
 
 #. Button to check for updates
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:254
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:255
 msgid "Check for &updates"
 msgstr "Проверить наличие &обновлений"
 
@@ -882,6 +877,24 @@ msgstr ""
 "по основным элементам окна, обеспечивает удобное взаимодействие с "
 "сообщениями чата, а также добавляет множество небольших улучшений, делающих "
 "работу в Unigram значительно более удобной"
+
+#~ msgid "Message copied"
+#~ msgstr "Сообщение скопировано"
+
+#~ msgid "Copy messages with formatting preserved"
+#~ msgstr "Копировать сообщения с сохранением форматирования"
+
+#~ msgid "Inline results not found"
+#~ msgstr "Встроенные результаты не найдены"
+
+#~ msgid "Inline results not detected"
+#~ msgstr "Встроенные результаты не обнаружены"
+
+#~ msgid "Fast forward a voice message"
+#~ msgstr "Перемотать голосовое сообщение вперёд"
+
+#~ msgid "Rewind voice message"
+#~ msgstr "Перемотать голосовое сообщение назад"
 
 #~ msgid "Premium"
 #~ msgstr "Премиум"

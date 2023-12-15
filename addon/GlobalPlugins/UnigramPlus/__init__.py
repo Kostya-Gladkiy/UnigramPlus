@@ -1,10 +1,12 @@
 ﻿# -*- coding: utf-8 -*-
 import globalPluginHandler
+import globalVars
 import addonHandler
 from scriptHandler import script
 import api
 import gui
-from gui import SettingsPanel, guiHelper, nvdaControls
+from gui import guiHelper, nvdaControls
+from gui.settingsDialogs import SettingsPanel
 import wx
 import urllib.request
 import core
@@ -13,6 +15,7 @@ import os
 addonHandler.initTranslation()
 import languageHandler
 import queueHandler
+from utils.security import objectBelowLockScreenAndWindowsIsLocked
 import threading, time, queue, random
 from appModules.cnf import conf, listLanguages, lang
 from appModules.unigram import AppModule
@@ -124,7 +127,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		fp = os.path.join(globalVars.appArgs.configPath, "unigramplus.nvda-addon")
 		if os.path.exists(fp): os.remove(fp)
 		# Checking for updates
-		if conf.get("is_automatically_check_for_updates"):
+		if conf.get("is_automatically_check_for_updates") and not globalVars.appArgs.secure:
 			threading.Thread(target=onCheckForUpdates, args=(False, True,)).start()
 
 	@script(description=_("Open UnigramPlus settings window"), gesture="kb:NVDA+control+U")
@@ -139,11 +142,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
 		notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "ToastCenterScrollViewer"), False)
 		if not notification:
-			print("Панелі з дзвінком не знайдено")
 			return
 		button = next((item for item in notification.children if item.UIAAutomationId == "VerbButton"), None)
 		if button: button.doAction()
-		else: print("Кнопку не знайдено")
 
 	# End a call, decline call, or leave a voice chat
 	@script(description=_("Press \"Decline call\" button  if there is an incoming call, \"End call\" button if a call is in progress or leave voice chat if it is active."), gesture="kb:ALT+N")
@@ -155,15 +156,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		button = None
 		if notification:
 			button = next((item.next for item in notification.children if item.UIAAutomationId == "VerbButton"), None)
-		else: print("Панель не знайдено")
 		if button:
 			button.doAction()
 			return
-		print("Кнопку не знайдено")
 		AppModule.script_callCancellation(AppModule, gesture)
 
 
-class UnigramPlusSettings(gui.SettingsPanel):
+class UnigramPlusSettings(SettingsPanel):
 	title = "UnigramPlus"
 	listVoiceTypeAfterChatName = {
 		"beforeName": _("Before chat name"),

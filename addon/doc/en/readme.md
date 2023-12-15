@@ -35,15 +35,14 @@ And remember that everyone who read this line thought that someone will definite
 * ALT+P: Play/pause the voice message currently playing;
 * ALT+S: Increase/decrease the playback speed of voice messages;
 * ALT+E: Close audio player;
-* control+C: Copy the message if it contains text. If the focus is on a link, the link will be copied;
+* control+C: Copy the message if it contains text. If the focus is on a link, the link will be copied.
 * ALT+shift+C: Call if it's a contact, or enter a voice chat if it's a group;
 * ALT+shift+V: Press the video call button;
 * ALT+Y: Accept call;
 * ALT+N: Press the \"Decline call\" button if there is an incoming call, the \"End call\" button if the call is in progress, or leave the voice chat if it is active;
 * ALT+A: Press \"Mute/unmute microphone\" button;
-* ALT+C: Press "Enable/disable camera" button;
+* ALT+V: Press "Enable/disable camera" button;
 * ALT+Q: Press \"Instant view\" button, if it is included in the current message;
-* ALT+O: Press "More Options" button in an open chat, voice chat, or call window;
 * ALT+M: Open navigation menu;
 * control+R: Start/stop voice message recording;
 * control+D: If pressed once, cancels the recording of a voice message. If pressed twice, changes the notification type when starting, sending, or canceling a voice message recording;
@@ -52,15 +51,12 @@ And remember that everyone who read this line thought that someone will definite
 * delete: Delete a message or chat;
 * shift+delete: Delete message or chat from both sides;
 * control+ALT+C: Open comments;
-* Unassigned: Reply to message;
+* enter: Reply to message;
 * ALT+F: Forward message;
-* Unassigned: Edit message;
+* beckspase: Edit message;
 * ALT+shift+R: Mark a chat as read;
 * control+space: Switch to selection mode;
-* control+shift+C: Copy messages with formatting preserved;
 * ALT+shift+L: Copy data for broadcasting to the clipboard;
-* control+ALT+right arrow: Fast forward a voice message.
-* control+ALT+left arrow: Rewind voice message.
 * ALT+C: Show message text in popup window.
 * NVDA+control+U: Open UnigramPlus settings window
 * ALT+4: Move focus to list of chat folders.
@@ -70,16 +66,25 @@ And remember that everyone who read this line thought that someone will definite
 * ALT+5: Move focus to open profile.
 * ALT+L: Enable automatic reading of new messages in the current chat.
 * NVDA+ALT+R: Convert voice message to text.
-* Left arrow: Announce the original message, the message that was replied to.
+* Left arrow: Announce the original message, the message that was replied to. Double-pressing moves focus to that message.
 * ALT+6: Move focus to the list of group threads.
 * ALT+H: Show a list of all UnigramPlus shortcuts.
-
-### Note
-
-* All hotkeys can be reassigned in NVDA menu>preferences>input gestures.
-* The fact that the function that focuses the cursor on the "unread message" label can sometimes react with a delay is a known issue. This may depend on the number of cash messages at the moment.
+* ALT+I: Open a list of chat search results.
+* ALT+J: Go to the previous search result in the chat.
+* ALT+K: Go to the next search result in the chat.
 
 ## List of changes:
+
+### Version 5.1.0
+
+* Added keyboard shortcuts for navigating to the next and previous search results in chat. By default, these functions are assigned to the ALT+K and ALT+J key combinations.
+* Added a keyboard shortcut for opening a list with all the search results in chat. By default, this function is assigned to the ALT+I key combination.
+* Now, double-pressing the left arrow on a message will shift focus to the message that the current message is replying to.
+* Fixed an issue where descriptions of links embedded in messages were not being read.
+* UnigramPlus will no longer suggest updates on protected screens. However, users will need to open NVDA settings one more time and click the "Use the last saved settings during login and reading of protected screens (administrator rights required)" button.
+* Removed the feature for rewinding voice messages and the feature for setting reactions to messages, as these features were not working reliably.
+* Removed the message copying feature, as Unigram now has this function. Be aware that sometimes copying messages may cause a slight freezing of the program, but this is not related to UnigramPlus.
+* Fixed some other minor bugs.
 
 ### Version 5.0.0
 

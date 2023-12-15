@@ -39,24 +39,20 @@ Bu eklentiyi çok seviyorsanız ve geliştiriciyi maddi olarak desteklemek ve b�
 * ALT + N-gelen bir çağrı varsa "aramayı Reddet" düğmesine basın çağrı yapılıyorsa "aramayı Sonlandır" düğmesine basın veya sesli sohpet  etkinse sesli sohbetten  ayrılın.
 * Alt + a-"mikrofonu Aç / Kapat" düğmesine basar.
 * ALT + V - "kamerayı Aç / Kapat" düğmesine basar.
-* ALT + O-açık sohbette,   sesli sohpette, veya arama penceresinde. "daha fazla seçenek" düğmesine basar.
 * Alt + M-Gezinti menüsünü açar.
 * Alt + Q - mevcut  mesajda \"Anlık görünüm\" düğmesi varsa,  tıklayın
 * kontrol + R-sesli mesaj kaydetmeye başla / sesli mesaj gönder.
 * kontrol + D-sesli mesaj kaydını iptal edin. Çift  basıldığında bildirim türünü değiştirir, standart, sesli ve yazılı.
-*Alt sil -Mesajı veya sohbeti kaldır
+* sil -Mesajı veya sohbeti kaldır
 * Şift+sil -Her iki taraf için  mesajı veya sohbeti kaldır
 * kontrol+p -Mevcut sohbetin profilini aç
 * control + alt + C-yorumları aç.
-* Atanmamış: Mesaja cevap ver;
+* Giriş: Mesajı yanıtla;
 * alt+f - Mesajı ilet
-* Atanmamış: Mesajı düzenle;
+* Geri tuşu: Mesajı düzenle;
 * shift+alt+r - Sohbeti okundu olarak işaretle
 * kontrol boşluk - Sohbette veya sohbet listesinde  Seçim moduna geçer
-* control+ shift+ C - Bağlam menüsünün açılmasını taklit ederek ve ilgili öğeye dokunarak mesajları kopyalar.
 * ALT+shift+L - Yayın yapmak için gerekli verileri panoya kopyala
-* control+ ALT + sağ ok: Sesli mesajı ileri sar.
-* control+ ALT + sol ok: Sesli mesajı geri sar.
 * ALT+C: Açılır pencerede mesaj metnini göster.
 * NVDA+ control+U - UnigramPlus ayarları penceresini aç.
 * Alt+4: Odağı klasör listesine taşıyın.
@@ -66,16 +62,25 @@ Bu eklentiyi çok seviyorsanız ve geliştiriciyi maddi olarak desteklemek ve b�
 * ALT+5: Odağı açık profile taşı.
 * ALT + L: Geçerli sohbette yeni mesajların otomatik olarak okunmasını etkinleştirin.
 * NVDA + ALT + R: Sesli mesajı metne dönüştürün.
-* Sol ok: yanıtlanan  mesajı  oku
+* Sol ok: yanıtlanan mesajı  okur,  ikikes  basmak odağı o mesaja taşır.
 * ALT+6: Odağı grup konuları listesine taşıyın.
 * ALT + H: Tüm UnigramPlus kısayollarının bir listesini gösterir.
-
-
-### Not
-Tüm kısayol tuşları nvda>seçenekler>giriş hareketleri menüsünden yeniden atanabilir.
-Bilinen dezavantajlardan biri, bir işlev odağı "okunmamış mesajlar" etiketine çevirir, bazen bir gecikme ile tetiklenir. Bu, sohbetten kaç tane mesajın şu anda önbelleğe alındığına bağlıdır
+* ALT + I: Sohbetteki arama sonuçlarının bir listesini açın.
+* ALT + J: Sohbetteki bir  önceki arama sonucuna gidin.
+* ALT + K: Sohbetteki bir sonraki arama sonucuna gidin.
 
 ##Değişiklik listesi:
+
+### Sürüm 5.1.0
+
+* Sohbette sonraki ve önceki arama sonuçlarına gitmek için klavye kısayolları eklendi. Varsayılan olarak, bu işlevler ALT+K ve ALT+J tuş kombinasyonlarına atanır.
+* Sohbetteki tüm arama sonuçlarını içeren bir liste açmak için bir klavye kısayolu eklendi. Varsayılan olarak, bu işlev ALT + I tuş bileşimine atanır.
+* Şimdi, bir mesajda sol oka iki kez basmak, odağı yanıtlanan  mesaja kaydırır, not: eğer o mesaja yanıt varsa.
+* Mesajlara gömülü bağlantıların açıklamalarının okunmamasına neden olan bir sorun düzeltildi.
+* UnigramPlus artık  güvenli ekranlarda güncellemeler önermeyecek. Ancak kullanıcıların NVDA ayarlarını bir kez daha açmaları ve Oturum açma sırasında ve güvenli ekranlarda geçerli konfigürasyonu kullan (yönetici hakları gereklidir)" düğmesini tıklamaları gerekecektir.
+* Bu özellikler  doğru şekilde çalışmadığı için sesli mesajları ileri/geri sarma özelliği ve mesajlara tepki  bırakma özelliği kaldırıldı.
+* Unigram artık bu işleve sahip olduğundan mesaj kopyalama özelliği kaldırıldı. Bazen mesajların kopyalanmasının programın biraz donmasına neden olabileceğini unutmayın, ancak bu UnigramPlus ile ilgili değildir.
+* Diğer bazı küçük hatalar düzeltildi.
 
 ### Sürüm 5.0.0
 

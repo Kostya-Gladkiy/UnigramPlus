@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: UnigramPlus\n"
-"POT-Creation-Date: 2023-10-03 11:27+0300\n"
-"PO-Revision-Date: 2023-10-03 11:28+0300\n"
+"POT-Creation-Date: 2023-12-15 11:58+0200\n"
+"PO-Revision-Date: 2023-12-15 12:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: Kostya Gladkiy\n"
 "Language: uk\n"
@@ -11,57 +11,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.1\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: appModules\n"
 "X-Poedit-SearchPath-1: GlobalPlugins\n"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:25
+#: GlobalPlugins/UnigramPlus/__init__.py:28
 msgid "No updates available"
 msgstr "Немає доступних оновлень"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:26
-#: GlobalPlugins/UnigramPlus/__init__.py:51
+#: GlobalPlugins/UnigramPlus/__init__.py:29
+#: GlobalPlugins/UnigramPlus/__init__.py:54
 msgid "UnigramPlus update"
 msgstr "Оновлення UnigramPlus"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:52
+#: GlobalPlugins/UnigramPlus/__init__.py:55
 msgid ""
 "A new version of the add-on is available. Do you want to update UnigramPlus "
 "to version %version?"
 msgstr ""
 "Доступна нова версія додатку. Хочете оновити UnigramPlus до версії %version?"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:62
+#: GlobalPlugins/UnigramPlus/__init__.py:65
 msgid "Yes, update"
 msgstr "Так, оновити"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:63
+#: GlobalPlugins/UnigramPlus/__init__.py:66
 msgid "No, not now"
 msgstr "Ні, не зараз"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:78
+#: GlobalPlugins/UnigramPlus/__init__.py:81
 msgid "Download in progress"
 msgstr "Триває завантаження"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:104
+#: GlobalPlugins/UnigramPlus/__init__.py:107
 msgid "Changes in this version:"
 msgstr "Зміни в цій версії:"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:105
+#: GlobalPlugins/UnigramPlus/__init__.py:108
 msgid "No update information"
 msgstr "Відсутня інформація про оновлення"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:130
+#: GlobalPlugins/UnigramPlus/__init__.py:133
 msgid "Open UnigramPlus settings window"
 msgstr "Відкрити вікно налаштувань UnigramPlus"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:135
+#: GlobalPlugins/UnigramPlus/__init__.py:138
 msgid "Accept call"
 msgstr "Відповісти на дзвінок"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:149
+#: GlobalPlugins/UnigramPlus/__init__.py:150
 msgid ""
 "Press \"Decline call\" button  if there is an incoming call, \"End call\" "
 "button if a call is in progress or leave voice chat if it is active."
@@ -70,128 +70,128 @@ msgstr ""
 "\"завершити виклик\" , якщо виклик виконується, або покинути голосовий чат, "
 "якщо він активний."
 
-#: GlobalPlugins/UnigramPlus/__init__.py:169
+#: GlobalPlugins/UnigramPlus/__init__.py:168
 msgid "Before chat name"
 msgstr "Перед назвою чату"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:170
+#: GlobalPlugins/UnigramPlus/__init__.py:169
 msgid "After chat name"
 msgstr "Після назви чату"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:171
+#: GlobalPlugins/UnigramPlus/__init__.py:170
 msgid "Do not speak chat type"
 msgstr "Не озвучувати тип чату"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:174
+#: GlobalPlugins/UnigramPlus/__init__.py:173
 msgid "Revert to standard voice message recording behavior"
 msgstr "Повернути стандартну поведінку запису голосових повідомлень"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:175
+#: GlobalPlugins/UnigramPlus/__init__.py:174
 msgid "Text notification"
 msgstr "Текстове оповіщення"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:176
+#: GlobalPlugins/UnigramPlus/__init__.py:175
 msgid "sound notification"
 msgstr "звукове оповіщення"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:179 appModules/unigram.py:1030
+#: GlobalPlugins/UnigramPlus/__init__.py:178 appModules/unigram.py:998
 msgid "Announce all progress bars"
 msgstr "Озвучувати усі індикатори виконання"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:180 appModules/unigram.py:1033
+#: GlobalPlugins/UnigramPlus/__init__.py:179 appModules/unigram.py:1001
 msgid "Do not announce any progress bars"
 msgstr "Не озвучувати жодних індикаторів виконання"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:184
+#: GlobalPlugins/UnigramPlus/__init__.py:183
 msgid "Do not say at all"
 msgstr "Не повідомляти взагалі"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:185
+#: GlobalPlugins/UnigramPlus/__init__.py:184
 msgid "Only in sent messages"
 msgstr "Лише в надісланих повідомленнях"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:186
+#: GlobalPlugins/UnigramPlus/__init__.py:185
 msgid "Only in received messages"
 msgstr "Лише в отриманих повідомленнях"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:187
+#: GlobalPlugins/UnigramPlus/__init__.py:186
 msgid "In all messages"
 msgstr "У всіх повідомленнях"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:190
+#: GlobalPlugins/UnigramPlus/__init__.py:189
 msgid "Do nothing"
 msgstr "Нічого не робити"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:191
+#: GlobalPlugins/UnigramPlus/__init__.py:190
 msgid "Activate editing of last sent message"
 msgstr "Редагувати останнє надіслане повідомлення"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:192
+#: GlobalPlugins/UnigramPlus/__init__.py:191
 msgid "Move focus to the last message in a chat"
 msgstr "Перенести фокус на останнє повідомлення в чаті"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:199
+#: GlobalPlugins/UnigramPlus/__init__.py:198
 msgid "Interface language in Unigram:"
 msgstr "Мова інтерфейсу в Unigram:"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:202
+#: GlobalPlugins/UnigramPlus/__init__.py:201
 msgid "Speak the type of chat in the chat list:"
 msgstr "Озвучувати тип чату в списку чатів:"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:205
+#: GlobalPlugins/UnigramPlus/__init__.py:204
 msgid "Say the sender's name in:"
 msgstr "Повідомляти ім'я відправника в:"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:209
+#: GlobalPlugins/UnigramPlus/__init__.py:208
 msgid "Action when pressing the up arrow in the message edit field"
 msgstr "Дія при натисканні стрілки вгору в полі редагування повідомлення"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:212
+#: GlobalPlugins/UnigramPlus/__init__.py:211
 msgid "Speak \"Not Seen\" before reading contents of a message"
 msgstr ""
 "Озвучувати про те що повідомлення непрочитане перед вмістом повідомлення"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:216
+#: GlobalPlugins/UnigramPlus/__init__.py:215
 msgid ""
 "Announce the phrases \"Administrator\" and \"Owner\" on messages in "
 "communities"
 msgstr ""
 "Озвучувати фразу «Адміністратор» та фразу «Власник» у повідомленнях спільнот"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:220
+#: GlobalPlugins/UnigramPlus/__init__.py:219
 msgid "Speak folder names when switching between them"
 msgstr "Озвучувати ім'я активної папки, при перемиканні між ними"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:223
+#: GlobalPlugins/UnigramPlus/__init__.py:222
 msgid "Notify about deleting a message and chat with a sound"
 msgstr "Повідомляти про видалення повідомлення та чату за допомогою звуку"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:226
+#: GlobalPlugins/UnigramPlus/__init__.py:225
 msgid "Display confirmation dialog when deleting messages and chats"
 msgstr ""
 "Відображати діалогове вікно підтвердження при видаленні повідомлень і чатів"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:229
+#: GlobalPlugins/UnigramPlus/__init__.py:228
 msgid "Set voice message recording notification method as:"
 msgstr "Встановити тип оповіщення при записі голосових повідомлень як:"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:232
+#: GlobalPlugins/UnigramPlus/__init__.py:231
 msgid "Select the progress bar notification level:"
 msgstr "Виберіть рівень оповіщень індекаторів виконання:"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:235
+#: GlobalPlugins/UnigramPlus/__init__.py:234
 msgid "Read description of URLs attached to messages"
 msgstr "Озвучувати опис вкладених в повідомлення посилань"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:238
+#: GlobalPlugins/UnigramPlus/__init__.py:237
 msgid "Read full video description in YouTube URLs"
 msgstr "Озвучувати повний опис відео в посиланнях, які ведуть на YouTube"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:247
+#: GlobalPlugins/UnigramPlus/__init__.py:246
 msgid "Announce if the message contains a reaction"
 msgstr "Повідомляти, якщо повідомлення містить реакцію"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:250
+#: GlobalPlugins/UnigramPlus/__init__.py:249
 msgid ""
 "Check this box if the voice message recording function or the voice message "
 "playback speed change function does not work properly"
@@ -200,11 +200,11 @@ msgstr ""
 "функція зміни швидкості відтворення голосових повідомлень працюють "
 "неправильно"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:253
+#: GlobalPlugins/UnigramPlus/__init__.py:252
 msgid "Check for UnigramPlus updates on NVDA startup"
 msgstr "Перевіряти наявність оновлень UnigramPlus під час запуску NVDA"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:256
+#: GlobalPlugins/UnigramPlus/__init__.py:255
 msgid "Check for &updates"
 msgstr "Перевірити наявність оновлень"
 
@@ -304,7 +304,7 @@ msgstr "Редагувати"
 msgid "Photo"
 msgstr "Фото"
 
-#: appModules/data.py:49 appModules/unigram.py:1130
+#: appModules/data.py:49 appModules/unigram.py:1100
 msgid "Image"
 msgstr "Зображення"
 
@@ -352,11 +352,11 @@ msgstr "Видалити"
 msgid "Close"
 msgstr "Закрити"
 
-#: appModules/unigram.py:39 appModules/unigram.py:710
+#: appModules/unigram.py:39 appModules/unigram.py:695
 msgid "Camera on"
 msgstr "Камеру увімкнено"
 
-#: appModules/unigram.py:39 appModules/unigram.py:711
+#: appModules/unigram.py:39 appModules/unigram.py:696
 msgid "Camera off"
 msgstr "Камеру вимкнено"
 
@@ -366,169 +366,172 @@ msgstr ""
 "Озвучити те повідомлення, у відповідь на яке було надіслано поточне "
 "повідомлення"
 
-#: appModules/unigram.py:62
+#: appModules/unigram.py:63
 msgid "Show message text in popup window"
 msgstr "Показати текст повідомлення у спливаючому вікні"
 
-#: appModules/unigram.py:65 appModules/unigram.py:747
+#: appModules/unigram.py:67 appModules/unigram.py:732
 msgid "message text"
 msgstr "текст повідомлення"
 
-#: appModules/unigram.py:66 appModules/unigram.py:734 appModules/unigram.py:748
+#: appModules/unigram.py:68 appModules/unigram.py:719 appModules/unigram.py:733
 msgid "This message does not contain text"
 msgstr "Дане повідомлення не містить тексту"
 
-#: appModules/unigram.py:68
+#: appModules/unigram.py:70
 msgid "Open comments"
 msgstr "Відкрити коментарі"
 
-#: appModules/unigram.py:74 appModules/unigram.py:810
+#: appModules/unigram.py:76
 msgid "Button to open comments not found"
 msgstr "Кнопки для відкриття коментарів не знайдено"
 
-#: appModules/unigram.py:76
+#: appModules/unigram.py:78
 msgid "Edit message"
 msgstr "Редагувати повідомлення"
 
-#: appModules/unigram.py:80
+#: appModules/unigram.py:82
 msgid "Reply to message"
 msgstr "Відповісти на повідомлення"
 
-#: appModules/unigram.py:161
+#: appModules/unigram.py:163
 msgid "Explanation"
 msgstr "Пояснення"
 
-#: appModules/unigram.py:384
+#: appModules/unigram.py:388
 msgid "Increase/decrease the playback speed of voice messages"
 msgstr "Пришвидшити/уповільнити швидкість відтворення голосового повідомлення"
 
-#: appModules/unigram.py:393 appModules/unigram.py:405
-#: appModules/unigram.py:415 appModules/unigram.py:1389
+#: appModules/unigram.py:397 appModules/unigram.py:409
+#: appModules/unigram.py:419 appModules/unigram.py:1328
+#: appModules/unigram.py:1341
 msgid "Nothing is playing right now"
 msgstr "Зараз нічого не відтворюється"
 
-#: appModules/unigram.py:396
+#: appModules/unigram.py:400
 msgid "Close audio player"
 msgstr "Закрити аудіопрогравач"
 
-#: appModules/unigram.py:404
+#: appModules/unigram.py:408
 msgid "The audio player has been closed"
 msgstr "Аудіопрогравач було закрито"
 
-#: appModules/unigram.py:408
+#: appModules/unigram.py:412
 msgid "Play/pause the voice message currently playing"
 msgstr "Відтворити/призупинити голосове повідомлення, яке зараз відтворюється"
 
-#: appModules/unigram.py:443
+#: appModules/unigram.py:447
 msgid "Move focus to chat list"
 msgstr "Перенести фокус в список чатів"
 
-#: appModules/unigram.py:467
+#: appModules/unigram.py:471
 msgid "Chat list not found"
 msgstr "Списку з чатами не знайдено"
 
-#: appModules/unigram.py:475
+#: appModules/unigram.py:479
 msgid "Chat list is empty"
 msgstr "Список чатів порожній"
 
-#: appModules/unigram.py:478
+#: appModules/unigram.py:482
 msgid "Move focus to the last message in an open chat"
 msgstr "Перенести фокус на останнє повідомлення в чаті"
 
-#: appModules/unigram.py:491 appModules/unigram.py:594
-#: appModules/unigram.py:1045 appModules/unigram.py:1058
+#: appModules/unigram.py:495 appModules/unigram.py:598
+#: appModules/unigram.py:1013 appModules/unigram.py:1026
 msgid "This chat is empty"
 msgstr "Цей чат порожній"
 
-#: appModules/unigram.py:505 appModules/unigram.py:585
-#: appModules/unigram.py:593 appModules/unigram.py:827
-#: appModules/unigram.py:1041
+#: appModules/unigram.py:509 appModules/unigram.py:589
+#: appModules/unigram.py:597 appModules/unigram.py:801
+#: appModules/unigram.py:1009
 msgid "No open chat"
 msgstr "Немає відкритого чату"
 
-#: appModules/unigram.py:508
+#: appModules/unigram.py:512
 msgid "Move focus to list of chat folders"
 msgstr "Перенести фокус до списку папок чатів"
 
-#: appModules/unigram.py:514 appModules/unigram.py:522
-#: appModules/unigram.py:523
+#: appModules/unigram.py:518 appModules/unigram.py:526
+#: appModules/unigram.py:527
 msgid "Chat folder list not found"
 msgstr "Список папок чатів не знайдено"
 
-#: appModules/unigram.py:533
+#: appModules/unigram.py:537
 msgid "Move focus to the list of group threads"
 msgstr "Перемістити фокус до списку гілок групи"
 
-#: appModules/unigram.py:537
+#: appModules/unigram.py:541
 msgid "No list with threads was found"
 msgstr "Список із гілками групи не знайдено"
 
-#: appModules/unigram.py:558
+#: appModules/unigram.py:562
 msgid "Move focus to open profile"
 msgstr "Перемістити фокус до відкритого профілю"
 
-#: appModules/unigram.py:562
+#: appModules/unigram.py:566
 msgid "There is no open profile"
 msgstr "Немає відкритого профілю"
 
-#: appModules/unigram.py:565
+#: appModules/unigram.py:569
 msgid "Announce the name and status of an open chat"
 msgstr "Повідомити назву та статус відкритого чату"
 
-#: appModules/unigram.py:568
+#: appModules/unigram.py:572
 msgid "Chat activity tracking is enabled"
 msgstr "Відстеження активності в чаті увімкнено"
 
-#: appModules/unigram.py:569
+#: appModules/unigram.py:573
 msgid "Chat activity tracking is disabled"
 msgstr "Відстеження активності в чаті вимкнено"
 
-#: appModules/unigram.py:588
+#: appModules/unigram.py:592
 msgid "Move focus to 'unread messages' label"
 msgstr "Перенести фокус на мітку \"непрочитані повідомлення\""
 
-#: appModules/unigram.py:603
+#: appModules/unigram.py:607
 msgid "There are no unread messages in this chat"
 msgstr "В цьому чаті немає непрочитаних повідомлень"
 
-#: appModules/unigram.py:606
+#: appModules/unigram.py:610
 msgid "Call if it's a contact, or enter a voice chat if it's a group"
 msgstr ""
 "Зателефонувати якщо це контакт, або увійти до голосового чату, якщо це група"
 
-#: appModules/unigram.py:611
+#: appModules/unigram.py:615
 msgid "Call unavailable"
 msgstr "Дзвінок недоступний"
 
-#: appModules/unigram.py:614
+#: appModules/unigram.py:618
 msgid "Press the video call button"
 msgstr "Натиснути кнопку \"Відео дзвінок\""
 
-#: appModules/unigram.py:618
+#: appModules/unigram.py:622
 msgid "Video call not available"
 msgstr "Відео дзвінок недоступний"
 
-#: appModules/unigram.py:621
+#: appModules/unigram.py:625
 msgid "Press \"Instant view\" button, if it is included in the current message"
 msgstr ""
 "Натиснути кнопку \"Миттєвий перегляд\", якщо така міститься в поточному "
 "повідомленні"
 
-#: appModules/unigram.py:632 appModules/unigram.py:775
-#: appModules/unigram.py:782 appModules/unigram.py:790
-#: appModules/unigram.py:1461 appModules/unigram.py:1490
+#: appModules/unigram.py:636 appModules/unigram.py:760
+#: appModules/unigram.py:767 appModules/unigram.py:775
+#: appModules/unigram.py:1417 appModules/unigram.py:1446
+#: appModules/unigram.py:1455 appModules/unigram.py:1464
+#: appModules/unigram.py:1473
 msgid "Button not found"
 msgstr "Кнопку не знайдено"
 
-#: appModules/unigram.py:666
+#: appModules/unigram.py:651
 msgid "Press \"Mute/unmute microphone\" button"
 msgstr "Натиснути кнопку \"Увімкнути/вимкнути мікрофон\""
 
-#: appModules/unigram.py:692
+#: appModules/unigram.py:677
 msgid "Press \"Enable/disable camera\" button"
 msgstr "Натиснути кнопку \"Увімкнути/вимкнути камеру\""
 
-#: appModules/unigram.py:720
+#: appModules/unigram.py:705
 msgid ""
 "Copy the message if it contains text. If the focus is on a link, the link "
 "will be copied"
@@ -536,19 +539,11 @@ msgstr ""
 "Скопіювати повідомлення, якщо воно містить текст. Якщо фокус знаходиться на "
 "посиланні, буде скопійовано текст посилання"
 
-#: appModules/unigram.py:726
-msgid "Message copied"
-msgstr "Повідомлення скопійовано"
-
-#: appModules/unigram.py:729
+#: appModules/unigram.py:714
 msgid "Link copied"
 msgstr "Посилання скопійовано"
 
-#: appModules/unigram.py:737
-msgid "Copy messages with formatting preserved"
-msgstr "Скопіювати повідомлення зі збереженням форматування"
-
-#: appModules/unigram.py:751
+#: appModules/unigram.py:736
 msgid ""
 "Move the focus to the edit field. If the focus is already in the edit field, "
 "then after pressing the hotkey, it will move to where it was before"
@@ -557,246 +552,268 @@ msgstr ""
 "цьому полі, при натисканні він повернеться на останній елемент який був у "
 "фокусі"
 
-#: appModules/unigram.py:768
+#: appModules/unigram.py:753
 msgid "Message input field not found"
 msgstr "Поле введення повідомлення не знайдено"
 
-#: appModules/unigram.py:771
+#: appModules/unigram.py:756
 msgid "Press \"Attach file\" button"
 msgstr "Натиснути кнопку «Прикріпити файл»"
 
-#: appModules/unigram.py:778
+#: appModules/unigram.py:763
 msgid "Press \"New conversation\" button"
 msgstr "Натиснути кнопку «Новий чат»"
 
-#: appModules/unigram.py:793
+#: appModules/unigram.py:778
 msgid "Open navigation menu"
 msgstr "Відкрити меню навігації"
 
-#: appModules/unigram.py:799
+#: appModules/unigram.py:784
 msgid "Navigation menu not available"
 msgstr "Меню навігації недоступне"
 
-#: appModules/unigram.py:813
+#: appModules/unigram.py:787
 msgid "Open current chat profile"
 msgstr "Відкрити профіль поточного чату"
 
-#: appModules/unigram.py:843
+#: appModules/unigram.py:817
 msgid ""
 "Recording a voice message will not be available until the edit field is empty"
 msgstr "Запис голосового повідомлення неможлива, поки поле вводу не є порожнім"
 
-#: appModules/unigram.py:850
+#: appModules/unigram.py:824
 msgid "Record sent"
 msgstr "Запис надіслано"
 
-#: appModules/unigram.py:855
+#: appModules/unigram.py:829
 msgid "Video"
 msgstr "Відео"
 
-#: appModules/unigram.py:856
+#: appModules/unigram.py:830
 msgid "Audio"
 msgstr "Аудіо"
 
-#: appModules/unigram.py:873
+#: appModules/unigram.py:847
 msgid "Voice recording notifications set to text"
 msgstr "Тип оповіщення запису голосових повідомлень встановлено як текстові"
 
-#: appModules/unigram.py:876
+#: appModules/unigram.py:850
 msgid "Voice recording notifications set to sounds"
 msgstr "Тип оповіщення запису голосових повідомлень встановлено як звукові"
 
-#: appModules/unigram.py:879
+#: appModules/unigram.py:853
 msgid "Recording voice messages has standard behavior"
 msgstr "Запис голосових повідомлень має стандартну поведінку"
 
-#: appModules/unigram.py:889
+#: appModules/unigram.py:863
 msgid "Reply canceled"
 msgstr "Відповідь скасовано"
 
-#: appModules/unigram.py:890
+#: appModules/unigram.py:864
 msgid "Edit canceled"
 msgstr "Редагування скасовано"
 
-#: appModules/unigram.py:893
+#: appModules/unigram.py:867
 msgid "Recording canceled"
 msgstr "Запис скасовано"
 
-#: appModules/unigram.py:922
+#: appModules/unigram.py:896
 msgid "Answer options"
 msgstr "Варіанти відповідей"
 
-#: appModules/unigram.py:960
+#: appModules/unigram.py:938
 msgid "You"
 msgstr "Ви"
 
-#: appModules/unigram.py:968
+#: appModules/unigram.py:946
 msgid "Not sent"
 msgstr "Не надіслано"
 
-#: appModules/unigram.py:991
+#: appModules/unigram.py:969
 msgid "Reactions"
 msgstr "Реакції"
 
-#: appModules/unigram.py:998
+#: appModules/unigram.py:976
 msgid "Selected"
 msgstr "Позначено"
 
-#: appModules/unigram.py:1026
+#: appModules/unigram.py:994
 msgid "Toggle progress bar announcements"
 msgstr "Змінити рівень озвучування індикаторів виконання"
 
-#: appModules/unigram.py:1144
+#: appModules/unigram.py:1114
 msgid "Editing"
 msgstr "Редагування"
 
-#: appModules/unigram.py:1145
+#: appModules/unigram.py:1115
 msgid "Reply"
 msgstr "Відповідь"
 
-#: appModules/unigram.py:1154
+#: appModules/unigram.py:1124
 msgid "Duration"
 msgstr "Тривалість"
 
-#: appModules/unigram.py:1155
+#: appModules/unigram.py:1125
 msgid "Size"
 msgstr "Розмір"
 
-#: appModules/unigram.py:1167
+#: appModules/unigram.py:1137
 msgid "Enable video"
 msgstr "Увімкнути відео"
 
-#: appModules/unigram.py:1168
+#: appModules/unigram.py:1138
 msgid "Disable video"
 msgstr "Вимкнути відео"
 
-#: appModules/unigram.py:1251
+#: appModules/unigram.py:1222
 msgid "Delete a message or chat"
 msgstr "Видалити повідомлення або чат"
 
-#: appModules/unigram.py:1254
+#: appModules/unigram.py:1225
 msgid "Delete message or chat from both sides"
 msgstr "Видалити повідомлення або чат в для обох співрозмовників"
 
-#: appModules/unigram.py:1272
-msgid "Inline results not found"
-msgstr "Інлайн результатів не виявлено"
-
-#: appModules/unigram.py:1283
-msgid "Inline results not detected"
-msgstr "Інлайн результатів не виявлено"
-
-#: appModules/unigram.py:1286
+#: appModules/unigram.py:1228
 msgid "Switch to selection mode"
 msgstr "Перейти у режим вибору"
 
-#: appModules/unigram.py:1289
+#: appModules/unigram.py:1231
 msgid "Forward message"
 msgstr "Переслати повідомлення"
 
-#: appModules/unigram.py:1292
+#: appModules/unigram.py:1234
 msgid "Mark a chat as read"
 msgstr "Позначити чат як прочитаний"
 
-#: appModules/unigram.py:1295
+#: appModules/unigram.py:1237
 msgid "Save file as..."
 msgstr "Зберегти файл як..."
 
-#: appModules/unigram.py:1298
+#: appModules/unigram.py:1240
 msgid "Pin a message or chat"
 msgstr "Прикріпити повідомлення або чат"
 
-#: appModules/unigram.py:1324
+#: appModules/unigram.py:1263
 msgid "Message deleted on both sides"
 msgstr "Повідомлення видалено для обох співрозмовників"
 
-#: appModules/unigram.py:1325
+#: appModules/unigram.py:1264
 msgid "Message deleted"
 msgstr "Повідомлення видалено"
 
-#: appModules/unigram.py:1328
+#: appModules/unigram.py:1267
 msgid "You left the group"
 msgstr "Ви покинули групу"
 
-#: appModules/unigram.py:1329
+#: appModules/unigram.py:1268
 msgid "You left the channel"
 msgstr "Ви покинули канал"
 
-#: appModules/unigram.py:1330
+#: appModules/unigram.py:1269
 msgid "Bot removed and blocked"
 msgstr "Бота видалено і заблоковано"
 
-#: appModules/unigram.py:1331
+#: appModules/unigram.py:1270
 msgid "Bot removed"
 msgstr "Бота видалено"
 
-#: appModules/unigram.py:1332
+#: appModules/unigram.py:1271
 msgid "Chat deleted on both sides"
 msgstr "Чат видалено для обох співрозмовників"
 
-#: appModules/unigram.py:1333
+#: appModules/unigram.py:1272
 msgid "Chat deleted"
 msgstr "Чат видалено"
 
-#: appModules/unigram.py:1366
+#: appModules/unigram.py:1305
 msgid "Copy data for broadcasting to the clipboard"
 msgstr "Скопіювати дані для проведення трансляції в буфер обміну"
 
-#: appModules/unigram.py:1370 appModules/unigram.py:1374
+#: appModules/unigram.py:1309 appModules/unigram.py:1313
 msgid "Broadcast window not found"
 msgstr "Вікна з даними для трансляції не знайдено"
 
-#: appModules/unigram.py:1380
+#: appModules/unigram.py:1319
 msgid "%url and %key copied to clipboard"
 msgstr "%url і %ключ скопійовано до буферу обміну"
 
-#: appModules/unigram.py:1396
-msgid "Fast forward a voice message"
-msgstr "Перемотати голосове повідомлення вперед"
-
-#: appModules/unigram.py:1400
-msgid "Rewind voice message"
-msgstr "Перемотати голосове повідомлення назад"
-
-#: appModules/unigram.py:1423
+#: appModules/unigram.py:1379
 msgid "Right answer"
 msgstr "Правильна відповідь"
 
-#: appModules/unigram.py:1446
+#: appModules/unigram.py:1402
 msgid "Convert voice message to text"
 msgstr "Перетворити голосове повідомлення на текст"
 
-#: appModules/unigram.py:1453
+#: appModules/unigram.py:1409
 msgid "This voice message is already converted to text"
 msgstr "Це голосове повідомлення вже перетворено на текст"
 
-#: appModules/unigram.py:1454
+#: appModules/unigram.py:1410
 msgid "Converting this voice message is already in process"
 msgstr "Перетворення цього голосового повідомлення вже триває"
 
-#: appModules/unigram.py:1464
+#: appModules/unigram.py:1420
 msgid "Enable automatic reading of new messages in the current chat"
 msgstr "Увімкнути автоматичне читання нових повідомлень у поточному чаті"
 
-#: appModules/unigram.py:1466
+#: appModules/unigram.py:1422
 msgid "Automatic reading of messages is enabled"
 msgstr "Автоматичне читання повідомлень увімкнено"
 
-#: appModules/unigram.py:1467
+#: appModules/unigram.py:1423
 msgid "Automatic reading of new messages is disabled"
 msgstr "Автоматичне читання повідомлень вимкнено"
 
-#: appModules/unigram.py:1469
+#: appModules/unigram.py:1425
 msgid "Show a list of all UnigramPlus shortcuts"
 msgstr "Показати список усіх команд UnigramPlus"
 
-#: appModules/unigram.py:1483
+#: appModules/unigram.py:1439
 msgid "List of shortcuts"
 msgstr "Список комбінацій клавіш"
 
-#: appModules/unigram.py:1486
+#: appModules/unigram.py:1442
 msgid "Go to the end"
 msgstr "Перейти в кінець чату"
+
+#: appModules/unigram.py:1448
+msgid "Go to the list with search results"
+msgstr "Перейти до списку з результатами пошуку в чаті"
+
+#: appModules/unigram.py:1457
+msgid "Go to the next search result"
+msgstr "Перейти до наступного результату пошуку"
+
+#: appModules/unigram.py:1463
+msgid "No next search result"
+msgstr "Немає наступного результату пошуку"
+
+#: appModules/unigram.py:1466
+msgid "Go to the previous search result"
+msgstr "Перейти до попереднього результату пошуку в чаті"
+
+#: appModules/unigram.py:1472
+msgid "No previous search result"
+msgstr "Немає попереднього результату пошуку"
+
+#~ msgid "Message copied"
+#~ msgstr "Повідомлення скопійовано"
+
+#~ msgid "Copy messages with formatting preserved"
+#~ msgstr "Скопіювати повідомлення зі збереженням форматування"
+
+#~ msgid "Inline results not found"
+#~ msgstr "Інлайн результатів не виявлено"
+
+#~ msgid "Inline results not detected"
+#~ msgstr "Інлайн результатів не виявлено"
+
+#~ msgid "Fast forward a voice message"
+#~ msgstr "Перемотати голосове повідомлення вперед"
+
+#~ msgid "Rewind voice message"
+#~ msgstr "Перемотати голосове повідомлення назад"
 
 #~ msgid "Announce if there is a reply in the group"
 #~ msgstr "Повідомляти якщо в групі є відповіді для вас"
