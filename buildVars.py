@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""This add-on adds a lot of hotkeys for quick navigation through the main elements of the Unigram application, convenient interaction with Chat messages, and also adds many small improvements that make working in Unigram much easier"""),
 	# version
-	"addon_version": "5.0.3",
+	"addon_version": "5.1.1",
 	# Author(s)
 	"addon_author": "Kostya Gladkiy<gladkiy.kostya@gmail.com>",
 	# URL for the add-on documentation support
