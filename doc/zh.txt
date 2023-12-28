@@ -1,0 +1,12 @@
+* 新增選取附加到訊息的檔案和使用空格鍵開啟該檔案的功能。
+* 訊息中的連結不會完整讀出，只會到問號。
+* 當您關閉照片和影片檢視器， UnigramPlus 會嘗試把焦點移動到您正在檢視的訊息。
+* 開啟 UnigramPlus 設定的快速鍵已變更為 NVDA+ALT+U。
+* 代碼最佳化 已完成，改進瀏覽聊天清單和訊息清單。 特別是訊息中含有嵌入式物件。
+* 修正許多小錯誤。
+* 移除過時的代碼。
+
+If you have the desire, and most importantly the opportunity, to support the developer of this add-on, you can do so using the following details:
+* PayPal: gladkiy.kostya@gmail.com.
+* Ukrainian donation system: https://unigramplus.diaka.ua/donate.
+* Card number: 5169360009004502 (Gladkiy Constantine).

@@ -53,12 +53,12 @@ And remember that everyone who read this line thought that someone will definite
 * control+ALT+C: Open comments;
 * enter: Reply to message;
 * ALT+F: Forward message;
-* beckspase: Edit message;
+* backspace: Edit message;
 * ALT+shift+R: Mark a chat as read;
 * control+space: Switch to selection mode;
 * ALT+shift+L: Copy data for broadcasting to the clipboard;
 * ALT+C: Show message text in popup window.
-* NVDA+control+U: Open UnigramPlus settings window
+* NVDA+ALT+U: Open UnigramPlus settings window
 * ALT+4: Move focus to list of chat folders.
 * control+shift+A: Press "Attach file" button.
 * control+N: Press "New chat" button.
@@ -74,6 +74,16 @@ And remember that everyone who read this line thought that someone will definite
 * ALT+K: Go to the next search result in the chat.
 
 ## List of changes:
+
+### Version 5.2.0
+
+* Added the ability to select files attached to messages with horizontal arrows and open the selected file with the space bar.
+* Now links in messages will not be read in full, but only up to the question mark.
+* Now, when you close the photo or video viewer, UnigramPlus will try to set the focus on the message you were viewing.
+* The keyboard shortcut to open UnigramPlus settings has been changed. Now this function is assigned to the combination NVDA+ALT+U.
+* Code optimisation has been done, resulting in significantly improved response time when navigating the chat list and message list. This is especially noticeable on messages that contain many nested elements.
+* Many minor issues have been fixed.
+* A lot of outdated code has been removed.
 
 ### Version 5.1.0
 

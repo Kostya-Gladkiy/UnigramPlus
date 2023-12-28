@@ -27,53 +27,53 @@ ili broj kartice: 5169360009004502 (Ukrajina).
 I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno podržati programera, ali to neću biti ja.
 
 ##Popis prečaca:
-* Alt+2: Premješta fokus na posljednju poruku u nepročitanom razgovoru.
-* Alt+3: Premješta fokus na oznaku "nepročitane poruke".
-* Alt+D: Premješta fokus na polje za uređivanje. Ako je fokus već u polju za uređivanje, tada će se nakon pritiskanja tipke prečaca pomaknuti na mjesto gdje je bio prije.
-* Alt+T: Najavljuje naziv i status otvorenog razgovora.
-* Razmaknica: Reproducira/pauzirafokusiranu glasovnu ili videoporuku ili otvara medijsku datoteku priloženu trenutnoj poruci.
-* Alt+P: Reproducira/pauzira glasovnu poruku koja se trenutno reproducira.
-* Alt+S: Povećava/smanjuje reprodukciju glasovnih poruka.
-* Alt+E: Zatvara audioreproduktor.
-* Control+C: Kopira poruku ako sadrži tekst. Ako je fokus na poveznici, poveznica će se kopirati.
-* Alt+Shift+C: Poziva ako je u pitanju kontakt ili se pridružuje glasovnom razgovoru ako je u pitanju grupa.
-* Alt+shift+V: Pritišće gumb za videopoziv.
-* Alt+Y: Prihvaća poziv.
-* Alt+N: Pritišće "Odbij poziv" ako postoji dolazni poziv, gumb "Završi poziv" ako je poziv u tijeku ili napušta glasovni razgovor ako je aktivan.
-* Alt+A: Pritišće gumb "Uključi/isključi mikrofon".
-* Alt+C: Pritišće gumb "Omogući/onemogući kameru"
-* Alt+Q: Pritišće gumb "Trenutni prikaz", ako je uključen u trenutnu poruku.
-* Alt+O: Pritišće gumb "Više opcija" u otvorenom razgovoru.
-* Alt+M: Otvara navigacijski izbornik.
-* Control+R: Pokreće/zaustavlja snimanje glasovne poruke.
-* Control+D: Ako se jednom pritisne, poništava se snimanje glasovne poruke. Ako se pritisne dva puta, mijenja se vrsta obavijesti prilikom pokretanja, slanja ili otkazivanja snimanja glasovne poruke.
-* Alt+U: Uključuje/isključuje obavijesti trake napretka.
-* Control+P: Otvara profil trenutnog razgovora.
-* Delete: Briše poruku ili razgovor.
-* Shift+Delete: Briše poruku ili razgovor za obje strane.
-* Control+Alt+C: Otvara komentare.
-* Nedodijeljeno: Odgovara na poruku.
-* Alt+F: Prosljeđuje poruku.
-* Nedodijeljeno: Uređuje poruku.
+* Alt+1: Premješta fokus na popis razgovora;
+* Alt+2: Premješta fokus na posljednju poruku u nepročitanom razgovoru;
+* Alt+3: Premješta fokus na oznaku "nepročitane poruke";
+* Alt+D: Premješta fokus na polje za uređivanje. Ako je fokus već u polju za uređivanje, tada će se nakon pritiskanja tipke prečaca pomaknuti na mjesto gdje je bio prije;
+* Alt+T: Najavljuje naziv i status otvorenog razgovora;
+* Razmaknica: Reproducira/pauzirafokusiranu glasovnu ili videoporuku ili otvara medijsku datoteku priloženu trenutnoj poruci;
+* Alt+P: Reproducira/pauzira glasovnu poruku koja se trenutno reproducira;
+* Alt+S: Povećava/smanjuje reprodukciju glasovnih poruka;
+* Alt+E: Zatvara reproduktor zvuka;
+* Control+C: Kopira poruku ako sadrži tekst. Ako je fokus na poveznici, poveznica će se kopirati;
+* Alt+Shift+C: Poziva ako je u pitanju kontakt ili se pridružuje glasovnom razgovoru ako je u pitanju grupa;
+* Alt+shift+V: Pritišće gumb za videopoziv;
+* Alt+Y: Prihvaća poziv;
+* Alt+N: Pritišće "Odbij poziv" ako postoji dolazni poziv, gumb "Završi poziv" ako je poziv u tijeku ili napušta glasovni razgovor ako je aktivan;
+* Alt+A: Pritišće gumb "Uključi/isključi mikrofon";
+* Alt+V: Pritišće gumb "Omogući/onemogući kameru";
+* Alt+Q: Pritišće gumb "Trenutni prikaz", ako je uključen u trenutnu poruku;
+* Alt+O: Pritišće gumb "Više opcija" u otvorenom razgovoru;
+* Alt+M: Otvara navigacijski izbornik;
+* Control+R: Pokreće/zaustavlja snimanje glasovne poruke;
+* Control+D: Ako se jednom pritisne, poništava se snimanje glasovne poruke. Ako se pritisne dva puta, mijenja se vrsta obavijesti prilikom pokretanja, slanja ili otkazivanja snimanja glasovne poruke;
+* Alt+U: Uključuje/isključuje obavijesti trake napretka;
+* Control+P: Otvara profil trenutnog razgovora;
+* Delete: Briše poruku ili razgovor;
+* Shift+Delete: Briše poruku ili razgovor za obje strane;
+* Control+Alt+C: Otvara komentare;
+* Enter: Odgovara na poruku;
+* Alt+F: Prosljeđuje poruku;
+* Backspace: Uređuje poruku;
 * Alt+Shift+R: Označava razgovor kao pročitan.
 * Control+Razmaknica: Prebacuje na način odabira.
-* Control+Shift+C: Kopira poruke sa očuvanim oblikovanjem.
-* Alt+Shift+L: Kopira podatke za emitiranje u međuspremnik.
-* Alt+1: Premješta fokus na popis razgovora.
-* Control+Alt+Strelica desno: Premotava glasovnu poruku unaprijed.
-* Control+Alt+Strelica lijevo: Premotava glasovnu poruku unatrag.
-* Alt+C: Prikazuje poruku u skočnom prozoru.
-* NVDA+Control+U: Otvara prozor postavki UnigramPlusa.
-* Alt+4: Premješta fokus na popis mapa razgovora.
-* Control+Shift+A: Pritišće gumb "Priloži datoteku".
-* Control+N: Pritišće gumb "Novi razgovor".
-* Nedodijeljeno: Prikvačuje poruku ili razgovor.
-* Alt+5: Premješta fokus na otvoreni profil.
-* Alt+L: Omogućava automatsko čitanje novih poruka u trenutnom razgovoru.
-* NVDA+Alt+R: Pretvara glasovnu poruku u tekst.
-* Strelica lijevo: Najavljuje izvornu poruku, poruku na koju je odgovoreno.
-* Alt+6: Premješta fokus na popis niti grupe.
-* Alt+H: Prikazuje popis svih prečaca UnigramPlus dodatka.
+* Alt+Shift+L: Kopira podatke za emitiranje u međuspremnik;
+* Alt+C: Prikazuje poruku u skočnom prozoru;
+* NVDA+Control+U: Otvara prozor postavki UnigramPlusa;
+* Alt+4: Premješta fokus na popis mapa razgovora;
+* Control+Shift+A: Pritišće gumb "Priloži datoteku";
+* Control+N: Pritišće gumb "Novi razgovor";
+* Nedodijeljeno: Prikvačuje poruku ili razgovor;
+* Alt+5: Premješta fokus na otvoreni profil;
+* Alt+L: Omogućava automatsko čitanje novih poruka u trenutnom razgovoru;
+* NVDA+Alt+R: Pretvara glasovnu poruku u tekst;
+* Strelica lijevo: Najavljuje izvornu poruku, poruku na koju je odgovoreno;
+* Alt+6: Premješta fokus na popis niti grupe;
+* Alt+H: Prikazuje popis svih prečaca UnigramPlus dodatka;
+* Alt+I: Otvara popis rezultata pretraživanja;
+* Alt+J: Prelazi na prethodni rezultat pretraživanja u razgovoru;
+* Alt+L: Prelazi na sljedeći rezultat pretraživanja u razgovoru.
 
 ### Napomena
 
@@ -81,6 +81,17 @@ I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno p
 * Činjenica da funkcija koja fokusira pokazivač na oznaku "nepročitana poruka" ponekad može reagirati sa zakašnjenjem je poznati problem. To može ovisiti o broju poruka u trenutku.
 
 	##Popis promjena:
+
+### Verzija 5.1.0
+
+* Dodani su tipkovnički prečaci za navigiranje do sljedećih i prethodnih rezultata pretraživanja u razgovoru. Prema zadanim postavkama, ove su funkcije dodijeljene kombinacijama tipki Alt+K i Alt+J.
+* Dodan je tipkovnički prečac za otvaranje popisa svih rezultata pretraživanja u razgovoru. Prema zadanim postavkama, ova je funkcija dodijeljena kombinaciji tipki Alt+I.
+* Sada, dvostruki pritisak na tipku Strelica lijevo na poruci premjestit će fokus na poruku na koju trenutna poruka odgovara.
+* Riješen je problem u kojem se opisi poveznica ugrađenih u poruke nisu čitali.
+* UnigramPlus više neće predlagati ažuriranja na zaštićenim zaslonima. Međutim, korisnici će morati još jednom otvoriti NVDA postavke i kliknuti gumb "Koristi trenutačno spremljene postavke na zaslonu za prijavu te na sigurnim zaslonima (zahtijeva administratorska prava)".
+* Uklonjena je značajka za premotavanje glasovnih poruka i značajka za postavljanje reakcija na poruke jer one nisu radile pouzdano.
+* Uklonjena je značajka kopiranja poruka, jer Unigram sada ima tu značajku. Imajte na umu da ponekad kopiranje poruka može uzrokovati lagano zamrzavanje programa, ali to nije povezano s UnigramPlus dodatkom.
+* Ispravljene su neke druge manje greške.
 
 ### Verzija 5.0.0
 

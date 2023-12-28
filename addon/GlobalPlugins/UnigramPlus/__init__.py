@@ -28,6 +28,7 @@ def no_updates_dialog():
 		_("No updates available"),
 		_("UnigramPlus update"),
 		wx.OK | wx.ICON_INFORMATION)
+
 def onCheckForUpdates(event = False, is_start = False):
 	import versionInfo
 	NVDAVersion = f"{versionInfo.version_year}.{versionInfo.version_major}.{versionInfo.version_minor}"
@@ -130,7 +131,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if conf.get("is_automatically_check_for_updates") and not globalVars.appArgs.secure:
 			threading.Thread(target=onCheckForUpdates, args=(False, True,)).start()
 
-	@script(description=_("Open UnigramPlus settings window"), gesture="kb:NVDA+control+U")
+	@script(description=_("Open UnigramPlus settings window"), gesture="kb:NVDA+ALT+U")
 	def script_open_settings_dialog(self, gesture, arg = False):
 		wx.CallAfter(gui.mainFrame._popupSettingsDialog, gui.settingsDialogs.NVDASettingsDialog, UnigramPlusSettings)
 

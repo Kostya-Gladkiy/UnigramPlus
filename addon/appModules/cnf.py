@@ -10,6 +10,7 @@ lang = languageHandler.getLanguage().split("_")[0]
 
 listLanguages = {
 	"ar": _("Arabic"),
+	"be": _("Belarus"),
 	"cs": _("Czech"),
 	"en": _("English"),
 	"fr": _("French"),

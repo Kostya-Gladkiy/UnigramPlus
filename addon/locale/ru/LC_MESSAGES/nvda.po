@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'UnigramPlus' '4.0.1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2023-12-14 22:48+0200\n"
-"PO-Revision-Date: 2023-12-15 09:45+0300\n"
+"PO-Revision-Date: 2023-12-15 17:34+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -628,7 +628,7 @@ msgstr "Перейти в конец"
 
 #: addon\appModules\unigram.py:1448
 msgid "Go to the list with search results"
-msgstr "перейти к списку с результатами поиска"
+msgstr "Перейти к списку с результатами поиска"
 
 #: addon\appModules\unigram.py:1457
 msgid "Go to the next search result"

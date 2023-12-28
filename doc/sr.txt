@@ -1,3 +1,11 @@
+* Dodata je mogućnost odabira datoteka priloženih porukama sa horizontalnim strelicama i otvaranja izabrane datoteke pomoću razmaka.
+* Sada se linkovi u porukama neće čitati u podpunosti, već samo do znaka pitanja.
+* Sada, kada zatvorite pregledač fotografija ili video zapisa, unigramplus će pokušati da postavi fokus na poruku koju gledate.
+* Prečica na tastaturi za otvaranje unigramplus podešavanja je promenjena. Sada je ova funkcija dodeljena kombinaciji nvda+alt+u.
+* Urađena je optimizacija koda, što je rezultiralo značajno poboljšanim vremenom odgovora prilikom navigacije po listi za ćaskanje i listi poruka. Ovo je posebno primetno na porukama koje sadrže mnogo ugnežđenih elemenata.
+* mnogi manji problemi su popravljeni.
+* Mnogo zastarelih kodova je uklonjeno.
+Verzija 5.1.0
 * Dodate prečice na tastaturi za navigaciju do sledećeg i prethodnog rezultata pretrage u ćaskanju. Podrazumevano, ove funkcije su dodeljene kombinacijama tastera ALT+K i ALT+J.
 * Dodata je prečica na tastaturi za otvaranje liste sa svim rezultatima pretrage u ćaskanju. Podrazumevano, ova funkcija je dodeljena kombinaciji tastera ALT+I.
 * Sada, dvostrukim pritiskom na strelicu levo na poruci, fokus će se pomeriti na poruku na koju trenutna poruka odgovara.

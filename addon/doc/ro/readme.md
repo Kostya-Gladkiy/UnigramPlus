@@ -79,6 +79,27 @@ Dacă îți place cu adevărat acest add-on și ai dorința și, cel mai importa
 
 ##Lista de modificări:
 
+### Versiunea 5.2.0
+
+* A fost adăugată posibilitatea de a selecta fișiere atașate la mesaje cu ajutorul săgeților și de a deschide fișierul selectat cu ajutorul tastei spațiu.
+* Acum, linkurile din mesaje nu vor fi citite în întregime, ci doar până la semnul de întrebare.
+* Acum, când închizi vizualizatorul foto sau video, UnigramPlus va încerca să se focalizeze pe mesajul pe care îl vizualizezi.
+* A fost modificată comanda rapidă de la tastatură pentru a deschide setările UnigramPlus. Acum, această funcție este atribuită combinației NVDA+ALT+U.
+* A fost efectuată o optimizare a codului, ceea ce a dus la o îmbunătățire semnificativă a timpului de răspuns la navigarea în lista de chat și în lista de mesaje. Acest lucru este vizibil în special în cazul mesajelor care conțin multe fișiere.
+* Au fost rezolvate multe probleme minore.
+* A fost eliminat o mulțime de cod învechit.
+
+### Versiunea 5.1.0
+
+* Au fost adăugate comenzi rapide de la tastatură pentru navigarea la rezultatele căutării următoare și anterioare în chat. În mod implicit, aceste funcții sunt atribuite combinațiilor de taste ALT+K și ALT+J.
+* A fost adăugată o comandă rapidă de la tastatură pentru deschiderea unei liste cu toate rezultatele căutării în chat. În mod implicit, această funcție este atribuită combinației de taste ALT+I.
+* Acum, apăsarea dublă a săgeții din stânga pe un mesaj va focaliza pe mesajul la care se răspunde în mesajul curent.
+* A fost rezolvată o problemă în care descrierile linkurilor încorporate în mesaje nu erau citite.
+* UnigramPlus nu va mai sugera actualizări pe ecranele protejate. Cu toate acestea, utilizatorii vor trebui să mai deschidă încă o dată setările NVDA și să facă clic pe butonul "Utilizați ultimele setări salvate în timpul conectării și citirii ecranelor protejate (sunt necesare drepturi de administrator)".
+* A fost eliminată funcția de derulare înapoi a mesajelor vocale și funcția de setare a reacțiilor la mesaje, deoarece acestea nu funcționau în mod fiabil.
+* A fost eliminată funcția de copiere a mesajelor, deoarece Unigram dispune acum nativ de această funcție. Reține că, uneori, copierea mesajelor poate provoca un ușor lag a programului, dar acest lucru nu are legătură cu UnigramPlus.
+* Au fost corectate alte câteva erori minore.
+
 ### Versiunea 5.0.0
 
 * S-a rezolvat o problemă în care unele mesaje din chat-uri erau citite de două ori.

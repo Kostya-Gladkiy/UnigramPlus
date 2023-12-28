@@ -1,0 +1,12 @@
+* A fost adăugată posibilitatea de a selecta fișiere atașate la mesaje cu ajutorul săgeților și de a deschide fișierul selectat cu ajutorul tastei spațiu.
+* Acum, linkurile din mesaje nu vor fi citite în întregime, ci doar până la semnul de întrebare.
+* Acum, când închizi vizualizatorul foto sau video, UnigramPlus va încerca să se focalizeze pe mesajul pe care îl vizualizezi.
+* A fost modificată comanda rapidă de la tastatură pentru a deschide setările UnigramPlus. Acum, această funcție este atribuită combinației NVDA+ALT+U.
+* A fost efectuată o optimizare a codului, ceea ce a dus la o îmbunătățire semnificativă a timpului de răspuns la navigarea în lista de chat și în lista de mesaje. Acest lucru este vizibil în special în cazul mesajelor care conțin multe fișiere.
+* Au fost rezolvate multe probleme minore.
+* A fost eliminat o mulțime de cod învechit.
+
+Dacă ai dorința și, mai ales, posibilitatea de a sprijini dezvoltatorul acestui add-on, o poți face folosind următoarele detalii:
+* PayPal: gladkiy.kostya@gmail.com.
+* Sistemul ucrainean de donații: https://unigramplus.diaka.ua/donate.
+* Număr card: 5169360009004502 (Gladkiy Constantine).

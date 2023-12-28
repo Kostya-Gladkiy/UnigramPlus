@@ -41,6 +41,7 @@ Bu eklentiyi çok seviyorsanız ve geliştiriciyi maddi olarak desteklemek ve b�
 * ALT + V - "kamerayı Aç / Kapat" düğmesine basar.
 * Alt + M-Gezinti menüsünü açar.
 * Alt + Q - mevcut  mesajda \"Anlık görünüm\" düğmesi varsa,  tıklayın
+* ALT+U: İlerleme çubuğu  seslendirilmelerini değiştir;
 * kontrol + R-sesli mesaj kaydetmeye başla / sesli mesaj gönder.
 * kontrol + D-sesli mesaj kaydını iptal edin. Çift  basıldığında bildirim türünü değiştirir, standart, sesli ve yazılı.
 * sil -Mesajı veya sohbeti kaldır
@@ -54,7 +55,7 @@ Bu eklentiyi çok seviyorsanız ve geliştiriciyi maddi olarak desteklemek ve b�
 * kontrol boşluk - Sohbette veya sohbet listesinde  Seçim moduna geçer
 * ALT+shift+L - Yayın yapmak için gerekli verileri panoya kopyala
 * ALT+C: Açılır pencerede mesaj metnini göster.
-* NVDA+ control+U - UnigramPlus ayarları penceresini aç.
+* NVDA+ alt+U - UnigramPlus ayarları penceresini aç.
 * Alt+4: Odağı klasör listesine taşıyın.
 * Control+ Shift+A: "Dosya Ekle" düğmesine basın.
 * Control+N: "Yeni Sohbet" düğmesine basın.
@@ -70,6 +71,16 @@ Bu eklentiyi çok seviyorsanız ve geliştiriciyi maddi olarak desteklemek ve b�
 * ALT + K: Sohbetteki bir sonraki arama sonucuna gidin.
 
 ##Değişiklik listesi:
+
+### Sürüm 5.2.0
+
+* Mesajlara eklenmiş dosyaları  sağ sol  oklarla seçme ve seçilen dosyayı boşluk çubuğuyla açma seçeneği eklendi.
+* Artık mesajlardaki bağlantılar tam olarak okunmayacak, yalnızca soru işaretine kadar okunacaktır.
+* Artık fotoğraf veya video görüntüleyiciyi kapattığınızda, UnigramPlus görüntülediğiniz  mesaja odaklanmaya çalışacaktır.
+* UnigramPlus ayarlarını açmak için klavye kısayolu değiştirildi. Şimdi bu işlev NVDA + ALT + U kombinasyonuna atanmıştır.
+* Kod optimizasyonu yapıldı, böylece sohbet ve mesaj listesinde gezinirken yanıt süresinde önemli bir iyileşme sağlandı. Bu, birçok iç içe geçmiş öğe içeren  mesajlarda özellikle fark edilir.
+* Birçok küçük sorun düzeltildi.
+* Çok sayıda eski kod kaldırıldı.
 
 ### Sürüm 5.1.0
 

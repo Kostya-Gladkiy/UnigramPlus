@@ -1,13 +1,12 @@
-* Added keyboard shortcuts for navigating to the next and previous search results in chat. By default, these functions are assigned to the ALT+K and ALT+J key combinations.
-* Added a keyboard shortcut for opening a list with all the search results in chat. By default, this function is assigned to the ALT+I key combination.
-* Now, double-pressing the left arrow on a message will shift focus to the message that the current message is replying to.
-* Fixed an issue where descriptions of links embedded in messages were not being read.
-* UnigramPlus will no longer suggest updates on protected screens. However, users will need to open NVDA settings one more time and click the "Use the last saved settings during login and reading of protected screens (administrator rights required)" button.
-* Removed the feature for rewinding voice messages and the feature for setting reactions to messages, as these features were not working reliably.
-* Removed the message copying feature, as Unigram now has this function. Be aware that sometimes copying messages may cause a slight freezing of the program, but this is not related to UnigramPlus.
-* Fixed some other minor bugs.
+* Added the ability to select files attached to messages with horizontal arrows and open the selected file with the space bar.
+* Now links in messages will not be read in full, but only up to the question mark.
+* Now, when you close the photo or video viewer, UnigramPlus will try to set the focus on the message you were viewing.
+* The keyboard shortcut to open UnigramPlus settings has been changed. Now this function is assigned to the combination NVDA+ALT+U.
+* Code optimisation has been done, resulting in significantly improved response time when navigating the chat list and message list. This is especially noticeable on messages that contain many nested elements.
+* Many minor issues have been fixed.
+* A lot of outdated code has been removed.
 
 If you have the desire, and most importantly the opportunity, to support the developer of this add-on, you can do so using the following details:
-* PeyPal: gladkiy.kostya@gmail.com.
+* PayPal: gladkiy.kostya@gmail.com.
 * Ukrainian donation system: https://unigramplus.diaka.ua/donate.
 * Card number: 5169360009004502 (Gladkiy Constantine).

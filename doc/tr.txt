@@ -1,13 +1,12 @@
-* Sohbette sonraki ve önceki arama sonuçlarına gitmek için klavye kısayolları eklendi. Varsayılan olarak, bu işlevler ALT+K ve ALT+J tuş kombinasyonlarına atanır.
-* Sohbetteki tüm arama sonuçlarını içeren bir liste açmak için bir klavye kısayolu eklendi. Varsayılan olarak, bu işlev ALT + I tuş bileşimine atanır.
-* Şimdi, bir mesajda sol oka iki kez basmak, odağı yanıtlanan  mesaja kaydırır, not: eğer o mesaja yanıt varsa.
-* Mesajlara gömülü bağlantıların açıklamalarının okunmamasına neden olan bir sorun düzeltildi.
-* UnigramPlus artık  güvenli ekranlarda güncellemeler önermeyecek. Ancak kullanıcıların NVDA ayarlarını bir kez daha açmaları ve Oturum açma sırasında ve güvenli ekranlarda geçerli konfigürasyonu kullan (yönetici hakları gereklidir)" düğmesini tıklamaları gerekecektir.
-* Bu özellikler  doğru şekilde çalışmadığı için sesli mesajları ileri/geri sarma özelliği ve mesajlara tepki  bırakma özelliği kaldırıldı.
-* Unigram artık bu işleve sahip olduğundan mesaj kopyalama özelliği kaldırıldı. Bazen mesajların kopyalanmasının programın biraz donmasına neden olabileceğini unutmayın, ancak bu UnigramPlus ile ilgili değildir.
-* Diğer bazı küçük hatalar düzeltildi.
+* Mesajlara eklenmiş dosyaları  sağ sol  oklarla seçme ve seçilen dosyayı boşluk çubuğuyla açma seçeneği eklendi.
+* Artık mesajlardaki bağlantılar tam olarak okunmayacak, yalnızca soru işaretine kadar okunacaktır.
+* Artık fotoğraf veya video görüntüleyiciyi kapattığınızda, UnigramPlus görüntülediğiniz  mesaja odaklanmaya çalışacaktır.
+* UnigramPlus ayarlarını açmak için klavye kısayolu değiştirildi. Şimdi bu işlev NVDA + ALT + U kombinasyonuna atanmıştır.
+* Kod optimizasyonu yapıldı, böylece sohbet ve mesaj listesinde gezinirken yanıt süresinde önemli bir iyileşme sağlandı. Bu, birçok iç içe geçmiş öğe içeren  mesajlarda özellikle fark edilir.
+* Birçok küçük sorun düzeltildi.
+* Çok sayıda eski kod kaldırıldı.
 
 Bu eklentinin geliştiricisini destekleme isteğiniz ve en önemlisi fırsatınız varsa, aşağıdaki ayrıntıları kullanarak bunu yapabilirsiniz:
-* PeyPal: gladkiy.kostya@gmail.com.
+* PayPal: gladkiy.kostya@gmail.com.
 * Ukrayna bağış sistemi: https://unigramplus.diaka.ua/donate.
 * Kart numarası: 5169360009004502 (Gladkiy Constantine).
