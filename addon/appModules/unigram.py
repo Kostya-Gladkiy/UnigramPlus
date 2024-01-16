@@ -965,11 +965,11 @@ class AppModule(appModuleHandler.AppModule):
 					obj.name = obj.name.replace(keywords[1], ".", -1)
 					obj.name = keywords[1][2:]+" "+obj.name
 			
-			if conf.get("voice_the_presence_of_a_reaction") and reactions:
+#			if conf.get("voice_the_presence_of_a_reaction") and reactions:
 				# Announcing reactions if they are contained in the message
-				reactions = [item.name for item in reactions]
-				reactions = _("Reactions")+": "+", ".join(reactions)
-				obj.name += "\n"+reactions
+#				reactions = [item.name for item in reactions]
+#				reactions = _("Reactions")+": "+", ".join(reactions)
+#				obj.name += "\n"+reactions
 
 		obj.name = sender+obj.name
 		# Check if a message is selected
