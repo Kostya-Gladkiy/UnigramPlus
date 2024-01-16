@@ -928,6 +928,11 @@ class AppModule(appModuleHandler.AppModule):
 			elif item.UIAAutomationId == "HeaderLabel": header = item
 			item = item.next
 
+		# Add the dot after seen or 'not seen' if there are no reactions.
+		if  not reactions:
+			obj.name = obj.name.replace(keywords[0][:-1], keywords[0]).replace(keywords[1][:-1], keywords[1])
+			self.end_text = self.end_text.replace(keywords[0][:-1], keywords[0]).replace(keywords[1][:-1], keywords[1])
+
 		# Checking if a message is a call
 		try:
 			if obj.firstChild.role == Role.LINK and not obj.firstChild.name and obj.childCount == 7 and obj.children[1].UIAAutomationId == "TitleLabel" and obj.children[3].role == Role.STATICTEXT:
