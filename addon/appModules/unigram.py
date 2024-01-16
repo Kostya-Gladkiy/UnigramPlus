@@ -597,7 +597,11 @@ class AppModule(appModuleHandler.AppModule):
 		obj = self.saved_items.get("profile name")
 		if obj and obj.location.width != 0:
 			title = obj
-			message(obj.name)
+			profile_value = ""
+			for item in obj.children:
+				if profile_value == "": profile_value = item.name
+				else: profile_value = f"{profile_value}, {item.name}"
+			message(profile_value)
 		for item in self.getElements():
 			if not title and item.role == Role.LINK and item.UIAAutomationId == "Profile":
 				message(item.name)
