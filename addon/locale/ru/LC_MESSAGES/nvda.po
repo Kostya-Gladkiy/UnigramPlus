@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'unigramPlus' '5.2.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2023-12-31 14:31+0400\n"
-"PO-Revision-Date: 2023-12-31 14:37+0400\n"
+"PO-Revision-Date: 2024-04-10 19:20+0300\n"
 "Last-Translator: DraganRatkovich\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -235,7 +235,7 @@ msgstr "Закрыть аудио плеер"
 
 #: addon\appModules\unigram.py:425
 msgid "The audio player has been closed"
-msgstr "Аудио пллеер был закрыт"
+msgstr "Аудио плеер был закрыт"
 
 #. Voice message pause function
 #: addon\appModules\unigram.py:429
@@ -398,8 +398,6 @@ msgstr "Нажать кнопку \"Прикрепить файл\""
 
 #. Press the "New Conversation" button
 #: addon\appModules\unigram.py:783
-#, fuzzy
-#| msgid "Press \"New chat\" button"
 msgid "Press \"New conversation\" button"
 msgstr "Нажать кнопку \"Новая беседа\""
 
@@ -816,7 +814,7 @@ msgstr "Показывать диалог подтверждения при уд
 #. Type of notification when recording voice messages
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:229
 msgid "Set voice message recording notification method as:"
-msgstr "Установить метод оповещения о записи голосовых сообщений как:"
+msgstr "Метод оповещения о записи голосовых сообщений:"
 
 #. Progress bar announce
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:232
@@ -874,21 +872,16 @@ msgstr "UnigramPlus"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
-#, fuzzy
-#| msgid ""
-#| "This add-on adds a lot of hotkeys for quick navigation through the main "
-#| "elements of the window, easy interaction with Chat messages, and also "
-#| "adds many minor improvements that make working in Unigram much easier"
 msgid ""
 "This add-on adds a lot of hotkeys for quick navigation through the main "
 "elements of the Unigram application, convenient interaction with Chat "
 "messages, and also adds many small improvements that make working in Unigram "
 "much easier"
 msgstr ""
-"Это дополнение добавляет множество горячих клавиш для быстрого перемещения "
-"по основным элементам окна, обеспечивает удобное взаимодействие с "
-"сообщениями чата, а также добавляет множество небольших улучшений, делающих "
-"работу в Unigram значительно более удобной"
+"Это дополнение добавляет множество горячих клавиш для быстрой навигации по "
+"основным элементам приложения Unigram, удобного взаимодействия с сообщениями "
+"чата, а также добавляет множество мелких улучшений, которые значительно "
+"упрощают работу в Unigram"
 
 #~ msgid "Message copied"
 #~ msgstr "Сообщение скопировано"
