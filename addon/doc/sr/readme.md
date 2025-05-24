@@ -51,9 +51,9 @@ I zapamtite da su svi koji su pročitali ovaj red mislili da će neko sigurno po
 * Control+R - Pokreće snimanje glasovne poruke ili slanje glasovne poruke.
 * Control+D - Otkazuje snimanje glasovne poruke. Ako se pritisne dva puta, menja vrstu obaveštenja kada započne snimanje, slanje ili otkazivanje snimanja glasovne poruke.
 * ALT+U - Uključuje ili isključuje najavu trake napredovanja.
+* ALT+shift+P: - Otvara trenutni profil za ćaskanje.
 * delete - Briše poruku ili ćaskanje.
 * shift+delete - Briše poruku ili ćaskanje s obe strane.
-* control+P - Otvara trenutni profil ćaskanja.
 * Control + Alt + C - Otvara komentare.
 * Enter - Odgovara na poruku.
 * Alt + F - Prosleđuje poruku.
@@ -75,12 +75,20 @@ NVDA+alt+U - Otvara prozor sa podešavanjima UnigramPlus-a.
 * ALT+6: Premešta fokus na listu niti grupe.
 * ALT+H: Prikaži listu svih UnigramPlus prečica.
 * ALT+I: Otvaranje liste rezultata pretrage ćaskanja.
-* ALT+J: Ide se na prethodni rezultat pretrage u ćaskanju.
-* ALT+k: Ide se na sledeći rezultat pretrage u ćaskanju.
+* shift+f3: - Idite na prethodni rezultat pretrage u ćaskanju.
+* f3: - Idite na sledeći rezultat pretrage u ćaskanju..
+* ALT+W: - Najavljuje vreme kada je poruka poslata ili primljena, kao i listu reakcija. Dvostruki klik uključuje režim najave za ove informacije.
 
 ## Lista promena:
 
-###Verzija 5.2.0
+###Verzija 5.3.0
+*Dodata je prečica na tastaturi koja najavljuje vreme slanja ili primanja poruke i reakcije u poruci. Ovo je korisno kada želite da čujete vreme slanja ili prijema poruke bez prethodnog preslušavanja celog teksta poruke. Podrazumevano, ovo je kombinacija tastera ALT+W. Dvostruki klik uključuje način objavljivanja ove informacije.
+* Popravljeni su svi problemi koji su se nedavno nakupili kao rezultat promena u unigram interfejsu.
+* Promenjena je prečica na tastaturi za otvaranje korisničkog profila u ALT+shift+p.
+* Dodata kompatibilnost sa NVDA 2024.4.
+* Promenjene su prečice na tastaturi za navigaciju do sledećeg i prethodnog rezultata pretrage na f3 i pomeranje f3 kao u većini aplikacija.
+
+Verzija 5.2.0
 * Dodata je mogućnost odabira datoteka priloženih porukama sa horizontalnim strelicama i otvaranja izabrane datoteke pomoću razmaka.
 * Sada se linkovi u porukama neće čitati u podpunosti, već samo do znaka pitanja.
 * Sada, kada zatvorite pregledač fotografija ili video zapisa, unigramplus će pokušati da postavi fokus na poruku koju gledate.

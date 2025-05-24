@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: UnigramPlus\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2023-12-14 22:48+0200\n"
-"PO-Revision-Date: 2023-12-14 22:27+0100\n"
+"PO-Revision-Date: 2025-04-04 22:27+0200\n"
 "Last-Translator: NetB di Leonardo Marenda <posta@netb.pro>\n"
 "Language-Team: Leonardo Marenda <leonardo@leonardomarenda.it>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: appModules\n"
@@ -59,7 +59,7 @@ msgstr "Persiano"
 
 #: addon\appModules\cnf.py:22
 msgid "Polish"
-msgstr "olacco"
+msgstr "Polacco"
 
 #: addon\appModules\cnf.py:23
 msgid "Portuguese"
@@ -131,7 +131,7 @@ msgstr "Campo del titolo"
 
 #: addon\appModules\data.py:56
 msgid "Go to next reaction"
-msgstr "Vai alla reazione successiva."
+msgstr "Vai alla reazione successiva"
 
 #: addon\appModules\data.py:57
 msgid "Insert emojis"
@@ -180,7 +180,7 @@ msgstr "Mostra il testo del messaggio in una finestra popup"
 
 #: addon\appModules\unigram.py:67 addon\appModules\unigram.py:732
 msgid "message text"
-msgstr "Messaggio di testo"
+msgstr "messaggio di testo"
 
 #: addon\appModules\unigram.py:68 addon\appModules\unigram.py:719
 #: addon\appModules\unigram.py:733
@@ -244,7 +244,7 @@ msgstr "Lista delle chat non trovata"
 
 #: addon\appModules\unigram.py:479
 msgid "Chat list is empty"
-msgstr "l'elenco delle chat è vuota"
+msgstr "La lista delle chat è vuota"
 
 #. Go to the last message in the chat
 #: addon\appModules\unigram.py:482
@@ -274,7 +274,7 @@ msgstr "Elenco cartelle chat non trovato"
 
 #: addon\appModules\unigram.py:537
 msgid "Move focus to the list of group threads"
-msgstr "posiziona il focus sull'elenco dei thread del gruppo"
+msgstr "Posiziona il focus sull'elenco delle conversazioni del gruppo"
 
 #: addon\appModules\unigram.py:541
 msgid "No list with threads was found"
@@ -726,7 +726,7 @@ msgstr "Notifica testuale"
 
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:175
 msgid "sound notification"
-msgstr "Notifica sonora"
+msgstr "notifica sonora"
 
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:183
 msgid "Do not say at all"
@@ -762,7 +762,7 @@ msgstr "Posiziona il focus sull'ultimo messaggio di una chat aperta"
 #. self.lang = settingsSizerHelper.addLabeledControl(_("Interface language in Unigram:"), wx.Choice, choices=[listLanguages[item] for item in listLanguages])
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:198
 msgid "Interface language in Unigram:"
-msgstr "Lingua dell''interfaccia di Unigram"
+msgstr "Lingua dell''interfaccia di Unigram:"
 
 #. Chat type announce mode
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:201
@@ -871,21 +871,16 @@ msgstr "UnigramPlus"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
-#, fuzzy
-#| msgid ""
-#| "This add-on adds a lot of hotkeys for quick navigation through the main "
-#| "elements of the window, easy interaction with Chat messages, and also "
-#| "adds many minor improvements that make working in Unigram much easier"
 msgid ""
 "This add-on adds a lot of hotkeys for quick navigation through the main "
 "elements of the Unigram application, convenient interaction with Chat "
 "messages, and also adds many small improvements that make working in Unigram "
 "much easier"
 msgstr ""
-"Questo componente aggiuntivo aggiunge molti tasti di scelta rapida per una "
-"più veloce navigazione attraverso gli elementi principali della finestra, "
-"una comoda interazione con i messaggi e aggiunge anche molti piccoli "
-"miglioramenti che rendono molto più semplice l'utilizzo di Unigram."
+"Questo componente aggiuntivo aggiunge diversi tasti di scelta rapida per una "
+"più veloce navigazione attraverso gli elementi principali della finestra di "
+"Unigram, una comoda interazione con i messaggi e molti piccoli miglioramenti "
+"che rendono molto più semplice l'utilizzo del programma."
 
 #~ msgid "Message copied"
 #~ msgstr "Messaggio copiato"

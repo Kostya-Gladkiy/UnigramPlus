@@ -29,6 +29,7 @@ listLanguages = {
 	"hr": _("Croatian"),
 	"sr": _("Serbian"),
 	"zh": _("Chinese (Traditional)"),
+	"ro": _("Romanian"),
 }
 
 spec = (
@@ -52,6 +53,7 @@ spec = (
 	"automatically announce activity in chats = boolean(default=False)",
 	"notify administrators in messages = boolean(default=True)",
 	"action_when_pressing_up_arrow_in_text_field = string(default=normal)",
+	"announce_endthe_message = boolean(default=True)"
 )
 
 class cnf:

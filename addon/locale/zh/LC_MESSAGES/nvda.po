@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UnigramPlus\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-12-14 22:48+0200\n"
-"PO-Revision-Date: 2023-12-15 19:19+0800\n"
+"POT-Creation-Date: 2025-04-04 22:46+0300\n"
+"PO-Revision-Date: 2025-04-05 09:56+0800\n"
 "Last-Translator: Ken Chang <lindsay714322@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: appModules\n"
@@ -22,613 +22,645 @@ msgid "Arabic"
 msgstr "阿拉伯文"
 
 #: addon\appModules\cnf.py:13
+msgid "Belarus"
+msgstr "白俄羅斯文"
+
+#: addon\appModules\cnf.py:14
 msgid "Czech"
 msgstr "捷克文"
 
-#: addon\appModules\cnf.py:14
+#: addon\appModules\cnf.py:15
 msgid "English"
 msgstr "英文"
 
-#: addon\appModules\cnf.py:15
+#: addon\appModules\cnf.py:16
 msgid "French"
 msgstr "法文"
 
-#: addon\appModules\cnf.py:16
+#: addon\appModules\cnf.py:17
 msgid "Finnish"
 msgstr "完成"
 
-#: addon\appModules\cnf.py:17
+#: addon\appModules\cnf.py:18
 msgid "Slovak"
 msgstr "斯洛伐克文"
 
-#: addon\appModules\cnf.py:18
+#: addon\appModules\cnf.py:19
 msgid "Norwegian"
 msgstr "挪威文"
 
-#: addon\appModules\cnf.py:19
+#: addon\appModules\cnf.py:20
 msgid "German"
 msgstr "德文"
 
-#: addon\appModules\cnf.py:20
+#: addon\appModules\cnf.py:21
 msgid "Italian"
 msgstr "義大利文"
 
-#: addon\appModules\cnf.py:21
+#: addon\appModules\cnf.py:22
 msgid "Persian"
 msgstr "波斯文"
 
-#: addon\appModules\cnf.py:22
+#: addon\appModules\cnf.py:23
 msgid "Polish"
 msgstr "波瀾文"
 
-#: addon\appModules\cnf.py:23
+#: addon\appModules\cnf.py:24
 msgid "Portuguese"
 msgstr "葡萄牙文"
 
-#: addon\appModules\cnf.py:24
+#: addon\appModules\cnf.py:25
 msgid "Russian"
 msgstr "俄文"
 
-#: addon\appModules\cnf.py:25
+#: addon\appModules\cnf.py:26
 msgid "Spanish"
 msgstr "西班牙文"
 
-#: addon\appModules\cnf.py:26
+#: addon\appModules\cnf.py:27
 msgid "Turkish"
 msgstr "土耳其文"
 
-#: addon\appModules\cnf.py:27
+#: addon\appModules\cnf.py:28
 msgid "Ukrainian"
 msgstr "烏克蘭文"
 
-#: addon\appModules\cnf.py:28
+#: addon\appModules\cnf.py:29
 msgid "Croatian"
 msgstr "克羅埃西亞文"
 
-#: addon\appModules\cnf.py:29
+#: addon\appModules\cnf.py:30
 msgid "Serbian"
 msgstr "塞爾維亞文"
 
-#: addon\appModules\cnf.py:30
+#: addon\appModules\cnf.py:31
 msgid "Chinese (Traditional)"
 msgstr "正體中文"
 
-#: addon\appModules\data.py:44
+#: addon\appModules\cnf.py:32
+msgid "Romanian"
+msgstr "羅馬尼亞文"
+
+#: addon\appModules\data.py:46
 msgid "Back"
 msgstr "返回"
 
-#: addon\appModules\data.py:45
+#: addon\appModules\data.py:47
 msgid "Menu"
 msgstr "功能表"
 
-#: addon\appModules\data.py:46
+#: addon\appModules\data.py:48
 msgid "Attach"
 msgstr "附加"
 
-#: addon\appModules\data.py:47
+#: addon\appModules\data.py:49
 msgid "Edit"
 msgstr "編輯"
 
-#: addon\appModules\data.py:48
+#: addon\appModules\data.py:50 addon\appModules\unigram.py:115
 msgid "Photo"
 msgstr "照片"
 
-#: addon\appModules\data.py:49 addon\appModules\unigram.py:1100
+#: addon\appModules\data.py:51 addon\appModules\unigram.py:1101
 msgid "Image"
 msgstr "圖片"
 
-#: addon\appModules\data.py:50
+#: addon\appModules\data.py:52
 msgid "Invite link"
 msgstr "邀請連結"
 
-#: addon\appModules\data.py:51
+#: addon\appModules\data.py:53
 msgid "Choose time"
 msgstr "選擇時間"
 
-#: addon\appModules\data.py:52
+#: addon\appModules\data.py:54
 msgid "Title field"
 msgstr "標題編輯區"
 
-#: addon\appModules\data.py:56
+#: addon\appModules\data.py:58
 msgid "Go to next reaction"
 msgstr "前往下一個表情符號反映"
 
-#: addon\appModules\data.py:57
+#: addon\appModules\data.py:59
 msgid "Insert emojis"
 msgstr "插入表情符號"
 
-#: addon\appModules\data.py:58
+#: addon\appModules\data.py:60
 msgid "Done"
 msgstr "完成"
 
-#: addon\appModules\data.py:59
+#: addon\appModules\data.py:61
 msgid "Next"
 msgstr "下一步"
 
-#: addon\appModules\data.py:60
+#: addon\appModules\data.py:62
 msgid "Merge files"
 msgstr "合併檔案"
 
-#: addon\appModules\data.py:61
+#: addon\appModules\data.py:63
 msgid "Search"
 msgstr "搜尋"
 
-#: addon\appModules\data.py:62
+#: addon\appModules\data.py:64
 msgid "Delete"
 msgstr "刪除"
 
-#: addon\appModules\data.py:63
+#: addon\appModules\data.py:65
 msgid "Close"
 msgstr "關閉"
 
-#: addon\appModules\unigram.py:39 addon\appModules\unigram.py:695
+#: addon\appModules\unigram.py:40 addon\appModules\unigram.py:725
 msgid "Camera on"
 msgstr "開啟攝影機"
 
-#: addon\appModules\unigram.py:39 addon\appModules\unigram.py:696
+#: addon\appModules\unigram.py:40 addon\appModules\unigram.py:726
 msgid "Camera off"
 msgstr "關閉攝影機"
 
-#: addon\appModules\unigram.py:55
+#: addon\appModules\unigram.py:58
 msgid "Announce the original message, the message that was replied to"
 msgstr "讀出回覆時，讀出原始訊息。"
 
-#: addon\appModules\unigram.py:63
+#: addon\appModules\unigram.py:69
 msgid "Show message text in popup window"
 msgstr "在快顯示窗中顯示訊息的文字"
 
-#: addon\appModules\unigram.py:67 addon\appModules\unigram.py:732
-msgid "message text"
-msgstr "訊息已刪除"
-
-#: addon\appModules\unigram.py:68 addon\appModules\unigram.py:719
-#: addon\appModules\unigram.py:733
+#: addon\appModules\unigram.py:74 addon\appModules\unigram.py:749
+#: addon\appModules\unigram.py:763
 msgid "This message does not contain text"
 msgstr "這則訊息沒有包含文字"
 
-#: addon\appModules\unigram.py:70
+#: addon\appModules\unigram.py:82 addon\appModules\unigram.py:762
+msgid "message text"
+msgstr "訊息已刪除"
+
+#: addon\appModules\unigram.py:84
 msgid "Open comments"
 msgstr "開啟留言"
 
-#: addon\appModules\unigram.py:76
+#: addon\appModules\unigram.py:90
 msgid "Button to open comments not found"
 msgstr "無法找到開啟留言的按鈕"
 
-#: addon\appModules\unigram.py:78
+#: addon\appModules\unigram.py:92
 msgid "Edit message"
 msgstr "編輯訊息"
 
-#: addon\appModules\unigram.py:82
+#: addon\appModules\unigram.py:96
 msgid "Reply to message"
 msgstr "回覆訊息"
 
+#: addon\appModules\unigram.py:116 addon\appModules\unigram.py:868
+msgid "Video"
+msgstr "已開始錄製視訊訊息"
+
+#: addon\appModules\unigram.py:122
+msgid ""
+"Announces the time a message was sent or received, as well as a list of "
+"reactions. Double-clicking toggles the announcement mode for this "
+"information."
+msgstr "讀出訊息傳送或接收的時間和反應清單。按兩下可切換此資訊的讀出模式。"
+
+#: addon\appModules\unigram.py:128
+msgid ""
+"The display of message sending or receiving time and the list of installed "
+"emojis is enabled."
+msgstr "已啟用顯示訊息傳送或接收時間以及已安裝表情符號的清單。"
+
+#: addon\appModules\unigram.py:129
+msgid ""
+"The display of message sending or receiving time and the list of installed "
+"emojis is  disabled."
+msgstr "已停用顯示訊息傳送或接收時間以及已安裝表情符號的清單。"
+
 #. message(obj.name)
-#: addon\appModules\unigram.py:163
+#: addon\appModules\unigram.py:176
 msgid "Explanation"
 msgstr "說明"
 
 #. The function of changing the playback speed of a voice message
-#: addon\appModules\unigram.py:388
+#: addon\appModules\unigram.py:420
 msgid "Increase/decrease the playback speed of voice messages"
 msgstr "增加或減少語音訊息破放的速度"
 
-#: addon\appModules\unigram.py:397 addon\appModules\unigram.py:409
-#: addon\appModules\unigram.py:419 addon\appModules\unigram.py:1328
-#: addon\appModules\unigram.py:1341
+#: addon\appModules\unigram.py:426 addon\appModules\unigram.py:438
+#: addon\appModules\unigram.py:448 addon\appModules\unigram.py:1338
+#: addon\appModules\unigram.py:1354
 msgid "Nothing is playing right now"
 msgstr "目前沒有播放"
 
 #. Audio player close function
-#: addon\appModules\unigram.py:400
+#: addon\appModules\unigram.py:429
 msgid "Close audio player"
 msgstr "關閉音訊播放器"
 
-#: addon\appModules\unigram.py:408
+#: addon\appModules\unigram.py:437
 msgid "The audio player has been closed"
 msgstr "已關閉音訊播放器"
 
 #. Voice message pause function
-#: addon\appModules\unigram.py:412
+#: addon\appModules\unigram.py:441
 msgid "Play/pause the voice message currently playing"
 msgstr "播放或暫停目前正在播放的語音訊息"
 
 #. Go to chat list
-#: addon\appModules\unigram.py:447
+#: addon\appModules\unigram.py:484
 msgid "Move focus to chat list"
 msgstr "移動焦點到聊天清單"
 
-#: addon\appModules\unigram.py:471
+#. contacts_list = self.get_contacts_list()
+#. if contacts_list:
+#. contacts_list.setFocus()
+#. return True
+#: addon\appModules\unigram.py:503
 msgid "Chat list not found"
 msgstr "無法找到聊天清單"
 
-#: addon\appModules\unigram.py:479
+#: addon\appModules\unigram.py:511
 msgid "Chat list is empty"
 msgstr "聊天清單是空的"
 
 #. Go to the last message in the chat
-#: addon\appModules\unigram.py:482
+#: addon\appModules\unigram.py:514
 msgid "Move focus to the last message in an open chat"
 msgstr "移動焦點到目前開啟聊天的最底部"
 
-#: addon\appModules\unigram.py:495 addon\appModules\unigram.py:598
-#: addon\appModules\unigram.py:1013 addon\appModules\unigram.py:1026
+#: addon\appModules\unigram.py:527 addon\appModules\unigram.py:628
+#: addon\appModules\unigram.py:1034 addon\appModules\unigram.py:1047
 msgid "This chat is empty"
 msgstr "這個聊天是空的"
 
-#: addon\appModules\unigram.py:509 addon\appModules\unigram.py:589
-#: addon\appModules\unigram.py:597 addon\appModules\unigram.py:801
-#: addon\appModules\unigram.py:1009
+#: addon\appModules\unigram.py:541 addon\appModules\unigram.py:619
+#: addon\appModules\unigram.py:627 addon\appModules\unigram.py:830
+#: addon\appModules\unigram.py:1030
 msgid "No open chat"
 msgstr "沒有已開啟的聊天"
 
 #. Move focus to the list of chat folders
-#: addon\appModules\unigram.py:512
+#: addon\appModules\unigram.py:544
 msgid "Move focus to list of chat folders"
 msgstr "移動焦點到聊天清單"
 
-#: addon\appModules\unigram.py:518 addon\appModules\unigram.py:526
-#: addon\appModules\unigram.py:527
+#: addon\appModules\unigram.py:550 addon\appModules\unigram.py:558
+#: addon\appModules\unigram.py:559
 msgid "Chat folder list not found"
 msgstr "無法找到聊天清單"
 
-#: addon\appModules\unigram.py:537
+#: addon\appModules\unigram.py:567
 msgid "Move focus to the list of group threads"
 msgstr "移動焦點到話題清單"
 
-#: addon\appModules\unigram.py:541
+#: addon\appModules\unigram.py:571
 msgid "No list with threads was found"
 msgstr "找不到話題清單"
 
 #. Move focus to open profile
-#: addon\appModules\unigram.py:562
+#: addon\appModules\unigram.py:592
 msgid "Move focus to open profile"
 msgstr "移動焦點到聊天資料頁"
 
-#: addon\appModules\unigram.py:566
+#: addon\appModules\unigram.py:596
 msgid "There is no open profile"
 msgstr "目前沒有已開啟的資料頁"
 
 #. Announces the profile name and status in an open chat
-#: addon\appModules\unigram.py:569
+#: addon\appModules\unigram.py:599
 msgid "Announce the name and status of an open chat"
 msgstr "在以開啟聊天中讀出姓名和上線狀態"
 
-#: addon\appModules\unigram.py:572
+#: addon\appModules\unigram.py:602
 msgid "Chat activity tracking is enabled"
 msgstr "已啟用聊天活動追蹤"
 
-#: addon\appModules\unigram.py:573
+#: addon\appModules\unigram.py:603
 msgid "Chat activity tracking is disabled"
 msgstr "已停用聊天活動追蹤"
 
 #. Go to "unread messages" label
-#: addon\appModules\unigram.py:592
+#: addon\appModules\unigram.py:622
 msgid "Move focus to 'unread messages' label"
 msgstr "移動焦點到未讀的訊息"
 
-#: addon\appModules\unigram.py:607
+#: addon\appModules\unigram.py:637
 msgid "There are no unread messages in this chat"
 msgstr "這個聊天中沒有未讀的訊息"
 
 #. Call if it's a contact, or enter a voice chat if it's a group
-#: addon\appModules\unigram.py:610
+#: addon\appModules\unigram.py:640
 msgid "Call if it's a contact, or enter a voice chat if it's a group"
 msgstr "如果是聯絡人則通話，如果是群組則加入視訊聊天。"
 
-#: addon\appModules\unigram.py:615
+#: addon\appModules\unigram.py:645
 msgid "Call unavailable"
 msgstr "無法通話"
 
 #. Make a video call if it's a contact
-#: addon\appModules\unigram.py:618
+#: addon\appModules\unigram.py:648
 msgid "Press the video call button"
 msgstr "按下視訊通話按鈕"
 
-#: addon\appModules\unigram.py:622
+#: addon\appModules\unigram.py:652
 msgid "Video call not available"
 msgstr "無法視訊通話"
 
 #. Function to open instant view
-#: addon\appModules\unigram.py:625
+#: addon\appModules\unigram.py:655
 msgid "Press \"Instant view\" button, if it is included in the current message"
 msgstr "如果包含在這個訊息中，則按下及時瀏覽按鈕"
 
-#: addon\appModules\unigram.py:636 addon\appModules\unigram.py:760
-#: addon\appModules\unigram.py:767 addon\appModules\unigram.py:775
-#: addon\appModules\unigram.py:1417 addon\appModules\unigram.py:1446
-#: addon\appModules\unigram.py:1455 addon\appModules\unigram.py:1464
-#: addon\appModules\unigram.py:1473
+#: addon\appModules\unigram.py:666 addon\appModules\unigram.py:790
+#: addon\appModules\unigram.py:797 addon\appModules\unigram.py:805
+#: addon\appModules\unigram.py:1430 addon\appModules\unigram.py:1459
+#: addon\appModules\unigram.py:1468 addon\appModules\unigram.py:1477
+#: addon\appModules\unigram.py:1486
 msgid "Button not found"
 msgstr "無法找到該按鈕"
 
 #. Mute/unmute the microphone
-#: addon\appModules\unigram.py:651
+#: addon\appModules\unigram.py:681
 msgid "Press \"Mute/unmute microphone\" button"
 msgstr "按下開啟或關閉麥克風的按鈕"
 
 #. Turn off/on the camera
-#: addon\appModules\unigram.py:677
+#: addon\appModules\unigram.py:707
 msgid "Press \"Enable/disable camera\" button"
 msgstr "按下開啟或關閉攝影機的按鈕"
 
 #. Copy current message to clipboard
-#: addon\appModules\unigram.py:705
+#: addon\appModules\unigram.py:735
 msgid ""
 "Copy the message if it contains text. If the focus is on a link, the link "
 "will be copied"
 msgstr "當訊息中含有文字時複製文字，當焦點在連結上則複製連結。"
 
-#: addon\appModules\unigram.py:714
+#: addon\appModules\unigram.py:744
 msgid "Link copied"
 msgstr "連結已複製到剪貼簿"
 
 #. Move the focus to the message input field. If the focus is already in this field, then move it to the last element that had focus before this field
-#: addon\appModules\unigram.py:736
+#: addon\appModules\unigram.py:766
 msgid ""
 "Move the focus to the edit field. If the focus is already in the edit field, "
 "then after pressing the hotkey, it will move to where it was before"
 msgstr "移動焦點到編輯區"
 
-#: addon\appModules\unigram.py:753
+#: addon\appModules\unigram.py:783
 msgid "Message input field not found"
 msgstr "未找到輸入訊息的編輯區"
 
 #. Press the "Attach media" button
-#: addon\appModules\unigram.py:756
+#: addon\appModules\unigram.py:786
 msgid "Press \"Attach file\" button"
 msgstr "按下 \"附加媒體\" 按鈕"
 
 #. Press the "New Conversation" button
-#: addon\appModules\unigram.py:763
+#: addon\appModules\unigram.py:793
 msgid "Press \"New conversation\" button"
 msgstr "按下 \"新的聊天\" 按鈕"
 
 #. Open navigation menu
-#: addon\appModules\unigram.py:778
+#: addon\appModules\unigram.py:808
 msgid "Open navigation menu"
 msgstr "開啟主選單"
 
-#: addon\appModules\unigram.py:784
+#: addon\appModules\unigram.py:814
 msgid "Navigation menu not available"
 msgstr "無法找到主選單"
 
 #. Function to open the profile of the current chat
-#: addon\appModules\unigram.py:787
+#: addon\appModules\unigram.py:817
 msgid "Open current chat profile"
 msgstr "開啟目前聊天的資料頁"
 
-#: addon\appModules\unigram.py:817
+#: addon\appModules\unigram.py:848
 msgid ""
 "Recording a voice message will not be available until the edit field is empty"
 msgstr "無法錄製語音訊息，除非輸入訊息的編輯區是空白的"
 
-#: addon\appModules\unigram.py:824
+#: addon\appModules\unigram.py:857
 msgid "Record sent"
 msgstr "已傳送錄製的訊息"
 
-#: addon\appModules\unigram.py:829
-msgid "Video"
-msgstr "已開始錄製視訊訊息"
-
-#: addon\appModules\unigram.py:830
+#: addon\appModules\unigram.py:871
 msgid "Audio"
 msgstr "已開始錄製語音訊息"
 
-#: addon\appModules\unigram.py:847
+#: addon\appModules\unigram.py:890
 msgid "Voice recording notifications set to text"
 msgstr "語音訊息的通知設定為文字"
 
-#: addon\appModules\unigram.py:850
+#: addon\appModules\unigram.py:893
 msgid "Voice recording notifications set to sounds"
 msgstr "語音訊息的通知設定為音效"
 
-#: addon\appModules\unigram.py:853
+#: addon\appModules\unigram.py:896
 msgid "Recording voice messages has standard behavior"
 msgstr "語音訊息的通知設定為預設值"
 
-#: addon\appModules\unigram.py:863
+#: addon\appModules\unigram.py:906
 msgid "Reply canceled"
 msgstr "已取消回覆"
 
-#: addon\appModules\unigram.py:864
+#: addon\appModules\unigram.py:907
 msgid "Edit canceled"
 msgstr "已取消編輯"
 
-#: addon\appModules\unigram.py:867
+#: addon\appModules\unigram.py:910
 msgid "Recording canceled"
 msgstr "已取消錄製"
 
-#: addon\appModules\unigram.py:896
+#: addon\appModules\unigram.py:934
 msgid "Answer options"
 msgstr "投票選項"
 
-#: addon\appModules\unigram.py:938
+#: addon\appModules\unigram.py:964
 msgid "You"
 msgstr "您"
 
-#: addon\appModules\unigram.py:946
-msgid "Not sent"
-msgstr "未傳送"
-
-#: addon\appModules\unigram.py:969
-msgid "Reactions"
-msgstr "表情符號反映"
-
 #. Check if a message is selected
-#: addon\appModules\unigram.py:976
+#: addon\appModules\unigram.py:993
 msgid "Selected"
 msgstr "已選取"
 
 #. Change the announce level of progress bars
-#: addon\appModules\unigram.py:994
+#: addon\appModules\unigram.py:1015
 msgid "Toggle progress bar announcements"
 msgstr "切換進度列輸出"
 
-#: addon\appModules\unigram.py:998
+#: addon\appModules\unigram.py:1019
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:178
 msgid "Announce all progress bars"
 msgstr "讀出所有進度列"
 
-#: addon\appModules\unigram.py:1001
+#: addon\appModules\unigram.py:1022
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:179
 msgid "Do not announce any progress bars"
 msgstr "不讀出進度列"
 
-#: addon\appModules\unigram.py:1114
+#: addon\appModules\unigram.py:1112
 msgid "Editing"
 msgstr "正在編輯"
 
-#: addon\appModules\unigram.py:1115
+#: addon\appModules\unigram.py:1113
 msgid "Reply"
 msgstr "回覆"
 
-#: addon\appModules\unigram.py:1124
+#: addon\appModules\unigram.py:1122
 msgid "Duration"
 msgstr "時間長度"
 
-#: addon\appModules\unigram.py:1125
+#: addon\appModules\unigram.py:1123
 msgid "Size"
 msgstr "大小"
 
-#: addon\appModules\unigram.py:1137
+#: addon\appModules\unigram.py:1135
 msgid "Enable video"
 msgstr "開啟視訊"
 
-#: addon\appModules\unigram.py:1138
+#: addon\appModules\unigram.py:1136
 msgid "Disable video"
 msgstr "關閉視訊"
 
-#: addon\appModules\unigram.py:1222
+#: addon\appModules\unigram.py:1224
 msgid "Delete a message or chat"
 msgstr "刪除訊息或退出聊天"
 
-#: addon\appModules\unigram.py:1225
+#: addon\appModules\unigram.py:1227
 msgid "Delete message or chat from both sides"
 msgstr "在兩端刪除訊息或聊天"
 
-#: addon\appModules\unigram.py:1228
+#: addon\appModules\unigram.py:1230
 msgid "Switch to selection mode"
 msgstr "切換到選擇模式"
 
-#: addon\appModules\unigram.py:1231
+#: addon\appModules\unigram.py:1233
 msgid "Forward message"
 msgstr "轉傳訊息"
 
-#: addon\appModules\unigram.py:1234
+#: addon\appModules\unigram.py:1236
 msgid "Mark a chat as read"
 msgstr "標記聊天為已讀"
 
-#: addon\appModules\unigram.py:1237
+#: addon\appModules\unigram.py:1239
 msgid "Save file as..."
 msgstr "儲存檔案到..."
 
-#: addon\appModules\unigram.py:1240
+#: addon\appModules\unigram.py:1242
 msgid "Pin a message or chat"
 msgstr "置頂一個訊息或聊天"
 
-#: addon\appModules\unigram.py:1263
+#: addon\appModules\unigram.py:1273
 msgid "Message deleted on both sides"
 msgstr "訊息已從兩端刪除"
 
-#: addon\appModules\unigram.py:1264
+#: addon\appModules\unigram.py:1274
 msgid "Message deleted"
 msgstr "訊息已刪除"
 
-#: addon\appModules\unigram.py:1267
+#: addon\appModules\unigram.py:1277
 msgid "You left the group"
 msgstr "您已經離開群組"
 
-#: addon\appModules\unigram.py:1268
+#: addon\appModules\unigram.py:1278
 msgid "You left the channel"
 msgstr "您已經離開頻道"
 
-#: addon\appModules\unigram.py:1269
+#: addon\appModules\unigram.py:1279
 msgid "Bot removed and blocked"
 msgstr "機器人移除和封鎖"
 
-#: addon\appModules\unigram.py:1270
+#: addon\appModules\unigram.py:1280
 msgid "Bot removed"
 msgstr "機器人已移除"
 
-#: addon\appModules\unigram.py:1271
+#: addon\appModules\unigram.py:1281
 msgid "Chat deleted on both sides"
 msgstr "聊天已從兩端刪除"
 
-#: addon\appModules\unigram.py:1272
+#: addon\appModules\unigram.py:1282
 msgid "Chat deleted"
 msgstr "聊天已刪除"
 
 #. Data copy function for broadcasting
-#: addon\appModules\unigram.py:1305
+#: addon\appModules\unigram.py:1315
 msgid "Copy data for broadcasting to the clipboard"
 msgstr "複製資料到剪貼簿以值播"
 
-#: addon\appModules\unigram.py:1309 addon\appModules\unigram.py:1313
+#: addon\appModules\unigram.py:1319 addon\appModules\unigram.py:1323
 msgid "Broadcast window not found"
 msgstr "未找到職播視窗"
 
-#: addon\appModules\unigram.py:1319
+#: addon\appModules\unigram.py:1329
 msgid "%url and %key copied to clipboard"
 msgstr "%url 和 %key 已複製到剪貼簿"
 
-#: addon\appModules\unigram.py:1379
+#: addon\appModules\unigram.py:1365
+msgid "Fast forward a voice message"
+msgstr "轉傳訊息"
+
+#: addon\appModules\unigram.py:1369
+msgid "Rewind voice message"
+msgstr "慢轉語音訊息"
+
+#. This is necessary for this phrase to appear in the translation dictionary
+#: addon\appModules\unigram.py:1392 addon\appModules\unigram.py:1393
 msgid "Right answer"
 msgstr "正確選項"
 
 #. Converting voice messages to text
-#: addon\appModules\unigram.py:1402
+#: addon\appModules\unigram.py:1415
 msgid "Convert voice message to text"
 msgstr "轉換語音訊息成文字"
 
-#: addon\appModules\unigram.py:1409
+#: addon\appModules\unigram.py:1422
 msgid "This voice message is already converted to text"
 msgstr "這則語音訊息已轉換成文字"
 
-#: addon\appModules\unigram.py:1410
+#: addon\appModules\unigram.py:1423
 msgid "Converting this voice message is already in process"
 msgstr "轉換這則語音訊息的動作進行中"
 
-#: addon\appModules\unigram.py:1420
+#: addon\appModules\unigram.py:1433
 msgid "Enable automatic reading of new messages in the current chat"
 msgstr "啟用自動讀出目前聊天的新訊息"
 
-#: addon\appModules\unigram.py:1422
+#: addon\appModules\unigram.py:1435
 msgid "Automatic reading of messages is enabled"
 msgstr "已啟用自動讀出新訊息"
 
-#: addon\appModules\unigram.py:1423
+#: addon\appModules\unigram.py:1436
 msgid "Automatic reading of new messages is disabled"
 msgstr "已停用自動讀出新訊息"
 
-#: addon\appModules\unigram.py:1425
+#: addon\appModules\unigram.py:1438
 msgid "Show a list of all UnigramPlus shortcuts"
 msgstr "顯示 UnigramPlus 的所有快速鍵"
 
-#: addon\appModules\unigram.py:1439
+#: addon\appModules\unigram.py:1452
 msgid "List of shortcuts"
 msgstr "快速鍵列表"
 
-#: addon\appModules\unigram.py:1442
+#: addon\appModules\unigram.py:1455
 msgid "Go to the end"
 msgstr "跳轉道底部"
 
-#: addon\appModules\unigram.py:1448
+#: addon\appModules\unigram.py:1461
 msgid "Go to the list with search results"
 msgstr "跳到搜尋結果清單"
 
-#: addon\appModules\unigram.py:1457
+#: addon\appModules\unigram.py:1470
 msgid "Go to the next search result"
 msgstr "跳到下一個搜尋結果"
 
-#: addon\appModules\unigram.py:1463
+#: addon\appModules\unigram.py:1476
 msgid "No next search result"
 msgstr "沒有下一個搜尋結果"
 
-#: addon\appModules\unigram.py:1466
+#: addon\appModules\unigram.py:1479
 msgid "Go to the previous search result"
 msgstr "跳到上一個搜尋結果"
 
-#: addon\appModules\unigram.py:1472
+#: addon\appModules\unigram.py:1485
 msgid "No previous search result"
 msgstr "沒有上一個搜尋結果"
 
@@ -637,42 +669,42 @@ msgid "No updates available"
 msgstr "沒有可用的更新"
 
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:29
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:54
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:55
 msgid "UnigramPlus update"
 msgstr "UnigramPlus 更新"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:55
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:56
 msgid ""
 "A new version of the add-on is available. Do you want to update UnigramPlus "
 "to version %version?"
 msgstr "有可用的 UnigramPlus 新版本，您想要更新 UnigramPlus 到 %version 版嗎？"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:65
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:66
 msgid "Yes, update"
 msgstr "是的，更新"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:66
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:67
 msgid "No, not now"
 msgstr "現在不要"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:81
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:82
 msgid "Download in progress"
 msgstr "正在下載"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:107
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:108
 msgid "Changes in this version:"
 msgstr "這個版本的新版資訊"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:108
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:109
 msgid "No update information"
 msgstr "沒有新版資訊"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:133
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:134
 msgid "Open UnigramPlus settings window"
 msgstr "開啟 UnigramPlus 的設定視窗"
 
 #. Call answer
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:138
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:139
 msgid "Accept call"
 msgstr "接受通話"
 
@@ -850,6 +882,12 @@ msgstr ""
 "這個附加元件新增許多快速鍵用來瀏覽視窗的主要元素，簡化瀏覽聊天訊息，且增加許"
 "多小改進，讓Unigram更容易使用。"
 
+#~ msgid "Not sent"
+#~ msgstr "未傳送"
+
+#~ msgid "Reactions"
+#~ msgstr "表情符號反映"
+
 #~ msgid "Message copied"
 #~ msgstr "訊息已複製到剪貼簿"
 
@@ -861,12 +899,6 @@ msgstr ""
 
 #~ msgid "Inline results not detected"
 #~ msgstr "未找到 Inline 結果"
-
-#~ msgid "Fast forward a voice message"
-#~ msgstr "轉傳訊息"
-
-#~ msgid "Rewind voice message"
-#~ msgstr "慢轉語音訊息"
 
 #~ msgid "Premium"
 #~ msgstr "Premium版"
