@@ -197,18 +197,22 @@ class Title_change_tracking:
 	@classmethod
 	def tick(cls):
 		if not cls.active or cls.pouse: return
-		title = cls.saved_items.get("profile name")
-		if not title or not title.isInForeground:
+		try:
+			title = cls.saved_items.get("profile name")
+			if not title or not title.isInForeground:
+				cls.pouse = True
+				return False
+			last_profile_name = cls.saved_items.get("last profile name") or ("",)
+			if title.childCount > 1 and title.lastChild.name != last_profile_name[-1]:
+				if title.firstChild.name == last_profile_name[0]:
+					# Announce changes only if these changes are not related to switching to another chat
+					text = title.lastChild.name
+					queueHandler.queueFunction(queueHandler.eventQueue, message, text)
+				new_title = [item.name for item in title.children]
+				cls.saved_items.save("last profile name", new_title)
+		except Exception:
 			cls.pouse = True
 			return False
-		last_profile_name = cls.saved_items.get("last profile name") or ("",)
-		if title.childCount > 1 and title.lastChild.name != last_profile_name[-1]:
-			if title.firstChild.name == last_profile_name[0]:
-				# Announce changes only if these changes are not related to switching to another chat
-				text = title.lastChild.name
-				queueHandler.queueFunction(queueHandler.eventQueue, message, text)
-			new_title = [item.name for item in title.children]
-			cls.saved_items.save("last profile name", new_title)
 		Timer(cls.interval, cls.tick).start()
 	@classmethod
 	def toggle(cls, saved_items=False):
@@ -240,34 +244,38 @@ class Chat_update:
 	@classmethod
 	def tick(cls):
 		if not cls.active or cls.pouse: return
-		try : last_message = cls.app.getMessagesElement().lastChild
-		except: last_message = False
-		if not last_message or not last_message.isInForeground:
+		try:
+			try: last_message = cls.app.getMessagesElement().lastChild
+			except: last_message = False
+			if not last_message or not last_message.isInForeground:
+				cls.pouse = True
+				return False
+			# The first item is the name of the chat in which the last message was recorded
+			# The second item is the message index
+			last_saved_message = cls.app.saved_items.get("last message") or ("", "")
+			# If there is a problem getting the message index, terminate the function and call the next iteration
+			try:
+				last_message.positionInfo["indexInGroup"]
+				last_message.positionInfo["similarItemsInGroup"]
+			except:
+				Timer(cls.interval, cls.tick).start()
+				return
+			if last_message.positionInfo["indexInGroup"] != last_saved_message[1] and last_message.positionInfo["indexInGroup"] == last_message.positionInfo["similarItemsInGroup"]:
+				try:
+					title = cls.app.saved_items.get("profile name").firstChild.name
+				except:
+					title = False
+				keywords = keywordsInMessages.get(conf.get("lang"), keywordsInMessages["en"])
+				if ((title == last_saved_message[0]) or not title) and keywords[3] in last_message.name[-60:]:
+					text = cls.app.action_message_focus(last_message.firstChild)
+					queueHandler.queueFunction(queueHandler.eventQueue, message, text)
+				try:
+					new_message = (title, last_message.positionInfo["indexInGroup"])
+					cls.app.saved_items.save("last message", new_message)
+				except: pass
+		except Exception:
 			cls.pouse = True
 			return False
-		# The first item is the name of the chat in which the last message was recorded
-		# The second item is the message index
-		last_saved_message = cls.app.saved_items.get("last message") or ("", "")
-		# If there is a problem getting the message index, terminate the function and call the next iteration
-		try:
-			last_message.positionInfo["indexInGroup"]
-			last_message.positionInfo["similarItemsInGroup"]
-		except:
-			Timer(cls.interval, cls.tick).start()
-			return
-		if last_message.positionInfo["indexInGroup"] != last_saved_message[1] and last_message.positionInfo["indexInGroup"] == last_message.positionInfo["similarItemsInGroup"]:
-			try:
-				title = cls.app.saved_items.get("profile name").firstChild.name
-			except:
-				title = False
-			keywords = keywordsInMessages.get(conf.get("lang"), keywordsInMessages["en"])
-			if ((title == last_saved_message[0]) or not title) and keywords[3] in last_message.name[-60:]:
-				text = cls.app.action_message_focus(last_message.firstChild)
-				queueHandler.queueFunction(queueHandler.eventQueue, message, text)
-			try:
-				new_message = (title, last_message.positionInfo["indexInGroup"])
-				cls.app.saved_items.save("last message", new_message)
-			except: pass
 		Timer(cls.interval, cls.tick).start()
 	@classmethod
 	def toggle(cls, app=False):
@@ -323,6 +331,10 @@ class AppModule(appModuleHandler.AppModule):
 		# Binding reactions to the corresponding hotkeys
 		# for i in range(1,8): self.bindGesture("kb:NVDA+ALT+%d" % i, "set_reaction")
 
+	def terminate(self):
+		Chat_update.active = False
+		Title_change_tracking.active = False
+		super().terminate()
 
 	scriptCategory = "UnigramPlus"
 	profile_panel_element = False
