@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UnigramPlus\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-12-14 22:48+0200\n"
-"PO-Revision-Date: 2023-12-15 00:48+0300\n"
+"POT-Creation-Date: 2025-04-06 01:50+0300\n"
+"PO-Revision-Date: 2025-04-06 01:56+0300\n"
 "Last-Translator: \n"
 "Language-Team: Neyman Agayev\n"
 "Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: appModules\n"
@@ -23,338 +23,379 @@ msgid "Arabic"
 msgstr "Arapça"
 
 #: addon\appModules\cnf.py:13
+msgid "Belarus"
+msgstr "Belarus"
+
+#: addon\appModules\cnf.py:14
 msgid "Czech"
 msgstr "Çekçe"
 
-#: addon\appModules\cnf.py:14
+#: addon\appModules\cnf.py:15
 msgid "English"
 msgstr "İngilizce"
 
-#: addon\appModules\cnf.py:15
+#: addon\appModules\cnf.py:16
 msgid "French"
 msgstr "Fransızca"
 
-#: addon\appModules\cnf.py:16
+#: addon\appModules\cnf.py:17
 msgid "Finnish"
 msgstr "Fince"
 
-#: addon\appModules\cnf.py:17
+#: addon\appModules\cnf.py:18
 msgid "Slovak"
 msgstr "Slovakça"
 
-#: addon\appModules\cnf.py:18
+#: addon\appModules\cnf.py:19
 msgid "Norwegian"
 msgstr "Norveççe"
 
-#: addon\appModules\cnf.py:19
+#: addon\appModules\cnf.py:20
 msgid "German"
 msgstr "Almanca"
 
-#: addon\appModules\cnf.py:20
+#: addon\appModules\cnf.py:21
 msgid "Italian"
 msgstr "İtalyanca"
 
-#: addon\appModules\cnf.py:21
+#: addon\appModules\cnf.py:22
 msgid "Persian"
 msgstr "Farsça"
 
-#: addon\appModules\cnf.py:22
+#: addon\appModules\cnf.py:23
 msgid "Polish"
 msgstr "Polonyaca"
 
-#: addon\appModules\cnf.py:23
+#: addon\appModules\cnf.py:24
 msgid "Portuguese"
 msgstr "Portekizce"
 
-#: addon\appModules\cnf.py:24
+#: addon\appModules\cnf.py:25
 msgid "Russian"
 msgstr "Rusça"
 
-#: addon\appModules\cnf.py:25
+#: addon\appModules\cnf.py:26
 msgid "Spanish"
 msgstr "İspanyolca"
 
-#: addon\appModules\cnf.py:26
+#: addon\appModules\cnf.py:27
 msgid "Turkish"
 msgstr "Türkçe"
 
-#: addon\appModules\cnf.py:27
+#: addon\appModules\cnf.py:28
 msgid "Ukrainian"
 msgstr "Ukraynaca"
 
-#: addon\appModules\cnf.py:28
+#: addon\appModules\cnf.py:29
 msgid "Croatian"
 msgstr "Hırvatça"
 
-#: addon\appModules\cnf.py:29
+#: addon\appModules\cnf.py:30
 msgid "Serbian"
 msgstr "Sırpça"
 
-#: addon\appModules\cnf.py:30
+#: addon\appModules\cnf.py:31
 msgid "Chinese (Traditional)"
 msgstr "Çince (Geleneksel)"
 
-#: addon\appModules\data.py:44
+#: addon\appModules\cnf.py:32
+msgid "Romanian"
+msgstr "Rumence"
+
+#: addon\appModules\data.py:46
 msgid "Back"
 msgstr "Geri"
 
-#: addon\appModules\data.py:45
+#: addon\appModules\data.py:47
 msgid "Menu"
 msgstr "Menü"
 
-#: addon\appModules\data.py:46
+#: addon\appModules\data.py:48
 msgid "Attach"
 msgstr "Ekle"
 
-#: addon\appModules\data.py:47
+#: addon\appModules\data.py:49
 msgid "Edit"
 msgstr "Düzenle"
 
-#: addon\appModules\data.py:48
+#: addon\appModules\data.py:50 addon\appModules\unigram.py:115
 msgid "Photo"
 msgstr "Fotoğraf"
 
-#: addon\appModules\data.py:49 addon\appModules\unigram.py:1100
+#: addon\appModules\data.py:51 addon\appModules\unigram.py:1101
 msgid "Image"
 msgstr "Görüntü"
 
-#: addon\appModules\data.py:50
+#: addon\appModules\data.py:52
 msgid "Invite link"
 msgstr "Davet bağlantısı"
 
-#: addon\appModules\data.py:51
+#: addon\appModules\data.py:53
 msgid "Choose time"
 msgstr "Zamanı ayarla"
 
-#: addon\appModules\data.py:52
+#: addon\appModules\data.py:54
 msgid "Title field"
 msgstr "Başlık"
 
-#: addon\appModules\data.py:56
+#: addon\appModules\data.py:58
 msgid "Go to next reaction"
 msgstr "Sonraki tepkiye git"
 
-#: addon\appModules\data.py:57
+#: addon\appModules\data.py:59
 msgid "Insert emojis"
 msgstr "Emoji ekle"
 
-#: addon\appModules\data.py:58
+#: addon\appModules\data.py:60
 msgid "Done"
 msgstr "Bitti"
 
-#: addon\appModules\data.py:59
+#: addon\appModules\data.py:61
 msgid "Next"
 msgstr "Ileri"
 
-#: addon\appModules\data.py:60
+#: addon\appModules\data.py:62
 msgid "Merge files"
 msgstr "Dosyaları birleştir"
 
-#: addon\appModules\data.py:61
+#: addon\appModules\data.py:63
 msgid "Search"
 msgstr "Ara"
 
-#: addon\appModules\data.py:62
+#: addon\appModules\data.py:64
 msgid "Delete"
 msgstr "Sil"
 
-#: addon\appModules\data.py:63
+#: addon\appModules\data.py:65
 msgid "Close"
 msgstr "Kapat"
 
-#: addon\appModules\unigram.py:39 addon\appModules\unigram.py:695
+#: addon\appModules\unigram.py:40 addon\appModules\unigram.py:725
 msgid "Camera on"
 msgstr "Kamera açık"
 
-#: addon\appModules\unigram.py:39 addon\appModules\unigram.py:696
+#: addon\appModules\unigram.py:40 addon\appModules\unigram.py:726
 msgid "Camera off"
 msgstr "Kamera kapalı"
 
-#: addon\appModules\unigram.py:55
+#: addon\appModules\unigram.py:58
 msgid "Announce the original message, the message that was replied to"
 msgstr "Yanıtlanan mesajı  oku"
 
-#: addon\appModules\unigram.py:63
+#: addon\appModules\unigram.py:69
 msgid "Show message text in popup window"
 msgstr "Açılır pencerede mesaj metnini göster"
 
-#: addon\appModules\unigram.py:67 addon\appModules\unigram.py:732
-msgid "message text"
-msgstr "mesaj metnin"
-
-#: addon\appModules\unigram.py:68 addon\appModules\unigram.py:719
-#: addon\appModules\unigram.py:733
+#: addon\appModules\unigram.py:74 addon\appModules\unigram.py:749
+#: addon\appModules\unigram.py:763
 msgid "This message does not contain text"
 msgstr "Bu  mesaj metin içermiyor"
 
-#: addon\appModules\unigram.py:70
+#: addon\appModules\unigram.py:82 addon\appModules\unigram.py:762
+msgid "message text"
+msgstr "mesaj metnin"
+
+#: addon\appModules\unigram.py:84
 msgid "Open comments"
 msgstr "Yorumları aç"
 
-#: addon\appModules\unigram.py:76
+#: addon\appModules\unigram.py:90
 msgid "Button to open comments not found"
 msgstr "Yorum açma düğmesi bulunamadı"
 
-#: addon\appModules\unigram.py:78
+#: addon\appModules\unigram.py:92
 msgid "Edit message"
 msgstr "Mesajı düzenle"
 
-#: addon\appModules\unigram.py:82
+#: addon\appModules\unigram.py:96
 msgid "Reply to message"
 msgstr "Mesajı yanıtla"
 
+#: addon\appModules\unigram.py:116 addon\appModules\unigram.py:868
+msgid "Video"
+msgstr "Görüntülü mesaj"
+
+#: addon\appModules\unigram.py:122
+msgid ""
+"Announces the time a message was sent or received, as well as a list of "
+"reactions. Double-clicking toggles the announcement mode for this "
+"information."
+msgstr ""
+"Bir mesajın gönderildiğini veya alındığını ve tepkilerin  sayısını    "
+"seslendirir . Çift tıklamak bu bilginin  seslendirme modunu değiştirir."
+
+#: addon\appModules\unigram.py:128
+msgid ""
+"The display of message sending or receiving time and the list of installed "
+"emojis is enabled."
+msgstr ""
+"Mesajların gönderilme veya alınma zamanının ve   tepkilerin  sayısının  "
+"seslendirilmesi etkinleştirildi."
+
+#: addon\appModules\unigram.py:129
+msgid ""
+"The display of message sending or receiving time and the list of installed "
+"emojis is  disabled."
+msgstr ""
+"Mesajların gönderilme veya alınma zamanının ve   tepkilerin  sayısının  "
+"seslendirilmesi devre dışı bırakıldı."
+
 #. message(obj.name)
-#: addon\appModules\unigram.py:163
+#: addon\appModules\unigram.py:176
 msgid "Explanation"
 msgstr "Açıklama"
 
 #. The function of changing the playback speed of a voice message
-#: addon\appModules\unigram.py:388
+#: addon\appModules\unigram.py:420
 msgid "Increase/decrease the playback speed of voice messages"
 msgstr "Sesli mesaj çalma hızını hızlandırın/yavaşlatın"
 
-#: addon\appModules\unigram.py:397 addon\appModules\unigram.py:409
-#: addon\appModules\unigram.py:419 addon\appModules\unigram.py:1328
-#: addon\appModules\unigram.py:1341
+#: addon\appModules\unigram.py:426 addon\appModules\unigram.py:438
+#: addon\appModules\unigram.py:448 addon\appModules\unigram.py:1338
+#: addon\appModules\unigram.py:1354
 msgid "Nothing is playing right now"
 msgstr "Şu anda hiçbir şey oynatılmıyor"
 
 #. Audio player close function
-#: addon\appModules\unigram.py:400
+#: addon\appModules\unigram.py:429
 msgid "Close audio player"
 msgstr "Ses oynatıcıyı kapat"
 
-#: addon\appModules\unigram.py:408
+#: addon\appModules\unigram.py:437
 msgid "The audio player has been closed"
 msgstr "Ses oynatıcı kapatıldı"
 
 #. Voice message pause function
-#: addon\appModules\unigram.py:412
+#: addon\appModules\unigram.py:441
 msgid "Play/pause the voice message currently playing"
 msgstr "Şu anda çalınan sesli mesajı Oynat / Duraklat"
 
 #. Go to chat list
-#: addon\appModules\unigram.py:447
+#: addon\appModules\unigram.py:484
 msgid "Move focus to chat list"
 msgstr "Odağı sohbet listesine taşı"
 
-#: addon\appModules\unigram.py:471
+#. contacts_list = self.get_contacts_list()
+#. if contacts_list:
+#. contacts_list.setFocus()
+#. return True
+#: addon\appModules\unigram.py:503
 msgid "Chat list not found"
 msgstr "Sohbet listesi bulunamadı"
 
-#: addon\appModules\unigram.py:479
+#: addon\appModules\unigram.py:511
 msgid "Chat list is empty"
 msgstr "Sohbet listesi boş"
 
 #. Go to the last message in the chat
-#: addon\appModules\unigram.py:482
+#: addon\appModules\unigram.py:514
 msgid "Move focus to the last message in an open chat"
 msgstr "Odağı sohbetteki son mesaja taşı"
 
-#: addon\appModules\unigram.py:495 addon\appModules\unigram.py:598
-#: addon\appModules\unigram.py:1013 addon\appModules\unigram.py:1026
+#: addon\appModules\unigram.py:527 addon\appModules\unigram.py:628
+#: addon\appModules\unigram.py:1034 addon\appModules\unigram.py:1047
 msgid "This chat is empty"
 msgstr "Bu sohbet boş"
 
-#: addon\appModules\unigram.py:509 addon\appModules\unigram.py:589
-#: addon\appModules\unigram.py:597 addon\appModules\unigram.py:801
-#: addon\appModules\unigram.py:1009
+#: addon\appModules\unigram.py:541 addon\appModules\unigram.py:619
+#: addon\appModules\unigram.py:627 addon\appModules\unigram.py:830
+#: addon\appModules\unigram.py:1030
 msgid "No open chat"
 msgstr "Açık sohbet yok"
 
 #. Move focus to the list of chat folders
-#: addon\appModules\unigram.py:512
+#: addon\appModules\unigram.py:544
 msgid "Move focus to list of chat folders"
 msgstr "Odağı klasör listesine taşı"
 
-#: addon\appModules\unigram.py:518 addon\appModules\unigram.py:526
-#: addon\appModules\unigram.py:527
+#: addon\appModules\unigram.py:550 addon\appModules\unigram.py:558
+#: addon\appModules\unigram.py:559
 msgid "Chat folder list not found"
 msgstr "Klasör listesi bulunamadı"
 
-#: addon\appModules\unigram.py:537
+#: addon\appModules\unigram.py:567
 msgid "Move focus to the list of group threads"
 msgstr "Odağı grup konuları listesine taşı"
 
-#: addon\appModules\unigram.py:541
+#: addon\appModules\unigram.py:571
 msgid "No list with threads was found"
 msgstr "Konuların bulunduğu liste bulunamadı"
 
 #. Move focus to open profile
-#: addon\appModules\unigram.py:562
+#: addon\appModules\unigram.py:592
 msgid "Move focus to open profile"
 msgstr "Odağı  açık profile taşı"
 
-#: addon\appModules\unigram.py:566
+#: addon\appModules\unigram.py:596
 msgid "There is no open profile"
 msgstr "Açık profil yok"
 
 #. Announces the profile name and status in an open chat
-#: addon\appModules\unigram.py:569
+#: addon\appModules\unigram.py:599
 msgid "Announce the name and status of an open chat"
 msgstr "Açık bir sohbetin adını ve durumunu duyur"
 
-#: addon\appModules\unigram.py:572
+#: addon\appModules\unigram.py:602
 msgid "Chat activity tracking is enabled"
 msgstr "Sohbet etkinliği izleme etkinleştirildi"
 
-#: addon\appModules\unigram.py:573
+#: addon\appModules\unigram.py:603
 msgid "Chat activity tracking is disabled"
 msgstr "Sohbet etkinliği izleme devre dışı bırakıldı"
 
 #. Go to "unread messages" label
-#: addon\appModules\unigram.py:592
+#: addon\appModules\unigram.py:622
 msgid "Move focus to 'unread messages' label"
 msgstr "Odağı \"okunmamış mesajlar\" etiketine taşı\""
 
-#: addon\appModules\unigram.py:607
+#: addon\appModules\unigram.py:637
 msgid "There are no unread messages in this chat"
 msgstr "Bu sohbette okunmamış mesaj yok"
 
 #. Call if it's a contact, or enter a voice chat if it's a group
-#: addon\appModules\unigram.py:610
+#: addon\appModules\unigram.py:640
 msgid "Call if it's a contact, or enter a voice chat if it's a group"
 msgstr ""
 "Özel bir sohbet ise  arayın veya bir grup ise sesli sohbete giriş yapın"
 
-#: addon\appModules\unigram.py:615
+#: addon\appModules\unigram.py:645
 msgid "Call unavailable"
 msgstr "Arama düğmesi bulunamadı"
 
 #. Make a video call if it's a contact
-#: addon\appModules\unigram.py:618
+#: addon\appModules\unigram.py:648
 msgid "Press the video call button"
 msgstr "Görüntülü arama düğmesine tıklayın"
 
-#: addon\appModules\unigram.py:622
+#: addon\appModules\unigram.py:652
 msgid "Video call not available"
 msgstr "Görüntülü arama düymesi bulunamadı"
 
 #. Function to open instant view
-#: addon\appModules\unigram.py:625
+#: addon\appModules\unigram.py:655
 msgid "Press \"Instant view\" button, if it is included in the current message"
 msgstr "Mevcut  mesajda \"Anlık görünüm\" düğmesi varsa, tıklayın"
 
-#: addon\appModules\unigram.py:636 addon\appModules\unigram.py:760
-#: addon\appModules\unigram.py:767 addon\appModules\unigram.py:775
-#: addon\appModules\unigram.py:1417 addon\appModules\unigram.py:1446
-#: addon\appModules\unigram.py:1455 addon\appModules\unigram.py:1464
-#: addon\appModules\unigram.py:1473
+#: addon\appModules\unigram.py:666 addon\appModules\unigram.py:790
+#: addon\appModules\unigram.py:797 addon\appModules\unigram.py:805
+#: addon\appModules\unigram.py:1430 addon\appModules\unigram.py:1459
+#: addon\appModules\unigram.py:1468 addon\appModules\unigram.py:1477
+#: addon\appModules\unigram.py:1486
 msgid "Button not found"
 msgstr "Düğme bulunamadı"
 
 #. Mute/unmute the microphone
-#: addon\appModules\unigram.py:651
+#: addon\appModules\unigram.py:681
 msgid "Press \"Mute/unmute microphone\" button"
 msgstr "Mikrofonu\" \"Aç/kapat düğmesine tıklayın"
 
 #. Turn off/on the camera
-#: addon\appModules\unigram.py:677
+#: addon\appModules\unigram.py:707
 msgid "Press \"Enable/disable camera\" button"
 msgstr "\"Kamerayı etkinleştir / devre dışı bırak\" düğmesine basın"
 
 #. Copy current message to clipboard
-#: addon\appModules\unigram.py:705
+#: addon\appModules\unigram.py:735
 msgid ""
 "Copy the message if it contains text. If the focus is on a link, the link "
 "will be copied"
@@ -362,12 +403,12 @@ msgstr ""
 "Metin içeriyorsa, iletiyi kopyalayın. Odak bir bağlantı üzerindeyse, "
 "bağlantı kopyalanır"
 
-#: addon\appModules\unigram.py:714
+#: addon\appModules\unigram.py:744
 msgid "Link copied"
 msgstr "Bağlantı kopyalandı"
 
 #. Move the focus to the message input field. If the focus is already in this field, then move it to the last element that had focus before this field
-#: addon\appModules\unigram.py:736
+#: addon\appModules\unigram.py:766
 msgid ""
 "Move the focus to the edit field. If the focus is already in the edit field, "
 "then after pressing the hotkey, it will move to where it was before"
@@ -375,270 +416,264 @@ msgstr ""
 "Odağı  metin alanına taşıyın. Odak zaten  metin alanındaysa, kısayol "
 "tuşlarına bastıktan sonra daha önce olduğu yere taşınır"
 
-#: addon\appModules\unigram.py:753
+#: addon\appModules\unigram.py:783
 msgid "Message input field not found"
 msgstr "Mesaj giriş alanı bulunamadı"
 
 #. Press the "Attach media" button
-#: addon\appModules\unigram.py:756
+#: addon\appModules\unigram.py:786
 msgid "Press \"Attach file\" button"
 msgstr "\"Dosya ekle\" düğmesine basın"
 
 #. Press the "New Conversation" button
-#: addon\appModules\unigram.py:763
+#: addon\appModules\unigram.py:793
 msgid "Press \"New conversation\" button"
 msgstr "\"Yeni sohbet\" düğmesine basın"
 
 #. Open navigation menu
-#: addon\appModules\unigram.py:778
+#: addon\appModules\unigram.py:808
 msgid "Open navigation menu"
 msgstr "Gezinti menüsünü aç"
 
-#: addon\appModules\unigram.py:784
+#: addon\appModules\unigram.py:814
 msgid "Navigation menu not available"
 msgstr "Gezinti menüsü mevcut değil"
 
 #. Function to open the profile of the current chat
-#: addon\appModules\unigram.py:787
+#: addon\appModules\unigram.py:817
 msgid "Open current chat profile"
 msgstr "Mevcut sohbetin profilini aç"
 
-#: addon\appModules\unigram.py:817
+#: addon\appModules\unigram.py:848
 #, fuzzy
-#| msgid ""
-#| "It will not be possible to record a voice message until the edit field is "
-#| "empty"
 msgid ""
 "Recording a voice message will not be available until the edit field is empty"
 msgstr "Metin alanı boşalana kadar sesli mesaj kayıt edilmeyecektir"
 
-#: addon\appModules\unigram.py:824
+#: addon\appModules\unigram.py:857
 msgid "Record sent"
 msgstr "Sesli mesaj gönderildi"
 
-#: addon\appModules\unigram.py:829
-msgid "Video"
-msgstr "Görüntülü mesaj"
-
-#: addon\appModules\unigram.py:830
+#: addon\appModules\unigram.py:871
 msgid "Audio"
 msgstr "Sesli mesaj"
 
-#: addon\appModules\unigram.py:847
+#: addon\appModules\unigram.py:890
 msgid "Voice recording notifications set to text"
 msgstr "Sesli mesaj kayıt bildirimleri yazılı olarak  ayarlanır"
 
-#: addon\appModules\unigram.py:850
+#: addon\appModules\unigram.py:893
 msgid "Voice recording notifications set to sounds"
 msgstr "Sesli mesaj kayıt bildirimleri sesli olarak ayarlanır"
 
-#: addon\appModules\unigram.py:853
+#: addon\appModules\unigram.py:896
 msgid "Recording voice messages has standard behavior"
 msgstr "Sesli mesaj kayıt bildirimleri  standart olarak ayarlanır"
 
-#: addon\appModules\unigram.py:863
+#: addon\appModules\unigram.py:906
 msgid "Reply canceled"
 msgstr "Yanıt iptal edildi"
 
-#: addon\appModules\unigram.py:864
+#: addon\appModules\unigram.py:907
 msgid "Edit canceled"
 msgstr "Düzenleme iptal edildi"
 
-#: addon\appModules\unigram.py:867
+#: addon\appModules\unigram.py:910
 msgid "Recording canceled"
 msgstr "Kayıt iptal edildi"
 
-#: addon\appModules\unigram.py:896
+#: addon\appModules\unigram.py:934
 msgid "Answer options"
 msgstr "Cevap seçenekleri"
 
-#: addon\appModules\unigram.py:938
+#: addon\appModules\unigram.py:964
 msgid "You"
 msgstr "Siz"
 
-#: addon\appModules\unigram.py:946
-msgid "Not sent"
-msgstr "Gönderilmedi"
-
-#: addon\appModules\unigram.py:969
-msgid "Reactions"
-msgstr "Tepkiler"
-
 #. Check if a message is selected
-#: addon\appModules\unigram.py:976
+#: addon\appModules\unigram.py:993
 msgid "Selected"
 msgstr "Seçili"
 
 #. Change the announce level of progress bars
-#: addon\appModules\unigram.py:994
+#: addon\appModules\unigram.py:1015
 msgid "Toggle progress bar announcements"
 msgstr "Aşama çubuğu  bildirimlerini değiştir"
 
-#: addon\appModules\unigram.py:998
+#: addon\appModules\unigram.py:1019
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:178
 msgid "Announce all progress bars"
 msgstr "Tüm Aşama çubuklarını seslendir"
 
-#: addon\appModules\unigram.py:1001
+#: addon\appModules\unigram.py:1022
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:179
 msgid "Do not announce any progress bars"
 msgstr "Herhangi bir Aşama çubuğu bildirimlerini  seslendirme"
 
-#: addon\appModules\unigram.py:1114
+#: addon\appModules\unigram.py:1112
 msgid "Editing"
 msgstr "Düzenleme"
 
-#: addon\appModules\unigram.py:1115
+#: addon\appModules\unigram.py:1113
 msgid "Reply"
 msgstr "Yanıt"
 
-#: addon\appModules\unigram.py:1124
+#: addon\appModules\unigram.py:1122
 msgid "Duration"
 msgstr "Süre"
 
-#: addon\appModules\unigram.py:1125
+#: addon\appModules\unigram.py:1123
 msgid "Size"
 msgstr "Boyut"
 
-#: addon\appModules\unigram.py:1137
+#: addon\appModules\unigram.py:1135
 msgid "Enable video"
 msgstr "Videoyu etkinleştir"
 
-#: addon\appModules\unigram.py:1138
+#: addon\appModules\unigram.py:1136
 msgid "Disable video"
 msgstr "Videoyu devre dışı bırak"
 
-#: addon\appModules\unigram.py:1222
+#: addon\appModules\unigram.py:1224
 msgid "Delete a message or chat"
 msgstr "Mesajı veya sohbeti kaldır"
 
-#: addon\appModules\unigram.py:1225
+#: addon\appModules\unigram.py:1227
 msgid "Delete message or chat from both sides"
 msgstr "Her iki taraf için  mesajı veya sohbeti kaldır"
 
-#: addon\appModules\unigram.py:1228
+#: addon\appModules\unigram.py:1230
 msgid "Switch to selection mode"
 msgstr "Seçim moduna geç"
 
-#: addon\appModules\unigram.py:1231
+#: addon\appModules\unigram.py:1233
 msgid "Forward message"
 msgstr "Mesajı ilet"
 
-#: addon\appModules\unigram.py:1234
+#: addon\appModules\unigram.py:1236
 msgid "Mark a chat as read"
 msgstr "Sohbeti okundu olarak işaretle"
 
-#: addon\appModules\unigram.py:1237
+#: addon\appModules\unigram.py:1239
 msgid "Save file as..."
 msgstr "Dosyayı farklı kaydet..."
 
-#: addon\appModules\unigram.py:1240
+#: addon\appModules\unigram.py:1242
 msgid "Pin a message or chat"
 msgstr "Mesajı veya sohbeti sabitle"
 
-#: addon\appModules\unigram.py:1263
+#: addon\appModules\unigram.py:1273
 msgid "Message deleted on both sides"
 msgstr "Her iki taraf  için mesaj kaldırıldı"
 
-#: addon\appModules\unigram.py:1264
+#: addon\appModules\unigram.py:1274
 msgid "Message deleted"
 msgstr "Mesaj kaldırıldı"
 
-#: addon\appModules\unigram.py:1267
+#: addon\appModules\unigram.py:1277
 msgid "You left the group"
 msgstr "Gruptan ayrıldınız"
 
-#: addon\appModules\unigram.py:1268
+#: addon\appModules\unigram.py:1278
 msgid "You left the channel"
 msgstr "Kanaldan ayrıldınız"
 
-#: addon\appModules\unigram.py:1269
+#: addon\appModules\unigram.py:1279
 msgid "Bot removed and blocked"
 msgstr "Bot kaldırıldı ve engellendi"
 
-#: addon\appModules\unigram.py:1270
+#: addon\appModules\unigram.py:1280
 msgid "Bot removed"
 msgstr "Bot kaldırıldı"
 
-#: addon\appModules\unigram.py:1271
+#: addon\appModules\unigram.py:1281
 msgid "Chat deleted on both sides"
 msgstr "Sohbet her iki tarafta da kaldırıldı"
 
-#: addon\appModules\unigram.py:1272
+#: addon\appModules\unigram.py:1282
 msgid "Chat deleted"
 msgstr "Sohbet kaldırıldı"
 
 #. Data copy function for broadcasting
-#: addon\appModules\unigram.py:1305
+#: addon\appModules\unigram.py:1315
 msgid "Copy data for broadcasting to the clipboard"
 msgstr "Yayın yapmak için gerekli verileri panoya kopyala"
 
-#: addon\appModules\unigram.py:1309 addon\appModules\unigram.py:1313
+#: addon\appModules\unigram.py:1319 addon\appModules\unigram.py:1323
 msgid "Broadcast window not found"
 msgstr "Yayın penceresi bulunamadı"
 
-#: addon\appModules\unigram.py:1319
+#: addon\appModules\unigram.py:1329
 msgid "%url and %key copied to clipboard"
 msgstr "%url ve %key panoya kopyalandı"
 
-#: addon\appModules\unigram.py:1379
+#: addon\appModules\unigram.py:1365
+msgid "Fast forward a voice message"
+msgstr "Sesli mesajı ileri sar"
+
+#: addon\appModules\unigram.py:1369
+msgid "Rewind voice message"
+msgstr "Sesli mesajı geri sar"
+
+#. This is necessary for this phrase to appear in the translation dictionary
+#: addon\appModules\unigram.py:1392 addon\appModules\unigram.py:1393
 msgid "Right answer"
 msgstr "Doğru cevap"
 
 #. Converting voice messages to text
-#: addon\appModules\unigram.py:1402
+#: addon\appModules\unigram.py:1415
 msgid "Convert voice message to text"
 msgstr "Sesli mesajı metne dönüştür"
 
-#: addon\appModules\unigram.py:1409
+#: addon\appModules\unigram.py:1422
 msgid "This voice message is already converted to text"
 msgstr "Bu sesli mesaj zaten metne dönüştürüldü"
 
-#: addon\appModules\unigram.py:1410
+#: addon\appModules\unigram.py:1423
 msgid "Converting this voice message is already in process"
 msgstr "Bu sesli mesajı dönüştürme işlemi zaten devam ediyor"
 
-#: addon\appModules\unigram.py:1420
+#: addon\appModules\unigram.py:1433
 msgid "Enable automatic reading of new messages in the current chat"
 msgstr "Mevcut sohbette yeni mesajların otomatik olarak okunmasını etkinleştir"
 
-#: addon\appModules\unigram.py:1422
+#: addon\appModules\unigram.py:1435
 msgid "Automatic reading of messages is enabled"
 msgstr "Yeni mesajların otomatik okunması etkinleştirildi"
 
-#: addon\appModules\unigram.py:1423
+#: addon\appModules\unigram.py:1436
 msgid "Automatic reading of new messages is disabled"
 msgstr "Yeni mesajların otomatik okunması devre dışı bırakıldı"
 
-#: addon\appModules\unigram.py:1425
+#: addon\appModules\unigram.py:1438
 msgid "Show a list of all UnigramPlus shortcuts"
 msgstr "Tüm UnigramPlus kısayollarının listesini göster"
 
-#: addon\appModules\unigram.py:1439
+#: addon\appModules\unigram.py:1452
 msgid "List of shortcuts"
 msgstr "Kısayolların listesi"
 
-#: addon\appModules\unigram.py:1442
+#: addon\appModules\unigram.py:1455
 msgid "Go to the end"
 msgstr "Sonuna git"
 
-#: addon\appModules\unigram.py:1448
+#: addon\appModules\unigram.py:1461
 msgid "Go to the list with search results"
 msgstr "Arama sonuçlarını içeren listeye gid"
 
-#: addon\appModules\unigram.py:1457
+#: addon\appModules\unigram.py:1470
 msgid "Go to the next search result"
 msgstr "Bir sonraki arama sonucuna git"
 
-#: addon\appModules\unigram.py:1463
+#: addon\appModules\unigram.py:1476
 msgid "No next search result"
 msgstr "Sonraki arama sonucu yok"
 
-#: addon\appModules\unigram.py:1466
+#: addon\appModules\unigram.py:1479
 msgid "Go to the previous search result"
 msgstr "Bir önceki arama sonucuna git"
 
-#: addon\appModules\unigram.py:1472
+#: addon\appModules\unigram.py:1485
 msgid "No previous search result"
 msgstr "Önceki arama sonucu yok"
 
@@ -647,11 +682,11 @@ msgid "No updates available"
 msgstr "Mevcut güncelleme yok"
 
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:29
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:54
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:55
 msgid "UnigramPlus update"
 msgstr "UnigramPlus güncellemesi"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:55
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:56
 msgid ""
 "A new version of the add-on is available. Do you want to update UnigramPlus "
 "to version %version?"
@@ -659,32 +694,32 @@ msgstr ""
 "UnigramPlus  eklentisinin  yeni bir sürümü mevcuttur. Güncellemek ister "
 "misiniz %version sürümüne?"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:65
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:66
 msgid "Yes, update"
 msgstr "Evet, güncelle"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:66
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:67
 msgid "No, not now"
 msgstr "Hayır, şimdi değil"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:81
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:82
 msgid "Download in progress"
 msgstr "İndirme işlemi devam ediyor"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:107
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:108
 msgid "Changes in this version:"
 msgstr "Bu sürümdeki değişiklikler:"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:108
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:109
 msgid "No update information"
 msgstr "Güncelleme bilgisi yok"
 
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:133
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:134
 msgid "Open UnigramPlus settings window"
 msgstr "UnigramPlus ayarları penceresini aç"
 
 #. Call answer
-#: addon\GlobalPlugins\UnigramPlus\__init__.py:138
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:139
 msgid "Accept call"
 msgstr "Aramayı Cevapla"
 
@@ -748,7 +783,6 @@ msgstr "Gönderilen son mesajın düzenlenmesini etkinleştir"
 
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:191
 #, fuzzy
-#| msgid "Move focus to the last message in an open chat"
 msgid "Move focus to the last message in a chat"
 msgstr "Odağı sohbetteki son mesaja taşı"
 
@@ -859,10 +893,6 @@ msgstr "UnigramPlus"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
 #, fuzzy
-#| msgid ""
-#| "This add-on adds a lot of hotkeys for quick navigation through the main "
-#| "elements of the window, easy interaction with Chat messages, and also "
-#| "adds many minor improvements that make working in Unigram much easier"
 msgid ""
 "This add-on adds a lot of hotkeys for quick navigation through the main "
 "elements of the Unigram application, convenient interaction with Chat "
@@ -872,6 +902,12 @@ msgstr ""
 "Bu eklenti, pencerenin ana öğelerinde hızlı bir şekilde gezinmek için birçok "
 "kısayol tuşu ekler, sohbet mesajlarıyla kolay etkileşim sağlar ve Unigram'da "
 "çalışmayı çok daha kolay hale getiren birçok küçük iyileştirme ekler"
+
+#~ msgid "Not sent"
+#~ msgstr "Gönderilmedi"
+
+#~ msgid "Reactions"
+#~ msgstr "Tepkiler"
 
 #~ msgid "Message copied"
 #~ msgstr "Mesaj kopyalandı"
@@ -884,12 +920,6 @@ msgstr ""
 
 #~ msgid "Inline results not detected"
 #~ msgstr "Satır içi sonuçlar algılanmadı"
-
-#~ msgid "Fast forward a voice message"
-#~ msgstr "Sesli mesajı ileri sar"
-
-#~ msgid "Rewind voice message"
-#~ msgstr "Sesli mesajı geri sar"
 
 #~ msgid "Announce if there is a reply in the group"
 #~ msgstr "Grupta sizin için  yanıtlar varsa, bildir"

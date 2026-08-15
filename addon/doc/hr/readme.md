@@ -60,7 +60,7 @@ I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno p
 * Control+Razmaknica: Prebacuje na način odabira.
 * Alt+Shift+L: Kopira podatke za emitiranje u međuspremnik;
 * Alt+C: Prikazuje poruku u skočnom prozoru;
-* NVDA+Control+U: Otvara prozor postavki UnigramPlusa;
+* NVDA+Alt+U: Otvara prozor postavki UnigramPlusa;
 * Alt+4: Premješta fokus na popis mapa razgovora;
 * Control+Shift+A: Pritišće gumb "Priloži datoteku";
 * Control+N: Pritišće gumb "Novi razgovor";
@@ -73,7 +73,8 @@ I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno p
 * Alt+H: Prikazuje popis svih prečaca UnigramPlus dodatka;
 * Alt+I: Otvara popis rezultata pretraživanja;
 * Alt+J: Prelazi na prethodni rezultat pretraživanja u razgovoru;
-* Alt+L: Prelazi na sljedeći rezultat pretraživanja u razgovoru.
+* Alt+K: Prelazi na sljedeći rezultat pretraživanja u razgovoru.
+
 
 ### Napomena
 
@@ -81,6 +82,16 @@ I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno p
 * Činjenica da funkcija koja fokusira pokazivač na oznaku "nepročitana poruka" ponekad može reagirati sa zakašnjenjem je poznati problem. To može ovisiti o broju poruka u trenutku.
 
 	##Popis promjena:
+
+### Verzija 5.2.0
+
+* Dodana je mogućnost odabira datoteka priloženih porukama strelicama lijevo i desno i otvaranja odabrane datoteke razmaknicom.
+* Sada se poveznice u porukama neće čitati u cijelosti, već samo do upitnika.
+* Sada, kada zatvorite preglednik fotografija ili videa, UnigramPlus će pokušati postaviti fokus na poruku koju ste gledali.
+* Tipkovni prečac za otvaranje UnigramPlus postavki je promijenjen. Sada je ova značajka dodijeljena kombinaciji NVDA+Alt+U.
+* Izvršena je optimizacija koda, što je rezultiralo značajno poboljšanim vremenom odgovora pri kretanju popisom razgovora i popisom poruka. To je posebno vidljivo na porukama koje sadrže mnogo ugniježđenih elemenata.
+* Popravljeni su mnogi manji problemi.
+* Mnogo zastarjelog koda je uklonjeno.
 
 ### Verzija 5.1.0
 
