@@ -47,7 +47,7 @@ And remember that everyone who read this line thought that someone will definite
 * control+R: Start/stop voice message recording;
 * control+D: If pressed once, cancels the recording of a voice message. If pressed twice, changes the notification type when starting, sending, or canceling a voice message recording;
 * ALT+U: Toggle progress bar announcements;
-* control+P: Open current chat profile;
+* ALT+shift+P: Open current chat profile;
 * delete: Delete a message or chat;
 * shift+delete: Delete message or chat from both sides;
 * control+ALT+C: Open comments;
@@ -70,10 +70,23 @@ And remember that everyone who read this line thought that someone will definite
 * ALT+6: Move focus to the list of group threads.
 * ALT+H: Show a list of all UnigramPlus shortcuts.
 * ALT+I: Open a list of chat search results.
-* ALT+J: Go to the previous search result in the chat.
-* ALT+K: Go to the next search result in the chat.
+* shift+F3: Go to the previous search result in the chat.
+* F3: Go to the next search result in the chat.
+* ALT+W: Announces the time a message was sent or received, as well as a list of reactions. Double-clicking toggles the announcement mode for this information.
 
 ## List of changes:
+
+### Version 5.3.0
+
+* Added a keyboard shortcut that announces the sending time or receiving time of a message and reactions in the message. This is useful when you want to hear the sending or receiving time of a message without re-listening to the full text of the message beforehand. By default, this is the ALT W key combination. Double-clicking toggles the mode of announcing this information.
+* Fixed all the issues that have accumulated recently as a result of changes in the Unigram interface.
+* Changed the keyboard shortcut for opening a user profile to ALT shift P.
+* Changed the keyboard shortcuts for navigating to the next and previous search results to F3 and shift F3, as in most applications.
+* Added compatibility with NVDA 2024.4.
+
+### Version 5.2.5
+
+* Compatibility of the add-on with the latest version of Unigram has been implemented.
 
 ### Version 5.2.0
 

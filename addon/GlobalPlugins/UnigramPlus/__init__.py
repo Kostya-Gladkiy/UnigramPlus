@@ -140,7 +140,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_answeringCall(self, gesture):
 		gesture.send()
 		desctop = api.getDesktopObject()
-		# notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
 		notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "ToastCenterScrollViewer"), False)
 		if not notification:
 			return
@@ -152,15 +151,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_callCancellation(self, gesture):
 		gesture.send()
 		desctop = api.getDesktopObject()
-		# notification = next((item.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "PriorityToastView"), False)
 		notification = next((item.firstChild.firstChild for item in desctop.children if item.firstChild and hasattr(item.firstChild, "UIAAutomationId") and item.firstChild.UIAAutomationId == "ToastCenterScrollViewer"), False)
-		button = None
-		if notification:
-			button = next((item.next for item in notification.children if item.UIAAutomationId == "VerbButton"), None)
+		if not notification:
+			AppModule.script_callCancellation(AppModule, gesture)
+			return
+		button = next((item.next for item in notification.children if item.UIAAutomationId == "VerbButton"), None)
 		if button:
 			button.doAction()
 			return
-		AppModule.script_callCancellation(AppModule, gesture)
+		
 
 
 class UnigramPlusSettings(SettingsPanel):
