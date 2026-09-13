@@ -28,6 +28,12 @@ keywordsInMessages = {
 	"ro": (". Citit", ". Necitit.", ", Trimis la ", ", Primit la ", ", Trimis la ", ", Primit la "),
 }
 
+# Icons on the audio player header. Current Unigram gives its close button no
+# automation id and a localized name, so its glyph is what identifies it.
+icons_in_audio_player = {
+	"close": "",
+}
+
 icons_from_context_menu = {
 	"attach": "\ue840",
 	"unpin": "\ue77a",

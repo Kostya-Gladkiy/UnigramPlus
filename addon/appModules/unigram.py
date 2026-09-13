@@ -429,10 +429,23 @@ class AppModule(appModuleHandler.AppModule):
 		else: message(_("Nothing is playing right now"))
 
 	# Audio player close function
+	def get_audio_player_close_button(self):
+		# Current Unigram has no ShuffleButton to anchor on, and its close button has
+		# no automation id and a localized name, so it is found by its icon. The
+		# PlaybackButton must be present, so no other close button can be picked
+		# while no player is open.
+		elements = self.getElements()
+		if not next((item for item in elements if item.UIAAutomationId == "PlaybackButton"), None): return False
+		for item in elements:
+			try:
+				if item.role == Role.BUTTON and not item.UIAAutomationId and item.firstChild and item.firstChild.name == icons_in_audio_player["close"]:
+					return item
+			except: pass
+		return False
+
 	@script(description=_("Close audio player"), gesture="kb:ALT+E")
 	def script_closingVoiceMessage(self, gesture, isMessage = True):
-		try: targetButton = next((item for item in self.getElements()[1:] if item.previous.role == Role.TOGGLEBUTTON and item.previous.UIAAutomationId == "ShuffleButton"), False)
-		except: targetButton = False
+		targetButton = self.get_audio_player_close_button()
 		if targetButton:
 			lastFocus = api.getFocusObject()
 			targetButton.doAction()
@@ -1187,7 +1200,8 @@ class AppModule(appModuleHandler.AppModule):
 				clsList.insert(0, Audio_and_video_button)
 			# elif obj.role == Role.BUTTON and obj.UIAAutomationId == "Explanation":
 				# clsList.insert(0, ExplanationCorrectAnswerInQuiz)
-			elif obj.role == Role.SLIDER and obj.UIAAutomationId == "Slider":
+			# Current Unigram exposes the Seek slider as a custom control, not a slider
+			elif obj.UIAAutomationId == "Slider" and (obj.role == Role.SLIDER or obj.name == "Seek"):
 				self.saved_items.save("slider", obj)
 			elif conf.get("voicingPerformanceIndicators") == "none" and obj.role == Role.PROGRESSBAR:
 				clsList.pop(0)
@@ -1335,19 +1349,37 @@ class AppModule(appModuleHandler.AppModule):
 		message(text_message)
 
 
-	def rewind_voice_message(self, direction):
+	def get_playback_slider(self):
 		slider = self.saved_items.get("slider")
-		if not slider or slider.location.width == 0:
+		if slider and slider.location and slider.location.width: return slider
+		# The slider is only saved when NVDA has created it, which may never happen
+		slider = next((item for item in self.getElements() if item.UIAAutomationId == "Slider" and (item.role == Role.SLIDER or item.name == "Seek")), None)
+		if slider and slider.location and slider.location.width:
+			self.saved_items.save("slider", slider)
+			return slider
+		return False
+
+	def send_key_without_held_modifiers(self, key_name):
+		# NVDA's send() only presses the modifiers of the gesture itself. The Ctrl and
+		# Alt the user is still holding stay down, so Unigram received Ctrl+Alt+Arrow
+		# and ignored it. Lift them around the key and press them back afterwards.
+		held = [code for code in (winUser.VK_CONTROL, winUser.VK_MENU, winUser.VK_SHIFT, winUser.VK_LWIN, winUser.VK_RWIN) if winUser.getAsyncKeyState(code) & 32768]
+		for code in held: winUser.keybd_event(code, 0, winUser.KEYEVENTF_KEYUP, 0)
+		try: KeyboardInputGesture.fromName(key_name).send()
+		finally:
+			# Press back exactly what was lifted, or the shortcut stops repeating while held
+			for code in held: winUser.keybd_event(code, 0, 0, 0)
+
+	def rewind_voice_message(self, direction):
+		slider = self.get_playback_slider()
+		if not slider:
 			message(_("Nothing is playing right now"))
 			return False
-		self.script_pauseVoiceMessage(None)
 		obj = api.getFocusObject()
 		slider.setFocus()
-		KeyboardInputGesture.fromName(direction).send()
-		self.script_pauseVoiceMessage(None)
+		self.send_key_without_held_modifiers(direction)
 		obj.setFocus()
 		speech.cancelSpeech()
-		obj.setFocus()
 
 	def script_rewind_voice_message(self, gesture):
 		try: index = int(gesture.mainKeyName[-1])
