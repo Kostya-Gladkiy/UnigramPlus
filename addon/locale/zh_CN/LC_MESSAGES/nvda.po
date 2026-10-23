@@ -1,0 +1,1124 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UnigramPlus 5.8.6\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2026-05-24 00:00+0800\n"
+"PO-Revision-Date: 2026-05-24 00:00+0800\n"
+"Last-Translator: Ken Chang <lindsay714322@gmail.com>\n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Codex\n"
+
+#: changelog.py:5
+msgid ""
+"- Space plays, opens and downloads the media of a message again in Unigram 13.0 and later, including voice messages.\n"
+"- Space no longer opens stickers or link previews in Unigram 13.0.1 and later.\n"
+"- Right and Left Arrow on a message with several attachments announce each photo, video, file or song again in Unigram 13.0 and later.\n"
+"- Ctrl+Space now also selects chats in the chat list: the first press starts selection mode from the chat's context menu, and each press after that selects or unselects the focused chat.\n"
+"- Alt+Shift+M is a new shortcut that opens Unigram's settings in Unigram 13.1 and later and moves the focus to the top of the settings."
+msgstr ""
+"- 在 Unigram 13.0 及更高版本中，空格键又能播放、打开和下载消息中的媒体了，语音消息也包括在内。\n"
+"- 在 Unigram 13.0.1 及更高版本中，空格键不会再打开贴纸或链接预览。\n"
+"- 在 Unigram 13.0 及更高版本中，在含有多个附件的消息上按右、左方向键，又能读出每张照片、每个视频、文件或音乐了。\n"
+"- 在聊天列表中，Ctrl+Space 现在也能选中聊天了：第一次按下会从该聊天的上下文菜单进入选择模式，之后每按一次就会选中或取消选中当前焦点所在的聊天。\n"
+"- 新增快捷键 Alt+Shift+M：在 Unigram 13.1 及更高版本中打开 Unigram 设置，并把焦点移到设置的最上方。"
+
+msgid ""
+"- Alt+M opens the navigation menu again in Unigram 13.1 and later, where the menu button opens a menu instead of the side pane.\n"
+"- Ctrl+Space selects and unselects messages again in Unigram's selection mode, the way Space does in Unigram 13.1.1. In selection mode, Space and Enter on a message also select or unselect it instead of playing its media or replying to it.\n"
+"- Updated compatibility for NVDA 2026.3.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- 在 Unigram 13.1 及更高版本中，Alt+M 又能打开导航菜单了，这些版本的菜单按钮会打开菜单，而不是侧边窗格。\n"
+"- 在 Unigram 的选择模式中，Ctrl+Space 又能选中和取消选中消息了，就像 Unigram 13.1.1 中的空格键一样。在选择模式中，在消息上按空格键和 Enter 也会选中或取消选中该消息，而不是播放其中的媒体或回复该消息。\n"
+"- 更新了与 NVDA 2026.3 的兼容性。\n"
+"- 更新波兰语和越南语翻译。"
+
+msgid ""
+"- When \"Automatically move focus to the chat list when Unigram starts\" is on, the focus now stays in a popup that Unigram shows as it starts, such as a request to join a group, instead of moving to the chat list behind it.\n"
+"- Updated the Vietnamese translation."
+msgstr ""
+"- 启用“Unigram 启动时自动将焦点移到聊天列表”后，焦点现在会停留在 Unigram 启动时显示的弹出窗口（例如申请加入群组）中，不会再移到后方的聊天列表。\n"
+"- 更新越南语翻译。"
+
+msgid ""
+"- Removed UnigramPlus's own Enter and Space handling in the list of Unigram settings categories: in Unigram 13.0 and later, the categories are buttons that open with these keys themselves. Enter and Space are also no longer intercepted on other tabs, such as the Emoji, GIFs and Stickers tabs.\n"
+"- In Unigram settings, Alt+1 now moves the focus to the open settings category.\n"
+"- Removed code that could no longer run: name replacements for list items from Unigram versions before 9.5, and the quiz explanation window disabled since version 5.2.0.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- 移除 UnigramPlus 在 Unigram 设置类别列表中对 Enter 和空格键的特殊处理：在 Unigram 13.0 及更高版本中，各设置类别都是按钮，按这两个键即可自行打开。在其他标签页（例如表情符号、GIF 和贴纸标签页）上，Enter 和空格键也不再被拦截。\n"
+"- 在 Unigram 设置中，Alt+1 现在会将焦点移到当前打开的设置类别。\n"
+"- 移除已无法执行的代码：针对 Unigram 9.5 之前版本的列表项名称替换，以及自 5.2.0 版起已停用的测验解释窗口。\n"
+"- 更新波兰语和越南语翻译。"
+
+msgid ""
+"- Fixed NVDA errors with the Unigram WinUI 3 beta each time you switched back to Unigram or typed with an input method (IME).\n"
+"- UnigramPlus no longer interferes with focus announcements in Telegram Desktop when the Telegram Desktop add-on is not installed.\n"
+"- Removed the notification when a voice or video message recording is canceled: Unigram 13.0 and later announce it themselves, so it is no longer heard twice.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- 修正在 Unigram WinUI 3 测试版中，每次切回 Unigram 或使用输入法（IME）输入文字时 NVDA 都会出现错误的问题。\n"
+"- 未安装 Telegram Desktop 插件时，UnigramPlus 不再干扰 Telegram Desktop 的焦点朗读。\n"
+"- 移除取消录制语音或视频消息时的通知：Unigram 13.0 及更高版本会自行读出，因此不会再重复读出。\n"
+"- 更新波兰语和越南语翻译。"
+
+msgid ""
+"- Removed the call duration workaround: Unigram 12.10 and later announce a call message's duration themselves, so it is no longer announced twice.\n"
+"- Fixed the add-on failing to start on older NVDA versions that do not provide the utils.security module.\n"
+"- Updated the Vietnamese translation."
+msgstr ""
+"- 移除通话时长的临时处理：Unigram 12.10 及更高版本会自行读出通话消息的时长，因此不会再重复读出。\n"
+"- 修正在缺少 utils.security 模块的旧版 NVDA 上插件无法启动的问题。\n"
+"- 更新越南语翻译。"
+
+msgid "- NVDA+Alt+V displays the UnigramPlus version on a new line."
+msgstr "- NVDA+Alt+V 现在会在新的一行显示 UnigramPlus 版本。"
+
+#: addon\appModules\cnf.py:10
+msgid "Arabic"
+msgstr "阿拉伯语"
+
+#: addon\appModules\cnf.py:11
+msgid "Belarus"
+msgstr "白俄罗斯语"
+
+#: addon\appModules\cnf.py:12
+msgid "Burmese"
+msgstr "缅甸语"
+
+#: addon\appModules\cnf.py:13
+msgid "Czech"
+msgstr "捷克语"
+
+#: addon\appModules\cnf.py:14
+msgid "English"
+msgstr "英语"
+
+#: addon\appModules\cnf.py:15
+msgid "French"
+msgstr "法语"
+
+#: addon\appModules\cnf.py:16
+msgid "Finnish"
+msgstr "芬兰语"
+
+#: addon\appModules\cnf.py:17
+msgid "Slovak"
+msgstr "斯洛伐克语"
+
+#: addon\appModules\cnf.py:18
+msgid "Norwegian"
+msgstr "挪威语"
+
+#: addon\appModules\cnf.py:19
+msgid "German"
+msgstr "德语"
+
+#: addon\appModules\cnf.py:20
+msgid "Italian"
+msgstr "意大利语"
+
+#: addon\appModules\cnf.py:21
+msgid "Persian"
+msgstr "波斯语"
+
+#: addon\appModules\cnf.py:22
+msgid "Polish"
+msgstr "波兰语"
+
+#: addon\appModules\cnf.py:23
+msgid "Portuguese"
+msgstr "葡萄牙语"
+
+#: addon\appModules\cnf.py:24
+msgid "Russian"
+msgstr "俄语"
+
+#: addon\appModules\cnf.py:25
+msgid "Spanish"
+msgstr "西班牙语"
+
+#: addon\appModules\cnf.py:26
+msgid "Turkish"
+msgstr "土耳其语"
+
+#: addon\appModules\cnf.py:27
+msgid "Ukrainian"
+msgstr "乌克兰语"
+
+#: addon\appModules\cnf.py:28
+msgid "Croatian"
+msgstr "克罗地亚语"
+
+#: addon\appModules\cnf.py:29
+msgid "Serbian"
+msgstr "塞尔维亚语"
+
+#: addon\appModules\cnf.py:30
+msgid "Chinese (Traditional)"
+msgstr "繁体中文"
+
+#: addon\appModules\cnf.py:31
+msgid "Chinese (Simplified)"
+msgstr "简体中文"
+
+#: addon\appModules\cnf.py:32
+msgid "Romanian"
+msgstr "罗马尼亚语"
+
+#: addon\appModules\data.py:48
+msgid "Back"
+msgstr "返回"
+
+#: addon\appModules\data.py:49
+msgid "Menu"
+msgstr "菜单"
+
+#: addon\appModules\data.py:50
+msgid "Attach"
+msgstr "附加"
+
+#: addon\appModules\data.py:51
+msgid "Edit"
+msgstr "编辑"
+
+#: addon\appModules\data.py:52 addon\appModules\unigram.py:429
+msgid "Photo"
+msgstr "照片"
+
+#: addon\appModules\data.py:53 addon\appModules\unigram.py:1611
+msgid "Image"
+msgstr "图片"
+
+#: addon\appModules\data.py:54
+msgid "Invite link"
+msgstr "邀请链接"
+
+#: addon\appModules\data.py:55
+msgid "Choose time"
+msgstr "选择时间"
+
+#: addon\appModules\data.py:56
+msgid "Title field"
+msgstr "标题字段"
+
+#: addon\appModules\data.py:60
+msgid "Go to next reaction"
+msgstr "转到下一个回应"
+
+#: addon\appModules\data.py:61
+msgid "Insert emojis"
+msgstr "插入表情"
+
+#: addon\appModules\data.py:62
+msgid "Done"
+msgstr "完成"
+
+#: addon\appModules\data.py:63
+msgid "Next"
+msgstr "下一步"
+
+#: addon\appModules\data.py:64
+msgid "Merge files"
+msgstr "合并文件"
+
+#: addon\appModules\data.py:65
+msgid "Search"
+msgstr "搜索"
+
+#: addon\appModules\data.py:66
+msgid "Delete"
+msgstr "删除"
+
+#: addon\appModules\data.py:67
+msgid "Close"
+msgstr "关闭"
+
+#: addon\appModules\unigram.py:253
+#, python-format
+msgid "%d percent"
+msgstr "百分之 %d"
+
+#: addon\appModules\unigram.py:354 addon\appModules\unigram.py:1220
+msgid "Camera on"
+msgstr "摄像头已开启"
+
+#: addon\appModules\unigram.py:354 addon\appModules\unigram.py:1221
+msgid "Camera off"
+msgstr "摄像头已关闭"
+
+#: addon\appModules\unigram.py:372
+msgid "Announce the original message, the message that was replied to"
+msgstr "读出原始消息，也就是所回复的消息"
+
+#: addon\appModules\unigram.py:383
+msgid "Show message text in popup window"
+msgstr "在弹出窗口中显示消息文本"
+
+#: addon\appModules\unigram.py:388 addon\appModules\unigram.py:1244
+#: addon\appModules\unigram.py:1258
+msgid "This message does not contain text"
+msgstr "此消息不包含文本"
+
+#: addon\appModules\unigram.py:396 addon\appModules\unigram.py:1257
+msgid "message text"
+msgstr "消息文本"
+
+#: addon\appModules\unigram.py:398
+msgid "Open comments"
+msgstr "打开评论"
+
+#: addon\appModules\unigram.py:404
+msgid "Button to open comments not found"
+msgstr "未找到打开评论的按钮"
+
+#: addon\appModules\unigram.py:406
+msgid "Edit message"
+msgstr "编辑消息"
+
+#: addon\appModules\unigram.py:410
+msgid "Reply to message"
+msgstr "回复消息"
+
+#: addon\appModules\unigram.py:430 addon\appModules\unigram.py:1363
+msgid "Video"
+msgstr "视频"
+
+#: addon\appModules\unigram.py:436
+msgid "Announces the time a message was sent or received, as well as a list of reactions. Double-clicking toggles the announcement mode for this information."
+msgstr "读出消息的发送或接收时间，以及回应列表。连按两次可切换是否读出此信息。"
+
+#: addon\appModules\unigram.py:442
+msgid "The display of message sending or receiving time and the list of installed emojis is enabled."
+msgstr "已启用消息发送或接收时间以及已安装表情列表的读出。"
+
+#: addon\appModules\unigram.py:443
+msgid "The display of message sending or receiving time and the list of installed emojis is  disabled."
+msgstr "已禁用消息发送或接收时间以及已安装表情列表的读出。"
+
+#. message(obj.name)
+#: addon\appModules\unigram.py:490
+msgid "Explanation"
+msgstr "说明"
+
+#. The function of changing the playback speed of a voice message
+#: addon\appModules\unigram.py:833
+msgid "Increase/decrease the playback speed of voice messages"
+msgstr "提高或降低语音消息播放速度"
+
+#: addon\appModules\unigram.py:839 addon\appModules\unigram.py:851
+#: addon\appModules\unigram.py:861 addon\appModules\unigram.py:1863
+#: addon\appModules\unigram.py:1879
+msgid "Nothing is playing right now"
+msgstr "当前没有正在播放的项目"
+
+#. Audio player close function
+#: addon\appModules\unigram.py:842
+msgid "Close audio player"
+msgstr "关闭音频播放器"
+
+#: addon\appModules\unigram.py:850
+msgid "The audio player has been closed"
+msgstr "音频播放器已关闭"
+
+#. Voice message pause function
+#: addon\appModules\unigram.py:854
+msgid "Play/pause the voice message currently playing"
+msgstr "播放或暂停当前正在播放的语音消息"
+
+#. Go to chat list
+#: addon\appModules\unigram.py:897
+msgid "Move focus to chat list"
+msgstr "将焦点移到聊天列表"
+
+#. contacts_list = self.get_contacts_list()
+#. if contacts_list:
+#. contacts_list.setFocus()
+#. return True
+#: addon\appModules\unigram.py:916
+msgid "Chat list not found"
+msgstr "未找到聊天列表"
+
+#: addon\appModules\unigram.py:924
+msgid "Chat list is empty"
+msgstr "聊天列表为空"
+
+#. Go to the last message in the chat
+#: addon\appModules\unigram.py:927
+msgid "Move focus to the last message in an open chat"
+msgstr "将焦点移到已打开聊天中的最后一条消息"
+
+#: addon\appModules\unigram.py:940 addon\appModules\unigram.py:1123
+#: addon\appModules\unigram.py:1536 addon\appModules\unigram.py:1549
+msgid "This chat is empty"
+msgstr "此聊天为空"
+
+#: addon\appModules\unigram.py:954 addon\appModules\unigram.py:1114
+#: addon\appModules\unigram.py:1122 addon\appModules\unigram.py:1325
+#: addon\appModules\unigram.py:1532
+msgid "No open chat"
+msgstr "没有打开的聊天"
+
+#. Move focus to the list of chat folders
+#: addon\appModules\unigram.py:964
+msgid "Move focus to list of chat folders"
+msgstr "将焦点移到聊天文件夹列表"
+
+#: addon\appModules\unigram.py:970 addon\appModules\unigram.py:978
+#: addon\appModules\unigram.py:979
+msgid "Chat folder list not found"
+msgstr "未找到聊天文件夹列表"
+
+#: addon\appModules\unigram.py:1062
+msgid "Move focus to the list of group threads"
+msgstr "将焦点移到群组话题列表"
+
+#: addon\appModules\unigram.py:1066
+msgid "No list with threads was found"
+msgstr "未找到话题列表"
+
+#. Move focus to open profile
+#: addon\appModules\unigram.py:1087
+msgid "Move focus to open profile"
+msgstr "将焦点移到已打开的个人资料"
+
+#: addon\appModules\unigram.py:1091
+msgid "There is no open profile"
+msgstr "没有打开的个人资料"
+
+#. Announces the profile name and status in an open chat
+#: addon\appModules\unigram.py:1094
+msgid "Announce the name and status of an open chat"
+msgstr "读出已打开聊天的名称和状态"
+
+#: addon\appModules\unigram.py:1097
+msgid "Chat activity tracking is enabled"
+msgstr "已启用聊天活动跟踪"
+
+#: addon\appModules\unigram.py:1098
+msgid "Chat activity tracking is disabled"
+msgstr "已禁用聊天活动跟踪"
+
+#. Go to "unread messages" label
+#: addon\appModules\unigram.py:1117
+msgid "Move focus to 'unread messages' label"
+msgstr "将焦点移到“未读消息”标签"
+
+#: addon\appModules\unigram.py:1132
+msgid "There are no unread messages in this chat"
+msgstr "此聊天中没有未读消息"
+
+#. Call if it's a contact, or enter a voice chat if it's a group
+#: addon\appModules\unigram.py:1135
+msgid "Call if it's a contact, or enter a voice chat if it's a group"
+msgstr "如果是联系人则拨打电话，如果是群组则进入语音聊天"
+
+#: addon\appModules\unigram.py:1140
+msgid "Call unavailable"
+msgstr "无法通话"
+
+#. Make a video call if it's a contact
+#: addon\appModules\unigram.py:1143
+msgid "Press the video call button"
+msgstr "按下视频通话按钮"
+
+#: addon\appModules\unigram.py:1147
+msgid "Video call not available"
+msgstr "无法视频通话"
+
+#. Function to open instant view
+#: addon\appModules\unigram.py:1150
+msgid "Press \"Instant view\" button, if it is included in the current message"
+msgstr "如果当前消息中包含“即时预览”按钮，则按下它"
+
+#: addon\appModules\unigram.py:1161 addon\appModules\unigram.py:1285
+#: addon\appModules\unigram.py:1292 addon\appModules\unigram.py:1300
+#: addon\appModules\unigram.py:1955 addon\appModules\unigram.py:1984
+#: addon\appModules\unigram.py:1993 addon\appModules\unigram.py:2002
+#: addon\appModules\unigram.py:2011
+msgid "Button not found"
+msgstr "未找到按钮"
+
+#. Mute/unmute the microphone
+#: addon\appModules\unigram.py:1176
+msgid "Press \"Mute/unmute microphone\" button"
+msgstr "按下“麦克风静音或取消静音”按钮"
+
+#. Turn off/on the camera
+#: addon\appModules\unigram.py:1202
+msgid "Press \"Enable/disable camera\" button"
+msgstr "按下“启用或禁用摄像头”按钮"
+
+#. Copy current message to clipboard
+#: addon\appModules\unigram.py:1230
+msgid "Copy the message if it contains text. If the focus is on a link, the link will be copied"
+msgstr "如果消息包含文本则复制消息；如果焦点位于链接上，则复制该链接"
+
+#: addon\appModules\unigram.py:1239
+msgid "Link copied"
+msgstr "链接已复制"
+
+#. Move the focus to the message input field. If the focus is already in this field, then move it to the last element that had focus before this field
+#: addon\appModules\unigram.py:1261
+msgid "Move the focus to the edit field. If the focus is already in the edit field, then after pressing the hotkey, it will move to where it was before"
+msgstr "将焦点移到编辑字段。如果焦点已在编辑字段中，按下快捷键后会移回先前所在的位置"
+
+#: addon\appModules\unigram.py:1278
+msgid "Message input field not found"
+msgstr "未找到消息输入字段"
+
+#. Press the "Attach media" button
+#: addon\appModules\unigram.py:1281
+msgid "Press \"Attach file\" button"
+msgstr "按下“附加文件”按钮"
+
+#. Press the "New Conversation" button
+#: addon\appModules\unigram.py:1288
+msgid "Press \"New conversation\" button"
+msgstr "按下“新建对话”按钮"
+
+#. Open navigation menu
+#: addon\appModules\unigram.py:1303
+msgid "Open navigation menu"
+msgstr "打开导航菜单"
+
+#: addon\appModules\unigram.py:1309
+msgid "Navigation menu not available"
+msgstr "导航菜单不可用"
+
+#. Open Unigram settings
+#: addon\appModules\unigram.py:3146
+msgid "Open Unigram settings"
+msgstr "打开 Unigram 设置"
+
+#: addon\appModules\unigram.py:3161
+msgid "Settings not available"
+msgstr "设置不可用"
+
+#. Function to open the profile of the current chat
+#: addon\appModules\unigram.py:1312
+msgid "Open current chat profile"
+msgstr "打开当前聊天的个人资料"
+
+#: addon\appModules\unigram.py:1343
+msgid "Recording a voice message will not be available until the edit field is empty"
+msgstr "必须清空编辑字段后才能录制语音消息"
+
+#: addon\appModules\unigram.py:1352
+msgid "Record sent"
+msgstr "录音已发送"
+
+#: addon\appModules\unigram.py:1366
+msgid "Audio"
+msgstr "音频"
+
+#: addon\appModules\unigram.py:1385
+msgid "Voice recording notifications set to text"
+msgstr "语音录制通知已设置为文本"
+
+#: addon\appModules\unigram.py:1388
+msgid "Voice recording notifications set to sounds"
+msgstr "语音录制通知已设置为声音"
+
+#: addon\appModules\unigram.py:1391
+msgid "Recording voice messages has standard behavior"
+msgstr "语音消息录制使用标准行为"
+
+#: addon\appModules\unigram.py:1401
+msgid "Reply canceled"
+msgstr "已取消回复"
+
+#: addon\appModules\unigram.py:1402
+msgid "Edit canceled"
+msgstr "已取消编辑"
+
+#: addon\appModules\unigram.py:1429
+msgid "Answer options"
+msgstr "答案选项"
+
+#: addon\appModules\unigram.py:1459
+msgid "You"
+msgstr "你"
+
+#. Check if a message is selected
+#: addon\appModules\unigram.py:1488
+msgid "Selected"
+msgstr "已选中"
+
+#. Change the announce level of progress bars
+#: addon\appModules\unigram.py:1510
+msgid "Toggle progress bar announcements"
+msgstr "切换进度条读出"
+
+#: addon\appModules\unigram.py:1516
+msgid "Announce progress bars only during upload and download"
+msgstr "仅在上传和下载时读出进度条"
+
+#: addon\appModules\unigram.py:1520
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:200
+msgid "Announce all progress bars"
+msgstr "读出所有进度条"
+
+#: addon\appModules\unigram.py:1524
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:202
+msgid "Do not announce any progress bars"
+msgstr "不读出任何进度条"
+
+#: addon\appModules\unigram.py:1622
+msgid "Editing"
+msgstr "正在编辑"
+
+#: addon\appModules\unigram.py:1623
+msgid "Reply"
+msgstr "回复"
+
+#: addon\appModules\unigram.py:1632
+msgid "Duration"
+msgstr "时长"
+
+#: addon\appModules\unigram.py:1633
+msgid "Size"
+msgstr "大小"
+
+#: addon\appModules\unigram.py:1645
+msgid "Enable video"
+msgstr "启用视频"
+
+#: addon\appModules\unigram.py:1646
+msgid "Disable video"
+msgstr "禁用视频"
+
+#: addon\appModules\unigram.py:1744
+msgid "Delete a message or chat"
+msgstr "删除消息或聊天"
+
+#: addon\appModules\unigram.py:1747
+msgid "Delete message or chat from both sides"
+msgstr "为双方删除消息或聊天"
+
+#: addon\appModules\unigram.py:1750
+msgid "Switch to selection mode"
+msgstr "切换到选择模式"
+
+#: addon\appModules\unigram.py:1753
+msgid "Forward message"
+msgstr "转发消息"
+
+#: addon\appModules\unigram.py:1756
+msgid "Mark a chat as read"
+msgstr "将聊天标记为已读"
+
+#: addon\appModules\unigram.py:1759
+msgid "Save file as..."
+msgstr "文件另存为..."
+
+#: addon\appModules\unigram.py:1762
+msgid "Pin a message or chat"
+msgstr "置顶消息或聊天"
+
+#: addon\appModules\unigram.py:1793
+msgid "Message deleted on both sides"
+msgstr "消息已为双方删除"
+
+#: addon\appModules\unigram.py:1794
+msgid "Message deleted"
+msgstr "消息已删除"
+
+#: addon\appModules\unigram.py:1797
+msgid "You left the group"
+msgstr "你已退出群组"
+
+#: addon\appModules\unigram.py:1798
+msgid "You left the channel"
+msgstr "你已退出频道"
+
+#: addon\appModules\unigram.py:1799
+msgid "Bot removed and blocked"
+msgstr "机器人已移除并屏蔽"
+
+#: addon\appModules\unigram.py:1800
+msgid "Bot removed"
+msgstr "机器人已移除"
+
+#: addon\appModules\unigram.py:1801
+msgid "Chat deleted on both sides"
+msgstr "聊天已为双方删除"
+
+#: addon\appModules\unigram.py:1802
+msgid "Chat deleted"
+msgstr "聊天已删除"
+
+#. Data copy function for broadcasting
+#: addon\appModules\unigram.py:1840
+msgid "Copy data for broadcasting to the clipboard"
+msgstr "将广播数据复制到剪贴板"
+
+#: addon\appModules\unigram.py:1844 addon\appModules\unigram.py:1848
+msgid "Broadcast window not found"
+msgstr "未找到广播窗口"
+
+#: addon\appModules\unigram.py:1854
+msgid "%url and %key copied to clipboard"
+msgstr "已将 %url 和 %key 复制到剪贴板"
+
+#: addon\appModules\unigram.py:1890
+msgid "Fast forward a voice message"
+msgstr "快进语音消息"
+
+#: addon\appModules\unigram.py:1894
+msgid "Rewind voice message"
+msgstr "倒回语音消息"
+
+#. This is necessary for this phrase to appear in the translation dictionary
+#: addon\appModules\unigram.py:1917 addon\appModules\unigram.py:1918
+msgid "Right answer"
+msgstr "正确答案"
+
+#. Converting voice messages to text
+#: addon\appModules\unigram.py:1940
+msgid "Convert voice message to text"
+msgstr "将语音消息转换为文本"
+
+#: addon\appModules\unigram.py:1947
+msgid "This voice message is already converted to text"
+msgstr "此语音消息已转换为文本"
+
+#: addon\appModules\unigram.py:1948
+msgid "Converting this voice message is already in process"
+msgstr "此语音消息正在转换中"
+
+#: addon\appModules\unigram.py:1958
+msgid "Enable automatic reading of new messages in the current chat"
+msgstr "启用当前聊天中新消息的自动读出"
+
+#: addon\appModules\unigram.py:1960
+msgid "Automatic reading of messages is enabled"
+msgstr "已启用消息自动读出"
+
+#: addon\appModules\unigram.py:1961
+msgid "Automatic reading of new messages is disabled"
+msgstr "已禁用新消息自动读出"
+
+#: addon\appModules\unigram.py:1963
+msgid "Show a list of all UnigramPlus shortcuts"
+msgstr "显示所有 UnigramPlus 快捷键列表"
+
+#: addon\appModules\unigram.py:1977
+msgid "List of shortcuts"
+msgstr "快捷键列表"
+
+#: addon\appModules\unigram.py:1980
+msgid "Go to the end"
+msgstr "转到末尾"
+
+#: addon\appModules\unigram.py:1986
+msgid "Go to the list with search results"
+msgstr "转到搜索结果列表"
+
+#: addon\appModules\unigram.py:1995
+msgid "Go to the next search result"
+msgstr "转到下一个搜索结果"
+
+#: addon\appModules\unigram.py:2001
+msgid "No next search result"
+msgstr "没有下一个搜索结果"
+
+#: addon\appModules\unigram.py:2004
+msgid "Go to the previous search result"
+msgstr "转到上一个搜索结果"
+
+#: addon\appModules\unigram.py:2010
+msgid "No previous search result"
+msgstr "没有上一个搜索结果"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:29
+msgid "No updates available"
+msgstr "没有可用更新"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:30
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:77
+msgid "UnigramPlus update"
+msgstr "UnigramPlus 更新"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:73
+msgid "Unable to open UnigramPlus sounds folder"
+msgstr "无法打开 UnigramPlus 声音文件夹"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:78
+msgid "A new version of the add-on is available. Do you want to update UnigramPlus to version %version?"
+msgstr "有新版本插件可用。是否将 UnigramPlus 更新到 %version 版？"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:88
+msgid "Yes, update"
+msgstr "是，更新"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:89
+msgid "No, not now"
+msgstr "否，暂不"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:104
+msgid "Download in progress"
+msgstr "正在下载"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:130
+msgid "Changes in this version:"
+msgstr "此版本的变更："
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:131
+msgid "No update information"
+msgstr "没有更新信息"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:156
+msgid "Open UnigramPlus settings window"
+msgstr "打开 UnigramPlus 设置窗口"
+
+#. Call answer
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:161
+msgid "Accept call"
+msgstr "接听来电"
+
+#. End a call, decline call, or leave a voice chat
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:172
+msgid "Press \"Decline call\" button  if there is an incoming call, \"End call\" button if a call is in progress or leave voice chat if it is active."
+msgstr "如果有来电则按下“拒绝通话”按钮；如果正在通话则按下“结束通话”按钮；如果语音聊天处于活动状态则离开语音聊天。"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:190
+msgid "Before chat name"
+msgstr "在聊天名称之前"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:191
+msgid "After chat name"
+msgstr "在聊天名称之后"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:192
+msgid "Do not speak chat type"
+msgstr "不读出聊天类型"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:195
+msgid "Revert to standard voice message recording behavior"
+msgstr "还原为标准语音消息录制行为"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:196
+msgid "Text notification"
+msgstr "文本通知"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:197
+msgid "sound notification"
+msgstr "声音通知"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:201
+msgid "Only announce progress bars during file uploads and downloads"
+msgstr "仅在文件上传和下载期间读出进度条"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:206
+msgid "Do not say at all"
+msgstr "完全不读出"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:207
+msgid "Only in sent messages"
+msgstr "仅在已发送消息中"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:208
+msgid "Only in received messages"
+msgstr "仅在已接收消息中"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:209
+msgid "In all messages"
+msgstr "在所有消息中"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:212
+msgid "Do nothing"
+msgstr "不执行任何操作"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:213
+msgid "Activate editing of last sent message"
+msgstr "启用最后一条已发送消息的编辑"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:214
+msgid "Move focus to the last message in a chat"
+msgstr "将焦点移到聊天中的最后一条消息"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:215
+msgid "Move focus to the last focused message in a chat"
+msgstr "将焦点移到聊天中最后获得焦点的消息"
+
+#. Selecting an interface language
+#. self.lang = settingsSizerHelper.addLabeledControl(_("Interface language in Unigram:"), wx.Choice, choices=[listLanguages[item] for item in listLanguages])
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:222
+msgid "Interface language in Unigram:"
+msgstr "Unigram 界面语言："
+
+#. Chat type announce mode
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:225
+msgid "Speak the type of chat in the chat list:"
+msgstr "在聊天列表中读出聊天类型："
+
+#. Message sender announcement
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:228
+msgid "Say the sender's name in:"
+msgstr "读出发送者名称的范围："
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:232
+msgid "Action when pressing the up arrow in the message edit field"
+msgstr "在消息编辑字段中按上方向键时的操作"
+
+#. Report not seen before message content
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:235
+msgid "Speak \"Not Seen\" before reading contents of a message"
+msgstr "读出消息内容前先读出“未读”"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:239
+msgid "Announce the phrases \"Administrator\" and \"Owner\" on messages in communities"
+msgstr "在社区消息中读出“管理员”和“所有者”"
+
+#. Speak active folder name when switching between them
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:243
+msgid "Speak folder names when switching between them"
+msgstr "切换聊天文件夹时读出文件夹名称"
+
+#. Delete alert type
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:246
+msgid "Notify about deleting a message and chat with a sound"
+msgstr "用声音提示消息和聊天已删除"
+
+#. Show confirmation window when deleting
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:249
+msgid "Display confirmation dialog when deleting messages and chats"
+msgstr "删除消息和聊天时显示确认对话框"
+
+#. Type of notification when a voice message recording starts or is sent.
+#. Unigram 13.0 announces a canceled recording itself.
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:252
+msgid "Notification when a voice message recording starts or is sent:"
+msgstr "开始录制或发送语音消息时的通知方式："
+
+#. Progress bar announce
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:255
+msgid "Select the progress bar notification level:"
+msgstr "选择进度条通知级别："
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:258
+msgid "File transfer progress announcement interval (percent):"
+msgstr "文件传输进度读出间隔（百分比）："
+
+#. Processing messages containing links
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:261
+msgid "Read description of URLs attached to messages"
+msgstr "读出消息中附加网址的描述"
+
+#. Announcement of the full description of YouTube links
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:264
+msgid "Read full video description in YouTube URLs"
+msgstr "读出 YouTube 网址的完整视频描述"
+
+#. Report if the group has replies for you
+#. self.isAnnouncesAnswers = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce if there is a reply in the group")))
+#. self.isAnnouncesAnswers.SetValue(conf.get("isAnnouncesAnswers"))
+#. Report information about premium and verified accounts
+#. self.report_premium_accounts = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce premium and confirmed accounts")))
+#. self.report_premium_accounts.SetValue(conf.get("report premium accounts"))
+#. Report if the message contains a reaction
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:273
+msgid "Announce if the message contains a reaction"
+msgstr "消息包含回应时读出提示"
+
+#. Fix toggle buttons for some users
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:276
+msgid "Check this box if the voice message recording function or the voice message playback speed change function does not work properly"
+msgstr "如果语音消息录制功能或语音消息播放速度更改功能无法正常工作，请选中此复选框"
+
+#. Play looped Typing.wav while the other side is typing/recording in the open chat
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:279
+msgid "Play a sound while the other side is typing in the open chat"
+msgstr "在已打开聊天中对方正在输入时播放声音"
+
+#. Button to open the bundled sounds folder
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:282
+msgid "Open UnigramPlus sounds folder"
+msgstr "打开 UnigramPlus 声音文件夹"
+
+#. Checking for Updates on NVDA Startup
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:285
+msgid "Check for UnigramPlus updates on NVDA startup"
+msgstr "NVDA 启动时检查 UnigramPlus 更新"
+
+#. Button to check for updates
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:288
+msgid "Check for &updates"
+msgstr "检查更新(&U)"
+
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store.
+#: buildVars.py:15
+msgid "UnigramPlus"
+msgstr "UnigramPlus"
+
+#: buildVars.py:19
+msgid "This add-on adds a lot of hotkeys for quick navigation through the main elements of the Unigram application, convenient interaction with Chat messages, and also adds many small improvements that make working in Unigram much easier"
+msgstr "此插件新增了许多快捷键，可快速浏览 Unigram 应用的主要元素、方便地与聊天消息交互，并加入许多小改进，使使用 Unigram 更加轻松。"
+
+#: buildVars.py:26
+msgid ""
+"- Fixed unwanted chat folder unread-count announcements and limited file transfer progress announcements to Unigram file uploads and downloads.\n"
+"- Added a setting to open the UnigramPlus sounds folder so users can replace bundled sound files.\n"
+"- Added an up-arrow action that moves from the message edit field to the last focused message.\n"
+"- Added separate Traditional Chinese and Simplified Chinese localizations."
+msgstr ""
+"- 修复聊天文件夹未读数量变化被不必要读出的问题，并将文件传输进度读出限制为 Unigram 的文件上传和下载。\n"
+"- 新增打开 UnigramPlus 声音文件夹的设置，用户可替换内置声音文件。\n"
+"- 新增上方向键操作，可从消息编辑字段移到最后获得焦点的消息。\n"
+"- 新增独立的繁体中文和简体中文本地化。"
+
+
+#: addon\appModules\unigram.py:1767
+msgid "Recording a voice message, elapsed time"
+msgstr "正在录制语音消息，经过时间"
+
+#: addon\appModules\unigram.py:1767
+msgid "Recording a video message, elapsed time"
+msgstr "正在录制视频消息，经过时间"
+
+#: addon\appModules\unigram.py:1770
+msgid "Record a voice message"
+msgstr "录制语音消息"
+
+#: addon\appModules\unigram.py:1770
+msgid "Record a video message"
+msgstr "录制视频消息"
+
+msgid "When recording a voice or video message, NVDA now announces \"Recording a voice message\" or \"Recording a video message\" along with the elapsed time, instead of \"Tn voice message\"."
+msgstr "录制语音或视频消息时，NVDA 现在会朗读「正在录制语音消息」或「正在录制视频消息」并念出经过时间，而不再是「Tn voice message」。"
+
+
+msgid "Microphone on"
+msgstr "麦克风开启"
+
+msgid "Microphone muted"
+msgstr "麦克风静音"
+
+msgid "Microphone button not found"
+msgstr "找不到麦克风按钮"
+
+msgid "Camera button not found"
+msgstr "找不到摄像头按钮"
+
+msgid "This release restores compatibility with Unigram 12.7, where several shortcuts and announcements had stopped working."
+msgstr "此版本恢复了与 Unigram 12.7 的兼容性，此前有多个快捷键和语音提示失效。"
+
+msgid "Poll messages again announce the question and answer options, and the forum topic list again announces the message preview."
+msgstr "投票消息会再次朗读问题和答案选项，论坛话题列表会再次朗读消息预览。"
+
+msgid "During a one-to-one call, the mute microphone (ALT+A), enable or disable camera (ALT+V) and end call (ALT+N) shortcuts work again, and ALT+End again moves to the latest message."
+msgstr "一对一通话中，静音麦克风（ALT+A）、开启或关闭摄像头（ALT+V）和结束通话（ALT+N）的快捷键可再次使用，ALT+End 会再次回到最新消息。"
+
+msgid "Rich message"
+msgstr "富文本消息"
+
+msgid "Added support for rich messages. Rich messages are now announced when focused and can be opened with Alt+C in a browseable window."
+msgstr "新增富文本消息支持。富文本消息获得焦点时会被朗读，并可按 Alt+C 在浏览窗口中打开。"
+
+msgid "Links and mixed content in rich messages are preserved, and links can be activated from the browseable window."
+msgstr "富文本消息中的链接和混合内容会被保留，且可在浏览窗口中激活链接。"
+
+msgid "Automatically move focus to the chat list when Unigram starts"
+msgstr "Unigram 启动时自动将焦点移到聊天列表"
+
+msgid ""
+"- Fixed file-transfer progress tracking so it stops at 100% and no longer creates a new thread on every polling cycle.\n"
+"- When Unigram opens, focus now moves automatically to the chat list.\n"
+"- Added Ctrl+Alt+Up/Down to move through chats with unread mentions."
+msgstr ""
+"- 修复文件传输进度跟踪：进度达到 100% 时停止，并且不再于每次轮询时创建新线程。\n"
+"- 打开 Unigram 时，焦点现在会自动移到聊天列表。\n"
+"- 新增 Ctrl+Alt+Up/Down，用于在含未读提及的聊天之间移动。"
+
+msgid "Move to the next or previous chat with unread mentions"
+msgstr "移到下一个或上一个含未读提及的聊天"
+
+msgid "No more chats with unread mentions in this direction"
+msgstr "此方向没有更多含未读提及的聊天"
+
+msgid "- Fixed file-transfer progress tracking so it stops at 100% and no longer creates a new thread on every polling cycle."
+msgstr "- 修复文件传输进度跟踪：进度达到 100% 时停止，并且不再于每次轮询时创建新线程。"
+
+msgid "- When Unigram opens, focus now moves automatically to the chat list."
+msgstr "- 打开 Unigram 时，焦点现在会自动移到聊天列表。"
+
+msgid "- Added Ctrl+Alt+Up/Down to move through chats with unread mentions."
+msgstr "- 新增 Ctrl+Alt+Up/Down，用于在含未读提及的聊天之间移动。"
+
+msgid "Fixed automatic updates: releases are now retrieved securely from GitHub and the downloaded add-on is validated before installation."
+msgstr "修复自动更新：现在会从 GitHub 安全获取版本，并在安装前验证下载的插件。"
+
+msgid "Toggle whether message headers are announced before or after the message content"
+msgstr "切换在消息内容之前或之后读出消息标头"
+
+msgid "Message headers will be announced after the message content"
+msgstr "将在消息内容之后读出消息标头"
+
+msgid "Message headers will be announced before the message content"
+msgstr "将在消息内容之前读出消息标头"
+
+msgid "No search results"
+msgstr "没有搜索结果"
+
+msgid ""
+"- Fixed Ctrl+Alt+Left/Right so they seek the current voice message playback again.\n"
+"- Fixed Alt+I so it moves to Unigram's inline chat search results list.\n"
+"- Added Alt+[ to announce message headers after the content, so file names can be announced before sender names in profile media sections."
+msgstr ""
+"- 修复 Ctrl+Alt+Left/Right，使其可再次在当前播放的语音消息中倒回或快进。\n"
+"- 修复 Alt+I，使其将焦点移到 Unigram 的聊天内嵌搜索结果列表。\n"
+"- 新增 Alt+[，用于在内容之后读出消息标头，从而可在个人资料的媒体部分中先读出文件名，再读出发送者名称。"
+
+msgid "Announce message headers after the message content"
+msgstr "在消息内容之后读出消息标头"
+
+msgid "Play a sound when reaching the end of a chat"
+msgstr "到达聊天末尾时播放声音"
+
+msgid ""
+"- Fixed Enter for replying to messages and Alt+Shift+R for marking chats as read in current Unigram versions.\n"
+"- Removed the web view mode and its setting; Alt+C now always opens message text in the original wx popup window.\n"
+"- Updated all translations and manuals for version 5.6.5."
+msgstr ""
+"- 修复了当前 Unigram 版本中按 Enter 回复消息以及按 Alt+Shift+R 将聊天标记为已读的问题。\n"
+"- 移除了 Web 视图模式及其设置；Alt+C 现在始终在原始 wx 弹出窗口中打开消息文本。\n"
+"- 已将所有翻译和说明文档更新至版本 5.6.5。"
+
+msgid "Open Unigram and UnigramPlus version information in a read-only window"
+msgstr "在只读窗口中打开 Unigram 和 UnigramPlus 的版本信息"
+
+msgid "Unigram version: {unigramVersion}.\nUnigramPlus version: {addonVersion}."
+msgstr "Unigram 版本：{unigramVersion}。\nUnigramPlus 版本：{addonVersion}。"
+
+msgid ""
+"- Added NVDA+Shift+V to announce the installed Unigram and UnigramPlus versions.\n"
+"- Removed the temporary Unigram 12.9 inline-button workaround after Unigram 12.9.1 fixed button labels; this avoids UIA stalls in bot lists, message navigation, reactions, and the chat list.\n"
+"- Updated all translations and manuals for version 5.6.6."
+msgstr ""
+"- 新增 NVDA+Shift+V，用于读出已安装的 Unigram 和 UnigramPlus 版本。\n"
+"- Unigram 12.9.1 已修复按钮标签，因此移除了针对 Unigram 12.9 内联按钮的临时解决方案；这可避免机器人列表、消息导航、回应和聊天列表中的 UIA 卡顿。\n"
+"- 已更新 5.6.6 版的所有翻译和手册。"
+
+msgid ""
+"- Fixed an intermittent issue where NVDA announced \"list\" before a message while navigating with the Up and Down Arrow keys.\n"
+"- Added a setting for the Alt+[ behavior that announces message headers after their content; it is disabled by default.\n"
+"- Added an optional sound notification when reaching the end of a chat."
+msgstr ""
+"- 修复了使用上、下箭头在消息间移动时，NVDA 偶尔会在消息前读出“列表”的问题。\n"
+"- 新增 Alt+[ 功能的设置：在消息内容之后读出消息标头；该功能默认关闭。\n"
+"- 新增到达聊天末尾时的可选声音提示。"
+
+msgid "- Restored folder-switch announcements with a nonzero unread count while retaining the file-transfer progress tracker safeguards."
+msgstr "恢复了切换文件夹时播报非零未读数的功能，同时保留文件传输进度跟踪器的保护范围。"
+
+msgid "- Updated the shortcut lists from the current Unigram source and identified built-in shortcuts not yet listed in Unigram's official Shortcuts.md."
+msgstr "已根据当前 Unigram 源代码更新快捷键列表，并标识出尚未列入 Unigram 官方 Shortcuts.md 的内置快捷键。"

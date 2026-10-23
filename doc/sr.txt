@@ -1,27 +1,8 @@
-* Dodata je mogućnost odabira datoteka priloženih porukama sa horizontalnim strelicama i otvaranja izabrane datoteke pomoću razmaka.
-* Sada se linkovi u porukama neće čitati u podpunosti, već samo do znaka pitanja.
-* Sada, kada zatvorite pregledač fotografija ili video zapisa, unigramplus će pokušati da postavi fokus na poruku koju gledate.
-* Prečica na tastaturi za otvaranje unigramplus podešavanja je promenjena. Sada je ova funkcija dodeljena kombinaciji nvda+alt+u.
-* Urađena je optimizacija koda, što je rezultiralo značajno poboljšanim vremenom odgovora prilikom navigacije po listi za ćaskanje i listi poruka. Ovo je posebno primetno na porukama koje sadrže mnogo ugnežđenih elemenata.
-* mnogi manji problemi su popravljeni.
-* Mnogo zastarelih kodova je uklonjeno.
-Verzija 5.1.0
-* Dodate prečice na tastaturi za navigaciju do sledećeg i prethodnog rezultata pretrage u ćaskanju. Podrazumevano, ove funkcije su dodeljene kombinacijama tastera ALT+K i ALT+J.
-* Dodata je prečica na tastaturi za otvaranje liste sa svim rezultatima pretrage u ćaskanju. Podrazumevano, ova funkcija je dodeljena kombinaciji tastera ALT+I.
-* Sada, dvostrukim pritiskom na strelicu levo na poruci, fokus će se pomeriti na poruku na koju trenutna poruka odgovara.
-* Rešen je problem gde se opisi linkova ugrađenih u poruku nisu čitali.
-* Unigramplus više neće predlagati ažuriranja na zaštićenim ekranima. Međutim, korisnici će morati još jednom da otvore nvda podešavanja i kliknu na koristi poslednje sačuvane postavke tokom prijavljivanja i čitanja zaštićenih ekrana (potrebna su administratorska prava) dugme.
-* Uklonjena je funkcija za premotavanje glasovnih poruka i funkcija podešavanje reakcija na poruke, jer ove funkcije nisu radile pouzdano.
-	* Uklonjena je funkcija kopiranja poruka jer unigram sada ima ovu funkciju. Imajte na umu da ponekad kopiranje poruka može dovesti do blagog zamrzavanja programa, ali to nije povezano sa unigramplus dodatkom.
-* Ispravljene neke druge manje greške.
-Verzija 5.0.0
-* Rešen je problem gde su poruke u četovima čitane dva puta.
-* Rešen je problem gde prečica za navigaciju do otvorenog profila nije ispravno funkcionisala.
-* Rešen je problem gde prečica na tastaturi za otvaranje menija za navigaciju nije radila.
-* Rešeni su svi problemi sa dugmetom za uključivanje/isključivanje mikrofona u glasovnim razgovorima.
-* Rešen je problem na poljskom jeziku gde je unošenje znaka blokirano kombinacijom ALT+C.
-* Ispravljen je izgovor fraza vlasnik i administrator u porukama.
-* Rešeno je nekoliko drugih manjih problema.
+* Vraćena je kompatibilnost sa Unigramom 12.7, gde je nekoliko prečica i obaveštenja prestalo da radi.
+* Poruke ankete ponovo najavljuju pitanje i opcije odgovora.
+* Lista tema foruma ponovo najavljuje pregled poslednje poruke.
+* Tokom pojedinačnog poziva ponovo rade prečice za isključivanje mikrofona (ALT+A), uključivanje ili isključivanje kamere (ALT+V) i završavanje poziva (ALT+N).
+* ALT+End ponovo prelazi na najnoviju poruku u ćaskanju.
 
 Ako imate želju, a što je najvažnije, priliku, da biste podržali programera ovog dodatka, možete to učiniti koristeći sledeće detalje:
 * Peipal: gladkii.kostia@gmail.com.

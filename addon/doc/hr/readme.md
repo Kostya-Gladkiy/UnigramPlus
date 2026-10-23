@@ -13,12 +13,14 @@ Koristite Unigram na udobniji i produktivniji način. Ovaj dodatak nudi mnogo pr
 * Kada fokus uđe na popis razgovora, uklanja izraze kao što su: "razgovori, kartica, odabrani popis". A kada fokus pogodi popis poruka, izraz "popis" neće biti izgovoren.
 * Naziv i veličina datoteke će se izgovoriti kada je pokazivač fokusiran na gumb "Otvori datoteku" ili gumb "Preuzmi datoteku", a kada je pokazivač fokusiran na gumb za reprodukciju audiodatoteke, čut ćete njezin naziv i trajanje.
 * Kada se fokus premjesti na glasovnu poruku koja se trenutno reproducira, prvo se oglasi informacija o vremenu njezine reprodukcije, a zatim sve ostale informacije.
-* Kada je fokus na poruci koja sadrži informacije o pozivu, najavljuje se trajanje tog poziva.
 * Prilikom fokusiranja na odabranu poruku u razgovoru, prvo ćete čuti informaciju da je odabrana, a zatim sadržaj poruke.
 * Sada, kada se krećete po razgovoru, fraza "Viđeno" se uopće neće izgovarati, a fraza "Nije viđeno" će se izgovarati prije sadržaja poruke. Ova značajka trenutno radi samo na engleskom, ruskom, ukrajinskom, španjolskom, portugalskom, poljskom, hrvatskom, turskom i perzijskom jeziku.
-* Značajno poboljšana funkcija snimanja glasovnih poruka. Snimanje, slanje i otkazivanje snimanja govorne poruke popraćeni su karakterističnim zvukovima. Također, prilikom izvođenja ovih funkcija, fokus ostaje na svom mjestu i ne skače niti na gumb za snimanje niti na polje za unos poruke.
+* Značajno poboljšana funkcija snimanja glasovnih poruka. Početak snimanja i slanje glasovne poruke popraćeni su karakterističnim zvukovima, a otkazano snimanje Unigram 13.0 i noviji najavljuju sami. Također, prilikom izvođenja ovih funkcija, fokus ostaje na svom mjestu i ne skače niti na gumb za snimanje niti na polje za unos poruke.
 * Ako se medij priložen poruci otvori pomoću razmaknice, tada će se nakon zatvaranja fokus vratiti na zadnji element koji je bio u fokusu.
 * Dodatak vam omogućuje da potpuno onemogućite najavu trake napretka, kao i da onemogućite samo najavu trake napretka za reprodukciju glasovnih poruka.
+
+## Prilagođeni zvukovi
+Zvukovi UnigramPlus nalaze se u mapi `appModules\media` dodatka. Otvorite NVDA postavke > UnigramPlus i pritisnite **Otvori mapu zvukova UnigramPlus**. Za prilagodbu zvuka kopirajte zamjensku WAV datoteku u tu mapu s istim nazivom kao zvuk koji želite zamijeniti, zatim ponovno pokrenite NVDA ili ponovno učitajte dodatke. Ažuriranja dodatka mogu vratiti ugrađene zvukove, stoga sačuvajte kopiju svojih datoteka.
 
 ##Informacije o mogućnosti doniranja programeru:
 Ako vam se jako sviđa ovaj dodatak i imate želju, a što je najvažnije priliku, financijski podržati programera i time ga motivirati za daljnji razvoj ovog dodatka, to možete učiniti prijenosom manjeg iznosa na sljedeću bankovni račun:
@@ -26,61 +28,394 @@ Ako vam se jako sviđa ovaj dodatak i imate želju, a što je najvažnije prilik
 ili broj kartice: 5169360009004502 (Ukrajina).
 I zapamtite da su svi koji su pročitali ovaj red mislili da će netko sigurno podržati programera, ali to neću biti ja.
 
-##Popis prečaca:
-* Alt+1: Premješta fokus na popis razgovora;
-* Alt+2: Premješta fokus na posljednju poruku u nepročitanom razgovoru;
-* Alt+3: Premješta fokus na oznaku "nepročitane poruke";
-* Alt+D: Premješta fokus na polje za uređivanje. Ako je fokus već u polju za uređivanje, tada će se nakon pritiskanja tipke prečaca pomaknuti na mjesto gdje je bio prije;
-* Alt+T: Najavljuje naziv i status otvorenog razgovora;
-* Razmaknica: Reproducira/pauzirafokusiranu glasovnu ili videoporuku ili otvara medijsku datoteku priloženu trenutnoj poruci;
-* Alt+P: Reproducira/pauzira glasovnu poruku koja se trenutno reproducira;
-* Alt+S: Povećava/smanjuje reprodukciju glasovnih poruka;
-* Alt+E: Zatvara reproduktor zvuka;
-* Control+C: Kopira poruku ako sadrži tekst. Ako je fokus na poveznici, poveznica će se kopirati;
-* Alt+Shift+C: Poziva ako je u pitanju kontakt ili se pridružuje glasovnom razgovoru ako je u pitanju grupa;
-* Alt+shift+V: Pritišće gumb za videopoziv;
-* Alt+Y: Prihvaća poziv;
-* Alt+N: Pritišće "Odbij poziv" ako postoji dolazni poziv, gumb "Završi poziv" ako je poziv u tijeku ili napušta glasovni razgovor ako je aktivan;
-* Alt+A: Pritišće gumb "Uključi/isključi mikrofon";
-* Alt+V: Pritišće gumb "Omogući/onemogući kameru";
-* Alt+Q: Pritišće gumb "Trenutni prikaz", ako je uključen u trenutnu poruku;
-* Alt+O: Pritišće gumb "Više opcija" u otvorenom razgovoru;
-* Alt+M: Otvara navigacijski izbornik;
-* Control+R: Pokreće/zaustavlja snimanje glasovne poruke;
-* Control+D: Ako se jednom pritisne, poništava se snimanje glasovne poruke. Ako se pritisne dva puta, mijenja se vrsta obavijesti prilikom pokretanja, slanja ili otkazivanja snimanja glasovne poruke;
-* Alt+U: Uključuje/isključuje obavijesti trake napretka;
-* Control+P: Otvara profil trenutnog razgovora;
-* Delete: Briše poruku ili razgovor;
-* Shift+Delete: Briše poruku ili razgovor za obje strane;
-* Control+Alt+C: Otvara komentare;
-* Enter: Odgovara na poruku;
-* Alt+F: Prosljeđuje poruku;
-* Backspace: Uređuje poruku;
-* Alt+Shift+R: Označava razgovor kao pročitan.
-* Control+Razmaknica: Prebacuje na način odabira.
-* Alt+Shift+L: Kopira podatke za emitiranje u međuspremnik;
-* Alt+C: Prikazuje poruku u skočnom prozoru;
-* NVDA+Control+U: Otvara prozor postavki UnigramPlusa;
-* Alt+4: Premješta fokus na popis mapa razgovora;
-* Control+Shift+A: Pritišće gumb "Priloži datoteku";
-* Control+N: Pritišće gumb "Novi razgovor";
-* Nedodijeljeno: Prikvačuje poruku ili razgovor;
-* Alt+5: Premješta fokus na otvoreni profil;
-* Alt+L: Omogućava automatsko čitanje novih poruka u trenutnom razgovoru;
-* NVDA+Alt+R: Pretvara glasovnu poruku u tekst;
-* Strelica lijevo: Najavljuje izvornu poruku, poruku na koju je odgovoreno;
-* Alt+6: Premješta fokus na popis niti grupe;
-* Alt+H: Prikazuje popis svih prečaca UnigramPlus dodatka;
-* Alt+I: Otvara popis rezultata pretraživanja;
-* Alt+J: Prelazi na prethodni rezultat pretraživanja u razgovoru;
-* Alt+L: Prelazi na sljedeći rezultat pretraživanja u razgovoru.
+<!-- shortcut-table-start -->
+## Popis prečaca:
 
-### Napomena
+> In the Category column, `UnigramPlus` identifies shortcuts provided by the add-on and `Unigram` identifies shortcuts built into Unigram.
 
-* Svi tipkovnički prečaci mogu se ponovno dodijeliti u NVDA izborniku>Postavke>Ulazne geste.
-* Činjenica da funkcija koja fokusira pokazivač na oznaku "nepročitana poruka" ponekad može reagirati sa zakašnjenjem je poznati problem. To može ovisiti o broju poruka u trenutku.
+> `Unigram (nedokumentirano)` označava prečace implementirane u trenutačnom izvornom kodu Unigrama koji još nisu navedeni u službenoj datoteci Shortcuts.md.
 
-	##Popis promjena:
+> [!TIP]
+> You can customize UnigramPlus shortcuts from NVDA menu > Preferences > Input gestures.
+
+### Kretanje između razgovora
+
+| Prečac | Kategorija | Radnja |
+|---|---|---|
+| **Ctrl+Tab / Alt+Arrow Up / Ctrl+Page Up** | Unigram | Next chat |
+| **Ctrl+Shift+Tab / Alt+Arrow Down / Ctrl+Page Down** | Unigram | Previous chat |
+| **Ctrl+Alt+Home** | Unigram (nedokumentirano) | Prvi razgovor |
+| **Ctrl+Alt+End** | Unigram (nedokumentirano) | Posljednji razgovor |
+| **Ctrl+Alt+Up/Down** | UnigramPlus | Premješta se na sljedeći ili prethodni razgovor s nepročitanim spominjanjima |
+| **ALT+1** | UnigramPlus | Premješta fokus na popis razgovora |
+| **ALT+2** | UnigramPlus | Premješta fokus na posljednju poruku u otvorenom razgovoru |
+| **ALT+3** | UnigramPlus | Premješta fokus na oznaku "nepročitane poruke" |
+| **ALT+4** | UnigramPlus | Premješta fokus na popis mapa razgovora |
+| **ALT+5** | UnigramPlus | Premješta fokus na otvoreni profil |
+| **ALT+6** | UnigramPlus | Premješta fokus na popis niti grupe |
+| **ALT+D** | UnigramPlus | Premješta fokus na polje za uređivanje. Ako je fokus već u polju za uređivanje, tada će se nakon pritiskanja tipke prečaca pomaknuti na mjesto gdje je bio prije |
+
+### Pretraživanje
+
+| Prečac | Kategorija | Radnja |
+|---|---|---|
+| **Ctrl+E** | Unigram | Chat search |
+| **Ctrl+F** | Unigram | Messages search per chat |
+| **Ctrl+Shift+F** | Unigram (nedokumentirano) | Chat search |
+| **Search key** | Unigram (nedokumentirano) | Pretraži trenutačnu stranicu |
+| **ALT+I** | UnigramPlus | Prelazi na popis rezultata pretraživanja |
+| **F3** | UnigramPlus | Prelazi na sljedeći rezultat pretraživanja |
+| **Shift+F3** | UnigramPlus | Prelazi na prethodni rezultat pretraživanja |
+
+### Odabrani tekst u polju za unos
+
+| Prečac | Kategorija | Radnja |
+|---|---|---|
+| **Ctrl+Z** | Unigram | Undo |
+| **Ctrl+Y** | Unigram | Redo |
+| **Ctrl+Shift+Z** | Unigram (nedokumentirano) | Ponovi |
+| **Alt+X** | Unigram (nedokumentirano) | Pretvori četiri odabrane heksadekadske znamenke u odgovarajući znak |
+| **Ctrl+X** | Unigram | Cut |
+| **Ctrl+C** | Unigram | Copy |
+| **Ctrl+V** | Unigram | Paste |
+| **Ctrl+A** | Unigram | Select All |
+| **Ctrl+Shift+.** | Unigram | Citat |
+| **Ctrl+B** | Unigram | Bold |
+| **Ctrl+I** | Unigram | Italic |
+| **Ctrl+U** | Unigram | Podcrtano |
+| **Ctrl+Shift+X** | Unigram | Strikethrough |
+| **Ctrl+Shift+M** | Unigram | Monospace |
+| **Ctrl+Shift+P** | Unigram | Spoiler |
+| **Ctrl+K** | Unigram | Create Link |
+| **Ctrl+Shift+N** | Unigram | Ukloni oblikovanje (običan tekst) |
+
+### Mape
+
+| Prečac | Kategorija | Radnja |
+|---|---|---|
+| **Ctrl+1** | Unigram | First folder (All chats) |
+| **Ctrl+2** | Unigram | Second folder |
+| **Ctrl+3** | Unigram | Third folder |
+| **Ctrl+4** | Unigram | Fourth folder |
+| **Ctrl+5** | Unigram | Fifth folder |
+| **Ctrl+6** | Unigram | Sixth folder |
+| **Ctrl+7** | Unigram | Seventh folder |
+| **Ctrl+8** | Unigram | Eighth folder |
+| **Ctrl+9** | Unigram | Archive |
+| **Ctrl+Shift+Down** | Unigram (nedokumentirano) | Sljedeća mapa |
+| **Ctrl+Shift+Up** | Unigram (nedokumentirano) | Prethodna mapa |
+
+### Radnje s porukama
+
+| Prečac | Kategorija | Radnja |
+|---|---|---|
+| **Space** | UnigramPlus | Play or stop the focused voice or video message, or open media attached to the message |
+| **Ctrl+C** | UnigramPlus | Kopira poruku ako sadrži tekst. Ako je fokus na poveznici, poveznica će se kopirati |
+| **ALT+Q** | UnigramPlus | Pritišće gumb "Trenutni prikaz", ako je uključen u trenutnu poruku |
+| **ALT+Delete** | UnigramPlus | Briše poruku ili razgovor |
+| **Shift+Delete** | UnigramPlus | Briše poruku ili razgovor za obje strane |
+| **Delete** | Unigram (nedokumentirano) | Izbriši odabranu ili fokusiranu poruku |
+| **Ctrl+ALT+C** | UnigramPlus | Otvara komentare |
+| **Enter** | UnigramPlus | Odgovara na poruku |
+| **ALT+F** | UnigramPlus | Prosljeđuje poruku |
+| **Backspace** | UnigramPlus | Uređuje poruku |
+| **ALT+Shift+R** | UnigramPlus | Označava razgovor kao pročitan |
+| **Ctrl+Space** | UnigramPlus | Prebacuje na način odabira |
+| **Unassigned** | UnigramPlus | Spremi datoteku kao... |
+| **Unassigned** | UnigramPlus | Prikvačuje poruku ili razgovor |
+| **Left Arrow** | UnigramPlus | Najavljuje izvornu poruku, onu na koju je odgovoreno |
+| **Right Arrow** | UnigramPlus | Move to the next media attachment in the focused message |
+| **ALT+C** | UnigramPlus | Prikazuje poruku u skočnom prozoru |
+| **ALT+W** | UnigramPlus | Announces the time a message was sent or received, as well as a list of reactions. Double-clicking toggles the announcement mode for this information. |
+| **ALT+[** | UnigramPlus | Prebacuje izgovaranje zaglavlja poruka prije ili nakon sadržaja poruke |
+| **NVDA+Ctrl+0-9** | UnigramPlus | Review one of the ten most recent messages; 1 is the newest and 0 is the tenth newest |
+| **Ctrl+Shift+A** | UnigramPlus | Pritišće gumb "Priloži datoteku" |
+| **Ctrl+Shift+E** | Unigram (nedokumentirano) | Otvori birač emojija |
+| **Ctrl+Shift+G** | Unigram (nedokumentirano) | Otvori birač GIF-ova |
+| **Ctrl+Shift+S** | Unigram (nedokumentirano) | Otvori birač naljepnica |
+| **Ctrl+O** | Unigram (nedokumentirano) | Otvori birač datoteka za slanje dokumenata |
+| **Ctrl+N** | UnigramPlus | Pritišće gumb "Novi razgovor" |
+| **Arrow Up** | Unigram | Edit last sent message |
+| **Ctrl+Arrow Up** | Unigram | Reply to last sent message |
+| **Esc / Alt+Arrow Left** | Unigram | Go back |
+| **Alt+Arrow Right** | Unigram | Redo go back |
+
+### Glasovne poruke i mediji
+
+| Prečac | Kategorija | Radnja |
+|---|---|---|
+| **ALT+P** | UnigramPlus | Reproducira/pauzira glasovnu poruku koja se trenutno reproducira |
+| **ALT+S** | UnigramPlus | Povećava/smanjuje reprodukciju glasovnih poruka |
+| **ALT+E** | UnigramPlus | Zatvara reproduktor zvuka |
+| **NVDA+ALT+R** | UnigramPlus | Pretvara glasovnu poruku u tekst |
+| **Ctrl+ALT+Right Arrow** | UnigramPlus | Fast forward a voice message |
+| **Ctrl+ALT+Left Arrow** | UnigramPlus | Rewind voice message |
+
+### Snimanje poruka
+
+| Prečac | Kategorija | Radnja |
+|---|---|---|
+| **Ctrl+R** | Unigram | Start record |
+| **Ctrl+R (again)** | Unigram | Send recorded |
+| **Ctrl+D** | Unigram | Stop recording |
+| **Space (while recording) / Ctrl+P** | Unigram | Pause recording |
+
+### Pozivi
+
+| Prečac | Kategorija | Radnja |
+|---|---|---|
+| **Ctrl+Home** | Unigram | Accept incoming call |
+| **Ctrl+End** | Unigram | Reject incoming call |
+| **Ctrl+Page Up** | Unigram | Toggle camera |
+| **Ctrl+Page Down** | Unigram | Toggle microphone |
+| **ALT+Shift+C** | UnigramPlus | Poziva ako je u pitanju kontakt ili se pridružuje glasovnom razgovoru ako je u pitanju grupa |
+| **ALT+Shift+V** | UnigramPlus | Pritišće gumb za videopoziv |
+| **ALT+Y** | UnigramPlus | Prihvaća poziv |
+| **ALT+N** | UnigramPlus | Pritišće "Odbij poziv" ako postoji dolazni poziv, gumb "Završi poziv" ako je poziv u tijeku ili napušta glasovni razgovor ako je aktivan. |
+| **ALT+A** | UnigramPlus | Pritišće gumb "Uključi/isključi mikrofon" |
+| **ALT+V** | UnigramPlus | Pritišće gumb "Omogući/onemogući kameru" |
+
+### Ostali prečaci
+
+| Prečac | Kategorija | Radnja |
+|---|---|---|
+| **Ctrl+0** | Unigram | Saved messages |
+| **Ctrl+W** | Unigram | Close current window |
+| **Ctrl+Q** | Unigram | Close Unigram (main window only) |
+| **Ctrl+Shift+Y** | Unigram | Change status |
+| **Ctrl+Shift+W** | Unigram (nedokumentirano) | Zaustavi reprodukciju medija |
+| **Ctrl+F4** | Unigram (nedokumentirano) | Close current window |
+| **Ctrl+L** | Unigram (nedokumentirano) | Zaključaj Unigram |
+| **Ctrl+M** | Unigram (nedokumentirano) | Minimiziraj Unigram |
+| **Ctrl+J** | Unigram (nedokumentirano) | Otvori preuzimanja |
+| **ALT+T** | UnigramPlus | Najavljuje naziv i status otvorenog razgovora |
+| **NVDA+Alt+V** | UnigramPlus | Otvori podatke o verziji programa Unigram i dodatka UnigramPlus u prozoru samo za čitanje |
+| **ALT+M** | UnigramPlus | Otvara navigacijski izbornik |
+| **ALT+Shift+M** | UnigramPlus | Otvara postavke Unigrama |
+| **ALT+Shift+P** | UnigramPlus | Otvara profil trenutnog razgovora |
+| **ALT+L** | UnigramPlus | Omogućava automatsko čitanje novih poruka u trenutnom razgovoru |
+| **ALT+H** | UnigramPlus | Prikazuje popis svih UnigramPlus prečaca |
+| **ALT+U** | UnigramPlus | Uključuje/isključuje obavijesti trake napretka |
+| **ALT+Shift+L** | UnigramPlus | Kopira podatke za emitiranje u međuspremnik |
+| **NVDA+ALT+U** | UnigramPlus | Otvara prozor postavki UnigramPlusa |
+<!-- shortcut-table-end -->
+
+##Popis promjena:
+
+### Verzija 5.8.6
+
+* Razmaknica ponovno reproducira, otvara i preuzima medije poruke u Unigramu 13.0 i novijim verzijama. Od Unigrama 13.0 sadržaj poruke s fotografijom, videozapisom, GIF-om, datotekom, pjesmom ili glasovne poruke sam je gumb koji to radi. Unigram 13.0.1 vratio je tom gumbu identifikator koji UnigramPlus traži, osim na glasovnim porukama, gdje je identifikator dobio gumb za pretvaranje govora u tekst, pa razmaknica na glasovnoj poruci nije ništa radila. UnigramPlus sada prepoznaje gumb same glasovne poruke po napretku preuzimanja koji javlja. Unigram 13.1.1 i dalje nema radnju za razmaknicu na poruci izvan načina odabira, pa UnigramPlus pritišće taj gumb: razmaknica reproducira ili pauzira glasovnu poruku ili pjesmu, otvara fotografiju, videozapis ili GIF u pregledniku te preuzima ili otvara datoteku.
+* Nakon što razmaknica reproducira glasovnu poruku ili pjesmu ili preuzme datoteku, fokus ostaje na poruci, a sljedeći pritisak tipke Escape više ga ne vraća onamo. To treba samo preglednik, ali u Unigramu 13.0 i novijim verzijama datoteka ili pjesma široka je kao fotografija, pa ju je UnigramPlus smatrao fotografijom.
+* Razmaknica više ne otvara naljepnice ni preglede poveznica. Unigram 13.0.1 dao im je isti identifikator kao gumbima za medije, ali one su poveznice. U pregledu poveznice koji prikazuje fotografiju ili videozapis razmaknica i dalje otvara fotografiju ili videozapis.
+* Strelice desno i lijevo na poruci s više medijskih privitaka, poput albuma, ponovno najavljuju svaku fotografiju, videozapis, datoteku ili pjesmu u Unigramu 13.0 i novijim verzijama. Od Unigrama 13.0 svaki privitak sadrži samo vlastiti gumb svojeg sadržaja, pa UnigramPlus više nije pronalazio ono po čemu se fotografija razlikuje od videozapisa i za svaki je privitak najavljivao zamjensku riječ „Медіа”. Sada gleda unutar tog gumba: videozapis ondje ima vlastiti gumb za preuzimanje, datoteka ili pjesma svoj naslov, a fotografija ni jedno ni drugo.
+* Ctrl+Space sada radi i na popisu razgovora, gdje prije nije činio ništa. Kao i kod poruka, prvi pritisak uključuje način odabira s razgovorom u fokusu iz kontekstnog izbornika razgovora, a zatim svaki pritisak odabire razgovor u fokusu ili poništava njegov odabir, kao što to čini razmaknica u Unigramu. UnigramPlus zatim javlja je li razgovor odabran. Poništavanje odabira posljednjeg odabranog razgovora završava način odabira. Dok je popis razgovora u načinu odabira, UnigramPlus kaže i „Odabrano” prije naziva odabranog razgovora kad fokus dođe na njega, kao što to čini kod poruka.
+* Dodan je prečac Alt+Shift+M koji otvara postavke Unigrama u Unigramu 13.1 i novijim verzijama, kao što to čini UnigramPlusRussianMod. Unigram 13.1 premjestio je postavke iz bočnog okna u karticu ispod popisa razgovora. Alt+Shift+M odabire tu karticu, a zatim premješta fokus na vrh postavki: na prvi od vaših ostalih računa ili, ako ste prijavljeni samo s jednim računom, na „Dodaj račun”. U verzijama Unigrama starijima od 13.1 te u uskom prozoru koji prikazuje samo otvoreni razgovor UnigramPlus javlja „Postavke su nedostupne”.
+
+### Verzija 5.8.5
+
+* Alt+M ponovno otvara navigacijski izbornik u Unigramu 13.1 i novijim verzijama. Unigram 13.1 zamijenio je bočno okno izbornikom koji se otvara istim gumbom, a taj gumb više nije preklopni gumb, pa ga UnigramPlus nije pronalazio i javljao je „Navigacijski izbornik je nedostupan”.
+* Ispravljen je Ctrl+Space u Unigramovu načinu odabira. U tom načinu kontekstni izbornik odabrane poruke nema naredbu Odaberi, pa je UnigramPlus prolazio kroz izbornik ne pronalazeći je, a poruka je ostajala odabrana. Ctrl+Space sada radi kao u Unigramu 13.1.1: prvi pritisak i dalje uključuje način odabira iz kontekstnog izbornika, a zatim svaki pritisak odabire poruku u fokusu ili poništava njezin odabir, kao što to čini razmaknica u Unigramu. UnigramPlus zatim javlja je li poruka odabrana. Poništavanje odabira posljednje odabrane poruke završava način odabira.
+* U načinu odabira razmaknica i Enter na poruci sada je odabiru ili poništavaju njezin odabir, kao u Unigramu, umjesto da reproduciraju njezine medije ili traže Odgovori u kontekstnom izborniku, a Backspace ondje više ne traži Uredi.
+* Ažurirana je kompatibilnost s NVDA 2026.3. UnigramPlus više ne koristi zastarjele dijelove NVDA API-ja, koje NVDA još podržava, ali ih može ukloniti u nekoj od sljedećih verzija: okvire s porukama provjere ažuriranja, stari način otvaranja postavki UnigramPlusa i konstantu tipke koja se koristi pri premotavanju glasovnih poruka.
+* Ažurirani poljski i vijetnamski prijevodi.
+
+### Verzija 5.8.4
+
+* Kada je uključena opcija „Automatski premjesti fokus na popis razgovora pri pokretanju Unigrama”, fokus sada ostaje u skočnom prozoru koji Unigram prikaže pri pokretanju, poput zahtjeva za pridruživanje grupi otvorenog iz pozivne poveznice. Od verzije 5.6.1 UnigramPlus je premještao fokus iz skočnog prozora na popis razgovora iza njega, pa je skočni prozor bio preskočen.
+* Ažuriran vijetnamski prijevod.
+
+### Verzija 5.8.3
+
+* Uklonjeno je rukovanje tipkama Enter i razmaknica koje je UnigramPlus u verziji 4.8.0 dodao popisu kategorija postavki Unigrama. U Unigramu 13.0 i novijima svaka je kategorija postavki gumb koji se sam otvara tipkom Enter ili razmaknicom, a fokus dolazi na taj gumb, a ne na stavku popisa kojom je dodatak rukovao, pa se to rukovanje ondje više nije primjenjivalo. Pri otvaranju kategorije fokus sada ostaje na njoj, kao i u samom Unigramu, umjesto da se premjesti u kategoriju. To je rukovanje obuhvaćalo i druge popise kartica, primjerice kartice Emoji, GIF-ovi i Naljepnice, gdje je presretalo Enter i razmaknicu; sada te tipke i ondje dolaze do Unigrama.
+* U postavkama Unigrama Alt+1 sada premješta fokus na otvorenu kategoriju postavki ili na prvu kategoriju ako nijedna nije otvorena. Prije je popis kategorija tražio na fiksnom mjestu stranice postavki, a zatim pokušavao premjestiti fokus na element koji u Unigramu 13.0 ne može primiti fokus.
+* Uklonjen je kôd koji se više nije mogao izvršiti, bez ikakve promjene u korištenju. Prije Unigrama 9.5 neke su se stavke popisa najavljivale internim nazivom klase, koji je UnigramPlus zamjenjivao čitljivim nazivom; Unigram 9.5 preimenovao je te klase, pa se te zamjene više nikad nisu primjenjivale. Uklonjen je i rukovatelj koji je objašnjenje kviza otvarao u zasebnom prozoru, a bio je isključen od verzije 5.2.0.
+* Ažurirani poljski i vijetnamski prijevodi.
+
+### Verzija 5.8.2
+
+* Ispravljene pogreške NVDA-a u novoj beta verziji Unigrama za WinUI 3. Od verzije 5.5.6 pogreška se bilježila pri svakom povratku u Unigram ili pri tipkanju pomoću uređivača načina unosa (IME), primjerice za kineski, japanski ili korejski. UWP verzija Unigrama nije bila zahvaćena.
+* UnigramPlus više ne ometa najave fokusa u Telegram Desktopu kada dodatak Telegram Desktop nije instaliran.
+* Uklonjena obavijest koju je UnigramPlus davao pri otkazivanju snimanja glasovne ili video poruke. Unigram 13.0 i noviji sami najavljuju otkazano snimanje, bilo da je otkazano pomoću Ctrl+D ili gumba za otkazivanje, pa se više ne čuje dvaput. Također se snimka koja se sporo pojavljuje u razgovoru više ne prijavljuje kao otkazana. Početak i slanje snimke i dalje se najavljuju, a postavka za to sada se zove "Obavijest pri početku ili slanju snimke glasovne poruke".
+* Ažurirani poljski i vijetnamski prijevodi.
+
+### Verzija 5.8.1
+
+* Uklonjeno zaobilazno rješenje za trajanje poziva. Unigram 12.10 i noviji sami najavljuju trajanje u poruci o pozivu, pa ga UnigramPlus više ne dodaje i ne čuje se dvaput.
+* Ispravljeno pokretanje dodatka na starijim verzijama NVDA-a koje nemaju modul utils.security.
+* Uklonjeni su uvozi koje dodatak više ne koristi.
+* Ažuriran vijetnamski prijevod.
+
+### Verzija 5.8.0
+
+* Ponavljajuće pozadinske provjere dodatka više se ne izvode u glavnoj petlji NVDA-a, pa se kretanje razgovorima, tipkanje i govor više ne zaustavljaju dok Unigram odgovara.
+* Svako ponašanje dodano nakon verzije 5.4 sada se može uključiti ili isključiti u postavkama dodatka UnigramPlus, okupljeno pod jednim naslovom: kako se najavljuje gumb za snimanje glasovne poruke, obogaćeni tekst poruke pomoću ALT+C, oznaka gumba identiteta na profilu, najava odgovaranja i uređivanja u polju poruke, izostavljena najava "popis" prije poruka, trenutačno stanje mikrofona i kamere tijekom poziva te broj nepročitanih pri promjeni mape razgovora. Svako zadržava svoje trenutačno ponašanje kao zadano, a svaka oznaka navodi koje ponašanje verzije 5.4 vraća.
+* Ispravljena razmaknica koja nije reproducirala glasovne poruke, glazbu i datoteke.
+* Ispravljeno da Enter nije odgovarao na poruku, Backspace je nije uređivao, ALT+C nije prikazivao njezin tekst, a ALT+D se nije vraćao na nju.
+* Ispravljeno da ALT+E nije zatvarao audioreproduktor.
+* Ispravljeno da Ctrl+ALT+Lijevo i Ctrl+ALT+Desno nisu premotavali reprodukciju glasovne poruke, uključujući i kad se strelica ponovno pritisne dok su modifikatori i dalje pritisnuti.
+* Otkazivanje snimanja glasovne poruke najavljuje se otprilike sekundu i pol nakon zaustavljanja, umjesto pet sekundi kasnije.
+* Uz odabranu mogućnost gumba za snimanje iz verzije 5.4, fokus ostaje u polju poruke kad snimanje započne, dok Tab i dalje dolazi do gumba za snimanje.
+* Ispravljen niz prečaca koji su tiho zakazivali kad je u stablu Unigrama nedostajao element koji su očekivali: ALT+3, ALT+4, ALT+5, ALT+6, ALT+Q, ALT+T, ALT+Shift+L, ALT+Shift+P, Shift+Delete, kretanje medijima i upravljanje pozivom.
+* Pretvaranje glasovne poruke u tekst više ne pokreće novu dretvu svakih pola sekunde dok čeka i odustaje umjesto da čeka beskonačno.
+
+### Verzija 5.7.3
+
+* NVDA+Alt+V sada prikazuje verziju programa UnigramPlus u novom retku.
+
+### Verzija 5.7.2
+
+* NVDA+Alt+V sada otvara podatke o verziji u višerednom prozoru samo za čitanje.
+
+### Verzija 5.7.1
+
+* Ispravljeno je da se gumbi reakcija u Unigramu 12.10.2 tretiraju kao poruke, pa prečaci za navigaciju porukama više ne poništavaju njihovu izvornu radnju prebacivanja.
+
+### Verzija 5.7.0
+
+* Vraćene su najave pri promjeni mape s brojem nepročitanih većim od nule, uz zadržavanje zaštita praćenja napretka prijenosa datoteka.
+* Popis prečaca ažuriran je prema trenutačnom izvornom kodu Unigrama, a označeni su ugrađeni prečaci koji još nisu u službenom Shortcuts.md dokumentu.
+
+### Verzija 5.6.9
+
+* Ispravljena je pogreška koja se mogla pojaviti kada je NVDA ušao u sigurnu radnu površinu, primjerice pri UAC upitu, dok je bilo uključeno UnigramPlus praćenje poruka u pozadini.
+* Ispravljeno je da se retci tema Spremljenih poruka u Unigramu 12.10.1+ tretiraju kao poruke samo zato što njihovi izvorni sažeci sadrže vremenske oznake slanja ili primanja.
+* Uklonjeno je zastarjelo zaobilazno rješenje za nazive tema Spremljenih poruka; trenutne verzije Unigrama sada izvorno pružaju pristupačne nazive za razgovore Spremljenih poruka.
+* Ažurirana je kompatibilnost s NVDA 2026.2.
+* Ažurirani su poljski i burmanski prijevodi.
+
+### Verzija 5.6.8
+
+* Ispravljen je neuspjeh prečaca Alt+C kada je instaliran WhatsApp Enhancer zbog sukoba naziva pomoćnog modula u appModules.
+
+### Verzija 5.6.7
+
+* Prečac za izgovaranje instaliranih verzija programa Unigram i dodatka UnigramPlus promijenjen je s NVDA+Shift+V na NVDA+Alt+V kako bi se izbjegli sukobi prečaca.
+* Ispravljen je Shift+Delete za brisanje chatova i napuštanje grupa ili kanala u trenutačnim verzijama Unigrama, uključujući automatsku potvrdu skočnog prozora.
+
+### Verzija 5.6.6
+
+* Dodan je NVDA+Shift+V za izgovaranje instaliranih verzija programa Unigram i dodatka UnigramPlus.
+* Uklonjeno je privremeno zaobilazno rješenje za umetnute gumbe u Unigramu 12.9 nakon što je Unigram 12.9.1 ispravio oznake gumba; time se izbjegavaju zastoji UIA-e u popisima botova, kretanju porukama, reakcijama i popisu razgovora.
+* Ažurirani su svi prijevodi i priručnici za verziju 5.6.6.
+
+### Verzija 5.6.5
+
+* Ispravljena je tipka Enter za odgovaranje na poruke i Alt+Shift+R za označavanje razgovora kao pročitanih u trenutačnim verzijama Unigrama.
+* Uklonjeni su način web-prikaza i njegova postavka; Alt+C sada uvijek otvara tekst poruke u izvornom wx skočnom prozoru.
+* Ažurirani su svi prijevodi i priručnici za verziju 5.6.5.
+
+### Verzija 5.6.4
+
+* Shift+Delete je ispravljen korištenjem Unigramove izvorne naredbe Delete i automatskom potvrdom brisanja s obje strane.
+* Alt+2 sada najprije aktivira Unigramov gumb „Idi na dno”; uklonjen je dvostruki prečac Alt+End.
+* Dodana je postavka za odabir klasičnog wx prozora (zadano) ili web-prikaza pri prikazu teksta poruke tipkom Alt+C.
+* Sada se koristi službeni pristupačni tekst obogaćenih poruka Unigrama, uz privremeni popravak neoznačenih ugrađenih gumba u Unigramu 12.9.
+* Popis prečaca ažuriran je prema službenoj dokumentaciji Unigrama 12.9.
+* Dodan je privremeni popravak kako bi retci tema Spremljenih poruka izgovarali vidljivi naslov razgovora umjesto naziva vrste TDLib.
+
+### Verzija 5.6.3
+
+* Ispravljen je povremeni problem pri kojem je NVDA izgovarao „popis” prije poruke pri kretanju strelicama gore i dolje.
+* Dodana je postavka za ponašanje Alt+[ koja izgovara zaglavlja poruka nakon njihova sadržaja; prema zadanim postavkama je isključena.
+* Dodana je neobavezna zvučna obavijest pri dosezanju kraja razgovora.
+
+### Verzija 5.6.2
+
+* Ispravljen je Ctrl+Alt+Left/Right Arrow za premotavanje unatrag i unaprijed unutar glasovne poruke koja se reproducira.
+* Ispravljen je Alt+I tako da otvara ugrađeni popis rezultata pretraživanja razgovora.
+* Dodan je Alt+[ za prebacivanje izgovaranja zaglavlja prije ili nakon sadržaja poruke. Kada su zaglavlja nakon sadržaja, nazivi datoteka izgovaraju se prvi u odjeljcima s datotekama.
+
+### Verzija 5.6.1
+
+* Ispravljeno je praćenje napretka prijenosa datoteka tako da se zaustavlja na 100% i više ne stvara novu dretvu u svakom ciklusu provjere.
+* Pri otvaranju Unigrama fokus se sada automatski premješta na popis razgovora.
+* Dodan je Ctrl+Alt+Up/Down za kretanje kroz razgovore s nepročitanim spominjanjima.
+
+### Verzija 5.6.0
+
+* Ispravljeno je prepoznavanje obogaćenih poruka tako da se poruke s naljepnicama i emotikonima više pogrešno ne izgovaraju kao obogaćene poruke.
+* Ctrl+R sada koristi izvorno Unigramovo ponašanje za snimanje i slanje glasovnih poruka, uz zadržavanje UnigramPlus obavijesti o početku i završetku snimanja.
+* Ažurirani su prijevodi.
+
+### Verzija 5.5.9
+
+* Dodana je podrška za obogaćene poruke. Izgovaraju se kada prime fokus i mogu se otvoriti pomoću Alt+C u prozoru za pregledavanje.
+* Poveznice i mješoviti sadržaj ostaju sačuvani, a poveznice se mogu aktivirati iz prozora za pregledavanje.
+
+### Verzija 5.5.8
+
+* Ispravljena su automatska ažuriranja: izdanja se sada sigurno dohvaćaju s GitHuba, a preuzeti dodatak provjerava se prije instalacije.
+
+* Vraćena je kompatibilnost s Unigramom 12.7, gdje je nekoliko prečaca i najava prestalo raditi.
+* Poruke ankete ponovno najavljuju pitanje i mogućnosti odgovora.
+* Popis tema foruma ponovno najavljuje pretpregled posljednje poruke.
+* Tijekom pojedinačnog poziva ponovno rade prečaci za isključivanje mikrofona (ALT+A), uključivanje ili isključivanje kamere (ALT+V) i završetak poziva (ALT+N).
+* ALT+End ponovno prelazi na najnoviju poruku u razgovoru.
+
+### Verzija 5.5.7
+
+* Odjeljak tipkovničkih prečaca reorganiziran je u kategorizirane tablice te objedinjuje prečace Unigrama i UnigramPlusa.
+* Pri snimanju glasovne ili videoporuke NVDA sada najavljuje "Snimanje glasovne poruke" ili "Snimanje videoporuke" zajedno s proteklim vremenom umjesto "Tn voice message".
+
+### Verzija 5.5.6
+
+* Ispravljeno je da gumb identiteta u profilu grupe ili kanala izgovara „Identity root” pri prolasku tipkom Tab nakon imena; sada izgovara naziv razgovora i broj članova.
+* Ctrl+C se više ne obrađuje dvaput: kopira poveznicu kada je fokus na poveznici, a u ostalim slučajevima kopiranje poruke prepušta Unigramu.
+
+### Verzija 5.5.5
+
+* Odgovaranje na poruku ili njezino uređivanje sada se izgovara u polju za unos poruke umjesto uobičajenog upita za poruku.
+* Ispravljeno je da se zvuk tipkanja ponekad nastavljao reproducirati nakon zatvaranja aplikacije, nakon što druga strana prestane tipkati ili nakon napuštanja razgovora; sada se zaustavlja čim nitko ne tipka u otvorenom razgovoru.
+* Ažurirana je burmanska lokalizacija.
+
+### Verzija 5.5.4
+
+* Ispravljena su neželjena čitanja, poput broja nepročitanih chatova u mapama, primjerice „Svi 535”. Napredak prijenosa datoteka sada je ograničen na Unigram kontrole za slanje i preuzimanje te se zanemaruje izvan Unigram prozora.
+* Ispravljeno je supostojanje s NVDA dodatkom za Telegram Desktop tako da se UnigramPlus uključuje samo kada je pokrenuta aplikacija prepoznata kao Unigram.
+* U postavke UnigramPlus dodan je gumb za otvaranje mape ugrađenih zvukova, radi lakše zamjene WAV datoteka datotekama istog naziva.
+* Dodana je opcija za strelicu gore u polju za uređivanje poruke koja premješta fokus na zadnju fokusiranu poruku.
+* Tradicionalni kineski obnovljen je kao zh_TW, a dodan je pojednostavljeni kineski zh_CN.
+
+### Verzija 5.5.3
+
+* Dodano automatsko najavljivanje napretka slanja i preuzimanja datoteka. Nova opcija "Samo tijekom slanja i preuzimanja" dodana je u postavke najave traka napretka i sada je zadana postavka. Tipka ALT+U sada izmjenjuje tri stanja: isključeno, samo tijekom slanja/preuzimanja i najavljuj sve trake napretka.
+* Ažuriran readme i prijevodi.
+
+### Verzija 5.5.2
+
+* Ažuriran readme i prijevodi.
+* Promijenjen zvuk indikatora tipkanja.
+
+### Verzija 5.5.1
+
+* Popravljen prečac za kretanje kroz popis tema grupe (ALT+6). Sada ispravno prepoznaje popis tema prilikom otvaranja forumske grupe iz popisa razgovora.
+* Dodan zvuk indikatora tipkanja: zvuk se reproducira u petlji dok druga strana tipka u razgovoru i prestaje kada prestane tipkati. Ova je značajka inspirirana odgovarajućom značajkom u Unigram JAWS skripti.
+
+### Verzija 5.5.0
+
+* Dodana kompatibilnost s NVDA 2026.1.
+
+### Verzija 5.4.2
+
+* Dodana kompatibilnost s NVDA 2025.3.3.
+
+### Verzija 5.4.1
+
+* Dodana kompatibilnost s NVDA 2025.1.2.
+
+### Verzija 5.4.0
+
+* Riješen problem s popisom razgovora.
+
+### Verzija 5.2.0
+
+* Dodana je mogućnost odabira datoteka priloženih porukama strelicama lijevo i desno i otvaranja odabrane datoteke razmaknicom.
+* Sada se poveznice u porukama neće čitati u cijelosti, već samo do upitnika.
+* Sada, kada zatvorite preglednik fotografija ili videa, UnigramPlus će pokušati postaviti fokus na poruku koju ste gledali.
+* Tipkovni prečac za otvaranje UnigramPlus postavki je promijenjen. Sada je ova značajka dodijeljena kombinaciji NVDA+Alt+U.
+* Izvršena je optimizacija koda, što je rezultiralo značajno poboljšanim vremenom odgovora pri kretanju popisom razgovora i popisom poruka. To je posebno vidljivo na porukama koje sadrže mnogo ugniježđenih elemenata.
+* Popravljeni su mnogi manji problemi.
+* Mnogo zastarjelog koda je uklonjeno.
 
 ### Verzija 5.1.0
 

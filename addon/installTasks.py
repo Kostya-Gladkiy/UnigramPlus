@@ -1,10 +1,6 @@
 # -*- coding: UTF-8 -*-
 
 import addonHandler
-import gui
-import wx
-import os
-import globalVars
 
 addonHandler.initTranslation()
 

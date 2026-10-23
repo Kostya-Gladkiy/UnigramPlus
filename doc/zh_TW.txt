@@ -1,0 +1,10 @@
+* 修復與 Unigram 12.7 的相容性，先前有多個快速鍵與語音提示失效。
+* 投票訊息會再次朗讀問題與答案選項。
+* 論壇主題清單會再次朗讀最後一則訊息的預覽。
+* 一對一通話中，靜音麥克風（ALT+A）、開啟或關閉鏡頭（ALT+V）與結束通話（ALT+N）的快速鍵可再次使用。
+* ALT+End 會再次移動到聊天中最新的訊息。
+
+If you have the desire, and most importantly the opportunity, to support the developer of this add-on, you can do so using the following details:
+* PayPal: gladkiy.kostya@gmail.com.
+* Ukrainian donation system: https://unigramplus.diaka.ua/donate.
+* Card number: 5169360009004502 (Gladkiy Constantine).

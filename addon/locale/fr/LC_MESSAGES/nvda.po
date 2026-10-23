@@ -1,6 +1,7 @@
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: UnigramPlus\n"
+"Project-Id-Version: UnigramPlus 5.8.6\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2023-02-12 12:42+0200\n"
 "PO-Revision-Date: 2023-02-27 09:28+0100\n"
@@ -13,9 +14,75 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ../../..\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: appModules\n"
 "X-Poedit-SearchPath-1: GlobalPlugins\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: changelog.py:5
+msgid ""
+"- Space plays, opens and downloads the media of a message again in Unigram 13.0 and later, including voice messages.\n"
+"- Space no longer opens stickers or link previews in Unigram 13.0.1 and later.\n"
+"- Right and Left Arrow on a message with several attachments announce each photo, video, file or song again in Unigram 13.0 and later.\n"
+"- Ctrl+Space now also selects chats in the chat list: the first press starts selection mode from the chat's context menu, and each press after that selects or unselects the focused chat.\n"
+"- Alt+Shift+M is a new shortcut that opens Unigram's settings in Unigram 13.1 and later and moves the focus to the top of the settings."
+msgstr ""
+"- Espace lit, ouvre et télécharge de nouveau le média d’un message dans Unigram 13.0 et versions ultérieures, y compris les messages vocaux.\n"
+"- Espace n’ouvre plus les autocollants ni les aperçus de liens dans Unigram 13.0.1 et versions ultérieures.\n"
+"- Flèche droite et Flèche gauche sur un message à plusieurs pièces jointes annoncent de nouveau chaque photo, vidéo, fichier ou musique dans Unigram 13.0 et versions ultérieures.\n"
+"- Ctrl+Space sélectionne désormais aussi les échanges dans la liste des échanges : le premier appui active le mode sélection depuis le menu contextuel de l’échange, puis chaque appui sélectionne ou désélectionne l’échange qui a le focus.\n"
+"- Le nouveau raccourci Alt+Shift+M ouvre les paramètres d’Unigram dans Unigram 13.1 et versions ultérieures et place le focus en haut des paramètres."
+
+msgid ""
+"- Alt+M opens the navigation menu again in Unigram 13.1 and later, where the menu button opens a menu instead of the side pane.\n"
+"- Ctrl+Space selects and unselects messages again in Unigram's selection mode, the way Space does in Unigram 13.1.1. In selection mode, Space and Enter on a message also select or unselect it instead of playing its media or replying to it.\n"
+"- Updated compatibility for NVDA 2026.3.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- Alt+M ouvre de nouveau le menu de navigation dans Unigram 13.1 et versions ultérieures, où le bouton du menu ouvre un menu au lieu du volet latéral.\n"
+"- Ctrl+Space sélectionne et désélectionne de nouveau les messages en mode sélection d'Unigram, comme le fait Espace dans Unigram 13.1.1. En mode sélection, Espace et Entrée sur un message le sélectionnent ou le désélectionnent aussi, au lieu de lire son média ou d'y répondre.\n"
+"- Mise à jour de la compatibilité avec NVDA 2026.3.\n"
+"- Mise à jour des traductions polonaise et vietnamienne."
+
+msgid ""
+"- When \"Automatically move focus to the chat list when Unigram starts\" is on, the focus now stays in a popup that Unigram shows as it starts, such as a request to join a group, instead of moving to the chat list behind it.\n"
+"- Updated the Vietnamese translation."
+msgstr ""
+"- Lorsque l’option « Placer automatiquement le focus dans la liste des échanges au démarrage d’Unigram » est activée, le focus reste désormais dans la fenêtre contextuelle qu’Unigram affiche au démarrage, comme une demande pour rejoindre un groupe, au lieu de passer à la liste des échanges située derrière.\n"
+"- Mise à jour de la traduction vietnamienne."
+
+msgid ""
+"- Removed UnigramPlus's own Enter and Space handling in the list of Unigram settings categories: in Unigram 13.0 and later, the categories are buttons that open with these keys themselves. Enter and Space are also no longer intercepted on other tabs, such as the Emoji, GIFs and Stickers tabs.\n"
+"- In Unigram settings, Alt+1 now moves the focus to the open settings category.\n"
+"- Removed code that could no longer run: name replacements for list items from Unigram versions before 9.5, and the quiz explanation window disabled since version 5.2.0.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- Suppression de la gestion propre à UnigramPlus des touches Entrée et Espace dans la liste des catégories de paramètres d'Unigram : dans Unigram 13.0 et versions ultérieures, les catégories sont des boutons qui s'ouvrent d'eux-mêmes avec ces touches. Entrée et Espace ne sont plus non plus interceptées dans d'autres onglets, comme les onglets Emoji, GIF et Stickers.\n"
+"- Dans les paramètres d'Unigram, Alt+1 place désormais le focus sur la catégorie de paramètres ouverte.\n"
+"- Suppression de code qui ne pouvait plus s'exécuter : les remplacements de noms d'éléments de liste des versions d'Unigram antérieures à la 9.5, et la fenêtre d'explication des quiz, désactivée depuis la version 5.2.0.\n"
+"- Mise à jour des traductions polonaise et vietnamienne."
+
+msgid ""
+"- Fixed NVDA errors with the Unigram WinUI 3 beta each time you switched back to Unigram or typed with an input method (IME).\n"
+"- UnigramPlus no longer interferes with focus announcements in Telegram Desktop when the Telegram Desktop add-on is not installed.\n"
+"- Removed the notification when a voice or video message recording is canceled: Unigram 13.0 and later announce it themselves, so it is no longer heard twice.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- Correction des erreurs de NVDA dans la version bêta WinUI 3 d'Unigram, qui survenaient à chaque retour dans Unigram ou à chaque saisie avec un éditeur de méthode d'entrée (IME).\n"
+"- UnigramPlus n'interfère plus avec les annonces du focus dans Telegram Desktop lorsque l'extension Telegram Desktop n'est pas installée.\n"
+"- Suppression de la notification lors de l'annulation de l'enregistrement d'un message vocal ou vidéo : Unigram 13.0 et versions ultérieures l'annoncent eux-mêmes, elle n'est donc plus entendue deux fois.\n"
+"- Mise à jour des traductions polonaise et vietnamienne."
+
+msgid ""
+"- Removed the call duration workaround: Unigram 12.10 and later announce a call message's duration themselves, so it is no longer announced twice.\n"
+"- Fixed the add-on failing to start on older NVDA versions that do not provide the utils.security module.\n"
+"- Updated the Vietnamese translation."
+msgstr ""
+"- Suppression du contournement relatif à la durée des appels : Unigram 12.10 et versions ultérieures annoncent eux-mêmes la durée d'un message d'appel, elle n'est donc plus annoncée deux fois.\n"
+"- Correction du démarrage impossible de l'extension sur les anciennes versions de NVDA qui ne fournissent pas le module utils.security.\n"
+"- Mise à jour de la traduction vietnamienne."
+
+msgid "- NVDA+Alt+V displays the UnigramPlus version on a new line."
+msgstr "- NVDA+Alt+V affiche désormais la version d’UnigramPlus sur une nouvelle ligne."
 
 #: addon\appModules\cnf.py:12
 msgid "Arabic"
@@ -365,11 +432,12 @@ msgstr "Montrer le message dans une fenêtre virtuelle"
 msgid "message text"
 msgstr "Texte du message"
 
-#. Move the focus to the message input field. If the focus is already in this field, then move it to the last element that had focus before this field
+#. Move the focus to the message input field. If the focus is already in this
+#. field, then move it to the last element that had focus before this field
 #: addon\appModules\unigram.py:610
 msgid ""
-"Move the focus to the edit field. If the focus is already in the edit field, "
-"then after pressing the hotkey, it will move to where it was before"
+"Move the focus to the edit field. If the focus is already in the edit field,"
+" then after pressing the hotkey, it will move to where it was before"
 msgstr ""
 "Déplacer le focus au champ d'édition. Si le focus y est déjà, il reviendra "
 "où il était auparavant"
@@ -397,6 +465,15 @@ msgstr "Ouvrir le menu de navigation"
 msgid "Navigation menu not available"
 msgstr "Menu de navigation non disponible"
 
+#. Open Unigram settings
+#: addon\appModules\unigram.py:3146
+msgid "Open Unigram settings"
+msgstr "Ouvrir les paramètres d'Unigram"
+
+#: addon\appModules\unigram.py:3161
+msgid "Settings not available"
+msgstr "Paramètres non disponibles"
+
 #. Function to open comments
 #: addon\appModules\unigram.py:660
 msgid "Open comments"
@@ -417,7 +494,8 @@ msgstr "Ouvrir le profil de l'échange en cours"
 #| "It will not be possible to record a voice message until the edit field is "
 #| "empty"
 msgid ""
-"Recording a voice message will not be available until the edit field is empty"
+"Recording a voice message will not be available until the edit field is "
+"empty"
 msgstr ""
 "Il ne sera pas possible d'enregistrer un message vocal tant que le champ "
 "d'édition n'est pas vide"
@@ -453,10 +531,6 @@ msgstr "Réponse annulée"
 #: addon\appModules\unigram.py:748
 msgid "Edit canceled"
 msgstr "Edition annulée"
-
-#: addon\appModules\unigram.py:751
-msgid "Recording canceled"
-msgstr "Enregistrement annulé"
 
 #: addon\appModules\unigram.py:779
 msgid "Answer options"
@@ -786,13 +860,14 @@ msgstr "Notifier avec un son de la suppression d'un message et d'un échange"
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:214
 msgid "Display confirmation dialog when deleting messages and chats"
 msgstr ""
-"Demander une confirmation lors de la suppression d'un message et d'un échange"
+"Demander une confirmation lors de la suppression d'un message et d'un "
+"échange"
 
-#. Type of notification when recording voice messages
+#. Type of notification when a voice message recording starts or is sent.
+#. Unigram 13.0 announces a canceled recording itself.
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:217
-msgid "Set voice message recording notification method as:"
-msgstr ""
-"Définir la méthode de notification d'enregistrement d'un message vocal à:"
+msgid "Notification when a voice message recording starts or is sent:"
+msgstr "Notification au début ou à l'envoi de l'enregistrement d'un message vocal :"
 
 #. Progress bar announce
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:220
@@ -845,7 +920,8 @@ msgstr "Vérifier les &mises à jour"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
-#. to be shown on installation and add-on information found in Add-ons Manager.
+#. to be shown on installation and add-on information found in Add-ons
+#. Manager.
 #: buildVars.py:23
 #, fuzzy
 #| msgid "UnigramPlus update"
@@ -853,7 +929,8 @@ msgid "UnigramPlus"
 msgstr "Mise à jour UnigramPlus"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#. Translators: Long description to be shown for this add-on on add-on
+#. information from add-ons manager
 #: buildVars.py:26
 msgid ""
 "This add-on adds a lot of hotkeys for quick navigation through the main "
@@ -862,45 +939,59 @@ msgid ""
 msgstr ""
 "Cette extension propose de nombreux raccourcis clavier pour une navigations "
 "rapide parmi les éléments principaux de la fenêtre, une interaction "
-"facilitée avec les messages, mais offre également des améliorations meneures "
-"permettant une utilisation d'Unigram plus facile."
+"facilitée avec les messages, mais offre également des améliorations meneures"
+" permettant une utilisation d'Unigram plus facile."
+
+#: addon/GlobalPlugins/UnigramPlus/__init__.py:252
+msgid "Play a sound while the other side is typing in the open chat"
+msgstr ""
+"Jouer un son lorsque l'autre partie est en train d'écrire dans la "
+"conversation ouverte"
+
+#: addon\appModules\unigram.py:1188
+msgid "Announce progress bars only during upload and download"
+msgstr ""
+"Annoncer les barres de progression uniquement pendant l'envoi et le "
+"téléchargement"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:180
+msgid "Only announce progress bars during file uploads and downloads"
+msgstr ""
+"Annoncer les barres de progression uniquement pendant l'envoi et le "
+"téléchargement de fichiers"
+
+#: addon\appModules\unigram.py:62
+msgid "%d percent"
+msgstr "%d pour cent"
+
+#: addon/GlobalPlugins/UnigramPlus/__init__.py:250
+msgid "File transfer progress announcement interval (percent):"
+msgstr "Intervalle d'annonce de la progression du transfert de fichiers (pourcentage) :"
 
 #~ msgid "Announce some progress bars"
 #~ msgstr "Озвучувати деякі індикатори виконання"
 
-#, fuzzy
-#~| msgid "Croatian"
 #~ msgid "Croata"
 #~ msgstr "Хорватська"
 
-#, fuzzy
-#~| msgid "Italian"
 #~ msgid "Italiano"
 #~ msgstr "Італійська"
 
-#, fuzzy
-#~| msgid "Portuguese"
 #~ msgid "Portugués"
 #~ msgstr "Португальська"
 
-#, fuzzy
-#~| msgid "Ukrainian"
 #~ msgid "Ucraniano"
 #~ msgstr "Українська"
 
-#, fuzzy
-#~| msgid "Accept call"
 #~ msgid "&Aceptar"
 #~ msgstr "Відповісти на дзвінок"
 
-#~ msgid ""
-#~ "Press \"More Options\" button in an open chat, voice chat, or call window"
+#~ msgid "Press \"More Options\" button in an open chat, voice chat, or call window"
 #~ msgstr ""
-#~ "Натиснути кнопку \"Більше опцій\" у відкритому чаті, голосовому чаті, або "
-#~ "у вікні дзвінка"
+#~ "Натиснути кнопку \"Більше опцій\" у відкритому чаті, голосовому чаті, або у "
+#~ "вікні дзвінка"
 
-#~ msgid ""
-#~ "Announce all progress bars except voice message playback progress bar"
+#~ msgid "Announce all progress bars except voice message playback progress bar"
 #~ msgstr ""
 #~ "Озвучувати усі індикатори виконання, крім прогресу відтворення голосових "
 #~ "повідомлень"
@@ -919,3 +1010,149 @@ msgstr ""
 
 #~ msgid "Answer"
 #~ msgstr "Відповідь"
+
+#: addon\appModules\unigram.py:1767
+msgid "Recording a voice message, elapsed time"
+msgstr "Enregistrement d'un message vocal, temps écoulé"
+
+#: addon\appModules\unigram.py:1767
+msgid "Recording a video message, elapsed time"
+msgstr "Enregistrement d'un message vidéo, temps écoulé"
+
+#: addon\appModules\unigram.py:1770
+msgid "Record a voice message"
+msgstr "Enregistrer un message vocal"
+
+#: addon\appModules\unigram.py:1770
+msgid "Record a video message"
+msgstr "Enregistrer un message vidéo"
+
+msgid "When recording a voice or video message, NVDA now announces \"Recording a voice message\" or \"Recording a video message\" along with the elapsed time, instead of \"Tn voice message\"."
+msgstr "Lors de l'enregistrement d'un message vocal ou vidéo, NVDA annonce désormais \"Enregistrement d'un message vocal\" ou \"Enregistrement d'un message vidéo\" avec le temps écoulé, au lieu de \"Tn voice message\"."
+
+
+msgid "Microphone on"
+msgstr "Micro activé"
+
+msgid "Microphone muted"
+msgstr "Micro coupé"
+
+msgid "Microphone button not found"
+msgstr "Bouton du micro introuvable"
+
+msgid "Camera button not found"
+msgstr "Bouton de la caméra introuvable"
+
+msgid "This release restores compatibility with Unigram 12.7, where several shortcuts and announcements had stopped working."
+msgstr "Cette version restaure la compatibilité avec Unigram 12.7, où plusieurs raccourcis et annonces ne fonctionnaient plus."
+
+msgid "Poll messages again announce the question and answer options, and the forum topic list again announces the message preview."
+msgstr "Les messages de sondage annoncent à nouveau la question et les options de réponse, et la liste des sujets du forum annonce à nouveau l'aperçu du message."
+
+msgid "During a one-to-one call, the mute microphone (ALT+A), enable or disable camera (ALT+V) and end call (ALT+N) shortcuts work again, and ALT+End again moves to the latest message."
+msgstr "Pendant un appel individuel, les raccourcis pour couper le micro (ALT+A), activer ou désactiver la caméra (ALT+V) et terminer l'appel (ALT+N) fonctionnent à nouveau, et ALT+End revient au message le plus récent."
+
+msgid "Rich message"
+msgstr "Message enrichi"
+
+msgid "Added support for rich messages. Rich messages are now announced when focused and can be opened with Alt+C in a browseable window."
+msgstr "Ajout de la prise en charge des messages enrichis. Ils sont désormais annoncés lorsqu'ils reçoivent le focus et peuvent être ouverts avec Alt+C dans une fenêtre navigable."
+
+msgid "Links and mixed content in rich messages are preserved, and links can be activated from the browseable window."
+msgstr "Les liens et le contenu mixte des messages enrichis sont préservés, et les liens peuvent être activés depuis la fenêtre navigable."
+
+msgid "Automatically move focus to the chat list when Unigram starts"
+msgstr "Placer automatiquement le focus dans la liste des échanges au démarrage d’Unigram"
+
+msgid ""
+"- Fixed file-transfer progress tracking so it stops at 100% and no longer creates a new thread on every polling cycle.\n"
+"- When Unigram opens, focus now moves automatically to the chat list.\n"
+"- Added Ctrl+Alt+Up/Down to move through chats with unread mentions."
+msgstr ""
+"- Correction du suivi de la progression des transferts de fichiers : il s’arrête désormais à 100 % et ne crée plus de nouveau thread à chaque cycle d’interrogation.\n"
+"- À l’ouverture d’Unigram, le focus est désormais placé automatiquement dans la liste des échanges.\n"
+"- Ajout de Ctrl+Alt+Up/Down pour parcourir les échanges contenant des mentions non lues."
+
+msgid "Move to the next or previous chat with unread mentions"
+msgstr "Aller à l’échange suivant ou précédent contenant des mentions non lues"
+
+msgid "No more chats with unread mentions in this direction"
+msgstr "Aucun autre échange avec des mentions non lues dans cette direction"
+
+msgid "- Fixed file-transfer progress tracking so it stops at 100% and no longer creates a new thread on every polling cycle."
+msgstr "- Correction du suivi de la progression des transferts de fichiers : il s’arrête désormais à 100 % et ne crée plus de nouveau thread à chaque cycle d’interrogation."
+
+msgid "- When Unigram opens, focus now moves automatically to the chat list."
+msgstr "- À l’ouverture d’Unigram, le focus est désormais placé automatiquement dans la liste des échanges."
+
+msgid "- Added Ctrl+Alt+Up/Down to move through chats with unread mentions."
+msgstr "- Ajout de Ctrl+Alt+Up/Down pour parcourir les échanges contenant des mentions non lues."
+
+msgid "Fixed automatic updates: releases are now retrieved securely from GitHub and the downloaded add-on is validated before installation."
+msgstr "Correction des mises à jour automatiques : les versions sont désormais récupérées de manière sécurisée depuis GitHub et l'extension téléchargée est validée avant son installation."
+
+msgid "Toggle whether message headers are announced before or after the message content"
+msgstr "Basculer l’annonce des en-têtes de messages avant ou après le contenu du message"
+
+msgid "Message headers will be announced after the message content"
+msgstr "Les en-têtes des messages seront annoncés après le contenu du message"
+
+msgid "Message headers will be announced before the message content"
+msgstr "Les en-têtes des messages seront annoncés avant le contenu du message"
+
+msgid "No search results"
+msgstr "Aucun résultat de recherche"
+
+msgid ""
+"- Fixed Ctrl+Alt+Left/Right so they seek the current voice message playback again.\n"
+"- Fixed Alt+I so it moves to Unigram's inline chat search results list.\n"
+"- Added Alt+[ to announce message headers after the content, so file names can be announced before sender names in profile media sections."
+msgstr ""
+"- Correction de Ctrl+Alt+Gauche/Droite afin de pouvoir à nouveau avancer ou reculer dans la lecture du message vocal en cours.\n"
+"- Correction de Alt+I afin de déplacer le focus vers la liste intégrée des résultats de recherche dans le chat d’Unigram.\n"
+"- Ajout de Alt+[ pour annoncer les en-têtes des messages après le contenu, afin que les noms de fichiers puissent être annoncés avant les noms des expéditeurs dans les sections multimédias du profil."
+
+msgid "Announce message headers after the message content"
+msgstr "Annoncer les en-têtes des messages après leur contenu"
+
+msgid "Play a sound when reaching the end of a chat"
+msgstr "Jouer un son à l’arrivée à la fin d’un échange"
+
+msgid ""
+"- Fixed Enter for replying to messages and Alt+Shift+R for marking chats as read in current Unigram versions.\n"
+"- Removed the web view mode and its setting; Alt+C now always opens message text in the original wx popup window.\n"
+"- Updated all translations and manuals for version 5.6.5."
+msgstr ""
+"- Correction de la touche Entrée pour répondre aux messages et de Alt+Maj+R pour marquer les discussions comme lues dans les versions actuelles d’Unigram.\n"
+"- Suppression du mode vue Web et de son réglage ; Alt+C ouvre désormais toujours le texte du message dans la fenêtre contextuelle wx d’origine.\n"
+"- Mise à jour de toutes les traductions et de tous les manuels pour la version 5.6.5."
+
+msgid "Open Unigram and UnigramPlus version information in a read-only window"
+msgstr "Ouvrir les informations de version d’Unigram et d’UnigramPlus dans une fenêtre en lecture seule"
+
+msgid "Unigram version: {unigramVersion}.\nUnigramPlus version: {addonVersion}."
+msgstr "Version d’Unigram : {unigramVersion}.\nVersion d’UnigramPlus : {addonVersion}."
+
+msgid ""
+"- Added NVDA+Shift+V to announce the installed Unigram and UnigramPlus versions.\n"
+"- Removed the temporary Unigram 12.9 inline-button workaround after Unigram 12.9.1 fixed button labels; this avoids UIA stalls in bot lists, message navigation, reactions, and the chat list.\n"
+"- Updated all translations and manuals for version 5.6.6."
+msgstr ""
+"- Ajout de NVDA+Maj+V pour annoncer les versions installées d’Unigram et d’UnigramPlus.\n"
+"- Suppression du correctif temporaire des boutons intégrés d’Unigram 12.9 après la correction de leurs libellés dans Unigram 12.9.1 ; cela évite les blocages UIA dans les listes de bots, la navigation entre les messages, les réactions et la liste des discussions.\n"
+"- Mise à jour de toutes les traductions et de tous les manuels pour la version 5.6.6."
+
+msgid ""
+"- Fixed an intermittent issue where NVDA announced \"list\" before a message while navigating with the Up and Down Arrow keys.\n"
+"- Added a setting for the Alt+[ behavior that announces message headers after their content; it is disabled by default.\n"
+"- Added an optional sound notification when reaching the end of a chat."
+msgstr ""
+"- Correction d’un problème intermittent où NVDA annonçait « liste » avant un message lors de la navigation avec les flèches haut et bas.\n"
+"- Ajout d’un réglage pour le comportement de Alt+[, qui annonce les en-têtes des messages après leur contenu ; il est désactivé par défaut.\n"
+"- Ajout d’une notification sonore facultative à l’arrivée à la fin d’un échange."
+
+msgid "- Restored folder-switch announcements with a nonzero unread count while retaining the file-transfer progress tracker safeguards."
+msgstr "Rétablissement des annonces lors du changement de dossier avec un nombre non nul de non lus, tout en conservant les protections du suivi de progression des transferts de fichiers."
+
+msgid "- Updated the shortcut lists from the current Unigram source and identified built-in shortcuts not yet listed in Unigram's official Shortcuts.md."
+msgstr "Mise à jour des listes de raccourcis à partir du code source actuel de Unigram et identification des raccourcis intégrés qui ne figurent pas encore dans le fichier Shortcuts.md officiel de Unigram."

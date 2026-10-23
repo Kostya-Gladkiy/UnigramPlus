@@ -1,0 +1,10 @@
+* Se restauró la compatibilidad con Unigram 12.7, donde varios atajos y anuncios habían dejado de funcionar.
+* Los mensajes de encuesta vuelven a anunciar la pregunta y las opciones de respuesta.
+* La lista de temas del foro vuelve a anunciar la vista previa del último mensaje.
+* Durante una llamada individual, los atajos para silenciar el micrófono (ALT+A), activar o desactivar la cámara (ALT+V) y finalizar la llamada (ALT+N) vuelven a funcionar.
+* ALT+End vuelve a desplazarse al mensaje más reciente del chat.
+
+Si realmente te gusta este complemento y lo deseas, Y lo más importante, tienes la oportunidad de apoyar financieramente al desarrollador Y por ende motivarlo a seguir desarrollándolo, puedes hacerlo transfiriendo un pequeño monto usando los siguientes detalles bancarios:
+* PayPal: gladkiy.kostya@gmail.com.
+* Sistema de donación ucraniano: https://unigramplus.diaka.ua/donate.
+* Número de tarjeta: 5169360009004502 (Gladkiy Constantine).

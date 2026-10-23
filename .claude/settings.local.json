@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls 'C:/Users/chang/Downloads/Unigram-12.7.1/')",
+      "Bash(.venv/Scripts/python.exe -m SCons)",
+      "Bash(where msgfmt *)",
+      "Bash(where gettext *)",
+      "Bash(ls 'C:/Program Files/Git/mingw64/bin/' | grep -i msg)",
+      "Read(//c/Program Files/Git/**)",
+      "Bash(find '/c/Program Files \\(x86\\)' -name 'msgfmt.exe' 2>/dev/null | head -5; find '/c/Users' -name 'msgfmt.exe' 2>/dev/null | head -5; find '/c/tools' -name 'msgfmt.exe' 2>/dev/null | head -5)",
+      "Bash(choco list *)",
+      "Bash(winget list *)",
+      "Bash(grep -v ':$')",
+      "Bash(python3 -)",
+      "Bash(Get-ChildItem -Path \"C:\\\\GitHub\\\\UnigramPlus\" -Recurse -Force)",
+      "Bash(Select-Object FullName)",
+      "Bash(git -C C:/GitHub/UnigramPlus log --oneline -40)",
+      "Bash(git -C C:/GitHub/UnigramPlus log --oneline readme.md)",
+      "Bash(git -C C:/GitHub/UnigramPlus log --oneline addon/doc/en/readme.md)",
+      "Bash(git -C C:/GitHub/UnigramPlus log --oneline addon/doc/zh/readme.md)",
+      "Bash(git -C C:/GitHub/UnigramPlus ls-files addon/doc/en/)",
+      "Bash(git -C C:/GitHub/UnigramPlus check-ignore -v addon/doc/en/readme.md)",
+      "Bash(C:/GitHub/UnigramPlus/.venv/Scripts/pip.exe install *)",
+      "Bash(C:/GitHub/UnigramPlus/.venv/Scripts/python.exe -m pip install polib)",
+      "Bash(where python *)",
+      "Read(//c/Program Files/Python313//**)",
+      "Bash(\"/c/Program Files/Python313/python.exe\" -c \"import polib; print\\(polib.__version__\\)\")",
+      "Bash(\"/c/Program Files/Python313/python.exe\" -m pip install --user polib)",
+      "Read(//tmp/**)",
+      "Bash(cp /tmp/all_strings.txt C:/Users/chang/Documents/all_strings.txt 2>&1; wc -l C:/Users/chang/Documents/all_strings.txt)",
+      "Bash(cat \"/c/Users/chang/AppData/Local/Temp/claude/C--GitHub-UnigramPlus/8fae1fbf-c446-4faa-8fb9-e71bc085d8c7/tasks/bipb0fxsp.output\" 2>&1)"
+    ]
+  }
+}

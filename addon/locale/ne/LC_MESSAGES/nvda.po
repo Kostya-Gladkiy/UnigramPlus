@@ -1,6 +1,7 @@
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: UnigramPlus\n"
+"Project-Id-Version: UnigramPlus 5.8.6\n"
 "POT-Creation-Date: 2022-10-07 22:33+0300\n"
 "PO-Revision-Date: 2022-10-20 12:30+0300\n"
 "Last-Translator: samrat kc <samrat.kc7@gmail.com>\n"
@@ -12,24 +13,92 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.1.1\n"
 "X-Poedit-Basepath: ../../..\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: appModules\n"
 "X-Poedit-SearchPath-1: GlobalPlugins\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: changelog.py:5
+msgid ""
+"- Space plays, opens and downloads the media of a message again in Unigram 13.0 and later, including voice messages.\n"
+"- Space no longer opens stickers or link previews in Unigram 13.0.1 and later.\n"
+"- Right and Left Arrow on a message with several attachments announce each photo, video, file or song again in Unigram 13.0 and later.\n"
+"- Ctrl+Space now also selects chats in the chat list: the first press starts selection mode from the chat's context menu, and each press after that selects or unselects the focused chat.\n"
+"- Alt+Shift+M is a new shortcut that opens Unigram's settings in Unigram 13.1 and later and moves the focus to the top of the settings."
+msgstr ""
+"- Unigram 13.0 र त्यसपछिका संस्करणहरूमा Space ले फेरि भ्वाइस सन्देशसहित सन्देशको मिडिया बजाउँछ, खोल्छ र डाउनलोड गर्छ।\n"
+"- Unigram 13.0.1 र त्यसपछिका संस्करणहरूमा Space ले अब स्टिकर वा लिङ्क पूर्वावलोकन खोल्दैन।\n"
+"- Unigram 13.0 र त्यसपछिका संस्करणहरूमा धेरै संलग्नक भएको सन्देशमा दायाँ र बायाँ एरोले फेरि प्रत्येक फोटो, भिडियो, फाइल वा गीत घोषणा गर्छन्।\n"
+"- च्याट सूचीमा पनि Ctrl+Space ले अब च्याटहरू चयन गर्छ: पहिलो पटक थिच्दा च्याटको सन्दर्भ मेनुबाट चयन मोड सुरु हुन्छ, र त्यसपछि हरेक पटक थिच्दा फोकसमा रहेको च्याट चयन हुन्छ वा त्यसको चयन हट्छ।\n"
+"- Unigram 13.1 र त्यसपछिका संस्करणहरूमा नयाँ सर्टकट Alt+Shift+M ले Unigram को सेटिङ खोल्छ र फोकसलाई सेटिङको सुरुमा सार्छ।"
+
+msgid ""
+"- Alt+M opens the navigation menu again in Unigram 13.1 and later, where the menu button opens a menu instead of the side pane.\n"
+"- Ctrl+Space selects and unselects messages again in Unigram's selection mode, the way Space does in Unigram 13.1.1. In selection mode, Space and Enter on a message also select or unselect it instead of playing its media or replying to it.\n"
+"- Updated compatibility for NVDA 2026.3.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- Unigram 13.1 र त्यसपछिका संस्करणहरूमा, जहाँ मेनु बटनले साइड प्यानलको सट्टा मेनु खोल्छ, Alt+M ले फेरि नेभिगेसन मेनु खोल्छ।\n"
+"- Unigram को चयन मोडमा Ctrl+Space ले फेरि सन्देशहरू चयन गर्छ र चयन हटाउँछ, जसरी Unigram 13.1.1 मा Space ले गर्छ। चयन मोडमा, सन्देशमा Space र Enter ले पनि त्यसको मिडिया बजाउने वा जवाफ दिनुको सट्टा त्यसलाई चयन गर्छन् वा चयन हटाउँछन्।\n"
+"- NVDA 2026.3 सँगको अनुकूलता अद्यावधिक गरियो।\n"
+"- पोलिस र भियतनामी अनुवादहरू अद्यावधिक गरियो।"
+
+msgid ""
+"- When \"Automatically move focus to the chat list when Unigram starts\" is on, the focus now stays in a popup that Unigram shows as it starts, such as a request to join a group, instead of moving to the chat list behind it.\n"
+"- Updated the Vietnamese translation."
+msgstr ""
+"- \"Unigram सुरु हुँदा फोकसलाई स्वतः च्याट सूचीमा सार्नुहोस्\" विकल्प सक्रिय हुँदा, Unigram सुरु हुँदा देखाइने पपअपमा (जस्तै समूहमा सामेल हुने अनुरोध) अब फोकस रहन्छ, त्यसको पछाडिको च्याट सूचीमा सर्दैन।\n"
+"- भियतनामी अनुवाद अद्यावधिक गरियो।"
+
+msgid ""
+"- Removed UnigramPlus's own Enter and Space handling in the list of Unigram settings categories: in Unigram 13.0 and later, the categories are buttons that open with these keys themselves. Enter and Space are also no longer intercepted on other tabs, such as the Emoji, GIFs and Stickers tabs.\n"
+"- In Unigram settings, Alt+1 now moves the focus to the open settings category.\n"
+"- Removed code that could no longer run: name replacements for list items from Unigram versions before 9.5, and the quiz explanation window disabled since version 5.2.0.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- Unigram को सेटिङ श्रेणी सूचीमा UnigramPlus ले Enter र स्पेसका लागि गर्ने आफ्नै व्यवस्थापन हटाइयो: Unigram 13.0 र पछिका संस्करणहरूमा श्रेणीहरू यी कुञ्जीहरूले आफैँ खुल्ने बटनहरू हुन्। इमोजी, GIF र स्टिकर ट्याबहरू जस्ता अन्य ट्याबहरूमा पनि अब Enter र स्पेस रोकिँदैनन्।\n"
+"- Unigram सेटिङमा Alt+1 ले अब फोकसलाई खुला सेटिङ श्रेणीमा लैजान्छ।\n"
+"- अब चल्न नसक्ने कोड हटाइयो: Unigram 9.5 भन्दा पहिलेका संस्करणहरूका लागि सूची वस्तुहरूको नाम प्रतिस्थापन, र संस्करण 5.2.0 देखि निष्क्रिय क्विज व्याख्या सञ्झ्याल।\n"
+"- पोलिस र भियतनामी अनुवादहरू अद्यावधिक गरियो।"
+
+msgid ""
+"- Fixed NVDA errors with the Unigram WinUI 3 beta each time you switched back to Unigram or typed with an input method (IME).\n"
+"- UnigramPlus no longer interferes with focus announcements in Telegram Desktop when the Telegram Desktop add-on is not installed.\n"
+"- Removed the notification when a voice or video message recording is canceled: Unigram 13.0 and later announce it themselves, so it is no longer heard twice.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- Unigram को WinUI 3 बिटा संस्करणमा, हरेक पटक Unigram मा फर्कँदा वा इनपुट मेथड (IME) प्रयोग गरेर टाइप गर्दा देखिने NVDA त्रुटिहरू समाधान गरियो।\n"
+"- Telegram Desktop औजार स्थापना नभएको बेला UnigramPlus ले अब Telegram Desktop को फोकस घोषणामा हस्तक्षेप गर्दैन।\n"
+"- भ्वाइस वा भिडियो सन्देशको रेकर्डिङ रद्द गर्दा दिइने सूचना हटाइयो: Unigram 13.0 र पछिका संस्करणहरूले यो आफैँ घोषणा गर्छन्, त्यसैले अब दुई पटक सुनिँदैन।\n"
+"- पोलिस र भियतनामी अनुवादहरू अद्यावधिक गरियो।"
+
+msgid ""
+"- Removed the call duration workaround: Unigram 12.10 and later announce a call message's duration themselves, so it is no longer announced twice.\n"
+"- Fixed the add-on failing to start on older NVDA versions that do not provide the utils.security module.\n"
+"- Updated the Vietnamese translation."
+msgstr ""
+"- कल अवधिको अस्थायी समाधान हटाइयो: Unigram 12.10 र पछिका संस्करणहरूले कल सन्देशको अवधि आफैँ घोषणा गर्छन्, त्यसैले अब दुई पटक घोषणा हुँदैन।\n"
+"- utils.security मोड्युल नभएका पुराना NVDA संस्करणहरूमा औजार सुरु नहुने समस्या समाधान गरियो।\n"
+"- भियतनामी अनुवाद अद्यावधिक गरियो।"
+
+msgid "- NVDA+Alt+V displays the UnigramPlus version on a new line."
+msgstr "- NVDA+Alt+V ले अब UnigramPlus संस्करणलाई नयाँ लाइनमा देखाउँछ।"
 
 #: GlobalPlugins/UnigramPlus/__init__.py:22
 msgid "No updates available"
 msgstr "कुनै अद्यावधिक उपलब्ध छैन"
 
-#: GlobalPlugins/UnigramPlus/__init__.py:23 GlobalPlugins/UnigramPlus/__init__.py:48
+#: GlobalPlugins/UnigramPlus/__init__.py:23
+#: GlobalPlugins/UnigramPlus/__init__.py:48
 msgid "UnigramPlus update"
 msgstr "युनिग्राम प्लस  अद्यावधिक"
 
 #: GlobalPlugins/UnigramPlus/__init__.py:49
 msgid ""
-"A new version of the add-on is available. Do you want to update UnigramPlus to version "
-"%version?"
+"A new version of the add-on is available. Do you want to update UnigramPlus "
+"to version %version?"
 msgstr ""
-"यस औजारको नयाँ संस्करण उपलब्ध छ। के तपाइँ युनिग्राम प्लस लाई संस्करण %version मा अद्यावधिक गर्न चाहनुहुन्छ?"
+"यस औजारको नयाँ संस्करण उपलब्ध छ। के तपाइँ युनिग्राम प्लस लाई संस्करण "
+"%version मा अद्यावधिक गर्न चाहनुहुन्छ?"
 
 #: GlobalPlugins/UnigramPlus/__init__.py:59
 msgid "Yes, update"
@@ -125,15 +194,18 @@ msgstr "फोल्डरहरू परिवर्तन गर्दा त
 
 #: GlobalPlugins/UnigramPlus/__init__.py:172
 msgid "Notify about deleting a message and chat with a sound"
-msgstr "शन्देश तथा कुराकानि मेटाइएको जानकारि बोलेर तथा ध्वनि मार्फत गराउँनुहोस ।"
+msgstr ""
+"शन्देश तथा कुराकानि मेटाइएको जानकारि बोलेर तथा ध्वनि मार्फत गराउँनुहोस ।"
 
 #: GlobalPlugins/UnigramPlus/__init__.py:175
 msgid "Display confirmation dialog when deleting messages and chats"
 msgstr "सन्देशहरू र कुराकानिहरू मेटाउँदा पुष्टिकरण संवाद प्रदर्शन गर्नुहोस्"
 
+#. Type of notification when a voice message recording starts or is sent.
+#. Unigram 13.0 announces a canceled recording itself.
 #: GlobalPlugins/UnigramPlus/__init__.py:178
-msgid "Set voice message recording notification method as:"
-msgstr "आवाज सन्देश रेकर्डिङ सूचना विधि यस रूपमा सेट गर्नुहोस्:"
+msgid "Notification when a voice message recording starts or is sent:"
+msgstr "आवाज सन्देश रेकर्डिङ सुरु हुँदा वा पठाइँदा सूचना:"
 
 #: GlobalPlugins/UnigramPlus/__init__.py:181
 msgid "Select the progress bar notification level:"
@@ -161,11 +233,11 @@ msgstr "यदि कुनै सन्देशमा प्रतिक्र
 
 #: GlobalPlugins/UnigramPlus/__init__.py:199
 msgid ""
-"Check this box if the voice message recording function or the voice message playback speed "
-"change function does not work properly"
+"Check this box if the voice message recording function or the voice message "
+"playback speed change function does not work properly"
 msgstr ""
-"यदि भ्वाइस सन्देश रेकर्डिङ प्रकार्य वा आवाज सन्देश प्लेब्याक गति परिवर्तन प्रकार्यले ठीकसँग काम गर्दैन भने यो "
-"बाकसलाई जाँच गर्नुहोस्"
+"यदि भ्वाइस सन्देश रेकर्डिङ प्रकार्य वा आवाज सन्देश प्लेब्याक गति परिवर्तन "
+"प्रकार्यले ठीकसँग काम गर्दैन भने यो बाकसलाई जाँच गर्नुहोस्"
 
 #: GlobalPlugins/UnigramPlus/__init__.py:202
 msgid "Check for UnigramPlus updates on NVDA startup"
@@ -343,8 +415,8 @@ msgstr "सन्देशको जवाफ दिनुहोस्"
 msgid "Increase/decrease the playback speed of voice messages"
 msgstr "आवाज शन्देशहरूको बज्ने गति बढाउनुहोस्/घटाउनुहोस्"
 
-#: appModules/unigram.py:242 appModules/unigram.py:254 appModules/unigram.py:264
-#: appModules/unigram.py:1162
+#: appModules/unigram.py:242 appModules/unigram.py:254
+#: appModules/unigram.py:264 appModules/unigram.py:1162
 msgid "Nothing is playing right now"
 msgstr "हाल केहि पनि बजिरहेको छैन"
 
@@ -376,13 +448,14 @@ msgstr "च्याट सूची खाली छ"
 msgid "Move focus to the last message in an open chat"
 msgstr "हाल चलिरहेको च्याटमा फोकसलाई लैजानुहोस"
 
-#: appModules/unigram.py:331 appModules/unigram.py:406 appModules/unigram.py:828
-#: appModules/unigram.py:841
+#: appModules/unigram.py:331 appModules/unigram.py:406
+#: appModules/unigram.py:828 appModules/unigram.py:841
 msgid "This chat is empty"
 msgstr "यो च्याट खाली छ"
 
-#: appModules/unigram.py:332 appModules/unigram.py:397 appModules/unigram.py:405
-#: appModules/unigram.py:622 appModules/unigram.py:824
+#: appModules/unigram.py:332 appModules/unigram.py:397
+#: appModules/unigram.py:405 appModules/unigram.py:622
+#: appModules/unigram.py:824
 msgid "No open chat"
 msgstr "कुनै च्याट खोलिएको छैन"
 
@@ -390,7 +463,8 @@ msgstr "कुनै च्याट खोलिएको छैन"
 msgid "Move focus to list of chat folders"
 msgstr "फोकस लाई च्याट फोल्डरहरूको सूचीमा सार्नुहोस्"
 
-#: appModules/unigram.py:341 appModules/unigram.py:349 appModules/unigram.py:350
+#: appModules/unigram.py:341 appModules/unigram.py:349
+#: appModules/unigram.py:350
 msgid "Chat folder list not found"
 msgstr "च्याट फोल्डर सूची फेला परेन"
 
@@ -424,7 +498,9 @@ msgstr "यस च्याटमा कुनै नपढिएका सन�
 
 #: appModules/unigram.py:418
 msgid "Call if it's a contact, or enter a voice chat if it's a group"
-msgstr "यदि ब्यक्तिलाई  हो भने कल गर्नुहोस्, यदि समूह हो भने भ्वाइस च्याट मा जाँनुहोस"
+msgstr ""
+"यदि ब्यक्तिलाई  हो भने कल गर्नुहोस्, यदि समूह हो भने भ्वाइस च्याट मा "
+"जाँनुहोस"
 
 #: appModules/unigram.py:423
 msgid "Call unavailable"
@@ -440,10 +516,13 @@ msgstr "भिडियो कल उपलब्ध छैन"
 
 #: appModules/unigram.py:433
 msgid "Press \"Instant view\" button, if it is included in the current message"
-msgstr "यदि हालको सन्देशमा तत्काल हेर्ने विकल्प समावेश छभने, \"तत्काल हेर्ने\" बटन थिच्नुहोस्"
+msgstr ""
+"यदि हालको सन्देशमा तत्काल हेर्ने विकल्प समावेश छभने, \"तत्काल हेर्ने\" बटन "
+"थिच्नुहोस्"
 
-#: appModules/unigram.py:444 appModules/unigram.py:579 appModules/unigram.py:586
-#: appModules/unigram.py:594 appModules/unigram.py:1234
+#: appModules/unigram.py:444 appModules/unigram.py:579
+#: appModules/unigram.py:586 appModules/unigram.py:594
+#: appModules/unigram.py:1234
 msgid "Button not found"
 msgstr "बटन फेला परेन"
 
@@ -453,11 +532,12 @@ msgstr "कल स्वीकार गर्नुहोस्"
 
 #: appModules/unigram.py:456
 msgid ""
-"Press \"Decline call\" button  if there is an incoming call, \"End call\" button if a call "
-"is in progress or leave voice chat if it is active."
+"Press \"Decline call\" button  if there is an incoming call, \"End call\" "
+"button if a call is in progress or leave voice chat if it is active."
 msgstr ""
-"यदि आगमन कल हो भने \"कल अस्वीकार गर्नुहोस्\" बटन थिच्नुहोस्, यदि कल चलिरहेको छ भने \"कल अन्त्य गर्नुहोस्\" "
-"बटन थिच्नुहोस् वा यदि भ्वाइस च्याट चलिरहेको छ भने, छोड्नुहोस् बटनमा थिच्नुहोस।"
+"यदि आगमन कल हो भने \"कल अस्वीकार गर्नुहोस्\" बटन थिच्नुहोस्, यदि कल चलिरहेको"
+" छ भने \"कल अन्त्य गर्नुहोस्\" बटन थिच्नुहोस् वा यदि भ्वाइस च्याट चलिरहेको छ"
+" भने, छोड्नुहोस् बटनमा थिच्नुहोस।"
 
 #: appModules/unigram.py:470
 msgid "Press \"Mute/unmute microphone\" button"
@@ -469,9 +549,11 @@ msgstr "\"क्यामेरा सक्षम/असक्षम गर्�
 
 #: appModules/unigram.py:524
 msgid ""
-"Copy the message if it contains text. If the focus is on a link, the link will be copied"
+"Copy the message if it contains text. If the focus is on a link, the link "
+"will be copied"
 msgstr ""
-"यदि यदि सन्देश लिखितहो भने सन्देश प्रतिलिपि गर्नुहोस्। यदि फोकस लिङ्कमा छ भने, लिङ्क प्रतिलिपि गरिनेछ"
+"यदि यदि सन्देश लिखितहो भने सन्देश प्रतिलिपि गर्नुहोस्। यदि फोकस लिङ्कमा छ "
+"भने, लिङ्क प्रतिलिपि गरिनेछ"
 
 #: appModules/unigram.py:530
 msgid "Message copied"
@@ -499,11 +581,11 @@ msgstr "सन्देश को अक्षर"
 
 #: appModules/unigram.py:555
 msgid ""
-"Move the focus to the edit field. If the focus is already in the edit field, then after "
-"pressing the hotkey, it will move to where it was before"
+"Move the focus to the edit field. If the focus is already in the edit field,"
+" then after pressing the hotkey, it will move to where it was before"
 msgstr ""
-"सम्पादन बाकसमा फोकस सार्नुहोस्। यदि फोकस पहिले नै सम्पादन बाकसमा छ भने, हटकी थिचेपछि, यो पहिलेकै "
-"स्थानमा सर्नेछ।"
+"सम्पादन बाकसमा फोकस सार्नुहोस्। यदि फोकस पहिले नै सम्पादन बाकसमा छ भने, हटकी"
+" थिचेपछि, यो पहिलेकै स्थानमा सर्नेछ।"
 
 #: appModules/unigram.py:572
 msgid "Message input field not found"
@@ -525,6 +607,15 @@ msgstr "नेभिगेसन मेनु खोल्नुहोस्"
 msgid "Navigation menu not available"
 msgstr "नेभिगेसन मेनु उपलब्ध छैन"
 
+#. Open Unigram settings
+#: addon\appModules\unigram.py:3146
+msgid "Open Unigram settings"
+msgstr "Unigram को सेटिङ खोल्नुहोस्"
+
+#: addon\appModules\unigram.py:3161
+msgid "Settings not available"
+msgstr "सेटिङ उपलब्ध छैन"
+
 #: appModules/unigram.py:605
 msgid "Open comments"
 msgstr "टिप्पणीहरू खोल्नुहोस्"
@@ -538,7 +629,9 @@ msgid "Open current chat profile"
 msgstr "हाल च्याट गरिरहेको प्रोफाइल खोल्नुहोस्"
 
 #: appModules/unigram.py:638
-msgid "Recording a voice message will not be available until the edit field is empty"
+msgid ""
+"Recording a voice message will not be available until the edit field is "
+"empty"
 msgstr "सम्पादन बाकस खाली नभएसम्म आवाज सन्देश रेकर्डिङ सुविधा उपलब्ध हुनेछैन"
 
 #: appModules/unigram.py:645
@@ -572,10 +665,6 @@ msgstr "जवाफ रद्द गरियो"
 #: appModules/unigram.py:685
 msgid "Edit canceled"
 msgstr "सम्पादन रद्द गरियो"
-
-#: appModules/unigram.py:688
-msgid "Recording canceled"
-msgstr "रेकर्डिङ रद्द गरियो"
 
 #: appModules/unigram.py:715
 msgid "Answer options"
@@ -753,41 +842,53 @@ msgstr "सन्देशहरूको स्वचालित पठन स
 msgid "Automatic reading of new messages is disabled"
 msgstr "नयाँ सन्देशहरूको स्वचालित पठन अशक्षम भयो"
 
+#: addon/GlobalPlugins/UnigramPlus/__init__.py:252
+msgid "Play a sound while the other side is typing in the open chat"
+msgstr "खुलेको कुराकानीमा अर्को पक्षले टाइप गरिरहेको बेला आवाज बजाउनुहोस्"
+
+#: addon\appModules\unigram.py:1188
+msgid "Announce progress bars only during upload and download"
+msgstr "अपलोड र डाउनलोड हुँदा मात्र प्रगति पट्टी घोषणा गर्नुहोस्"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:180
+msgid "Only announce progress bars during file uploads and downloads"
+msgstr "फाइल अपलोड र डाउनलोड हुँदा मात्र प्रगति पट्टी घोषणा गर्नुहोस्"
+
+#: addon\appModules\unigram.py:62
+msgid "%d percent"
+msgstr "%d प्रतिशत"
+
+#: addon/GlobalPlugins/UnigramPlus/__init__.py:250
+msgid "File transfer progress announcement interval (percent):"
+msgstr "फाइल स्थानान्तरण प्रगति घोषणा अन्तराल (प्रतिशत):"
+
 #~ msgid "Announce some progress bars"
 #~ msgstr "Озвучувати деякі індикатори виконання"
 
-#, fuzzy
-#~| msgid "Croatian"
 #~ msgid "Croata"
 #~ msgstr "Хорватська"
 
-#, fuzzy
-#~| msgid "Italian"
 #~ msgid "Italiano"
 #~ msgstr "Італійська"
 
-#, fuzzy
-#~| msgid "Portuguese"
 #~ msgid "Portugués"
 #~ msgstr "Португальська"
 
-#, fuzzy
-#~| msgid "Ukrainian"
 #~ msgid "Ucraniano"
 #~ msgstr "Українська"
 
-#, fuzzy
-#~| msgid "Accept call"
 #~ msgid "&Aceptar"
 #~ msgstr "Відповісти на дзвінок"
 
 #~ msgid "Press \"More Options\" button in an open chat, voice chat, or call window"
 #~ msgstr ""
-#~ "Натиснути кнопку \"Більше опцій\" у відкритому чаті, голосовому чаті, або у вікні дзвінка"
+#~ "Натиснути кнопку \"Більше опцій\" у відкритому чаті, голосовому чаті, або у "
+#~ "вікні дзвінка"
 
 #~ msgid "Announce all progress bars except voice message playback progress bar"
 #~ msgstr ""
-#~ "Озвучувати усі індикатори виконання, крім прогресу відтворення голосових повідомлень"
+#~ "Озвучувати усі індикатори виконання, крім прогресу відтворення голосових "
+#~ "повідомлень"
 
 #~ msgid "The broadcast window is not found"
 #~ msgstr "Вікна з даними для трансляції не знайдено"
@@ -803,3 +904,149 @@ msgstr "नयाँ सन्देशहरूको स्वचालित 
 
 #~ msgid "Answer"
 #~ msgstr "Відповідь"
+
+#: addon\appModules\unigram.py:1767
+msgid "Recording a voice message, elapsed time"
+msgstr "आवाज सन्देश रेकर्ड गर्दै, बितेको समय"
+
+#: addon\appModules\unigram.py:1767
+msgid "Recording a video message, elapsed time"
+msgstr "भिडियो सन्देश रेकर्ड गर्दै, बितेको समय"
+
+#: addon\appModules\unigram.py:1770
+msgid "Record a voice message"
+msgstr "आवाज सन्देश रेकर्ड गर्नुहोस्"
+
+#: addon\appModules\unigram.py:1770
+msgid "Record a video message"
+msgstr "भिडियो सन्देश रेकर्ड गर्नुहोस्"
+
+msgid "When recording a voice or video message, NVDA now announces \"Recording a voice message\" or \"Recording a video message\" along with the elapsed time, instead of \"Tn voice message\"."
+msgstr "आवाज वा भिडियो सन्देश रेकर्ड गर्दा, NVDA ले अब \"Tn voice message\" को सट्टा बितेको समयसहित \"आवाज सन्देश रेकर्ड गर्दै\" वा \"भिडियो सन्देश रेकर्ड गर्दै\" घोषणा गर्छ।"
+
+
+msgid "Microphone on"
+msgstr "माइक्रोफोन खुला"
+
+msgid "Microphone muted"
+msgstr "माइक्रोफोन म्युट"
+
+msgid "Microphone button not found"
+msgstr "माइक्रोफोन बटन फेला परेन"
+
+msgid "Camera button not found"
+msgstr "क्यामेरा बटन फेला परेन"
+
+msgid "This release restores compatibility with Unigram 12.7, where several shortcuts and announcements had stopped working."
+msgstr "यो संस्करणले Unigram 12.7 सँगको उपयुक्तता पुनःस्थापना गर्छ, जहाँ धेरै सर्टकट र घोषणाहरूले काम गर्न बन्द गरेका थिए।"
+
+msgid "Poll messages again announce the question and answer options, and the forum topic list again announces the message preview."
+msgstr "मतदान सन्देशहरूले फेरि प्रश्न र उत्तरका विकल्पहरू घोषणा गर्छन्, र फोरम विषय सूचीले फेरि सन्देशको पूर्वावलोकन घोषणा गर्छ।"
+
+msgid "During a one-to-one call, the mute microphone (ALT+A), enable or disable camera (ALT+V) and end call (ALT+N) shortcuts work again, and ALT+End again moves to the latest message."
+msgstr "एक-एक कलमा माइक्रोफोन म्युट (ALT+A), क्यामेरा सक्रिय वा निष्क्रिय (ALT+V) र कल अन्त्य (ALT+N) का सर्टकटहरू फेरि काम गर्छन्, र ALT+End ले फेरि सबैभन्दा नयाँ सन्देशमा जान्छ।"
+
+msgid "Rich message"
+msgstr "रिच सन्देश"
+
+msgid "Added support for rich messages. Rich messages are now announced when focused and can be opened with Alt+C in a browseable window."
+msgstr "रिच सन्देशहरूको समर्थन थपियो। फोकस हुँदा अब तिनीहरू घोषणा गरिन्छन् र Alt+C प्रयोग गरेर ब्राउज गर्न मिल्ने सञ्झ्यालमा खोल्न सकिन्छ।"
+
+msgid "Links and mixed content in rich messages are preserved, and links can be activated from the browseable window."
+msgstr "रिच सन्देशका लिङ्कहरू र मिश्रित सामग्री सुरक्षित राखिन्छन्, र लिङ्कहरू ब्राउज गर्न मिल्ने सञ्झ्यालबाट सक्रिय गर्न सकिन्छन्।"
+
+msgid "Automatically move focus to the chat list when Unigram starts"
+msgstr "Unigram सुरु हुँदा फोकसलाई स्वतः च्याट सूचीमा सार्नुहोस्"
+
+msgid ""
+"- Fixed file-transfer progress tracking so it stops at 100% and no longer creates a new thread on every polling cycle.\n"
+"- When Unigram opens, focus now moves automatically to the chat list.\n"
+"- Added Ctrl+Alt+Up/Down to move through chats with unread mentions."
+msgstr ""
+"- फाइल स्थानान्तरण प्रगति ट्र्याकिङलाई 100% मा रोक्न र प्रत्येक जाँच चक्रमा नयाँ थ्रेड नबनाउन सुधार गरियो।\n"
+"- Unigram खोल्दा फोकस अब स्वतः च्याट सूचीमा सर्छ।\n"
+"- नपढिएका उल्लेख भएका च्याटहरूमा जान Ctrl+Alt+Up/Down थपियो।"
+
+msgid "Move to the next or previous chat with unread mentions"
+msgstr "नपढिएका उल्लेख भएको अर्को वा अघिल्लो च्याटमा जानुहोस्"
+
+msgid "No more chats with unread mentions in this direction"
+msgstr "यस दिशामा नपढिएका उल्लेख भएका थप च्याट छैनन्"
+
+msgid "- Fixed file-transfer progress tracking so it stops at 100% and no longer creates a new thread on every polling cycle."
+msgstr "- फाइल स्थानान्तरण प्रगति ट्र्याकिङलाई 100% मा रोक्न र प्रत्येक जाँच चक्रमा नयाँ थ्रेड नबनाउन सुधार गरियो।"
+
+msgid "- When Unigram opens, focus now moves automatically to the chat list."
+msgstr "- Unigram खोल्दा फोकस अब स्वतः च्याट सूचीमा सर्छ।"
+
+msgid "- Added Ctrl+Alt+Up/Down to move through chats with unread mentions."
+msgstr "- नपढिएका उल्लेख भएका च्याटहरूमा जान Ctrl+Alt+Up/Down थपियो।"
+
+msgid "Fixed automatic updates: releases are now retrieved securely from GitHub and the downloaded add-on is validated before installation."
+msgstr "स्वचालित अद्यावधिक सुधारियो: संस्करणहरू अब GitHub बाट सुरक्षित रूपमा प्राप्त हुन्छन् र डाउनलोड गरिएको एड-अन स्थापना गर्नुअघि प्रमाणीकरण गरिन्छ।"
+
+msgid "Toggle whether message headers are announced before or after the message content"
+msgstr "सन्देश हेडरहरूलाई सन्देशको सामग्री अघि वा पछि घोषणा गर्ने विकल्प टगल गर्नुहोस्"
+
+msgid "Message headers will be announced after the message content"
+msgstr "सन्देश हेडरहरू सन्देशको सामग्रीपछि घोषणा गरिनेछन्"
+
+msgid "Message headers will be announced before the message content"
+msgstr "सन्देश हेडरहरू सन्देशको सामग्रीअघि घोषणा गरिनेछन्"
+
+msgid "No search results"
+msgstr "खोज परिणामहरू छैनन्"
+
+msgid ""
+"- Fixed Ctrl+Alt+Left/Right so they seek the current voice message playback again.\n"
+"- Fixed Alt+I so it moves to Unigram's inline chat search results list.\n"
+"- Added Alt+[ to announce message headers after the content, so file names can be announced before sender names in profile media sections."
+msgstr ""
+"- हाल बजिरहेको आवाज सन्देशमा फेरि अगाडि वा पछाडि जान सक्ने गरी Ctrl+Alt+Left/Right सुधारियो।\n"
+"- Unigram को च्याटमा रहेको इनलाइन खोज परिणाम सूचीमा फोकस सार्ने गरी Alt+I सुधारियो।\n"
+"- सामग्रीपछि सन्देश हेडरहरू घोषणा गर्न Alt+[ थपियो, जसले प्रोफाइलका मिडिया खण्डहरूमा प्रेषकका नामभन्दा पहिले फाइलका नाम घोषणा गर्न दिन्छ।"
+
+msgid "Announce message headers after the message content"
+msgstr "सन्देशको सामग्रीपछि सन्देश हेडरहरू घोषणा गर्नुहोस्"
+
+msgid "Play a sound when reaching the end of a chat"
+msgstr "च्याटको अन्त्यमा पुग्दा ध्वनि बजाउनुहोस्"
+
+msgid ""
+"- Fixed Enter for replying to messages and Alt+Shift+R for marking chats as read in current Unigram versions.\n"
+"- Removed the web view mode and its setting; Alt+C now always opens message text in the original wx popup window.\n"
+"- Updated all translations and manuals for version 5.6.5."
+msgstr ""
+"- हालका Unigram संस्करणहरूमा सन्देशको जवाफ दिन Enter र च्याटलाई पढिएको चिन्ह लगाउन Alt+Shift+R सुधार गरियो।\n"
+"- वेब दृश्य मोड र यसको सेटिङ हटाइयो; Alt+C ले अब सधैं मूल wx पपअप सञ्झ्यालमा सन्देश पाठ खोल्छ।\n"
+"- संस्करण 5.6.5 का लागि सबै अनुवाद र पुस्तिकाहरू अद्यावधिक गरियो।"
+
+msgid "Open Unigram and UnigramPlus version information in a read-only window"
+msgstr "Unigram र UnigramPlus का संस्करण जानकारी पढ्ने-मात्र विन्डोमा खोल्नुहोस्"
+
+msgid "Unigram version: {unigramVersion}.\nUnigramPlus version: {addonVersion}."
+msgstr "Unigram संस्करण: {unigramVersion}.\nUnigramPlus संस्करण: {addonVersion}."
+
+msgid ""
+"- Added NVDA+Shift+V to announce the installed Unigram and UnigramPlus versions.\n"
+"- Removed the temporary Unigram 12.9 inline-button workaround after Unigram 12.9.1 fixed button labels; this avoids UIA stalls in bot lists, message navigation, reactions, and the chat list.\n"
+"- Updated all translations and manuals for version 5.6.6."
+msgstr ""
+"- स्थापित Unigram र UnigramPlus संस्करणहरू घोषणा गर्न NVDA+Shift+V थपियो।\n"
+"- Unigram 12.9.1 ले बटनका लेबलहरू सच्याएपछि Unigram 12.9 को अस्थायी इनलाइन-बटन समाधान हटाइयो; यसले बोट सूची, सन्देश नेभिगेसन, प्रतिक्रिया र च्याट सूचीमा UIA अड्किनबाट जोगाउँछ।\n"
+"- संस्करण 5.6.6 का लागि सबै अनुवाद र पुस्तिकाहरू अद्यावधिक गरियो।"
+
+msgid ""
+"- Fixed an intermittent issue where NVDA announced \"list\" before a message while navigating with the Up and Down Arrow keys.\n"
+"- Added a setting for the Alt+[ behavior that announces message headers after their content; it is disabled by default.\n"
+"- Added an optional sound notification when reaching the end of a chat."
+msgstr ""
+"- माथि र तल एरो कुञ्जीबाट सन्देशहरूमा सर्दा NVDA ले सन्देशअघि कहिलेकाहीँ “सूची” पढ्ने समस्या समाधान गरियो।\n"
+"- Alt+[ को व्यवहारका लागि, जसले सन्देश हेडरलाई सामग्रीपछि पढ्छ, सेटिङ थपियो; यो पूर्वनिर्धारित रूपमा निष्क्रिय छ।\n"
+"- च्याटको अन्त्यमा पुग्दा बज्ने वैकल्पिक ध्वनि सूचना थपियो।"
+
+msgid "- Restored folder-switch announcements with a nonzero unread count while retaining the file-transfer progress tracker safeguards."
+msgstr "शून्य नभएको नपढिएको सङ्ख्यासहित फोल्डर बदल्दा हुने घोषणा पुनःस्थापित गरिएको छ, साथै फाइल स्थानान्तरण प्रगति ट्र्याकरका सुरक्षा उपायहरू कायम राखिएको छ।"
+
+msgid "- Updated the shortcut lists from the current Unigram source and identified built-in shortcuts not yet listed in Unigram's official Shortcuts.md."
+msgstr "हालको Unigram स्रोतबाट सर्टकट सूचीहरू अद्यावधिक गरिएका छन् र Unigram को आधिकारिक Shortcuts.md मा अझै समावेश नभएका अन्तर्निर्मित सर्टकटहरू पहिचान गरिएका छन्।"

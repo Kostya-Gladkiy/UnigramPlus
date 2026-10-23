@@ -1,0 +1,10 @@
+* Đã khôi phục khả năng tương thích với Unigram 12.7, nơi một số phím tắt và thông báo đã ngừng hoạt động.
+* Tin nhắn khảo sát lại đọc câu hỏi và các lựa chọn trả lời.
+* Danh sách chủ đề diễn đàn lại đọc bản xem trước của tin nhắn cuối cùng.
+* Trong cuộc gọi một-một, các phím tắt tắt tiếng micrô (ALT+A), bật hoặc tắt camera (ALT+V) và kết thúc cuộc gọi (ALT+N) đã hoạt động trở lại.
+* ALT+End lại di chuyển đến tin nhắn mới nhất trong cuộc trò chuyện.
+
+Nếu bạn có mong muốn và quan trọng nhất là có điều kiện để ủng hộ nhà phát triển của add-on này, bạn có thể thực hiện qua các thông tin sau:
+* PayPal: gladkiy.kostya@gmail.com.
+* Hệ thống quyên góp của Ukraine: https://unigramplus.diaka.ua/donate.
+* Số thẻ: 5169360009004502 (Gladkiy Constantine).

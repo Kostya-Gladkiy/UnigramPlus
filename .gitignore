@@ -1,9 +1,18 @@
+# Private directory to save files that should not be tracked by Git, i.e. in testing phase and you don't want to commit the files.
+pre/**
+# Except README.md
+!pre/README.md
+
 addon/doc/*.css
+addon/doc/en/
 *_docHandler.py
 *.html
-*.ini
+manifest.ini
 *.mo
 *.pot
 *.py[co]
 *.nvda-addon
 .sconsign.dblite
+.uv-cache/
+.venv/
+/[0-9]*.[0-9]*.[0-9]*.json

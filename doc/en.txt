@@ -1,10 +1,8 @@
-* Added the ability to select files attached to messages with horizontal arrows and open the selected file with the space bar.
-* Now links in messages will not be read in full, but only up to the question mark.
-* Now, when you close the photo or video viewer, UnigramPlus will try to set the focus on the message you were viewing.
-* The keyboard shortcut to open UnigramPlus settings has been changed. Now this function is assigned to the combination NVDA+ALT+U.
-* Code optimisation has been done, resulting in significantly improved response time when navigating the chat list and message list. This is especially noticeable on messages that contain many nested elements.
-* Many minor issues have been fixed.
-* A lot of outdated code has been removed.
+* Restored compatibility with Unigram 12.7, where several shortcuts and announcements had stopped working.
+* Poll messages again announce the question and the answer options.
+* The forum topic list again announces the last message preview.
+* During a one-to-one call, the mute microphone (ALT+A), enable or disable camera (ALT+V) and end call (ALT+N) shortcuts work again.
+* ALT+End again moves to the latest message in the chat.
 
 If you have the desire, and most importantly the opportunity, to support the developer of this add-on, you can do so using the following details:
 * PayPal: gladkiy.kostya@gmail.com.

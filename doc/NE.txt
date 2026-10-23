@@ -1,0 +1,10 @@
+* Unigram 12.7 सँगको उपयुक्तता पुनःस्थापना गरियो, जहाँ धेरै सर्टकट र घोषणाहरूले काम गर्न बन्द गरेका थिए।
+* मतदान (पोल) सन्देशहरूले फेरि प्रश्न र उत्तरका विकल्पहरू घोषणा गर्छन्।
+* फोरम विषय सूचीले फेरि अन्तिम सन्देशको पूर्वावलोकन घोषणा गर्छ।
+* एक-एक कलमा माइक्रोफोन म्युट (ALT+A), क्यामेरा सक्रिय वा निष्क्रिय (ALT+V) र कल अन्त्य (ALT+N) का सर्टकटहरू फेरि काम गर्छन्।
+* ALT+End ले फेरि कुराकानीको सबैभन्दा नयाँ सन्देशमा जान्छ।
+
+If you have the desire, and most importantly the opportunity, to support the developer of this add-on, you can do so using the following details:
+* PayPal: gladkiy.kostya@gmail.com.
+* Ukrainian donation system: https://unigramplus.diaka.ua/donate.
+* Card number: 5169360009004502 (Gladkiy Constantine).

@@ -1,6 +1,7 @@
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: UnigramPlus\n"
+"Project-Id-Version: UnigramPlus 5.8.6\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2023-12-14 22:48+0200\n"
 "PO-Revision-Date: 2023-12-15 00:48+0300\n"
@@ -10,13 +11,78 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ../../..\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: appModules\n"
 "X-Poedit-SearchPath-1: GlobalPlugins\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: changelog.py:5
+msgid ""
+"- Space plays, opens and downloads the media of a message again in Unigram 13.0 and later, including voice messages.\n"
+"- Space no longer opens stickers or link previews in Unigram 13.0.1 and later.\n"
+"- Right and Left Arrow on a message with several attachments announce each photo, video, file or song again in Unigram 13.0 and later.\n"
+"- Ctrl+Space now also selects chats in the chat list: the first press starts selection mode from the chat's context menu, and each press after that selects or unselects the focused chat.\n"
+"- Alt+Shift+M is a new shortcut that opens Unigram's settings in Unigram 13.1 and later and moves the focus to the top of the settings."
+msgstr ""
+"- Boşluk tuşu, Unigram 13.0 ve sonraki sürümlerde sesli mesajlar dahil bir mesajın medyasını yeniden oynatıyor, açıyor ve indiriyor.\n"
+"- Boşluk tuşu, Unigram 13.0.1 ve sonraki sürümlerde artık çıkartmaları veya bağlantı önizlemelerini açmıyor.\n"
+"- Birden çok eki olan bir mesajda Sağ ve Sol Ok, Unigram 13.0 ve sonraki sürümlerde her fotoğrafı, videoyu, dosyayı veya şarkıyı yeniden bildiriyor.\n"
+"- Ctrl+Space artık sohbet listesinde sohbetleri de seçiyor: ilk basış seçim modunu sohbetin bağlam menüsünden başlatır, ardından her basış odaktaki sohbeti seçer veya seçimini kaldırır.\n"
+"- Yeni Alt+Shift+M kısayolu, Unigram 13.1 ve sonraki sürümlerde Unigram ayarlarını açar ve odağı ayarların başına taşır."
+
+msgid ""
+"- Alt+M opens the navigation menu again in Unigram 13.1 and later, where the menu button opens a menu instead of the side pane.\n"
+"- Ctrl+Space selects and unselects messages again in Unigram's selection mode, the way Space does in Unigram 13.1.1. In selection mode, Space and Enter on a message also select or unselect it instead of playing its media or replying to it.\n"
+"- Updated compatibility for NVDA 2026.3.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- Alt+M, menü düğmesinin yan bölme yerine bir menü açtığı Unigram 13.1 ve sonraki sürümlerde gezinti menüsünü yeniden açıyor.\n"
+"- Ctrl+Space, Unigram'ın seçim modunda mesajları yeniden seçiyor ve seçimlerini kaldırıyor; Unigram 13.1.1'de Boşluk tuşunun yaptığı gibi. Seçim modunda bir mesajın üzerindeyken Boşluk ve Enter da mesajın medyasını oynatmak veya mesajı yanıtlamak yerine onu seçiyor ya da seçimini kaldırıyor.\n"
+"- NVDA 2026.3 uyumluluğu güncellendi.\n"
+"- Lehçe ve Vietnamca çeviriler güncellendi."
+
+msgid ""
+"- When \"Automatically move focus to the chat list when Unigram starts\" is on, the focus now stays in a popup that Unigram shows as it starts, such as a request to join a group, instead of moving to the chat list behind it.\n"
+"- Updated the Vietnamese translation."
+msgstr ""
+"- \"Unigram başladığında odağı otomatik olarak sohbet listesine taşı\" seçeneği açıkken, odak artık Unigram'ın başlarken gösterdiği açılır pencerede (örneğin bir gruba katılma isteğinde) kalıyor ve arkasındaki sohbet listesine taşınmıyor.\n"
+"- Vietnamca çeviri güncellendi."
+
+msgid ""
+"- Removed UnigramPlus's own Enter and Space handling in the list of Unigram settings categories: in Unigram 13.0 and later, the categories are buttons that open with these keys themselves. Enter and Space are also no longer intercepted on other tabs, such as the Emoji, GIFs and Stickers tabs.\n"
+"- In Unigram settings, Alt+1 now moves the focus to the open settings category.\n"
+"- Removed code that could no longer run: name replacements for list items from Unigram versions before 9.5, and the quiz explanation window disabled since version 5.2.0.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- UnigramPlus'ın Unigram ayar kategorileri listesinde Enter ve Boşluk tuşları için yaptığı özel işlem kaldırıldı: Unigram 13.0 ve sonrasında kategoriler, bu tuşlarla kendiliğinden açılan düğmelerdir. Enter ve Boşluk tuşları artık Emoji, GIF'ler ve Çıkartmalar sekmeleri gibi diğer sekmelerde de engellenmiyor.\n"
+"- Unigram ayarlarında Alt+1 artık odağı açık olan ayar kategorisine taşıyor.\n"
+"- Artık çalışamayan kod kaldırıldı: 9.5 öncesi Unigram sürümleri için liste öğesi adı değiştirmeleri ve 5.2.0 sürümünden beri devre dışı olan test açıklaması penceresi.\n"
+"- Lehçe ve Vietnamca çeviriler güncellendi."
+
+msgid ""
+"- Fixed NVDA errors with the Unigram WinUI 3 beta each time you switched back to Unigram or typed with an input method (IME).\n"
+"- UnigramPlus no longer interferes with focus announcements in Telegram Desktop when the Telegram Desktop add-on is not installed.\n"
+"- Removed the notification when a voice or video message recording is canceled: Unigram 13.0 and later announce it themselves, so it is no longer heard twice.\n"
+"- Updated the Polish and Vietnamese translations."
+msgstr ""
+"- Unigram'ın WinUI 3 beta sürümünde, Unigram'a her geri dönüşte veya giriş yöntemi düzenleyicisiyle (IME) her yazışta oluşan NVDA hataları giderildi.\n"
+"- Telegram Desktop eklentisi yüklü değilken UnigramPlus artık Telegram Desktop'taki odak duyurularına müdahale etmiyor.\n"
+"- Sesli veya görüntülü mesaj kaydı iptal edildiğinde verilen bildirim kaldırıldı: Unigram 13.0 ve sonrası bunu kendisi duyurduğundan bildirim artık iki kez duyulmuyor.\n"
+"- Lehçe ve Vietnamca çeviriler güncellendi."
+
+msgid ""
+"- Removed the call duration workaround: Unigram 12.10 and later announce a call message's duration themselves, so it is no longer announced twice.\n"
+"- Fixed the add-on failing to start on older NVDA versions that do not provide the utils.security module.\n"
+"- Updated the Vietnamese translation."
+msgstr ""
+"- Çağrı süresi için kullanılan geçici çözüm kaldırıldı: Unigram 12.10 ve sonrası çağrı mesajının süresini kendisi duyurduğundan süre artık iki kez duyurulmuyor.\n"
+"- Eklentinin, utils.security modülünü içermeyen eski NVDA sürümlerinde başlatılamaması sorunu giderildi.\n"
+"- Vietnamca çeviri güncellendi."
+
+msgid "- NVDA+Alt+V displays the UnigramPlus version on a new line."
+msgstr "- NVDA+Alt+V artık UnigramPlus sürümünü yeni bir satırda gösteriyor."
 
 #: addon\appModules\cnf.py:12
 msgid "Arabic"
@@ -366,11 +432,12 @@ msgstr ""
 msgid "Link copied"
 msgstr "Bağlantı kopyalandı"
 
-#. Move the focus to the message input field. If the focus is already in this field, then move it to the last element that had focus before this field
+#. Move the focus to the message input field. If the focus is already in this
+#. field, then move it to the last element that had focus before this field
 #: addon\appModules\unigram.py:736
 msgid ""
-"Move the focus to the edit field. If the focus is already in the edit field, "
-"then after pressing the hotkey, it will move to where it was before"
+"Move the focus to the edit field. If the focus is already in the edit field,"
+" then after pressing the hotkey, it will move to where it was before"
 msgstr ""
 "Odağı  metin alanına taşıyın. Odak zaten  metin alanındaysa, kısayol "
 "tuşlarına bastıktan sonra daha önce olduğu yere taşınır"
@@ -398,6 +465,15 @@ msgstr "Gezinti menüsünü aç"
 msgid "Navigation menu not available"
 msgstr "Gezinti menüsü mevcut değil"
 
+#. Open Unigram settings
+#: addon\appModules\unigram.py:3146
+msgid "Open Unigram settings"
+msgstr "Unigram ayarlarını aç"
+
+#: addon\appModules\unigram.py:3161
+msgid "Settings not available"
+msgstr "Ayarlar mevcut değil"
+
 #. Function to open the profile of the current chat
 #: addon\appModules\unigram.py:787
 msgid "Open current chat profile"
@@ -409,7 +485,8 @@ msgstr "Mevcut sohbetin profilini aç"
 #| "It will not be possible to record a voice message until the edit field is "
 #| "empty"
 msgid ""
-"Recording a voice message will not be available until the edit field is empty"
+"Recording a voice message will not be available until the edit field is "
+"empty"
 msgstr "Metin alanı boşalana kadar sesli mesaj kayıt edilmeyecektir"
 
 #: addon\appModules\unigram.py:824
@@ -443,10 +520,6 @@ msgstr "Yanıt iptal edildi"
 #: addon\appModules\unigram.py:864
 msgid "Edit canceled"
 msgstr "Düzenleme iptal edildi"
-
-#: addon\appModules\unigram.py:867
-msgid "Recording canceled"
-msgstr "Kayıt iptal edildi"
 
 #: addon\appModules\unigram.py:896
 msgid "Answer options"
@@ -600,7 +673,8 @@ msgstr "Bu sesli mesajı dönüştürme işlemi zaten devam ediyor"
 
 #: addon\appModules\unigram.py:1420
 msgid "Enable automatic reading of new messages in the current chat"
-msgstr "Mevcut sohbette yeni mesajların otomatik olarak okunmasını etkinleştir"
+msgstr ""
+"Mevcut sohbette yeni mesajların otomatik olarak okunmasını etkinleştir"
 
 #: addon\appModules\unigram.py:1422
 msgid "Automatic reading of messages is enabled"
@@ -753,7 +827,9 @@ msgid "Move focus to the last message in a chat"
 msgstr "Odağı sohbetteki son mesaja taşı"
 
 #. Selecting an interface language
-#. self.lang = settingsSizerHelper.addLabeledControl(_("Interface language in Unigram:"), wx.Choice, choices=[listLanguages[item] for item in listLanguages])
+#. self.lang = settingsSizerHelper.addLabeledControl(_("Interface language in
+#. Unigram:"), wx.Choice, choices=[listLanguages[item] for item in
+#. listLanguages])
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:198
 msgid "Interface language in Unigram:"
 msgstr "Unigram arayüz dili:"
@@ -798,10 +874,11 @@ msgstr "Mesaj ve sohbetin  kaldırıldığını ses ile bildir"
 msgid "Display confirmation dialog when deleting messages and chats"
 msgstr "Mesajları ve sohbetleri silerken onay iletişim kutusunu görüntüle"
 
-#. Type of notification when recording voice messages
+#. Type of notification when a voice message recording starts or is sent.
+#. Unigram 13.0 announces a canceled recording itself.
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:228
-msgid "Set voice message recording notification method as:"
-msgstr "Sesli mesajları kaydederken bildirim türünü şu şekilde ayarlayın:"
+msgid "Notification when a voice message recording starts or is sent:"
+msgstr "Sesli mesaj kaydı başladığında veya gönderildiğinde bildirim:"
 
 #. Progress bar announce
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:231
@@ -819,10 +896,13 @@ msgid "Read full video description in YouTube URLs"
 msgstr "YouTube  bağlantılarındaki bir videonun tam açıklamasını oku"
 
 #. Report if the group has replies for you
-#. self.isAnnouncesAnswers = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce if there is a reply in the group")))
+#. self.isAnnouncesAnswers = settingsSizerHelper.addItem(wx.CheckBox(self,
+#. label=_("Announce if there is a reply in the group")))
 #. self.isAnnouncesAnswers.SetValue(conf.get("isAnnouncesAnswers"))
 #. Report information about premium and verified accounts
-#. self.report_premium_accounts = settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce premium and confirmed accounts")))
+#. self.report_premium_accounts =
+#. settingsSizerHelper.addItem(wx.CheckBox(self, label=_("Announce premium and
+#. confirmed accounts")))
 #. self.report_premium_accounts.SetValue(conf.get("report premium accounts"))
 #. Report if the message contains a reaction
 #: addon\GlobalPlugins\UnigramPlus\__init__.py:246
@@ -850,28 +930,52 @@ msgstr "Güncellemeleri kontrol et"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
-#. to be shown on installation and add-on information found in Add-ons Manager.
+#. to be shown on installation and add-on information found in Add-ons
+#. Manager.
 #: buildVars.py:23
 msgid "UnigramPlus"
 msgstr "UnigramPlus"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#. Translators: Long description to be shown for this add-on on add-on
+#. information from add-ons manager
 #: buildVars.py:26
 #, fuzzy
 #| msgid ""
 #| "This add-on adds a lot of hotkeys for quick navigation through the main "
-#| "elements of the window, easy interaction with Chat messages, and also "
-#| "adds many minor improvements that make working in Unigram much easier"
+#| "elements of the window, easy interaction with Chat messages, and also adds "
+#| "many minor improvements that make working in Unigram much easier"
 msgid ""
 "This add-on adds a lot of hotkeys for quick navigation through the main "
 "elements of the Unigram application, convenient interaction with Chat "
-"messages, and also adds many small improvements that make working in Unigram "
-"much easier"
+"messages, and also adds many small improvements that make working in Unigram"
+" much easier"
 msgstr ""
-"Bu eklenti, pencerenin ana öğelerinde hızlı bir şekilde gezinmek için birçok "
-"kısayol tuşu ekler, sohbet mesajlarıyla kolay etkileşim sağlar ve Unigram'da "
-"çalışmayı çok daha kolay hale getiren birçok küçük iyileştirme ekler"
+"Bu eklenti, pencerenin ana öğelerinde hızlı bir şekilde gezinmek için birçok"
+" kısayol tuşu ekler, sohbet mesajlarıyla kolay etkileşim sağlar ve "
+"Unigram'da çalışmayı çok daha kolay hale getiren birçok küçük iyileştirme "
+"ekler"
+
+#: addon/GlobalPlugins/UnigramPlus/__init__.py:252
+msgid "Play a sound while the other side is typing in the open chat"
+msgstr "Karşı taraf açık sohbette yazarken bir ses çal"
+
+#: addon\appModules\unigram.py:1188
+msgid "Announce progress bars only during upload and download"
+msgstr "İlerleme çubuklarını yalnızca yükleme ve indirme sırasında duyur"
+
+#: addon\GlobalPlugins\UnigramPlus\__init__.py:180
+msgid "Only announce progress bars during file uploads and downloads"
+msgstr ""
+"İlerleme çubuklarını yalnızca dosya yükleme ve indirme sırasında duyur"
+
+#: addon\appModules\unigram.py:62
+msgid "%d percent"
+msgstr "yüzde %d"
+
+#: addon/GlobalPlugins/UnigramPlus/__init__.py:250
+msgid "File transfer progress announcement interval (percent):"
+msgstr "Dosya aktarımı ilerleme duyurusu aralığı (yüzde):"
 
 #~ msgid "Message copied"
 #~ msgstr "Mesaj kopyalandı"
@@ -909,42 +1013,29 @@ msgstr ""
 #~ msgid "Announce some progress bars"
 #~ msgstr "Bazı  Aşama çubuklarını seslendir"
 
-#, fuzzy
-#~| msgid "Croatian"
 #~ msgid "Croata"
 #~ msgstr "Hırvatça"
 
-#, fuzzy
-#~| msgid "Italian"
 #~ msgid "Italiano"
 #~ msgstr "İtalyanca"
 
-#, fuzzy
-#~| msgid "Portuguese"
 #~ msgid "Portugués"
 #~ msgstr "Portekizce"
 
-#, fuzzy
-#~| msgid "Ukrainian"
 #~ msgid "Ucraniano"
 #~ msgstr "Ukraynaca"
 
-#, fuzzy
-#~| msgid "Accept call"
 #~ msgid "&Aceptar"
 #~ msgstr "Aramayı Cevapla"
 
-#~ msgid ""
-#~ "Press \"More Options\" button in an open chat, voice chat, or call window"
+#~ msgid "Press \"More Options\" button in an open chat, voice chat, or call window"
 #~ msgstr ""
-#~ "Açık sohbette, sesli sohbette veya çağrı penceresinde \"daha fazla "
-#~ "seçenek \" düğmesine tıklayın"
+#~ "Açık sohbette, sesli sohbette veya çağrı penceresinde \"daha fazla seçenek "
+#~ "\" düğmesine tıklayın"
 
-#~ msgid ""
-#~ "Announce all progress bars except voice message playback progress bar"
+#~ msgid "Announce all progress bars except voice message playback progress bar"
 #~ msgstr ""
-#~ "Sesli mesaj oynatma  Aşama çubuğu dışındaki tüm Aşama çubuklarını "
-#~ "seslendir"
+#~ "Sesli mesaj oynatma  Aşama çubuğu dışındaki tüm Aşama çubuklarını seslendir"
 
 #~ msgid "The broadcast window is not found"
 #~ msgstr "Yayın penceresi bulunamadı"
@@ -965,14 +1056,14 @@ msgstr ""
 #~ msgstr "Enter tuşuna basarak mesajları yanıtla"
 
 #~ msgid ""
-#~ "Read profile name and status in a public chat. Press twice to switch "
-#~ "between \"Turn on tracking chat activity until closing of the app\", "
-#~ "\"Turn tracking chat activity on\" and \"Turn tracking chat activity off\""
+#~ "Read profile name and status in a public chat. Press twice to switch between"
+#~ " \"Turn on tracking chat activity until closing of the app\", \"Turn "
+#~ "tracking chat activity on\" and \"Turn tracking chat activity off\""
 #~ msgstr ""
-#~ "Mevcut sohbetin adını ve durumunu seslendirin. Çift tıklandığında,  "
-#~ "Uygulama kapanana kadar sohbet etkinliği izlemeyi etkinleştirir, sohbet "
-#~ "etkinliği izlemeyi etkinleştir ve sohbet etkinliği izlemeyi devre dışı "
-#~ "bırak gibi değerler arasında geçiş yapar."
+#~ "Mevcut sohbetin adını ve durumunu seslendirin. Çift tıklandığında,  Uygulama"
+#~ " kapanana kadar sohbet etkinliği izlemeyi etkinleştirir, sohbet etkinliği "
+#~ "izlemeyi etkinleştir ve sohbet etkinliği izlemeyi devre dışı bırak gibi "
+#~ "değerler arasında geçiş yapar."
 
 #~ msgid "Chat activity tracking is on until closing of the app"
 #~ msgstr ""
@@ -981,3 +1072,149 @@ msgstr ""
 
 #~ msgid "This message is not playing"
 #~ msgstr "Bu mesaj oynatılmıyor"
+
+#: addon\appModules\unigram.py:1767
+msgid "Recording a voice message, elapsed time"
+msgstr "Sesli mesaj kaydediliyor, geçen süre"
+
+#: addon\appModules\unigram.py:1767
+msgid "Recording a video message, elapsed time"
+msgstr "Görüntülü mesaj kaydediliyor, geçen süre"
+
+#: addon\appModules\unigram.py:1770
+msgid "Record a voice message"
+msgstr "Sesli mesaj kaydet"
+
+#: addon\appModules\unigram.py:1770
+msgid "Record a video message"
+msgstr "Görüntülü mesaj kaydet"
+
+msgid "When recording a voice or video message, NVDA now announces \"Recording a voice message\" or \"Recording a video message\" along with the elapsed time, instead of \"Tn voice message\"."
+msgstr "Sesli veya görüntülü mesaj kaydederken NVDA artık \"Tn voice message\" yerine geçen süreyle birlikte \"Sesli mesaj kaydediliyor\" veya \"Görüntülü mesaj kaydediliyor\" anonsunu yapıyor."
+
+
+msgid "Microphone on"
+msgstr "Mikrofon açık"
+
+msgid "Microphone muted"
+msgstr "Mikrofon sessiz"
+
+msgid "Microphone button not found"
+msgstr "Mikrofon düğmesi bulunamadı"
+
+msgid "Camera button not found"
+msgstr "Kamera düğmesi bulunamadı"
+
+msgid "This release restores compatibility with Unigram 12.7, where several shortcuts and announcements had stopped working."
+msgstr "Bu sürüm, birkaç kısayolun ve duyurunun çalışmayı bıraktığı Unigram 12.7 ile uyumluluğu geri getiriyor."
+
+msgid "Poll messages again announce the question and answer options, and the forum topic list again announces the message preview."
+msgstr "Anket iletileri soruyu ve yanıt seçeneklerini yeniden duyuruyor ve forum konuları listesi iletinin önizlemesini yeniden duyuruyor."
+
+msgid "During a one-to-one call, the mute microphone (ALT+A), enable or disable camera (ALT+V) and end call (ALT+N) shortcuts work again, and ALT+End again moves to the latest message."
+msgstr "Bire bir çağrı sırasında mikrofonu sessize alma (ALT+A), kamerayı açma veya kapatma (ALT+V) ve çağrıyı sonlandırma (ALT+N) kısayolları yeniden çalışıyor ve ALT+End en son iletiye geri dönüyor."
+
+msgid "Rich message"
+msgstr "Zengin ileti"
+
+msgid "Added support for rich messages. Rich messages are now announced when focused and can be opened with Alt+C in a browseable window."
+msgstr "Zengin ileti desteği eklendi. Zengin iletiler artık odaklandığında duyurulur ve Alt+C ile göz atılabilir bir pencerede açılabilir."
+
+msgid "Links and mixed content in rich messages are preserved, and links can be activated from the browseable window."
+msgstr "Zengin iletilerdeki bağlantılar ve karma içerik korunur; bağlantılar göz atılabilir pencereden etkinleştirilebilir."
+
+msgid "Automatically move focus to the chat list when Unigram starts"
+msgstr "Unigram başladığında odağı otomatik olarak sohbet listesine taşı"
+
+msgid ""
+"- Fixed file-transfer progress tracking so it stops at 100% and no longer creates a new thread on every polling cycle.\n"
+"- When Unigram opens, focus now moves automatically to the chat list.\n"
+"- Added Ctrl+Alt+Up/Down to move through chats with unread mentions."
+msgstr ""
+"- Dosya aktarım ilerlemesi takibi %100’de duracak ve her yoklama döngüsünde yeni bir iş parçacığı oluşturmayacak şekilde düzeltildi.\n"
+"- Unigram açıldığında odak artık otomatik olarak sohbet listesine taşınıyor.\n"
+"- Okunmamış bahsetmeleri olan sohbetler arasında dolaşmak için Ctrl+Alt+Up/Down eklendi."
+
+msgid "Move to the next or previous chat with unread mentions"
+msgstr "Okunmamış bahsetmeleri olan sonraki veya önceki sohbete git"
+
+msgid "No more chats with unread mentions in this direction"
+msgstr "Bu yönde okunmamış bahsetmeleri olan başka sohbet yok"
+
+msgid "- Fixed file-transfer progress tracking so it stops at 100% and no longer creates a new thread on every polling cycle."
+msgstr "- Dosya aktarım ilerlemesi takibi %100’de duracak ve her yoklama döngüsünde yeni bir iş parçacığı oluşturmayacak şekilde düzeltildi."
+
+msgid "- When Unigram opens, focus now moves automatically to the chat list."
+msgstr "- Unigram açıldığında odak artık otomatik olarak sohbet listesine taşınıyor."
+
+msgid "- Added Ctrl+Alt+Up/Down to move through chats with unread mentions."
+msgstr "- Okunmamış bahsetmeleri olan sohbetler arasında dolaşmak için Ctrl+Alt+Up/Down eklendi."
+
+msgid "Fixed automatic updates: releases are now retrieved securely from GitHub and the downloaded add-on is validated before installation."
+msgstr "Otomatik güncellemeler düzeltildi: sürümler artık GitHub'dan güvenli bir şekilde alınıyor ve indirilen eklenti kurulumdan önce doğrulanıyor."
+
+msgid "Toggle whether message headers are announced before or after the message content"
+msgstr "Mesaj başlıklarının mesaj içeriğinden önce mi sonra mı seslendirileceğini değiştir"
+
+msgid "Message headers will be announced after the message content"
+msgstr "Mesaj başlıkları mesaj içeriğinden sonra seslendirilecek"
+
+msgid "Message headers will be announced before the message content"
+msgstr "Mesaj başlıkları mesaj içeriğinden önce seslendirilecek"
+
+msgid "No search results"
+msgstr "Arama sonucu yok"
+
+msgid ""
+"- Fixed Ctrl+Alt+Left/Right so they seek the current voice message playback again.\n"
+"- Fixed Alt+I so it moves to Unigram's inline chat search results list.\n"
+"- Added Alt+[ to announce message headers after the content, so file names can be announced before sender names in profile media sections."
+msgstr ""
+"- Ctrl+Alt+Sol/Sağ, oynatılmakta olan sesli mesajda yeniden ileri veya geri saracak şekilde düzeltildi.\n"
+"- Alt+I, odağı Unigram'ın sohbet içi arama sonuçları listesine taşıyacak şekilde düzeltildi.\n"
+"- Mesaj başlıklarını içerikten sonra seslendirmek için Alt+[ eklendi; böylece profil medya bölümlerinde dosya adları gönderen adlarından önce seslendirilebilir."
+
+msgid "Announce message headers after the message content"
+msgstr "Mesaj başlıklarını mesaj içeriğinden sonra seslendir"
+
+msgid "Play a sound when reaching the end of a chat"
+msgstr "Sohbetin sonuna ulaşıldığında ses çal"
+
+msgid ""
+"- Fixed Enter for replying to messages and Alt+Shift+R for marking chats as read in current Unigram versions.\n"
+"- Removed the web view mode and its setting; Alt+C now always opens message text in the original wx popup window.\n"
+"- Updated all translations and manuals for version 5.6.5."
+msgstr ""
+"- Güncel Unigram sürümlerinde iletileri yanıtlamak için Enter ve sohbetleri okundu olarak işaretlemek için Alt+Shift+R düzeltildi.\n"
+"- Web görünümü modu ve ayarı kaldırıldı; Alt+C artık ileti metnini her zaman özgün wx açılır penceresinde açar.\n"
+"- Sürüm 5.6.5 için tüm çeviriler ve kılavuzlar güncellendi."
+
+msgid "Open Unigram and UnigramPlus version information in a read-only window"
+msgstr "Unigram ve UnigramPlus sürüm bilgilerini salt okunur bir pencerede aç"
+
+msgid "Unigram version: {unigramVersion}.\nUnigramPlus version: {addonVersion}."
+msgstr "Unigram sürümü: {unigramVersion}.\nUnigramPlus sürümü: {addonVersion}."
+
+msgid ""
+"- Added NVDA+Shift+V to announce the installed Unigram and UnigramPlus versions.\n"
+"- Removed the temporary Unigram 12.9 inline-button workaround after Unigram 12.9.1 fixed button labels; this avoids UIA stalls in bot lists, message navigation, reactions, and the chat list.\n"
+"- Updated all translations and manuals for version 5.6.6."
+msgstr ""
+"- Yüklü Unigram ve UnigramPlus sürümlerini duyurmak için NVDA+Shift+V eklendi.\n"
+"- Unigram 12.9.1 düğme etiketlerini düzelttikten sonra Unigram 12.9 için geçici satır içi düğme çözümü kaldırıldı; böylece bot listelerinde, ileti ve tepki gezintisinde ve sohbet listesinde UIA takılmaları önlenir.\n"
+"- Tüm çeviriler ve kılavuzlar 5.6.6 sürümü için güncellendi."
+
+msgid ""
+"- Fixed an intermittent issue where NVDA announced \"list\" before a message while navigating with the Up and Down Arrow keys.\n"
+"- Added a setting for the Alt+[ behavior that announces message headers after their content; it is disabled by default.\n"
+"- Added an optional sound notification when reaching the end of a chat."
+msgstr ""
+"- Yukarı ve aşağı ok tuşlarıyla iletiler arasında gezinirken NVDA'nın iletiden önce ara sıra “liste” demesi sorunu düzeltildi.\n"
+"- İleti başlıklarını içerikten sonra seslendiren Alt+[ davranışı için bir ayar eklendi; varsayılan olarak devre dışıdır.\n"
+"- Sohbetin sonuna ulaşıldığında isteğe bağlı bir sesli bildirim eklendi."
+
+msgid "- Restored folder-switch announcements with a nonzero unread count while retaining the file-transfer progress tracker safeguards."
+msgstr "Sıfır olmayan okunmamış ileti sayısıyla klasör değiştirirken yapılan duyurular, dosya aktarımı ilerleme izleyicisinin korumaları korunarak geri yüklendi."
+
+msgid "- Updated the shortcut lists from the current Unigram source and identified built-in shortcuts not yet listed in Unigram's official Shortcuts.md."
+msgstr "Kısayol listeleri mevcut Unigram kaynak koduna göre güncellendi ve Unigramın resmi Shortcuts.md dosyasında henüz yer almayan yerleşik kısayollar belirtildi."
