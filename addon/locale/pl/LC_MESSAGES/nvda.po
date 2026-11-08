@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UnigramPlus 5.8.6\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-11-04 12:56+0100\n"
-"PO-Revision-Date: 2026-11-04 13:04+0100\n"
+"POT-Creation-Date: 2026-11-08 13:57+0100\n"
+"PO-Revision-Date: 2026-11-08 14:14+0100\n"
 "Last-Translator: DJ Graco\n"
 "Language-Team: \n"
 "Language: pl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: appModules\n"
@@ -24,36 +24,36 @@ msgid "Arabic"
 msgstr "Arabski"
 
 #: addon\appModules\cnf.py:11
-msgid "Belarus"
-msgstr "Białoruski"
-
-#: addon\appModules\cnf.py:12
 msgid "Burmese"
 msgstr "Birmański"
 
-#: addon\appModules\cnf.py:13
+#: addon\appModules\cnf.py:12
 msgid "Czech"
 msgstr "Czeski"
 
+#: addon\appModules\cnf.py:13
+msgid "Chinese (Traditional)"
+msgstr "Chiński (tradycyjny)"
+
 #: addon\appModules\cnf.py:14
+msgid "Chinese (Simplified)"
+msgstr "Chiński (uproszczony)"
+
+#: addon\appModules\cnf.py:15
+msgid "Croatian"
+msgstr "Chorwacki"
+
+#: addon\appModules\cnf.py:16
 msgid "English"
 msgstr "Angielski"
 
-#: addon\appModules\cnf.py:15
+#: addon\appModules\cnf.py:17
 msgid "French"
 msgstr "Francuski"
 
-#: addon\appModules\cnf.py:16
+#: addon\appModules\cnf.py:18
 msgid "Finnish"
 msgstr "Fiński"
-
-#: addon\appModules\cnf.py:17
-msgid "Slovak"
-msgstr "Słowacki"
-
-#: addon\appModules\cnf.py:18
-msgid "Norwegian"
-msgstr "Norweski"
 
 #: addon\appModules\cnf.py:19
 msgid "German"
@@ -64,56 +64,58 @@ msgid "Italian"
 msgstr "Włoski"
 
 #: addon\appModules\cnf.py:21
+msgid "Nepali"
+msgstr "Nepalski"
+
+#: addon\appModules\cnf.py:22
+msgid "Norwegian"
+msgstr "Norweski"
+
+#: addon\appModules\cnf.py:23
 msgid "Persian"
 msgstr "Perski"
 
-#: addon\appModules\cnf.py:22
+#: addon\appModules\cnf.py:24
 msgid "Polish"
 msgstr "Polski"
 
-#: addon\appModules\cnf.py:23
-msgid "Portuguese"
-msgstr "Portugalski"
+#: addon\appModules\cnf.py:25
+#| msgid "Portuguese"
+msgid "Portuguese (Brazil)"
+msgstr "Portugalski (Brazylia)"
 
-#: addon\appModules\cnf.py:24
+#: addon\appModules\cnf.py:26
+#| msgid "Portuguese"
+msgid "Portuguese (Portugal)"
+msgstr "Portugalski (Portugalia)"
+
+#: addon\appModules\cnf.py:27
+msgid "Romanian"
+msgstr "Rumuński"
+
+#: addon\appModules\cnf.py:28
 msgid "Russian"
 msgstr "Rosyjski"
 
-#: addon\appModules\cnf.py:25
-msgid "Spanish"
-msgstr "Hiszpański"
-
-#: addon\appModules\cnf.py:26
-msgid "Turkish"
-msgstr "Turecki"
-
-#: addon\appModules\cnf.py:27
-msgid "Ukrainian"
-msgstr "Ukraiński"
-
-#: addon\appModules\cnf.py:28
-msgid "Vietnamese"
-msgstr "Wietnamski"
-
 #: addon\appModules\cnf.py:29
-msgid "Croatian"
-msgstr "Chorwacki"
-
-#: addon\appModules\cnf.py:30
 msgid "Serbian"
 msgstr "Serbski"
 
+#: addon\appModules\cnf.py:30
+msgid "Spanish"
+msgstr "Hiszpański"
+
 #: addon\appModules\cnf.py:31
-msgid "Chinese (Traditional)"
-msgstr "Chiński (tradycyjny)"
+msgid "Turkish"
+msgstr "Turecki"
 
 #: addon\appModules\cnf.py:32
-msgid "Chinese (Simplified)"
-msgstr "Chiński (uproszczony)"
+msgid "Ukrainian"
+msgstr "Ukraiński"
 
 #: addon\appModules\cnf.py:33
-msgid "Romanian"
-msgstr "Rumuński"
+msgid "Vietnamese"
+msgstr "Wietnamski"
 
 #: addon\appModules\data.py:54
 msgid "Back"
@@ -495,12 +497,10 @@ msgstr "Menu nawigacyjne niedostępne"
 
 #. Open Unigram settings
 #: addon\appModules\unigram.py:3143
-#| msgid "Open UnigramPlus settings window"
 msgid "Open Unigram settings"
 msgstr "Otwiera ustawienia Unigrama"
 
 #: addon\appModules\unigram.py:3158
-#| msgid "Navigation menu not available"
 msgid "Settings not available"
 msgstr "Ustawienia niedostępne"
 
@@ -611,8 +611,8 @@ msgstr "Usuwa wiadomość lub czat po obu stronach"
 #: addon\appModules\unigram.py:3932
 msgid "Switch to selection mode"
 msgstr ""
-"Włącza tryb zaznaczania wiadomości lub czatów. W tym trybie zaznacza "
-"bieżący element lub usuwa jego zaznaczenie"
+"Włącza tryb zaznaczania wiadomości lub czatów. W tym trybie zaznacza bieżący "
+"element lub usuwa jego zaznaczenie"
 
 #: addon\appModules\unigram.py:3950
 msgid "Forward message"
@@ -1157,18 +1157,24 @@ msgid ""
 "- Alt+Shift+M is a new shortcut that opens Unigram's settings in Unigram "
 "13.1 and later and moves the focus to the top of the settings."
 msgstr ""
-"- W Unigramie 13.0 i nowszych klawisz Spacja ponownie odtwarza, otwiera "
-"i pobiera multimedia z wiadomości, w tym wiadomości głosowe.\n"
-"- W Unigramie 13.0.1 i nowszych klawisz Spacja nie otwiera już naklejek "
-"ani podglądów linków.\n"
-"- W Unigramie 13.0 i nowszych strzałki w prawo i w lewo ponownie "
-"odczytują poszczególne zdjęcia, filmy, pliki i utwory w wiadomościach "
-"zawierających kilka załączników.\n"
+"- W Unigramie 13.0 i nowszych klawisz Spacja ponownie odtwarza, otwiera i "
+"pobiera multimedia z wiadomości, w tym wiadomości głosowe.\n"
+"- W Unigramie 13.0.1 i nowszych klawisz Spacja nie otwiera już naklejek ani "
+"podglądów linków.\n"
+"- W Unigramie 13.0 i nowszych strzałki w prawo i w lewo ponownie odczytują "
+"poszczególne zdjęcia, filmy, pliki i utwory w wiadomościach zawierających "
+"kilka załączników.\n"
 "- Ctrl+Spacja umożliwia teraz także zaznaczanie czatów na liście czatów. "
-"Pierwsze naciśnięcie włącza tryb zaznaczania przez menu kontekstowe "
-"czatu, a każde kolejne zaznacza bieżący czat lub usuwa jego zaznaczenie.\n"
+"Pierwsze naciśnięcie włącza tryb zaznaczania przez menu kontekstowe czatu, a "
+"każde kolejne zaznacza bieżący czat lub usuwa jego zaznaczenie.\n"
 "- Dodano skrót Alt+Shift+M, który w Unigramie 13.1 i nowszych otwiera "
 "ustawienia Unigrama i przenosi fokus na ich początek."
+
+#~ msgid "Belarus"
+#~ msgstr "Białoruski"
+
+#~ msgid "Slovak"
+#~ msgstr "Słowacki"
 
 #~ msgid ""
 #~ "- When \"Automatically move focus to the chat list when Unigram starts\" "
