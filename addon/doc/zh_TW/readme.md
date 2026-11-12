@@ -17,12 +17,6 @@ UnigramPlus 讓 Unigram 更容易以 NVDA 操作。它提供許多快速鍵，�
 * 進度列讀出可設定為全部、只限檔案上傳與下載，或完全關閉。
 * 可在設定中選擇空白訊息編輯欄位按上方向鍵時的動作。
 
-## 將 Unigram 介面切換為正體中文
-1. 按下「Open navigation menu」（開啟導覽功能表）按鈕。
-2. 進入「Settings」（設定）。
-3. 進入「Language」（語言）。
-4. 在語言清單中選擇「繁體中文, Chinese (Traditional)」，接著按一次 `Tab`，再按一次空格鍵即可套用。
-
 ## 自訂音效
 UnigramPlus 的音效檔案位於附加元件的 `appModules\media` 資料夾。請開啟 NVDA 設定 > UnigramPlus，按下 **開啟 UnigramPlus 音效資料夾**。若要自訂音效，請將替換用的 WAV 檔案放入此資料夾，並使用與要取代的音效完全相同的檔名，然後重新啟動 NVDA 或重新載入附加元件。附加元件更新可能會還原內建音效，建議另外保留自訂檔案備份。
 
